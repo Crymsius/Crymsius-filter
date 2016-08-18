@@ -1,0 +1,395 @@
+###Crymsius-filter-lvling
+###Version 1.3.1
+###Ce filtre est destiné à être utilisé pour des personnages jusqu'au lvl 60.
+#
+###Notes de mise à jour :
+#Ajout d'un filtre pour lvling
+#Ajout de la chance recipe
+#
+#
+#Ajout des items labyrinth qui avaient été oublié
+
+###todo : --
+
+
+###Temporary League
+##Prophecy
+#Silver Coins
+Show
+	Class "Currency"
+    BaseType "Silver Coin"
+	SetFontSize 37
+    SetTextColor 128 0 200
+    SetBorderColor 128 0 200
+    SetBackgroundColor 192 192 192
+#Prophecies
+Show
+	Class "Currency"
+    BaseType "Prophecy"
+	SetFontSize 37
+    SetTextColor 192 192 192
+    SetBorderColor 192 192 192
+    SetBackgroundColor 128 0 200
+
+
+#Les trucs trop rares
+Show
+	BaseType "Fishing Rod" "Albino Rhoa Feather" "Mirror of Kalandra"
+	SetFontSize 60
+	SetTextColor 255 0 0
+	SetBorderColor 0 102 0
+    SetBackgroundColor 255 192 203
+
+#Unique
+Show
+	Rarity Unique
+	SetFontSize 50
+    SetBorderColor 175 96 37
+    SetBackgroundColor 78 43 16
+    SetTextColor 175 96 37
+    PlayAlertSound 6 100
+
+
+
+###Sockets
+#Socket 6 linked
+Show
+	LinkedSockets = 6
+	SetFontSize 70
+	SetTextColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetBorderColor 255 0 0
+	PlayAlertSound 2 100
+
+#Socket 6
+Show
+	Sockets = 6
+	SetFontSize 45
+	SetBorderColor 135 135 135
+    SetBackgroundColor  0 0 0 
+    
+#Socket5L
+Show
+	LinkedSockets = 5
+	SetFontSize 45
+    SetBorderColor 135 135 135
+    SetBackgroundColor 255 20 0 180
+
+
+
+###Maps
+#Rare Maps + Quality
+Show
+	Class "Maps"
+	Rarity Rare
+	Quality > 0
+	SetFontSize 37
+	SetTextColor 0 255 0
+	SetBorderColor 128 179 255
+	SetBackgroundColor 50 50 0
+#Rare Maps
+Show
+	Class "Maps"
+	Rarity Rare
+	SetFontSize 37
+	SetTextColor 0 255 0
+	SetBorderColor 0 255 0
+	SetBackgroundColor 50 50 0
+#Magic Maps + Quality
+Show
+	Class "Maps"
+	Rarity Magic
+	Quality > 0
+	SetFontSize 37
+	SetTextColor 0 255 0
+	SetBorderColor 128 179 255
+	SetBackgroundColor 0 0 50
+#Magic Maps
+Show
+	Class "Maps"
+	Rarity Magic
+	SetFontSize 37
+	SetTextColor 0 255 0
+	SetBorderColor 0 255 0
+    SetBackgroundColor 0 0 60
+#Normal Maps + Quality
+Show
+	Class "Maps"
+	Rarity Normal
+	Quality > 0
+	SetFontSize 37
+	SetTextColor 0 255 0
+	SetBorderColor 128 179 255
+	SetBackgroundColor 0 0 0
+#Normal Maps
+Show
+	Class "Maps"
+	Rarity Normal
+	SetFontSize 37
+	SetTextColor 0 255 0
+	SetBorderColor 0 255 0
+	SetBackgroundColor 0 0 0
+#Map Fragments
+Show
+	Class "Map Fragments"
+	SetFontSize 37
+    SetTextColor 200 0 0
+	SetBorderColor 255 255 255
+
+
+
+###Labyrinth
+Show
+	Class "Labyrinth"
+	SetFontSize 42
+	SetBorderColor 255 255 119
+	SetBackgroundColor 50 50 0
+
+
+
+#Jewels
+Show
+	Class "Jewel"
+	SetFontSize 42
+	SetBorderColor 0 0 255
+	SetBackgroundColor 10 10 40
+
+
+###Chisel Recipe
+#Rare with 18%+ quality
+Show
+	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+	Rarity Rare
+	Quality > 16
+	SetFontSize 35
+	SetTextColor 255 100 255
+	SetBackgroundColor 50 50 0
+	SetBorderColor 255 100 255
+#Magic with 14%+ quality
+Show
+	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+	Rarity Magic
+	Quality > 13
+	SetFontSize 35
+	SetTextColor 255 100 255
+	SetBackgroundColor 0 0 60
+	SetBorderColor 255 100 255
+#Nomal
+Show
+	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+	Rarity Normal
+	Quality > 4
+	SetFontSize 35
+	SetTextColor 255 150 255
+	SetBackgroundColor 0 0 0
+	SetBorderColor 255 150 255
+
+
+###Rare ilvl
+
+#Recipe Regal Orb
+Show
+	ItemLevel >= 75
+    Rarity Rare
+    SetFontSize 39
+	SetTextColor 100 100 0
+	SetBorderColor 100 100 0
+	SetBackgroundColor 255 255 119
+#Recipe Chaos Orb
+Show
+    ItemLevel >= 60
+    Rarity Rare
+	SetFontSize 39
+	SetTextColor 100 100 0
+	SetBorderColor 100 100 0
+    SetBackgroundColor 255 255 119
+#Recipe Chance Orb
+Show
+	Rarity Rare
+    SetFontSize 33
+	SetBorderColor 255 255 119
+	SetBackgroundColor 50 50 0
+
+
+
+###Gems
+#Rare Gems
+Show
+	Class "Gems"
+	BaseType "Empower" "Enhance" "Enlighten" "Portal" "Detonate Mines" "Vaal"
+	SetFontSize 50
+    SetBackgroundColor 70 20 0
+    SetBorderColor 27 162 155
+#Quality Gems
+Show
+	Class "Gems"
+	Quality > 0
+	SetFontSize 38
+	SetBorderColor 128 179 255
+#Other Gems
+Show
+	Class "Gems"
+	SetFontSize 38
+	SetBorderColor 27 162 155
+
+
+
+
+###Flasks
+#Utility flasks
+Show
+	Class "Utility Flasks"
+	SetFontSize 30
+	SetBackgroundColor 0 30 30
+#Flask Quality
+Show
+	Class "Flasks"
+	Quality >= 14
+	SetFontSize 35
+	SetBorderColor 128 179 255
+#Other flasks
+Show
+    Class "Flasks"
+    SetFontSize 30
+
+
+
+#Quest
+Show
+	Class "Quest"
+	SetFontSize 40
+    SetTextColor 0 0 0
+    SetBackgroundColor 74 230 58
+    SetBorderColor 0 0 0
+
+
+
+#Divination Card
+Show
+	Class "Divination Card"
+	SetFontSize 37
+	SetTextColor 255 190 95
+	SetBorderColor 255 190 95
+
+
+
+###Currency
+#Ultra Rare Currency
+Show
+	Class "Currency"
+	BaseType "Vaal Orb" "Mirror of Kalandra" "Divine Orb" "Blessed Orb" "Exalted Orb" "Regal Orb"
+	SetFontSize 42
+	SetTextColor 170 158 100
+	SetBorderColor 170 158 100
+    SetBackgroundColor 70 20 0
+	PlayAlertSound 4 80
+#Rare Currency
+Show
+	Class "Currency"
+	BaseType "Orb of Regret" "Orb of Scouring" "Orb of Alchemy" "Gemcutter's Prism" "Orb of Chance" "Chaos Orb" "Orb of Fusing"
+	SetFontSize 37
+	SetTextColor 170 158 100
+	SetBorderColor 170 158 100
+    SetBackgroundColor 50 50 0
+#Uncommon Currency
+Show
+	Class "Currency"
+	BaseType "Glassblower's Bauble" "Cartographer's Chisel" "Jeweller's Orb" "Chromatic Orb"
+	SetFontSize 37
+	SetTextColor 170 158 100
+	SetBorderColor 170 158 100
+    SetBackgroundColor 0 0 60
+#Common Currency
+Show
+	Class "Currency"
+	BaseType "Orb of Alteration" "Orb of Augmentation" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap"
+	SetFontSize 37
+	SetTextColor 170 158 100
+	SetBorderColor 170 158 100
+#Scrolls
+Show
+	Class "Currency"
+	BaseType "Scroll"
+	SetTextColor 170 158 100
+    SetFontSize 33
+#Others
+Show
+	Class "Currency"
+	SetTextColor 170 158 100
+
+
+
+#Socket RGB
+Show
+	SocketGroup RGB
+	SetBorderColor  255 255 255
+
+
+
+#Quality>=14% 
+#14 because : with 3 items, you get the currency
+Show
+	Quality >= 14
+	SetFontSize 34
+	SetBorderColor 128 179 255
+
+
+
+###Normaux + Magic item intéressants
+#Normal pour chancer
+Show
+    Rarity Normal
+#    ItemLevel > 73
+    BaseType "Occultist's Vestment" "Deicide Mask" "Prophecy Wand"
+    SetBackgroundColor 20 20 20 255
+    SetFontSize 36
+    SetTextColor 200 200 100
+    SetBorderColor 180 180 180
+
+#Normal pour chancer
+Show
+    Rarity Normal
+	ItemLevel > 83
+    BaseType "Sorcerer Boots"
+    SetBackgroundColor 20 20 20 255
+    SetFontSize 36
+    SetTextColor 200 200 100
+    SetBorderColor 180 180 180
+
+#Magic pour crafter
+#Show
+#	Rarity Magic
+#	BaseType "Harbinger"
+#	SetBackgroundColor 0 0 60 255
+#	SetFontSize 36
+#	SetTextColor 200 200 100
+
+
+
+##le reste
+#Normal
+Show
+	Rarity Normal
+    SetBackgroundColor 20 20 20 200
+    SetFontSize 33
+	SetTextColor 180 180 180
+#Magic
+Show
+	Rarity Magic
+    SetBackgroundColor 0 0 60 240
+    SetFontSize 33
+    SetBorderColor 140 140 255
+	SetTextColor 140 140 255
+    SetBackgroundColor 0 0 60 
+#Rare
+Show
+	Rarity Rare
+    SetBackgroundColor 100 100 0 200
+    SetFontSize 33
+    SetBorderColor 255 255 119
+    SetTextColor 255 255 119
+
+
+
+#Rest reste
+Show
