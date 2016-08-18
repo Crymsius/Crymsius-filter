@@ -17,7 +17,7 @@
 
 ###to-do : 
 # translation in english of the notes
-# change color for rare currency
+# change color for rare currency -> done
 # add different colors for red/yellow maps
 # add a view for good base items
 # add a view for special base items (atziri + 2.4 ones)
@@ -277,29 +277,21 @@ Show
 
 
 ###Currency
-#Ultra Rare Currency
+#Very Rare Currency
 Show
     Class "Currency"
-    BaseType "Mirror of Kalandra"
-    SetFontSize 70
+    BaseType "Mirror of Kalandra" "Divine Orb" "Exalted Orb"
+    SetFontSize 45
     SetTextColor 170 158 130
     SetBorderColor 170 158 130
     SetBackgroundColor 255 255 255
     PlayAlertSound 1 100
-#Very Rare Currency
-Show
-    Class "Currency"
-    BaseType "Divine Orb" "Exalted Orb"
-    SetFontSize 60
-    SetTextColor 170 158 130
-    SetBorderColor 170 158 130
-    SetBackgroundColor 70 20 0
-    PlayAlertSound 4 300
+
 #Rare Currency
 Show
 	Class "Currency"
-    BaseType  "Vaal Orb" "Blessed Orb" "Regal Orb" "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Orb of Fusing"
-	SetFontSize 37
+    BaseType  "Vaal Orb" "Blessed Orb" "Regal Orb" "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring"
+    SetFontSize 42
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
     SetBackgroundColor 70 70 0
@@ -307,7 +299,7 @@ Show
 #Uncommon Currency
 Show
 	Class "Currency"
-    BaseType "Glassblower's Bauble"  "Jeweller's Orb" "Orb of Scouring" "Orb of Alchemy" "Orb of Chance" "Cartographer's Chisel"
+    BaseType "Glassblower's Bauble"  "Jeweller's Orb" "Orb of Alchemy" "Orb of Chance"
 	SetFontSize 37
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
