@@ -46,11 +46,12 @@ Show
 
 #Les trucs trop rares
 Show
-	BaseType "Fishing Rod" "Albino Rhoa Feather" "Mirror of Kalandra"
+    BaseType "Fishing Rod" "Albino Rhoa Feather"
 	SetFontSize 60
 	SetTextColor 255 0 0
 	SetBorderColor 0 102 0
     SetBackgroundColor 255 192 203
+    PlayAlertSound 4 300
 
 #Unique
 Show
@@ -278,44 +279,53 @@ Show
 ###Currency
 #Ultra Rare Currency
 Show
-	Class "Currency"
-	BaseType "Vaal Orb" "Mirror of Kalandra" "Divine Orb" "Blessed Orb" "Exalted Orb" "Regal Orb"
-	SetFontSize 42
-	SetTextColor 170 158 100
-	SetBorderColor 170 158 100
+    Class "Currency"
+    BaseType "Mirror of Kalandra"
+    SetFontSize 70
+    SetTextColor 170 158 130
+    SetBorderColor 170 158 130
+    SetBackgroundColor 255 255 255
+    PlayAlertSound 1 100
+#Very Rare Currency
+Show
+    Class "Currency"
+    BaseType "Divine Orb" "Exalted Orb"
+    SetFontSize 60
+    SetTextColor 170 158 130
+    SetBorderColor 170 158 130
     SetBackgroundColor 70 20 0
-	PlayAlertSound 4 300
+    PlayAlertSound 4 300
 #Rare Currency
 Show
 	Class "Currency"
-	BaseType "Orb of Regret" "Orb of Scouring" "Orb of Alchemy" "Gemcutter's Prism" "Orb of Chance" "Chaos Orb" "Orb of Fusing"
+    BaseType  "Vaal Orb" "Blessed Orb" "Regal Orb" "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Orb of Fusing"
 	SetFontSize 37
-	SetTextColor 170 158 100
-	SetBorderColor 170 158 100
-    SetBackgroundColor 50 50 0
+	SetTextColor 170 158 130
+	SetBorderColor 170 158 130
+    SetBackgroundColor 70 70 0
     PlayAlertSound 8 200
 #Uncommon Currency
 Show
 	Class "Currency"
-	BaseType "Glassblower's Bauble" "Cartographer's Chisel" "Jeweller's Orb" "Chromatic Orb"
+    BaseType "Glassblower's Bauble"  "Jeweller's Orb" "Orb of Scouring" "Orb of Alchemy" "Orb of Chance" "Cartographer's Chisel"
 	SetFontSize 37
-	SetTextColor 170 158 100
-	SetBorderColor 170 158 100
+	SetTextColor 170 158 130
+	SetBorderColor 170 158 130
 	SetBackgroundColor 0 0 60
 	PlayAlertSound 9 130
 #Common Currency
 Show
 	Class "Currency"
-	BaseType "Orb of Alteration" "Orb of Augmentation" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap"
+    BaseType "Orb of Alteration" "Orb of Augmentation" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap" "Chromatic Orb"
 	SetFontSize 37
-	SetTextColor 170 158 100
-	SetBorderColor 170 158 100
+	SetTextColor 170 158 130
+	SetBorderColor 170 158 130
 	PlayAlertSound 9 150
 #Scrolls
 Show
 	Class "Currency"
 	BaseType "Scroll"
-	SetTextColor 170 158 100
+	SetTextColor 170 158 130
     SetFontSize 33
 #Others
 Show
