@@ -285,7 +285,7 @@ Show
     SetTextColor 170 158 130
     SetBorderColor 170 158 130
     SetBackgroundColor 255 255 255
-    PlayAlertSound 1 100
+    PlayAlertSound 4 300
 
 #Rare Currency
 Show
@@ -304,7 +304,7 @@ Show
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
 	SetBackgroundColor 0 0 60
-	PlayAlertSound 9 130
+    PlayAlertSound 9 180
 #Common Currency
 Show
 	Class "Currency"
@@ -312,7 +312,7 @@ Show
 	SetFontSize 37
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
-	PlayAlertSound 9 150
+    PlayAlertSound 7 150
 #Scrolls
 Show
 	Class "Currency"
@@ -368,8 +368,8 @@ Hide
 	Rarity Magic
     SetBackgroundColor 0 0 60 150
     SetFontSize 33
-    SetBorderColor 140 140 255
-    SetTextColor 140 140 255
+    SetBorderColor 136 136 255
+    SetTextColor 136 136 255
 #Rare
 Hide
 	Rarity Rare
