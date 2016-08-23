@@ -274,44 +274,48 @@ Show
 
 
 ###Currency
-#Ultra Rare Currency
+#Very Rare Currency
 Show
 	Class "Currency"
-	BaseType "Vaal Orb" "Mirror of Kalandra" "Divine Orb" "Blessed Orb" "Exalted Orb" "Regal Orb"
-	SetFontSize 42
-	SetTextColor 170 158 100
-	SetBorderColor 170 158 100
-    SetBackgroundColor 70 20 0
-	PlayAlertSound 4 80
+	BaseType "Mirror of Kalandra" "Divine Orb" "Exalted Orb"
+	SetFontSize 45
+	SetTextColor 170 158 130
+	SetBorderColor 170 158 130
+	SetBackgroundColor 255 255 255
+	PlayAlertSound 4 300
+
 #Rare Currency
 Show
 	Class "Currency"
-	BaseType "Orb of Regret" "Orb of Scouring" "Orb of Alchemy" "Gemcutter's Prism" "Orb of Chance" "Chaos Orb" "Orb of Fusing"
-	SetFontSize 37
-	SetTextColor 170 158 100
-	SetBorderColor 170 158 100
-    SetBackgroundColor 50 50 0
+	BaseType  "Vaal Orb" "Blessed Orb" "Regal Orb" "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring"
+	SetFontSize 42
+	SetTextColor 170 158 130
+	SetBorderColor 170 158 130
+	SetBackgroundColor 70 70 0
+	PlayAlertSound 8 200
 #Uncommon Currency
 Show
 	Class "Currency"
-	BaseType "Glassblower's Bauble" "Cartographer's Chisel" "Jeweller's Orb" "Chromatic Orb"
+	BaseType "Glassblower's Bauble"  "Jeweller's Orb" "Orb of Alchemy" "Orb of Chance"
 	SetFontSize 37
-	SetTextColor 170 158 100
-	SetBorderColor 170 158 100
-    SetBackgroundColor 0 0 60
+	SetTextColor 170 158 130
+	SetBorderColor 170 158 130
+	SetBackgroundColor 0 0 60
+	PlayAlertSound 9 180
 #Common Currency
 Show
 	Class "Currency"
-	BaseType "Orb of Alteration" "Orb of Augmentation" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap"
+	BaseType "Orb of Alteration" "Orb of Augmentation" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap" "Chromatic Orb"
 	SetFontSize 37
-	SetTextColor 170 158 100
-	SetBorderColor 170 158 100
+	SetTextColor 170 158 130
+	SetBorderColor 170 158 130
+	PlayAlertSound 7 150
 #Scrolls
 Show
 	Class "Currency"
 	BaseType "Scroll"
-	SetTextColor 170 158 100
-    SetFontSize 33
+	SetTextColor 170 158 130
+	SetFontSize 33
 #Others
 Show
 	Class "Currency"
