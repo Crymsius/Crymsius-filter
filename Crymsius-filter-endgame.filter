@@ -101,35 +101,35 @@ Show
     DropLevel >= 79
 	Quality > 0
 	SetFontSize 37
-	SetTextColor 0 220 0
-	SetBorderColor 128 179 255
-	SetBackgroundColor 70 20 0
+	SetTextColor 247 44 0
+    SetBorderColor 128 179 255
+    SetBackgroundColor 50 50 50
 #Maps
 Show
     Class "Maps"
     DropLevel >= 78
-	SetFontSize 37
-	SetTextColor 0 220 0
-	SetBorderColor 0 255 0
-	SetBackgroundColor 90 30 0
+    SetFontSize 41
+    SetTextColor 250 20 0
+    SetBorderColor 220 220 220
+    SetBackgroundColor 50 50 50
 #Tier 7-11 (yellow)
 #Maps + Quality
 Show
     Class "Maps"
     DropLevel >= 74
 	Quality > 0
-	SetFontSize 37
+    SetFontSize 39
 	SetTextColor 0 220 0
-	SetBorderColor 128 179 255
+    SetBorderColor 128 179 255
 	SetBackgroundColor 90 90 0
 #Maps
 Show
 	Class "Maps"
     DropLevel >= 74
     SetFontSize 37
-	SetTextColor 0 220 0
-	SetBorderColor 0 220 0
-	SetBackgroundColor 100 100 0
+    SetTextColor 255 255 0
+    SetBorderColor 220 220 220
+    SetBackgroundColor 50 50 50
 #Tier 1-6 (grey)
 #Maps + Quality
 Show
@@ -137,17 +137,17 @@ Show
     DropLevel < 74
 	Quality > 0
 	SetFontSize 37
-	SetTextColor 0 220 0
-	SetBorderColor 128 179 255
-	SetBackgroundColor 0 0 0
+    SetTextColor 220 220 220
+    SetBorderColor 128 179 255
+    SetBackgroundColor 50 50 50
 #Maps
 Show
 	Class "Maps"
     DropLevel < 74
 	SetFontSize 37
-	SetTextColor 0 220 0
-	SetBorderColor 0 220 0
-	SetBackgroundColor 0 0 0
+    SetTextColor 220 220 220
+    SetBorderColor 220 220 220
+    SetBackgroundColor 50 50 50
 #Map Fragments
 Show
 	Class "Map Fragments"
