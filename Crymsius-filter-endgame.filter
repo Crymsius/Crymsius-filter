@@ -1,8 +1,13 @@
 ###Crymsius-filter-endgame
 ###Version 1.3.1 
-###Ce filtre est destiné à être utilisé pour des personnages de lvl 60 et plus.
 #
-###Notes de mise à jour :
+#-----English-----
+###This filter is more suitable for lvl 60+ characters as it will hide lower bases and most of magic items.
+#
+# -----French-----
+###Ce filtre est destiné à être utilisé pour des personnages de lvl 60 et plus.
+# 
+###Notes de mise à jour 1.3.1:
 #Changement sur les Map Fragments  Text color Blanc -> Rouge
 #Ajout des silver coins et prophecy aux couleurs de la ligue
 #Changment background des gemmes importantes (couleur des uniques)
@@ -44,7 +49,7 @@ Show
 	SetBackgroundColor 128 0 200
 
 
-#Les trucs trop rares
+#Very rare stuff
 Show
 	BaseType "Fishing Rod" "Albino Rhoa Feather"
 	SetFontSize 60
@@ -53,7 +58,7 @@ Show
 	SetBackgroundColor 255 192 203
 	PlayAlertSound 4 300
 
-#Unique
+#Uniques
 Show
 	Rarity Unique
 	SetFontSize 50
@@ -71,21 +76,21 @@ Show
 	SetTextColor 255 0 0
 	SetBackgroundColor 255 255 255
 	SetBorderColor 255 0 0
-	PlayAlertSound 2 100
-
+    PlayAlertSound 2 300
 #Socket 6
 Show
 	Sockets = 6
 	SetFontSize 45
 	SetBorderColor 135 135 135
-	SetBackgroundColor  0 0 0 
-	
+    SetBackgroundColor  0 0 0
+    PlayAlertSound 3 100
 #Socket5L
 Show
 	LinkedSockets = 5
 	SetFontSize 45
 	SetBorderColor 135 135 135
-	SetBackgroundColor 255 20 0 180
+    SetBackgroundColor 255 20 0 255
+    PlayAlertSound 1 100
 
 
 ###Maps
@@ -146,7 +151,7 @@ Show
 #Map Fragments
 Show
 	Class "Map Fragments"
-	SetFontSize 37
+    SetFontSize 39
 	SetTextColor 200 0 0
 	SetBorderColor 255 255 255
 
@@ -170,7 +175,7 @@ Show
 
 
 ###Chisel Recipe
-#Rare with 18%+ quality
+#Rare with 17%+ quality
 Show
 	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
 	Rarity Rare
@@ -201,12 +206,21 @@ Show
 ###Rare ilvl
 #Recipe Regal Orb
 Show
-	ItemLevel >= 75
+    ItemLevel >= 75
+    BaseType "Void Sceptre" "Opal Sceptre" "Profane Wand" "Prophecy Wand" "Opal Wand" "Sambar Sceptre" "Imbued Wand" "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Saintly Chainmail" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titan Gauntlets" "Slink Gloves" "Eternal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots" "Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash" "Lion Sword" "Vaal Greatsword" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Platinum Kris" "Demon Dagger" "Imperial Skean" "Vaal Hatchet" "Runic Hatchet" "Behemoth Mace" "Eternal Sword" "Tiger Hook" "Eclipse Staff" "Maelstr" "Judgement Staff" "Jewelled Foil" "Dragoon Sword" "Sai"
 	Rarity Rare
-	SetFontSize 39
+    SetFontSize 41
+	SetTextColor 100 100 0
+    SetBorderColor 255 255 255
+	SetBackgroundColor 255 255 119
+#Recipe Regal Orb
+Show
+    ItemLevel >= 75
+	Rarity Rare
+    SetFontSize 38
 	SetTextColor 100 100 0
 	SetBorderColor 100 100 0
-	SetBackgroundColor 255 255 119
+    SetBackgroundColor 255 255 119
 #Recipe Chaos Orb
 Show
 	ItemLevel >= 60
@@ -214,7 +228,7 @@ Show
 	SetFontSize 38
 	SetTextColor 255 255 119
 	SetBorderColor 255 255 119
-	SetBackgroundColor 50 50 0
+    SetBackgroundColor 50 50 0
 
 
 
@@ -222,7 +236,7 @@ Show
 #Rare Gems
 Show
 	Class "Gems"
-	BaseType "Empower" "Enhance" "Enlighten" "Portal" "Detonate Mines" "Vaal"
+	BaseType "Empower" "Enhance" "Enlighten" "Portal" "Detonate Mines" "Vaal" "Added Chaos Damage"
 	SetFontSize 50
 	SetBackgroundColor 70 20 0
 	SetBorderColor 27 162 155
@@ -337,10 +351,9 @@ Show
 	SetBorderColor  255 255 255
 
 
-###Normaux + Magic item intéressants
-#Attention aux ilvl !
-
-#Normal pour chancer
+###Normal & Magic items to show (chance + craft)
+#
+#Normal item to chance
 Show
 	Rarity Normal
 	BaseType "Occultist's Vestment" "Deicide Mask" "Prophecy Wand" "Sorcerer Boots"
@@ -349,7 +362,7 @@ Show
 	SetTextColor 200 200 100
 	SetBorderColor 180 180 180
 
-#Magic pour crafter
+#Magic items to craft
 #Show
 #    Rarity Magic
 #    ItemLevel > 73
@@ -361,7 +374,7 @@ Show
 
 
 
-##le reste
+##Hiding low lvl stuff
 #Normal
 Hide
 	Rarity Normal
@@ -385,5 +398,5 @@ Hide
 
 
 
-#Rest reste
+#Other stuff missing
 Show
