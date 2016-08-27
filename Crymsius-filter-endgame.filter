@@ -25,7 +25,7 @@
 # change color for rare currency -> done
 # add different colors for red/yellow maps -> done
 # add a view for good base items -> done
-# add a view for special base items (atziri + 2.4 ones)
+# add a view for special base items (atziri + 2.4 ones) -> done
 # rework jewels (find a proper color ?)
 
 
@@ -199,10 +199,35 @@ Show
 	Rarity Normal
 	SetFontSize 35
 	SetTextColor 255 100 255
-	SetBackgroundColor 0 0 0
+    SetBackgroundColor 0 0 0
 	SetBorderColor 255 100 255
 
+
+
+###Normal, Magic & Rare items with particular bases such as Sacrificial Gard
+Show
+    Rarity Rare
+    BaseType "Sacrificial Garb"
+    SetBackgroundColor 200 200 100
+    SetFontSize 40
+    SetTextColor 250 250 50
+    SetBorderColor 250 250 50
+Show
+    Rarity Magic
+    BaseType "Sacrificial Garb"
+    SetBackgroundColor 200 200 100
+    SetFontSize 40
+    SetTextColor 0 0 255
+    SetBorderColor 0 0 255
+Show
+	Rarity Normal
+    BaseType "Sacrificial Garb"
+    SetBackgroundColor 200 200 100
+    SetFontSize 40
+    SetTextColor 20 20 20 255
+    SetBorderColor 20 20 20
 	
+
 ###Rare ilvl
 #Recipe Regal Orb
 Show
@@ -288,9 +313,9 @@ Show
 Show
 	Class "Divination Card"
 	SetFontSize 37
-    SetTextColor 255 170 45
-    SetBorderColor 255 170 45
-    SetBackgroundColor 60 60 60 255
+    SetTextColor 255 175 25
+    SetBorderColor 255 175 25
+    SetBackgroundColor 35 35 35
 	PlayAlertSound 2 150
 
 
@@ -349,7 +374,6 @@ Show
 Show
 	SocketGroup RGB
 	SetBorderColor  255 255 255
-
 
 ###Normal & Magic items to show (chance + craft)
 #
