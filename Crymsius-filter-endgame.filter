@@ -23,8 +23,8 @@
 ###to-do : 
 # translation in english of the notes
 # change color for rare currency -> done
-# add different colors for red/yellow maps -> done but need to add all baseTypes
-# add a view for good base items
+# add different colors for red/yellow maps -> done
+# add a view for good base items -> done
 # add a view for special base items (atziri + 2.4 ones)
 # rework jewels (find a proper color ?)
 
@@ -88,8 +88,8 @@ Show
 Show
 	LinkedSockets = 5
 	SetFontSize 45
-	SetBorderColor 135 135 135
-    SetBackgroundColor 255 20 0 255
+    SetBorderColor 180 180 180
+    SetBackgroundColor 72 20 0 
     PlayAlertSound 1 100
 
 
