@@ -39,6 +39,7 @@ Show
 	SetTextColor 255 0 0
 	SetBorderColor 0 102 0
     SetBackgroundColor 255 192 203
+    PlayAlertSound 4 300
 
 #Unique
 Show
@@ -59,7 +60,7 @@ Show
 	SetTextColor 255 0 0
 	SetBackgroundColor 255 255 255
 	SetBorderColor 255 0 0
-	PlayAlertSound 2 100
+	PlayAlertSound 2 300
 
 #Socket 6
 Show
@@ -67,73 +68,76 @@ Show
 	SetFontSize 45
 	SetBorderColor 135 135 135
     SetBackgroundColor  0 0 0 
-    
+   	PlayAlertSound 3 100
 #Socket5L
 Show
 	LinkedSockets = 5
 	SetFontSize 45
-    SetBorderColor 135 135 135
-    SetBackgroundColor 255 20 0 180
-
+	SetBorderColor 180 180 180
+	SetBackgroundColor 72 20 0 
+	PlayAlertSound 1 100
 
 
 ###Maps
-#Rare Maps + Quality
+#Tiers 12-16 (red)
+#Maps + Quality
 Show
 	Class "Maps"
-	Rarity Rare
+	DropLevel >= 79
 	Quality > 0
 	SetFontSize 37
-	SetTextColor 0 255 0
+	SetTextColor 247 44 0
 	SetBorderColor 128 179 255
-	SetBackgroundColor 50 50 0
-#Rare Maps
+	SetBackgroundColor 50 50 50
+#Maps
 Show
 	Class "Maps"
-	Rarity Rare
+	DropLevel >= 78
+	SetFontSize 41
+	SetTextColor 250 20 0
+	SetBorderColor 220 220 220
+	SetBackgroundColor 50 50 50
+#Tier 7-11 (yellow)
+#Maps + Quality
+Show
+	Class "Maps"
+	DropLevel >= 74
+	Quality > 0
+	SetFontSize 39
+	SetTextColor 0 220 0
+	SetBorderColor 128 179 255
+	SetBackgroundColor 90 90 0
+#Maps
+Show
+	Class "Maps"
+	DropLevel >= 74
 	SetFontSize 37
-	SetTextColor 0 255 0
-	SetBorderColor 0 255 0
-	SetBackgroundColor 50 50 0
-#Magic Maps + Quality
+	SetTextColor 255 255 0
+	SetBorderColor 220 220 220
+	SetBackgroundColor 50 50 50
+#Tier 1-6 (grey)
+#Maps + Quality
 Show
 	Class "Maps"
-	Rarity Magic
+	DropLevel < 74
 	Quality > 0
 	SetFontSize 37
-	SetTextColor 0 255 0
+	SetTextColor 220 220 220
 	SetBorderColor 128 179 255
-	SetBackgroundColor 0 0 50
-#Magic Maps
+	SetBackgroundColor 50 50 50
+#Maps
 Show
 	Class "Maps"
-	Rarity Magic
+	DropLevel < 74
 	SetFontSize 37
-	SetTextColor 0 255 0
-	SetBorderColor 0 255 0
-    SetBackgroundColor 0 0 60
-#Normal Maps + Quality
-Show
-	Class "Maps"
-	Rarity Normal
-	Quality > 0
-	SetFontSize 37
-	SetTextColor 0 255 0
-	SetBorderColor 128 179 255
-	SetBackgroundColor 0 0 0
-#Normal Maps
-Show
-	Class "Maps"
-	Rarity Normal
-	SetFontSize 37
-	SetTextColor 0 255 0
-	SetBorderColor 0 255 0
-	SetBackgroundColor 0 0 0
+	SetTextColor 220 220 220
+	SetBorderColor 220 220 220
+	SetBackgroundColor 50 50 50
 #Map Fragments
 Show
 	Class "Map Fragments"
-	SetFontSize 37
-    SetTextColor 200 0 0
+	SetFontSize 39
+	SetTextColor 200 0 0
 	SetBorderColor 255 255 255
 
 
@@ -156,7 +160,7 @@ Show
 
 
 ###Chisel Recipe
-#Rare with 18%+ quality
+#Rare with 17%+ quality
 Show
 	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
 	Rarity Rare
@@ -185,8 +189,33 @@ Show
 	SetBorderColor 255 150 255
 
 
-###Rare ilvl
 
+###Normal, Magic & Rare items with particular bases such as Sacrificial Gard
+Show
+	Rarity Rare
+	BaseType "Sacrificial Garb"
+	SetBackgroundColor 200 200 100
+	SetFontSize 40
+	SetTextColor 250 250 50
+	SetBorderColor 250 250 50
+Show
+	Rarity Magic
+	BaseType "Sacrificial Garb"
+	SetBackgroundColor 200 200 100
+	SetFontSize 40
+	SetTextColor 0 0 255
+	SetBorderColor 0 0 255
+Show
+	Rarity Normal
+	BaseType "Sacrificial Garb"
+	SetBackgroundColor 200 200 100
+	SetFontSize 40
+	SetTextColor 20 20 20 255
+	SetBorderColor 20 20 20
+
+
+
+###Rare ilvl
 #Recipe Regal Orb
 Show
 	ItemLevel >= 75
@@ -216,7 +245,7 @@ Show
 #Rare Gems
 Show
 	Class "Gems"
-	BaseType "Empower" "Enhance" "Enlighten" "Portal" "Detonate Mines" "Vaal"
+	BaseType "Empower" "Enhance" "Enlighten" "Portal" "Detonate Mines" "Vaal" "Added Chaos Damage"
 	SetFontSize 50
     SetBackgroundColor 70 20 0
     SetBorderColor 27 162 155
@@ -268,8 +297,10 @@ Show
 Show
 	Class "Divination Card"
 	SetFontSize 37
-	SetTextColor 255 190 95
-	SetBorderColor 255 190 95
+	SetTextColor 255 175 25
+	SetBorderColor 255 175 25
+	SetBackgroundColor 35 35 35
+	PlayAlertSound 2 150
 
 
 
@@ -283,7 +314,6 @@ Show
 	SetBorderColor 170 158 130
 	SetBackgroundColor 255 255 255
 	PlayAlertSound 4 300
-
 #Rare Currency
 Show
 	Class "Currency"
@@ -339,38 +369,29 @@ Show
 
 
 
-###Normaux + Magic item intéressants
-#Normal pour chancer
+###Normal & Magic items to show (chance + craft)
+#
+#Normal item to chance
 Show
-    Rarity Normal
-#    ItemLevel > 73
-    BaseType "Occultist's Vestment" "Deicide Mask" "Prophecy Wand"
-    SetBackgroundColor 20 20 20 255
-    SetFontSize 36
-    SetTextColor 200 200 100
-    SetBorderColor 180 180 180
-
-#Normal pour chancer
-Show
-    Rarity Normal
-	ItemLevel > 83
-    BaseType "Sorcerer Boots"
-    SetBackgroundColor 20 20 20 255
-    SetFontSize 36
-    SetTextColor 200 200 100
-    SetBorderColor 180 180 180
-
-#Magic pour crafter
+	Rarity Normal
+	BaseType "Occultist's Vestment" "Deicide Mask" "Prophecy Wand" "Sorcerer Boots"
+	SetBackgroundColor 20 20 20 255
+	SetFontSize 36
+	SetTextColor 200 200 100
+	SetBorderColor 180 180 180
+#Magic items to craft
 #Show
-#	Rarity Magic
-#	BaseType "Harbinger"
-#	SetBackgroundColor 0 0 60 255
-#	SetFontSize 36
-#	SetTextColor 200 200 100
+#    Rarity Magic
+#    ItemLevel > 73
+#    BaseType "Harbinger"
+#    SetBackgroundColor 0 0 60 255
+#    SetFontSize 36
+#    SetBorderColor 140 140 255
+#    SetTextColor 200 200 100
 
 
 
-##le reste
+##Low level stuff
 #Normal
 Show
 	Rarity Normal

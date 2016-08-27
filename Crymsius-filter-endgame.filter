@@ -76,82 +76,82 @@ Show
 	SetTextColor 255 0 0
 	SetBackgroundColor 255 255 255
 	SetBorderColor 255 0 0
-    PlayAlertSound 2 300
+	PlayAlertSound 2 300
 #Socket 6
 Show
 	Sockets = 6
 	SetFontSize 45
 	SetBorderColor 135 135 135
-    SetBackgroundColor  0 0 0
-    PlayAlertSound 3 100
+	SetBackgroundColor  0 0 0
+	PlayAlertSound 3 100
 #Socket5L
 Show
 	LinkedSockets = 5
 	SetFontSize 45
-    SetBorderColor 180 180 180
-    SetBackgroundColor 72 20 0 
-    PlayAlertSound 1 100
+	SetBorderColor 180 180 180
+	SetBackgroundColor 72 20 0 
+	PlayAlertSound 1 100
 
 
 ###Maps
 #Tiers 12-16 (red)
 #Maps + Quality
 Show
-    Class "Maps"
-    DropLevel >= 79
+	Class "Maps"
+	DropLevel >= 79
 	Quality > 0
 	SetFontSize 37
 	SetTextColor 247 44 0
-    SetBorderColor 128 179 255
-    SetBackgroundColor 50 50 50
+	SetBorderColor 128 179 255
+	SetBackgroundColor 50 50 50
 #Maps
 Show
-    Class "Maps"
-    DropLevel >= 78
-    SetFontSize 41
-    SetTextColor 250 20 0
-    SetBorderColor 220 220 220
-    SetBackgroundColor 50 50 50
+	Class "Maps"
+	DropLevel >= 78
+	SetFontSize 41
+	SetTextColor 250 20 0
+	SetBorderColor 220 220 220
+	SetBackgroundColor 50 50 50
 #Tier 7-11 (yellow)
 #Maps + Quality
 Show
-    Class "Maps"
-    DropLevel >= 74
+	Class "Maps"
+	DropLevel >= 74
 	Quality > 0
-    SetFontSize 39
+	SetFontSize 39
 	SetTextColor 0 220 0
-    SetBorderColor 128 179 255
+	SetBorderColor 128 179 255
 	SetBackgroundColor 90 90 0
 #Maps
 Show
 	Class "Maps"
-    DropLevel >= 74
-    SetFontSize 37
-    SetTextColor 255 255 0
-    SetBorderColor 220 220 220
-    SetBackgroundColor 50 50 50
+	DropLevel >= 74
+	SetFontSize 37
+	SetTextColor 255 255 0
+	SetBorderColor 220 220 220
+	SetBackgroundColor 50 50 50
 #Tier 1-6 (grey)
 #Maps + Quality
 Show
-    Class "Maps"
-    DropLevel < 74
+	Class "Maps"
+	DropLevel < 74
 	Quality > 0
 	SetFontSize 37
-    SetTextColor 220 220 220
-    SetBorderColor 128 179 255
-    SetBackgroundColor 50 50 50
+	SetTextColor 220 220 220
+	SetBorderColor 128 179 255
+	SetBackgroundColor 50 50 50
 #Maps
 Show
 	Class "Maps"
-    DropLevel < 74
+	DropLevel < 74
 	SetFontSize 37
-    SetTextColor 220 220 220
-    SetBorderColor 220 220 220
-    SetBackgroundColor 50 50 50
+	SetTextColor 220 220 220
+	SetBorderColor 220 220 220
+	SetBackgroundColor 50 50 50
 #Map Fragments
 Show
 	Class "Map Fragments"
-    SetFontSize 39
+	SetFontSize 39
 	SetTextColor 200 0 0
 	SetBorderColor 255 255 255
 
@@ -199,53 +199,53 @@ Show
 	Rarity Normal
 	SetFontSize 35
 	SetTextColor 255 100 255
-    SetBackgroundColor 0 0 0
+	SetBackgroundColor 0 0 0
 	SetBorderColor 255 100 255
 
 
 
 ###Normal, Magic & Rare items with particular bases such as Sacrificial Gard
 Show
-    Rarity Rare
-    BaseType "Sacrificial Garb"
-    SetBackgroundColor 200 200 100
-    SetFontSize 40
-    SetTextColor 250 250 50
-    SetBorderColor 250 250 50
+	Rarity Rare
+	BaseType "Sacrificial Garb"
+	SetBackgroundColor 200 200 100
+	SetFontSize 40
+	SetTextColor 250 250 50
+	SetBorderColor 250 250 50
 Show
-    Rarity Magic
-    BaseType "Sacrificial Garb"
-    SetBackgroundColor 200 200 100
-    SetFontSize 40
-    SetTextColor 0 0 255
-    SetBorderColor 0 0 255
+	Rarity Magic
+	BaseType "Sacrificial Garb"
+	SetBackgroundColor 200 200 100
+	SetFontSize 40
+	SetTextColor 0 0 255
+	SetBorderColor 0 0 255
 Show
 	Rarity Normal
-    BaseType "Sacrificial Garb"
-    SetBackgroundColor 200 200 100
-    SetFontSize 40
-    SetTextColor 20 20 20 255
-    SetBorderColor 20 20 20
+	BaseType "Sacrificial Garb"
+	SetBackgroundColor 200 200 100
+	SetFontSize 40
+	SetTextColor 20 20 20 255
+	SetBorderColor 20 20 20
 	
 
 ###Rare ilvl
 #Recipe Regal Orb
 Show
-    ItemLevel >= 75
-    BaseType "Void Sceptre" "Opal Sceptre" "Profane Wand" "Prophecy Wand" "Opal Wand" "Sambar Sceptre" "Imbued Wand" "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Saintly Chainmail" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titan Gauntlets" "Slink Gloves" "Eternal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots" "Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash" "Lion Sword" "Vaal Greatsword" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Platinum Kris" "Demon Dagger" "Imperial Skean" "Vaal Hatchet" "Runic Hatchet" "Behemoth Mace" "Eternal Sword" "Tiger Hook" "Eclipse Staff" "Maelstr" "Judgement Staff" "Jewelled Foil" "Dragoon Sword" "Sai"
+	ItemLevel >= 75
+	BaseType "Void Sceptre" "Opal Sceptre" "Profane Wand" "Prophecy Wand" "Opal Wand" "Sambar Sceptre" "Imbued Wand" "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Saintly Chainmail" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titan Gauntlets" "Slink Gloves" "Eternal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots" "Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash" "Lion Sword" "Vaal Greatsword" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Platinum Kris" "Demon Dagger" "Imperial Skean" "Vaal Hatchet" "Runic Hatchet" "Behemoth Mace" "Eternal Sword" "Tiger Hook" "Eclipse Staff" "Maelstr" "Judgement Staff" "Jewelled Foil" "Dragoon Sword" "Sai"
 	Rarity Rare
-    SetFontSize 41
+	SetFontSize 41
 	SetTextColor 100 100 0
-    SetBorderColor 255 255 255
+	SetBorderColor 255 255 255
 	SetBackgroundColor 255 255 119
 #Recipe Regal Orb
 Show
-    ItemLevel >= 75
+	ItemLevel >= 75
 	Rarity Rare
-    SetFontSize 38
+	SetFontSize 38
 	SetTextColor 100 100 0
 	SetBorderColor 100 100 0
-    SetBackgroundColor 255 255 119
+	SetBackgroundColor 255 255 119
 #Recipe Chaos Orb
 Show
 	ItemLevel >= 60
@@ -253,7 +253,7 @@ Show
 	SetFontSize 38
 	SetTextColor 255 255 119
 	SetBorderColor 255 255 119
-    SetBackgroundColor 50 50 0
+	SetBackgroundColor 50 50 0
 
 
 
@@ -313,9 +313,9 @@ Show
 Show
 	Class "Divination Card"
 	SetFontSize 37
-    SetTextColor 255 175 25
-    SetBorderColor 255 175 25
-    SetBackgroundColor 35 35 35
+	SetTextColor 255 175 25
+	SetBorderColor 255 175 25
+	SetBackgroundColor 35 35 35
 	PlayAlertSound 2 150
 
 
@@ -330,7 +330,6 @@ Show
 	SetBorderColor 170 158 130
 	SetBackgroundColor 255 255 255
 	PlayAlertSound 4 300
-
 #Rare Currency
 Show
 	Class "Currency"
@@ -385,7 +384,6 @@ Show
 	SetFontSize 36
 	SetTextColor 200 200 100
 	SetBorderColor 180 180 180
-
 #Magic items to craft
 #Show
 #    Rarity Magic
