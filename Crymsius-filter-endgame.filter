@@ -92,8 +92,8 @@ Show
 #Tiers 12-16 (red)
 #Maps + Quality
 Show
-	Class "Maps"
-	BaseType "Core"
+    Class "Maps"
+    DropLevel >= 79
 	Quality > 0
 	SetFontSize 37
 	SetTextColor 0 220 0
@@ -101,8 +101,8 @@ Show
 	SetBackgroundColor 70 20 0
 #Maps
 Show
-	Class "Maps"
-	BaseType "Core"
+    Class "Maps"
+    DropLevel >= 78
 	SetFontSize 37
 	SetTextColor 0 220 0
 	SetBorderColor 0 255 0
@@ -110,8 +110,8 @@ Show
 #Tier 7-11 (yellow)
 #Maps + Quality
 Show
-	Class "Maps"
-	BaseType "Crypt"
+    Class "Maps"
+    DropLevel >= 74
 	Quality > 0
 	SetFontSize 37
 	SetTextColor 0 220 0
@@ -120,15 +120,16 @@ Show
 #Maps
 Show
 	Class "Maps"
-	BaseType "Strand"
-	SetFontSize 37
+    DropLevel >= 74
+    SetFontSize 37
 	SetTextColor 0 220 0
 	SetBorderColor 0 220 0
 	SetBackgroundColor 100 100 0
 #Tier 1-6 (grey)
 #Maps + Quality
 Show
-	Class "Strand"
+    Class "Maps"
+    DropLevel < 74
 	Quality > 0
 	SetFontSize 37
 	SetTextColor 0 220 0
@@ -137,6 +138,7 @@ Show
 #Maps
 Show
 	Class "Maps"
+    DropLevel < 74
 	SetFontSize 37
 	SetTextColor 0 220 0
 	SetBorderColor 0 220 0
