@@ -30,7 +30,16 @@
 
 
 ###Temporary League
-##Prophecy
+##Essence League
+#Essences
+Show
+	Class "Currency"
+	BaseType "Essence"
+	SetFontSize 37
+	SetTextColor 10 25 90
+	SetBorderColor 10 25 90
+	SetBackgroundColor 180 195 245
+##Prophecy League
 #Silver Coins
 Show
 	Class "Currency"
@@ -204,24 +213,24 @@ Show
 
 
 
-###Normal, Magic & Rare items with particular bases such as Sacrificial Gard
+###Normal, Magic & Rare items with particular bases such as Sacrificial Garb
 Show
 	Rarity Rare
-	BaseType "Sacrificial Garb"
+	BaseType "Sacrificial Garb" "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
 	SetBackgroundColor 200 200 100
 	SetFontSize 40
 	SetTextColor 250 250 50
 	SetBorderColor 250 250 50
 Show
 	Rarity Magic
-	BaseType "Sacrificial Garb"
+	BaseType "Sacrificial Garb" "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
 	SetBackgroundColor 200 200 100
 	SetFontSize 40
 	SetTextColor 0 0 255
 	SetBorderColor 0 0 255
 Show
 	Rarity Normal
-	BaseType "Sacrificial Garb"
+	BaseType "Sacrificial Garb" "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
 	SetBackgroundColor 200 200 100
 	SetFontSize 40
 	SetTextColor 20 20 20 255
