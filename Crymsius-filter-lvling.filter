@@ -37,19 +37,19 @@ Show
 #Silver Coins
 Show
 	Class "Currency"
-    BaseType "Silver Coin"
+	BaseType "Silver Coin"
 	SetFontSize 37
-    SetTextColor 128 0 200
-    SetBorderColor 128 0 200
-    SetBackgroundColor 192 192 192
+	SetTextColor 128 0 200
+	SetBorderColor 128 0 200
+	SetBackgroundColor 192 192 192
 #Prophecies
 Show
 	Class "Currency"
-    BaseType "Prophecy"
+	BaseType "Prophecy"
 	SetFontSize 37
-    SetTextColor 192 192 192
-    SetBorderColor 192 192 192
-    SetBackgroundColor 128 0 200
+	SetTextColor 192 192 192
+	SetBorderColor 192 192 192
+	SetBackgroundColor 128 0 200
 
 
 #Les trucs trop rares
@@ -58,17 +58,17 @@ Show
 	SetFontSize 60
 	SetTextColor 255 0 0
 	SetBorderColor 0 102 0
-    SetBackgroundColor 255 192 203
-    PlayAlertSound 4 300
+	SetBackgroundColor 255 192 203
+	PlayAlertSound 4 300
 
 #Unique
 Show
 	Rarity Unique
 	SetFontSize 50
-    SetBorderColor 175 96 37
-    SetBackgroundColor 78 43 16
-    SetTextColor 175 96 37
-    PlayAlertSound 6 100
+	SetBorderColor 175 96 37
+	SetBackgroundColor 78 43 16
+	SetTextColor 175 96 37
+	PlayAlertSound 6 100
 
 
 
@@ -87,8 +87,8 @@ Show
 	Sockets = 6
 	SetFontSize 45
 	SetBorderColor 135 135 135
-    SetBackgroundColor  0 0 0 
-   	PlayAlertSound 3 100
+	SetBackgroundColor  0 0 0 
+	PlayAlertSound 3 100
 #Socket5L
 Show
 	LinkedSockets = 5
@@ -179,6 +179,8 @@ Show
 	SetBackgroundColor 10 10 40
 
 
+
+#Magic
 ###Chisel Recipe
 #Rare with 17%+ quality
 Show
@@ -239,23 +241,23 @@ Show
 #Recipe Regal Orb
 Show
 	ItemLevel >= 75
-    Rarity Rare
-    SetFontSize 39
+	Rarity Rare
+	SetFontSize 39
 	SetTextColor 100 100 0
 	SetBorderColor 100 100 0
 	SetBackgroundColor 255 255 119
 #Recipe Chaos Orb
 Show
-    ItemLevel >= 60
-    Rarity Rare
+	ItemLevel >= 60
+	Rarity Rare
 	SetFontSize 39
 	SetTextColor 100 100 0
 	SetBorderColor 100 100 0
-    SetBackgroundColor 255 255 119
+	SetBackgroundColor 255 255 119
 #Recipe Chance Orb
 Show
 	Rarity Rare
-    SetFontSize 33
+	SetFontSize 33
 	SetBorderColor 255 255 119
 	SetBackgroundColor 50 50 0
 
@@ -267,8 +269,8 @@ Show
 	Class "Gems"
 	BaseType "Empower" "Enhance" "Enlighten" "Portal" "Detonate Mines" "Vaal" "Added Chaos Damage"
 	SetFontSize 50
-    SetBackgroundColor 70 20 0
-    SetBorderColor 27 162 155
+	SetBackgroundColor 70 20 0
+	SetBorderColor 27 162 155
 #Quality Gems
 Show
 	Class "Gems"
@@ -298,8 +300,8 @@ Show
 	SetBorderColor 128 179 255
 #Other flasks
 Show
-    Class "Flasks"
-    SetFontSize 30
+	Class "Flasks"
+	SetFontSize 30
 
 
 
@@ -307,9 +309,9 @@ Show
 Show
 	Class "Quest"
 	SetFontSize 40
-    SetTextColor 0 0 0
-    SetBackgroundColor 74 230 58
-    SetBorderColor 0 0 0
+	SetTextColor 0 0 0
+	SetBackgroundColor 74 230 58
+	SetBorderColor 0 0 0
 
 
 
@@ -332,21 +334,21 @@ Show
 	SetFontSize 43
 	SetTextColor 250 20 0
 	SetBorderColor 170 158 130
-	PlayAlertSound 9 180
+	PlayAlertSound 8 200
 Show
 	Class "Currency"
 	BaseType "Journeyman Cartographer's Sextant"    
 	SetFontSize 43
 	SetTextColor 255 255 0
 	SetBorderColor 170 158 130
-	PlayAlertSound 9 180
+	PlayAlertSound 8 200
 Show
 	Class "Currency"
 	BaseType "Apprentice Cartographer's Sextant"    
 	SetFontSize 43
 	SetTextColor 220 220 220
 	SetBorderColor 170 158 130
-	PlayAlertSound 9 180
+	PlayAlertSound 8 200
 #Very Rare Currency
 Show
 	Class "Currency"
@@ -373,7 +375,7 @@ Show
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
 	SetBackgroundColor 0 0 60
-	PlayAlertSound 9 180
+	PlayAlertSound 7 180
 #Common Currency
 Show
 	Class "Currency"
@@ -381,7 +383,7 @@ Show
 	SetFontSize 37
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
-	PlayAlertSound 7 150
+	PlayAlertSound 9 150
 #Scrolls
 Show
 	Class "Currency"
@@ -447,27 +449,32 @@ Show
 
 
 ##Low level stuff
+#4L
+Show
+	LinkedSockets = 4
+	SetFontSize 37
+	SetBorderColor 90 90 90
 #Normal
 Show
 	Rarity Normal
-    SetBackgroundColor 20 20 20 200
-    SetFontSize 33
+	SetBackgroundColor 20 20 20 200
+	SetFontSize 33
 	SetTextColor 180 180 180
 #Magic
 Show
 	Rarity Magic
-    SetBackgroundColor 0 0 60 240
-    SetFontSize 33
-    SetBorderColor 140 140 255
+	SetBackgroundColor 0 0 60 240
+	SetFontSize 33
+	SetBorderColor 140 140 255
 	SetTextColor 140 140 255
-    SetBackgroundColor 0 0 60 
+	SetBackgroundColor 0 0 60 
 #Rare
 Show
 	Rarity Rare
-    SetBackgroundColor 100 100 0 200
-    SetFontSize 33
-    SetBorderColor 255 255 119
-    SetTextColor 255 255 119
+	SetBackgroundColor 100 100 0 200
+	SetFontSize 33
+	SetBorderColor 255 255 119
+	SetTextColor 255 255 119
 
 
 

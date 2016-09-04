@@ -330,21 +330,21 @@ Show
 	SetFontSize 43
 	SetTextColor 250 20 0
 	SetBorderColor 170 158 130
-	PlayAlertSound 9 180
+	PlayAlertSound 8 200
 Show
 	Class "Currency"
 	BaseType "Journeyman Cartographer's Sextant"    
 	SetFontSize 43
 	SetTextColor 255 255 0
 	SetBorderColor 170 158 130
-	PlayAlertSound 9 180
+	PlayAlertSound 8 200
 Show
 	Class "Currency"
 	BaseType "Apprentice Cartographer's Sextant"    
 	SetFontSize 43
 	SetTextColor 220 220 220
 	SetBorderColor 170 158 130
-	PlayAlertSound 9 180
+	PlayAlertSound 8 200
 #Very Rare Currency
 Show
 	Class "Currency"
@@ -371,7 +371,7 @@ Show
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
 	SetBackgroundColor 0 0 60
-	PlayAlertSound 9 180
+	PlayAlertSound 7 180
 #Common Currency
 Show
 	Class "Currency"
@@ -379,7 +379,7 @@ Show
 	SetFontSize 37
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
-	PlayAlertSound 7 150
+	PlayAlertSound 9 150
 #Scrolls
 Show
 	Class "Currency"
