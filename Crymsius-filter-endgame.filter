@@ -1,7 +1,13 @@
 ###Crymsius-filter-endgame
-###Version 1.4.0
+###Version 1.4.2
 #
-##Notes :
+#Notes (1.4.2)
+#Add sounds to map drops
+#
+##Notes (1.4.1)
+#Switch sound between Uncommon and common currencies
+#
+##Notes (1.4.0):
 #Updates for Essences and Atlas of World currencies
 #Rework of maps, currencies,...
 #Added good base item highlight for rares
@@ -110,6 +116,7 @@ Show
 	SetTextColor 247 44 0
 	SetBorderColor 128 179 255
 	SetBackgroundColor 50 50 50
+	PlayAlertSound 2 250
 #Maps
 Show
 	Class "Maps"
@@ -118,6 +125,7 @@ Show
 	SetTextColor 250 20 0
 	SetBorderColor 220 220 220
 	SetBackgroundColor 50 50 50
+	PlayAlertSound 2 250
 #Tier 7-11 (yellow)
 #Maps + Quality
 Show
@@ -128,6 +136,7 @@ Show
 	SetTextColor 0 220 0
 	SetBorderColor 128 179 255
 	SetBackgroundColor 90 90 0
+	PlayAlertSound 2 200
 #Maps
 Show
 	Class "Maps"
@@ -136,6 +145,7 @@ Show
 	SetTextColor 255 255 0
 	SetBorderColor 220 220 220
 	SetBackgroundColor 50 50 50
+	PlayAlertSound 2 200
 #Tier 1-6 (grey)
 #Maps + Quality
 Show
@@ -146,6 +156,7 @@ Show
 	SetTextColor 220 220 220
 	SetBorderColor 128 179 255
 	SetBackgroundColor 50 50 50
+	PlayAlertSound 2 150
 #Maps
 Show
 	Class "Maps"
@@ -154,12 +165,14 @@ Show
 	SetTextColor 220 220 220
 	SetBorderColor 220 220 220
 	SetBackgroundColor 50 50 50
+	PlayAlertSound 2 150
 #Map Fragments
 Show
 	Class "Map Fragments"
 	SetFontSize 42
 	SetTextColor 200 20 0
 	SetBorderColor 255 255 255
+	PlayAlertSound 2 180
 
 
 
