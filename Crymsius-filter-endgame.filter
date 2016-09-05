@@ -226,22 +226,22 @@ Show
 ###Normal, Magic & Rare items with particular bases such as Sacrificial Gard
 Show
 	Rarity Rare
-	BaseType "Sacrificial Garb"
-	SetBackgroundColor 200 200 100
+	BaseType "Sacrificial Garb" "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+	SetBackgroundColor 0 180 0
 	SetFontSize 40
 	SetTextColor 250 250 50
 	SetBorderColor 250 250 50
 Show
 	Rarity Magic
-	BaseType "Sacrificial Garb"
-	SetBackgroundColor 200 200 100
+	BaseType "Sacrificial Garb" "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+	SetBackgroundColor 0 180 0
 	SetFontSize 40
 	SetTextColor 0 0 255
 	SetBorderColor 0 0 255
 Show
 	Rarity Normal
-	BaseType "Sacrificial Garb"
-	SetBackgroundColor 200 200 100
+	BaseType "Sacrificial Garb" "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+	SetBackgroundColor 0 180 0
 	SetFontSize 40
 	SetTextColor 20 20 20 255
 	SetBorderColor 20 20 20
@@ -434,8 +434,8 @@ Show
 	BaseType "Occultist's Vestment" "Deicide Mask" "Prophecy Wand" "Sorcerer Boots"
 	SetBackgroundColor 20 20 20 255
 	SetFontSize 36
-	SetTextColor 200 200 100
-	SetBorderColor 180 180 180
+	SetTextColor 0 180 0
+	SetBorderColor 0 180 0
 
 #Magic items to craft
 #Show
