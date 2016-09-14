@@ -111,7 +111,7 @@ Show
 #Maps + Quality
 Show
 	Class "Maps"
-	DropLevel >= 79
+	DropLevel >= 78
 	Quality > 0
 	SetFontSize 37
 	SetTextColor 247 44 0
@@ -131,7 +131,7 @@ Show
 #Maps + Quality
 Show
 	Class "Maps"
-	DropLevel >= 74
+	DropLevel >= 73
 	Quality > 0
 	SetFontSize 39
 	SetTextColor 0 220 0
@@ -141,7 +141,7 @@ Show
 #Maps
 Show
 	Class "Maps"
-	DropLevel >= 74
+	DropLevel >= 73
 	SetFontSize 37
 	SetTextColor 255 255 0
 	SetBorderColor 220 220 220
@@ -151,7 +151,7 @@ Show
 #Maps + Quality
 Show
 	Class "Maps"
-	DropLevel < 74
+	DropLevel < 73
 	Quality > 0
 	SetFontSize 37
 	SetTextColor 220 220 220
@@ -161,7 +161,7 @@ Show
 #Maps
 Show
 	Class "Maps"
-	DropLevel < 74
+	DropLevel < 73
 	SetFontSize 37
 	SetTextColor 220 220 220
 	SetBorderColor 220 220 220
