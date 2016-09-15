@@ -112,8 +112,8 @@ Show
 	Class "Maps"
 	DropLevel >= 78
 	Quality > 0
-	SetFontSize 37
-	SetTextColor 247 44 0
+	SetFontSize 41
+	SetTextColor 250 20 0
 	SetBorderColor 128 179 255
 	SetBackgroundColor 50 50 50
 	PlayAlertSound 2 250
@@ -133,15 +133,15 @@ Show
 	DropLevel >= 73
 	Quality > 0
 	SetFontSize 39
-	SetTextColor 0 220 0
+	SetTextColor 255 255 0
 	SetBorderColor 128 179 255
-	SetBackgroundColor 90 90 0
+	SetBackgroundColor 50 50 50
 	PlayAlertSound 2 200
 #Maps
 Show
 	Class "Maps"
 	DropLevel >= 73
-	SetFontSize 37
+	SetFontSize 39
 	SetTextColor 255 255 0
 	SetBorderColor 220 220 220
 	SetBackgroundColor 50 50 50
