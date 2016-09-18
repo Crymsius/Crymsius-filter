@@ -1,5 +1,10 @@
 ###Crymsius-filter-leveling
-###Version 1.4.2
+###Version 1.4.4
+#
+#Notes (1.4.4)
+#Changes to sextants colors
+#Add Perandus coins colors
+#Several bug fixes
 #
 #Notes (1.4.2)
 #Add sounds to map drops
@@ -58,9 +63,17 @@ Show
 	SetTextColor 192 192 192
 	SetBorderColor 192 192 192
 	SetBackgroundColor 128 0 200
+##Perandus League
+#Perandus Coins
+Show
+	Class "Currency"
+	BaseType "Perandus Coin"
+	SetFontSize 37
+	SetTextColor 255 215 0
+	SetBorderColor 255 215 0
+	SetBackgroundColor 100 70 0
 
-
-#Les trucs trop rares
+#Very Rare Stuff
 Show
 	BaseType "Fishing Rod" "Albino Rhoa Feather" "Mirror of Kalandra"
 	SetFontSize 60
@@ -69,7 +82,7 @@ Show
 	SetBackgroundColor 255 192 203
 	PlayAlertSound 4 300
 
-#Unique
+#Uniques
 Show
 	Rarity Unique
 	SetFontSize 50
@@ -348,22 +361,25 @@ Show
 	Class "Currency"
 	BaseType "Master Cartographer's Sextant"
 	SetFontSize 43
-	SetTextColor 250 20 0
-	SetBorderColor 170 158 130
+	SetTextColor 170 158 130
+	SetBorderColor 250 20 0
+	SetBackgroundColor 50 50 50
 	PlayAlertSound 8 200
 Show
 	Class "Currency"
 	BaseType "Journeyman Cartographer's Sextant"    
 	SetFontSize 43
-	SetTextColor 255 255 0
-	SetBorderColor 170 158 130
+	SetTextColor 170 158 130
+	SetBorderColor 255 255 0
+	SetBackgroundColor 50 50 50
 	PlayAlertSound 8 200
 Show
 	Class "Currency"
 	BaseType "Apprentice Cartographer's Sextant"    
 	SetFontSize 43
-	SetTextColor 220 220 220
-	SetBorderColor 170 158 130
+	SetTextColor 170 158 130
+	SetBorderColor 220 220 220
+	SetBackgroundColor 50 50 50
 	PlayAlertSound 8 200
 #Very Rare Currency
 Show
@@ -510,5 +526,5 @@ Show
 
 
 
-#Rest reste
+#Other stuff missing
 Show

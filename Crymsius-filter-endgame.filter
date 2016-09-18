@@ -1,5 +1,10 @@
 ###Crymsius-filter-endgame
-###Version 1.4.2
+###Version 1.4.4
+#
+#Notes (1.4.4)
+#Changes to sextants colors
+#Add Perandus coins colors
+#Several bug fixes#
 #
 #Notes (1.4.2)
 #Add sounds to map drops
@@ -56,10 +61,19 @@ Show
 	SetTextColor 192 192 192
 	SetBorderColor 192 192 192
 	SetBackgroundColor 128 0 200
+##Perandus League
+#Perandus Coins
+Show
+	Class "Currency"
+	BaseType "Perandus Coin"
+	SetFontSize 37
+	SetTextColor 255 215 0
+	SetBorderColor 255 215 0
+	SetBackgroundColor 100 70 0
 
 
 
-#Very rare stuff
+#Very Rare Stuff
 Show
 	BaseType "Fishing Rod" "Albino Rhoa Feather"
 	SetFontSize 60
@@ -251,7 +265,7 @@ Show
 #Recipe Regal Orb
 Show
 	ItemLevel >= 75
-	BaseType "Void Sceptre" "Opal Sceptre" "Profane Wand" "Prophecy Wand" "Opal Wand" "Sambar Sceptre" "Imbued Wand" "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Saintly Chainmail" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titan Gauntlets" "Slink Gloves" "Eternal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots" "Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash" "Lion Sword" "Vaal Greatsword" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Platinum Kris" "Demon Dagger" "Imperial Skean" "Vaal Hatchet" "Runic Hatchet" "Behemoth Mace" "Eternal Sword" "Tiger Hook" "Eclipse Staff" "Maelstr" "Judgement Staff" "Jewelled Foil" "Dragoon Sword" "Sai"
+	BaseType "Void Sceptre" "Opal Sceptre" "Profane Wand" "Prophecy Wand" "Opal Wand" "Sambar Sceptre" "Imbued Wand" "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Saintly Chainmail" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titan Gauntlets" "Slink Gloves" "Eternal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots" "Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather Belt" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash" "Lion Sword" "Vaal Greatsword" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Platinum Kris" "Demon Dagger" "Imperial Skean" "Vaal Hatchet" "Runic Hatchet" "Behemoth Mace" "Eternal Sword" "Tiger Hook" "Eclipse Staff" "Maelstr" "Judgement Staff" "Jewelled Foil" "Dragoon Sword" "Sai"
 	Rarity Rare
 	SetFontSize 41
 	SetTextColor 100 100 0
@@ -341,22 +355,25 @@ Show
 	Class "Currency"
 	BaseType "Master Cartographer's Sextant"
 	SetFontSize 43
-	SetTextColor 250 20 0
-	SetBorderColor 170 158 130
+	SetTextColor 170 158 130
+	SetBorderColor 250 20 0
+	SetBackgroundColor 50 50 50
 	PlayAlertSound 8 200
 Show
 	Class "Currency"
 	BaseType "Journeyman Cartographer's Sextant"    
 	SetFontSize 43
-	SetTextColor 255 255 0
-	SetBorderColor 170 158 130
+	SetTextColor 170 158 130
+	SetBorderColor 255 255 0
+	SetBackgroundColor 50 50 50
 	PlayAlertSound 8 200
 Show
 	Class "Currency"
 	BaseType "Apprentice Cartographer's Sextant"    
 	SetFontSize 43
-	SetTextColor 220 220 220
-	SetBorderColor 170 158 130
+	SetTextColor 170 158 130
+	SetBorderColor 220 220 220
+	SetBackgroundColor 50 50 50
 	PlayAlertSound 8 200
 #Very Rare Currency
 Show
