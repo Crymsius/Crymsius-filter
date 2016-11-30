@@ -1,5 +1,8 @@
 ###Crymsius-filter-leveling
-###Version 1.4.4
+###Version 1.5.0
+#
+#Notes (1.5.0)
+#Added Breach currencies + breach rings
 #
 #Notes (1.4.4)
 #Changes to sextants colors
@@ -29,6 +32,55 @@
 # 
 
 ###Temporary League
+#
+##Breach League
+#Splinters
+Show
+    Class "Currency"
+    BaseType "Splinter"
+    SetFontSize 39
+    SetTextColor 170 158 130
+    SetBorderColor 200 0 0
+    SetBackgroundColor 130 0 200
+#Blessings
+Show
+    Class "Currency"
+    BaseType "Blessing"
+    SetFontSize 42
+    SetTextColor 170 158 130
+    SetBorderColor 130 0 200
+    SetBackgroundColor 200 0 0
+#Breachstone
+Show
+    Class "Map Fragments"
+    BaseType "Breachstone"
+    SetFontSize 42
+    SetTextColor 200 0 0
+    SetBorderColor 130 0 200
+    SetBackgroundColor 0 0 0
+#Breach Rings
+Show
+    Class "Ring"
+    BaseType "Breach Ring"
+    Rarity Normal
+    SetFontSize 42
+    SetBorderColor 200 0 0
+    SetBackgroundColor 130 0 200
+Show
+    Class "Ring"
+    BaseType "Breach Ring"
+    Rarity Magic
+    SetFontSize 42
+    SetBorderColor 200 0 0
+    SetBackgroundColor 130 0 200
+Show
+    Class "Ring"
+    BaseType "Breach Ring"
+    Rarity Rare
+    SetFontSize 42
+    SetTextColor 255 255 119
+    SetBorderColor 200 0 0
+    SetBackgroundColor 130 0 200
 ##Essence League
 #Essences
 Show
