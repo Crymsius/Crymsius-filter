@@ -42,6 +42,7 @@ Show
     SetTextColor 170 158 130
     SetBorderColor 200 0 0
     SetBackgroundColor 130 0 200
+    PlayAlertSound 7 180
 #Blessings
 Show
     Class "Currency"
@@ -60,27 +61,14 @@ Show
     SetBackgroundColor 0 0 0
 #Breach Rings
 Show
-    Class "Ring"
-    BaseType "Breach Ring"
-    Rarity Normal
-    SetFontSize 42
-    SetBorderColor 200 0 0
-    SetBackgroundColor 130 0 200
-Show
-    Class "Ring"
-    BaseType "Breach Ring"
-    Rarity Magic
-    SetFontSize 42
-    SetBorderColor 200 0 0
-    SetBackgroundColor 130 0 200
-Show
-    Class "Ring"
+    Class "Ring")
     BaseType "Breach Ring"
     Rarity Rare
     SetFontSize 42
     SetTextColor 255 255 119
     SetBorderColor 200 0 0
     SetBackgroundColor 130 0 200
+    PlayAlertSound 7 180
 ##Essence League
 #Essences
 Show
@@ -327,6 +315,15 @@ Show
 	SetTextColor 100 100 0
 	SetBorderColor 100 100 0
 	SetBackgroundColor 255 255 119
+#Recipe Chaos Orb - good base
+Show
+	BaseType "Void Sceptre" "Opal Sceptre" "Profane Wand" "Prophecy Wand" "Opal Wand" "Sambar Sceptre" "Imbued Wand" "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Saintly Chainmail" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titan Gauntlets" "Slink Gloves" "Eternal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots" "Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather Belt" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash" "Lion Sword" "Vaal Greatsword" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Platinum Kris" "Demon Dagger" "Imperial Skean" "Vaal Hatchet" "Runic Hatchet" "Behemoth Mace" "Eternal Sword" "Tiger Hook" "Eclipse Staff" "Maelstr" "Judgement Staff" "Jewelled Foil" "Dragoon Sword" "Sai"
+	ItemLevel >= 60
+	Rarity Rare
+	SetFontSize 40
+	SetTextColor 255 255 119
+	SetBorderColor 255 255 255
+	SetBackgroundColor 50 50 0
 #Recipe Chaos Orb
 Show
 	ItemLevel >= 60
@@ -396,14 +393,85 @@ Show
 
 
 
-#Divination Card
+#===============================================================================================================
+# [[1200]] Currency - PART 3 - Divination cards (yes the strange sorting is intended)
+#===============================================================================================================
+
+#------------------------------------
+#   [1201] Exceptions to prevent ident. mistakes
+#------------------------------------
+
 Show
-	Class "Divination Card"
-	SetFontSize 37
-	SetTextColor 255 175 25
-	SetBorderColor 255 175 25
-	SetBackgroundColor 35 35 35
+	Class "Divination"
+	BaseType "The Wolf's Shadow"
+	SetFontSize 38
+	SetTextColor 0 0 0
+	SetBorderColor 255 165 0
+	SetBackgroundColor 255 165 0 210
 	PlayAlertSound 2 150
+
+#------------------------------------
+#   [1202] T1 - Top tier cards
+#------------------------------------
+
+Show
+	Class "Divination"
+	BaseType "The Doctor" "The Fiend" "House of Mirrors" "Hunter's Reward" "Abandoned Wealth" "The Artist" "Bowyer's Dream" "The Brittle Emperor" "The Celestial Justicar" "The Dapper Prodigy" "The Dark Mage" "The Devastator" "The Dragon's Heart" "The Ethereal" "The Formless Sea" "Heterochromia" "The Hunger" "The Immortal" "The Last One Standing" "The Offering" "The Queen" "The Thaumaturgist" "Wealth and Power" "The Enlightened"
+	SetFontSize 45
+	SetTextColor  255 165 0				# TEXTCOLOR:	 Cosmetic: T1 Divination card
+	SetBorderColor  255 165 0			# BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
+	SetBackgroundColor 255 255 255 255	# BACKGROUND:	 T1 Global High Value Drop
+	PlayAlertSound 4 300				# DROPSOUND:	 T1 Drop
+
+#------------------------------------
+#   [1203] T2 - Great cards
+#------------------------------------
+
+Show
+	Class "Divination"
+	BaseType "The Cartographer" "The Chains that Bind" "Chaotic Disposition" "Emperor of Purity" "The Harvester" "The Hoarder" "The King's Heart" "Last Hope" "Mawr Blaidd" "The Penitent" "Pride Before the Fall" "The Scavenger" "The Sephirot" "The Valkyrie" "The Vast" "The Warlord" "The Wolf" "Stormcaller" "Earth Drinker" "The Surveyor" "The Void"
+	SetFontSize 44
+	SetTextColor 255 255 255			# TEXTCOLOR:	 Cosmetic: Black Text
+	SetBorderColor 255 255 255 255		# BORDERCOLOR:	 Crafting: T1
+	SetBackgroundColor 255 165 0 245	# BACKGROUND:	 T2 Divination
+	PlayAlertSound 8 200				# DROPSOUND:	 Value Drop: Currency, fragments
+
+#------------------------------------
+#   [1204] T3 - Decent cards
+#------------------------------------
+
+Show
+	Class "Divination"
+	BaseType "The Aesthete" "The Arena Champion" "The Avenger" "Blind Venture" "The Body" "Boundless Realms" "The Calling" "Coveted Possession" "The Cursed King" "The Encroaching Darkness" "The Fletcher" "Gemcutter's Promise" "The Gladiator" "Glimmer of Hope" "Grave Knowledge" "Hope" "Humility" "The Inventor" "Jack in the Box" "The Jester" "Lost Worlds" "Lucky Connections" "Lysah's Respite" "Merciless Armament" "Rats" "The Risk" "The Road to Power" "Scholar of the Seas" "The Soul" "The Spoiled Prince" "The Survivalist" "Time-Lost Relic" "Tranquillity" "The Tyrant" "The Union" "The Wind" "The Wrath" "Lucky Deck" "Treasure Hunter" "Vinia's Token" "Trial" "Dialla's Subjugation"
+	SetFontSize 40
+	SetTextColor 0 0 0 255				# TEXTCOLOR:	 Cosmetic: Black Text
+	SetBorderColor 255 255 255 255		# BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
+	SetBackgroundColor 255 165 0 235	# BACKGROUND:	 T3 Divination
+	PlayAlertSound 7 180				# DROPSOUND:	 Value Drop: Currency, fragments
+
+#------------------------------------
+#   [1205] T5 - Format trash tier cards... before
+#------------------------------------
+
+Show #%H3
+	Class "Divination"
+	BaseType "Carrion Crow" "Other Cheek" "Hermit" "King's Blade" "Prosperity" "Metalsmith's Gift"
+	SetFontSize 32
+	SetTextColor 0 0 0 255				# TEXTCOLOR:	 Cosmetic: Black Text
+	SetBorderColor 0 0 0				# BORDERCOLOR:	 Cosmetic: Neutral Highlight
+	SetBackgroundColor 255 165 0 180	# BACKGROUND:	 T5 Divination
+
+#------------------------------------
+#   [1206] T4 - ...showing the remaining cards
+#------------------------------------
+
+Show
+	Class "Divination"
+	SetFontSize 38
+	SetTextColor 0 0 0
+	SetBorderColor 255 165 0
+	SetBackgroundColor 255 165 0 210
+	PlayAlertSound 9 150
 
 
 
@@ -454,7 +522,7 @@ Show
 #Uncommon Currency
 Show
 	Class "Currency"
-	BaseType "Glassblower's Bauble"  "Jeweller's Orb" "Orb of Alchemy" "Orb of Chance" "Chromatic Orb"
+	BaseType "Orb of Alteration" "Glassblower's Bauble"  "Jeweller's Orb" "Orb of Alchemy" "Orb of Chance" "Chromatic Orb"
 	SetFontSize 37
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
@@ -463,7 +531,7 @@ Show
 #Common Currency
 Show
 	Class "Currency"
-	BaseType "Orb of Alteration" "Orb of Augmentation" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap"
+	BaseType "Orb of Augmentation" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap"
 	SetFontSize 37
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
