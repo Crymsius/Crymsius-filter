@@ -31,6 +31,18 @@
 ###Ce filtre est destiné à être utilisé pour des personnages d'un niveau inferieur au lvl 60.
 # 
 
+#Sound alerts :
+
+# 1 : 5L (will probably change)
+# 2 : Maps
+# 3 : 6 Sockets
+# 4 : Exalts and similar (T1)
+# 5 : 6L
+# 6 : Uniques
+# 7 : Chance orbs and similar (T3)
+# 8 : Chaos and similar (T2)
+# 9 : Armourer and similar (T4)
+
 ###Temporary League
 #
 ##Breach League
@@ -141,7 +153,7 @@ Show
 	SetTextColor 255 0 0
 	SetBackgroundColor 255 255 255
 	SetBorderColor 255 0 0
-	PlayAlertSound 2 300
+	PlayAlertSound 5 300
 
 #Socket 6
 Show
@@ -408,7 +420,7 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 255 165 0
 	SetBackgroundColor 255 165 0 210
-	PlayAlertSound 2 150
+	PlayAlertSound 9 150
 
 #------------------------------------
 #   [1202] T1 - Top tier cards
