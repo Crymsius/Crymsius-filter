@@ -1,5 +1,15 @@
 ###Crymsius-filter-leveling
-###Version 1.5.0
+###Version 1.7.0
+#
+#Notes (1.7.0)
+#Added Legacy League with LeagueStones
+#
+#Notes (1.6.0)
+#Added Tiers to div cards (+ new display color scheme)
+#Added Crafting bases (normal, magic + ilvl)
+#Small modification to breach rings
+#Added sound for splinter + rework sound for cards
+#Rework for atlas bases (2 tiers now)
 #
 #Notes (1.5.0)
 #Added Breach currencies + breach rings
@@ -45,43 +55,91 @@
 
 ###Temporary League
 #
-##Breach League
+#------------------------------------
+#    Legacy League
+#------------------------------------
+#Leaguestones
+Show
+	Class "Leaguestone"
+	Rarity Normal 
+	SetFontSize 37
+	SetTextColor 255 250 100 
+	SetBorderColor 255 255 119 
+	SetBackgroundColor 10 70 160
+	PlayAlertSound 8 180
+Show
+	Class "Leaguestone"
+	Rarity Magic 
+	SetFontSize 39
+	SetTextColor 255 250 100 
+	SetBorderColor 255 255 119 
+	SetBackgroundColor 10 70 160
+	PlayAlertSound 8 190
+Show
+	Class "Leaguestone"
+	Rarity Rare 
+	SetFontSize 41
+	SetTextColor 255 250 100 
+	SetBorderColor 255 255 119 
+	SetBackgroundColor 10 70 160
+	PlayAlertSound 8 200
+Show
+	Class "Leaguestone"
+	Rarity Unique 
+	SetFontSize 43
+	SetTextColor 255 250 100 
+	SetBorderColor 255 255 119 
+	SetBackgroundColor 10 70 160
+	PlayAlertSound 8 200
+Show
+	Class "Misc Map Items"
+	BaseType "Ancient Reliquary Key"
+	SetFontSize 45
+	SetTextColor 50 7 7
+	SetBorderColor 255 215 0
+	SetBackgroundColor 255 230 180
+	PlayAlertSound 4 200
+#------------------------------------
+#    Breach League
+#------------------------------------
 #Splinters
 Show
-    Class "Currency"
-    BaseType "Splinter"
-    SetFontSize 39
-    SetTextColor 170 158 130
-    SetBorderColor 200 0 0
-    SetBackgroundColor 130 0 200
-    PlayAlertSound 7 180
+	Class "Currency"
+	BaseType "Splinter"
+	SetFontSize 39
+	SetTextColor 170 158 130
+	SetBorderColor 200 0 0
+	SetBackgroundColor 130 0 200
+	PlayAlertSound 7 180
 #Blessings
 Show
-    Class "Currency"
-    BaseType "Blessing"
-    SetFontSize 42
-    SetTextColor 170 158 130
-    SetBorderColor 130 0 200
-    SetBackgroundColor 200 0 0
+	Class "Currency"
+	BaseType "Blessing"
+	SetFontSize 42
+	SetTextColor 170 158 130
+	SetBorderColor 130 0 200
+	SetBackgroundColor 200 0 0
 #Breachstone
 Show
-    Class "Map Fragments"
-    BaseType "Breachstone"
-    SetFontSize 42
-    SetTextColor 200 0 0
-    SetBorderColor 130 0 200
-    SetBackgroundColor 0 0 0
+	Class "Misc Map Items"
+	BaseType "Breachstone"
+	SetFontSize 42
+	SetTextColor 200 0 0
+	SetBorderColor 130 0 200
+	SetBackgroundColor 0 0 0
 #Breach Rings
 Show
-    Class "Ring"
-    BaseType "Breach Ring"
-    Rarity Rare
-    SetFontSize 42
-    SetTextColor 255 255 119
-    SetBorderColor 200 0 0
-    SetBackgroundColor 130 0 200
-    PlayAlertSound 7 180
-##Essence League
+	Class "Ring"
+	BaseType "Breach Ring"
+	Rarity Rare
+	SetFontSize 42
+	SetTextColor 255 255 119
+	SetBorderColor 200 0 0
+	SetBackgroundColor 130 0 200
+	PlayAlertSound 7 180
+#------------------------------------
+#    Essence League
+#------------------------------------
 #Essences
 Show
 	Class "Currency"
@@ -98,7 +156,9 @@ Show
 	SetTextColor 250 20 0
 	SetBorderColor 250 20 0
 	SetBackgroundColor 180 195 245 
-##Prophecy League
+#------------------------------------
+#    Prophecy League
+#------------------------------------
 #Silver Coins
 Show
 	Class "Currency"
@@ -115,7 +175,9 @@ Show
 	SetTextColor 192 192 192
 	SetBorderColor 192 192 192
 	SetBackgroundColor 128 0 200
-##Perandus League
+#------------------------------------
+#    Perandus League
+#------------------------------------
 #Perandus Coins
 Show
 	Class "Currency"
@@ -124,7 +186,20 @@ Show
 	SetTextColor 255 215 0
 	SetBorderColor 255 215 0
 	SetBackgroundColor 100 70 0
+#------------------------------------
+#    Talismans
+#------------------------------------
+Show
+	BaseType "Talisman"
+	SetFontSize 40
+	SetBorderColor 255 192 203
+	SetBackgroundColor 200 100 180
+	SetTextColor 255 192 203
+	PlayAlertSound 2 300
 
+#------------------------------------
+#    Rare, Uniques, and 6-5L
+#------------------------------------
 #Very Rare Stuff
 Show
 	BaseType "Fishing Rod" "Albino Rhoa Feather" "Mirror of Kalandra"
@@ -133,6 +208,8 @@ Show
 	SetBorderColor 0 102 0
 	SetBackgroundColor 255 192 203
 	PlayAlertSound 4 300
+
+
 
 #Uniques
 Show

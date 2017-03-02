@@ -1,6 +1,10 @@
 ###Crymsius-filter-endgame
-###Version 1.6.0
-#Notes(1.6.0)
+###Version 1.7.0
+#
+#Notes (1.7.0)
+#Added Legacy League with LeagueStones
+#
+#Notes (1.6.0)
 #Added Tiers to div cards (+ new display color scheme)
 #Added Crafting bases (normal, magic + ilvl)
 #Small modification to breach rings
@@ -49,7 +53,53 @@
 
 ###Temporary League
 #
-##Breach League
+#------------------------------------
+#    Legacy League
+#------------------------------------
+#Leaguestones
+Show
+	Class "Leaguestone"
+	Rarity Normal 
+	SetFontSize 37
+	SetTextColor 255 250 100 
+	SetBorderColor 255 255 119 
+	SetBackgroundColor 10 70 160
+	PlayAlertSound 8 180
+Show
+	Class "Leaguestone"
+	Rarity Magic 
+	SetFontSize 39
+	SetTextColor 255 250 100 
+	SetBorderColor 255 255 119 
+	SetBackgroundColor 10 70 160
+	PlayAlertSound 8 190
+Show
+	Class "Leaguestone"
+	Rarity Rare 
+	SetFontSize 41
+	SetTextColor 255 250 100 
+	SetBorderColor 255 255 119 
+	SetBackgroundColor 10 70 160
+	PlayAlertSound 8 200
+Show
+	Class "Leaguestone"
+	Rarity Unique 
+	SetFontSize 43
+	SetTextColor 255 250 100 
+	SetBorderColor 255 255 119 
+	SetBackgroundColor 10 70 160
+	PlayAlertSound 8 200
+Show
+	Class "Misc Map Items"
+	BaseType "Ancient Reliquary Key"
+	SetFontSize 45
+	SetTextColor 50 7 7
+	SetBorderColor 255 215 0
+	SetBackgroundColor 255 230 180
+	PlayAlertSound 4 200
+#------------------------------------
+#    Breach League
+#------------------------------------
 #Splinters
 Show
 	Class "Currency"
@@ -69,7 +119,7 @@ Show
 	SetBackgroundColor 200 0 0
 #Breachstone
 Show
-	Class "Map Fragments"
+	Class "Misc Map Items"
 	BaseType "Breachstone"
 	SetFontSize 42
 	SetTextColor 200 0 0
@@ -85,7 +135,9 @@ Show
 	SetBorderColor 200 0 0
 	SetBackgroundColor 130 0 200
 	PlayAlertSound 7 180
-##Essence League
+#------------------------------------
+#    Essence League
+#------------------------------------
 #Essences
 Show
 	Class "Currency"
@@ -102,7 +154,9 @@ Show
 	SetTextColor 250 20 0
 	SetBorderColor 250 20 0
 	SetBackgroundColor 180 195 245 
-##Prophecy League
+#------------------------------------
+#    Prophecy League
+#------------------------------------
 #Silver Coins
 Show
 	Class "Currency"
@@ -119,7 +173,9 @@ Show
 	SetTextColor 192 192 192
 	SetBorderColor 192 192 192
 	SetBackgroundColor 128 0 200
-##Perandus League
+#------------------------------------
+#    Perandus League
+#------------------------------------
 #Perandus Coins
 Show
 	Class "Currency"
@@ -138,7 +194,6 @@ Show
 	SetBackgroundColor 200 100 180
 	SetTextColor 255 192 203
 	PlayAlertSound 2 300
-
 #------------------------------------
 #    Warband items
 #------------------------------------
@@ -167,6 +222,9 @@ Show
 	SetBorderColor 129 15 213 200 # BORDERCOLOR: Warband Item
 	SetBackgroundColor 200 100 220
 
+#------------------------------------
+#    Rare, Uniques, and 6-5L
+#------------------------------------
 #Very Rare Stuff
 Show
 	BaseType "Fishing Rod" "Albino Rhoa Feather"
@@ -215,16 +273,6 @@ Show
 
 ###Maps
 #Tiers 12-16 (red)
-#Maps + Quality
-Show
-	Class "Maps"
-	DropLevel >= 78
-	Quality > 0
-	SetFontSize 41
-	SetTextColor 250 20 0
-	SetBorderColor 128 179 255
-	SetBackgroundColor 50 50 50
-	PlayAlertSound 2 250
 #Maps
 Show
 	Class "Maps"
@@ -235,16 +283,6 @@ Show
 	SetBackgroundColor 50 50 50
 	PlayAlertSound 2 250
 #Tier 7-11 (yellow)
-#Maps + Quality
-Show
-	Class "Maps"
-	DropLevel >= 73
-	Quality > 0
-	SetFontSize 39
-	SetTextColor 255 255 0
-	SetBorderColor 128 179 255
-	SetBackgroundColor 50 50 50
-	PlayAlertSound 2 200
 #Maps
 Show
 	Class "Maps"
@@ -255,16 +293,6 @@ Show
 	SetBackgroundColor 50 50 50
 	PlayAlertSound 2 200
 #Tier 1-6 (grey)
-#Maps + Quality
-Show
-	Class "Maps"
-	DropLevel < 73
-	Quality > 0
-	SetFontSize 37
-	SetTextColor 220 220 220
-	SetBorderColor 128 179 255
-	SetBackgroundColor 50 50 50
-	PlayAlertSound 2 150
 #Maps
 Show
 	Class "Maps"
@@ -673,8 +701,8 @@ Show #$crafting, trinkets, regal %D2
 	Rarity Normal
 	ItemLevel >= 75
 	SetFontSize 34
- 	SetTextColor 0 180 0
-    SetBorderColor 0 180 0 150         # BORDERCOLOR:	 Crafting: Regal trinkets
+	SetTextColor 0 180 0
+	SetBorderColor 0 180 0 150         # BORDERCOLOR:	 Crafting: Regal trinkets
 
 Show #$crafting, trinkets, regal %D1
 	Class Rings Amulet Belts
@@ -683,7 +711,7 @@ Show #$crafting, trinkets, regal %D1
 	ItemLevel >= 75
 	SetFontSize 32
 	SetTextColor 0 180 0
-    SetBorderColor 0 180 0 150         # BORDERCOLOR:	 Crafting: Regal trinkets
+	SetBorderColor 0 180 0 150         # BORDERCOLOR:	 Crafting: Regal trinkets
 
 Show #$crafting, trinkets, chaos %D1
 	Class Rings Amulet Belts
