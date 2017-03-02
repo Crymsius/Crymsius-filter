@@ -102,6 +102,15 @@ Show
 #------------------------------------
 #    Breach League
 #------------------------------------
+#Splinters of Chayula
+Show
+	Class "Currency"
+	BaseType "Splinter of Chayula"
+	SetFontSize 39
+	SetTextColor 170 158 130
+	SetBorderColor 200 0 0
+	SetBackgroundColor 130 0 200
+	PlayAlertSound 8 190
 #Splinters
 Show
 	Class "Currency"
