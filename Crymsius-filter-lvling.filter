@@ -1,5 +1,8 @@
 ###Crymsius-filter-leveling
-###Version 1.7.0
+###Version 1.7.1
+#
+#Notes (1.7.1)
+#Added Eternal Orb in currencies because legacy league
 #
 #Notes (1.7.0)
 #Added Legacy League with LeagueStones
@@ -602,7 +605,7 @@ Show
 #Very Rare Currency
 Show
 	Class "Currency"
-	BaseType "Mirror of Kalandra" "Divine Orb" "Exalted Orb"
+	BaseType "Mirror of Kalandra" "Divine Orb" "Exalted Orb" "Eternal Orb"
 	SetFontSize 45
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
