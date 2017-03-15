@@ -95,13 +95,31 @@ Show
 	SetTextColor 100 100 0
 	SetBorderColor 255 255 255
 	SetBackgroundColor 255 255 119
-#Rare ilvl60+ Corrupted
+#Rare ilvl75+ Corrupted
 Show
-	ItemLevel >= 60
+	ItemLevel >= 75
+	Corrupted True
 	Rarity Rare
 	SetFontSize 45
 	SetTextColor 100 100 0
 	SetBorderColor 250 20 0
+	SetBackgroundColor 255 255 119
+#Rare ilvl75+ identified
+Show
+	ItemLevel >= 60
+	Identified True
+	Rarity Rare
+	SetFontSize 45
+	SetTextColor 100 100 0
+	SetBorderColor 255 255 255
+	SetBackgroundColor 255 255 119
+#Other ilvl 75+
+Hide
+	ItemLevel >= 75
+	Rarity Rare
+	SetFontSize 38
+	SetTextColor 100 100 0
+	SetBorderColor 100 100 0
 	SetBackgroundColor 255 255 119
 #Rare ilvl 60-75 good base
 Show
@@ -112,21 +130,31 @@ Show
 	SetTextColor 255 255 119
 	SetBorderColor 255 255 255
 	SetBackgroundColor 50 50 0
-#Rare ilvl60+ Corrupted
+#Rare ilvl60-75 Corrupted
 Show
 	ItemLevel >= 60
+	Corrupted True
 	Rarity Rare
 	SetFontSize 38
 	SetTextColor 255 255 119
 	SetBorderColor 250 20 0
 	SetBackgroundColor 50 50 0
-#Rare ilvl60+ identified
+#Rare ilvl60-75 identified
 Show
+	ItemLevel >= 60
+	Identified True
+	Rarity Rare
+	SetFontSize 38
+	SetTextColor 255 255 119
+	SetBorderColor 255 255 255
+	SetBackgroundColor 50 50 0
+#Other ilvl 60-75
+Hide
 	ItemLevel >= 60
 	Rarity Rare
 	SetFontSize 38
 	SetTextColor 255 255 119
-	SetBorderColor 250 20 0
+	SetBorderColor 255 255 119
 	SetBackgroundColor 50 50 0
 
 #------------------------------------
