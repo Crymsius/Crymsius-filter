@@ -3,6 +3,7 @@
 #Notes (1.7.2)
 #Removed unused rules relative to leaguestones
 #Added a strict version for endgame
+#Updated div cards tiers
 #
 #Notes (1.7.1)
 #Added Eternal Orb in currencies because legacy league
@@ -484,39 +485,38 @@ Show
 #T1 (exalts)
 Show
 	Class "Divination"
-	BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Formless Sea" "The Brittle Emperor" "The Immortal" "The Artist" "The Thaumaturgist" "Wealth and Power" "The Demoness" "Pride Before the Fall" "The Enlightened" "Heterochromia" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar"
+	BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Brittle Emperor" "The Immortal" "The Artist" "Wealth and Power" "Pride Before the Fall" "The Enlightened" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar" "Spark and the Flame" "Emperor of Purity" "Polymath"
 	SetFontSize 45
-	SetTextColor  255 165 0				# TEXTCOLOR:	 Cosmetic: T1 Divination card
-	SetBorderColor  255 165 0			# BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
-	SetBackgroundColor 255 255 255 255	# BACKGROUND:	 T1 Global High Value Drop
-	PlayAlertSound 4 300				# DROPSOUND:	 T1 Drop
+	SetTextColor  255 165 0
+	SetBorderColor  255 165 0
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 4 300
 #T2 (chaos)
 Show
 	Class "Divination"
-	BaseType "Chaotic Disposition" "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "Time-Lost Relic" "The Harvester" "The Hoarder" "Emperor of Purity" "The Chains that Bind" "The Warlord" "The Wolf" "The Fletcher" "The Aesthete" "Earth Drinker"
+	BaseType "Chaotic Disposition" "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "The Hoarder" "The Chains that Bind" "The Warlord" "The Aesthete" "Saint's Treasure" "The Thaumaturgist" "Heterochromia" "The Porcupine" "The Stormcaller" "The Soul"
 	SetFontSize 44
-	SetTextColor 255 255 255			# TEXTCOLOR:	 Cosmetic: Black Text
-	SetBorderColor 255 255 255 255		# BORDERCOLOR:	 Crafting: T1
-	SetBackgroundColor 255 165 0 245	# BACKGROUND:	 T2 Divination
-	PlayAlertSound 8 200				# DROPSOUND:	 Value Drop: Currency, fragments
+	SetTextColor 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 255 165 0 245
+	PlayAlertSound 8 200
 #T3 (chance)
 Show
 	Class "Divination"
-	BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "The Stormcaller" "Glimmer of Hope" "The Tyrant" "The Cursed King" "The Avenger" "The Scavenger" "Lost Worlds" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Watcher" "The Soul" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Hubris" "Jack in the Box" "The Traitor" "Assassin's Favour" "The Battle Born"
+	BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "Glimmer of Hope" "The Tyrant" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Jack in the Box" "The Traitor" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Fletcher" "The Forsaken" "The Formless Sea" "The Demoness" "Time-Lost Relic" "The Wolf" "Earth Drinker" "Standoff" "Merciless Armament"
 	SetFontSize 40
-	SetTextColor 0 0 0 255				# TEXTCOLOR:	 Cosmetic: Black Text
-	SetBorderColor 255 255 255 255		# BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
-	SetBackgroundColor 255 165 0 235	# BACKGROUND:	 T3 Divination
-	PlayAlertSound 7 180				# DROPSOUND:	 Value Drop: Currency, fragments
+	SetTextColor 0 0 0 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 255 165 0 235
+	PlayAlertSound 7 180
 #T5 (trash)
-Show
+Hide
 	Class "Divination"
 	BaseType "Carrion Crow" "Other Cheek" "Hermit" "King's Blade" "Thunderous Skies" "Metalsmith's Gift"
 	SetFontSize 32
-	SetTextColor 0 0 0 255				# TEXTCOLOR:	 Cosmetic: Black Text
-	SetBorderColor 0 0 0				# BORDERCOLOR:	 Cosmetic: Neutral Highlight
-	SetBackgroundColor 255 165 0 180	# BACKGROUND:	 T5 Divination
-
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0
+	SetBackgroundColor 255 165 0 180
 #T4 (rest)
 Show
 	Class "Divination"
