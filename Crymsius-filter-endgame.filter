@@ -1,5 +1,9 @@
 ###Crymsius-filter-endgame
-###Version 1.7.1
+###Version 1.7.2
+#Notes (1.7.2)
+#Removed unused rules relative to leaguestones
+#Added a strict version for endgame
+#Updated div cards tiers
 #
 #Notes (1.7.1)
 #Added Eternal Orb in currencies because legacy league
@@ -35,6 +39,8 @@
 #Added Highlight for special bases (atlas of worlds ones and Sacrificial Garb)
 #Added Tiers for maps
 #Lot of small details...
+#
+#
 #-----English-----
 ###This filter is more suitable for lvl 60+ characters as it will hide lower bases and most of magic items.
 #
@@ -67,7 +73,7 @@ Show
 	SetTextColor 255 250 100 
 	SetBorderColor 255 255 119 
 	SetBackgroundColor 10 70 160
-	PlayAlertSound 8 180
+	PlayAlertSound 7 180
 Show
 	Class "Leaguestone"
 	Rarity Magic 
@@ -76,22 +82,6 @@ Show
 	SetBorderColor 255 255 119 
 	SetBackgroundColor 10 70 160
 	PlayAlertSound 8 190
-Show
-	Class "Leaguestone"
-	Rarity Rare 
-	SetFontSize 41
-	SetTextColor 255 250 100 
-	SetBorderColor 255 255 119 
-	SetBackgroundColor 10 70 160
-	PlayAlertSound 8 200
-Show
-	Class "Leaguestone"
-	Rarity Unique 
-	SetFontSize 43
-	SetTextColor 255 250 100 
-	SetBorderColor 255 255 119 
-	SetBackgroundColor 10 70 160
-	PlayAlertSound 8 200
 Show
 	Class "Misc Map Items"
 	BaseType "Ancient Reliquary Key"
@@ -211,7 +201,6 @@ Show
 #------------------------------------
 # This section handles warband items, with special warband mods.
 # We're showing identified items of the right level, this may cause the filter to highlight a few other items
-
 Show
 	Corrupted False
 	Identified True
@@ -235,7 +224,7 @@ Show
 	SetBackgroundColor 200 100 220
 
 #------------------------------------
-#    Rare, Uniques, and 6-5L
+#    Very rare
 #------------------------------------
 #Very Rare Stuff
 Show
@@ -245,20 +234,6 @@ Show
 	SetBorderColor 0 102 0
 	SetBackgroundColor 255 192 203
 	PlayAlertSound 4 300
-
-
-
-#Uniques
-Show
-	Rarity Unique
-	SetFontSize 50
-	SetBorderColor 204 82 0
-	SetBackgroundColor 70 20 0
-	PlayAlertSound 6 100
-
-
-
-###Sockets
 #Socket 6 linked
 Show
 	LinkedSockets = 6
@@ -267,6 +242,20 @@ Show
 	SetBackgroundColor 255 255 255
 	SetBorderColor 255 0 0
 	PlayAlertSound 5 300
+
+#------------------------------------
+#    Uniques
+#------------------------------------
+Show
+	Rarity Unique
+	SetFontSize 50
+	SetBorderColor 204 82 0
+	SetBackgroundColor 70 20 0
+	PlayAlertSound 6 100
+
+#------------------------------------
+#    Sockets
+#------------------------------------
 #Socket 6
 Show
 	Sockets = 6
@@ -282,8 +271,9 @@ Show
 	SetBackgroundColor 72 20 0 
 	PlayAlertSound 1 100
 
-
-###Maps
+#------------------------------------
+#    Maps
+#------------------------------------
 #Tiers 12-16 (red)
 #Maps
 Show
@@ -314,6 +304,10 @@ Show
 	SetBorderColor 220 220 220
 	SetBackgroundColor 50 50 50
 	PlayAlertSound 2 150
+
+#------------------------------------
+#    Fragments
+#------------------------------------
 #Map Fragments
 Show
 	Class "Map Fragments"
@@ -322,26 +316,27 @@ Show
 	SetBorderColor 255 255 255
 	PlayAlertSound 2 180
 
-
-
-###Labyrinth
+#------------------------------------
+#    Labyrinth
+#------------------------------------
 Show
 	Class "Labyrinth"
 	SetFontSize 42
 	SetBorderColor 255 255 119
 	SetBackgroundColor 50 50 0
 
-
-#Jewels
+#------------------------------------
+#    Jewels
+#------------------------------------
 Show
 	Class "Jewel"
 	SetFontSize 42
 	SetBorderColor 0 0 255
 	SetBackgroundColor 10 10 40
 
-
-
-###Chisel Recipe
+#------------------------------------
+#    Chisel Recipe
+#------------------------------------
 #Rare with 17%+ quality
 Show
 	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
@@ -369,9 +364,9 @@ Show
 	SetBackgroundColor 0 0 0
 	SetBorderColor 255 100 255
 
-
-
-### atlas items + sacr garb
+#------------------------------------
+#    Atlas and special bases
+#------------------------------------
 #T1
 Show
 	Rarity <= Rare
@@ -390,8 +385,9 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 0 0 0
 
-
-###Rare ilvl
+#------------------------------------
+#    Rares
+#------------------------------------
 #Recipe Regal Orb - good base
 Show
 	ItemLevel >= 75
@@ -427,9 +423,9 @@ Show
 	SetBorderColor 255 255 119
 	SetBackgroundColor 50 50 0
 
-
-
-###Gems
+#------------------------------------
+#    Gems
+#------------------------------------
 #Rare Gems
 Show
 	Class "Gems"
@@ -449,10 +445,9 @@ Show
 	SetFontSize 38
 	SetBorderColor 27 162 155
 
-
-
-
-###Flasks
+#------------------------------------
+#    Flasks
+#------------------------------------
 #Utility flasks
 Show
 	Class "Utility Flasks"
@@ -465,9 +460,9 @@ Show
 	SetFontSize 35
 	SetBorderColor 128 179 255
 
-
-
-#Quest
+#------------------------------------
+#    Quest
+#------------------------------------
 Show
 	Class "Quest"
 	SetFontSize 40
@@ -475,15 +470,10 @@ Show
 	SetBackgroundColor 74 230 58
 	SetBorderColor 0 0 0
 
-
-#===============================================================================================================
-# [[1200]] Currency - PART 3 - Divination cards (yes the strange sorting is intended)
-#===============================================================================================================
-
 #------------------------------------
-#   [1201] Exceptions to prevent ident. mistakes
+#    Divination cards
 #------------------------------------
-
+#Prevent exceptions
 Show
 	Class "Divination"
 	BaseType "The Wolf's Shadow"
@@ -492,62 +482,42 @@ Show
 	SetBorderColor 255 165 0
 	SetBackgroundColor 255 165 0 210
 	PlayAlertSound 9 150
-
-#------------------------------------
-#   [1202] T1 - Top tier cards
-#------------------------------------
-
+#T1 (exalts)
 Show
 	Class "Divination"
-	BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Formless Sea" "The Brittle Emperor" "The Immortal" "The Artist" "The Thaumaturgist" "Wealth and Power" "The Demoness" "Pride Before the Fall" "The Enlightened" "Heterochromia" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar"
+	BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Brittle Emperor" "The Immortal" "The Artist" "Wealth and Power" "Pride Before the Fall" "The Enlightened" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar" "Spark and the Flame" "Emperor of Purity" "Polymath"
 	SetFontSize 45
-	SetTextColor  255 165 0				# TEXTCOLOR:	 Cosmetic: T1 Divination card
-	SetBorderColor  255 165 0			# BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
-	SetBackgroundColor 255 255 255 255	# BACKGROUND:	 T1 Global High Value Drop
-	PlayAlertSound 4 300				# DROPSOUND:	 T1 Drop
-
-#------------------------------------
-#   [1203] T2 - Great cards
-#------------------------------------
-
+	SetTextColor  255 165 0
+	SetBorderColor  255 165 0
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 4 300
+#T2 (chaos)
 Show
 	Class "Divination"
-	BaseType "Chaotic Disposition" "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "Time-Lost Relic" "The Harvester" "The Hoarder" "Emperor of Purity" "The Chains that Bind" "The Warlord" "The Wolf" "The Fletcher" "The Aesthete" "Earth Drinker"
+	BaseType "Chaotic Disposition" "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "The Hoarder" "The Chains that Bind" "The Warlord" "The Aesthete" "Saint's Treasure" "The Thaumaturgist" "Heterochromia" "The Porcupine" "The Stormcaller" "The Soul"
 	SetFontSize 44
-	SetTextColor 255 255 255			# TEXTCOLOR:	 Cosmetic: Black Text
-	SetBorderColor 255 255 255 255		# BORDERCOLOR:	 Crafting: T1
-	SetBackgroundColor 255 165 0 245	# BACKGROUND:	 T2 Divination
-	PlayAlertSound 8 200				# DROPSOUND:	 Value Drop: Currency, fragments
-
-#------------------------------------
-#   [1204] T3 - Decent cards
-#------------------------------------
-
+	SetTextColor 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 255 165 0 245
+	PlayAlertSound 8 200
+#T3 (chance)
 Show
 	Class "Divination"
-	BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "The Stormcaller" "Glimmer of Hope" "The Tyrant" "The Cursed King" "The Avenger" "The Scavenger" "Lost Worlds" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Watcher" "The Soul" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Hubris" "Jack in the Box" "The Traitor" "Assassin's Favour" "The Battle Born"
+	BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "Glimmer of Hope" "The Tyrant" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Jack in the Box" "The Traitor" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Fletcher" "The Forsaken" "The Formless Sea" "The Demoness" "Time-Lost Relic" "The Wolf" "Earth Drinker" "Standoff" "Merciless Armament"
 	SetFontSize 40
-	SetTextColor 0 0 0 255				# TEXTCOLOR:	 Cosmetic: Black Text
-	SetBorderColor 255 255 255 255		# BORDERCOLOR:	 Cosmetic: T1 and T2 Divination
-	SetBackgroundColor 255 165 0 235	# BACKGROUND:	 T3 Divination
-	PlayAlertSound 7 180				# DROPSOUND:	 Value Drop: Currency, fragments
-
-#------------------------------------
-#   [1205] T5 - Format trash tier cards... before
-#------------------------------------
-
-Show #%H3
+	SetTextColor 0 0 0 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 255 165 0 235
+	PlayAlertSound 7 180
+#T5 (trash)
+Hide
 	Class "Divination"
 	BaseType "Carrion Crow" "Other Cheek" "Hermit" "King's Blade" "Thunderous Skies" "Metalsmith's Gift"
 	SetFontSize 32
-	SetTextColor 0 0 0 255				# TEXTCOLOR:	 Cosmetic: Black Text
-	SetBorderColor 0 0 0				# BORDERCOLOR:	 Cosmetic: Neutral Highlight
-	SetBackgroundColor 255 165 0 180	# BACKGROUND:	 T5 Divination
-
-#------------------------------------
-#   [1206] T4 - ...showing the remaining cards
-#------------------------------------
-
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0
+	SetBackgroundColor 255 165 0 180
+#T4 (rest)
 Show
 	Class "Divination"
 	SetFontSize 38
@@ -556,9 +526,9 @@ Show
 	SetBackgroundColor 255 165 0 210
 	PlayAlertSound 9 150
 
-
-
-###Currency
+#------------------------------------
+#    Currency
+#------------------------------------
 #Map Currency
 Show
 	Class "Currency"
@@ -584,7 +554,7 @@ Show
 	SetBorderColor 220 220 220
 	SetBackgroundColor 50 50 50
 	PlayAlertSound 8 200
-#Very Rare Currency
+#T1
 Show
 	Class "Currency"
 	BaseType "Mirror of Kalandra" "Divine Orb" "Exalted Orb" "Eternal Orb"
@@ -593,7 +563,7 @@ Show
 	SetBorderColor 170 158 130
 	SetBackgroundColor 255 255 255
 	PlayAlertSound 4 300
-#Rare Currency
+#T2
 Show
 	Class "Currency"
 	BaseType  "Vaal Orb" "Blessed Orb" "Regal Orb" "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring" "Unshaping Orb" "Seal"
@@ -602,7 +572,7 @@ Show
 	SetBorderColor 170 158 130
 	SetBackgroundColor 70 70 0
 	PlayAlertSound 8 200
-#Uncommon Currency
+#T3
 Show
 	Class "Currency"
 	BaseType "Orb of Alteration" "Glassblower's Bauble"  "Jeweller's Orb" "Orb of Alchemy" "Orb of Chance" "Chromatic Orb"
@@ -611,7 +581,7 @@ Show
 	SetBorderColor 170 158 130
 	SetBackgroundColor 0 0 60
 	PlayAlertSound 7 180
-#Common Currency
+#T4
 Show
 	Class "Currency"
 	BaseType "Orb of Augmentation" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap"
@@ -630,44 +600,45 @@ Show
 	Class "Currency"
 	SetTextColor 170 158 100
 
-
-
-#Chromatic Items
+#------------------------------------
+#    Chromatic recipe
+#------------------------------------
+#Small items (2x2)
 Show
 	SocketGroup RGB
 	Height <= 2
 	Width <= 2
 	SetFontSize 36
 	SetBorderColor  255 255 255
+#Small items (others) (3x1)
 Show
 	SocketGroup RGB
 	Height <= 3
 	Width <= 1
 	SetFontSize 36
 	SetBorderColor  255 255 255
+#Big items
 Show
 	SocketGroup RGB
 	SetFontSize 30
 	SetBorderColor  255 255 255 150
 
-
-
-###Normal & Magic items to show (chance + craft)
-#
+#------------------------------------
+#    Normal & Magic
+#------------------------------------
 #Normal item to chance
 Show
 	Rarity Normal
-	BaseType "Sorcerer Boots" "Occultist's Vestment" "Assassin's Garb" "Prophecy Wand" "Deicide Mask" "Jewelled Foil" "Leather Belt"
+	BaseType "Sorcerer Boots" "Occultist's Vestment" "Assassin's Garb" "Prophecy Wand" "Leather Belt"
 	SetBackgroundColor 20 20 20 255
 	SetFontSize 36
 	SetTextColor 0 180 0
 	SetBorderColor 0 180 0
 
 #------------------------------------
-#   [0206] 83/84+ Endgame crafting rules 
+#   Endgame crafting 
 #------------------------------------
 # These entries are non-exclusive bases that are popular for crafting
-
 Show #$crafting, egc, top
 	BaseType "Onyx" "Diamond Ring" "Prismatic" "Titanium Spirit Shield" "Hubris Circlet" "Sorcerer Boots" "Sorcerer Gloves" "Vaal Regalia" "Two-Stone" "Jewelled Foil"
 	Rarity < Rare
@@ -703,7 +674,7 @@ Show #$crafting, egc %D2
 	SetBorderColor 0 180 0         # BORDERCOLOR:	 Crafting: T2
 
 #------------------------------------
-#   [0207] 60+ Crafting rules for 60++ trinkets
+#   60+ Crafting rules for 60++ trinkets
 #------------------------------------
 # This section handles the crafting bases for the entry level endgame
 
@@ -735,30 +706,21 @@ Show #$crafting, trinkets, chaos %D1
 	SetTextColor 0 180 0
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 
-Show #$trinkets %D1
-	Class Rings Amulets Belts
-	Rarity Magic
-	ItemLevel >= 60
-	SetFontSize 28
-	SetTextColor 0 180 0
-	SetBorderColor 0 0 0                # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-	SetBackgroundColor 0 0 0 165         # BACKGROUND:	 Leveling, low alch bases
-
 #------------------------------------
-#   [0209] Remaining crafting rules - add your own bases here!
+#   Remaining crafting rules
 #------------------------------------
 # This section handles additional crafting bases.
-
-Show #$crafting, nonmf %D2
+Show
 	BaseType "Hubris Circlet" "Vaal Regalia" "Harbinger Bow"
 	Rarity < Rare
 	ItemLevel >= 75
 	SetFontSize 32
 	SetTextColor 0 180 0
-	SetBorderColor 0 0 0 # BORDERCOLOR: Cosmetic: Neutral Highlight
+	SetBorderColor 0 0 0
 
-
-##Hiding low lvl stuff
+#------------------------------------
+#    Hiding low level stuff
+#------------------------------------
 #Normal
 Hide
 	Rarity Normal
@@ -780,7 +742,7 @@ Hide
 	SetBorderColor 255 255 119
 	SetTextColor 255 255 119
 
-
-
-#Other stuff missing
+#------------------------------------
+#    Show the rest
+#------------------------------------
 Show
