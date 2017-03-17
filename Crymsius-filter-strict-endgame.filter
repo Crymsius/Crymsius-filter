@@ -82,6 +82,16 @@ Show
 	SetFontSize 37
 	SetTextColor 0 0 0
 	SetBorderColor 0 0 0
+#Breach Rings
+Show
+	Class "Ring"
+	BaseType "Breach Ring"
+	Rarity Rare
+	SetFontSize 42
+	SetTextColor 255 255 119
+	SetBorderColor 200 0 0
+	SetBackgroundColor 130 0 200
+	PlayAlertSound 7 180
 
 #------------------------------------
 #    Rares
@@ -106,12 +116,12 @@ Show
 	SetBackgroundColor 255 255 119
 #Rare ilvl75+ identified
 Show
-	ItemLevel >= 60
+	ItemLevel >= 75
 	Identified True
 	Rarity Rare
-	SetFontSize 45
+	SetFontSize 38
 	SetTextColor 100 100 0
-	SetBorderColor 255 255 255
+	SetBorderColor 100 100 0
 	SetBackgroundColor 255 255 119
 #Other ilvl 75+
 Hide
@@ -146,7 +156,7 @@ Show
 	Rarity Rare
 	SetFontSize 38
 	SetTextColor 255 255 119
-	SetBorderColor 255 255 255
+	SetBorderColor 255 255 119
 	SetBackgroundColor 50 50 0
 #Other ilvl 60-75
 Hide
@@ -253,7 +263,7 @@ Show
 	SetFontSize 33
 
 #------------------------------------
-#    Vert rare
+#    Very rare
 #------------------------------------
 #Very Rare Stuff
 Show
@@ -299,6 +309,24 @@ Show
 	SetBorderColor 180 180 180
 	SetBackgroundColor 72 20 0 
 	PlayAlertSound 1 100
+
+#------------------------------------
+#    Chromatic recipe
+#------------------------------------
+#Small items (2x2)
+Show
+	SocketGroup RGB
+	Height <= 2
+	Width <= 2
+	SetFontSize 36
+	SetBorderColor  255 255 255
+#Small items (others) (3x1)
+Show
+	SocketGroup RGB
+	Height <= 3
+	Width <= 1
+	SetFontSize 36
+	SetBorderColor  255 255 255
 
 #------------------------------------
 #    Maps
@@ -412,7 +440,7 @@ Show
 #Other Gems
 Show
 	Class "Gems"
-	SetFontSize 38
+	SetFontSize 30
 	SetBorderColor 27 162 155
 
 #------------------------------------
@@ -550,16 +578,6 @@ Show
 	SetTextColor 200 0 0
 	SetBorderColor 130 0 200
 	SetBackgroundColor 0 0 0
-#Breach Rings
-Show
-	Class "Ring"
-	BaseType "Breach Ring"
-	Rarity Rare
-	SetFontSize 42
-	SetTextColor 255 255 119
-	SetBorderColor 200 0 0
-	SetBackgroundColor 130 0 200
-	PlayAlertSound 7 180
 #------------------------------------
 #    Essence League
 #------------------------------------
