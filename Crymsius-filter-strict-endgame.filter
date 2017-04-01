@@ -123,14 +123,6 @@ Show
 	SetTextColor 100 100 0
 	SetBorderColor 100 100 0
 	SetBackgroundColor 255 255 119
-#Other ilvl 75+
-Hide
-	ItemLevel >= 75
-	Rarity Rare
-	SetFontSize 38
-	SetTextColor 100 100 0
-	SetBorderColor 100 100 0
-	SetBackgroundColor 255 255 119
 #Rare ilvl 60-75 good base
 Show
 	BaseType "Void Sceptre" "Opal Sceptre" "Profane Wand" "Prophecy Wand" "Opal Wand" "Sambar Sceptre" "Imbued Wand" "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Saintly Chainmail" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titan Gauntlets" "Slink Gloves" "Eternal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots" "Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather Belt" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash" "Lion Sword" "Vaal Greatsword" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Platinum Kris" "Demon Dagger" "Imperial Skean" "Vaal Hatchet" "Runic Hatchet" "Behemoth Mace" "Eternal Sword" "Tiger Hook" "Eclipse Staff" "Maelstr" "Judgement Staff" "Jewelled Foil" "Dragoon Sword" "Sai"
@@ -153,14 +145,6 @@ Show
 Show
 	ItemLevel >= 60
 	Identified True
-	Rarity Rare
-	SetFontSize 38
-	SetTextColor 255 255 119
-	SetBorderColor 255 255 119
-	SetBackgroundColor 50 50 0
-#Other ilvl 60-75
-Hide
-	ItemLevel >= 60
 	Rarity Rare
 	SetFontSize 38
 	SetTextColor 255 255 119
@@ -674,4 +658,22 @@ Show
 #------------------------------------
 #    Hide the rest
 #------------------------------------
+#Other ilvl 75+
+Hide
+	ItemLevel >= 75
+	Rarity Rare
+	SetFontSize 38
+	SetTextColor 100 100 0
+	SetBorderColor 100 100 0
+	SetBackgroundColor 255 255 119
+
+	#Other ilvl 60-75
+Hide
+	ItemLevel >= 60
+	Rarity Rare
+	SetFontSize 38
+	SetTextColor 255 255 119
+	SetBorderColor 255 255 119
+	SetBackgroundColor 50 50 0
+
 Hide
