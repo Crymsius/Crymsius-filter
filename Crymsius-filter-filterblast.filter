@@ -143,7 +143,7 @@ Show # Uniques - T1
 	Branch # Uniques - T1 - Weapons
 		BaseType "Vaal Axe" "Prophecy Wand" "Jewelled Foil" "Cutlas" "Ritual Sceptre"
 	Branch # Uniques - T1 - Armours
-		BaseType "Occultist Vestment" "Glorious Plate" "Sorcerer Boots" "Crusader Boots" "Rawhide Boots" "Ezomyte Tower Shield" "Hubris Circlet" "Legion Gloves"
+		BaseType "Occultist's Vestment" "Glorious Plate" "Sorcerer Boots" "Crusader Boots" "Rawhide Boots" "Ezomyte Tower Shield" "Hubris Circlet" "Legion Gloves"
 	Branch # Uniques - Multi-Unique Bases
 		BaseType "Ebony Tower Shield" "Onyx Amulet" "Goathide Boots" "Two-Stone Ring"
 		PlayAlertSound $SoundUniques
@@ -302,7 +302,6 @@ Show # Fragments - Sacrifice - Others
 	SetTextColor 200 20 0
 	SetBorderColor 255 255 255
 	PlayAlertSound $SoundT2
-
 
 #------------------------------------
 #    Sockets
@@ -467,25 +466,6 @@ Show # Leagues - Talisman - Rare Talismans
 #	SetBorderColor 255 255 119
 #Disabled Block End
 
-# Normal items
-#Disabled Block Start
-#Show # Leveling Filter : check for leveling  / uncheck for mapping | Comment
-#	Rarity = Normal
-#	SetFontSize 33
-#	SetBackgroundColor 20 20 20 200
-#	SetTextColor 180 180 180
-#Disabled Block End
-
-# Magic items
-#Disabled Block Start
-#Show # Leveling Filter : check for leveling  / uncheck for mapping | Comment
-#	Rarity = Magic
-#	SetFontSize 33
-#	SetBackgroundColor 0 0 60
-#	SetTextColor 140 140 255
-#	SetBorderColor 140 140 255
-#Disabled Block End
-
 #------------------------------------
 #    Rares
 #------------------------------------
@@ -547,7 +527,7 @@ Show # Rares, Chaos and Regal Recipe - ilvl 60 to 75 : Good Base (no matter the 
 	SetBorderColor 255 255 255
 
 Show # Rares, Chaos and Regal Recipe - Regal Recipe (ilvl 75+) - 2H and chests
-	Class Two Handed "Body Armours" "Bows" "Staves"
+	Class "Two Hand" "Body Armours" "Bows" "Staves"
 	Rarity Rare
 	ItemLevel >= 75
 	SetFontSize 38
@@ -579,7 +559,7 @@ Hide # Rares, Chaos and Regal Recipe - Regal Recipe (ilvl 75+) - Other Bases (ev
 	SetBorderColor 100 100 0
 
 Show # Rares, Chaos and Regal Recipe - Chaos Recipe (ilvl 60 to 75) - 2H and chests
-	Class Two Handed "Body Armours" "Bows" "Staves"
+	Class "Two Hand" "Body Armours" "Bows" "Staves"
 	Rarity Rare
 	ItemLevel >= 60
 	SetFontSize 36
@@ -992,9 +972,9 @@ Show # Leagues - Warband - Warband items
 	Identified True
 	ItemLevel = 82
 	SetFontSize 34
-	SetBackgroundColor 200 100 220
-	SetTextColor 129 15 213
-	SetBorderColor 129 15 213 200
+	SetBackgroundColor 200 100 180
+	SetTextColor 255 192 203
+	SetBorderColor 255 192 203
 
 Show # Leagues - Warband - Warband items
 	Class "Daggers" "Wands" "Sceptres"
@@ -1003,9 +983,9 @@ Show # Leagues - Warband - Warband items
 	Identified True
 	ItemLevel = 84
 	SetFontSize 34
-	SetBackgroundColor 200 100 220
-	SetTextColor 129 15 213
-	SetBorderColor 129 15 213 200
+	SetBackgroundColor 200 100 180
+	SetTextColor 255 192 203
+	SetBorderColor 255 192 203
 
 #------------------------------------
 #    Other currencies
@@ -1016,4 +996,23 @@ Show
 #------------------------------------
 #    Hide the rest
 #------------------------------------
+# Normal items
+#Disabled Block Start
+#Show # Leveling Filter : check for leveling  / uncheck for mapping | Comment
+#	Rarity = Normal
+#	SetFontSize 33
+#	SetBackgroundColor 20 20 20 200
+#	SetTextColor 180 180 180
+#Disabled Block End
+
+# Magic items
+#Disabled Block Start
+#Show # Leveling Filter : check for leveling  / uncheck for mapping | Comment
+#	Rarity = Magic
+#	SetFontSize 33
+#	SetBackgroundColor 0 0 60
+#	SetTextColor 140 140 255
+#	SetBorderColor 140 140 255
+#Disabled Block End
+
 Hide
