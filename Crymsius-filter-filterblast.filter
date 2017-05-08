@@ -1,68 +1,11 @@
 ###Crymsius-filter
 ###Version 2.0.0
-#Notes (2.0.0)
-#rework for filterblast
-#No more sound for T4
-#Added stacked deck that was missing
-#Rarity for Talismans
-#
-#Notes (1.7.2)
-#Removed unused rules relative to leaguestones
-#Added a strict version for endgame
-#Updated div cards tiers
-#
-#Notes (1.7.1)
-#Added Eternal Orb in currencies because legacy league
-#
-#Notes (1.7.0)
-#Added Legacy League with LeagueStones
-#
-#Notes (1.6.0)
-#Added Tiers to div cards (+ new display color scheme)
-#Added Crafting bases (normal, magic + ilvl)
-#Small modification to breach rings
-#Added sound for splinter + rework sound for cards
-#Rework for atlas bases (2 tiers now)
-#
-#Notes (1.5.0)
-#Added Breach currencies + breach rings
-#
-#Notes (1.4.4)
-#Changes to sextants colors
-#Add Perandus coins colors
-#Several bug fixes#
-#
-#Notes (1.4.2)
-#Add sounds to map drops
-#
-##Notes (1.4.1)
-#Switch sound between Uncommon and common currencies
-#
-##Notes (1.4.0):
-#Updates for Essences and Atlas of World currencies
-#Rework of maps, currencies,...
-#Added good base item highlight for rares
-#Added Highlight for special bases (atlas of worlds ones and Sacrificial Garb)
-#Added Tiers for maps
-#Lot of small details...
-#
+# Author : Crymsius 
+# Source : https://github.com/Crymsius/Crymsius-filter
 
-# TODO 
-# FEAT : Maps selon le drop lvl + ilvl
-# FEAT : Rework Jewel
-#
-# DONE
-# FIXED : pas de 2H non good base affiché
-# FIXED : pas de rare fishing rod 
-# FIXED : pas de jewels rares affichés
-# FIXED : talismans rare apparaissent en jaune (car rare corrupted passe avant)
-# FEAT : différencier les types de rares pour les recipes
-# FEAT : Tier list for unique items
-# FEAT : guardians T1 + rare maps
-# FEAT : Rework Fragments
-# FEAT : Tiers for essence
+SetOption $Introduction info [Here you'll discover a sleek filter, designed by and for colour blind (and others !) with highlights for recipes, good bases, tiers and an emphasis on colour schemes that respect PoE's ones! You can customize the filter with the following options, and later, select the smartblocks you want to display or hide.] # Welcome to the filter! 
+SetOption $Links link [GitHub] [https://github.com/Crymsius/Crymsius-filter] [Forum Thread] [https://www.pathofexile.com/forum/view-thread/1895126]
 
-# // Welcome to Crymsius Filter, a beautiful colorblind proof and ingame-colours respectful filter ! You can customize the filter with the following options, and later, select the smartblocks you want to display or hide.
 # //! SetOption $Chance_Bases textarea ["Sorcerer Boots" "Occultist's Vestment" "Assassin's Garb" "Prophecy Wand" "Leather Belt"] # Add or delete the bases for items you want to chance.
 # //! SetOption $Crafting_Bases textarea ["Hubris Circlet" "Vaal Regalia" "Titanium Spirit Shield" "Sorcerer Gloves" "Sorcerer Boots" "Two-Stone" "Onyx" "Diamond Ring" "Prismatic"] # Add or delete the bases for items you want to craft (ilvl≥84).
 
