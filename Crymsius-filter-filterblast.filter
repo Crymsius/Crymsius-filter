@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 2.0.1
+###Version 3.0.0
 # Author : Crymsius 
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -9,707 +9,2917 @@ SetOption $Links link [GitHub] [https://github.com/Crymsius/Crymsius-filter] [Fo
 # //! SetOption $Chance_Bases textarea ["Sorcerer Boots" "Occultist's Vestment" "Assassin's Garb" "Prophecy Wand" "Leather Belt"] # Add or delete the bases for items you want to chance.
 # //! SetOption $Crafting_Bases textarea ["Hubris Circlet" "Vaal Regalia" "Titanium Spirit Shield" "Sorcerer Gloves" "Sorcerer Boots" "Two-Stone" "Onyx" "Diamond Ring" "Prismatic"] # Add or delete the bases for items you want to craft (ilvl≥84).
 
+# T0 : > 25c
+# T1 : 10c - 25c
+# T2 : 1c - 10c
+# T3 : 1alc - 10c
+# T4 : < 1alc
+
 #Sound alerts :
 
-# 1 : 5L (will probably change)
-# 2 : Maps
-# 3 : 6 Sockets
-# 4 : Exalts and similar (T1)
-# 5 : 6L
-# 6 : Uniques
-# 7 : Chance orbs and similar (T3)
-# 8 : Chaos and similar (T2)
-# 9 : [currently not used]
+SetGlobalSoundPositioning on
 
-SetSound $SoundT1 4 300 # T1 Drop (Exalt)
+SetSound $SoundMirror 5 300 # Mirror Orb
+SetSound $SoundExalted 5 300 # Exalted Orb
+SetSound $SoundDivine 4 300 # Divine Orb
+SetSound $SoundChaos 8 200 # Chaos Orb
+SetSound $SoundVaal 8 200 # Vaal Orb
+SetSound $SoundRegal 8 200 # Regal Orb
+
+SetSound $SoundT0 5 300 # T0 Drop (Exalt)
+SetSound $SoundT1 4 300 # T1 Drop (Divine)
 SetSound $SoundT2 8 200 # T2 Drop (Chaos)
 SetSound $SoundT3 7 180 # T3 Drop (Chance)
+
 SetSound $Sound6S 3 100 # 6S Items
-SetSound $Sound6L 5 300 # 6L Items
+SetSound $Sound6L 13 300 # 6L Items
 SetSound $Sound5L 1 100 # 5L Items
-SetSound $SoundUniques 6 100 # Uniques
-SetSound $SoundMaps 2 250 # Maps
-SetSound $SoundTalismans 2 250 # Talismans
+
+SetSound $SoundMapsT1 10 300 # Red Maps
+SetSound $SoundMapsT2 11 270 # Yellow Maps
+SetSound $SoundMapsT3 2 250 # White Maps
+
+SetSound $SoundUniques 6 200 # Uniques
+SetSound $SoundTalismans 12 250 # Talismans
+SetSound $SoundLeveling 14 200 # Leveling Highlight
+SetSound $SoundQuest 15 300 # Quest Item and Shaper's Orb
+
 
 #------------------------------------
 #    Tags
 #------------------------------------
 #Tags Uniques
-SetTag @Uniques_T1_Maps
-	BaseType "Chateau Map" "Museum Map" "Courtyard Map"
-SetTag @Uniques_T1_Jewels
-	BaseType "Prismatic Jewel"
-SetTag @Uniques_T1_Flasks
-	BaseType "Stibnite Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask"
-SetTag @Uniques_T1_Weapons
-	BaseType "Vaal Axe" "Prophecy Wand" "Jewelled Foil" "Cutlas" "Ritual Sceptre"
-SetTag @Uniques_T1_Armours
-	BaseType "Occultist's Vestment" "Glorious Plate" "Sorcerer Boots" "Crusader Boots" "Rawhide Boots" "Ezomyte Tower Shield" "Hubris Circlet" "Legion Gloves"
+SetTag @Uniques_T0_Maps
+    BaseType "Chateau Map" "Museum Map" "Courtyard Map"
+SetTag @Uniques_T0_Jewels
+    BaseType "Prismatic Jewel"
+SetTag @Uniques_T0_Flasks
+    BaseType "Stibnite Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask"
+SetTag @Uniques_T0_Weapons
+    BaseType "Vaal Axe" "Prophecy Wand" "Jewelled Foil" "Cutlas" "Ritual Sceptre"
+SetTag @Uniques_T0_Armours
+    BaseType "Occultist's Vestment" "Glorious Plate" "Sorcerer Boots" "Crusader Boots" "Rawhide Boots" "Ezomyte Tower Shield" "Hubris Circlet" "Legion Gloves"
 SetTag @Uniques_Multi-UniqueBases
-	BaseType "Ebony Tower Shield" "Onyx Amulet" "Goathide Boots" "Two-Stone Ring"
-SetTag @Uniques_T2_Maps
-	BaseType "Reef Map" "Temple Map"
-SetTag @Uniques_T2_Flasks
-	BaseType "Bismuth Flask" "Granite Flask"
-SetTag @Uniques_T2_Weapons
-	BaseType "Carnal Sceptre" "Royal Axe" "Siege Axe" "Imperial Staff" "Abyssal Axe" "Vaal Sceptre" "Imperial Maul" "Steelhead" "Carnal Sceptre" "Terror Maul" "Fiend Dagger"
-SetTag @Uniques_T2_Armours
-	BaseType "Jingling Spirit Shield" "Savant's Robe" "Gladiator Plate" "Vaal Regalia" "Sacrificial Garb" "Archon Kite Shield" "Raven Mask" "Champion Kite Shield" "Nightmare Bascinet" "Ezomyte Burgonet" "Clasped Mitts" "Wyrmscale Doublet"
-SetTag @Uniques_T2_Accessories
-	BaseType "Gold Ring" "Citrine Amulet" "Crystal Belt"
+    BaseType "Ebony Tower Shield" "Onyx Amulet" "Goathide Boots" "Two-Stone Ring"
+SetTag @Uniques_T1_Maps
+    BaseType "Reef Map" "Temple Map"
+SetTag @Uniques_T1_Flasks
+    BaseType "Bismuth Flask" "Granite Flask"
+SetTag @Uniques_T1_Weapons
+    BaseType "Carnal Sceptre" "Royal Axe" "Siege Axe" "Imperial Staff" "Abyssal Axe" "Vaal Sceptre" "Imperial Maul" "Steelhead" "Carnal Sceptre" "Terror Maul" "Fiend Dagger"
+SetTag @Uniques_T1_Armours
+    BaseType "Jingling Spirit Shield" "Savant's Robe" "Gladiator Plate" "Vaal Regalia" "Sacrificial Garb" "Archon Kite Shield" "Raven Mask" "Champion Kite Shield" "Nightmare Bascinet" "Ezomyte Burgonet" "Clasped Mitts" "Wyrmscale Doublet"
+SetTag @Uniques_T1_Accessories
+    BaseType "Gold Ring" "Citrine Amulet" "Crystal Belt"
 SetTag @Uniques_FatedUniques
-	BaseType "Iron Ring" "Coral Ring" "Jade Amulet" "Plate Vest" "Ornate Sword" "Scholar Boots" "Iron Staff" "Spiraled Wand" "Sledgehammer" "Long Bow" "Crude Bow" "Royal Bow" "Woodsplitter" "Jade Hatchet" "Painted Buckler" "Plank Kite Shield" "War Buckler" "Gilded Sallet" "Iron Hat" "Vine Circlet" "Goathide Gloves" "Coral Amulet" "Fire Arrow Quiver" "Serrated Arrow Quiver" "Death Bow"
+    BaseType "Iron Ring" "Coral Ring" "Jade Amulet" "Plate Vest" "Ornate Sword" "Scholar Boots" "Iron Staff" "Spiraled Wand" "Sledgehammer" "Long Bow" "Crude Bow" "Royal Bow" "Woodsplitter" "Jade Hatchet" "Painted Buckler" "Plank Kite Shield" "War Buckler" "Gilded Sallet" "Iron Hat" "Vine Circlet" "Goathide Gloves" "Coral Amulet" "Fire Arrow Quiver" "Serrated Arrow Quiver" "Death Bow"
 
 #Tags Atlas and special bases
 SetTag @AtlasAndSpecialBases_T1
-	BaseType "Steel Ring" "Opal Ring" "Crystal Belt"
+    BaseType "Steel Ring" "Opal Ring" "Crystal Belt"
 SetTag @AtlasAndSpecialBases_T2
-	BaseType "Sacrificial Garb" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+    BaseType "Sacrificial Garb" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
 
 #Tags Rare good bases`
 SetTag @GoodBases
-	BaseType "Void Sceptre" "Opal Sceptre" "Profane Wand" "Prophecy Wand" "Opal Wand" "Sambar Sceptre" "Imbued Wand" "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Saintly Chainmail" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titan Gauntlets" "Slink Gloves" "Eternal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots" "Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather Belt" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash" "Lion Sword" "Vaal Greatsword" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Platinum Kris" "Demon Dagger" "Imperial Skean" "Vaal Hatchet" "Runic Hatchet" "Behemoth Mace" "Eternal Sword" "Tiger Hook" "Eclipse Staff" "Maelstr" "Judgement Staff" "Jewelled Foil" "Dragoon Sword" "Sai"
+    BaseType "Void Sceptre" "Opal Sceptre" "Profane Wand" "Prophecy Wand" "Opal Wand" "Sambar Sceptre" "Imbued Wand" "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Saintly Chainmail" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titan Gauntlets" "Slink Gloves" "Eternal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots" "Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather Belt" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash" "Lion Sword" "Vaal Greatsword" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Platinum Kris" "Demon Dagger" "Imperial Skean" "Vaal Hatchet" "Runic Hatchet" "Behemoth Mace" "Eternal Sword" "Tiger Hook" "Eclipse Staff" "Maelstr" "Judgement Staff" "Jewelled Foil" "Dragoon Sword" "Sai"
 
-#Tags Currencies
+#Tags Currencies - Orbs
+SetTag @Currency_Mirror
+    BaseType "Mirror of Kalandra"
+SetTag @Currency_Exalted
+    BaseType "Exalted Orb"
+SetTag @Currency_Divine
+    BaseType "Divine Orb"
+SetTag @Currency_Chaos
+    BaseType "Chaos Orb"
+SetTag @Currency_Vaal
+    BaseType "Vaal Orb"
+SetTag @Currency_Regal
+    BaseType "Regal Orb"
+SetTag @Currency_T0
+    BaseType "Mirror of Kalandra" "Exalted Orb" "Eternal Orb" "Orb of Annulment"
 SetTag @Currency_T1
-	BaseType "Mirror of Kalandra" "Divine Orb" "Exalted Orb" "Eternal Orb"
+    BaseType "Divine Orb" "Stacked Deck" "Ancient Orb" "Harbinger's Orb"
 SetTag @Currency_T2
-	BaseType  "Vaal Orb" "Blessed Orb" "Regal Orb" "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring" "Unshaping Orb" "Seal" "Stacked Deck"
+    BaseType "Vaal Orb" "Blessed Orb" "Regal Orb" "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring" "Unshaping Orb" "Seal" "Orb of Binding" "Orb of Horizons" "Engineer's Orb"
 SetTag @Currency_T3
-	BaseType "Orb of Alteration" "Glassblower's Bauble"  "Jeweller's Orb" "Orb of Alchemy" "Orb of Chance" "Chromatic Orb"
+    BaseType "Orb of Alteration" "Glassblower's Bauble" "Jeweller's Orb" "Orb of Alchemy" "Orb of Chance" "Chromatic Orb"
 SetTag @Currency_T4
-	BaseType "Orb of Augmentation" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap"
+    BaseType "Orb of Augmentation" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap"
 SetTag @Currency_PortalScroll
-	BaseType "Portal Scroll"
+    BaseType "Portal Scroll"
 SetTag @Currency_ScrollWisdom
-	BaseType "Scroll of Wisdom"
+    BaseType "Scroll of Wisdom"
+
+#Tags Currencies - Shards
+SetTag @Shard_T0
+    BaseType "Mirror Shard"
+SetTag @Shard_T1
+    BaseType "Exalted Shard" "Annulment Shard"
+SetTag @Shard_T2
+    BaseType "Harbinger's Shard" "Ancient Shard"
+SetTag @Shard_T3
+    BaseType "Chaos Shard" "Regal Shard" "Binding Shard" "Horizon Shard" "Engineer's Shard"
+SetTag @Shard_T4
+    BaseType "Alteration Shard" "Transmutation Shard" "Alchemy Shard" "Scroll Fragment"
 
 #Tags Gems
 SetTag @Gems_DropOnly
-	BaseType "Empower" "Enhance" "Enlighten" "Portal" "Detonate Mines" "Vaal" "Added Chaos Damage"
+    BaseType "Empower" "Enhance" "Enlighten" "Portal" "Detonate Mines" "Vaal" "Added Chaos Damage"
 
 #Tags Divination Cards
+SetTag @DivinationCards_T0
+    BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Brittle Emperor" "The Immortal" "The Artist" "Wealth and Power" "Pride Before the Fall" "The Enlightened" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar" "Spark and the Flame" "Emperor of Purity" "Polymath"	
 SetTag @DivinationCards_T1
-	BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Brittle Emperor" "The Immortal" "The Artist" "Wealth and Power" "Pride Before the Fall" "The Enlightened" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar" "Spark and the Flame" "Emperor of Purity" "Polymath"	
+    BaseType "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "The Hoarder" "The Chains that Bind" "The Warlord" "The Aesthete" "Saint's Treasure" "The Thaumaturgist" "Heterochromia" "The Porcupine" "The Stormcaller" "The Soul"
 SetTag @DivinationCards_T2
-	BaseType "Chaotic Disposition" "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "The Hoarder" "The Chains that Bind" "The Warlord" "The Aesthete" "Saint's Treasure" "The Thaumaturgist" "Heterochromia" "The Porcupine" "The Stormcaller" "The Soul"
-SetTag @DivinationCards_T3
-	BaseType "The Road to Power" "The Arena Champion" "The Gladiator" "Glimmer of Hope" "The Tyrant" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Jack in the Box" "The Traitor" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Fletcher" "The Forsaken" "The Formless Sea" "The Demoness" "Time-Lost Relic" "The Wolf" "Earth Drinker" "Standoff" "Merciless Armament"
-SetTag @DivinationCards_T5
-	BaseType "Carrion Crow" "Other Cheek" "Hermit" "King's Blade" "Thunderous Skies" "Metalsmith's Gift"
+    BaseType "Chaotic Disposition" "The Road to Power" "The Arena Champion" "The Gladiator" "Glimmer of Hope" "The Tyrant" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Jack in the Box" "The Traitor" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Fletcher" "The Forsaken" "The Formless Sea" "The Demoness" "Time-Lost Relic" "The Wolf" "Earth Drinker" "Standoff" "Merciless Armament"
+SetTag @DivinationCards_T4
+    BaseType "Carrion Crow" "Other Cheek" "Hermit" "King's Blade" "Thunderous Skies" "Metalsmith's Gift"
 
 #Tags Essences
 SetTag @Essences_T1
-	BaseType "Essence of Delirium" "Essence of Insanity" "Essence of Horror" "Essence of Hysteria" "Deafening Essence of Spite"
+    BaseType "Essence of Delirium" "Essence of Insanity" "Essence of Horror" "Essence of Hysteria" "Deafening Essence of Spite"
 SetTag @Essences_T2
-	BaseType "Deafening Essence of Woe" "Deafening Essence of Anger" "Deafening Essence of Envy" "Deafening Essence of Contempt" "Shrieking Essence of Spite" "Deafening Essence of Wrath" "Deafening Essence of Loathing" "Shrieking Essence of Wrath" "Deafening Essence of Scorn" "Shrieking Essence of Anger" "Shrieking Essence of Contempt" "Deafening Essence of Zeal"
+    BaseType "Deafening Essence of Woe" "Deafening Essence of Anger" "Deafening Essence of Envy" "Deafening Essence of Contempt" "Shrieking Essence of Spite" "Deafening Essence of Wrath" "Deafening Essence of Loathing" "Shrieking Essence of Wrath" "Deafening Essence of Scorn" "Shrieking Essence of Anger" "Shrieking Essence of Contempt" "Deafening Essence of Zeal"
 
 #------------------------------------
 #    Fishing and weird stuff
 #------------------------------------
 Show
-	BaseType "Fishing Rod" "Albino Rhoa Feather"
-	SetFontSize 60
-	SetBackgroundColor 255 192 203
-	SetTextColor 255 0 0
-	SetBorderColor 0 102 0
-	PlayAlertSound $SoundT1
+    BaseType "Fishing Rod" "Albino Rhoa Feather"
+    SetFontSize 60
+    SetBackgroundColor 255 192 203
+    SetTextColor 255 0 0
+    SetBorderColor 0 102 0
+    PlayAlertSound $SoundT0
 
 #------------------------------------ 
 #    6 Links
 #------------------------------------
 Show
-	LinkedSockets = 6
-	SetFontSize 70
-	SetBackgroundColor 255 255 255
-	SetTextColor 255 0 0
-	SetBorderColor 255 0 0
-	PlayAlertSound $Sound6L
+    LinkedSockets = 6
+    SetFontSize 70
+    SetBackgroundColor 255 255 255
+    SetTextColor 255 0 0
+    SetBorderColor 255 0 0
+    PlayAlertSound $Sound6L
 
 #------------------------------------
 #    Uniques
 #------------------------------------
+Show # Leagues - Harbinger - Pieces
+    Class "Piece"
+    SetFontSize 50
+    SetBackgroundColor 70 20 0
+    SetTextColor 255 255 255
+    SetBorderColor 88 124 244
+    PlayAlertSound $SoundT1
 Show # Leagues - Talisman - Unique Talismans
-	Class "Amulets"
-	BaseType "Talisman"
-	Rarity Unique
-	SetFontSize 50
-	SetBackgroundColor 130 220 140
-	SetTextColor 175 96 37
-	SetBorderColor 175 96 37
-	PlayAlertSound $SoundUniques
+    Class "Amulets"
+    BaseType "Talisman"
+    Rarity Unique
+    SetFontSize 50
+    SetBackgroundColor 130 220 140
+    SetTextColor 175 96 37
+    SetBorderColor 175 96 37
+    PlayAlertSound $SoundUniques
 Show
-	Rarity Unique
-	SetFontSize 50
-	SetBackgroundColor 255 255 255
-	SetBorderColor 175 96 37
-	PlayAlertSound $SoundT1
-	Branch #Uniques - T1
-		Tags @Uniques_T1_Maps
-	Branch # Uniques - T1
-		Tags @Uniques_T1_Jewels
-	Branch # Uniques - T1
-		Tags @Uniques_T1_Flasks
-	Branch # Uniques - T1
-		Tags @Uniques_T1_Weapons
-	Branch # Uniques - T1
-		Tags @Uniques_T1_Armours
-	Branch # Uniques - Multi-Unique Bases
-		Tags @Uniques_Multi-UniqueBases
-		PlayAlertSound $SoundUniques
+    Rarity Unique
+    SetFontSize 50
+    SetBackgroundColor 255 255 255
+    SetBorderColor 175 96 37
+    PlayAlertSound $SoundT0
+    Branch #Uniques - T0
+        Tags @Uniques_T0_Maps
+    Branch # Uniques - T0
+        Tags @Uniques_T0_Jewels
+    Branch # Uniques - T0
+        Tags @Uniques_T0_Flasks
+    Branch # Uniques - T0
+        Tags @Uniques_T0_Weapons
+    Branch # Uniques - T0
+        Tags @Uniques_T0_Armours
+    Branch # Uniques - Multi-Unique Bases
+        Tags @Uniques_Multi-UniqueBases
+        PlayAlertSound $SoundUniques
 Show
-	Rarity Unique
-	SetFontSize 50
-	SetBackgroundColor 70 20 0
-	SetTextColor 255 255 255
-	SetBorderColor 175 96 37
-	PlayAlertSound $SoundUniques
-	Branch # Uniques - T2
-		Tags @Uniques_T2_Maps
-	Branch # Uniques - T2
-		Tags @Uniques_T2_Flasks
-	Branch # Uniques - T2
-		Tags @Uniques_T2_Weapons
-	Branch # Uniques - T2
-		Tags @Uniques_T2_Armours
-	Branch # Uniques - T2
-		Tags @Uniques_T2_Accessories
+    Rarity Unique
+    SetFontSize 50
+    SetBackgroundColor 70 20 0
+    SetTextColor 255 255 255
+    SetBorderColor 175 96 37
+    PlayAlertSound $SoundT1
+    Branch # Uniques - T1
+        Tags @Uniques_T1_Maps
+    Branch # Uniques - T1
+        Tags @Uniques_T1_Flasks
+    Branch # Uniques - T1
+        Tags @Uniques_T1_Weapons
+    Branch # Uniques - T1
+        Tags @Uniques_T1_Armours
+    Branch # Uniques - T1
+        Tags @Uniques_T1_Accessories
 Show # Uniques - Fated Uniques
-	Tags @Uniques_FatedUniques
-	Rarity Unique
-	SetFontSize 40
-	SetBackgroundColor 70 20 0
-	SetBorderColor 128 0 200
-	PlayAlertSound $SoundUniques
+    Tags @Uniques_FatedUniques
+    Rarity Unique
+    SetFontSize 40
+    SetBackgroundColor 70 20 0
+    SetBorderColor 128 0 200
+    PlayAlertSound $SoundUniques
 Show # Uniques - Other Uniques
-	Rarity Unique
-	SetFontSize 40
-	SetBackgroundColor 70 20 0
-	SetBorderColor 175 96 37
-	PlayAlertSound $SoundUniques
+    Rarity Unique
+    SetFontSize 40
+    SetBackgroundColor 70 20 0
+    SetBorderColor 175 96 37
+    PlayAlertSound $SoundUniques
 
 #------------------------------------
 #    Maps
 #------------------------------------
 #T16 maps
 Show
-	Class "Maps"
-	SetFontSize 50
-	SetBackgroundColor 255 255 255
-	SetTextColor 250 20 0
-	PlayAlertSound $SoundT1
-	Branch # Maps - Tiers 16 (Guardians) - Highlight Rare | Comment
-		Rarity Rare
-		BaseType "Forge of the Phoenix" "Lair of the Hydra" "Maze of the Minotaur" "Pit of the Chimera" "Vaal Temple"
-		SetBorderColor 255 255 119
-	Branch # Maps - Tiers 16 (Guardians)
-		BaseType "Forge of the Phoenix" "Lair of the Hydra" "Maze of the Minotaur" "Pit of the Chimera" "Vaal Temple"
-		SetBorderColor 220 220 220
+    Class "Maps"
+    SetFontSize 50
+    SetBackgroundColor 255 255 255
+    SetTextColor 250 20 0
+    PlayAlertSound $SoundT0
+    Branch # Maps - Tiers 16 (Guardians) - Highlight Rare | Comment
+        Rarity Rare
+        BaseType "Forge of the Phoenix" "Lair of the Hydra" "Maze of the Minotaur" "Pit of the Chimera" "Vaal Temple"
+        SetBorderColor 255 255 119
+    Branch # Maps - Tiers 16 (Guardians)
+        BaseType "Forge of the Phoenix" "Lair of the Hydra" "Maze of the Minotaur" "Pit of the Chimera" "Vaal Temple"
+        SetBorderColor 220 220 220
 #
 Show
-	Class "Maps"
-	SetBackgroundColor 50 50 50
-	PlayAlertSound $SoundMaps
-	Branch # Maps - Tiers 12-15 (Red) - Highlight Rare | Comment
-		Rarity Rare
-		DropLevel >= 78
-		SetFontSize 41
-		SetTextColor 250 20 0
-		SetBorderColor 255 255 119
-	Branch # Maps - Tiers 12-15 (Red)
-		DropLevel >= 78
-		SetFontSize 41
-		SetTextColor 250 20 0
-		SetBorderColor 220 220 220
-	Branch # Maps - Tier 7-11 (Yellow) - Highlight Rare | Comment
-		Rarity Rare
-		DropLevel >= 73
-		SetFontSize 39
-		SetTextColor 255 255 0
-		SetBorderColor 255 255 119
-	Branch # Maps - Tier 7-11 (Yellow)
-		DropLevel >= 73
-		SetFontSize 39
-		SetTextColor 255 255 0
-		SetBorderColor 220 220 220
-	Branch # Maps - Tier 1-6 (White) - Highlight Rare | Comment
-		Rarity Rare
-		DropLevel < 73
-		SetFontSize 37
-		SetTextColor 220 220 220
-		SetBorderColor 255 255 119
-	Branch # Maps - Tier 1-6 (White)
-		DropLevel < 73
-		SetFontSize 37
-		SetTextColor 220 220 220
-		SetBorderColor 220 220 220
+    Class "Maps"
+    SetBackgroundColor 50 50 50
+    PlayAlertSound $SoundMapsT3
+    Branch # Maps - Tiers 12-15 (Red) - Highlight Rare | Comment
+        Rarity Rare
+        DropLevel >= 78
+        SetFontSize 41
+        SetTextColor 250 20 0
+        SetBorderColor 255 255 119
+        PlayAlertSound $SoundMapsT1
+    Branch # Maps - Tiers 12-15 (Red)
+        DropLevel >= 78
+        SetFontSize 41
+        SetTextColor 250 20 0
+        SetBorderColor 220 220 220
+        PlayAlertSound $SoundMapsT1
+    Branch # Maps - Tier 7-11 (Yellow) - Highlight Rare | Comment
+        Rarity Rare
+        DropLevel >= 73
+        SetFontSize 39
+        SetTextColor 255 255 0
+        SetBorderColor 255 255 119
+        PlayAlertSound $SoundMapsT2
+    Branch # Maps - Tier 7-11 (Yellow)
+        DropLevel >= 73
+        SetFontSize 39
+        SetTextColor 255 255 0
+        SetBorderColor 220 220 220
+        PlayAlertSound $SoundMapsT2
+    Branch # Maps - Tier 1-6 (White) - Highlight Rare | Comment
+        Rarity Rare
+        DropLevel < 73
+        SetFontSize 37
+        SetTextColor 220 220 220
+        SetBorderColor 255 255 119
+    Branch # Maps - Tier 1-6 (White)
+        DropLevel < 73
+        SetFontSize 37
+        SetTextColor 220 220 220
+        SetBorderColor 220 220 220
 #Fragments
 Show
-	Class "Map Fragments"
-	SetFontSize 42
-	SetBackgroundColor 0 0 0
-	SetTextColor 200 20 0
-	SetBorderColor 255 255 255
-	Branch # Leagues - Prophecy - Keys
-		BaseType "'s Key"
-		SetTextColor 200 20 0
-		SetBorderColor 128 0 200
-		PlayAlertSound $SoundT2
-	Branch # Fragments - Guardians
-		BaseType "Fragment of"
-		SetBackgroundColor 200 20 0
-		SetTextColor 0 0 0
-		PlayAlertSound $SoundT1
-	Branch # Fragments - Mortal - Hope and Ignorance
-		BaseType "Mortal Hope" "Mortal Ignorance"
-		SetBackgroundColor 200 20 0
-		SetTextColor 0 0 0
-		PlayAlertSound $SoundT1
-	Branch # Fragments - Mortal - Rage and Grief
-		BaseType "Mortal Rage" "Mortal Grief"
-		SetBackgroundColor 200 20 0
-		SetTextColor 0 0 0
-		PlayAlertSound $SoundT2
-	Branch # Fragments - Sacrifice - Midnight
-		BaseType "Sacrifice at Midnight"
-		SetBackgroundColor 200 20 0
-		SetTextColor 0 0 0
-		PlayAlertSound $SoundT2
-	Branch # Fragments - Sacrifice - Others
-		SetFontSize 39
-		PlayAlertSound $SoundT2
+    Class "Map Fragments"
+    SetFontSize 42
+    SetBackgroundColor 0 0 0
+    SetTextColor 200 20 0
+    SetBorderColor 255 255 255
+    Branch # Leagues - Prophecy - Keys
+        BaseType "'s Key"
+        SetTextColor 200 20 0
+        SetBorderColor 128 0 200
+        PlayAlertSound $SoundT2
+    Branch # Fragments - Divine Vessel
+        BaseType "Divine Vessel"
+        SetBackgroundColor 74 230 58
+        SetTextColor 0 0 0
+        SetBorderColor 88 124 244
+        PlayAlertSound $SoundQuest
+    Branch # Fragments - Guardians
+        BaseType "Fragment of"
+        SetBackgroundColor 200 20 0
+        SetTextColor 0 0 0
+        PlayAlertSound $SoundT1
+    Branch # Fragments - Mortal - Hope and Ignorance
+        BaseType "Mortal Hope" "Mortal Ignorance"
+        SetBackgroundColor 200 20 0
+        SetTextColor 0 0 0
+        PlayAlertSound $SoundT1
+    Branch # Fragments - Mortal - Rage and Grief
+        BaseType "Mortal Rage" "Mortal Grief"
+        SetBackgroundColor 200 20 0
+        SetTextColor 0 0 0
+        PlayAlertSound $SoundT2
+    Branch # Fragments - Sacrifice - Midnight
+        BaseType "Sacrifice at Midnight"
+        SetBackgroundColor 200 20 0
+        SetTextColor 0 0 0
+        PlayAlertSound $SoundT2
+    Branch # Fragments - Sacrifice - Others
+        SetFontSize 39
+        PlayAlertSound $SoundT2
 
 #------------------------------------
 #    Sockets
 #------------------------------------
 Show # Sockets - 6S
-	Sockets = 6
-	SetFontSize 45
-	SetBackgroundColor  0 0 0
-	SetBorderColor 135 135 135
-	PlayAlertSound $Sound6S
+    Sockets = 6
+    SetFontSize 45
+    SetBackgroundColor  0 0 0
+    SetBorderColor 135 135 135
+    PlayAlertSound $Sound6S
 Show # Sockets - 5L
-	LinkedSockets = 5
-	SetFontSize 45
-	SetBackgroundColor 72 20 0 
-	SetBorderColor 180 180 180
-	PlayAlertSound $Sound5L
+    LinkedSockets = 5
+    SetFontSize 45
+    SetBackgroundColor 72 20 0 
+    SetBorderColor 180 180 180
+    PlayAlertSound $Sound5L
 Show
-	SocketGroup RGB
-	SetFontSize 36
-	SetBorderColor  255 255 255
-	Branch # Sockets - RGB - Small Items
-		Height <= 2
-		Width <= 2
-	Branch # Sockets - RGB - Small Items
-		Height <= 3
-		Width <= 1
-	Branch Hide # Sockets - RGB - Other Items
+    SocketGroup RGB
+    SetFontSize 36
+    SetBorderColor  255 255 255
+    Branch # Sockets - RGB - Small Items
+        Height <= 2
+        Width <= 2
+    Branch # Sockets - RGB - Small Items
+        Height <= 3
+        Width <= 1
 
 #------------------------------------
 #    Atlas and special bases
 #------------------------------------
 #Atlas and special bases - T1
 Show #Atlas and special bases - T1
-	Tags @AtlasAndSpecialBases_T1
-	Rarity <= Rare
-	SetFontSize 42
-	SetBackgroundColor 0 180 0
-	SetTextColor 255 255 255
-	SetBorderColor 255 255 255
-	PlayAlertSound $SoundT1
+    Tags @AtlasAndSpecialBases_T1
+    Rarity <= Rare
+    SetFontSize 42
+    SetBackgroundColor 0 180 0
+    SetTextColor 255 255 255
+    SetBorderColor 255 255 255
+    PlayAlertSound $SoundT1
 # Atlas and special bases - T2
 Show
-	Tags @AtlasAndSpecialBases_T2
-	SetFontSize 37
-	SetBackgroundColor 0 180 0
-	SetTextColor 0 0 0
-	SetBorderColor 0 0 0
-	Branch # Atlas and special bases - T2 Rare
-		Rarity Rare
-	Branch Hide # Atlas and special bases - T2 < Rare
-		Rarity < Rare
+    Tags @AtlasAndSpecialBases_T2
+    SetFontSize 37
+    SetBackgroundColor 0 180 0
+    SetTextColor 0 0 0
+    SetBorderColor 0 0 0
+    Branch # Atlas and special bases - T2 Rare
+        Rarity Rare
+    Branch Hide # Atlas and special bases - T2 < Rare
+        Rarity < Rare
 Show # Leagues - Breach - Breach Rings
-	Class "Ring"
-	BaseType "Breach Ring"
-	SetFontSize 42
-	SetBackgroundColor 130 0 200
-	SetTextColor 255 255 119
-	SetBorderColor 200 0 0
+    Class "Ring"
+    BaseType "Breach Ring"
+    SetFontSize 42
+    SetBackgroundColor 130 0 200
+    SetTextColor 255 255 119
+    SetBorderColor 200 0 0
 
 #------------------------------------
 #    Jewels
 #------------------------------------
 Show
-	Class "Jewel"
-	SetFontSize 42
-	SetBackgroundColor 10 10 40
-	SetBorderColor 0 0 255
+    Class "Jewel"
+    SetFontSize 42
+    SetBackgroundColor 10 10 40
+    SetBorderColor 0 0 255
 
 #------------------------------------
 #    Talismans
 #------------------------------------
 Show
-	Class "Amulets"
-	BaseType "Talisman"
-	SetBackgroundColor 130 220 140
-	PlayAlertSound $SoundTalismans
-	Branch # Leagues - Talisman - Normal Talismans
-		Rarity Normal
-		SetFontSize 35
-		SetTextColor 0 0 0
-		SetBorderColor 0 0 0
-	Branch # Leagues - Talisman - Magic Talismans
-		Rarity Magic
-		SetFontSize 38
-		SetTextColor 50 50 255
-		SetBorderColor 50 50 255
-	Branch # Leagues - Talisman - Rare Talismans
-		Rarity Rare
-		SetFontSize 42
-		SetTextColor 255 255 0
-		SetBorderColor 255 255 0
+    Class "Amulets"
+    BaseType "Talisman"
+    SetBackgroundColor 130 220 140
+    PlayAlertSound $SoundTalismans
+    Branch # Leagues - Talisman - Normal Talismans
+        Rarity Normal
+        SetFontSize 35
+        SetTextColor 0 0 0
+        SetBorderColor 0 0 0
+    Branch # Leagues - Talisman - Magic Talismans
+        Rarity Magic
+        SetFontSize 38
+        SetTextColor 50 50 255
+        SetBorderColor 50 50 255
+    Branch # Leagues - Talisman - Rare Talismans
+        Rarity Rare
+        SetFontSize 42
+        SetTextColor 255 255 0
+        SetBorderColor 255 255 0
 
 #------------------------------------
 #    Leveling Filter
 #------------------------------------
-#Disabled Block Start
-#Show  # Leveling Filter : check for leveling  / uncheck for mapping | Comment
-#	SocketGroup RGB
-#	SetFontSize 30
-#	SetBorderColor 255 255 255 150
-#Disabled Block End
+# Weapons - Axes - One Hand
+#Leveling
+    #Early leveling
+    #Flasks
+        # Life
+        # Mana
+        # Utility
+    # Armours
+        # Body Armour
+        # Boots
+        # Gloves
+        # Helmets
+        # Shields
+    # Accessories
+        # Amulets
+        # Belts
+        # Quivers
+        # Rings
+    # Weapons
+        # Melee
+            # One Hand
+                # Axes
+                # Claws
+                # Daggers
+                # Maces
+                # Sceptres
+                # Thrusting Swords
+                # Sword
+            # Two Hand
+                # Axes
+                # Maces
+                # Staves
+                # Sword
+        # Ranged
+            # Bow
+            # Wand
 
-#Disabled Block Start
-#Show # Leveling Filter : check for leveling  / uncheck for mapping | Comment
-#	Rarity = Normal
-#	LinkedSockets = 4
-#	SetFontSize 37
-#	SetBorderColor 90 90 90
-#Disabled Block End
+#Flasks
+Show # Leveling - Flasks - Life Flasks | Comment
+    Class "Life Flask"
+    Rarity Magic
+    SetFontSize 36
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    PlayAlertSound $SoundLeveling
+    Branch
+        DropLevel >= 60
+    Branch
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 42
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 36
+        ItemLevel <= 49
+    Branch
+        DropLevel >= 30
+        ItemLevel <= 41
+    Branch
+        DropLevel >= 24
+        ItemLevel <= 35
+    Branch
+        DropLevel >= 18
+        ItemLevel <= 29
+    Branch
+        DropLevel >= 12
+        ItemLevel <= 23
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 17
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 11
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 5
+Show # Leveling - Flasks - Mana Flasks | Comment
+    Class "Mana Flask"
+    Rarity Magic
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        DropLevel >= 60
+    Branch
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 42
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 36
+        ItemLevel <= 49
+    Branch
+        DropLevel >= 30
+        ItemLevel <= 41
+    Branch
+        DropLevel >= 24
+        ItemLevel <= 35
+    Branch
+        DropLevel >= 18
+        ItemLevel <= 29
+    Branch
+        DropLevel >= 12
+        ItemLevel <= 23
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 17
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 11
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 5
+Show # Leveling - Flasks - Utility Flasks | Comment
+    Class "Utility Flask"
+    Rarity Magic
+    SetFontSize 34
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        BaseType "Quicksilver"
+        SetFontSize 38
+        PlayAlertSound $SoundLeveling
+Show # Leveling - Flasks - Life Flasks | Comment
+    Class "Life Flask"
+    SetFontSize 36
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    SetBorderColor 180 180 180
+    PlayAlertSound $SoundLeveling
+    Branch
+        DropLevel >= 60
+    Branch
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 42
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 36
+        ItemLevel <= 49
+    Branch
+        DropLevel >= 30
+        ItemLevel <= 41
+    Branch
+        DropLevel >= 24
+        ItemLevel <= 35
+    Branch
+        DropLevel >= 18
+        ItemLevel <= 29
+    Branch
+        DropLevel >= 12
+        ItemLevel <= 23
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 17
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 11
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 5
+Show # Leveling - Flasks - Mana Flasks | Comment
+    Class "Mana Flask"
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    SetBorderColor 180 180 180
+    Branch
+        DropLevel >= 60
+    Branch
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 42
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 36
+        ItemLevel <= 49
+    Branch
+        DropLevel >= 30
+        ItemLevel <= 41
+    Branch
+        DropLevel >= 24
+        ItemLevel <= 35
+    Branch
+        DropLevel >= 18
+        ItemLevel <= 29
+    Branch
+        DropLevel >= 12
+        ItemLevel <= 23
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 17
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 11
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 5
+Show # Leveling - Flasks - Utility Flasks | Comment
+    Class "Utility Flask"
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    SetBorderColor 180 180 180
+    Branch
+        BaseType "Quicksilver"
+        SetFontSize 38
+        PlayAlertSound $SoundLeveling
 
-#Disabled Block Start
-#Show # Leveling Filter : check for leveling  / uncheck for mapping | Comment
-#	Rarity = Rare
-#	LinkedSockets = 4
-#	SetFontSize 37
-#	SetBackgroundColor 100 100 0 200
-#	SetBorderColor 255 255 119
-#Disabled Block End
+#Armours
+Show # Leveling - Armours - Body Armours | Comment
+    Class "Body Armour"
+    Rarity = Rare
+    SetFontSize 36
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    Branch
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        DropLevel >= 21
+        ItemLevel <= 36
+    Branch
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 100
+        SetTextColor 255 255 119 100
+        SetBorderColor 255 255 119 100
+Show # Leveling - Armours - Boots | Comment
+    Class "Boot"
+    Rarity = Rare
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    Branch
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        DropLevel >= 21
+        ItemLevel <= 36
+    Branch
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 100
+        SetTextColor 255 255 119 100
+        SetBorderColor 255 255 119 100
+Show # Leveling - Armours - Gloves | Comment
+    Class "Glove"
+    Rarity = Rare
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    Branch
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        DropLevel >= 21
+        ItemLevel <= 36
+    Branch
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 100
+        SetTextColor 255 255 119 100
+        SetBorderColor 255 255 119 100
+Show # Leveling - Armours - Helmets | Comment
+    Class "Helmet"
+    Rarity = Rare
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    Branch
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        DropLevel >= 21
+        ItemLevel <= 36
+    Branch
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 100
+        SetTextColor 255 255 119 100
+        SetBorderColor 255 255 119 100
+Show # Leveling - Armours - Shields | Comment
+    Class "Shield"
+    Rarity = Rare
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    Branch
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        DropLevel >= 21
+        ItemLevel <= 36
+    Branch
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 100
+        SetTextColor 255 255 119 100
+        SetBorderColor 255 255 119 100
 
-#Recipe Chaos Orb - good base
-#Disabled Block Start
-#Show # Leveling Filter : check for leveling  / uncheck for mapping | Comment
-#	BaseType "Void Sceptre" "Opal Sceptre" "Profane Wand" "Prophecy Wand" "Opal Wand" "Sambar Sceptre" "Imbued Wand" "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Saintly Chainmail" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titan Gauntlets" "Slink Gloves" "Eternal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots" "Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather Belt" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash" "Lion Sword" "Vaal Greatsword" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Platinum Kris" "Demon Dagger" "Imperial Skean" "Vaal Hatchet" "Runic Hatchet" "Behemoth Mace" "Eternal Sword" "Tiger Hook" "Eclipse Staff" "Maelstr" "Judgement Staff" "Jewelled Foil" "Dragoon Sword" "Sai"
-#	Rarity Rare
-#	ItemLevel >= 60
-#	SetFontSize 43
-#	SetBackgroundColor 255 255 119
-#	SetTextColor 100 100 0
-#	SetBorderColor 255 255 255
-#Disabled Block End
+# Accessories
+Show # Leveling - Accessories - Amulets | Comment
+    Class "Amulet"
+    Rarity = Rare
+    ItemLevel <= 59
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+Show # Leveling - Accessories - Belts | Comment
+    Class "Belt"
+    Rarity = Rare
+    ItemLevel <= 59
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+Show # Leveling - Accessories - Quivers | Comment
+    Class "Quiver"
+    Rarity = Rare
+    ItemLevel <= 59
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+Show # Leveling - Accessories - Rings | Comment
+    Class "Ring"
+    Rarity = Rare
+    ItemLevel <= 59
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
 
-#Recipe Chaos Orb
-#Disabled Block Start
-#Show # Leveling Filter : check for leveling  / uncheck for mapping | Comment
-#	Rarity Rare
-#	ItemLevel >= 60
-#	SetFontSize 39
-#	SetBackgroundColor 255 255 119
-#	SetTextColor 100 100 0
-#	SetBorderColor 100 100 0
-#Disabled Block End
+# Weapons
+Show # Leveling - Weapons - Melee - One Hand - Axes | Comment
+    Class "One Hand Axe"
+    Rarity = Rare
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    Branch
+        DropLevel >= 49
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 42
+        ItemLevel <= 55
+    Branch
+        DropLevel >= 33
+        ItemLevel <= 44
+    Branch
+        DropLevel >= 21
+        ItemLevel <= 36
+    Branch
+        DropLevel >= 11
+        ItemLevel <= 28
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 2
+        ItemLevel <= 15
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 100
+        SetTextColor 255 255 119 100
+        SetBorderColor 255 255 119 100
+Show # Leveling - Weapons - Melee - One Hand - Claws | Comment
+    Class "Claw"
+    Rarity = Rare
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    Branch
+        DropLevel >= 52
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 43
+        ItemLevel <= 54
+    Branch
+        DropLevel >= 34
+        ItemLevel <= 45
+    Branch
+        DropLevel >= 22
+        ItemLevel <= 36
+    Branch
+        DropLevel >= 12
+        ItemLevel <= 29
+    Branch
+        DropLevel >= 7
+        ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 100
+        SetTextColor 255 255 119 100
+        SetBorderColor 255 255 119 100
+Show # Leveling - Weapons - Melee - One Hand - Daggers | Comment
+    Class "Dagger"
+    Rarity = Rare
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    Branch
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 54
+    Branch
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        DropLevel >= 20
+        ItemLevel <= 35
+    Branch
+        DropLevel >= 10
+        ItemLevel <= 27
+    Branch
+        DropLevel >= 5
+        ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 100
+        SetTextColor 255 255 119 100
+        SetBorderColor 255 255 119 100
+Show # Leveling - Weapons - Melee - One Hand - Maces | Comment
+    Class "One Hand Mace"
+    Rarity = Rare
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    Branch
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        DropLevel >= 20
+        ItemLevel <= 34
+    Branch
+        DropLevel >= 10
+        ItemLevel <= 27
+    Branch
+        DropLevel >= 5
+        ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 100
+        SetTextColor 255 255 119 100
+        SetBorderColor 255 255 119 100
+Show # Leveling - Weapons - Melee - One Hand - Sceptres | Comment
+    Class "Sceptre"
+    Rarity = Rare
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    Branch
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        DropLevel >= 20
+        ItemLevel <= 34
+    Branch
+        DropLevel >= 10
+        ItemLevel <= 27
+    Branch
+        DropLevel >= 5
+        ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 100
+        SetTextColor 255 255 119 100
+        SetBorderColor 255 255 119 100
+Show # Leveling - Weapons - Melee - One Hand - Thrusting Swords | Comment
+    Class "Thrusting One Hand Sword"
+    Rarity = Rare
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    Branch
+        DropLevel >= 49
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 43
+        ItemLevel <= 54
+    Branch
+        DropLevel >= 34
+        ItemLevel <= 45
+    Branch
+        DropLevel >= 22
+        ItemLevel <= 36
+    Branch
+        DropLevel >= 12
+        ItemLevel <= 29
+    Branch
+        DropLevel >= 7
+        ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 100
+        SetTextColor 255 255 119 100
+        SetBorderColor 255 255 119 100
+Show # Leveling - Weapons - Melee - One Hand - Swords | Comment
+    Class "One Hand Sword"
+    Rarity = Rare
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    Branch
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        DropLevel >= 20
+        ItemLevel <= 34
+    Branch
+        DropLevel >= 10
+        ItemLevel <= 27
+    Branch
+        DropLevel >= 5
+        ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 100
+        SetTextColor 255 255 119 100
+        SetBorderColor 255 255 119 100
+Show # Leveling - Weapons - Melee - Two Hand - Axes | Comment
+    Class "Two Hand Axe"
+    Rarity = Rare
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    Branch
+        DropLevel >= 52
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 54
+    Branch
+        DropLevel >= 33
+        ItemLevel <= 44
+    Branch
+        DropLevel >= 23
+        ItemLevel <= 36
+    Branch
+        DropLevel >= 13
+        ItemLevel <= 27
+    Branch
+        DropLevel >= 9
+        ItemLevel <= 22
+    Branch
+        DropLevel >= 4
+        ItemLevel <= 17
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 100
+        SetTextColor 255 255 119 100
+        SetBorderColor 255 255 119 100
+Show # Leveling - Weapons - Melee - Two Hand - Maces | Comment
+    Class "Two Hand Mace"
+    Rarity = Rare
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    Branch
+        DropLevel >= 51
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 40
+        ItemLevel <= 55
+    Branch
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        DropLevel >= 22
+        ItemLevel <= 35
+    Branch
+        DropLevel >= 12
+        ItemLevel <= 26
+    Branch
+        DropLevel >= 8
+        ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 100
+        SetTextColor 255 255 119 100
+        SetBorderColor 255 255 119 100
+Show # Leveling - Weapons - Melee - Two Hand - Staves | Comment
+    Class "Staves"
+    Rarity = Rare
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    Branch
+        DropLevel >= 52
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 54
+    Branch
+        DropLevel >= 33
+        ItemLevel <= 44
+    Branch
+        DropLevel >= 23
+        ItemLevel <= 36
+    Branch
+        DropLevel >= 13
+        ItemLevel <= 27
+    Branch
+        DropLevel >= 9
+        ItemLevel <= 22
+    Branch
+        DropLevel >= 4
+        ItemLevel <= 17
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 100
+        SetTextColor 255 255 119 100
+        SetBorderColor 255 255 119 100
+Show # Leveling - Weapons - Melee - Two Hand - Swords | Comment
+    Class "Two Hand Sword"
+    Rarity = Rare
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    Branch
+        DropLevel >= 51
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 40
+        ItemLevel <= 55
+    Branch
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        DropLevel >= 22
+        ItemLevel <= 35
+    Branch
+        DropLevel >= 12
+        ItemLevel <= 26
+    Branch
+        DropLevel >= 8
+        ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 100
+        SetTextColor 255 255 119 100
+        SetBorderColor 255 255 119 100
+Show # Leveling - Weapons - Ranged - Bow | Comment
+    Class "Bow"
+    Rarity = Rare
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    Branch
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        DropLevel >= 18
+        ItemLevel <= 35
+    Branch
+        DropLevel >= 9
+        ItemLevel <= 27
+    Branch
+        DropLevel >= 5
+        ItemLevel <= 17
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 13
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 100
+        SetTextColor 255 255 119 100
+        SetBorderColor 255 255 119 100
+Show # Leveling - Weapons - Ranged - Wand | Comment
+    Class "Wand"
+    Rarity = Rare
+    SetFontSize 33
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    Branch
+        DropLevel >= 49
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 40
+        ItemLevel <= 55
+    Branch
+        DropLevel >= 30
+        ItemLevel <= 44
+    Branch
+        DropLevel >= 18
+        ItemLevel <= 34
+    Branch
+        DropLevel >= 12
+        ItemLevel <= 29
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 17
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 11
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 100
+        SetTextColor 255 255 119 100
+        SetBorderColor 255 255 119 100
 
-#Recipe Chance Orb
-#Disabled Block Start
-#Show # Leveling Filter : check for leveling  / uncheck for mapping | Comment
-#	Rarity Rare
-#	SetFontSize 33
-#	SetBackgroundColor 50 50 0
-#	SetBorderColor 255 255 119
-#Disabled Block End
+#Armours - Magic
+Show # Leveling - Armours - Body Armours | Comment
+    Class "Body Armour"
+    Rarity = Magic
+    SetFontSize 33
+    SetBackgroundColor 0 0 60
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 21
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+Show # Leveling - Armours - Boots | Comment
+    Class "Boot"
+    Rarity = Magic
+    SetFontSize 33
+    SetBackgroundColor 0 0 60
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 21
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+Show # Leveling - Armours - Gloves | Comment
+    Class "Glove"
+    Rarity = Magic
+    SetFontSize 33
+    SetBackgroundColor 0 0 60
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 21
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+Show # Leveling - Armours - Helmets | Comment
+    Class "Helmet"
+    Rarity = Magic
+    SetFontSize 33
+    SetBackgroundColor 0 0 60
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 21
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+Show # Leveling - Armours - Shields | Comment
+    Class "Shield"
+    Rarity = Magic
+    SetFontSize 33
+    SetBackgroundColor 0 0 60
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 21
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+
+# Accessories
+Show # Leveling - Accessories - Amulets | Comment
+    Class "Amulet"
+    Rarity = Magic
+    Branch
+        DropLevel >= 8
+        ItemLevel <= 30
+        #modifier
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 20
+        #modifier
+Show # Leveling - Accessories - Belts | Comment
+    Class "Belt"
+    Rarity = Magic
+    ItemLevel <= 30
+        #modifier
+Show # Leveling - Accessories - Quivers | Comment
+    Class "Quiver"
+    Rarity = Magic
+    ItemLevel <= 30
+    SetFontSize 33
+Show # Leveling - Accessories - Rings | Comment
+    Class "Ring"
+    Rarity = Magic
+    ItemLevel <= 30
+    SetFontSize 33
+
+# Weapons
+Show # Leveling - Weapons - Melee - One Hand - Axes | Comment
+    Class "One Hand Axe"
+    Rarity = Magic
+    SetFontSize 33
+    SetBackgroundColor 0 0 60
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 49
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 42
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 33
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 21
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 11
+        ItemLevel <= 28
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 2
+        ItemLevel <= 15
+Show # Leveling - Weapons - Melee - One Hand - Claws | Comment
+    Class "Claw"
+    Rarity = Magic
+    SetFontSize 33
+    SetBackgroundColor 0 0 60
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 52
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 43
+        ItemLevel <= 54
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 34
+        ItemLevel <= 45
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 22
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 12
+        ItemLevel <= 29
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 7
+        ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+Show # Leveling - Weapons - Melee - One Hand - Daggers | Comment
+    Class "Dagger"
+    Rarity = Magic
+    SetFontSize 33
+    SetBackgroundColor 0 0 60
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 41
+        ItemLevel <= 54
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 20
+        ItemLevel <= 35
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 10
+        ItemLevel <= 27
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 5
+        ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+Show # Leveling - Weapons - Melee - One Hand - Maces | Comment
+    Class "One Hand Mace"
+    Rarity = Magic
+    SetFontSize 33
+    SetBackgroundColor 0 0 60
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 20
+        ItemLevel <= 34
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 10
+        ItemLevel <= 27
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 5
+        ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+Show # Leveling - Weapons - Melee - One Hand - Sceptres | Comment
+    Class "Sceptre"
+    Rarity = Magic
+    SetFontSize 33
+    SetBackgroundColor 0 0 60
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 20
+        ItemLevel <= 34
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 10
+        ItemLevel <= 27
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 5
+        ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+Show # Leveling - Weapons - Melee - One Hand - Thrusting Swords | Comment
+    Class "Thrusting One Hand Sword"
+    Rarity = Magic
+    SetFontSize 33
+    SetBackgroundColor 0 0 60
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 49
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 43
+        ItemLevel <= 54
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 34
+        ItemLevel <= 45
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 22
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 12
+        ItemLevel <= 29
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 7
+        ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+Show # Leveling - Weapons - Melee - One Hand - Swords | Comment
+    Class "One Hand Sword"
+    Rarity = Magic
+    SetFontSize 33
+    SetBackgroundColor 0 0 60
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 20
+        ItemLevel <= 34
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 10
+        ItemLevel <= 27
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 5
+        ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+Show # Leveling - Weapons - Melee - Two Hand - Axes | Comment
+    Class "Two Hand Axe"
+    Rarity = Magic
+    SetFontSize 33
+    SetBackgroundColor 0 0 60
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 52
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 41
+        ItemLevel <= 54
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 33
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 23
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 13
+        ItemLevel <= 27
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 9
+        ItemLevel <= 22
+    Branch
+        DropLevel >= 4
+        ItemLevel <= 17
+Show # Leveling - Weapons - Melee - Two Hand - Maces | Comment
+    Class "Two Hand Mace"
+    Rarity = Magic
+    SetFontSize 33
+    SetBackgroundColor 0 0 60
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 51
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 40
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 22
+        ItemLevel <= 35
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 12
+        ItemLevel <= 26
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 8
+        ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+Show # Leveling - Weapons - Melee - Two Hand - Staves | Comment
+    Class "Staves"
+    Rarity = Magic
+    SetFontSize 33
+    SetBackgroundColor 0 0 60
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 52
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 41
+        ItemLevel <= 54
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 33
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 23
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 13
+        ItemLevel <= 27
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 9
+        ItemLevel <= 22
+    Branch
+        DropLevel >= 4
+        ItemLevel <= 17
+Show # Leveling - Weapons - Melee - Two Hand - Swords | Comment
+    Class "Two Hand Sword"
+    Rarity = Magic
+    SetFontSize 33
+    SetBackgroundColor 0 0 60
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 51
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 40
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 22
+        ItemLevel <= 35
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 12
+        ItemLevel <= 26
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 8
+        ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+Show # Leveling - Weapons - Ranged - Bow | Comment
+    Class "Bow"
+    Rarity = Magic
+    SetFontSize 33
+    SetBackgroundColor 0 0 60
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 18
+        ItemLevel <= 35
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 9
+        ItemLevel <= 27
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 5
+        ItemLevel <= 17
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 13
+Show # Leveling - Weapons - Ranged - Wand | Comment
+    Class "Wand"
+    Rarity = Magic
+    SetFontSize 33
+    SetBackgroundColor 0 0 60
+    SetTextColor 140 140 255
+    SetBorderColor 140 140 255
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 49
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 40
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 30
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 18
+        ItemLevel <= 34
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 12
+        ItemLevel <= 29
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 6
+        ItemLevel <= 17
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 11
+
+#Armours - Normal
+Show # Leveling - Armours - Body Armours | Comment
+    Class "Body Armour"
+    Rarity = Normal
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 21
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+Show # Leveling - Armours - Boots | Comment
+    Class "Boot"
+    Rarity = Normal
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 21
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+Show # Leveling - Armours - Gloves | Comment
+    Class "Glove"
+    Rarity = Normal
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 21
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+Show # Leveling - Armours - Helmets | Comment
+    Class "Helmet"
+    Rarity = Normal
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 21
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+Show # Leveling - Armours - Shields | Comment
+    Class "Shield"
+    Rarity = Normal
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 21
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+
+# Accessories
+Show # Leveling - Accessories - Amulets | Comment
+    Class "Amulet"
+    Rarity = Normal
+    Branch
+        DropLevel >= 8
+        ItemLevel <= 30
+        #modifier
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 20
+        #modifier
+Show # Leveling - Accessories - Belts | Comment
+    Class "Belt"
+    Rarity = Normal
+    ItemLevel <= 30
+        #modifier
+Show # Leveling - Accessories - Quivers | Comment
+    Class "Quiver"
+    Rarity = Normal
+    ItemLevel <= 30
+    SetFontSize 33
+Show # Leveling - Accessories - Rings | Comment
+    Class "Ring"
+    Rarity = Normal
+    ItemLevel <= 30
+    SetFontSize 33
+
+# Weapons
+Show # Leveling - Weapons - Melee - One Hand - Axes | Comment
+    Class "One Hand Axe"
+    Rarity = Normal
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 49
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 42
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 33
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 21
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 11
+        ItemLevel <= 28
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 2
+        ItemLevel <= 15
+Show # Leveling - Weapons - Melee - One Hand - Claws | Comment
+    Class "Claw"
+    Rarity = Normal
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 52
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 43
+        ItemLevel <= 54
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 34
+        ItemLevel <= 45
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 22
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 12
+        ItemLevel <= 29
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 7
+        ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+Show # Leveling - Weapons - Melee - One Hand - Daggers | Comment
+    Class "Dagger"
+    Rarity = Normal
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 41
+        ItemLevel <= 54
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 20
+        ItemLevel <= 35
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 10
+        ItemLevel <= 27
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 5
+        ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+Show # Leveling - Weapons - Melee - One Hand - Maces | Comment
+    Class "One Hand Mace"
+    Rarity = Normal
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 20
+        ItemLevel <= 34
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 10
+        ItemLevel <= 27
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 5
+        ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+Show # Leveling - Weapons - Melee - One Hand - Sceptres | Comment
+    Class "Sceptre"
+    Rarity = Normal
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 20
+        ItemLevel <= 34
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 10
+        ItemLevel <= 27
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 5
+        ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+Show # Leveling - Weapons - Melee - One Hand - Thrusting Swords | Comment
+    Class "Thrusting One Hand Sword"
+    Rarity = Normal
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 49
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 43
+        ItemLevel <= 54
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 34
+        ItemLevel <= 45
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 22
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 12
+        ItemLevel <= 29
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 7
+        ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+Show # Leveling - Weapons - Melee - One Hand - Swords | Comment
+    Class "One Hand Sword"
+    Rarity = Normal
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 20
+        ItemLevel <= 34
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 10
+        ItemLevel <= 27
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 5
+        ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+Show # Leveling - Weapons - Melee - Two Hand - Axes | Comment
+    Class "Two Hand Axe"
+    Rarity = Normal
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 52
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 41
+        ItemLevel <= 54
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 33
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 23
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 13
+        ItemLevel <= 27
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 9
+        ItemLevel <= 22
+    Branch
+        DropLevel >= 4
+        ItemLevel <= 17
+Show # Leveling - Weapons - Melee - Two Hand - Maces | Comment
+    Class "Two Hand Mace"
+    Rarity = Normal
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 51
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 40
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 22
+        ItemLevel <= 35
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 12
+        ItemLevel <= 26
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 8
+        ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+Show # Leveling - Weapons - Melee - Two Hand - Staves | Comment
+    Class "Staves"
+    Rarity = Normal
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 52
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 41
+        ItemLevel <= 54
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 33
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 23
+        ItemLevel <= 36
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 13
+        ItemLevel <= 27
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 9
+        ItemLevel <= 22
+    Branch
+        DropLevel >= 4
+        ItemLevel <= 17
+Show # Leveling - Weapons - Melee - Two Hand - Swords | Comment
+    Class "Two Hand Sword"
+    Rarity = Normal
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 51
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 40
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 22
+        ItemLevel <= 35
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 12
+        ItemLevel <= 26
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 8
+        ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+Show # Leveling - Weapons - Ranged - Bow | Comment
+    Class "Bow"
+    Rarity = Normal
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 41
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 18
+        ItemLevel <= 35
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 9
+        ItemLevel <= 27
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 5
+        ItemLevel <= 17
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 13
+Show # Leveling - Weapons - Ranged - Wand | Comment
+    Class "Wand"
+    Rarity = Normal
+    SetFontSize 33
+    SetBackgroundColor 20 20 20 200
+    SetTextColor 180 180 180
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 49
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 40
+        ItemLevel <= 55
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 30
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 18
+        ItemLevel <= 34
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 12
+        ItemLevel <= 29
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 6
+        ItemLevel <= 17
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 11
+
+#Early Leveling
+Show # Leveling - EarlyLeveling - Rare Items
+    Rarity Rare
+    ItemLevel <= 12
+    SetFontSize 33
+    SetBackgroundColor 50 50 0 100
+    SetTextColor 255 255 119 100
+    SetBorderColor 255 255 119 100
+
+#------------------------------------
+#    BIG RGB item (behind leveling)
+#------------------------------------
+Hide # Sockets - RGB - Other Items
+    SocketGroup RGB
+    LinkedSockets < 4
+    SetFontSize 30
+    SetBorderColor 255 255 255 150
 
 #------------------------------------
 #    Rares
 #------------------------------------
 #Rare ilvl 75+ special cases
 Show 
-	Rarity Rare
-	ItemLevel >= 75
-	SetFontSize 45
-	SetBackgroundColor 255 255 119
-	SetTextColor 100 100 0
-	Branch # Rares - Regal Recipe (ilvl 75+) - Highlight Corrupted | Comment
-		Corrupted True
-		SetBorderColor 250 20 0
-	Branch # Rares - Regal Recipe (ilvl 75+) - Highlight Identified | Comment
-		Identified True
-		SetBorderColor 100 100 0
+    Rarity Rare
+    ItemLevel >= 75
+    SetFontSize 45
+    SetBackgroundColor 255 255 119
+    SetTextColor 100 100 0
+    Branch # Rares - Regal Recipe (ilvl 75+) - Highlight Corrupted | Comment
+        Corrupted True
+        SetBorderColor 250 20 0
+    Branch # Rares - Regal Recipe (ilvl 75+) - Highlight Identified | Comment
+        Identified True
+        SetBorderColor 100 100 0
 
 #Rare ilvl 60-75 special cases
 Show
-	Rarity Rare
-	ItemLevel >= 60
-	SetFontSize 38
-	SetBackgroundColor 50 50 0
-	SetTextColor 255 255 119
-	Branch # Rares - Chaos Recipe (ilvl 60 to 75) - Highlight Corrupted | Comment
-		Corrupted True
-		SetBorderColor 250 20 0
-	Branch # Rares - Chaos Recipe (ilvl 60 to 75) - Highlight Identified | Comment
-		Identified True
-		SetBorderColor 255 255 119
+    Rarity Rare
+    ItemLevel >= 60
+    SetFontSize 38
+    SetBackgroundColor 50 50 0
+    SetTextColor 255 255 119
+    Branch # Rares - Chaos Recipe (ilvl 60 to 75) - Highlight Corrupted | Comment
+        Corrupted True
+        SetBorderColor 250 20 0
+    Branch # Rares - Chaos Recipe (ilvl 60 to 75) - Highlight Identified | Comment
+        Identified True
+        SetBorderColor 255 255 119
 
 #------------------------------------
 #   Rares and Chaos / Regal Recipe
 #------------------------------------
 Show # Rares - Regal Recipe (ilvl 75+) - Highlight Good Bases | Comment
-	Tags @GoodBases
-	Rarity Rare
-	ItemLevel >= 75
-	SetFontSize 45
-	SetBackgroundColor 255 255 119
-	SetTextColor 100 100 0
-	SetBorderColor 255 255 255
+    Tags @GoodBases
+    Rarity Rare
+    ItemLevel >= 75
+    SetFontSize 45
+    SetBackgroundColor 255 255 119
+    SetTextColor 100 100 0
+    SetBorderColor 255 255 255
 Show # Rares - Chaos Recipe (ilvl 60 to 75) - Highlight Good Base | Comment
-	Tags @GoodBases
-	Rarity Rare
-	ItemLevel >= 60
-	SetFontSize 41
-	SetBackgroundColor 50 50 0
-	SetTextColor 255 255 119
-	SetBorderColor 255 255 255
+    Tags @GoodBases
+    Rarity Rare
+    ItemLevel >= 60
+    SetFontSize 41
+    SetBackgroundColor 50 50 0
+    SetTextColor 255 255 119
+    SetBorderColor 255 255 255
 
 #Regal Recipe
 Show
-	Rarity Rare
-	ItemLevel >= 75
-	SetFontSize 38
-	SetBackgroundColor 255 255 119
-	SetTextColor 100 100 0
-	Branch # Rares - Regal Recipe (ilvl 75+) - 2H and chests | Comment
-		Class "Two Hand" "Body Armours" "Bows" "Staves"
-		SetBorderColor 0 0 255
-	Branch # Rares - Regal Recipe (ilvl 75+) - jewellery | Comment
-		Class "Rings" "Amulets" "Belts"
-		SetBorderColor 255 101 255
-	Branch # Rares - Regal Recipe (ilvl 75+) - Helmet, Boots, Gloves | Comment
-		Class "Helmets" "Boots" "Gloves"
-		SetBorderColor 0 0 0
-	Branch Hide # Rares - Regal Recipe (ilvl 75+) - Other Bases (everything not shown for regal recipe and not the good tier bases)
-		SetBorderColor 100 100 0
+    Rarity Rare
+    ItemLevel >= 75
+    SetFontSize 38
+    SetBackgroundColor 255 255 119
+    SetTextColor 100 100 0
+    Branch # Rares - Regal Recipe (ilvl 75+) - 2H and chests | Comment
+        Class "Two Hand" "Body Armours" "Bows" "Staves"
+        SetBorderColor 0 0 255
+    Branch # Rares - Regal Recipe (ilvl 75+) - jewellery | Comment
+        Class "Rings" "Amulets" "Belts"
+        SetBorderColor 255 101 255
+    Branch # Rares - Regal Recipe (ilvl 75+) - Helmet, Boots, Gloves | Comment
+        Class "Helmets" "Boots" "Gloves"
+        SetBorderColor 0 0 0
+    Branch Hide # Rares - Regal Recipe (ilvl 75+) - Other Bases (everything not shown for regal recipe and not the good tier bases)
+        SetBorderColor 100 100 0
 
 #Chaos Recipe
 Show
-	Rarity Rare
-	ItemLevel >= 60
-	SetFontSize 36
-	SetBackgroundColor 50 50 0
-	SetTextColor 255 255 119
-	Branch # Rares - Chaos Recipe (ilvl 60 to 75) - 2H and chests | Comment
-		Class "Two Hand" "Body Armours" "Bows" "Staves"
-		SetBorderColor 0 0 255
-	Branch # Rares - Chaos Recipe (ilvl 60 to 75) - jewellery | Comment
-		Class "Rings" "Amulets" "Belts"
-		SetBorderColor 255 101 255
-	Branch # Rares - Chaos Recipe (ilvl 60 to 75) - Helmet, Boots, Gloves | Comment
-		Class "Helmets" "Boots" "Gloves"
-		SetBorderColor 0 0 0
-	Branch Hide # Rares - Chaos Recipe (ilvl 60 to 75) - Other Bases (everything not shown for regal recipe and not the good tier bases)
-		SetBorderColor 255 255 119
+    Rarity Rare
+    ItemLevel >= 60
+    SetFontSize 36
+    SetBackgroundColor 50 50 0
+    SetTextColor 255 255 119
+    Branch # Rares - Chaos Recipe (ilvl 60 to 75) - 2H and chests | Comment
+        Class "Two Hand" "Body Armours" "Bows" "Staves"
+        SetBorderColor 0 0 255
+    Branch # Rares - Chaos Recipe (ilvl 60 to 75) - jewellery | Comment
+        Class "Rings" "Amulets" "Belts"
+        SetBorderColor 255 101 255
+    Branch # Rares - Chaos Recipe (ilvl 60 to 75) - Helmet, Boots, Gloves | Comment
+        Class "Helmets" "Boots" "Gloves"
+        SetBorderColor 0 0 0
+    Branch Hide # Rares - Chaos Recipe (ilvl 60 to 75) - Other Bases (everything not shown for regal recipe and not the good tier bases)
+        SetBorderColor 255 255 119
 
 #------------------------------------
 #   Crafting bases
 #------------------------------------
 # This section handles additional crafting bases.
 Show # Crafting - Base ilvl>=84
-	BaseType $Crafting_Bases
-	Rarity < Rare
-	ItemLevel >= 84
-	SetFontSize 40
-	SetBackgroundColor 0 0 0
-	SetTextColor 0 180 0
-	SetBorderColor 255 255 255
+    BaseType $Crafting_Bases
+    Rarity < Rare
+    ItemLevel >= 84
+    SetFontSize 40
+    SetBackgroundColor 0 0 0
+    SetTextColor 0 180 0
+    SetBorderColor 255 255 255
 
 #------------------------------------
 #    Chance Recipe
 #------------------------------------
 #Normal item to chance
 Show # Chancing - Chance Bases
-	BaseType $Chance_Bases
-	Rarity Normal
-	SetFontSize 36
-	SetBackgroundColor 20 20 20 255
-	SetTextColor 0 180 0
-	SetBorderColor 0 180 0
+    BaseType $Chance_Bases
+    Rarity Normal
+    SetFontSize 36
+    SetBackgroundColor 20 20 20 255
+    SetTextColor 0 180 0
+    SetBorderColor 0 180 0
 
 #------------------------------------
 #    Currency
 #------------------------------------
 #Currency - Sextants
 Show
-	Class "Currency"
-	SetFontSize 43
-	SetBackgroundColor 50 50 50
-	SetTextColor 170 158 130
-	PlayAlertSound $SoundT2
-	Branch # Currency - Map Currency - Master Cartographer's Sextant
-		BaseType "Master Cartographer's Sextant"
-		SetBorderColor 250 20 0
-	Branch # Currency - Map Currency - Journeyman Cartographer's Sextant
-		BaseType "Journeyman Cartographer's Sextant"
-		SetBorderColor 255 255 0
-	Branch # Currency - Map Currency - Apprentice Cartographer's Sextant
-		BaseType "Apprentice Cartographer's Sextant"
-		SetBorderColor 220 220 220
-		
+    Class "Currency"
+    SetFontSize 43
+    SetBackgroundColor 50 50 50
+    SetTextColor 170 158 130
+    PlayAlertSound $SoundT2
+    Branch # Currency - Map Currency - Master Cartographer's Sextant
+        BaseType "Master Cartographer's Sextant"
+        SetBorderColor 250 20 0
+        PlayAlertSound $SoundT1
+    Branch # Currency - Map Currency - Journeyman Cartographer's Sextant
+        BaseType "Journeyman Cartographer's Sextant"
+        SetBorderColor 255 255 0
+    Branch # Currency - Map Currency - Apprentice Cartographer's Sextant
+        BaseType "Apprentice Cartographer's Sextant"
+        SetBorderColor 220 220 220
+        
 #Currency - Generic
 Show
-	Class "Currency"
-	SetTextColor 170 158 130
-	SetBorderColor 170 158 130
-	Branch # Currency - Generic Currency - T1 (Mirror, Exalted, Eternal, Divine)
-		Tags @Currency_T1
-		SetFontSize 45
-		SetBackgroundColor 255 255 255
-		PlayAlertSound $SoundT1
-	Branch # Currency - Generic Currency - T2 (Chaos, Vaal, Blessed, Regal, GCP, Regret, Fuse, Chisel, Scouring,...)
-		Tags @Currency_T2
-		SetFontSize 42
-		SetBackgroundColor 70 70 0
-		PlayAlertSound $SoundT2
-	Branch # Currency - Generic Currency - T3 (Chance, Alchemy, Alteration, Jeweller, Glassblower, Chromatic)
-		Tags @Currency_T3
-		SetFontSize 37
-		SetBackgroundColor 0 0 60
-		PlayAlertSound $SoundT3
-	Branch # Currency - Generic Currency - T4 (Augment, Transmute, Blacksmith, Armourer)
-		Tags @Currency_T4
-		SetFontSize 37
-	Branch # Currency - Generic Currency - Portal Scroll
-		Tags @Currency_PortalScroll
-		SetFontSize 33
-		SetBorderColor 170 158 130 0
-	Branch # Currency - Generic Currency - Scroll of Wisdom
-		Tags @Currency_ScrollWisdom
-		SetFontSize 33
-		SetBorderColor 170 158 130 0
+    Class "Currency"
+    SetTextColor 170 158 130
+    SetBorderColor 170 158 130
+    Branch # Currency - Generic Currency - T0 (Mirror, Exalted, Eternal,...)
+        Tags @Currency_Mirror
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        PlayAlertSound $SoundMirror
+    Branch # Currency - Generic Currency - T0 (Mirror, Exalted, Eternal,...)
+        Tags @Currency_Exalted
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        PlayAlertSound $SoundExalted
+    Branch # Currency - Generic Currency - T0 (Mirror, Exalted, Eternal,...)
+        Tags @Currency_T0
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        PlayAlertSound $SoundT0
+    Branch # Currency - Generic Currency - T1 (Divine)
+        Tags @Currency_Divine
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        PlayAlertSound $SoundDivine
+    Branch # Currency - Generic Currency - T1 (Divine)
+        Tags @Currency_T1
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        PlayAlertSound $SoundT1
+    Branch # Currency - Generic Currency - T2 (Chaos, Vaal, Blessed, Regal, GCP, Regret, Fuse, Chisel, Scouring,...)
+        Tags @Currency_Chaos
+        SetFontSize 42
+        SetBackgroundColor 70 70 0
+        PlayAlertSound $SoundChaos
+    Branch # Currency - Generic Currency - T2 (Chaos, Vaal, Blessed, Regal, GCP, Regret, Fuse, Chisel, Scouring,...)
+        Tags @Currency_Vaal
+        SetFontSize 42
+        SetBackgroundColor 70 70 0
+        PlayAlertSound $SoundVaal
+    Branch # Currency - Generic Currency - T2 (Chaos, Vaal, Blessed, Regal, GCP, Regret, Fuse, Chisel, Scouring,...)
+        Tags @Currency_Regal
+        SetFontSize 42
+        SetBackgroundColor 70 70 0
+        PlayAlertSound $SoundRegal
+    Branch # Currency - Generic Currency - T2 (Chaos, Vaal, Blessed, Regal, GCP, Regret, Fuse, Chisel, Scouring,...)
+        Tags @Currency_T2
+        SetFontSize 42
+        SetBackgroundColor 70 70 0
+        PlayAlertSound $SoundT2
+    Branch # Currency - Generic Currency - T3 (Chance, Alchemy, Alteration, Jeweller, Glassblower, Chromatic)
+        Tags @Currency_T3
+        SetFontSize 37
+        SetBackgroundColor 0 0 60
+        PlayAlertSound $SoundT3
+    Branch # Currency - Generic Currency - T4 (Augment, Transmute, Blacksmith, Armourer)
+        Tags @Currency_T4
+        SetFontSize 37
+    Branch # Currency - Generic Currency - Portal Scroll
+        Tags @Currency_PortalScroll
+        SetFontSize 33
+        SetBorderColor 170 158 130 0
+    Branch # Currency - Generic Currency - Scroll of Wisdom
+        Tags @Currency_ScrollWisdom
+        SetFontSize 33
+        SetBorderColor 170 158 130 0
+
+#Currency - Shards
+Show
+    Class "Currency"
+    SetTextColor 170 158 130
+    SetBorderColor 88 124 244
+    Branch # Currency - Shards - T0 (Mirror Shard)
+        Tags @Shard_T0
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        PlayAlertSound $SoundT0
+    Branch # Currency - Shards - T1 (Exalted Shard, Annulment Shard)
+        Tags @Shard_T1
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        PlayAlertSound $SoundT1
+    Branch # Currency - Shards - T2 (Harbinger's Shard, Ancient Shard)
+        Tags @Shard_T2
+        SetFontSize 42
+        SetBackgroundColor 70 70 0
+        PlayAlertSound $SoundT2
+    Branch # Currency - Shards - T3 (Chaos Shard, Regal Shard, Binding Shard, Horizon Shard, Engineer's Shard)
+        Tags @Shard_T3
+        SetFontSize 37
+        SetBackgroundColor 0 0 60
+        PlayAlertSound $SoundT3
+    Branch Hide # Currency - Shards - T4 (Trash Shard (Alt, Transmute, Alch, Scroll)
+        Tags @Shard_T4
+        SetFontSize 30
 
 #------------------------------------
 #    Flasks
 #------------------------------------
 Show # Flasks - Utility flasks
-	Class "Utility Flasks"
-	SetFontSize 30
-	SetBackgroundColor 0 30 30
+    Class "Utility Flasks"
+    SetFontSize 30
+    SetBackgroundColor 0 30 30
 Show # Flasks - Flask Quality (≥ 14%)
-	Class "Flasks"
-	Quality >= 14
-	SetFontSize 35
-	SetBorderColor 128 179 255
+    Class "Flasks"
+    Quality >= 14
+    SetFontSize 35
+    SetBorderColor 128 179 255
 
 #------------------------------------
 #    Labyrinth
 #------------------------------------
 Show
-	Class "Labyrinth"
-	SetFontSize 42
-	SetBackgroundColor 50 50 0
-	SetBorderColor 255 255 119
+    Class "Labyrinth"
+    SetFontSize 42
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    PlayAlertSound $SoundQuest
 
 #------------------------------------
 #    Chisel Recipe
 #------------------------------------
 Show
-	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
-	SetFontSize 35
-	SetBackgroundColor 0 0 0
-	SetTextColor 255 100 255
-	SetBorderColor 255 100 255
-	Branch # Chisel Recipe - Rare Quality ≥ 17%
-		Rarity Rare
-		Quality >= 17
-	Branch # Chisel Recipe - Magic with quality ≥ 14%
-		Rarity Magic
-		Quality >= 14
-	Branch # Chisel Recipe - Normal
-		Rarity Normal
+    BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+    SetFontSize 35
+    SetBackgroundColor 0 0 0
+    SetTextColor 255 100 255
+    SetBorderColor 255 100 255
+    Branch # Chisel Recipe - Rare Quality ≥ 17%
+        Rarity Rare
+        Quality >= 17
+    Branch # Chisel Recipe - Magic with quality ≥ 14%
+        Rarity Magic
+        Quality >= 14
+    Branch # Chisel Recipe - Normal
+        Rarity Normal
 
 #------------------------------------
 #    Gems
 #------------------------------------
 Show # Gems - Drop Only gems
-	Class "Gems"
-	Tags @Gems_DropOnly
-	SetFontSize 50
-	SetBackgroundColor 70 20 0
-	SetBorderColor 27 162 155
+    Class "Gems"
+    Tags @Gems_DropOnly
+    SetFontSize 50
+    SetBackgroundColor 70 20 0
+    SetBorderColor 27 162 155
 Show # Gems - Quality (> 0%)
-	Class "Gems"
-	Quality > 0
-	SetFontSize 38
-	SetBorderColor 128 179 255
+    Class "Gems"
+    Quality > 0
+    SetFontSize 38
+    SetBorderColor 128 179 255
 Show # Gems - Others
-	Class "Gems"
-	SetFontSize 30
-	SetBorderColor 27 162 155
+    Class "Gems"
+    SetFontSize 30
+    SetBorderColor 27 162 155
 
 #------------------------------------
 #    Quest
 #------------------------------------
 Show
-	Class "Quest"
-	SetFontSize 40
-	SetBackgroundColor 74 230 58
-	SetTextColor 0 0 0
-	SetBorderColor 0 0 0
+    Class "Quest"
+    SetFontSize 40
+    SetBackgroundColor 74 230 58
+    SetTextColor 0 0 0
+    SetBorderColor 0 0 0
+    PlayAlertSound $SoundQuest
+
+#------------------------------------
+#    Soul
+#------------------------------------
+Show
+    Class "Pantheon Soul"
+    SetFontSize 40
+    SetBackgroundColor 74 230 58
+    SetTextColor 88 124 244
+    SetBorderColor 88 124 244
+    PlayAlertSound $SoundQuest
 
 #------------------------------------
 #    Divination cards
 #------------------------------------
 Show
-	Class "Divination"
-	SetFontSize 38
-	SetBackgroundColor 255 165 0 210
-	SetTextColor 0 0 0
-	SetBorderColor 255 165 0
-	Branch Inherit # Divination Cards - T1 Div cards
-		Tags @DivinationCards_T1
-		SetFontSize 45
-		SetBackgroundColor 255 255 255
-		SetTextColor  255 165 0
-		SetBorderColor  255 165 0
-		PlayAlertSound $SoundT1
-	Branch Inherit # Divination Cards - T2 Div cards
-		Tags @DivinationCards_T2
-		SetFontSize 44
-		SetBackgroundColor 255 165 0 245
-		SetTextColor 255 255 255
-		SetBorderColor 255 255 255
-		PlayAlertSound $SoundT2
-	# just so T3 show up before T4
-	Branch Inherit # Divination Cards - T3 Div cards
-		BaseType "The Road to Power"
-		SetFontSize 40
-		SetBackgroundColor 255 165 0 235
-		SetBorderColor 255 255 255
-		PlayAlertSound $SoundT3
-	# wolf's shadow here to prevent exception with The Wolf - Also allows for T4 to be displayed before T5
-	Branch Inherit # Divination Cards - T4 Div cards (everything else)
-		BaseType "The Wolf's Shadow"
-		SetFontSize 38
-	Branch Inherit # Divination Cards - T3 Div cards
-		Tags @DivinationCards_T3
-		SetFontSize 40
-		SetBackgroundColor 255 165 0 235
-		SetBorderColor 255 255 255
-		PlayAlertSound $SoundT3
-	Branch Hide # Divination Cards - T5 Div cards (trash)
-		Tags @DivinationCards_T5
-		SetFontSize 32
-		SetBackgroundColor 255 165 0 180
-		SetBorderColor 0 0 0
-	Branch Show # Divination Cards - T4 Div cards (everything else)
+    Class "Divination"
+    SetFontSize 38
+    SetBackgroundColor 255 165 0 210
+    SetTextColor 0 0 0
+    SetBorderColor 255 165 0
+    Branch Inherit # Divination Cards - T1 Div cards
+        Tags @DivinationCards_T0
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        SetTextColor  255 165 0
+        SetBorderColor  255 165 0
+        PlayAlertSound $SoundT0
+    Branch Inherit # Divination Cards - T2 Div cards
+        Tags @DivinationCards_T1
+        SetFontSize 44
+        SetBackgroundColor 255 165 0 245
+        SetTextColor 255 255 255
+        SetBorderColor 255 255 255
+        PlayAlertSound $SoundT1
+    # just so T2 show up before T3
+    Branch Inherit # Divination Cards - T2 Div cards
+        BaseType "The Road to Power"
+        SetFontSize 40
+        SetBackgroundColor 255 165 0 235
+        SetBorderColor 255 255 255
+        PlayAlertSound $SoundT2
+    # wolf's shadow here to prevent exception with The Wolf - Also allows for T4 to be displayed before T5
+    Branch Inherit # Divination Cards - T3 Div cards (everything else)
+        BaseType "The Wolf's Shadow"
+        SetFontSize 38
+    Branch Inherit # Divination Cards - T2 Div cards
+        Tags @DivinationCards_T2
+        SetFontSize 40
+        SetBackgroundColor 255 165 0 235
+        SetBorderColor 255 255 255
+        PlayAlertSound $SoundT2
+    Branch Hide # Divination Cards - T4 Div cards (trash)
+        Tags @DivinationCards_T4
+        SetFontSize 32
+        SetBackgroundColor 255 165 0 180
+        SetBorderColor 0 0 0
+    Branch Show # Divination Cards - T3 Div cards (everything else)
 
 #------------------------------------
 #    Temporary Leagues
@@ -719,179 +2929,157 @@ Show
 #    Legacy League
 #------------------------------------
 Show
-	Class "Leaguestone"
-	SetBackgroundColor 10 70 160
-	SetTextColor 255 250 100 
-	SetBorderColor 255 255 119 
-	Branch # Leagues - Legacy - Normal Leaguestones
-		Rarity Normal 
-		SetFontSize 37
-		PlayAlertSound $SoundT3
-	Branch # Leagues - Legacy - Magic Leaguestones
-		Rarity Magic 
-		SetFontSize 39
-		PlayAlertSound $SoundT2
+    Class "Leaguestone"
+    SetBackgroundColor 10 70 160
+    SetTextColor 255 250 100 
+    SetBorderColor 255 255 119 
+    Branch # Leagues - Legacy - Normal Leaguestones
+        Rarity Normal 
+        SetFontSize 37
+        PlayAlertSound $SoundT3
+    Branch # Leagues - Legacy - Magic Leaguestones
+        Rarity Magic 
+        SetFontSize 39
+        PlayAlertSound $SoundT2
 Show # Leagues - Legacy - Reliquary Keys
-	Class "Misc Map Items"
-	BaseType "Ancient Reliquary Key"
-	SetFontSize 45
-	SetBackgroundColor 255 230 180
-	SetTextColor 50 7 7
-	SetBorderColor 255 215 0
-	PlayAlertSound $SoundT1
+    Class "Misc Map Items"
+    BaseType "Ancient Reliquary Key"
+    SetFontSize 45
+    SetBackgroundColor 255 230 180
+    SetTextColor 50 7 7
+    SetBorderColor 255 215 0
+    PlayAlertSound $SoundT1
 
 #------------------------------------
 #    Breach League
 #------------------------------------
 #Splinters
 Show
-	Class "Currency"
-	SetFontSize 39
-	SetBackgroundColor 130 0 200
-	SetTextColor 170 158 130
-	SetBorderColor 200 0 0
-	Branch # Leagues - Breach - Splinters - Chayula
-		BaseType "Splinter of Chayula"
-		PlayAlertSound $SoundT2
-	Branch # Leagues - Breach - Splinters - Others
-		BaseType "Splinter"
-		PlayAlertSound $SoundT3
+    Class "Currency"
+    SetFontSize 39
+    SetBackgroundColor 130 0 200
+    SetTextColor 170 158 130
+    SetBorderColor 200 0 0
+    Branch # Leagues - Breach - Splinters - Chayula
+        BaseType "Splinter of Chayula"
+        PlayAlertSound $SoundT2
+    Branch # Leagues - Breach - Splinters - Others
+        BaseType "Splinter"
+        PlayAlertSound $SoundT3
 #Blessings
 Show
-	Class "Currency"
-	SetFontSize 42
-	SetBackgroundColor 200 0 0
-	SetTextColor 170 158 130
-	SetBorderColor 130 0 200
-	Branch # Leagues - Breach - Blessings - Chayula and Esh
-		BaseType "Blessing of Chayula" "Blessing of Esh"
-		PlayAlertSound $SoundT1
-	Branch # Leagues - Breach - Blessings - Others
-		BaseType "Blessing"
-		PlayAlertSound $SoundT2
+    Class "Currency"
+    SetFontSize 42
+    SetBackgroundColor 200 0 0
+    SetTextColor 170 158 130
+    SetBorderColor 130 0 200
+    Branch # Leagues - Breach - Blessings - Chayula and Esh
+        BaseType "Blessing of Chayula" "Blessing of Esh"
+        PlayAlertSound $SoundT1
+    Branch # Leagues - Breach - Blessings - Others
+        BaseType "Blessing"
+        PlayAlertSound $SoundT2
 #BreachStones
 Show
-	Class "Misc Map Items"
-	SetFontSize 42
-	SetBorderColor 130 0 200
-	Branch # Leagues - Breach - Breachstones - Chayula
-		BaseType "Chayula's Breachstone"
-		SetBackgroundColor 200 0 0
-		SetTextColor 0 0 0
-		PlayAlertSound $SoundT1
-	Branch # Leagues - Breach - Breachstones - Others
-		BaseType "Breachstone"
-		SetBackgroundColor 0 0 0
-		SetTextColor 200 0 0
-		PlayAlertSound $SoundT2
+    Class "Misc Map Items"
+    SetFontSize 42
+    SetBorderColor 130 0 200
+    Branch # Leagues - Breach - Breachstones - Chayula
+        BaseType "Chayula's Breachstone"
+        SetBackgroundColor 200 0 0
+        SetTextColor 0 0 0
+        PlayAlertSound $SoundT1
+    Branch # Leagues - Breach - Breachstones - Others
+        BaseType "Breachstone"
+        SetBackgroundColor 0 0 0
+        SetTextColor 200 0 0
+        PlayAlertSound $SoundT2
 
 #------------------------------------
 #    Essence League
 #------------------------------------
 Show
-	Class "Currency"
-	SetFontSize 37
-	SetBackgroundColor 180 195 245
-	SetTextColor 10 25 90
-	SetBorderColor 10 25 90
-	Branch # Leagues - Essence - Essences - T1
-		Tags @Essences_T1
-		SetFontSize 50
-		SetBackgroundColor 255 255 255
-		PlayAlertSound $SoundT1
-	Branch # Leagues - Essence - Essences - T2
-		Tags @Essences_T2
-		SetFontSize 40
-		SetBackgroundColor 10 25 90
-		SetTextColor 180 195 245
-		SetBorderColor 180 195 245
-		PlayAlertSound $SoundT2
-	Branch # Leagues - Essence - Essences - Others
-		BaseType "Essence"
-		PlayAlertSound $SoundT3
-	Branch # Leagues - Essence - Remnant of Corruption
-		BaseType "Remnant of Corruption"
-		SetFontSize 42
-		SetTextColor 250 20 0
-		SetBorderColor 250 20 0
-		PlayAlertSound $SoundT2
+    Class "Currency"
+    SetFontSize 37
+    SetBackgroundColor 180 195 245
+    SetTextColor 10 25 90
+    SetBorderColor 10 25 90
+    Branch # Leagues - Essence - Essences - T1
+        Tags @Essences_T1
+        SetFontSize 50
+        SetBackgroundColor 255 255 255
+        PlayAlertSound $SoundT1
+    Branch # Leagues - Essence - Essences - T2
+        Tags @Essences_T2
+        SetFontSize 40
+        SetBackgroundColor 10 25 90
+        SetTextColor 180 195 245
+        SetBorderColor 180 195 245
+        PlayAlertSound $SoundT2
+    Branch # Leagues - Essence - Essences - Others
+        BaseType "Essence"
+        PlayAlertSound $SoundT3
+    Branch # Leagues - Essence - Remnant of Corruption
+        BaseType "Remnant of Corruption"
+        SetFontSize 42
+        SetTextColor 250 20 0
+        SetBorderColor 250 20 0
+        PlayAlertSound $SoundT2
 
 #------------------------------------
 #    Prophecy League
 #------------------------------------
 Show # Leagues - Prophecy - Silver Coins
-	Class "Currency"
-	BaseType "Silver Coin"
-	SetFontSize 37
-	SetBackgroundColor 192 192 192
-	SetTextColor 128 0 200
-	SetBorderColor 128 0 200
-	PlayAlertSound $SoundT3
+    Class "Currency"
+    BaseType "Silver Coin"
+    SetFontSize 37
+    SetBackgroundColor 192 192 192
+    SetTextColor 128 0 200
+    SetBorderColor 128 0 200
+    PlayAlertSound $SoundT3
 Show # Leagues - Prophecy - Prophecies 
-	Class "Currency"
-	BaseType "Prophecy"
-	SetFontSize 37
-	SetBackgroundColor 128 0 200
-	SetTextColor 192 192 192
-	SetBorderColor 192 192 192
-	PlayAlertSound $SoundT2
+    Class "Currency"
+    BaseType "Prophecy"
+    SetFontSize 37
+    SetBackgroundColor 128 0 200
+    SetTextColor 192 192 192
+    SetBorderColor 192 192 192
+    PlayAlertSound $SoundT2
 
 #------------------------------------
 #    Perandus League
 #------------------------------------
 Show # Leagues - Perandus - Coins
-	Class "Currency"
-	BaseType "Perandus Coin"
-	SetFontSize 37
-	SetBackgroundColor 100 70 0
-	SetTextColor 255 215 0
-	SetBorderColor 255 215 0
-	PlayAlertSound $SoundT3
+    Class "Currency"
+    BaseType "Perandus Coin"
+    SetFontSize 37
+    SetBackgroundColor 100 70 0
+    SetTextColor 255 215 0
+    SetBorderColor 255 215 0
+    PlayAlertSound $SoundT3
 
 #------------------------------------
 #    Warband items
 #------------------------------------
 Show
-	Rarity Magic
-	Corrupted False
-	Identified True
-	SetFontSize 34
-	SetBackgroundColor 200 100 180
-	SetTextColor 255 192 203
-	SetBorderColor 255 192 203
-	Branch # Leagues - Warband - Warband items
-		Class "Helmets" "Boots"
-		ItemLevel = 82
-	Branch # Leagues - Warband - Warband items
-		Class "Daggers" "Wands" "Sceptres"
-		ItemLevel = 84
+    Rarity Magic
+    Corrupted False
+    Identified True
+    SetFontSize 34
+    SetBackgroundColor 200 100 180
+    SetTextColor 255 192 203
+    SetBorderColor 255 192 203
+    Branch # Leagues - Warband - Warband items
+        Class "Helmets" "Boots"
+        ItemLevel = 82
+    Branch # Leagues - Warband - Warband items
+        Class "Daggers" "Wands" "Sceptres"
+        ItemLevel = 84
 
 #------------------------------------
 #    Other currencies
 #------------------------------------
 Show
-	Class "Currency"
-
-#------------------------------------
-#    Hide the rest
-#------------------------------------
-# Normal items
-#Disabled Block Start
-#Show # Leveling Filter : check for leveling  / uncheck for mapping | Comment
-#	Rarity = Normal
-#	SetFontSize 33
-#	SetBackgroundColor 20 20 20 200
-#	SetTextColor 180 180 180
-#Disabled Block End
-
-# Magic items
-#Disabled Block Start
-#Show # Leveling Filter : check for leveling  / uncheck for mapping | Comment
-#	Rarity = Magic
-#	SetFontSize 33
-#	SetBackgroundColor 0 0 60
-#	SetTextColor 140 140 255
-#	SetBorderColor 140 140 255
-#Disabled Block End
+    Class "Currency"
 
 Hide
