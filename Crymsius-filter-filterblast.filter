@@ -1,13 +1,13 @@
 ###Crymsius-filter
-###Version 3.0.0
+###Version 3.0.1
 # Author : Crymsius 
 # Source : https://github.com/Crymsius/Crymsius-filter
 
 SetOption $Introduction info [Here you'll discover a sleek filter, designed by and for colour blind (and others !) with highlights for recipes, good bases, tiers and an emphasis on colour schemes that respect PoE's ones! You can customize the filter with the following options, and later, select the smartblocks you want to display or hide.] # Welcome to the filter! 
 SetOption $Links link [GitHub] [https://github.com/Crymsius/Crymsius-filter] [Forum Thread] [https://www.pathofexile.com/forum/view-thread/1895126]
 
-# //! SetOption $Chance_Bases textarea ["Sorcerer Boots" "Occultist's Vestment" "Assassin's Garb" "Prophecy Wand" "Leather Belt"] # Add or delete the bases for items you want to chance.
-# //! SetOption $Crafting_Bases textarea ["Hubris Circlet" "Vaal Regalia" "Titanium Spirit Shield" "Sorcerer Gloves" "Sorcerer Boots" "Two-Stone" "Onyx" "Diamond Ring" "Prismatic"] # Add or delete the bases for items you want to craft (ilvl≥84).
+# //! SetOption $Chance_Bases textarea ["Sorcerer Boots"] # Add or delete the bases for items you want to chance.
+# //! SetOption $Crafting_Bases textarea ["Two-Stone" "Onyx" "Diamond Ring" "Prismatic"] # Add or delete the bases for items you want to craft (ilvl≥84).
 
 # T0 : > 25c
 # T1 : 10c - 25c
@@ -16,8 +16,14 @@ SetOption $Links link [GitHub] [https://github.com/Crymsius/Crymsius-filter] [Fo
 # T4 : < 1alc
 
 #Sound alerts :
+SetTab [Block switches]
+SetTab [Sound theme]
+SetOption $SoundPositioning switch [off] [on] [off] # New feature from 3.0, Allow sound to be played from the location of the drop. It may lower the sound level, use with caution.
+SetOption $ShaperAnnouncements switch [Disable] [Show] # Select Show if you want Shaper to announce a Mirror/Exalted/Divine drop. (if Shown, overrides the sounds for Mirror/Exalted/Divine set up below)
 
-SetGlobalSoundPositioning on
+SetGlobalSoundPositioning $SoundPositioning
+
+SetOption $EmptyLine
 
 SetSound $SoundMirror 5 300 # Mirror Orb
 SetSound $SoundExalted 5 300 # Exalted Orb
@@ -56,29 +62,31 @@ SetTag @Uniques_T0_Jewels
 SetTag @Uniques_T0_Flasks
     BaseType "Stibnite Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask"
 SetTag @Uniques_T0_Weapons
-    BaseType "Vaal Axe" "Prophecy Wand" "Jewelled Foil" "Cutlas" "Ritual Sceptre"
+    BaseType "Vaal Axe" "Prophecy Wand" "Jewelled Foil" "Cutlas" "Ritual Sceptre" "Eternal Sword" "Imperial Claw" "Siege Axe" "Vaal Sceptre" "Carnal Sceptre" "Void Axe" "Abyssal Axe" "Imperial Maul"
 SetTag @Uniques_T0_Armours
-    BaseType "Occultist's Vestment" "Glorious Plate" "Sorcerer Boots" "Crusader Boots" "Rawhide Boots" "Ezomyte Tower Shield" "Hubris Circlet" "Legion Gloves"
+    BaseType "Occultist's Vestment" "Glorious Plate" "Full Wyrmscale" "Gladiator Plate" "Varnished Coat" "Sorcerer Boots" "Crusader Boots" "Rawhide Boots" "Ezomyte Tower Shield" "Archon Kite Shield" "Ezomyte Burgonet" "Callous Mask" "Legion Gloves" "Clasped Mitts"
 SetTag @Uniques_Multi-UniqueBases
-    BaseType "Ebony Tower Shield" "Onyx Amulet" "Goathide Boots" "Two-Stone Ring"
+    BaseType "Lacquered Garb" "Ebony Tower Shield" "Onyx Amulet" "Goathide Boots" "Two-Stone Ring"
 SetTag @Uniques_T1_Maps
     BaseType "Reef Map" "Temple Map"
 SetTag @Uniques_T1_Flasks
     BaseType "Bismuth Flask" "Granite Flask"
 SetTag @Uniques_T1_Weapons
-    BaseType "Carnal Sceptre" "Royal Axe" "Siege Axe" "Imperial Staff" "Abyssal Axe" "Vaal Sceptre" "Imperial Maul" "Steelhead" "Carnal Sceptre" "Terror Maul" "Fiend Dagger"
+    BaseType "Auric Mace" "Royal Axe" "Imperial Staff" "Steelhead" "Terror Maul" "Fiend Dagger" "Jasper Chopper" "Meatgrinder" "Jade Hatchet"
 SetTag @Uniques_T1_Armours
-    BaseType "Jingling Spirit Shield" "Savant's Robe" "Gladiator Plate" "Vaal Regalia" "Sacrificial Garb" "Archon Kite Shield" "Raven Mask" "Champion Kite Shield" "Nightmare Bascinet" "Ezomyte Burgonet" "Clasped Mitts" "Wyrmscale Doublet"
+    BaseType "Jingling Spirit Shield" "Savant's Robe" "Vaal Regalia" "Sacrificial Garb" "Exquisite Leather" "Raven Mask" "Champion Kite Shield" "Rawhide Tower Shield" "Nightmare Bascinet" "Hubris Circlet" "Wyrmscale Doublet"
 SetTag @Uniques_T1_Accessories
     BaseType "Gold Ring" "Citrine Amulet" "Crystal Belt"
 SetTag @Uniques_FatedUniques
     BaseType "Iron Ring" "Coral Ring" "Jade Amulet" "Plate Vest" "Ornate Sword" "Scholar Boots" "Iron Staff" "Spiraled Wand" "Sledgehammer" "Long Bow" "Crude Bow" "Royal Bow" "Woodsplitter" "Jade Hatchet" "Painted Buckler" "Plank Kite Shield" "War Buckler" "Gilded Sallet" "Iron Hat" "Vine Circlet" "Goathide Gloves" "Coral Amulet" "Fire Arrow Quiver" "Serrated Arrow Quiver" "Death Bow"
 
 #Tags Atlas and special bases
+SetTag @AtlasAndSpecialBases_T0
+    BaseType "Steel Ring" "Opal Ring"
 SetTag @AtlasAndSpecialBases_T1
-    BaseType "Steel Ring" "Opal Ring" "Crystal Belt"
+    BaseType "Crystal Belt" "Blue Pearl Amulet" "Marble Amulet"
 SetTag @AtlasAndSpecialBases_T2
-    BaseType "Sacrificial Garb" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+    BaseType "Sacrificial Garb" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
 
 #Tags Rare good bases`
 SetTag @GoodBases
@@ -98,13 +106,13 @@ SetTag @Currency_Vaal
 SetTag @Currency_Regal
     BaseType "Regal Orb"
 SetTag @Currency_T0
-    BaseType "Mirror of Kalandra" "Exalted Orb" "Eternal Orb" "Orb of Annulment"
+    BaseType "Mirror of Kalandra" "Exalted Orb" "Eternal Orb"
 SetTag @Currency_T1
-    BaseType "Divine Orb" "Stacked Deck" "Ancient Orb" "Harbinger's Orb"
+    BaseType "Divine Orb" "Ancient Orb"
 SetTag @Currency_T2
-    BaseType "Vaal Orb" "Blessed Orb" "Regal Orb" "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring" "Unshaping Orb" "Seal" "Orb of Binding" "Orb of Horizons" "Engineer's Orb"
+    BaseType "Vaal Orb" "Blessed Orb" "Regal Orb" "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring" "Stacked Deck" "Unshaping Orb" "Seal" "Orb of Horizons" "Engineer's Orb" "Orb of Annulment" "Harbinger's Orb"
 SetTag @Currency_T3
-    BaseType "Orb of Alteration" "Glassblower's Bauble" "Jeweller's Orb" "Orb of Alchemy" "Orb of Chance" "Chromatic Orb"
+    BaseType "Orb of Alteration" "Glassblower's Bauble" "Jeweller's Orb" "Orb of Alchemy" "Orb of Chance" "Chromatic Orb" "Orb of Binding"
 SetTag @Currency_T4
     BaseType "Orb of Augmentation" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap"
 SetTag @Currency_PortalScroll
@@ -116,11 +124,11 @@ SetTag @Currency_ScrollWisdom
 SetTag @Shard_T0
     BaseType "Mirror Shard"
 SetTag @Shard_T1
-    BaseType "Exalted Shard" "Annulment Shard"
+    BaseType "Exalted Shard"
 SetTag @Shard_T2
-    BaseType "Harbinger's Shard" "Ancient Shard"
+    BaseType "Ancient Shard"
 SetTag @Shard_T3
-    BaseType "Chaos Shard" "Regal Shard" "Binding Shard" "Horizon Shard" "Engineer's Shard"
+    BaseType "Chaos Shard" "Regal Shard" "Binding Shard" "Horizon Shard" "Engineer's Shard" "Annulment Shard" "Harbinger's Shard"
 SetTag @Shard_T4
     BaseType "Alteration Shard" "Transmutation Shard" "Alchemy Shard" "Scroll Fragment"
 
@@ -130,13 +138,13 @@ SetTag @Gems_DropOnly
 
 #Tags Divination Cards
 SetTag @DivinationCards_T0
-    BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Brittle Emperor" "The Immortal" "The Artist" "Wealth and Power" "Pride Before the Fall" "The Enlightened" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar" "Spark and the Flame" "Emperor of Purity" "Polymath"	
+    BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Queen" "Abandoned Wealth" "The Immortal" "Wealth and Power" "Pride Before the Fall" "The King's Heart" "The Celestial Justicar" "Emperor of Purity" "The Formless Sea"	
 SetTag @DivinationCards_T1
-    BaseType "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "The Hoarder" "The Chains that Bind" "The Warlord" "The Aesthete" "Saint's Treasure" "The Thaumaturgist" "Heterochromia" "The Porcupine" "The Stormcaller" "The Soul"
+    BaseType "The Cartographer" "The Dapper Prodigy" "The Vast" "Last Hope" "The Valkyrie" "The Sephirot" "The Hoarder" "The Chains that Bind" "The Warlord" "The Aesthete" "Saint's Treasure" "The Thaumaturgist" "Heterochromia" "The Porcupine" "The Stormcaller" "The Soul" "The Brittle Emperor" "Polymath" "Spark and the Flame" "Bowyer's Dream" "The Hunger" "The Enlightened" "The Artist" "The Offering" "The Ethereal"
 SetTag @DivinationCards_T2
-    BaseType "Chaotic Disposition" "The Road to Power" "The Arena Champion" "The Gladiator" "Glimmer of Hope" "The Tyrant" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Jack in the Box" "The Traitor" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Fletcher" "The Forsaken" "The Formless Sea" "The Demoness" "Time-Lost Relic" "The Wolf" "Earth Drinker" "Standoff" "Merciless Armament"
+    BaseType "Chaotic Disposition" "The Road to Power" "The Arena Champion" "The Gladiator" "Glimmer of Hope" "The Tyrant" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Jack in the Box" "The Traitor" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Forsaken" "The Demoness" "Time-Lost Relic" "The Wolf" "Earth Drinker" "Standoff" "Merciless Armament" "The Void" "The Dark Mage" "The Warlord"
 SetTag @DivinationCards_T4
-    BaseType "Carrion Crow" "Other Cheek" "Hermit" "King's Blade" "Thunderous Skies" "Metalsmith's Gift"
+    BaseType "Carrion Crow" "Other Cheek" "Hermit" "King's Blade" "Thunderous Skies" "Metalsmith's Gift" "Anarchy's Price" "The Web" "Death" "The Betrayal"
 
 #Tags Essences
 SetTag @Essences_T1
@@ -365,6 +373,15 @@ Show
 #------------------------------------
 #    Atlas and special bases
 #------------------------------------
+#Atlas and special bases - T0
+Show #Atlas and special bases - T0
+    Tags @AtlasAndSpecialBases_T0
+    Rarity <= Rare
+    SetFontSize 42
+    SetBackgroundColor 0 180 0
+    SetTextColor 255 255 255
+    SetBorderColor 255 255 255
+    PlayAlertSound $SoundT0
 #Atlas and special bases - T1
 Show #Atlas and special bases - T1
     Tags @AtlasAndSpecialBases_T1
@@ -373,7 +390,7 @@ Show #Atlas and special bases - T1
     SetBackgroundColor 0 180 0
     SetTextColor 255 255 255
     SetBorderColor 255 255 255
-    PlayAlertSound $SoundT1
+    PlayAlertSound $SoundT2
 # Atlas and special bases - T2
 Show
     Tags @AtlasAndSpecialBases_T2
@@ -477,6 +494,7 @@ Show # Leveling - Flasks - Life Flasks | Comment
     PlayAlertSound $SoundLeveling
     Branch
         DropLevel >= 60
+        ItemLevel <= 65
     Branch
         DropLevel >= 50
         ItemLevel <= 59
@@ -516,6 +534,7 @@ Show # Leveling - Flasks - Mana Flasks | Comment
     SetBorderColor 140 140 255
     Branch
         DropLevel >= 60
+        ItemLevel <= 65
     Branch
         DropLevel >= 50
         ItemLevel <= 59
@@ -547,14 +566,21 @@ Show # Leveling - Flasks - Mana Flasks | Comment
         DropLevel >= 1
         ItemLevel <= 5
 Show # Leveling - Flasks - Utility Flasks | Comment
-    Class "Utility Flask"
+    Class "Utility Flasks"
     Rarity Magic
     SetFontSize 34
     SetBackgroundColor 20 20 20 200
     SetTextColor 140 140 255
     SetBorderColor 140 140 255
     Branch
+        ItemLevel <= 60
+        SetFontSize 34
+        SetBackgroundColor 20 20 20 200
+        SetTextColor 140 140 255
+        SetBorderColor 140 140 255
+    Branch
         BaseType "Quicksilver"
+        ItemLevel <= 60
         SetFontSize 38
         PlayAlertSound $SoundLeveling
 Show # Leveling - Flasks - Life Flasks | Comment
@@ -566,6 +592,7 @@ Show # Leveling - Flasks - Life Flasks | Comment
     PlayAlertSound $SoundLeveling
     Branch
         DropLevel >= 60
+        ItemLevel <= 65
     Branch
         DropLevel >= 50
         ItemLevel <= 59
@@ -604,6 +631,7 @@ Show # Leveling - Flasks - Mana Flasks | Comment
     SetBorderColor 180 180 180
     Branch
         DropLevel >= 60
+        ItemLevel <= 65
     Branch
         DropLevel >= 50
         ItemLevel <= 59
@@ -635,13 +663,20 @@ Show # Leveling - Flasks - Mana Flasks | Comment
         DropLevel >= 1
         ItemLevel <= 5
 Show # Leveling - Flasks - Utility Flasks | Comment
-    Class "Utility Flask"
+    Class "Utility Flasks"
     SetFontSize 33
     SetBackgroundColor 20 20 20 200
     SetTextColor 180 180 180
     SetBorderColor 180 180 180
     Branch
+        ItemLevel <= 60
+        SetFontSize 34
+        SetBackgroundColor 20 20 20 200
+        SetTextColor 140 140 255
+        SetBorderColor 140 140 255
+    Branch
         BaseType "Quicksilver"
+        ItemLevel <= 65
         SetFontSize 38
         PlayAlertSound $SoundLeveling
 
@@ -2695,8 +2730,29 @@ Show
     Branch # Currency - Map Currency - Apprentice Cartographer's Sextant
         BaseType "Apprentice Cartographer's Sextant"
         SetBorderColor 220 220 220
-        
+
 #Currency - Generic
+Show
+    Class "Currency"
+    SetTextColor 170 158 130
+    SetBorderColor 170 158 130
+    SwitchTo $ShaperAnnouncements
+    Branch
+        Tags @Currency_Mirror
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        PlayAlertSound ShMirror 300
+    Branch
+        Tags @Currency_Exalted
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        PlayAlertSound ShExalted 300
+    Branch
+        Tags @Currency_Divine
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        PlayAlertSound ShDivine 300
+
 Show
     Class "Currency"
     SetTextColor 170 158 130
@@ -2798,11 +2854,11 @@ Show
 Show # Flasks - Utility flasks
     Class "Utility Flasks"
     SetFontSize 30
-    SetBackgroundColor 0 30 30
+    SetBackgroundColor 0 30 30 160
 Show # Flasks - Flask Quality (≥ 14%)
     Class "Flasks"
     Quality >= 14
-    SetFontSize 35
+    SetFontSize 30
     SetBorderColor 128 179 255
 
 #------------------------------------
