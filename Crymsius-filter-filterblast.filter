@@ -1,13 +1,15 @@
 ###Crymsius-filter
-###Version 3.0.1
+###Version 3.1.0
 # Author : Crymsius 
 # Source : https://github.com/Crymsius/Crymsius-filter
 
 SetOption $Introduction info [Here you'll discover a sleek filter, designed by and for colour blind (and others !) with highlights for recipes, good bases, tiers and an emphasis on colour schemes that respect PoE's ones! You can customize the filter with the following options, and later, select the smartblocks you want to display or hide.] # Welcome to the filter! 
 SetOption $Links link [GitHub] [https://github.com/Crymsius/Crymsius-filter] [Forum Thread] [https://www.pathofexile.com/forum/view-thread/1895126]
 
-# //! SetOption $Chance_Bases textarea ["Sorcerer Boots"] # Add or delete the bases for items you want to chance.
-# //! SetOption $Crafting_Bases textarea ["Two-Stone" "Onyx" "Diamond Ring" "Prismatic"] # Add or delete the bases for items you want to craft (ilvl≥84).
+# //! SetOption $Highlighted_Maps textarea ["Vault"] # Add or delete the name of maps you want to highlight.
+# //! SetOption $Highlighted_Shaped_Maps textarea ["Jungle Valley"] # Add or delete the name of shaped maps you want to highlight (Just the name, without "Shaped").
+# //! SetOption $Chance_Bases textarea ["Lether Belt" "Prophecy Wand"] # Add or delete the bases for items you want to chance.
+# //! SetOption $Crafting_Bases textarea ["Sai"] # Add or delete the bases for items you want to craft (ilvl≥84).
 
 # T0 : > 25c
 # T1 : 10c - 25c
@@ -35,12 +37,13 @@ SetSound $SoundRegal 8 200 # Regal Orb
 SetSound $SoundT0 5 300 # T0 Drop (Exalt)
 SetSound $SoundT1 4 300 # T1 Drop (Divine)
 SetSound $SoundT2 8 200 # T2 Drop (Chaos)
-SetSound $SoundT3 7 180 # T3 Drop (Chance)
+SetSound $SoundT3 7 100 # T3 Drop (Chance)
 
 SetSound $Sound6S 3 100 # 6S Items
-SetSound $Sound6L 13 300 # 6L Items
-SetSound $Sound5L 1 100 # 5L Items
+SetSound $Sound6L 1 300 # 6L Items
+SetSound $Sound5L 12 100 # 5L Items
 
+SetSound $SoundMapsHighlight 16 300 # Highlighted Maps
 SetSound $SoundMapsT1 10 300 # Red Maps
 SetSound $SoundMapsT2 11 270 # Yellow Maps
 SetSound $SoundMapsT3 2 250 # White Maps
@@ -50,6 +53,7 @@ SetSound $SoundTalismans 12 250 # Talismans
 SetSound $SoundLeveling 14 200 # Leveling Highlight
 SetSound $SoundQuest 15 300 # Quest Item and Shaper's Orb
 
+SetSound $SoundShapedElderItems 13 280 # Shaped and Elder Items
 
 #------------------------------------
 #    Tags
@@ -88,7 +92,7 @@ SetTag @AtlasAndSpecialBases_T1
 SetTag @AtlasAndSpecialBases_T2
     BaseType "Sacrificial Garb" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
 
-#Tags Rare good bases`
+#Tags Rare good bases
 SetTag @GoodBases
     BaseType "Void Sceptre" "Opal Sceptre" "Profane Wand" "Prophecy Wand" "Opal Wand" "Sambar Sceptre" "Imbued Wand" "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Saintly Chainmail" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titan Gauntlets" "Slink Gloves" "Eternal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots" "Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather Belt" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash" "Lion Sword" "Vaal Greatsword" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Platinum Kris" "Demon Dagger" "Imperial Skean" "Vaal Hatchet" "Runic Hatchet" "Behemoth Mace" "Eternal Sword" "Tiger Hook" "Eclipse Staff" "Maelstr" "Judgement Staff" "Jewelled Foil" "Dragoon Sword" "Sai"
 
@@ -138,13 +142,13 @@ SetTag @Gems_DropOnly
 
 #Tags Divination Cards
 SetTag @DivinationCards_T0
-    BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Queen" "Abandoned Wealth" "The Immortal" "Wealth and Power" "Pride Before the Fall" "The King's Heart" "The Celestial Justicar" "Emperor of Purity" "The Formless Sea"	
+    BaseType "Abandoned Wealth" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "Pride Before the Fall" "The Celestial Justicar" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The King's Heart" "The Last One Standing" "The Queen" "Wealth and Power" "The Wolf" "The Spark and the Flame" "The Standoff" "The Wolven King's Bite"
 SetTag @DivinationCards_T1
-    BaseType "The Cartographer" "The Dapper Prodigy" "The Vast" "Last Hope" "The Valkyrie" "The Sephirot" "The Hoarder" "The Chains that Bind" "The Warlord" "The Aesthete" "Saint's Treasure" "The Thaumaturgist" "Heterochromia" "The Porcupine" "The Stormcaller" "The Soul" "The Brittle Emperor" "Polymath" "Spark and the Flame" "Bowyer's Dream" "The Hunger" "The Enlightened" "The Artist" "The Offering" "The Ethereal"
+    BaseType "Emperor of Purity" "The Formless Sea" "Bowyer's Dream" "Heterochromia" "Last Hope" "Spark and the Flame" "The Aesthete" "The Artist" "The Brittle Emperor" "The Cartographer" "The Chains that Bind" "The Dapper Prodigy" "The Enlightened" "The Ethereal" "The Hoarder" "The Hunger" "The Offering" "The Polymath" "The Porcupine" "The Saint's Treasure" "The Sephirot" "The Soul" "The Stormcaller" "The Thaumaturgist" "The Valkyrie" "The Vast" "The Warlord"
 SetTag @DivinationCards_T2
-    BaseType "Chaotic Disposition" "The Road to Power" "The Arena Champion" "The Gladiator" "Glimmer of Hope" "The Tyrant" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Penitent" "The Penitent" "The Surveyor" "Lysah's Respite" "The Inventor" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Explorer" "The Body" "The Encroaching Darkness" "Jack in the Box" "The Traitor" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Forsaken" "The Demoness" "Time-Lost Relic" "The Wolf" "Earth Drinker" "Standoff" "Merciless Armament" "The Void" "The Dark Mage" "The Warlord"
+    BaseType "Chaotic Disposition" "Earth Drinker" "Glimmer of Hope" "Hope" "Humility" "Jack in the Box" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "Might is Right" "Rats" "Scholar of the Seas" "Standoff" "The Arena Champion" "The Body" "The Dark Mage" "The Demoness" "The Encroaching Darkness" "The Explorer" "The Forsaken" "The Gladiator" "The Inventor" "The Jester" "The Opulent" "The Penitent" "The Risk" "The Road to Power" "The Surveyor" "The Traitor" "The Trial" "The Tyrant" "The Union" "The Void" "The Wrath" "Time-Lost Relic" "Treasure Hunter" "The Valley of Steel Boxes" "Vinia's Token" "The Wolven King's Bite" "The Wretched" "The Wind"
 SetTag @DivinationCards_T4
-    BaseType "Carrion Crow" "Other Cheek" "Hermit" "King's Blade" "Thunderous Skies" "Metalsmith's Gift" "Anarchy's Price" "The Web" "Death" "The Betrayal"
+    BaseType "Anarchy's Price" "Death" "The Betrayal" "The Carrion Crow" "The Hermit" "The King's Blade" "The Metalsmith's Gift" "The Web" "Thunderous Skies" "Turn the Other Cheek"
 
 #Tags Essences
 SetTag @Essences_T1
@@ -246,6 +250,22 @@ Show # Uniques - Other Uniques
 #------------------------------------
 #    Maps
 #------------------------------------
+
+#Highlighted Maps 
+Show
+    SetFontSize 41
+    SetBackgroundColor 50 50 50
+    SetTextColor 156 121 184
+    SetBorderColor 156 121 184
+    PlayAlertSound $SoundMapsHighlight
+    Branch # Maps - Highlighted - Unshaped | Comment
+        ShapedMap False
+        BaseType $Highlighted_Maps
+    Branch # Maps - Highlighted - Shaped | Comment
+        ShapedMap True
+        BaseType $Highlighted_Shaped_Maps
+
+
 #T16 maps
 Show
     Class "Maps"
@@ -410,9 +430,50 @@ Show # Leagues - Breach - Breach Rings
     SetTextColor 255 255 119
     SetBorderColor 200 0 0
 
+Show
+    SetFontSize 42
+    PlayAlertSound $SoundShapedElderItems
+    Branch #Atlas and special bases - Shaped Items | Comment
+        ShaperItem True
+        SetBackgroundColor 83 86 184
+        SetBorderColor 54 44 63
+    Branch #Atlas and special bases - Elder Items | Comment
+        ElderItem True
+        SetBackgroundColor 52 71 88
+        SetBorderColor 34 44 74
+
+Show
+    BaseType "Stygian Vise"
+    SetFontSize 60  
+    SetTextColor 90 255 90
+    SetBackgroundColor 30 30 30
+    Branch # Leagues - Abyss - Stygian Vise - Normal
+        Rarity Normal
+        SetBorderColor 180 180 180
+    Branch # Leagues - Abyss - Stygian Vise - Magic
+        Rarity Magic
+        SetBorderColor 140 140 255
+    Branch # Leagues - Abyss - Stygian Vise - Rare
+        Rarity Rare
+        SetBorderColor 255 255 119
+
 #------------------------------------
 #    Jewels
 #------------------------------------
+Show 
+    Class "Abyss Jewel"
+    SetFontSize 60
+    SetTextColor 50 50 50
+    SetBackgroundColor 90 255 90
+    Branch
+        Rarity Normal
+        SetBorderColor 180 180 180
+    Branch # Leagues - Abyss - Jewels - Magic
+        Rarity Magic
+        SetBorderColor 140 140 255
+    Branch # Leagues - Abyss - Jewels - Rare
+        Rarity Rare
+        SetBorderColor 255 255 119
 Show
     Class "Jewel"
     SetFontSize 42
@@ -425,7 +486,7 @@ Show
 Show
     Class "Amulets"
     BaseType "Talisman"
-    SetBackgroundColor 130 220 140
+    SetBackgroundColor 20 255 180
     PlayAlertSound $SoundTalismans
     Branch # Leagues - Talisman - Normal Talismans
         Rarity Normal
@@ -672,7 +733,7 @@ Show # Leveling - Flasks - Utility Flasks | Comment
         ItemLevel <= 60
         SetFontSize 34
         SetBackgroundColor 20 20 20 200
-        SetTextColor 140 140 255
+        SetTextColor 180 180 180
         SetBorderColor 140 140 255
     Branch
         BaseType "Quicksilver"
@@ -2608,9 +2669,11 @@ Show
     SetTextColor 100 100 0
     Branch # Rares - Regal Recipe (ilvl 75+) - Highlight Corrupted | Comment
         Corrupted True
+        SetFontSize 40
         SetBorderColor 250 20 0
     Branch # Rares - Regal Recipe (ilvl 75+) - Highlight Identified | Comment
         Identified True
+        SetFontSize 40
         SetBorderColor 100 100 0
 
 #Rare ilvl 60-75 special cases
@@ -2622,9 +2685,11 @@ Show
     SetTextColor 255 255 119
     Branch # Rares - Chaos Recipe (ilvl 60 to 75) - Highlight Corrupted | Comment
         Corrupted True
+        SetFontSize 35
         SetBorderColor 250 20 0
     Branch # Rares - Chaos Recipe (ilvl 60 to 75) - Highlight Identified | Comment
         Identified True
+        SetFontSize 35
         SetBorderColor 255 255 119
 
 #------------------------------------
