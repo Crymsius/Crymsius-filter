@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.1.0a
+###Version 3.1.0b
 # Author : Crymsius 
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -8,7 +8,7 @@ SetOption $Links link [GitHub] [https://github.com/Crymsius/Crymsius-filter] [Fo
 
 # //! SetOption $Highlighted_Maps textarea ["Vault"] # Add or delete the name of maps you want to highlight.
 # //! SetOption $Highlighted_Shaped_Maps textarea ["Jungle Valley"] # Add or delete the name of shaped maps you want to highlight (Just the name, without "Shaped").
-# //! SetOption $Chance_Bases textarea ["Leather Belt" "Prophecy Wand"] # Add or delete the bases for items you want to chance.
+# //! SetOption $Chance_Bases textarea ["Prophecy Wand"] # Add or delete the bases for items you want to chance.
 # //! SetOption $Crafting_Bases textarea ["Sai"] # Add or delete the bases for items you want to craft (ilvl≥84).
 
 # T0 : > 25c
@@ -76,7 +76,7 @@ SetTag @Uniques_T1_Maps
 SetTag @Uniques_T1_Flasks
     BaseType "Bismuth Flask" "Granite Flask"
 SetTag @Uniques_T1_Weapons
-    BaseType "Auric Mace" "Royal Axe" "Imperial Staff" "Steelhead" "Terror Maul" "Fiend Dagger" "Jasper Chopper" "Meatgrinder" "Jade Hatchet"
+    BaseType "Auric Mace" "Royal Axe" "Imperial Staff" "Steelhead" "Terror Maul" "Fiend Dagger" "Jasper Chopper" "Meatgrinder"
 SetTag @Uniques_T1_Armours
     BaseType "Jingling Spirit Shield" "Savant's Robe" "Vaal Regalia" "Sacrificial Garb" "Exquisite Leather" "Raven Mask" "Champion Kite Shield" "Rawhide Tower Shield" "Nightmare Bascinet" "Hubris Circlet" "Wyrmscale Doublet"
 SetTag @Uniques_T1_Accessories
