@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.1.0b
+###Version 3.1.0c
 # Author : Crymsius 
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -66,9 +66,11 @@ SetTag @Uniques_T0_Jewels
 SetTag @Uniques_T0_Flasks
     BaseType "Stibnite Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask"
 SetTag @Uniques_T0_Weapons
-    BaseType "Vaal Axe" "Prophecy Wand" "Jewelled Foil" "Cutlas" "Ritual Sceptre" "Eternal Sword" "Imperial Claw" "Siege Axe" "Vaal Sceptre" "Carnal Sceptre" "Void Axe" "Abyssal Axe" "Imperial Maul"
+    BaseType "Vaal Axe" "Prophecy Wand" "Jewelled Foil" "Cutlas" "Ritual Sceptre" "Imperial Claw" "Siege Axe" "Vaal Sceptre" "Carnal Sceptre" "Void Axe" "Abyssal Axe" "Imperial Maul"
 SetTag @Uniques_T0_Armours
     BaseType "Occultist's Vestment" "Glorious Plate" "Full Wyrmscale" "Gladiator Plate" "Varnished Coat" "Sorcerer Boots" "Crusader Boots" "Rawhide Boots" "Ezomyte Tower Shield" "Archon Kite Shield" "Ezomyte Burgonet" "Callous Mask" "Legion Gloves" "Clasped Mitts"
+SetTag @Uniques_T0_Accessories
+    BaseType "Lapis Amulet"
 SetTag @Uniques_Multi-UniqueBases
     BaseType "Lacquered Garb" "Ebony Tower Shield" "Onyx Amulet" "Goathide Boots" "Two-Stone Ring"
 SetTag @Uniques_T1_Maps
@@ -94,7 +96,7 @@ SetTag @AtlasAndSpecialBases_T2
 
 #Tags Rare good bases
 SetTag @GoodBases
-    BaseType "Void Sceptre" "Opal Sceptre" "Profane Wand" "Prophecy Wand" "Opal Wand" "Sambar Sceptre" "Imbued Wand" "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Saintly Chainmail" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titan Gauntlets" "Slink Gloves" "Eternal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots" "Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather Belt" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash" "Lion Sword" "Vaal Greatsword" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Platinum Kris" "Demon Dagger" "Imperial Skean" "Vaal Hatchet" "Runic Hatchet" "Behemoth Mace" "Eternal Sword" "Tiger Hook" "Eclipse Staff" "Maelstr" "Judgement Staff" "Jewelled Foil" "Dragoon Sword" "Sai"
+    BaseType "Void Sceptre" "Opal Sceptre" "Profane Wand" "Prophecy Wand" "Opal Wand" "Sambar Sceptre" "Imbued Wand" "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Saintly Chainmail" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titan Gauntlets" "Slink Gloves" "Eternal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots" "Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold Ring" "Gold Amulet" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather Belt" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash" "Lion Sword" "Vaal Greatsword" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Platinum Kris" "Demon Dagger" "Imperial Skean" "Vaal Hatchet" "Runic Hatchet" "Behemoth Mace" "Eternal Sword" "Tiger Hook" "Eclipse Staff" "Maelstr" "Judgement Staff" "Jewelled Foil" "Dragoon Sword" "Sai" "Imperial Buckler" "Lacquered Buckler" "Crusader Buckler"
 
 #Tags Currencies - Orbs
 SetTag @Currency_Mirror
@@ -112,9 +114,9 @@ SetTag @Currency_Regal
 SetTag @Currency_T0
     BaseType "Mirror of Kalandra" "Exalted Orb" "Eternal Orb"
 SetTag @Currency_T1
-    BaseType "Divine Orb" "Ancient Orb"
+    BaseType "Divine Orb" "Ancient Orb" "Orb of Annulment"
 SetTag @Currency_T2
-    BaseType "Vaal Orb" "Blessed Orb" "Regal Orb" "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring" "Stacked Deck" "Unshaping Orb" "Seal" "Orb of Horizons" "Engineer's Orb" "Orb of Annulment" "Harbinger's Orb"
+    BaseType "Vaal Orb" "Blessed Orb" "Regal Orb" "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring" "Stacked Deck" "Unshaping Orb" "Seal" "Orb of Horizons" "Engineer's Orb" "Harbinger's Orb"
 SetTag @Currency_T3
     BaseType "Orb of Alteration" "Glassblower's Bauble" "Jeweller's Orb" "Orb of Alchemy" "Orb of Chance" "Chromatic Orb" "Orb of Binding"
 SetTag @Currency_T4
@@ -146,9 +148,9 @@ SetTag @DivinationCards_T0
 SetTag @DivinationCards_T1
     BaseType "Emperor of Purity" "The Formless Sea" "Bowyer's Dream" "Heterochromia" "Last Hope" "Spark and the Flame" "The Aesthete" "The Artist" "The Brittle Emperor" "The Cartographer" "The Chains that Bind" "The Dapper Prodigy" "The Enlightened" "The Ethereal" "The Hoarder" "The Hunger" "The Offering" "The Polymath" "The Porcupine" "The Saint's Treasure" "The Sephirot" "The Soul" "The Stormcaller" "The Thaumaturgist" "The Valkyrie" "The Vast" "The Warlord"
 SetTag @DivinationCards_T2
-    BaseType "Chaotic Disposition" "Earth Drinker" "Glimmer of Hope" "Hope" "Humility" "Jack in the Box" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "Might is Right" "Rats" "Scholar of the Seas" "Standoff" "The Arena Champion" "The Body" "The Dark Mage" "The Demoness" "The Encroaching Darkness" "The Explorer" "The Forsaken" "The Gladiator" "The Inventor" "The Jester" "The Opulent" "The Penitent" "The Risk" "The Road to Power" "The Surveyor" "The Traitor" "The Trial" "The Tyrant" "The Union" "The Void" "The Wrath" "Time-Lost Relic" "Treasure Hunter" "The Valley of Steel Boxes" "Vinia's Token" "The Wolven King's Bite" "The Wretched" "The Wind"
+    BaseType "Chaotic Disposition" "Earth Drinker" "Glimmer of Hope" "Hope" "Humility" "Jack in the Box" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "Might is Right" "Rats" "Scholar of the Seas" "Standoff" "The Arena Champion" "The Body" "The Dark Mage" "The Demoness" "The Encroaching Darkness" "The Explorer" "The Forsaken" "The Gladiator" "The Inventor" "The Jester" "The Opulent" "The Penitent" "The Risk" "The Road to Power" "The Surveyor" "The Traitor" "The Trial" "The Tyrant" "The Union" "The Void" "The Wrath" "Time-Lost Relic" "Treasure Hunter" "The Valley of Steel Boxes" "Vinia's Token" "The Wolven King's Bite" "The Wretched" "Lucky Connections" "The Wind" "No Traces" "The Realm" "Left to Fate"
 SetTag @DivinationCards_T4
-    BaseType "Anarchy's Price" "Death" "The Betrayal" "The Carrion Crow" "The Hermit" "The King's Blade" "The Metalsmith's Gift" "The Web" "Thunderous Skies" "Turn the Other Cheek"
+    BaseType "Destined to Crumble" "Struck by Lightning" "Anarchy's Price" "Death" "The Betrayal" "The Carrion Crow" "The Hermit" "The King's Blade" "The Metalsmith's Gift" "The Web" "Thunderous Skies" "Turn the Other Cheek"
 
 #Tags Essences
 SetTag @Essences_T1
@@ -213,6 +215,8 @@ Show
         Tags @Uniques_T0_Weapons
     Branch # Uniques - T0
         Tags @Uniques_T0_Armours
+    Branch # Uniques - T0
+        Tags @Uniques_T0_Accessories
     Branch # Uniques - Multi-Unique Bases
         Tags @Uniques_Multi-UniqueBases
         PlayAlertSound $SoundUniques
@@ -254,7 +258,7 @@ Show # Uniques - Other Uniques
 #Highlighted Maps 
 Show
     SetFontSize 41
-    SetBackgroundColor 50 50 50
+    SetBackgroundColor 50 50 50 255
     SetTextColor 156 121 184
     SetBorderColor 156 121 184
     PlayAlertSound $SoundMapsHighlight
@@ -280,7 +284,37 @@ Show
     Branch # Maps - Tiers 16 (Guardians)
         BaseType "Forge of the Phoenix" "Lair of the Hydra" "Maze of the Minotaur" "Pit of the Chimera" "Vaal Temple"
         SetBorderColor 220 220 220
-#
+#Shaped Maps
+Show
+    Class "Maps"
+    SetBackgroundColor 50 50 50
+    PlayAlertSound $SoundMapsT2
+    ShapedMap True
+    Branch # Maps - Tiers 12-15 (Red) - Highlight Rare | Comment
+        Rarity Rare
+        DropLevel >= 73
+        SetFontSize 41
+        SetTextColor 250 20 0
+        SetBorderColor 255 255 119
+        PlayAlertSound $SoundMapsT1
+    Branch # Maps - Tiers 12-15 (Red)
+        DropLevel >= 73
+        SetFontSize 41
+        SetTextColor 250 20 0
+        SetBorderColor 220 220 220
+        PlayAlertSound $SoundMapsT1
+    Branch # Maps - Tier 7-11 (Yellow) - Highlight Rare | Comment
+        Rarity Rare
+        DropLevel < 73
+        SetFontSize 39
+        SetTextColor 255 255 0
+        SetBorderColor 255 255 119
+    Branch # Maps - Tier 7-11 (Yellow)
+        DropLevel < 73
+        SetFontSize 39
+        SetTextColor 255 255 0
+        SetBorderColor 220 220 220
+#Maps
 Show
     Class "Maps"
     SetBackgroundColor 50 50 50
@@ -460,7 +494,7 @@ Show
 #------------------------------------
 #    Jewels
 #------------------------------------
-Show 
+Show
     Class "Abyss Jewel"
     SetFontSize 60
     SetTextColor 50 50 50
@@ -507,7 +541,6 @@ Show
 #------------------------------------
 #    Leveling Filter
 #------------------------------------
-# Weapons - Axes - One Hand
 #Leveling
     #Early leveling
     #Flasks
@@ -1398,7 +1431,6 @@ Show # Leveling - Armours - Body Armours | Comment
         DropLevel >= 17
         ItemLevel <= 31
     Branch
-        LinkedSockets >= 3
         DropLevel >= 6
         ItemLevel <= 20
     Branch
@@ -1432,7 +1464,6 @@ Show # Leveling - Armours - Boots | Comment
         DropLevel >= 17
         ItemLevel <= 31
     Branch
-        LinkedSockets >= 3
         DropLevel >= 6
         ItemLevel <= 20
     Branch
@@ -3004,21 +3035,21 @@ Show
     SetBackgroundColor 255 165 0 210
     SetTextColor 0 0 0
     SetBorderColor 255 165 0
-    Branch Inherit # Divination Cards - T1 Div cards
-        Tags @DivinationCards_T0
+    #One of each tier to display in correct order in filterblast
+    Branch Inherit # Divination Cards - T0 Div cards
+        BaseType "House of Mirrors"
         SetFontSize 45
         SetBackgroundColor 255 255 255
         SetTextColor  255 165 0
         SetBorderColor  255 165 0
         PlayAlertSound $SoundT0
-    Branch Inherit # Divination Cards - T2 Div cards
-        Tags @DivinationCards_T1
+    Branch Inherit # Divination Cards - T1 Div cards
+        BaseType "Last Hope"
         SetFontSize 44
         SetBackgroundColor 255 165 0 245
         SetTextColor 255 255 255
         SetBorderColor 255 255 255
         PlayAlertSound $SoundT1
-    # just so T2 show up before T3
     Branch Inherit # Divination Cards - T2 Div cards
         BaseType "The Road to Power"
         SetFontSize 40
@@ -3029,6 +3060,20 @@ Show
     Branch Inherit # Divination Cards - T3 Div cards (everything else)
         BaseType "The Wolf's Shadow"
         SetFontSize 38
+    Branch Inherit # Divination Cards - T0 Div cards
+        Tags @DivinationCards_T0
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        SetTextColor  255 165 0
+        SetBorderColor  255 165 0
+        PlayAlertSound $SoundT0
+    Branch Inherit # Divination Cards - T1 Div cards
+        Tags @DivinationCards_T1
+        SetFontSize 44
+        SetBackgroundColor 255 165 0 245
+        SetTextColor 255 255 255
+        SetBorderColor 255 255 255
+        PlayAlertSound $SoundT1
     Branch Inherit # Divination Cards - T2 Div cards
         Tags @DivinationCards_T2
         SetFontSize 40
