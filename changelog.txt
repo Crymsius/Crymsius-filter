@@ -1,12 +1,18 @@
 ---------------------------------------------------
           Changelog for Crymsius's Filter         |
 ---------------------------------------------------
+-Notes (3.1.1a)
+Small fix for forgotten uniques
+Changed quality gem (>10% -> >=10%)
+
 -Notes (3.1.1)
-Huge improvements on uniques tiered. They are now separated exactly the same as everything else, along with the sound. For bases that give more than one uniques
+Huge improvements on uniques tiered. They are now separated exactly the same as everything else, along with the sound. For bases that give more than one unique
+with one of them being T0 or T1, visuals and sound will be different from the rest. Also the tiers are now easily modifiable thanks to
+https://docs.google.com/spreadsheets/d/1cUh1WLdLab-aYctvH4RMX2iYvLX0gKimbf-v0UR03Qs/edit?usp=sharing (see the different tabs)
 Updated all Divination card tiers
-with one of them being T0 or T1, display and sound will be different. Also the tiers are now easily modifiable thanks to https://docs.google.com/spreadsheets/d/1cUh1WLdLab-aYctvH4RMX2iYvLX0gKimbf-v0UR03Qs/edit?usp=sharing (see the different tabs)
 Added an option for 10% quality for gems
 Added the option to hide each currency independently
+Highlights for maps, Chance bases and Crafting bases are now off by default. You can activate them easily by checking the corresponding box
 Changed tier of Alchemy Orb (now same tier as chaos and fusing)
 Added T1 sound for journeyman cartographer's sextant
 Removed Warbands highlight for magic items (who needs that when you have shaped and elder items anyway...)

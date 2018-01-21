@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.1.1
+###Version 3.1.1a
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -71,7 +71,7 @@ SetTag @Uniques_T2_Maps
 SetTag @Uniques_T0_Weapons
     BaseType "Royal Axe" "Carnal Sceptre" "Ritual Sceptre" "Charan's Sword"
 SetTag @Uniques_T1_Weapons
-    BaseType "Siege Axe" "Corsair Sword" "Cutlass" "Elegant Foil" "Eternal Sword" "Jewelled Foil" "Midnight Blade" "War Sword" "Void Axe" "Steelhead" "Prophecy Wand"
+    BaseType "Siege Axe" "Corsair Sword" "Cutlass" "Elegant Foil" "Jewelled Foil" "Midnight Blade" "War Sword" "Void Axe" "Steelhead" "Prophecy Wand"
 SetTag @Uniques_T2_Weapons
     BaseType "Assassin Bow" "Citadel Bow" "Ranger Bow" "Blinder" "Hellion's Paw" "Imperial Claw" "Demon Dagger" "Fiend Dagger" "Imperial Skean" "Infernal Axe" "Auric Mace" "Crystal Sceptre" "Gavel" "Nightmare Mace" "Opal Sceptre" "Platinum Sceptre" "Shadow Sceptre" "Vaal Sceptre" "Void Sceptre" "War Hammer" "Coiled Staff" "Highborn Staff" "Imperial Staff" "Iron Staff" "Judgement Staff" "Maelström Staff" "Abyssal Axe" "Jasper Chopper" "Labrys" "Woodsplitter" "Imperial Maul" "Meatgrinder" "Engraved Wand" "Sage Wand" "Spiraled Wand" "Tornado Wand"
 SetTag @Uniques_T3_Weapons
@@ -79,7 +79,7 @@ SetTag @Uniques_T3_Weapons
 SetTag @Uniques_T4_Weapons
     BaseType "Death Bow" "Decimation Bow" "Recurve Bow" "Awl" "Nailed Fist" "Thresher Claw" "Timeworn Claw" "Ambusher" "Boot Blade" "Boot Knife" "Flaying Knife" "Platinum Kris" "Royal Skean" "Skinning Knife" "Stiletto" "Cleaver" "Decorative Axe" "Dream Mace" "Antique Rapier" "Basket Rapier" "Estoc" "Jagged Foil" "Vaal Blade" "Ezomyte Staff" "Gnarled Branch" "Long Staff" "Military Staff" "Royal Staff" "Headsman Axe" "Poleaxe" "Sundering Axe" "Dread Maul" "Jagged Maul" "Sledgehammer" "Bastard Sword" "Ezomyte Blade" "Highland Blade" "Ornate Sword" "Reaver Sword" "Crystal Wand" "Demon's Horn" "Goat's Horn" "Imbued Wand" "Quartz Wand"
 SetTag @Uniques_TMix_Weapons
-    BaseType "Imperial Bow" "Terror Claw" "Vaal Axe" "Infernal Sword" "Carved Wand"
+    BaseType "Imperial Bow" "Terror Claw" "Eternal Sword" "Vaal Axe" "Infernal Sword" "Carved Wand"
 #Armour
 SetTag @Uniques_T0_Armours
     BaseType "Glorious Plate" "Golden Mantle" "Arcanist Slippers" "Crusader Boots" "Rawhide Boots" "Clasped Mitts" "Legion Gloves" "Zealot Gloves" "Ezomyte Tower Shield" "Rawhide Tower Shield"
@@ -3183,9 +3183,9 @@ Show # Gems - Drop Only gems
     SetFontSize 50
     SetBackgroundColor 70 20 0
     SetBorderColor 27 162 155
-Show # Gems - Quality (> 10%)
+Show # Gems - Quality (>= 10%)
     Class "Gems"
-    Quality > 10
+    Quality > 9
     SetFontSize 38
     SetBorderColor 128 179 255
 Show # Gems - Quality (> 0%)
