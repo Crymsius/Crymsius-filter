@@ -1,15 +1,15 @@
 ###Crymsius-filter
-###Version 3.1.0c
-# Author : Crymsius 
+###Version 3.1.1
+# Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
 SetOption $Introduction info [Here you'll discover a sleek filter, designed by and for colour blind (and others !) with highlights for recipes, good bases, tiers and an emphasis on colour schemes that respect PoE's ones! You can customize the filter with the following options, and later, select the smartblocks you want to display or hide.] # Welcome to the filter! 
 SetOption $Links link [GitHub] [https://github.com/Crymsius/Crymsius-filter] [Forum Thread] [https://www.pathofexile.com/forum/view-thread/1895126]
 
-# //! SetOption $Highlighted_Maps textarea ["Vault"] # Add or delete the name of maps you want to highlight.
-# //! SetOption $Highlighted_Shaped_Maps textarea ["Jungle Valley"] # Add or delete the name of shaped maps you want to highlight (Just the name, without "Shaped").
-# //! SetOption $Chance_Bases textarea ["Prophecy Wand"] # Add or delete the bases for items you want to chance.
-# //! SetOption $Crafting_Bases textarea ["Sai"] # Add or delete the bases for items you want to craft (ilvl≥84).
+# //! SetOption $Highlighted_Maps textarea ["Vault"] # Add or delete the name of maps you want to highlight. You can enable the highlight in the block switches (off by default)
+# //! SetOption $Highlighted_Shaped_Maps textarea ["Vault"] # Add or delete the name of shaped maps you want to highlight (Just the name, without "Shaped"). You can enable the highlight in the block switches (off by default)
+# //! SetOption $Chance_Bases textarea ["Gold Amulet"] # Add or delete the bases for items you want to chance. You can enable the highlight in the block switches (off by default)
+# //! SetOption $Crafting_Bases textarea ["Jade Amulet"] # Add or delete the bases for items you want to craft (ilvl≥84). You can enable the highlight in the block switches (off by default)
 
 # T0 : > 25c
 # T1 : 10c - 25c
@@ -49,6 +49,7 @@ SetSound $SoundMapsT2 11 270 # Yellow Maps
 SetSound $SoundMapsT3 2 250 # White Maps
 
 SetSound $SoundUniques 6 200 # Uniques
+SetSound $SoundTMix 6 250 # Uniques Mixed
 SetSound $SoundTalismans 12 250 # Talismans
 SetSound $SoundLeveling 14 200 # Leveling Highlight
 SetSound $SoundQuest 15 300 # Quest Item and Shaper's Orb
@@ -59,32 +60,64 @@ SetSound $SoundShapedElderItems 13 280 # Shaped and Elder Items
 #    Tags
 #------------------------------------
 #Tags Uniques
+#Maps
 SetTag @Uniques_T0_Maps
-    BaseType "Chateau Map" "Museum Map" "Courtyard Map"
+    BaseType "Museum Map" "Courtyard Map" "Chateau Map"
+SetTag @Uniques_T1_Maps
+    BaseType "Moon Temple Map" "Temple Map" "Shore Map" "Promenade Map"
+SetTag @Uniques_T2_Maps
+    BaseType "Torture Chamber Map" "Vaal Pyramid Map" "Graveyard Map" "Cursed Crypt Map" "Overgrown Shrine Map" "Underground River Map" "Necropolis Map" "Atoll Map" "Bone Crypt Map" "Dunes Map" "Strand Map"
+#Weapons
+SetTag @Uniques_T0_Weapons
+    BaseType "Royal Axe" "Carnal Sceptre" "Ritual Sceptre" "Charan's Sword"
+SetTag @Uniques_T1_Weapons
+    BaseType "Siege Axe" "Corsair Sword" "Cutlass" "Elegant Foil" "Eternal Sword" "Jewelled Foil" "Midnight Blade" "War Sword" "Void Axe" "Steelhead" "Prophecy Wand"
+SetTag @Uniques_T2_Weapons
+    BaseType "Assassin Bow" "Citadel Bow" "Ranger Bow" "Blinder" "Hellion's Paw" "Imperial Claw" "Demon Dagger" "Fiend Dagger" "Imperial Skean" "Infernal Axe" "Auric Mace" "Crystal Sceptre" "Gavel" "Nightmare Mace" "Opal Sceptre" "Platinum Sceptre" "Shadow Sceptre" "Vaal Sceptre" "Void Sceptre" "War Hammer" "Coiled Staff" "Highborn Staff" "Imperial Staff" "Iron Staff" "Judgement Staff" "Maelström Staff" "Abyssal Axe" "Jasper Chopper" "Labrys" "Woodsplitter" "Imperial Maul" "Meatgrinder" "Engraved Wand" "Sage Wand" "Spiraled Wand" "Tornado Wand"
+SetTag @Uniques_T3_Weapons
+    BaseType "Bone Bow" "Crude Bow" "Death Bow" "Harbinger Bow" "Long Bow" "Royal Bow" "Short Bow" "Spine Bow" "Fright Claw" "Gut Ripper" "Throat Stabber" "Vaal Claw" "Slaughter Knife" "Jade Hatchet" "Tomahawk" "Vaal Hatchet" "Bronze Sceptre" "Iron Sceptre" "Karui Sceptre" "Ornate Mace" "Rock Breaker" "Spiked Club" "Dusk Blade" "Elder Sword" "Elegant Sword" "Gladius" "Legion Sword" "Rusted Sword" "Sabre" "Twilight Blade" "Whalebone Rapier" "Lathi" "Primordial Staff" "Serpentine Staff" "Vile Staff" "Despot Axe" "Karui Chopper" "Shadow Axe" "Woodsplitter" "Brass Maul" "Great Mallet" "Karui Maul" "Terror Maul" "Etched Greatsword" "Lion Sword" "Tiger Sword" "Driftwood Wand" "Opal Wand" "Spiraled Wand"
+SetTag @Uniques_T4_Weapons
+    BaseType "Death Bow" "Decimation Bow" "Recurve Bow" "Awl" "Nailed Fist" "Thresher Claw" "Timeworn Claw" "Ambusher" "Boot Blade" "Boot Knife" "Flaying Knife" "Platinum Kris" "Royal Skean" "Skinning Knife" "Stiletto" "Cleaver" "Decorative Axe" "Dream Mace" "Antique Rapier" "Basket Rapier" "Estoc" "Jagged Foil" "Vaal Blade" "Ezomyte Staff" "Gnarled Branch" "Long Staff" "Military Staff" "Royal Staff" "Headsman Axe" "Poleaxe" "Sundering Axe" "Dread Maul" "Jagged Maul" "Sledgehammer" "Bastard Sword" "Ezomyte Blade" "Highland Blade" "Ornate Sword" "Reaver Sword" "Crystal Wand" "Demon's Horn" "Goat's Horn" "Imbued Wand" "Quartz Wand"
+SetTag @Uniques_TMix_Weapons
+    BaseType "Imperial Bow" "Terror Claw" "Vaal Axe" "Infernal Sword" "Carved Wand"
+#Armour
+SetTag @Uniques_T0_Armours
+    BaseType "Glorious Plate" "Golden Mantle" "Arcanist Slippers" "Crusader Boots" "Rawhide Boots" "Clasped Mitts" "Legion Gloves" "Zealot Gloves" "Ezomyte Tower Shield" "Rawhide Tower Shield"
+SetTag @Uniques_T1_Armours
+    BaseType "Full Wyrmscale" "Gladiator Plate" "Occultist's Vestment" "Savant's Robe" "Wyrmscale Doublet" "Nubuck Boots" "Raven Mask" "Cedar Tower Shield"
+SetTag @Uniques_T2_Armours
+    BaseType "Assassin's Garb" "Astral Plate" "Coronal Leather" "Destiny Leather" "Destroyer Regalia" "Lacquered Garb" "Necromancer Silks" "Sadist Garb" "Sage's Robe" "Sharkskin Tunic" "Varnished Coat" "Ancient Greaves" "Conjurer Boots" "Dragonscale Boots" "Goliath Greaves" "Reinforced Greaves" "Slink Boots" "Stealth Boots" "Titan Greaves" "Wool Shoes" "Ancient Gauntlets" "Arcanist Gloves" "Bronzescale Gauntlets" "Conjurer Gloves" "Crusader Gloves" "Goliath Gauntlets" "Iron Gauntlets" "Ironscale Gauntlets" "Murder Mitts" "Nubuck Gloves" "Serpentscale Gauntlets" "Soldier Gloves" "Sorcerer Gloves" "Strapped Mitts" "Close Helmet" "Deicide Mask" "Ezomyte Burgonet" "Festival Mask" "Harlequin Mask" "Hubris Circlet" "Leather Cap" "Lion Pelt" "Nightmare Bascinet" "Praetor Crown" "Prophet Crown" "Regicide Mask" "Royal Burgonet" "Siege Helmet" "Silken Hood" "Sinner Tricorn" "Ursine Pelt" "Vaal Mask" "Blunt Arrow Quiver" "Broadhead Arrow Quiver" "Penetrating Arrow Quiver" "Archon Kite Shield" "Cardinal Round Shield" "Champion Kite Shield" "Corrugated Buckler" "Jingling Spirit Shield" "Mosaic Kite Shield" "Painted Tower Shield" "Pinnacle Tower Shield" "Tarnished Spirit Shield" "Thorium Spirit Shield" "Titanium Spirit Shield" "Vaal Spirit Shield"
+SetTag @Uniques_T3_Armours
+    BaseType "Bone Armour" "Copper Plate" "Crusader Chainmail" "Crusader Plate" "Cutthroat's Garb" "Desert Brigandine" "Elegant Ringmail" "Full Scale Armour" "Golden Plate" "Saintly Chainmail" "Sentinel Jacket" "Triumphant Lamellar" "Vaal Regalia" "Widowsilk Robe" "Zodiac Leather" Latticed Ringmail "Serpentscale Boots" "Sharkskin Boots" "Silk Slippers" "Soldier Boots" "Trapper Boots" "Assassin's Mitts" "Deerskin Gloves" "Goathide Gloves" "Steel Gauntlets" "Velvet Gloves" "Wool Gloves" "Aventail Helmet" "Lacquered Helmet" "Samite Helmet" "Secutor Helm" "Fire Arrow Quiver" "Sharktooth Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver" "Brass Spirit Shield" "Burnished Spiked Shield" "Colossal Tower Shield" "Enameled Buckler" "Golden Buckler" "Harmonic Spirit Shield" "Laminated Kite Shield" "Mirrored Spiked Shield" "Pine Buckler" "Plank Kite Shield" "Reinforced Tower Shield"
+SetTag @Uniques_T4_Armours
+    BaseType "Buckskin Tunic" "Conquest Chainmail" "Full Dragonscale" "Holy Chainmail" "Ornate Ringmail" "Plate Vest" "Scholar's Robe" "Simple Robe" "Spidersilk Robe" "Strapped Leather" "Wild Leather" "Bronzescale Boots" "Clasped Boots" "Deerskin Boots" "Ironscale Boots" "Legion Boots" "Mesh Boots" "Plated Greaves" "Riveted Boots" "Scholar Boots" "Shagreen Boots" "Strapped Boots" "Velvet Slippers" "Bronze Gauntlets" "Carnal Mitts" "Chain Gloves" "Dragonscale Gauntlets" "Samite Gloves" "Silk Gloves" "Titan Gauntlets" "Wrapped Mitts" "Wyrmscale Gauntlets" "Bone Circlet" "Gilded Sallet" "Golden Mask" "Great Helmet" "Iron Circlet" "Iron Hat" "Iron Mask" "Leather Hood" "Lunaris Circlet" "Mind Cage" "Necromancer Circlet" "Soldier Helmet" "Tricorne" "Vine Circlet" "Visored Sallet" "Zealot Helmet" "Serrated Arrow Quiver" "Baroque Round Shield" "Branded Kite Shield" "Compound Spiked Shield" "Ivory Spirit Shield" "Painted Buckler" "Rotted Round Shield" "Studded Round Shield" "Supreme Spiked Shield" "Vaal Buckler" "War Buckler"
+SetTag @Uniques_TMix_Armours
+    BaseType "Carnal Armour" "Exquisite Leather" "Sacrificial Garb" "Goathide Boots" "Murder Boots" "Sorcerer Boots" "Steelscale Gauntlets" "Vaal Gauntlets" "Great Crown" "Ebony Tower Shield"
+#Accessories
+SetTag @Uniques_T0_Accessories
+    BaseType "Greatwolf Talisman" "Jet Amulet" "Ruby Amulet"
+SetTag @Uniques_T1_Accessories
+    BaseType "Wereclaw Talisman"
+SetTag @Uniques_T2_Accessories
+    BaseType "Coral Amulet" "Chain Belt" "Crystal Belt" "Heavy Belt" "Studded Belt" "Stygian Vise" "Vanguard Belt" "Amethyst Ring" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Two-Stone Ring"
+SetTag @Uniques_T3_Accessories
+    BaseType "Coral Ring" "Blue Pearl Amulet" "Marble Amulet" "Paua Amulet" "Turquoise Amulet" "Cloth Belt" "Leather Belt" "Rustic Sash"
+SetTag @Uniques_TMix_Accessories
+    BaseType "Agate Amulet" "Gold Amulet" "Moonstone Ring" "Unset Ring" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Diamond Ring" "Paua Ring" "Citrine Amulet" "Onyx Amulet" "Gold Ring" "Topaz Ring"
+#Flasks
+SetTag @Uniques_T0_Flasks
+    BaseType "Sanctified Life Flask" "Sanctified Mana Flask" "Sapphire Flask" "Topaz Flask"
+SetTag @Uniques_T1_Flasks
+    BaseType "Bismuth Flask"
+SetTag @Uniques_T2_Flasks
+    BaseType "Amethyst Flask" "Granite Flask" "Hallowed Hybrid Flask" "Large Hybrid Flask" "Ruby Flask" "Silver Flask"
+SetTag @Uniques_T3_Flasks
+    BaseType "Diamond Flask" "Greater Mana Flask" "Quartz Flask" "Quicksilver Flask" "Sulphur Flask"
+SetTag @Uniques_TMix_Flasks
+    BaseType "Stibnite Flask"
+
 SetTag @Uniques_T0_Jewels
     BaseType "Prismatic Jewel"
-SetTag @Uniques_T0_Flasks
-    BaseType "Stibnite Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask"
-SetTag @Uniques_T0_Weapons
-    BaseType "Vaal Axe" "Prophecy Wand" "Jewelled Foil" "Cutlas" "Ritual Sceptre" "Imperial Claw" "Siege Axe" "Vaal Sceptre" "Carnal Sceptre" "Void Axe" "Abyssal Axe" "Imperial Maul"
-SetTag @Uniques_T0_Armours
-    BaseType "Occultist's Vestment" "Glorious Plate" "Full Wyrmscale" "Gladiator Plate" "Varnished Coat" "Sorcerer Boots" "Crusader Boots" "Rawhide Boots" "Ezomyte Tower Shield" "Archon Kite Shield" "Ezomyte Burgonet" "Callous Mask" "Legion Gloves" "Clasped Mitts"
-SetTag @Uniques_T0_Accessories
-    BaseType "Lapis Amulet"
-SetTag @Uniques_Multi-UniqueBases
-    BaseType "Lacquered Garb" "Ebony Tower Shield" "Onyx Amulet" "Goathide Boots" "Two-Stone Ring"
-SetTag @Uniques_T1_Maps
-    BaseType "Reef Map" "Temple Map"
-SetTag @Uniques_T1_Flasks
-    BaseType "Bismuth Flask" "Granite Flask"
-SetTag @Uniques_T1_Weapons
-    BaseType "Auric Mace" "Royal Axe" "Imperial Staff" "Steelhead" "Terror Maul" "Fiend Dagger" "Jasper Chopper" "Meatgrinder"
-SetTag @Uniques_T1_Armours
-    BaseType "Jingling Spirit Shield" "Savant's Robe" "Vaal Regalia" "Sacrificial Garb" "Exquisite Leather" "Raven Mask" "Champion Kite Shield" "Rawhide Tower Shield" "Nightmare Bascinet" "Hubris Circlet" "Wyrmscale Doublet"
-SetTag @Uniques_T1_Accessories
-    BaseType "Gold Ring" "Citrine Amulet" "Crystal Belt"
-SetTag @Uniques_FatedUniques
-    BaseType "Iron Ring" "Coral Ring" "Jade Amulet" "Plate Vest" "Ornate Sword" "Scholar Boots" "Iron Staff" "Spiraled Wand" "Sledgehammer" "Long Bow" "Crude Bow" "Royal Bow" "Woodsplitter" "Jade Hatchet" "Painted Buckler" "Plank Kite Shield" "War Buckler" "Gilded Sallet" "Iron Hat" "Vine Circlet" "Goathide Gloves" "Coral Amulet" "Fire Arrow Quiver" "Serrated Arrow Quiver" "Death Bow"
 
 #Tags Atlas and special bases
 SetTag @AtlasAndSpecialBases_T0
@@ -116,9 +149,9 @@ SetTag @Currency_T0
 SetTag @Currency_T1
     BaseType "Divine Orb" "Ancient Orb" "Orb of Annulment"
 SetTag @Currency_T2
-    BaseType "Vaal Orb" "Blessed Orb" "Regal Orb" "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring" "Stacked Deck" "Unshaping Orb" "Seal" "Orb of Horizons" "Engineer's Orb" "Harbinger's Orb"
+    BaseType "Vaal Orb" "Blessed Orb" "Regal Orb" "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring" "Stacked Deck" "Unshaping Orb" "Seal" "Orb of Horizons" "Engineer's Orb" "Harbinger's Orb" "Orb of Alchemy"
 SetTag @Currency_T3
-    BaseType "Orb of Alteration" "Glassblower's Bauble" "Jeweller's Orb" "Orb of Alchemy" "Orb of Chance" "Chromatic Orb" "Orb of Binding"
+    BaseType "Orb of Alteration" "Glassblower's Bauble" "Jeweller's Orb" "Orb of Chance" "Chromatic Orb" "Orb of Binding"
 SetTag @Currency_T4
     BaseType "Orb of Augmentation" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap"
 SetTag @Currency_PortalScroll
@@ -144,13 +177,13 @@ SetTag @Gems_DropOnly
 
 #Tags Divination Cards
 SetTag @DivinationCards_T0
-    BaseType "Abandoned Wealth" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "Pride Before the Fall" "The Celestial Justicar" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The King's Heart" "The Last One Standing" "The Queen" "Wealth and Power" "The Wolf" "The Spark and the Flame" "The Standoff" "The Wolven King's Bite"
+    BaseType "Abandoned Wealth" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Last One Standing" "The Queen" "The Wolf" "The Spark and the Flame" "The Wolven King's Bite" "The Formless Sea" "The Brittle Emperor" "The Devastator"
 SetTag @DivinationCards_T1
-    BaseType "Emperor of Purity" "The Formless Sea" "Bowyer's Dream" "Heterochromia" "Last Hope" "Spark and the Flame" "The Aesthete" "The Artist" "The Brittle Emperor" "The Cartographer" "The Chains that Bind" "The Dapper Prodigy" "The Enlightened" "The Ethereal" "The Hoarder" "The Hunger" "The Offering" "The Polymath" "The Porcupine" "The Saint's Treasure" "The Sephirot" "The Soul" "The Stormcaller" "The Thaumaturgist" "The Valkyrie" "The Vast" "The Warlord"
+    BaseType "Pride Before the Fall" "The Celestial Justicar" "The King's Heart" "Wealth and Power" "The Standoff" "Heterochromia" "Last Hope" "Spark and the Flame" "The Artist" "The Hunger" "The Saint's Treasure" "The Thaumaturgist" "The Valkyrie" "Standoff" "The Wind"
 SetTag @DivinationCards_T2
-    BaseType "Chaotic Disposition" "Earth Drinker" "Glimmer of Hope" "Hope" "Humility" "Jack in the Box" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "Might is Right" "Rats" "Scholar of the Seas" "Standoff" "The Arena Champion" "The Body" "The Dark Mage" "The Demoness" "The Encroaching Darkness" "The Explorer" "The Forsaken" "The Gladiator" "The Inventor" "The Jester" "The Opulent" "The Penitent" "The Risk" "The Road to Power" "The Surveyor" "The Traitor" "The Trial" "The Tyrant" "The Union" "The Void" "The Wrath" "Time-Lost Relic" "Treasure Hunter" "The Valley of Steel Boxes" "Vinia's Token" "The Wolven King's Bite" "The Wretched" "Lucky Connections" "The Wind" "No Traces" "The Realm" "Left to Fate"
+    BaseType "Emperor of Purity" "Bowyer's Dream" "The Aesthete" "The Cartographer" "The Chains that Bind" "The Dapper Prodigy" "The Enlightened" "The Ethereal" "The Hoarder" "The Offering" "The Polymath" "The Porcupine" "The Sephirot" "The Stormcaller" "The Vast" "The Warlord" "The Soul" "Chaotic Disposition" "Earth Drinker" "Glimmer of Hope" "Hope" "Humility" "Jack in the Box" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "Rats" "Scholar of the Seas" "The Arena Champion" "The Body" "The Dark Mage" "The Demoness" "The Encroaching Darkness" "The Forsaken" "The Inventor" "The Jester" "The Opulent" "The Penitent" "The Risk" "The Road to Power" "The Surveyor" "The Traitor" "The Trial" "The Tyrant" "The Union" "The Void" "The Wrath" "Time-Lost Relic" "Treasure Hunter" "The Valley of Steel Boxes" "Vinia's Token" "The Wretched" "Lucky Connections" "No Traces" "Left to Fate" "Atziri's Arsenal" "Dialla's Subjugation" "Emperor's Luck" "Gemcutter's Promise" "Hubris" "Hunter's Resolve" "Lingering Remnants" "Lost Worlds" "Loyalty" "The Battle Born" "The Cataclysm" "The Cursed King" "The Fletcher" "The Harvester" "The Lion" "The One With All" "The Pact" "The Poet" "The Throne"
 SetTag @DivinationCards_T4
-    BaseType "Destined to Crumble" "Struck by Lightning" "Anarchy's Price" "Death" "The Betrayal" "The Carrion Crow" "The Hermit" "The King's Blade" "The Metalsmith's Gift" "The Web" "Thunderous Skies" "Turn the Other Cheek"
+    BaseType "The Incantation" "Destined to Crumble" "Struck by Lightning" "Anarchy's Price" "Death" "The Betrayal" "The Carrion Crow" "The Hermit" "The King's Blade" "The Metalsmith's Gift" "The Web" "Thunderous Skies" "Turn the Other Cheek"
 
 #Tags Essences
 SetTag @Essences_T1
@@ -208,18 +241,15 @@ Show
     Branch #Uniques - T0
         Tags @Uniques_T0_Maps
     Branch # Uniques - T0
-        Tags @Uniques_T0_Jewels
-    Branch # Uniques - T0
-        Tags @Uniques_T0_Flasks
-    Branch # Uniques - T0
         Tags @Uniques_T0_Weapons
     Branch # Uniques - T0
         Tags @Uniques_T0_Armours
     Branch # Uniques - T0
         Tags @Uniques_T0_Accessories
-    Branch # Uniques - Multi-Unique Bases
-        Tags @Uniques_Multi-UniqueBases
-        PlayAlertSound $SoundUniques
+    Branch # Uniques - T0
+        Tags @Uniques_T0_Flasks
+    Branch # Uniques - T0
+        Tags @Uniques_T0_Jewels
 Show
     Rarity Unique
     SetFontSize 50
@@ -230,20 +260,67 @@ Show
     Branch # Uniques - T1
         Tags @Uniques_T1_Maps
     Branch # Uniques - T1
-        Tags @Uniques_T1_Flasks
-    Branch # Uniques - T1
         Tags @Uniques_T1_Weapons
     Branch # Uniques - T1
         Tags @Uniques_T1_Armours
     Branch # Uniques - T1
         Tags @Uniques_T1_Accessories
-Show # Uniques - Fated Uniques
-    Tags @Uniques_FatedUniques
+    Branch # Uniques - T1
+        Tags @Uniques_T1_Flasks
+Show
+    Rarity Unique
+    SetFontSize 50
+    SetBackgroundColor 70 20 0
+    SetBorderColor 255 255 255
+    PlayAlertSound $SoundT2
+    Branch # Uniques - T2
+        Tags @Uniques_T2_Maps
+    Branch # Uniques - T2
+        Tags @Uniques_T2_Weapons
+    Branch # Uniques - T2
+        Tags @Uniques_T2_Armours
+    Branch # Uniques - T2
+        Tags @Uniques_T2_Accessories
+    Branch # Uniques - T2
+        Tags @Uniques_T2_Flasks
+Show
     Rarity Unique
     SetFontSize 40
     SetBackgroundColor 70 20 0
-    SetBorderColor 128 0 200
-    PlayAlertSound $SoundUniques
+    SetBorderColor 175 96 37
+    PlayAlertSound $SoundT3
+    Branch # Uniques - T3
+        Tags @Uniques_T3_Weapons
+    Branch # Uniques - T3
+        Tags @Uniques_T3_Armours
+    Branch # Uniques - T3
+        Tags @Uniques_T3_Accessories
+    Branch # Uniques - T3
+        Tags @Uniques_T3_Flasks
+Show
+    Rarity Unique
+    SetFontSize 30
+    SetBackgroundColor 70 20 0 200
+    Branch # Uniques - T4
+        Tags @Uniques_T4_Weapons
+    Branch # Uniques - T4
+        Tags @Uniques_T4_Armours
+Show
+    Rarity Unique
+    SetFontSize 50
+    SetBackgroundColor 175 96 37
+    SetTextColor 70 20 0
+    SetBorderColor 255 255 255
+    PlayAlertSound $SoundTMix
+    Branch # Uniques - TMix
+        Tags @Uniques_TMix_Weapons
+    Branch # Uniques - TMix
+        Tags @Uniques_TMix_Armours
+    Branch # Uniques - TMix
+        Tags @Uniques_TMix_Accessories
+    Branch # Uniques - TMix
+        Tags @Uniques_TMix_Flasks
+
 Show # Uniques - Other Uniques
     Rarity Unique
     SetFontSize 40
@@ -255,8 +332,8 @@ Show # Uniques - Other Uniques
 #    Maps
 #------------------------------------
 
-#Highlighted Maps 
-Show
+#Highlighted Maps
+Comment
     SetFontSize 41
     SetBackgroundColor 50 50 50 255
     SetTextColor 156 121 184
@@ -401,26 +478,26 @@ Show
 #------------------------------------
 #    Sockets
 #------------------------------------
-Show # Sockets - 6S
+Show # Sockets - 6S | Comment
     Sockets = 6
     SetFontSize 45
     SetBackgroundColor  0 0 0
     SetBorderColor 135 135 135
     PlayAlertSound $Sound6S
-Show # Sockets - 5L
+Show # Sockets - 5L | Comment
     LinkedSockets = 5
     SetFontSize 45
     SetBackgroundColor 72 20 0 
     SetBorderColor 180 180 180
     PlayAlertSound $Sound5L
-Show
+Show 
     SocketGroup RGB
     SetFontSize 36
     SetBorderColor  255 255 255
-    Branch # Sockets - RGB - Small Items
+    Branch # Sockets - RGB - Small Items | Comment
         Height <= 2
         Width <= 2
-    Branch # Sockets - RGB - Small Items
+    Branch # Sockets - RGB - Small Items | Comment
         Height <= 3
         Width <= 1
 
@@ -2785,7 +2862,7 @@ Show
 #   Crafting bases
 #------------------------------------
 # This section handles additional crafting bases.
-Show # Crafting - Base ilvl>=84
+Hide # Crafting - Base ilvl>=84
     BaseType $Crafting_Bases
     Rarity < Rare
     ItemLevel >= 84
@@ -2798,7 +2875,7 @@ Show # Crafting - Base ilvl>=84
 #    Chance Recipe
 #------------------------------------
 #Normal item to chance
-Show # Chancing - Chance Bases
+Hide # Chancing - Chance Bases
     BaseType $Chance_Bases
     Rarity Normal
     SetFontSize 36
@@ -2823,6 +2900,7 @@ Show
     Branch # Currency - Map Currency - Journeyman Cartographer's Sextant
         BaseType "Journeyman Cartographer's Sextant"
         SetBorderColor 255 255 0
+        PlayAlertSound $SoundT1
     Branch # Currency - Map Currency - Apprentice Cartographer's Sextant
         BaseType "Apprentice Cartographer's Sextant"
         SetBorderColor 220 220 220
@@ -2853,59 +2931,133 @@ Show
     Class "Currency"
     SetTextColor 170 158 130
     SetBorderColor 170 158 130
-    Branch # Currency - Generic Currency - T0 (Mirror, Exalted, Eternal,...)
+    Branch # Currency - Generic Currency - T0 (Exalted Tier) - Mirror of Kalandra
         Tags @Currency_Mirror
         SetFontSize 45
         SetBackgroundColor 255 255 255
         PlayAlertSound $SoundMirror
-    Branch # Currency - Generic Currency - T0 (Mirror, Exalted, Eternal,...)
+    Branch # Currency - Generic Currency - T0 (Exalted Tier) - Exalted Orb
         Tags @Currency_Exalted
         SetFontSize 45
         SetBackgroundColor 255 255 255
         PlayAlertSound $SoundExalted
-    Branch # Currency - Generic Currency - T0 (Mirror, Exalted, Eternal,...)
-        Tags @Currency_T0
+    Branch # Currency - Generic Currency - T0 (Exalted Tier) - Eternal Orb
+        BaseType "Eternal Orb"
         SetFontSize 45
         SetBackgroundColor 255 255 255
         PlayAlertSound $SoundT0
-    Branch # Currency - Generic Currency - T1 (Divine)
+
+
+    Branch # Currency - Generic Currency - T1 (Divine Tier) - Divine Orb
         Tags @Currency_Divine
         SetFontSize 45
         SetBackgroundColor 255 255 255
         PlayAlertSound $SoundDivine
-    Branch # Currency - Generic Currency - T1 (Divine)
-        Tags @Currency_T1
+    Branch # Currency - Generic Currency - T1 (Divine Tier) - Orb of Annulment
+        BaseType "Orb of Annulment"
         SetFontSize 45
         SetBackgroundColor 255 255 255
         PlayAlertSound $SoundT1
-    Branch # Currency - Generic Currency - T2 (Chaos, Vaal, Blessed, Regal, GCP, Regret, Fuse, Chisel, Scouring,...)
+
+
+    Branch # Currency - Generic Currency - T2 (Chaos Tier) - Chaos Orb
         Tags @Currency_Chaos
         SetFontSize 42
         SetBackgroundColor 70 70 0
         PlayAlertSound $SoundChaos
-    Branch # Currency - Generic Currency - T2 (Chaos, Vaal, Blessed, Regal, GCP, Regret, Fuse, Chisel, Scouring,...)
+    Branch # Currency - Generic Currency - T2 (Chaos Tier) - Vaal Orb
         Tags @Currency_Vaal
         SetFontSize 42
         SetBackgroundColor 70 70 0
         PlayAlertSound $SoundVaal
-    Branch # Currency - Generic Currency - T2 (Chaos, Vaal, Blessed, Regal, GCP, Regret, Fuse, Chisel, Scouring,...)
+    Branch # Currency - Generic Currency - T2 (Chaos Tier) - Regal Orb
         Tags @Currency_Regal
         SetFontSize 42
         SetBackgroundColor 70 70 0
         PlayAlertSound $SoundRegal
-    Branch # Currency - Generic Currency - T2 (Chaos, Vaal, Blessed, Regal, GCP, Regret, Fuse, Chisel, Scouring,...)
-        Tags @Currency_T2
+    Branch # Currency - Generic Currency - T2 (Chaos Tier) - Gemcutter's Prism
+        BaseType "Gemcutter's Prism"
         SetFontSize 42
         SetBackgroundColor 70 70 0
         PlayAlertSound $SoundT2
-    Branch # Currency - Generic Currency - T3 (Chance, Alchemy, Alteration, Jeweller, Glassblower, Chromatic)
-        Tags @Currency_T3
+    Branch # Currency - Generic Currency - T2 (Chaos Tier) - Orb of Regret
+        BaseType "Orb of Regret"
+        SetFontSize 42
+        SetBackgroundColor 70 70 0
+        PlayAlertSound $SoundT2
+    Branch # Currency - Generic Currency - T2 (Chaos Tier) - Cartographer's Chisel
+        BaseType "Cartographer's Chisel"
+        SetFontSize 42
+        SetBackgroundColor 70 70 0
+        PlayAlertSound $SoundT2
+    Branch # Currency - Generic Currency - T2 (Chaos Tier) - Orb of Alchemy
+        BaseType "Orb of Alchemy"
+        SetFontSize 42
+        SetBackgroundColor 70 70 0
+        PlayAlertSound $SoundT2
+    Branch # Currency - Generic Currency - T2 (Chaos Tier) - Orb of Fusing
+        BaseType "Orb of Fusing"
+        SetFontSize 42
+        SetBackgroundColor 70 70 0
+        PlayAlertSound $SoundT2
+    Branch # Currency - Generic Currency - T2 (Chaos Tier) - Orb of Scouring
+        BaseType "Orb of Scouring"
+        SetFontSize 42
+        SetBackgroundColor 70 70 0
+        PlayAlertSound $SoundT2
+    Branch # Currency - Generic Currency - T2 (Chaos Tier) - Blessed Orb
+        BaseType "Blessed Orb"
+        SetFontSize 42
+        SetBackgroundColor 70 70 0
+        PlayAlertSound $SoundT2
+    Branch # Currency - Generic Currency - T2 (Chaos Tier) - Stacked Deck
+        BaseType "Stacked Deck"
+        SetFontSize 42
+        SetBackgroundColor 70 70 0
+        PlayAlertSound $SoundT2
+
+
+    Branch # Currency - Generic Currency - T3 (Alteration Tier) - Orb of Alteration
+        BaseType "Orb of Alteration"
         SetFontSize 37
         SetBackgroundColor 0 0 60
         PlayAlertSound $SoundT3
-    Branch # Currency - Generic Currency - T4 (Augment, Transmute, Blacksmith, Armourer)
-        Tags @Currency_T4
+    Branch # Currency - Generic Currency - T3 (Alteration Tier) - Glassblower's Bauble
+        BaseType "Glassblower's Bauble"
         SetFontSize 37
+        SetBackgroundColor 0 0 60
+        PlayAlertSound $SoundT3
+    Branch # Currency - Generic Currency - T3 (Alteration Tier) - Jeweller's Orb
+        BaseType "Jeweller's Orb"
+        SetFontSize 37
+        SetBackgroundColor 0 0 60
+        PlayAlertSound $SoundT3
+    Branch # Currency - Generic Currency - T3 (Alteration Tier) - Orb of Chance
+        BaseType "Orb of Chance"
+        SetFontSize 37
+        SetBackgroundColor 0 0 60
+        PlayAlertSound $SoundT3
+    Branch # Currency - Generic Currency - T3 (Alteration Tier) - Chromatic Orb
+        BaseType "Chromatic Orb"
+        SetFontSize 37
+        SetBackgroundColor 0 0 60
+        PlayAlertSound $SoundT3
+
+
+    Branch # Currency - Generic Currency - T4 (Transmutation Tier) - Orb of Transmutation
+        BaseType "Orb of Transmutation"
+        SetFontSize 37
+    Branch # Currency - Generic Currency - T4 (Transmutation Tier) - Orb of Augmentation
+        BaseType "Orb of Augmentation"
+        SetFontSize 37
+    Branch # Currency - Generic Currency - T4 (Transmutation Tier) - Blacksmith's Whetstone
+        BaseType "Blacksmith's Whetstone"
+        SetFontSize 37
+    Branch # Currency - Generic Currency - T4 (Transmutation Tier) - Armourer's Scrap
+        BaseType "Armourer's Scrap"
+        SetFontSize 37
+
+
     Branch # Currency - Generic Currency - Portal Scroll
         Tags @Currency_PortalScroll
         SetFontSize 33
@@ -2914,6 +3066,43 @@ Show
         Tags @Currency_ScrollWisdom
         SetFontSize 33
         SetBorderColor 170 158 130 0
+
+
+    Branch # Currency - Outdated and not dropable Currency - T1 (Divine Tier) - Ancient Orb
+        BaseType "Ancient Orb"
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        PlayAlertSound $SoundT1
+    Branch # Currency - Outdated and not dropable Currency - T2 (Chaos Tier) - Unshaping Orb
+        BaseType "Unshaping Orb"
+        SetFontSize 42
+        SetBackgroundColor 70 70 0
+        PlayAlertSound $SoundT2
+    Branch # Currency - Outdated and not dropable Currency - T2 (Chaos Tier) - Seals
+        BaseType "Seal"
+        SetFontSize 42
+        SetBackgroundColor 70 70 0
+        PlayAlertSound $SoundT2
+    Branch # Currency - Outdated and not dropable Currency - T2 (Chaos Tier) - Orb of Horizon
+        BaseType "Orb of Horizons"
+        SetFontSize 42
+        SetBackgroundColor 70 70 0
+        PlayAlertSound $SoundT2
+    Branch # Currency - Outdated and not dropable Currency - T2 (Chaos Tier) - Harbinger's Orb
+        BaseType "Harbinger's Orb"
+        SetFontSize 42
+        SetBackgroundColor 70 70 0
+        PlayAlertSound $SoundT2
+    Branch # Currency - Outdated and not dropable Currency - T3 (Alteration Tier) - Engineer's Orb
+        BaseType "Engineer's Orb"
+        SetFontSize 37
+        SetBackgroundColor 0 0 60
+        PlayAlertSound $SoundT3
+    Branch # Currency - Outdated and not dropable Currency - T3 (Alteration Tier) - Orb of Binding
+        BaseType "Orb of Binding"
+        SetFontSize 37
+        SetBackgroundColor 0 0 60
+        PlayAlertSound $SoundT3
 
 #Currency - Shards
 Show
@@ -2994,6 +3183,11 @@ Show # Gems - Drop Only gems
     SetFontSize 50
     SetBackgroundColor 70 20 0
     SetBorderColor 27 162 155
+Show # Gems - Quality (> 10%)
+    Class "Gems"
+    Quality > 10
+    SetFontSize 38
+    SetBorderColor 128 179 255
 Show # Gems - Quality (> 0%)
     Class "Gems"
     Quality > 0
@@ -3223,24 +3417,6 @@ Show # Leagues - Perandus - Coins
     SetTextColor 255 215 0
     SetBorderColor 255 215 0
     PlayAlertSound $SoundT3
-
-#------------------------------------
-#    Warband items
-#------------------------------------
-Show
-    Rarity Magic
-    Corrupted False
-    Identified True
-    SetFontSize 34
-    SetBackgroundColor 200 100 180
-    SetTextColor 255 192 203
-    SetBorderColor 255 192 203
-    Branch # Leagues - Warband - Warband items
-        Class "Helmets" "Boots"
-        ItemLevel = 82
-    Branch # Leagues - Warband - Warband items
-        Class "Daggers" "Wands" "Sceptres"
-        ItemLevel = 84
 
 #------------------------------------
 #    Other currencies
