@@ -1,10 +1,10 @@
 ###Crymsius-filter
-###Version 3.1.1a
+###Version 3.1.2
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
 SetOption $Introduction info [Here you'll discover a sleek filter, designed by and for colour blind (and others !) with highlights for recipes, good bases, tiers and an emphasis on colour schemes that respect PoE's ones! You can customize the filter with the following options, and later, select the smartblocks you want to display or hide.] # Welcome to the filter! 
-SetOption $Links link [GitHub] [https://github.com/Crymsius/Crymsius-filter] [Forum Thread] [https://www.pathofexile.com/forum/view-thread/1895126]
+SetOption $Links link [GitHub] [https://github.com/Crymsius/Crymsius-filter] [Forum Thread] [https://www.pathofexile.com/forum/view-thread/1895126] [Uniques and Divination Card Tiers] [https://docs.google.com/spreadsheets/d/1cUh1WLdLab-aYctvH4RMX2iYvLX0gKimbf-v0UR03Qs/edit?usp=sharing]
 
 # //! SetOption $Highlighted_Maps textarea ["Vault"] # Add or delete the name of maps you want to highlight. You can enable the highlight in the block switches (off by default)
 # //! SetOption $Highlighted_Shaped_Maps textarea ["Vault"] # Add or delete the name of shaped maps you want to highlight (Just the name, without "Shaped"). You can enable the highlight in the block switches (off by default)
@@ -207,7 +207,7 @@ Show
 #------------------------------------
 Show
     LinkedSockets = 6
-    SetFontSize 70
+    SetFontSize 45
     SetBackgroundColor 255 255 255
     SetTextColor 255 0 0
     SetBorderColor 255 0 0
@@ -218,7 +218,7 @@ Show
 #------------------------------------
 Show # Leagues - Harbinger - Pieces
     Class "Piece"
-    SetFontSize 50
+    SetFontSize 45
     SetBackgroundColor 70 20 0
     SetTextColor 255 255 255
     SetBorderColor 88 124 244
@@ -227,14 +227,14 @@ Show # Leagues - Talisman - Unique Talismans
     Class "Amulets"
     BaseType "Talisman"
     Rarity Unique
-    SetFontSize 50
+    SetFontSize 45
     SetBackgroundColor 130 220 140
     SetTextColor 175 96 37
     SetBorderColor 175 96 37
     PlayAlertSound $SoundUniques
 Show
     Rarity Unique
-    SetFontSize 50
+    SetFontSize 45
     SetBackgroundColor 255 255 255
     SetBorderColor 175 96 37
     PlayAlertSound $SoundT0
@@ -252,7 +252,7 @@ Show
         Tags @Uniques_T0_Jewels
 Show
     Rarity Unique
-    SetFontSize 50
+    SetFontSize 45
     SetBackgroundColor 70 20 0
     SetTextColor 255 255 255
     SetBorderColor 175 96 37
@@ -269,7 +269,7 @@ Show
         Tags @Uniques_T1_Flasks
 Show
     Rarity Unique
-    SetFontSize 50
+    SetFontSize 45
     SetBackgroundColor 70 20 0
     SetBorderColor 255 255 255
     PlayAlertSound $SoundT2
@@ -350,7 +350,7 @@ Comment
 #T16 maps
 Show
     Class "Maps"
-    SetFontSize 50
+    SetFontSize 45
     SetBackgroundColor 255 255 255
     SetTextColor 250 20 0
     PlayAlertSound $SoundT0
@@ -590,6 +590,10 @@ Show
     SetFontSize 42
     SetBackgroundColor 10 10 40
     SetBorderColor 0 0 255
+    Branch # Jewels - Magic
+        Rarity Magic
+    Branch # Jewels - Rare
+        Rarity Rare
 
 #------------------------------------
 #    Talismans
@@ -659,9 +663,9 @@ Show # Leveling - Flasks - Life Flasks | Comment
     Class "Life Flask"
     Rarity Magic
     SetFontSize 36
-    SetBackgroundColor 20 20 20 200
-    SetTextColor 140 140 255
-    SetBorderColor 140 140 255
+    SetBackgroundColor 0 0 60
+    SetTextColor 0 255 255
+    SetBorderColor 0 255 255
     PlayAlertSound $SoundLeveling
     Branch
         DropLevel >= 60
@@ -700,9 +704,9 @@ Show # Leveling - Flasks - Mana Flasks | Comment
     Class "Mana Flask"
     Rarity Magic
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
-    SetTextColor 140 140 255
-    SetBorderColor 140 140 255
+    SetBackgroundColor 0 0 60
+    SetTextColor 0 255 255
+    SetBorderColor 0 255 255
     Branch
         DropLevel >= 60
         ItemLevel <= 65
@@ -740,26 +744,23 @@ Show # Leveling - Flasks - Utility Flasks | Comment
     Class "Utility Flasks"
     Rarity Magic
     SetFontSize 34
-    SetBackgroundColor 20 20 20 200
-    SetTextColor 140 140 255
-    SetBorderColor 140 140 255
+    SetBackgroundColor 0 0 60
+    SetTextColor 0 255 255
+    SetBorderColor 0 255 255
     Branch
-        ItemLevel <= 60
-        SetFontSize 34
-        SetBackgroundColor 20 20 20 200
-        SetTextColor 140 140 255
-        SetBorderColor 140 140 255
-    Branch
-        BaseType "Quicksilver"
+        BaseType "Quicksilver Flask"
         ItemLevel <= 60
         SetFontSize 38
         PlayAlertSound $SoundLeveling
+    Branch
+        ItemLevel <= 60
+        SetFontSize 34
 Show # Leveling - Flasks - Life Flasks | Comment
     Class "Life Flask"
     SetFontSize 36
-    SetBackgroundColor 20 20 20 200
-    SetTextColor 180 180 180
-    SetBorderColor 180 180 180
+    SetBackgroundColor 20 20 20
+    SetTextColor 0 255 255
+    SetBorderColor 0 255 255
     PlayAlertSound $SoundLeveling
     Branch
         DropLevel >= 60
@@ -797,9 +798,9 @@ Show # Leveling - Flasks - Life Flasks | Comment
 Show # Leveling - Flasks - Mana Flasks | Comment
     Class "Mana Flask"
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
-    SetTextColor 180 180 180
-    SetBorderColor 180 180 180
+    SetBackgroundColor 20 20 20
+    SetTextColor 0 255 255
+    SetBorderColor 0 255 255
     Branch
         DropLevel >= 60
         ItemLevel <= 65
@@ -836,22 +837,20 @@ Show # Leveling - Flasks - Mana Flasks | Comment
 Show # Leveling - Flasks - Utility Flasks | Comment
     Class "Utility Flasks"
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
-    SetTextColor 180 180 180
-    SetBorderColor 180 180 180
-    Branch
-        ItemLevel <= 60
-        SetFontSize 34
-        SetBackgroundColor 20 20 20 200
-        SetTextColor 180 180 180
-        SetBorderColor 140 140 255
+    SetBackgroundColor 20 20 20
+    SetTextColor 0 255 255
+    SetBorderColor 0 255 255
     Branch
         BaseType "Quicksilver"
         ItemLevel <= 65
-        SetFontSize 38
+        SetFontSize 40
         PlayAlertSound $SoundLeveling
+    Branch
+        ItemLevel <= 60
+        SetFontSize 34
 
-#Armours
+#Leveling - Rare
+#Armours - Rare
 Show # Leveling - Armours - Body Armours | Comment
     Class "Body Armour"
     Rarity = Rare
@@ -861,30 +860,80 @@ Show # Leveling - Armours - Body Armours | Comment
     Branch
         DropLevel >= 53
         ItemLevel <= 59
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 0 0 0
+    Branch
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 55
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 0 0 0
     Branch
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         DropLevel >= 35
         ItemLevel <= 44
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 0 0 0
+    Branch
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        DropLevel >= 21
+        ItemLevel <= 36
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 0 0 0
     Branch
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         DropLevel >= 17
         ItemLevel <= 31
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 0 0 0
+    Branch
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 20
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 0 0 0
     Branch
         DropLevel >= 6
         ItemLevel <= 20
     Branch
         DropLevel >= 1
         ItemLevel <= 16
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 0 0 0
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
     Branch
         DropLevel <= 50
         ItemLevel <= 59
-        SetBackgroundColor 50 50 0 100
-        SetTextColor 255 255 119 100
-        SetBorderColor 255 255 119 100
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 0 0 0
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 255 255 119 190
 Show # Leveling - Armours - Boots | Comment
     Class "Boot"
     Rarity = Rare
@@ -892,32 +941,82 @@ Show # Leveling - Armours - Boots | Comment
     SetBackgroundColor 50 50 0
     SetBorderColor 255 255 119
     Branch
+        LinkedSockets >= 4
         DropLevel >= 53
         ItemLevel <= 59
+        SetFontSize 45
+        SetBorderColor 0 0 0
+    Branch
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 41
+        ItemLevel <= 55
+        SetFontSize 45
+        SetBorderColor 0 0 0
     Branch
         DropLevel >= 41
         ItemLevel <= 55
     Branch
+        LinkedSockets >= 4
         DropLevel >= 35
         ItemLevel <= 44
+        SetFontSize 45
+        SetBorderColor 0 0 0
+    Branch
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        LinkedSockets >= 4
+        DropLevel >= 21
+        ItemLevel <= 36
+        SetFontSize 45
+        SetBorderColor 0 0 0
     Branch
         DropLevel >= 21
         ItemLevel <= 36
     Branch
+        LinkedSockets >= 3
         DropLevel >= 17
         ItemLevel <= 31
+        SetFontSize 45
+        SetBorderColor 0 0 0
+    Branch
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        LinkedSockets >= 3
+        DropLevel >= 6
+        ItemLevel <= 20
+        SetFontSize 45
+        SetBorderColor 0 0 0
     Branch
         DropLevel >= 6
         ItemLevel <= 20
     Branch
+        LinkedSockets >= 3
+        DropLevel >= 1
+        ItemLevel <= 16
+        SetFontSize 45
+        SetBorderColor 0 0 0
+    Branch
         DropLevel >= 1
         ItemLevel <= 16
     Branch
+        LinkedSockets >= 4
         DropLevel <= 50
         ItemLevel <= 59
-        SetBackgroundColor 50 50 0 100
-        SetTextColor 255 255 119 100
-        SetBorderColor 255 255 119 100
+        SetFontSize 45
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 0 0 0 190
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 255 255 119 190
 Show # Leveling - Armours - Gloves | Comment
     Class "Glove"
     Rarity = Rare
@@ -927,30 +1026,80 @@ Show # Leveling - Armours - Gloves | Comment
     Branch
         DropLevel >= 53
         ItemLevel <= 59
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 0 0 0
+    Branch
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 55
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 0 0 0
     Branch
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         DropLevel >= 35
         ItemLevel <= 44
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 0 0 0
+    Branch
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        DropLevel >= 21
+        ItemLevel <= 36
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 0 0 0
     Branch
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         DropLevel >= 17
         ItemLevel <= 31
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 0 0 0
+    Branch
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 20
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 0 0 0
     Branch
         DropLevel >= 6
         ItemLevel <= 20
     Branch
         DropLevel >= 1
         ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 0 0 0
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
     Branch
         DropLevel <= 50
         ItemLevel <= 59
-        SetBackgroundColor 50 50 0 100
-        SetTextColor 255 255 119 100
-        SetBorderColor 255 255 119 100
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 0 0 0
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 255 255 119 190
 Show # Leveling - Armours - Helmets | Comment
     Class "Helmet"
     Rarity = Rare
@@ -960,30 +1109,80 @@ Show # Leveling - Armours - Helmets | Comment
     Branch
         DropLevel >= 53
         ItemLevel <= 59
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 0 0 0
+    Branch
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 55
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 0 0 0
     Branch
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         DropLevel >= 35
         ItemLevel <= 44
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 0 0 0
+    Branch
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        DropLevel >= 21
+        ItemLevel <= 36
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 0 0 0
     Branch
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         DropLevel >= 17
         ItemLevel <= 31
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 0 0 0
+    Branch
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 20
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 0 0 0
     Branch
         DropLevel >= 6
         ItemLevel <= 20
     Branch
         DropLevel >= 1
         ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 0 0 0
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
     Branch
         DropLevel <= 50
         ItemLevel <= 59
-        SetBackgroundColor 50 50 0 100
-        SetTextColor 255 255 119 100
-        SetBorderColor 255 255 119 100
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 0 0 0
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 255 255 119 190
 Show # Leveling - Armours - Shields | Comment
     Class "Shield"
     Rarity = Rare
@@ -1014,11 +1213,11 @@ Show # Leveling - Armours - Shields | Comment
     Branch
         DropLevel <= 50
         ItemLevel <= 59
-        SetBackgroundColor 50 50 0 100
-        SetTextColor 255 255 119 100
-        SetBorderColor 255 255 119 100
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 255 255 119 190
 
-# Accessories
+# Accessories - Rare
 Show # Leveling - Accessories - Amulets | Comment
     Class "Amulet"
     Rarity = Rare
@@ -1048,7 +1247,7 @@ Show # Leveling - Accessories - Rings | Comment
     SetBackgroundColor 50 50 0
     SetBorderColor 255 255 119
 
-# Weapons
+# Weapons - Rare
 Show # Leveling - Weapons - Melee - One Hand - Axes | Comment
     Class "One Hand Axe"
     Rarity = Rare
@@ -1079,9 +1278,9 @@ Show # Leveling - Weapons - Melee - One Hand - Axes | Comment
     Branch
         DropLevel <= 50
         ItemLevel <= 59
-        SetBackgroundColor 50 50 0 100
-        SetTextColor 255 255 119 100
-        SetBorderColor 255 255 119 100
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 255 255 119 190
 Show # Leveling - Weapons - Melee - One Hand - Claws | Comment
     Class "Claw"
     Rarity = Rare
@@ -1112,9 +1311,9 @@ Show # Leveling - Weapons - Melee - One Hand - Claws | Comment
     Branch
         DropLevel <= 50
         ItemLevel <= 59
-        SetBackgroundColor 50 50 0 100
-        SetTextColor 255 255 119 100
-        SetBorderColor 255 255 119 100
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 255 255 119 190
 Show # Leveling - Weapons - Melee - One Hand - Daggers | Comment
     Class "Dagger"
     Rarity = Rare
@@ -1145,9 +1344,9 @@ Show # Leveling - Weapons - Melee - One Hand - Daggers | Comment
     Branch
         DropLevel <= 50
         ItemLevel <= 59
-        SetBackgroundColor 50 50 0 100
-        SetTextColor 255 255 119 100
-        SetBorderColor 255 255 119 100
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 255 255 119 190
 Show # Leveling - Weapons - Melee - One Hand - Maces | Comment
     Class "One Hand Mace"
     Rarity = Rare
@@ -1178,9 +1377,9 @@ Show # Leveling - Weapons - Melee - One Hand - Maces | Comment
     Branch
         DropLevel <= 50
         ItemLevel <= 59
-        SetBackgroundColor 50 50 0 100
-        SetTextColor 255 255 119 100
-        SetBorderColor 255 255 119 100
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 255 255 119 190
 Show # Leveling - Weapons - Melee - One Hand - Sceptres | Comment
     Class "Sceptre"
     Rarity = Rare
@@ -1211,9 +1410,9 @@ Show # Leveling - Weapons - Melee - One Hand - Sceptres | Comment
     Branch
         DropLevel <= 50
         ItemLevel <= 59
-        SetBackgroundColor 50 50 0 100
-        SetTextColor 255 255 119 100
-        SetBorderColor 255 255 119 100
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 255 255 119 190
 Show # Leveling - Weapons - Melee - One Hand - Thrusting Swords | Comment
     Class "Thrusting One Hand Sword"
     Rarity = Rare
@@ -1244,9 +1443,9 @@ Show # Leveling - Weapons - Melee - One Hand - Thrusting Swords | Comment
     Branch
         DropLevel <= 50
         ItemLevel <= 59
-        SetBackgroundColor 50 50 0 100
-        SetTextColor 255 255 119 100
-        SetBorderColor 255 255 119 100
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 255 255 119 190
 Show # Leveling - Weapons - Melee - One Hand - Swords | Comment
     Class "One Hand Sword"
     Rarity = Rare
@@ -1277,9 +1476,9 @@ Show # Leveling - Weapons - Melee - One Hand - Swords | Comment
     Branch
         DropLevel <= 50
         ItemLevel <= 59
-        SetBackgroundColor 50 50 0 100
-        SetTextColor 255 255 119 100
-        SetBorderColor 255 255 119 100
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 255 255 119 190
 Show # Leveling - Weapons - Melee - Two Hand - Axes | Comment
     Class "Two Hand Axe"
     Rarity = Rare
@@ -1310,9 +1509,9 @@ Show # Leveling - Weapons - Melee - Two Hand - Axes | Comment
     Branch
         DropLevel <= 50
         ItemLevel <= 59
-        SetBackgroundColor 50 50 0 100
-        SetTextColor 255 255 119 100
-        SetBorderColor 255 255 119 100
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 255 255 119 190
 Show # Leveling - Weapons - Melee - Two Hand - Maces | Comment
     Class "Two Hand Mace"
     Rarity = Rare
@@ -1343,9 +1542,9 @@ Show # Leveling - Weapons - Melee - Two Hand - Maces | Comment
     Branch
         DropLevel <= 50
         ItemLevel <= 59
-        SetBackgroundColor 50 50 0 100
-        SetTextColor 255 255 119 100
-        SetBorderColor 255 255 119 100
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 255 255 119 190
 Show # Leveling - Weapons - Melee - Two Hand - Staves | Comment
     Class "Staves"
     Rarity = Rare
@@ -1376,9 +1575,9 @@ Show # Leveling - Weapons - Melee - Two Hand - Staves | Comment
     Branch
         DropLevel <= 50
         ItemLevel <= 59
-        SetBackgroundColor 50 50 0 100
-        SetTextColor 255 255 119 100
-        SetBorderColor 255 255 119 100
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 255 255 119 190
 Show # Leveling - Weapons - Melee - Two Hand - Swords | Comment
     Class "Two Hand Sword"
     Rarity = Rare
@@ -1409,9 +1608,9 @@ Show # Leveling - Weapons - Melee - Two Hand - Swords | Comment
     Branch
         DropLevel <= 50
         ItemLevel <= 59
-        SetBackgroundColor 50 50 0 100
-        SetTextColor 255 255 119 100
-        SetBorderColor 255 255 119 100
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 255 255 119 190
 Show # Leveling - Weapons - Ranged - Bow | Comment
     Class "Bow"
     Rarity = Rare
@@ -1442,9 +1641,9 @@ Show # Leveling - Weapons - Ranged - Bow | Comment
     Branch
         DropLevel <= 50
         ItemLevel <= 59
-        SetBackgroundColor 50 50 0 100
-        SetTextColor 255 255 119 100
-        SetBorderColor 255 255 119 100
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 255 255 119 190
 Show # Leveling - Weapons - Ranged - Wand | Comment
     Class "Wand"
     Rarity = Rare
@@ -1475,10 +1674,12 @@ Show # Leveling - Weapons - Ranged - Wand | Comment
     Branch
         DropLevel <= 50
         ItemLevel <= 59
-        SetBackgroundColor 50 50 0 100
-        SetTextColor 255 255 119 100
-        SetBorderColor 255 255 119 100
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
+        SetBorderColor 255 255 119 190
 
+
+#Leveling - Magic
 #Armours - Magic
 Show # Leveling - Armours - Body Armours | Comment
     Class "Body Armour"
@@ -1489,22 +1690,32 @@ Show # Leveling - Armours - Body Armours | Comment
     SetBorderColor 140 140 255
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 53
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 35
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 17
         ItemLevel <= 31
     Branch
@@ -1522,22 +1733,32 @@ Show # Leveling - Armours - Boots | Comment
     SetBorderColor 140 140 255
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 53
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 35
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 17
         ItemLevel <= 31
     Branch
@@ -1555,26 +1776,38 @@ Show # Leveling - Armours - Gloves | Comment
     SetBorderColor 140 140 255
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 53
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 35
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 17
         ItemLevel <= 31
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 6
         ItemLevel <= 20
     Branch
@@ -1589,26 +1822,38 @@ Show # Leveling - Armours - Helmets | Comment
     SetBorderColor 140 140 255
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 53
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 35
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 17
         ItemLevel <= 31
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 6
         ItemLevel <= 20
     Branch
@@ -1623,33 +1868,45 @@ Show # Leveling - Armours - Shields | Comment
     SetBorderColor 140 140 255
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 53
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 35
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 17
         ItemLevel <= 31
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 0 0 0
         DropLevel >= 6
         ItemLevel <= 20
     Branch
         DropLevel >= 1
         ItemLevel <= 16
 
-# Accessories
+# Accessories - Magic
 Show # Leveling - Accessories - Amulets | Comment
     Class "Amulet"
     Rarity = Magic
@@ -1677,7 +1934,7 @@ Show # Leveling - Accessories - Rings | Comment
     ItemLevel <= 30
     SetFontSize 33
 
-# Weapons
+# Weapons - Magic
 Show # Leveling - Weapons - Melee - One Hand - Axes | Comment
     Class "One Hand Axe"
     Rarity = Magic
@@ -2121,6 +2378,7 @@ Show # Leveling - Weapons - Ranged - Wand | Comment
         DropLevel >= 1
         ItemLevel <= 11
 
+#leveling - Normal
 #Armours - Normal
 Show # Leveling - Armours - Body Armours | Comment
     Class "Body Armour"
@@ -2288,7 +2546,7 @@ Show # Leveling - Armours - Shields | Comment
         DropLevel >= 1
         ItemLevel <= 16
 
-# Accessories
+# Accessories - Normal
 Show # Leveling - Accessories - Amulets | Comment
     Class "Amulet"
     Rarity = Normal
@@ -2316,7 +2574,7 @@ Show # Leveling - Accessories - Rings | Comment
     ItemLevel <= 30
     SetFontSize 33
 
-# Weapons
+# Weapons - Normal
 Show # Leveling - Weapons - Melee - One Hand - Axes | Comment
     Class "One Hand Axe"
     Rarity = Normal
@@ -3019,52 +3277,52 @@ Show
 
     Branch # Currency - Generic Currency - T3 (Alteration Tier) - Orb of Alteration
         BaseType "Orb of Alteration"
-        SetFontSize 37
+        SetFontSize 39
         SetBackgroundColor 0 0 60
         PlayAlertSound $SoundT3
     Branch # Currency - Generic Currency - T3 (Alteration Tier) - Glassblower's Bauble
         BaseType "Glassblower's Bauble"
-        SetFontSize 37
+        SetFontSize 39
         SetBackgroundColor 0 0 60
         PlayAlertSound $SoundT3
     Branch # Currency - Generic Currency - T3 (Alteration Tier) - Jeweller's Orb
         BaseType "Jeweller's Orb"
-        SetFontSize 37
+        SetFontSize 39
         SetBackgroundColor 0 0 60
         PlayAlertSound $SoundT3
     Branch # Currency - Generic Currency - T3 (Alteration Tier) - Orb of Chance
         BaseType "Orb of Chance"
-        SetFontSize 37
+        SetFontSize 39
         SetBackgroundColor 0 0 60
         PlayAlertSound $SoundT3
     Branch # Currency - Generic Currency - T3 (Alteration Tier) - Chromatic Orb
         BaseType "Chromatic Orb"
-        SetFontSize 37
+        SetFontSize 39
         SetBackgroundColor 0 0 60
         PlayAlertSound $SoundT3
 
 
     Branch # Currency - Generic Currency - T4 (Transmutation Tier) - Orb of Transmutation
         BaseType "Orb of Transmutation"
-        SetFontSize 37
+        SetFontSize 39
     Branch # Currency - Generic Currency - T4 (Transmutation Tier) - Orb of Augmentation
         BaseType "Orb of Augmentation"
-        SetFontSize 37
+        SetFontSize 39
     Branch # Currency - Generic Currency - T4 (Transmutation Tier) - Blacksmith's Whetstone
         BaseType "Blacksmith's Whetstone"
-        SetFontSize 37
+        SetFontSize 39
     Branch # Currency - Generic Currency - T4 (Transmutation Tier) - Armourer's Scrap
         BaseType "Armourer's Scrap"
-        SetFontSize 37
+        SetFontSize 39
 
 
     Branch # Currency - Generic Currency - Portal Scroll
         Tags @Currency_PortalScroll
-        SetFontSize 33
+        SetFontSize 36
         SetBorderColor 170 158 130 0
     Branch # Currency - Generic Currency - Scroll of Wisdom
         Tags @Currency_ScrollWisdom
-        SetFontSize 33
+        SetFontSize 36
         SetBorderColor 170 158 130 0
 
 
@@ -3140,10 +3398,13 @@ Show # Flasks - Utility flasks
     Class "Utility Flasks"
     SetFontSize 30
     SetBackgroundColor 0 30 30 160
+    SetTextColor 0 255 255
+    SetBorderColor 0 255 255
 Show # Flasks - Flask Quality (≥ 14%)
     Class "Flasks"
     Quality >= 14
     SetFontSize 30
+    SetTextColor 0 255 255
     SetBorderColor 128 179 255
 
 #------------------------------------
