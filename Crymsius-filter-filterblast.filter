@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.2.0
+###Version 3.2.0a
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -863,7 +863,7 @@ Show # Leveling - Armours - Body Armours | Comment
         ItemLevel <= 59
         LinkedSockets >= 4
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 53
         ItemLevel <= 59
@@ -872,7 +872,7 @@ Show # Leveling - Armours - Body Armours | Comment
         ItemLevel <= 55
         LinkedSockets >= 4
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 41
         ItemLevel <= 55
@@ -881,7 +881,7 @@ Show # Leveling - Armours - Body Armours | Comment
         ItemLevel <= 44
         LinkedSockets >= 4
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 35
         ItemLevel <= 44
@@ -890,7 +890,7 @@ Show # Leveling - Armours - Body Armours | Comment
         ItemLevel <= 36
         LinkedSockets >= 4
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 21
         ItemLevel <= 36
@@ -899,7 +899,7 @@ Show # Leveling - Armours - Body Armours | Comment
         ItemLevel <= 31
         LinkedSockets >= 4
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 17
         ItemLevel <= 31
@@ -908,7 +908,7 @@ Show # Leveling - Armours - Body Armours | Comment
         ItemLevel <= 20
         LinkedSockets >= 4
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 6
         ItemLevel <= 20
@@ -917,7 +917,7 @@ Show # Leveling - Armours - Body Armours | Comment
         ItemLevel <= 16
         LinkedSockets >= 4
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 16
@@ -926,7 +926,7 @@ Show # Leveling - Armours - Body Armours | Comment
         ItemLevel <= 59
         LinkedSockets >= 4
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         SetBackgroundColor 50 50 0 190
         SetTextColor 255 255 119 190
     Branch
@@ -946,7 +946,7 @@ Show # Leveling - Armours - Boots | Comment
         DropLevel >= 53
         ItemLevel <= 59
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 53
         ItemLevel <= 59
@@ -955,7 +955,7 @@ Show # Leveling - Armours - Boots | Comment
         DropLevel >= 41
         ItemLevel <= 55
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 41
         ItemLevel <= 55
@@ -964,16 +964,16 @@ Show # Leveling - Armours - Boots | Comment
         DropLevel >= 35
         ItemLevel <= 44
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 35
         ItemLevel <= 44
     Branch
-        LinkedSockets >= 4
+        LinkedSockets >= 3
         DropLevel >= 21
         ItemLevel <= 36
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 21
         ItemLevel <= 36
@@ -982,7 +982,7 @@ Show # Leveling - Armours - Boots | Comment
         DropLevel >= 17
         ItemLevel <= 31
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 17
         ItemLevel <= 31
@@ -991,7 +991,7 @@ Show # Leveling - Armours - Boots | Comment
         DropLevel >= 6
         ItemLevel <= 20
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 6
         ItemLevel <= 20
@@ -1000,7 +1000,7 @@ Show # Leveling - Armours - Boots | Comment
         DropLevel >= 1
         ItemLevel <= 16
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 16
@@ -1011,7 +1011,7 @@ Show # Leveling - Armours - Boots | Comment
         SetFontSize 45
         SetBackgroundColor 50 50 0 190
         SetTextColor 255 255 119 190
-        SetBorderColor 0 0 0 190
+        SetBorderColor 14 164 37 190
     Branch
         DropLevel <= 50
         ItemLevel <= 59
@@ -1029,7 +1029,7 @@ Show # Leveling - Armours - Gloves | Comment
         ItemLevel <= 59
         LinkedSockets >= 4
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 53
         ItemLevel <= 59
@@ -1038,7 +1038,7 @@ Show # Leveling - Armours - Gloves | Comment
         ItemLevel <= 55
         LinkedSockets >= 4
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 41
         ItemLevel <= 55
@@ -1047,7 +1047,7 @@ Show # Leveling - Armours - Gloves | Comment
         ItemLevel <= 44
         LinkedSockets >= 4
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 35
         ItemLevel <= 44
@@ -1056,7 +1056,7 @@ Show # Leveling - Armours - Gloves | Comment
         ItemLevel <= 36
         LinkedSockets >= 4
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 21
         ItemLevel <= 36
@@ -1065,7 +1065,7 @@ Show # Leveling - Armours - Gloves | Comment
         ItemLevel <= 31
         LinkedSockets >= 4
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 17
         ItemLevel <= 31
@@ -1074,7 +1074,7 @@ Show # Leveling - Armours - Gloves | Comment
         ItemLevel <= 20
         LinkedSockets >= 3
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 6
         ItemLevel <= 20
@@ -1083,7 +1083,7 @@ Show # Leveling - Armours - Gloves | Comment
         ItemLevel <= 16
         LinkedSockets >= 3
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 16
@@ -1094,7 +1094,7 @@ Show # Leveling - Armours - Gloves | Comment
         SetFontSize 45
         SetBackgroundColor 50 50 0 190
         SetTextColor 255 255 119 190
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel <= 50
         ItemLevel <= 59
@@ -1112,7 +1112,7 @@ Show # Leveling - Armours - Helmets | Comment
         ItemLevel <= 59
         LinkedSockets >= 4
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 53
         ItemLevel <= 59
@@ -1121,7 +1121,7 @@ Show # Leveling - Armours - Helmets | Comment
         ItemLevel <= 55
         LinkedSockets >= 4
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 41
         ItemLevel <= 55
@@ -1130,7 +1130,7 @@ Show # Leveling - Armours - Helmets | Comment
         ItemLevel <= 44
         LinkedSockets >= 4
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 35
         ItemLevel <= 44
@@ -1139,7 +1139,7 @@ Show # Leveling - Armours - Helmets | Comment
         ItemLevel <= 36
         LinkedSockets >= 4
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 21
         ItemLevel <= 36
@@ -1148,7 +1148,7 @@ Show # Leveling - Armours - Helmets | Comment
         ItemLevel <= 31
         LinkedSockets >= 4
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 17
         ItemLevel <= 31
@@ -1157,7 +1157,7 @@ Show # Leveling - Armours - Helmets | Comment
         ItemLevel <= 20
         LinkedSockets >= 3
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 6
         ItemLevel <= 20
@@ -1166,7 +1166,7 @@ Show # Leveling - Armours - Helmets | Comment
         ItemLevel <= 16
         LinkedSockets >= 3
         SetFontSize 45
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 16
@@ -1177,7 +1177,7 @@ Show # Leveling - Armours - Helmets | Comment
         SetFontSize 45
         SetBackgroundColor 50 50 0 190
         SetTextColor 255 255 119 190
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
     Branch
         DropLevel <= 50
         ItemLevel <= 59
@@ -1193,24 +1193,74 @@ Show # Leveling - Armours - Shields | Comment
     Branch
         DropLevel >= 53
         ItemLevel <= 59
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 53
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 55
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         DropLevel >= 35
         ItemLevel <= 44
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 35
+        ItemLevel <= 44
+    Branch
+        DropLevel >= 21
+        ItemLevel <= 36
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         DropLevel >= 17
         ItemLevel <= 31
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 17
+        ItemLevel <= 31
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 20
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 6
         ItemLevel <= 20
     Branch
         DropLevel >= 1
         ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+    Branch
+        DropLevel <= 50
+        ItemLevel <= 59
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+        SetBackgroundColor 50 50 0 190
+        SetTextColor 255 255 119 190
     Branch
         DropLevel <= 50
         ItemLevel <= 59
@@ -1258,21 +1308,63 @@ Show # Leveling - Weapons - Melee - One Hand - Axes | Comment
     Branch
         DropLevel >= 49
         ItemLevel <= 59
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 49
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 42
+        ItemLevel <= 55
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 42
         ItemLevel <= 55
     Branch
         DropLevel >= 33
         ItemLevel <= 44
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 33
+        ItemLevel <= 44
+    Branch
+        DropLevel >= 21
+        ItemLevel <= 36
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         DropLevel >= 11
         ItemLevel <= 28
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 11
+        ItemLevel <= 28
     Branch
         DropLevel >= 6
         ItemLevel <= 20
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 2
+        ItemLevel <= 15
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 2
         ItemLevel <= 15
@@ -1291,21 +1383,63 @@ Show # Leveling - Weapons - Melee - One Hand - Claws | Comment
     Branch
         DropLevel >= 52
         ItemLevel <= 59
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 52
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 43
+        ItemLevel <= 54
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 43
         ItemLevel <= 54
     Branch
         DropLevel >= 34
         ItemLevel <= 45
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 34
+        ItemLevel <= 45
+    Branch
+        DropLevel >= 22
+        ItemLevel <= 36
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 22
         ItemLevel <= 36
     Branch
         DropLevel >= 12
         ItemLevel <= 29
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 12
+        ItemLevel <= 29
     Branch
         DropLevel >= 7
         ItemLevel <= 21
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 7
+        ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 3
         ItemLevel <= 16
@@ -1324,21 +1458,63 @@ Show # Leveling - Weapons - Melee - One Hand - Daggers | Comment
     Branch
         DropLevel >= 50
         ItemLevel <= 59
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 54
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 41
         ItemLevel <= 54
     Branch
         DropLevel >= 32
         ItemLevel <= 43
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        DropLevel >= 20
+        ItemLevel <= 35
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 20
         ItemLevel <= 35
     Branch
         DropLevel >= 10
         ItemLevel <= 27
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 10
+        ItemLevel <= 27
     Branch
         DropLevel >= 5
         ItemLevel <= 19
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 5
+        ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 14
@@ -1357,21 +1533,63 @@ Show # Leveling - Weapons - Melee - One Hand - Maces | Comment
     Branch
         DropLevel >= 50
         ItemLevel <= 59
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 55
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         DropLevel >= 32
         ItemLevel <= 43
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        DropLevel >= 20
+        ItemLevel <= 34
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 20
         ItemLevel <= 34
     Branch
         DropLevel >= 10
         ItemLevel <= 27
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 10
+        ItemLevel <= 27
     Branch
         DropLevel >= 5
         ItemLevel <= 19
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 5
+        ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 14
@@ -1390,21 +1608,63 @@ Show # Leveling - Weapons - Melee - One Hand - Sceptres | Comment
     Branch
         DropLevel >= 50
         ItemLevel <= 59
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 55
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         DropLevel >= 32
         ItemLevel <= 43
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        DropLevel >= 20
+        ItemLevel <= 34
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 20
         ItemLevel <= 34
     Branch
         DropLevel >= 10
         ItemLevel <= 27
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 10
+        ItemLevel <= 27
     Branch
         DropLevel >= 5
         ItemLevel <= 19
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 5
+        ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 14
@@ -1423,21 +1683,63 @@ Show # Leveling - Weapons - Melee - One Hand - Thrusting Swords | Comment
     Branch
         DropLevel >= 49
         ItemLevel <= 59
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 49
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 43
+        ItemLevel <= 54
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 43
         ItemLevel <= 54
     Branch
         DropLevel >= 34
         ItemLevel <= 45
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 34
+        ItemLevel <= 45
+    Branch
+        DropLevel >= 22
+        ItemLevel <= 36
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 22
         ItemLevel <= 36
     Branch
         DropLevel >= 12
         ItemLevel <= 29
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 12
+        ItemLevel <= 29
     Branch
         DropLevel >= 7
         ItemLevel <= 21
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 7
+        ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 3
         ItemLevel <= 16
@@ -1456,21 +1758,63 @@ Show # Leveling - Weapons - Melee - One Hand - Swords | Comment
     Branch
         DropLevel >= 50
         ItemLevel <= 59
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 55
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         DropLevel >= 32
         ItemLevel <= 43
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        DropLevel >= 20
+        ItemLevel <= 34
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 20
         ItemLevel <= 34
     Branch
         DropLevel >= 10
         ItemLevel <= 27
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 10
+        ItemLevel <= 27
     Branch
         DropLevel >= 5
         ItemLevel <= 19
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 5
+        ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 14
@@ -1489,21 +1833,63 @@ Show # Leveling - Weapons - Melee - Two Hand - Axes | Comment
     Branch
         DropLevel >= 52
         ItemLevel <= 59
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 52
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 54
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 41
         ItemLevel <= 54
     Branch
         DropLevel >= 33
         ItemLevel <= 44
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 33
+        ItemLevel <= 44
+    Branch
+        DropLevel >= 23
+        ItemLevel <= 36
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 23
         ItemLevel <= 36
     Branch
         DropLevel >= 13
         ItemLevel <= 27
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 13
+        ItemLevel <= 27
     Branch
         DropLevel >= 9
         ItemLevel <= 22
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 9
+        ItemLevel <= 22
+    Branch
+        DropLevel >= 4
+        ItemLevel <= 17
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 4
         ItemLevel <= 17
@@ -1522,21 +1908,63 @@ Show # Leveling - Weapons - Melee - Two Hand - Maces | Comment
     Branch
         DropLevel >= 51
         ItemLevel <= 59
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 51
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 40
+        ItemLevel <= 55
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 40
         ItemLevel <= 55
     Branch
         DropLevel >= 32
         ItemLevel <= 43
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        DropLevel >= 22
+        ItemLevel <= 35
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 22
         ItemLevel <= 35
     Branch
         DropLevel >= 12
         ItemLevel <= 26
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 12
+        ItemLevel <= 26
     Branch
         DropLevel >= 8
         ItemLevel <= 21
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 8
+        ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 3
         ItemLevel <= 16
@@ -1555,21 +1983,63 @@ Show # Leveling - Weapons - Melee - Two Hand - Staves | Comment
     Branch
         DropLevel >= 52
         ItemLevel <= 59
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 52
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 54
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 41
         ItemLevel <= 54
     Branch
         DropLevel >= 33
         ItemLevel <= 44
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 33
+        ItemLevel <= 44
+    Branch
+        DropLevel >= 23
+        ItemLevel <= 36
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 23
         ItemLevel <= 36
     Branch
         DropLevel >= 13
         ItemLevel <= 27
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 13
+        ItemLevel <= 27
     Branch
         DropLevel >= 9
         ItemLevel <= 22
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 9
+        ItemLevel <= 22
+    Branch
+        DropLevel >= 4
+        ItemLevel <= 17
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 4
         ItemLevel <= 17
@@ -1588,21 +2058,63 @@ Show # Leveling - Weapons - Melee - Two Hand - Swords | Comment
     Branch
         DropLevel >= 51
         ItemLevel <= 59
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 51
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 40
+        ItemLevel <= 55
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 40
         ItemLevel <= 55
     Branch
         DropLevel >= 32
         ItemLevel <= 43
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        DropLevel >= 22
+        ItemLevel <= 35
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 22
         ItemLevel <= 35
     Branch
         DropLevel >= 12
         ItemLevel <= 26
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 12
+        ItemLevel <= 26
     Branch
         DropLevel >= 8
         ItemLevel <= 21
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 8
+        ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 3
         ItemLevel <= 16
@@ -1621,21 +2133,63 @@ Show # Leveling - Weapons - Ranged - Bow | Comment
     Branch
         DropLevel >= 50
         ItemLevel <= 59
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 50
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 41
+        ItemLevel <= 55
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         DropLevel >= 32
         ItemLevel <= 43
+        LinkedSockets >= 4
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 32
+        ItemLevel <= 43
+    Branch
+        DropLevel >= 18
+        ItemLevel <= 35
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 18
         ItemLevel <= 35
     Branch
         DropLevel >= 9
         ItemLevel <= 27
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 9
+        ItemLevel <= 27
     Branch
         DropLevel >= 5
         ItemLevel <= 17
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 5
+        ItemLevel <= 17
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 13
+        LinkedSockets >= 3
+        SetFontSize 45
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 13
@@ -1654,21 +2208,63 @@ Show # Leveling - Weapons - Ranged - Wand | Comment
     Branch
         DropLevel >= 49
         ItemLevel <= 59
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 49
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 40
+        ItemLevel <= 55
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 40
         ItemLevel <= 55
     Branch
         DropLevel >= 30
         ItemLevel <= 44
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 30
+        ItemLevel <= 44
+    Branch
+        DropLevel >= 18
+        ItemLevel <= 34
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 18
         ItemLevel <= 34
     Branch
         DropLevel >= 12
         ItemLevel <= 29
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 12
+        ItemLevel <= 29
     Branch
         DropLevel >= 6
         ItemLevel <= 17
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 17
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 11
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 11
@@ -1692,36 +2288,48 @@ Show # Leveling - Armours - Body Armours | Comment
     Branch
         LinkedSockets >= 4
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 53
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 35
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 17
         ItemLevel <= 31
     Branch
         DropLevel >= 6
         ItemLevel <= 20
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 16
@@ -1735,36 +2343,48 @@ Show # Leveling - Armours - Boots | Comment
     Branch
         LinkedSockets >= 4
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 53
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 35
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 17
         ItemLevel <= 31
     Branch
         DropLevel >= 6
         ItemLevel <= 20
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 6
+        ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 16
@@ -1778,39 +2398,45 @@ Show # Leveling - Armours - Gloves | Comment
     Branch
         LinkedSockets >= 4
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 53
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 35
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 17
         ItemLevel <= 31
     Branch
         LinkedSockets >= 3
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 6
         ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 16
@@ -1824,37 +2450,37 @@ Show # Leveling - Armours - Helmets | Comment
     Branch
         LinkedSockets >= 4
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 53
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 35
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 17
         ItemLevel <= 31
     Branch
         LinkedSockets >= 3
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 6
         ItemLevel <= 20
     Branch
@@ -1868,41 +2494,47 @@ Show # Leveling - Armours - Shields | Comment
     SetTextColor 140 140 255
     SetBorderColor 140 140 255
     Branch
-        LinkedSockets >= 4
+        LinkedSockets >= 3
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 53
         ItemLevel <= 59
     Branch
-        LinkedSockets >= 4
+        LinkedSockets >= 3
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 55
     Branch
-        LinkedSockets >= 4
+        LinkedSockets >= 3
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 35
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 17
         ItemLevel <= 31
     Branch
         LinkedSockets >= 3
         SetFontSize 40
-        SetBorderColor 0 0 0
+        SetBorderColor 14 164 37
         DropLevel >= 6
         ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 16
@@ -1945,28 +2577,46 @@ Show # Leveling - Weapons - Melee - One Hand - Axes | Comment
     SetBorderColor 140 140 255
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 49
         ItemLevel <= 59
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 42
         ItemLevel <= 55
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 33
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 11
         ItemLevel <= 28
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 6
         ItemLevel <= 20
+    Branch
+        DropLevel >= 2
+        ItemLevel <= 15
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 2
         ItemLevel <= 15
@@ -1979,28 +2629,46 @@ Show # Leveling - Weapons - Melee - One Hand - Claws | Comment
     SetBorderColor 140 140 255
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 52
         ItemLevel <= 59
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 43
         ItemLevel <= 54
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 34
         ItemLevel <= 45
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 22
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 12
         ItemLevel <= 29
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 7
         ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 3
         ItemLevel <= 16
@@ -2013,28 +2681,46 @@ Show # Leveling - Weapons - Melee - One Hand - Daggers | Comment
     SetBorderColor 140 140 255
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 50
         ItemLevel <= 59
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 54
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 32
         ItemLevel <= 43
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 20
         ItemLevel <= 35
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 10
         ItemLevel <= 27
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 5
         ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 14
@@ -2047,28 +2733,46 @@ Show # Leveling - Weapons - Melee - One Hand - Maces | Comment
     SetBorderColor 140 140 255
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 50
         ItemLevel <= 59
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 32
         ItemLevel <= 43
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 20
         ItemLevel <= 34
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 10
         ItemLevel <= 27
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 5
         ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 14
@@ -2081,28 +2785,46 @@ Show # Leveling - Weapons - Melee - One Hand - Sceptres | Comment
     SetBorderColor 140 140 255
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 50
         ItemLevel <= 59
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 32
         ItemLevel <= 43
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 20
         ItemLevel <= 34
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 10
         ItemLevel <= 27
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 5
         ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 14
@@ -2115,28 +2837,46 @@ Show # Leveling - Weapons - Melee - One Hand - Thrusting Swords | Comment
     SetBorderColor 140 140 255
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 49
         ItemLevel <= 59
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 43
         ItemLevel <= 54
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 34
         ItemLevel <= 45
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 22
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 12
         ItemLevel <= 29
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 7
         ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 3
         ItemLevel <= 16
@@ -2149,28 +2889,46 @@ Show # Leveling - Weapons - Melee - One Hand - Swords | Comment
     SetBorderColor 140 140 255
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 50
         ItemLevel <= 59
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 32
         ItemLevel <= 43
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 20
         ItemLevel <= 34
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 10
         ItemLevel <= 27
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 5
         ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 14
@@ -2183,28 +2941,46 @@ Show # Leveling - Weapons - Melee - Two Hand - Axes | Comment
     SetBorderColor 140 140 255
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 52
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 54
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 33
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 23
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 13
         ItemLevel <= 27
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 9
         ItemLevel <= 22
+    Branch
+        DropLevel >= 4
+        ItemLevel <= 17
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 4
         ItemLevel <= 17
@@ -2217,28 +2993,46 @@ Show # Leveling - Weapons - Melee - Two Hand - Maces | Comment
     SetBorderColor 140 140 255
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 51
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 40
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 32
         ItemLevel <= 43
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 22
         ItemLevel <= 35
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 12
         ItemLevel <= 26
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 8
         ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 3
         ItemLevel <= 16
@@ -2251,28 +3045,46 @@ Show # Leveling - Weapons - Melee - Two Hand - Staves | Comment
     SetBorderColor 140 140 255
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 52
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 54
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 33
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 23
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 13
         ItemLevel <= 27
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 9
         ItemLevel <= 22
+    Branch
+        DropLevel >= 4
+        ItemLevel <= 17
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 4
         ItemLevel <= 17
@@ -2285,28 +3097,46 @@ Show # Leveling - Weapons - Melee - Two Hand - Swords | Comment
     SetBorderColor 140 140 255
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 51
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 40
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 32
         ItemLevel <= 43
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 22
         ItemLevel <= 35
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 12
         ItemLevel <= 26
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 8
         ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 3
         ItemLevel <= 16
@@ -2319,28 +3149,46 @@ Show # Leveling - Weapons - Ranged - Bow | Comment
     SetBorderColor 140 140 255
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 50
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 32
         ItemLevel <= 43
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 18
         ItemLevel <= 35
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 9
         ItemLevel <= 27
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 5
         ItemLevel <= 17
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 13
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 13
@@ -2353,28 +3201,46 @@ Show # Leveling - Weapons - Ranged - Wand | Comment
     SetBorderColor 140 140 255
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 49
         ItemLevel <= 59
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 40
         ItemLevel <= 55
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 30
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 18
         ItemLevel <= 34
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 12
         ItemLevel <= 29
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 6
         ItemLevel <= 17
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 11
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 11
@@ -2385,32 +3251,50 @@ Show # Leveling - Armours - Body Armours | Comment
     Class "Body Armour"
     Rarity = Normal
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
+    SetBackgroundColor 20 20 20 240
     SetTextColor 180 180 180
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 53
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 35
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 17
         ItemLevel <= 31
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 6
         ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 16
@@ -2418,32 +3302,50 @@ Show # Leveling - Armours - Boots | Comment
     Class "Boot"
     Rarity = Normal
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
+    SetBackgroundColor 20 20 20 240
     SetTextColor 180 180 180
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 53
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 35
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 17
         ItemLevel <= 31
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 6
         ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 16
@@ -2451,32 +3353,50 @@ Show # Leveling - Armours - Gloves | Comment
     Class "Glove"
     Rarity = Normal
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
+    SetBackgroundColor 20 20 20 240
     SetTextColor 180 180 180
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 53
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 35
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 17
         ItemLevel <= 31
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 6
         ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 16
@@ -2484,32 +3404,50 @@ Show # Leveling - Armours - Helmets | Comment
     Class "Helmet"
     Rarity = Normal
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
+    SetBackgroundColor 20 20 20 240
     SetTextColor 180 180 180
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 53
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 35
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 17
         ItemLevel <= 31
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 6
         ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 16
@@ -2517,32 +3455,50 @@ Show # Leveling - Armours - Shields | Comment
     Class "Shield"
     Rarity = Normal
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
+    SetBackgroundColor 20 20 20 240
     SetTextColor 180 180 180
     Branch
-        LinkedSockets >= 4
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 53
         ItemLevel <= 59
     Branch
-        LinkedSockets >= 4
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 55
     Branch
-        LinkedSockets >= 4
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 35
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 17
         ItemLevel <= 31
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 6
         ItemLevel <= 20
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 16
@@ -2580,32 +3536,50 @@ Show # Leveling - Weapons - Melee - One Hand - Axes | Comment
     Class "One Hand Axe"
     Rarity = Normal
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
+    SetBackgroundColor 20 20 20 240
     SetTextColor 180 180 180
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 49
         ItemLevel <= 59
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 42
         ItemLevel <= 55
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 33
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 21
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 11
         ItemLevel <= 28
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 6
         ItemLevel <= 20
+    Branch
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
+        DropLevel >= 2
+        ItemLevel <= 15
     Branch
         DropLevel >= 2
         ItemLevel <= 15
@@ -2613,32 +3587,50 @@ Show # Leveling - Weapons - Melee - One Hand - Claws | Comment
     Class "Claw"
     Rarity = Normal
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
+    SetBackgroundColor 20 20 20 240
     SetTextColor 180 180 180
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 52
         ItemLevel <= 59
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 43
         ItemLevel <= 54
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 34
         ItemLevel <= 45
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 22
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 12
         ItemLevel <= 29
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 7
         ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 3
         ItemLevel <= 16
@@ -2646,32 +3638,50 @@ Show # Leveling - Weapons - Melee - One Hand - Daggers | Comment
     Class "Dagger"
     Rarity = Normal
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
+    SetBackgroundColor 20 20 20 240
     SetTextColor 180 180 180
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 50
         ItemLevel <= 59
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 54
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 32
         ItemLevel <= 43
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 20
         ItemLevel <= 35
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 10
         ItemLevel <= 27
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 5
         ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 14
@@ -2679,32 +3689,50 @@ Show # Leveling - Weapons - Melee - One Hand - Maces | Comment
     Class "One Hand Mace"
     Rarity = Normal
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
+    SetBackgroundColor 20 20 20 240
     SetTextColor 180 180 180
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 50
         ItemLevel <= 59
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 32
         ItemLevel <= 43
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 20
         ItemLevel <= 34
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 10
         ItemLevel <= 27
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 5
         ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 14
@@ -2712,32 +3740,50 @@ Show # Leveling - Weapons - Melee - One Hand - Sceptres | Comment
     Class "Sceptre"
     Rarity = Normal
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
+    SetBackgroundColor 20 20 20 240
     SetTextColor 180 180 180
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 50
         ItemLevel <= 59
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 32
         ItemLevel <= 43
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 20
         ItemLevel <= 34
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 10
         ItemLevel <= 27
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 5
         ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 14
@@ -2745,32 +3791,50 @@ Show # Leveling - Weapons - Melee - One Hand - Thrusting Swords | Comment
     Class "Thrusting One Hand Sword"
     Rarity = Normal
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
+    SetBackgroundColor 20 20 20 240
     SetTextColor 180 180 180
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 49
         ItemLevel <= 59
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 43
         ItemLevel <= 54
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 34
         ItemLevel <= 45
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 22
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 12
         ItemLevel <= 29
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 7
         ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 3
         ItemLevel <= 16
@@ -2778,32 +3842,50 @@ Show # Leveling - Weapons - Melee - One Hand - Swords | Comment
     Class "One Hand Sword"
     Rarity = Normal
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
+    SetBackgroundColor 20 20 20 240
     SetTextColor 180 180 180
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 50
         ItemLevel <= 59
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 32
         ItemLevel <= 43
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 20
         ItemLevel <= 34
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 10
         ItemLevel <= 27
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 5
         ItemLevel <= 19
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 14
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 14
@@ -2811,32 +3893,50 @@ Show # Leveling - Weapons - Melee - Two Hand - Axes | Comment
     Class "Two Hand Axe"
     Rarity = Normal
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
+    SetBackgroundColor 20 20 20 240
     SetTextColor 180 180 180
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 52
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 54
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 33
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 23
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 13
         ItemLevel <= 27
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 9
         ItemLevel <= 22
+    Branch
+        DropLevel >= 4
+        ItemLevel <= 17
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 4
         ItemLevel <= 17
@@ -2844,32 +3944,50 @@ Show # Leveling - Weapons - Melee - Two Hand - Maces | Comment
     Class "Two Hand Mace"
     Rarity = Normal
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
+    SetBackgroundColor 20 20 20 240
     SetTextColor 180 180 180
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 51
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 40
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 32
         ItemLevel <= 43
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 22
         ItemLevel <= 35
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 12
         ItemLevel <= 26
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 8
         ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 3
         ItemLevel <= 16
@@ -2877,32 +3995,50 @@ Show # Leveling - Weapons - Melee - Two Hand - Staves | Comment
     Class "Staves"
     Rarity = Normal
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
+    SetBackgroundColor 20 20 20 240
     SetTextColor 180 180 180
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 52
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 54
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 33
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 23
         ItemLevel <= 36
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 13
         ItemLevel <= 27
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 9
         ItemLevel <= 22
+    Branch
+        DropLevel >= 4
+        ItemLevel <= 17
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 4
         ItemLevel <= 17
@@ -2910,32 +4046,50 @@ Show # Leveling - Weapons - Melee - Two Hand - Swords | Comment
     Class "Two Hand Sword"
     Rarity = Normal
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
+    SetBackgroundColor 20 20 20 240
     SetTextColor 180 180 180
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 51
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 40
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 32
         ItemLevel <= 43
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 22
         ItemLevel <= 35
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 12
         ItemLevel <= 26
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 8
         ItemLevel <= 21
+    Branch
+        DropLevel >= 3
+        ItemLevel <= 16
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 3
         ItemLevel <= 16
@@ -2943,32 +4097,50 @@ Show # Leveling - Weapons - Ranged - Bow | Comment
     Class "Bow"
     Rarity = Normal
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
+    SetBackgroundColor 20 20 20 240
     SetTextColor 180 180 180
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 50
         ItemLevel <= 59
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 41
         ItemLevel <= 55
     Branch
         LinkedSockets >= 4
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 32
         ItemLevel <= 43
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 18
         ItemLevel <= 35
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 9
         ItemLevel <= 27
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 5
         ItemLevel <= 17
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 13
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
     Branch
         DropLevel >= 1
         ItemLevel <= 13
@@ -2976,44 +4148,67 @@ Show # Leveling - Weapons - Ranged - Wand | Comment
     Class "Wand"
     Rarity = Normal
     SetFontSize 33
-    SetBackgroundColor 20 20 20 200
+    SetBackgroundColor 20 20 20 240
     SetTextColor 180 180 180
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 49
         ItemLevel <= 59
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 40
         ItemLevel <= 55
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 30
         ItemLevel <= 44
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 18
         ItemLevel <= 34
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 12
         ItemLevel <= 29
     Branch
         LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
         DropLevel >= 6
         ItemLevel <= 17
     Branch
         DropLevel >= 1
         ItemLevel <= 11
-
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
+    Branch
+        DropLevel >= 1
+        ItemLevel <= 11
 #Early Leveling
-Show # Leveling - EarlyLeveling - Rare Items
+Show # Leveling - EarlyLeveling - Rare Items (Show rare items in Act 1 even in bases hidden in leveling) | Comment
     Rarity Rare
-    ItemLevel <= 12
-    SetFontSize 33
-    SetBackgroundColor 50 50 0 100
-    SetTextColor 255 255 119 100
-    SetBorderColor 255 255 119 100
+    ItemLevel <= 13
+    SetBackgroundColor 50 50 0 230
+    SetTextColor 255 255 119 230
+    SetBorderColor 255 255 119 230
+    Branch
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
+    Branch
+        LinkedSockets >= 0
+        SetFontSize 33
 
 #------------------------------------
 #    BIG RGB item (behind leveling)
