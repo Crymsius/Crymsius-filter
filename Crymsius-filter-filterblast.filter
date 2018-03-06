@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.2.0a
+###Version 3.2.0b
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -8,6 +8,7 @@ SetOption $Links link [GitHub] [https://github.com/Crymsius/Crymsius-filter] [Fo
 
 # //! SetOption $Highlighted_Maps textarea ["Vault"] # Add or delete the name of maps you want to highlight. You can enable the highlight in the block switches (off by default)
 # //! SetOption $Highlighted_Shaped_Maps textarea ["Vault"] # Add or delete the name of shaped maps you want to highlight (Just the name, without "Shaped"). You can enable the highlight in the block switches (off by default)
+# //! SetOption $Highlighted_Elder_Maps textarea ["Beach"] # Add or delete the name of elder maps you want to highlight (Just the name, without "Elder"). You can enable the highlight in the block switches (off by default)
 # //! SetOption $Chance_Bases textarea ["Leather Belt"] # Add or delete the bases for items you want to chance. You can enable the highlight in the block switches (off by default)
 # //! SetOption $Crafting_Bases textarea ["Jade Amulet"] # Add or delete the bases for items you want to craft (ilvl≥84). You can enable the highlight in the block switches (off by default)
 
@@ -342,10 +343,14 @@ Comment
     PlayAlertSound $SoundMapsHighlight
     Branch # Maps - Highlighted - Unshaped | Comment
         ShapedMap False
+        ElderMap False
         BaseType $Highlighted_Maps
     Branch # Maps - Highlighted - Shaped | Comment
         ShapedMap True
         BaseType $Highlighted_Shaped_Maps
+    Branch # Maps - Highlighted - Elder | Comment
+        ElderMap True
+        BaseType $Highlighted_Elder_Maps
 
 
 #T16 maps
@@ -355,12 +360,19 @@ Show
     SetBackgroundColor 255 255 255
     SetTextColor 250 20 0
     PlayAlertSound $SoundT0
-    Branch # Maps - Tiers 16 (Guardians) - Highlight Rare | Comment
+    Branch # Maps - Tiers 16 (Guardians and Elder Orb) - Highlight Rare | Comment
         Rarity Rare
         BaseType "Forge of the Phoenix" "Lair of the Hydra" "Maze of the Minotaur" "Pit of the Chimera" "Vaal Temple"
         SetBorderColor 255 255 119
-    Branch # Maps - Tiers 16 (Guardians)
+    Branch # Maps - Tiers 16 (Guardians and Elder Orb)
         BaseType "Forge of the Phoenix" "Lair of the Hydra" "Maze of the Minotaur" "Pit of the Chimera" "Vaal Temple"
+        SetBorderColor 220 220 220
+    Branch # Maps - Tiers 16 (Guardians and Elder Orb) - Highlight Rare | Comment
+        Rarity Rare
+        ElderMap True
+        SetBorderColor 255 255 119
+    Branch # Maps - Tiers 16 (Guardians and Elder Orb)
+        ElderMap True
         SetBorderColor 220 220 220
 #Shaped Maps
 Show
