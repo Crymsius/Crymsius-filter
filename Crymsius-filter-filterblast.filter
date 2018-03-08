@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.2.0b
+###Version 3.2.0c
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -4756,6 +4756,13 @@ Show
         PlayAlertSound $SoundNets
     Branch # Leagues - Bestiary - Nets - Thaumaturgical Net
         BaseType "Thaumaturgical Net"
+        SetFontSize 42
+        SetBackgroundColor 170 158 130
+        SetTextColor 65 31 15
+        SetBorderColor 235 190 91
+        PlayAlertSound $SoundT2
+    Branch # Leagues - Bestiary - Nets - Necromancy Net
+        BaseType "Necromancy Net"
         SetFontSize 42
         SetBackgroundColor 170 158 130
         SetTextColor 65 31 15
