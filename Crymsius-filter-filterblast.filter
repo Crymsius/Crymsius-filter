@@ -1,14 +1,14 @@
 ###Crymsius-filter
-###Version 3.2.0c
+###Version 3.2.1
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
 SetOption $Introduction info [Here you'll discover a sleek filter, designed by and for colour blind (and others !) with highlights for recipes, good bases, tiers and an emphasis on colour schemes that respect PoE's ones! You can customize the filter with the following options, and later, select the smartblocks you want to display or hide.] # Welcome to the filter! 
 SetOption $Links link [GitHub] [https://github.com/Crymsius/Crymsius-filter] [Forum Thread] [https://www.pathofexile.com/forum/view-thread/1895126] [Uniques and Divination Card Tiers] [https://docs.google.com/spreadsheets/d/1cUh1WLdLab-aYctvH4RMX2iYvLX0gKimbf-v0UR03Qs/edit?usp=sharing]
 
-# //! SetOption $Highlighted_Maps textarea ["Vault"] # Add or delete the name of maps you want to highlight. You can enable the highlight in the block switches (off by default)
-# //! SetOption $Highlighted_Shaped_Maps textarea ["Vault"] # Add or delete the name of shaped maps you want to highlight (Just the name, without "Shaped"). You can enable the highlight in the block switches (off by default)
-# //! SetOption $Highlighted_Elder_Maps textarea ["Beach"] # Add or delete the name of elder maps you want to highlight (Just the name, without "Elder"). You can enable the highlight in the block switches (off by default)
+# //! SetOption $Highlighted_Maps textarea ["Burial Chambers"] # Add or delete the name of maps you want to highlight. You can enable the highlight in the block switches (off by default)
+# //! SetOption $Highlighted_Shaped_Maps textarea ["Burial Chambers"] # Add or delete the name of shaped maps you want to highlight (Just the name, without "Shaped"). You can enable the highlight in the block switches (off by default)
+# //! SetOption $Highlighted_Elder_Maps textarea ["Burial Chambers"] # Add or delete the name of elder maps you want to highlight (Just the name, without "Elder"). You can enable the highlight in the block switches (off by default)
 # //! SetOption $Chance_Bases textarea ["Leather Belt"] # Add or delete the bases for items you want to chance. You can enable the highlight in the block switches (off by default)
 # //! SetOption $Crafting_Bases textarea ["Jade Amulet"] # Add or delete the bases for items you want to craft (ilvl≥84). You can enable the highlight in the block switches (off by default)
 
@@ -64,59 +64,61 @@ SetSound $SoundShapedElderItems 13 280 # Shaped and Elder Items
 #Tags Uniques
 #Maps
 SetTag @Uniques_T0_Maps
-    BaseType "Museum Map" "Courtyard Map" "Chateau Map"
+    BaseType "Chateau Map" "Museum Map"
 SetTag @Uniques_T1_Maps
-    BaseType "Moon Temple Map" "Temple Map" "Shore Map" "Promenade Map"
+    BaseType "Overgrown Shrine Map" "Promenade Map" "Shore Map" "Torture Chamber Map" "Temple Map" "Moon Temple Map" "Courtyard Map"
 SetTag @Uniques_T2_Maps
-    BaseType "Torture Chamber Map" "Vaal Pyramid Map" "Graveyard Map" "Cursed Crypt Map" "Overgrown Shrine Map" "Underground River Map" "Necropolis Map" "Atoll Map" "Bone Crypt Map" "Dunes Map" "Strand Map"
+    BaseType "Underground River Map" "Necropolis Map" "Graveyard Map" "Atoll Map" "Bone Crypt Map" "Dunes Map" "Cursed Crypt Map" "Vaal Pyramid Map" "Strand Map"
 #Weapons
 SetTag @Uniques_T0_Weapons
-    BaseType "Carnal Sceptre" "Charan's Sword" "Ritual Sceptre" "Royal Axe"
+    BaseType "Royal Axe" "Carnal Sceptre" "Charan's Sword" "Void Axe" "Imperial Maul" "Prophecy Wand"
 SetTag @Uniques_T1_Weapons
-    BaseType "Corsair Sword" "Cutlass" "Elegant Foil" "Jewelled Foil" "Midnight Blade" "Prophecy Wand" "Siege Axe" "Steelhead" "Void Axe" "War Sword"
+    BaseType "Siege Axe" "Cutlass" "Jewelled Foil" "Midnight Blade"
 SetTag @Uniques_T2_Weapons
-    BaseType "Abyssal Axe" "Assassin Bow" "Auric Mace" "Blinder" "Citadel Bow" "Coiled Staff" "Crystal Sceptre" "Demon Dagger" "Engraved Wand" "Fiend Dagger" "Gavel" "Great Mallet" "Hellion's Paw" "Highborn Staff" "Imperial Claw" "Imperial Maul" "Imperial Skean" "Imperial Staff" "Infernal Axe" "Iron Staff" "Jasper Chopper" "Judgement Staff" "Labrys" "Maelström Staff" "Meatgrinder" "Nightmare Mace" "Opal Sceptre" "Platinum Sceptre" "Ranger Bow" "Sage Wand" "Shadow Sceptre" "Spiraled Wand" "Tornado Wand" "Vaal Sceptre" "Void Sceptre" "War Hammer" "Woodsplitter"
+    BaseType "Assassin Bow" "Citadel Bow" "Crude Bow" "Harbinger Bow" "Long Bow" "Ranger Bow" "Spine Bow" "Blinder" "Hellion's Paw" "Imperial Claw" "Demon Dagger" "Fiend Dagger" "Imperial Skean" "Infernal Axe" "Jade Hatchet" "Auric Mace" "Crystal Sceptre" "Gavel" "Iron Sceptre" "Karui Sceptre" "Nightmare Mace" "Opal Sceptre" "Platinum Sceptre" "Ritual Sceptre" "Vaal Sceptre" "Void Sceptre" "War Hammer" "Corsair Sword" "Elder Sword" "Elegant Foil" "Eternal Sword" "Gladius" "Midnight Blade" "War Sword" "Coiled Staff" "Highborn Staff" "Imperial Staff" "Iron Staff" "Judgement Staff" "Maelström Staff" "Abyssal Axe" "Jasper Chopper" "Labrys" "Woodsplitter" "Great Mallet" "Meatgrinder" "Steelhead" "Etched Greatsword" "Driftwood Wand" "Engraved Wand" "Sage Wand" "Spiraled Wand" "Tornado Wand"
 SetTag @Uniques_T3_Weapons
-    BaseType "Bone Bow" "Brass Maul" "Bronze Sceptre" "Crude Bow" "Death Bow" "Despot Axe" "Driftwood Wand" "Dusk Blade" "Elder Sword" "Elegant Sword" "Etched Greatsword" "Fright Claw" "Gladius" "Great Mallet" "Gut Ripper" "Harbinger Bow" "Iron Sceptre" "Jade Hatchet" "Karui Chopper" "Karui Maul" "Karui Sceptre" "Lathi" "Legion Sword" "Lion Sword" "Long Bow" "Opal Wand" "Ornate Mace" "Primordial Staff" "Rock Breaker" "Royal Bow" "Rusted Sword" "Sabre" "Serpentine Staff" "Shadow Axe" "Short Bow" "Slaughter Knife" "Spiked Club" "Spine Bow" "Spiraled Wand" "Terror Maul" "Throat Stabber" "Tiger Sword" "Tomahawk" "Twilight Blade" "Vaal Claw" "Vaal Hatchet" "Vile Staff" "Whalebone Rapier" "Woodsplitter"
+    BaseType "Bone Bow" "Ranger Bow" "Recurve Bow" "Royal Bow" "Short Bow" "Fright Claw" "Gut Ripper" "Throat Stabber" "Vaal Claw" "Slaughter Knife" "Tomahawk" "Vaal Hatchet" "Bronze Sceptre" "Ornate Mace" "Rock Breaker" "Shadow Sceptre" "Spiked Club" "Basket Rapier" "Dusk Blade" "Elegant Sword" "Legion Sword" "Rusted Sword" "Sabre" "Twilight Blade" "Whalebone Rapier" "Lathi" "Primordial Staff" "Royal Staff" "Serpentine Staff" "Vile Staff" "Despot Axe" "Karui Chopper" "Shadow Axe" "Woodsplitter" "Brass Maul" "Karui Maul" "Terror Maul" "Bastard Sword" "Ezomyte Blade" "Lion Sword" "Reaver Sword" "Tiger Sword" "Opal Wand"
 SetTag @Uniques_T4_Weapons
-    BaseType "Ambusher" "Antique Rapier" "Awl" "Basket Rapier" "Bastard Sword" "Boot Blade" "Boot Knife" "Cleaver" "Crystal Wand" "Death Bow" "Decimation Bow" "Decorative Axe" "Demon's Horn" "Dread Maul" "Dream Mace" "Estoc" "Ezomyte Blade" "Ezomyte Staff" "Flaying Knife" "Gnarled Branch" "Goat's Horn" "Headsman Axe" "Highland Blade" "Imbued Wand" "Jagged Foil" "Jagged Maul" "Long Staff" "Military Staff" "Nailed Fist" "Ornate Sword" "Platinum Kris" "Poleaxe" "Quartz Wand" "Reaver Sword" "Recurve Bow" "Royal Skean" "Royal Staff" "Skinning Knife" "Sledgehammer" "Stiletto" "Sundering Axe" "Thresher Claw" "Timeworn Claw" "Vaal Blade"
+    BaseType "Death Bow" "Decimation Bow" "Awl" "Nailed Fist" "Thresher Claw" "Timeworn Claw" "Ambusher" "Boot Blade" "Boot Knife" "Flaying Knife" "Platinum Kris" "Royal Skean" "Skinning Knife" "Stiletto" "Cleaver" "Decorative Axe" "Dream Mace" "Antique Rapier" "Estoc" "Jagged Foil" "Ezomyte Staff" "Gnarled Branch" "Long Staff" "Military Staff" "Headsman Axe" "Poleaxe" "Sundering Axe" "Dread Maul" "Jagged Maul" "Sledgehammer" "Highland Blade" "Ornate Sword" "Crystal Wand" "Demon's Horn" "Goat's Horn" "Imbued Wand" "Quartz Wand"
 SetTag @Uniques_TMix_Weapons
-    BaseType "Carved Wand" "Eternal Sword" "Imperial Bow" "Infernal Sword" "Terror Claw" "Vaal Axe" "Vaal Blade"
+    BaseType "Imperial Bow" "Terror Claw" "Vaal Blade" "Vaal Axe" "Infernal Sword" "Carved Wand"
 #Armour
 SetTag @Uniques_T0_Armours
-    BaseType "Arcanist Slippers" "Clasped Mitts" "Crusader Boots" "Ezomyte Tower Shield" "Glorious Plate" "Golden Mantle" "Legion Gloves" "Rawhide Boots" "Rawhide Tower Shield" "Zealot Gloves"
+    BaseType "Glorious Plate" "Golden Mantle" "Occultist's Vestment" "Crusader Boots" "Rawhide Boots" "Legion Gloves" "Nubuck Gloves" "Ezomyte Tower Shield" "Rawhide Tower Shield"
 SetTag @Uniques_T1_Armours
-    BaseType "Cedar Tower Shield" "Full Wyrmscale" "Gladiator Plate" "Nubuck Boots" "Occultist's Vestment" "Raven Mask" "Savant's Robe" "Wyrmscale Doublet"
+    BaseType "Full Wyrmscale" "Gladiator Plate" "Savant's Robe" "Wyrmscale Doublet" "Arcanist Slippers" "Nubuck Boots" "Zealot Gloves" "Ezomyte Burgonet" "Thorium Spirit Shield" "Vaal Spirit Shield"
 SetTag @Uniques_T2_Armours
-    BaseType "Ancient Gauntlets" "Ancient Greaves" "Arcanist Gloves" "Archon Kite Shield" "Assassin's Garb" "Astral Plate" "Blunt Arrow Quiver" "Broadhead Arrow Quiver" "Cardinal Round Shield" "Champion Kite Shield" "Close Helmet" "Conjurer Boots" "Conjurer Gloves" "Coronal Leather" "Corrugated Buckler" "Crusader Gloves" "Deicide Mask" "Destiny Leather" "Destroyer Regalia" "Dragonscale Boots" "Ezomyte Burgonet" "Festival Mask" "Goliath Gauntlets" "Goliath Greaves" "Harlequin Mask" "Hubris Circlet" "Iron Gauntlets" "Ironscale Gauntlets" "Jingling Spirit Shield" "Lacquered Garb" "Leather Cap" "Lion Pelt" "Mosaic Kite Shield" "Murder Mitts" "Necromancer Silks" "Nightmare Bascinet" "Nubuck Gloves" "Painted Tower Shield" "Penetrating Arrow Quiver" "Pinnacle Tower Shield" "Praetor Crown" "Prophet Crown" "Regicide Mask" "Reinforced Greaves" "Royal Burgonet" "Sadist Garb" "Sage's Robe" "Serpentscale Gauntlets" "Sharkskin Tunic" "Siege Helmet" "Silken Hood" "Sinner Tricorn" "Slink Boots" "Soldier Gloves" "Sorcerer Gloves" "Stealth Boots" "Strapped Mitts" "Tarnished Spirit Shield" "Thorium Spirit Shield" "Titan Greaves" "Titanium Spirit Shield" "Ursine Pelt" "Vaal Mask" "Vaal Spirit Shield" "Varnished Coat" "Wool Shoes"
+    BaseType "Assassin's Garb" "Astral Plate" "Blood Rainment" "Coronal Leather" "Destiny Leather" "Lacquered Garb" "Necromancer Silks" "Sadist Garb" "Sage's Robe" "Sharkskin Tunic" "Varnished Coat" "Ancient Greaves" "Assassin's Boots" "Conjurer Boots" "Dragonscale Boots" "Goliath Greaves" "Hydrascale Boots" "Reinforced Greaves" "Slink Boots" "Stealth Boots" "Titan Greaves" "Wool Shoes" "Ancient Gauntlets" "Arcanist Gloves" "Carnal Mitts" "Clasped Mitts" "Conjurer Gloves" "Crusader Gloves" "Deerskin Gloves" "Goliath Gauntlets" "Iron Gauntlets" "Murder Mitts" "Serpentscale Gauntlets" "Soldier Gloves" "Sorcerer Gloves" "Strapped Mitts" "Titan Gauntlets" "Close Helmet" "Deicide Mask" "Festival Mask" "Leather Cap" "Lion Pelt" "Magistrate Crown" "Necromancer Circlet" "Nightmare Bascinet" "Praetor Crown" "Prophet Crown" "Raven Mask" "Regicide Mask" "Royal Burgonet" "Siege Helmet" "Silken Hood" "Sinner Tricorn" "Ursine Pelt" "Vaal Mask" "Blunt Arrow Quiver" "Archon Kite Shield" "Cardinal Round Shield" "Cedar Tower Shield" "Champion Kite Shield" "Corrugated Buckler" "Jingling Spirit Shield" "Pinnacle Tower Shield" "Tarnished Spirit Shield" "Titanium Spirit Shield"
 SetTag @Uniques_T3_Armours
-    BaseType "Assassin's Mitts" "Aventail Helmet" "Bone Armour" "Brass Spirit Shield" "Bronzescale Gauntlets" "Burnished Spiked Shield" "Colossal Tower Shield" "Copper Plate" "Crusader Chainmail" "Crusader Plate" "Cutthroat's Garb" "Deerskin Gloves" "Desert Brigandine" "Elegant Ringmail" "Enameled Buckler" "Fire Arrow Quiver" "Full Scale Armour" "Goathide Gloves" "Golden Buckler" "Golden Plate" "Harmonic Spirit Shield" "Lacquered Helmet" "Laminated Kite Shield" "Mirrored Spiked Shield" "Pine Buckler" "Plank Kite Shield" "Reinforced Tower Shield" "Saintly Chainmail" "Samite Helmet" "Secutor Helm" "Sentinel Jacket" "Serpentscale Boots" "Sharkskin Boots" "Sharktooth Arrow Quiver" "Silk Slippers" "Soldier Boots" "Spike-Point Arrow Quiver" "Steel Gauntlets" "Trapper Boots" "Triumphant Lamellar" "Two-Point Arrow Quiver" "Vaal Regalia" "Velvet Gloves" "Widowsilk Robe" "Wool Gloves" "Zodiac Leather" "Latticed Ringmail"
+    BaseType "Bone Armour" "Copper Plate" "Crusader Chainmail" "Crusader Plate" "Cutthroat's Garb" "Desert Brigandine" "Destroyer Regalia" "Elegant Ringmail" "Full Scale Armour" "Latticed Ringmail" "Saintly Chainmail" "Sentinel Jacket" "Spidersilk Robe" "Vaal Regalia" "Zodiac Leather" "Serpentscale Boots" "Sharkskin Boots" "Silk Slippers" "Soldier Boots" "Trapper Boots" "Assassin's Mitts" "Bronzescale Gauntlets" "Goathide Gloves" "Steel Gauntlets" "Velvet Gloves" "Wool Gloves" "Aventail Helmet" "Iron Circlet" "Iron Mask" "Lacquered Helmet" "Samite Helmet" "Secutor Helm" "Tribal Circlet" "Zealot Helmet" "Broadhead Arrow Quiver" "Fire Arrow Quiver" "Sharktooth Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver" "Branded Kite Shield" "Brass Spirit Shield" "Burnished Spiked Shield" "Colossal Tower Shield" "Enameled Buckler" "Golden Buckler" "Harmonic Spirit Shield" "Laminated Kite Shield" "Mirrored Spiked Shield" "Mosaic Kite Shield" "Painted Tower Shield" "Pine Buckler" "Plank Kite Shield" "Reinforced Tower Shield"
 SetTag @Uniques_T4_Armours
-    BaseType "Baroque Round Shield" "Bone Circlet" "Branded Kite Shield" "Bronze Gauntlets" "Bronzescale Boots" "Buckskin Tunic" "Carnal Mitts" "Chain Gloves" "Clasped Boots" "Compound Spiked Shield" "Conquest Chainmail" "Deerskin Boots" "Dragonscale Gauntlets" "Full Dragonscale" "Gilded Sallet" "Golden Mask" "Great Helmet" "Holy Chainmail" "Iron Circlet" "Iron Hat" "Iron Mask" "Ironscale Boots" "Ivory Spirit Shield" "Leather Hood" "Legion Boots" "Lunaris Circlet" "Mesh Boots" "Mind Cage" "Necromancer Circlet" "Ornate Ringmail" "Painted Buckler" "Plate Vest" "Plated Greaves" "Riveted Boots" "Rotted Round Shield" "Samite Gloves" "Scholar Boots" "Scholar's Robe" "Serrated Arrow Quiver" "Shagreen Boots" "Silk Gloves" "Simple Robe" "Soldier Helmet" "Spidersilk Robe" "Strapped Boots" "Strapped Leather" "Studded Round Shield" "Supreme Spiked Shield" "Titan Gauntlets" "Tricorne" "Vaal Buckler" "Velvet Slippers" "Vine Circlet" "Visored Sallet" "War Buckler" "Wild Leather" "Wrapped Mitts" "Wyrmscale Gauntlets" "Zealot Helmet"
+    BaseType "Buckskin Tunic" "Conquest Chainmail" "Full Dragonscale" "Holy Chainmail" "Ornate Ringmail" "Plate Vest" "Scholar's Robe" "Simple Robe" "Strapped Leather" "Wild Leather" "Bronzescale Boots" "Clasped Boots" "Deerskin Boots" "Ironscale Boots" "Legion Boots" "Mesh Boots" "Plated Greaves" "Riveted Boots" "Scholar Boots" "Shagreen Boots" "Strapped Boots" "Velvet Slippers" "Bronze Gauntlets" "Chain Gloves" "Dragonscale Gauntlets" "Samite Gloves" "Silk Gloves" "Wrapped Mitts" "Wyrmscale Gauntlets" "Bone Circlet" "Gilded Sallet" "Golden Mask" "Great Helmet" "Iron Hat" "Iron Mask" "Leather Hood" "Lunaris Circlet" "Mind Cage" "Soldier Helmet" "Tricorne" "Vine Circlet" "Visored Sallet" "Serrated Arrow Quiver" "Baroque Round Shield" "Compound Spiked Shield" "Ivory Spirit Shield" "Painted Buckler" "Rotted Round Shield" "Studded Round Shield" "Supreme Spiked Shield" "Vaal Buckler" "War Buckler"
 SetTag @Uniques_TMix_Armours
-    BaseType "Carnal Armour" "Ebony Tower Shield" "Exquisite Leather" "Goathide Boots" "Great Crown" "Murder Boots" "Sacrificial Garb" "Sorcerer Boots" "Steelscale Gauntlets" "Vaal Gauntlets"
+    BaseType "Carnal Armour" "Exquisite Leather" "Golden Plate" "Sacrificial Garb" "Triumphant Lamellar" "Widowsilk Robe" "Goathide Boots" "Murder Boots" "Sorcerer Boots" "Ironscale Gauntlets" "Steelscale Gauntlets" "Vaal Gauntlets" "Great Crown" "Harlequin Mask" "Hubris Circlet" "Penetrating Arrow Quiver" "Ebony Tower Shield"
 #Accessories
 SetTag @Uniques_T0_Accessories
-    BaseType "Greatwolf Talisman" "Jet Amulet" "Ruby Amulet"
+    BaseType "Greatwolf Talisman" "Jet Amulet" "Moonstone Ring"
 SetTag @Uniques_T1_Accessories
-    BaseType "Wereclaw Talisman"
+    BaseType "Ruby Amulet" "Wereclaw Talisman" "Steel Ring"
 SetTag @Uniques_T2_Accessories
-    BaseType "Amethyst Ring" "Chain Belt" "Coral Amulet" "Crystal Belt" "Heavy Belt" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Studded Belt" "Stygian Vise" "Vanguard Belt"
+    BaseType "Citrine Amulet" "Coral Amulet" "Paua Amulet" "Chain Belt" "Crystal Belt" "Heavy Belt" "Studded Belt" "Stygian Vise" "Vanguard Belt" "Amethyst Ring" "Diamond Ring" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Unset Ring"
 SetTag @Uniques_T3_Accessories
-    BaseType "Blue Pearl Amulet" "Cloth Belt" "Coral Ring" "Diamond Ring" "Marble Amulet" "Paua Amulet" "Rustic Sash"
+    BaseType "Blue Pearl Amulet" "Marble Amulet" "Turquoise Amulet" "Cloth Belt" "Rustic Sash" "Coral Ring"
 SetTag @Uniques_TMix_Accessories
-    BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Gold Amulet" "Gold Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Onyx Amulet" "Paua Ring" "Topaz Ring" "Turquoise Amulet" "Two-Stone Ring" "Unset Ring"
+    BaseType "Agate Amulet" "Amber Amulet" "Gold Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Leather Belt" "Gold Ring" "Moonstone Ring" "Opal Ring" "Paua Ring" "Topaz Ring" "Two-Stone Ring"
 #Flasks
 SetTag @Uniques_T0_Flasks
-    BaseType "Sanctified Life Flask" "Sanctified Mana Flask" "Sapphire Flask" "Topaz Flask"
+    BaseType "Grand Mana Flask" "Sapphire Flask" "Topaz Flask"
 SetTag @Uniques_T1_Flasks
     BaseType "Bismuth Flask"
 SetTag @Uniques_T2_Flasks
-    BaseType "Amethyst Flask" "Granite Flask" "Hallowed Hybrid Flask" "Large Hybrid Flask" "Ruby Flask" "Silver Flask"
+    BaseType "Amethyst Flask" "Hallowed Hybrid Flask" "Large Hybrid Flask" "Sanctified Life Flask" "Sanctified Mana Flask" "Silver Flask"
 SetTag @Uniques_T3_Flasks
-    BaseType "Diamond Flask" "Greater Mana Flask" "Quartz Flask" "Quicksilver Flask" "Sulphur Flask"
+    BaseType "Diamond Flask" "Quartz Flask" "Quicksilver Flask" "Sulphur Flask"
+SetTag @Uniques_T4_Flasks
+    BaseType "Greater Mana Flask"
 SetTag @Uniques_TMix_Flasks
-    BaseType "Stibnite Flask"
+    BaseType "Granite Flask" "Ruby Flask" "Stibnite Flask"
 
 SetTag @Uniques_T0_Jewels
     BaseType "Prismatic Jewel"
@@ -167,11 +169,11 @@ SetTag @Shard_T0
 SetTag @Shard_T1
     BaseType "Exalted Shard"
 SetTag @Shard_T2
-    BaseType "Ancient Shard"
+    BaseType "Ancient Shard" "Annulment Shard"
 SetTag @Shard_T3
-    BaseType "Chaos Shard" "Regal Shard" "Binding Shard" "Horizon Shard" "Engineer's Shard" "Annulment Shard" "Harbinger's Shard"
+    BaseType "Chaos Shard" "Regal Shard" "Binding Shard" "Horizon Shard" "Engineer's Shard" "Harbinger's Shard" "Alchemy Shard"
 SetTag @Shard_T4
-    BaseType "Alteration Shard" "Transmutation Shard" "Alchemy Shard" "Scroll Fragment"
+    BaseType "Alteration Shard" "Transmutation Shard" "Scroll Fragment"
 
 #Tags Gems
 SetTag @Gems_DropOnly
@@ -179,13 +181,13 @@ SetTag @Gems_DropOnly
 
 #Tags Divination Cards
 SetTag @DivinationCards_T0
-    BaseType "Abandoned Wealth" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Last One Standing" "The Queen" "The Wolf" "The Spark and the Flame" "The Wolven King's Bite" "The Formless Sea" "The Brittle Emperor" "The Devastator" "The Iron Bard" "The World Eater"
+    BaseType "Abandoned Wealth" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "The Devastator" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The Last One Standing" "The Queen" "The Spark and the Flame" "The Wolven King's Bite" "The World Eater"
 SetTag @DivinationCards_T1
-    BaseType "Pride Before the Fall" "The Celestial Justicar" "The King's Heart" "Wealth and Power" "The Standoff" "Heterochromia" "Last Hope" "Spark and the Flame" "The Artist" "The Hunger" "The Saint's Treasure" "The Thaumaturgist" "The Valkyrie" "Standoff" "The Wind" "The Breach" "The Dreamer"
+    BaseType "Last Hope" "Pride Before the Fall" "The Artist" "The Brittle Emperor" "The Celestial Justicar" "The Dreamer" "The Enlightened" "The Formless Sea" "The Hunger" "The King's Heart" "The Offering" "The Saint's Treasure" "The Valkyrie" "The Wind" "The Wolf" "Wealth and Power"
 SetTag @DivinationCards_T2
-    BaseType "Emperor of Purity" "Bowyer's Dream" "The Aesthete" "The Cartographer" "The Chains that Bind" "The Dapper Prodigy" "The Enlightened" "The Ethereal" "The Hoarder" "The Offering" "The Polymath" "The Porcupine" "The Sephirot" "The Stormcaller" "The Vast" "The Warlord" "The Soul" "Chaotic Disposition" "Earth Drinker" "Glimmer of Hope" "Hope" "Humility" "Jack in the Box" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "Rats" "Scholar of the Seas" "The Arena Champion" "The Body" "The Dark Mage" "The Demoness" "The Encroaching Darkness" "The Forsaken" "The Inventor" "The Jester" "The Opulent" "The Penitent" "The Risk" "The Road to Power" "The Surveyor" "The Traitor" "The Trial" "The Tyrant" "The Union" "The Void" "The Wrath" "Time-Lost Relic" "Treasure Hunter" "The Valley of Steel Boxes" "Vinia's Token" "The Wretched" "Lucky Connections" "No Traces" "Left to Fate" "Atziri's Arsenal" "Dialla's Subjugation" "Emperor's Luck" "Gemcutter's Promise" "Hubris" "Hunter's Resolve" "Lingering Remnants" "Lost Worlds" "Loyalty" "The Battle Born" "The Cataclysm" "The Cursed King" "The Fletcher" "The Harvester" "The Lion" "The One With All" "The Pact" "The Poet" "The Throne" "The Insatiable" "The Obscured" "Blessing of God" "The Puzzle"
+    BaseType "Atziri's Arsenal" "Blessing of God" "Bowyer's Dream" "Chaotic Disposition" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "Emperor's Luck" "Gemcutter's Promise" "Glimmer of Hope" "Heterochromia" "Hope" "Hubris" "Humility" "Hunter's Resolve" "Jack in the Box" "Left to Fate" "Lingering Remnants" "Lost Worlds" "Loyalty" "Lucky Connections" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "No Traces" "Rats" "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Battle Born" "The Body" "The Breach" "The Cartographer" "The Cataclysm" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Deceiver" "The Demoness" "The Encroaching Darkness" "The Ethereal" "The Fletcher" "The Forsaken" "The Harvester" "The Hoarder" "The Insatiable" "The Inventor" "The Jester" "The Lion" "The Obscured" "The One With All" "The Opulent" "The Pact" "The Penitent" "The Poet" "The Polymath" "The Porcupine" "The Puzzle" "The Risk" "The Road to Power" "The Sephirot" "The Soul" "The Standoff" "The Stormcaller" "The Surveyor" "The Thaumaturgist" "The Throne" "The Traitor" "The Trial" "The Tyrant" "The Union" "The Valley of Steel Boxes" "The Vast" "The Void" "The Warlord" "The Wrath" "The Wretched" "Time-Lost Relic" "Treasure Hunter" "Vinia's Token"
 SetTag @DivinationCards_T4
-    BaseType "The Incantation" "Destined to Crumble" "Struck by Lightning" "Anarchy's Price" "Death" "The Betrayal" "The Carrion Crow" "The Hermit" "The King's Blade" "The Metalsmith's Gift" "The Web" "Thunderous Skies" "Turn the Other Cheek"
+    BaseType "Anarchy's Price" "Death" "Destined to Crumble" "Struck by Lightning" "The Betrayal" "The Carrion Crow" "The Hermit" "The Incantation" "The King's Blade" "The Metalsmith's Gift" "The Web" "Thunderous Skies" "Turn the Other Cheek"
 
 #Tags Essences
 SetTag @Essences_T1
@@ -307,6 +309,8 @@ Show
         Tags @Uniques_T4_Weapons
     Branch # Uniques - T4
         Tags @Uniques_T4_Armours
+    Branch # Uniques - T4
+        Tags @Uniques_T4_Flasks
 Show
     Rarity Unique
     SetFontSize 50
@@ -753,6 +757,31 @@ Show # Leveling - Flasks - Mana Flasks | Comment
     Branch
         DropLevel >= 1
         ItemLevel <= 5
+Show # Leveling - Flasks - Hybrid Flasks | Comment
+    Class "Hybrid Flask"
+    Rarity Magic
+    SetFontSize 36
+    SetBackgroundColor 0 0 60
+    SetTextColor 0 255 255
+    SetBorderColor 0 255 255
+    Branch
+        DropLevel >= 60
+        ItemLevel <= 79
+    Branch
+        DropLevel >= 50
+        ItemLevel <= 69
+    Branch
+        DropLevel >= 40
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 30
+        ItemLevel <= 49
+    Branch
+        DropLevel >= 20
+        ItemLevel <= 39
+    Branch
+        DropLevel >= 10
+        ItemLevel <= 29
 Show # Leveling - Flasks - Utility Flasks | Comment
     Class "Utility Flasks"
     Rarity Magic
@@ -847,6 +876,30 @@ Show # Leveling - Flasks - Mana Flasks | Comment
     Branch
         DropLevel >= 1
         ItemLevel <= 5
+Show # Leveling - Flasks - Hybrid Flasks | Comment
+    Class "Hybrid Flask"
+    SetFontSize 36
+    SetBackgroundColor 20 20 20
+    SetTextColor 0 255 255
+    SetBorderColor 0 255 255
+    Branch
+        DropLevel >= 60
+        ItemLevel <= 79
+    Branch
+        DropLevel >= 50
+        ItemLevel <= 69
+    Branch
+        DropLevel >= 40
+        ItemLevel <= 59
+    Branch
+        DropLevel >= 30
+        ItemLevel <= 49
+    Branch
+        DropLevel >= 20
+        ItemLevel <= 39
+    Branch
+        DropLevel >= 10
+        ItemLevel <= 29
 Show # Leveling - Flasks - Utility Flasks | Comment
     Class "Utility Flasks"
     SetFontSize 33
@@ -4208,9 +4261,48 @@ Show # Leveling - Weapons - Ranged - Wand | Comment
         DropLevel >= 1
         ItemLevel <= 11
 #Early Leveling
-Show # Leveling - EarlyLeveling - Rare Items (Show rare items in Act 1 even in bases hidden in leveling) | Comment
+Show # Leveling - Early Leveling - Rare Items (Show rare items in Act 1 even in bases hidden in leveling) | Comment
     Rarity Rare
     ItemLevel <= 13
+    SetBackgroundColor 50 50 0 230
+    SetTextColor 255 255 119 230
+    SetBorderColor 255 255 119 230
+    Branch
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
+    Branch
+        LinkedSockets >= 0
+        SetFontSize 33
+Hide # Leveling - Early Leveling - Rare Items (Show rare items in Act 1-2 even in bases hidden in leveling) | Comment
+    Rarity Rare
+    ItemLevel <= 23
+    SetBackgroundColor 50 50 0 230
+    SetTextColor 255 255 119 230
+    SetBorderColor 255 255 119 230
+    Branch
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
+    Branch
+        LinkedSockets >= 0
+        SetFontSize 33
+Hide # Leveling - Early Leveling - Rare Items (Show rare items in Act 1-3 even in bases hidden in leveling) | Comment
+    Rarity Rare
+    ItemLevel <= 33
+    SetBackgroundColor 50 50 0 230
+    SetTextColor 255 255 119 230
+    SetBorderColor 255 255 119 230
+    Branch
+        LinkedSockets >= 3
+        SetFontSize 40
+        SetBorderColor 14 164 37
+    Branch
+        LinkedSockets >= 0
+        SetFontSize 33
+Hide # Leveling - Early Leveling - Rare Items (Show rare items in Act 1-4 even in bases hidden in leveling) | Comment
+    Rarity Rare
+    ItemLevel <= 41
     SetBackgroundColor 50 50 0 230
     SetTextColor 255 255 119 230
     SetBorderColor 255 255 119 230
@@ -4527,10 +4619,12 @@ Show
     Branch # Currency - Generic Currency - Portal Scroll
         Tags @Currency_PortalScroll
         SetFontSize 36
+        SetTextColor 130 130 180
         SetBorderColor 170 158 130 0
-    Branch # Currency - Generic Currency - Scroll of Wisdom
+        Branch # Currency - Generic Currency - Scroll of Wisdom
         Tags @Currency_ScrollWisdom
         SetFontSize 36
+        SetTextColor 200 83 89
         SetBorderColor 170 158 130 0
 
     Branch # Currency - Outdated and not dropable Currency - T2 (Chaos Tier) - Unshaping Orb
@@ -4550,25 +4644,34 @@ Show
     Class "Currency"
     SetTextColor 170 158 130
     SetBorderColor 88 124 244
-    Branch Hide # Currency - Shards - T4 (Trash Shard (Alt, Transmute, Alch, Scroll)
+    Branch Hide # Currency - Shards - T4 (Trash Shard (Alt, Transmute, Scroll)
         Tags @Shard_T4
         SetFontSize 30
 
 #------------------------------------
 #    Flasks
 #------------------------------------
-Show # Flasks - Utility flasks
-    Class "Utility Flasks"
-    SetFontSize 30
-    SetBackgroundColor 0 30 30 160
-    SetTextColor 0 255 255
-    SetBorderColor 0 255 255
-Show # Flasks - Flask Quality (≥ 14%)
+Show # Flasks - Quality Flasks (≥ 14%) | Comment
     Class "Flasks"
     Quality >= 14
-    SetFontSize 30
+    SetFontSize 36
     SetTextColor 0 255 255
     SetBorderColor 128 179 255
+Show
+    SetFontSize 30
+    SetTextColor 0 255 255
+    SetBorderColor 0 255 255
+    Branch # Flasks - Utility flasks
+        Class "Utility Flasks"
+    Branch # Flasks - Life flasks
+        Class "Life Flasks"
+        DropLevel >= 60
+    Branch # Flasks - Mana flasks
+        Class "Mana Flasks"
+        DropLevel >= 60
+    Branch # Flasks - Hybrid flasks
+        Class "Hybrid Flasks"
+        DropLevel >= 60
 
 #------------------------------------
 #    Labyrinth
@@ -4760,7 +4863,7 @@ Show
         SetBackgroundColor 170 158 130
         SetTextColor 65 31 15
         SetBorderColor 235 190 91
-        PlayAlertSound $SoundT2
+        PlayAlertSound $SoundNets
     Branch # Leagues - Bestiary - Nets - Necromancy Net
         BaseType "Necromancy Net"
         SetFontSize 42
