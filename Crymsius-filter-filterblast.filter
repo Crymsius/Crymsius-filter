@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.2.1a
+###Version 3.2.1b
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -4454,11 +4454,11 @@ Show
     Branch # Currency - Map Currency - Master Cartographer's Sextant
         BaseType "Master Cartographer's Sextant"
         SetBorderColor 250 20 0
-        PlayAlertSound $SoundT1
+        PlayAlertSound $SoundT2
     Branch # Currency - Map Currency - Journeyman Cartographer's Sextant
         BaseType "Journeyman Cartographer's Sextant"
         SetBorderColor 255 255 0
-        PlayAlertSound $SoundT1
+        PlayAlertSound $SoundT2
     Branch # Currency - Map Currency - Apprentice Cartographer's Sextant
         BaseType "Apprentice Cartographer's Sextant"
         SetBorderColor 220 220 220
