@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.2.1b
+###Version 3.2.1c
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -97,7 +97,7 @@ SetTag @Uniques_TMix_Armours
     BaseType "Carnal Armour" "Exquisite Leather" "Golden Plate" "Sacrificial Garb" "Triumphant Lamellar" "Widowsilk Robe" "Goathide Boots" "Murder Boots" "Sorcerer Boots" "Ironscale Gauntlets" "Steelscale Gauntlets" "Vaal Gauntlets" "Great Crown" "Harlequin Mask" "Hubris Circlet" "Penetrating Arrow Quiver" "Ebony Tower Shield"
 #Accessories
 SetTag @Uniques_T0_Accessories
-    BaseType "Greatwolf Talisman" "Jet Amulet" "Moonstone Ring"
+    BaseType "Greatwolf Talisman" "Jet Amulet"
 SetTag @Uniques_T1_Accessories
     BaseType "Ruby Amulet" "Wereclaw Talisman" "Steel Ring"
 SetTag @Uniques_T2_Accessories
@@ -167,11 +167,11 @@ SetTag @Currency_ScrollWisdom
 SetTag @Shard_T0
     BaseType "Mirror Shard"
 SetTag @Shard_T1
-    BaseType "Exalted Shard"
+    BaseType "Exalted Shard" "Harbinger's Shard"
 SetTag @Shard_T2
     BaseType "Ancient Shard" "Annulment Shard"
 SetTag @Shard_T3
-    BaseType "Chaos Shard" "Regal Shard" "Binding Shard" "Horizon Shard" "Engineer's Shard" "Harbinger's Shard" "Alchemy Shard"
+    BaseType "Chaos Shard" "Regal Shard" "Binding Shard" "Horizon Shard" "Engineer's Shard" "Alchemy Shard"
 SetTag @Shard_T4
     BaseType "Alteration Shard" "Transmutation Shard" "Scroll Fragment"
 
@@ -4886,6 +4886,11 @@ Show
     Class "Currency"
     SetTextColor 170 158 130
     SetBorderColor 170 158 130
+    Branch # Leagues - Harbinger - Currencies - T0 (Exalt Tier) - Harbinger's Orb
+        BaseType "Harbinger's Orb"
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        PlayAlertSound $SoundT0
     Branch # Leagues - Harbinger - Currencies - T1 (Divine Tier) - Ancient Orb
         BaseType "Ancient Orb"
         SetFontSize 45
@@ -4893,11 +4898,6 @@ Show
         PlayAlertSound $SoundT1
     Branch # Leagues - Harbinger - Currencies - T2 (Chaos Tier) - Orb of Horizon
         BaseType "Orb of Horizons"
-        SetFontSize 42
-        SetBackgroundColor 70 70 0
-        PlayAlertSound $SoundT2
-    Branch # Leagues - Harbinger - Currencies - T2 (Chaos Tier) - Harbinger's Orb
-        BaseType "Harbinger's Orb"
         SetFontSize 42
         SetBackgroundColor 70 70 0
         PlayAlertSound $SoundT2
