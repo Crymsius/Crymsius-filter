@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.3.0a
+###Version 3.3.0b
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -585,6 +585,86 @@ Show
     Branch # Leagues - Abyss - Stygian Vise - Rare
         Rarity Rare
         SetBorderColor 255 255 119
+
+Show
+    Rarity Rare
+    SetBackgroundColor 255 75 60
+    SetFontSize 38
+    SetTextColor 255 255 119
+    SetBorderColor 255 75 60
+    Branch # Leagues - Incursion - Mods - Tacati's | Comment
+        HasExplicitMod "Tacati's"
+    Branch # Leagues - Incursion - Mods - Citaqualotl's | Comment
+        HasExplicitMod "Citaqualotl's"
+    Branch # Leagues - Incursion - Mods - Matatl's | Comment
+        HasExplicitMod "Matatl's"
+    Branch # Leagues - Incursion - Mods - Topotante's | Comment
+        HasExplicitMod "Topotante's"
+    Branch # Leagues - Incursion - Mods - Xopec's | Comment
+        HasExplicitMod "Xopec's"
+    Branch # Leagues - Incursion - Mods - Guatelitzi's | Comment
+        HasExplicitMod "Guatelitzi's"
+    Branch # Leagues - Incursion - Mods - of Tacati | Comment
+        HasExplicitMod "of Tacati"
+    Branch # Leagues - Incursion - Mods - of Citaqualotl | Comment
+        HasExplicitMod "of Citaqualotl"
+    Branch # Leagues - Incursion - Mods - of Matatl | Comment
+        HasExplicitMod "of Matatl"
+    Branch # Leagues - Incursion - Mods - of Puhuarte | Comment
+        HasExplicitMod "of Puhuarte"
+    Branch # Leagues - Incursion - Mods - of Guatelitzi | Comment
+        HasExplicitMod "of Guatelitzi"
+
+Show
+    Rarity Magic
+    SetBackgroundColor 0 0 60
+    SetFontSize 38
+    SetTextColor 255 75 60
+    SetBorderColor 255 75 60
+    Branch # Leagues - Incursion - Mods - Tacati's | Comment
+        HasExplicitMod "Tacati's"
+    Branch # Leagues - Incursion - Mods - Citaqualotl's | Comment
+        HasExplicitMod "Citaqualotl's"
+    Branch # Leagues - Incursion - Mods - Matatl's | Comment
+        HasExplicitMod "Matatl's"
+    Branch # Leagues - Incursion - Mods - Topotante's | Comment
+        HasExplicitMod "Topotante's"
+    Branch # Leagues - Incursion - Mods - Xopec's | Comment
+        HasExplicitMod "Xopec's"
+    Branch # Leagues - Incursion - Mods - Guatelitzi's | Comment
+        HasExplicitMod "Guatelitzi's"
+    Branch # Leagues - Incursion - Mods - of Tacati | Comment
+        HasExplicitMod "of Tacati"
+    Branch # Leagues - Incursion - Mods - of Citaqualotl | Comment
+        HasExplicitMod "of Citaqualotl"
+    Branch # Leagues - Incursion - Mods - of Matatl | Comment
+        HasExplicitMod "of Matatl"
+    Branch # Leagues - Incursion - Mods - of Puhuarte | Comment
+        HasExplicitMod "of Puhuarte"
+    Branch # Leagues - Incursion - Mods - of Guatelitzi | Comment
+        HasExplicitMod "of Guatelitzi"
+
+Show
+    Rarity Magic
+    SetBackgroundColor 0 0 60
+    SetFontSize 38
+    SetTextColor 255 51 187
+    SetBorderColor 255 51 187
+    Branch # Leagues - Warbands - Brinerot | Comment
+        Class "Gloves"
+        HasExplicitMod "Brinerot"
+    Branch # Leagues - Warbands - Mutewind | Comment
+        Class "Boots"
+        HasExplicitMod "Mutewind"
+    Branch # Leagues - Warbands - Redblade | Comment
+        Class "Helmet"
+        HasExplicitMod "Redblade"
+    Branch # Leagues - Warbands - Betrayer's | Comment
+        HasExplicitMod "Betrayer's"
+    Branch # Leagues - Warbands - Deceiver's | Comment
+        HasExplicitMod "Deceiver's"
+    Branch # Leagues - Warbands - Turncoat's | Comment
+        HasExplicitMod "Turncoat's"
 
 #------------------------------------
 #    Jewels
