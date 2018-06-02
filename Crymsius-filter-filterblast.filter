@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.3.0
+###Version 3.3.0a
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -4819,7 +4819,7 @@ Show
 Show # Leagues - Incursion - Incursion Item
     Class "Incursion Item"
     PlayAlertSound $SoundQuest
-    SetFontSize 37
+    SetFontSize 45
     SetBackgroundColor 40 25 23
     SetTextColor 255 75 60
     SetBorderColor 255 75 60
@@ -4828,35 +4828,38 @@ Show # Leagues - Incursion - Vials
     Class "Currency"
     BaseType "Vial of"
     PlayAlertSound $SoundVials
-    SetFontSize 37
+    SetFontSize 40
     SetBackgroundColor 40 25 23
     SetTextColor 170 158 130
     SetBorderColor 255 75 60
 
-# Show
-#     SetFontSize 37
-#     SetTextColor 255 75 60
-#     SetBorderColor 255 75 60
-#     Branch # Leagues - Incursion - Mods - Tacati's
-#         HasMod "Tacati's"
-#     Branch # Leagues - Incursion - Mods - Citaqualotl's
-#         HasMod "Citaqualotl's"
-#     Branch # Leagues - Incursion - Mods - Matatl's
-#         HasMod "Matatl's"
-#     Branch # Leagues - Incursion - Mods - Xopec's
-#         HasMod "Xopec's"
-#     Branch # Leagues - Incursion - Mods - Guatelitzi's
-#         HasMod "Guatelitzi's"
-#     Branch # Leagues - Incursion - Mods - of Tacati
-#         HasMod "of Tacati"
-#     Branch # Leagues - Incursion - Mods - of Citaqualotl
-#         HasMod "of Citaqualotl"
-#     Branch # Leagues - Incursion - Mods - of Matatl
-#         HasMod "of Matatl"
-#     Branch # Leagues - Incursion - Mods - of Puhuarte
-#         HasMod "of Puhuarte"
-#     Branch # Leagues - Incursion - Mods - of Guatelitzi
-#         HasMod "of Guatelitzi"
+Show
+    SetFontSize 38
+    SetTextColor 255 75 60
+    SetBackgroundColor 0 0 60
+    SetBorderColor 255 75 60
+    Branch # Leagues - Incursion - Mods - Tacati's
+        HasExplicitMod "Tacati's"
+    Branch # Leagues - Incursion - Mods - Citaqualotl's
+        HasExplicitMod "Citaqualotl's"
+    Branch # Leagues - Incursion - Mods - Matatl's
+        HasExplicitMod "Matatl's"
+    Branch # Leagues - Incursion - Mods - Topotante's
+        HasExplicitMod "Topotante's"
+    Branch # Leagues - Incursion - Mods - Xopec's
+        HasExplicitMod "Xopec's"
+    Branch # Leagues - Incursion - Mods - Guatelitzi's
+        HasExplicitMod "Guatelitzi's"
+    Branch # Leagues - Incursion - Mods - of Tacati
+        HasExplicitMod "of Tacati"
+    Branch # Leagues - Incursion - Mods - of Citaqualotl
+        HasExplicitMod "of Citaqualotl"
+    Branch # Leagues - Incursion - Mods - of Matatl
+        HasExplicitMod "of Matatl"
+    Branch # Leagues - Incursion - Mods - of Puhuarte
+        HasExplicitMod "of Puhuarte"
+    Branch # Leagues - Incursion - Mods - of Guatelitzi
+        HasExplicitMod "of Guatelitzi"
 
 #------------------------------------
 #    Bestiary League
