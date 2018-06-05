@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.3.0b
+###Version 3.3.0c
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -585,7 +585,30 @@ Show
     Branch # Leagues - Abyss - Stygian Vise - Rare
         Rarity Rare
         SetBorderColor 255 255 119
-
+Show
+    Rarity Rare
+    SetBackgroundColor 50 50 0
+    SetFontSize 38
+    SetTextColor 255 255 255
+    SetBorderColor 255 255 255
+    Branch # Crafting - Mods - Rare Items - Merciless + of Celebration| Comment
+        HasExplicitMod "Merciless"
+        HasExplicitMod "of Celebration"
+    Branch # Crafting - Mods - Rare Items - Dragon's + of Excavation| Comment
+        HasExplicitMod "Dragon's"
+        HasExplicitMod "of Excavation"
+Show
+    Rarity Magic
+    SetBackgroundColor 0 0 60
+    SetFontSize 38
+    SetTextColor 255 255 255
+    SetBorderColor 255 255 255
+    Branch # Crafting - Mods - Magic Items - Merciless + of Celebration| Comment
+        HasExplicitMod "Merciless"
+        HasExplicitMod "of Celebration"
+    Branch # Crafting - Mods - Magic Items - Dragon's + of Excavation| Comment
+        HasExplicitMod "Dragon's"
+        HasExplicitMod "of Excavation"
 Show
     Rarity Rare
     SetBackgroundColor 255 75 60
@@ -4785,26 +4808,31 @@ Show
 #------------------------------------
 #    Gems
 #------------------------------------
-Show # Gems - Drop Only gems
+Show # Gems - Drop Only gems | Comment
     Class "Gems"
     Tags @Gems_DropOnly
     SetFontSize 50
     SetBackgroundColor 70 20 0
     SetBorderColor 27 162 155
-Show # Gems - Quality (>= 10%)
+Show
     Class "Gems"
-    Quality > 9
-    SetFontSize 38
-    SetBorderColor 128 179 255
-Show # Gems - Quality (> 0%)
-    Class "Gems"
-    Quality > 0
-    SetFontSize 38
-    SetBorderColor 128 179 255
-Show # Gems - Others
-    Class "Gems"
-    SetFontSize 30
-    SetBorderColor 27 162 155
+    Branch # Gems - Level (>= 19) | Comment
+        GemLevel >= 19
+        SetFontSize 38
+        SetBorderColor 128 179 255
+    Branch # Gems - Quality (>= 10%) | Comment
+        Quality >= 10
+        SetFontSize 38
+        SetBorderColor 128 179 255
+    Branch # Gems - Quality (> 0%) | Comment
+        Class "Gems"
+        Quality > 0
+        SetFontSize 38
+        SetBorderColor 128 179 255
+    Branch # Gems - Others
+        Class "Gems"
+        SetFontSize 30
+        SetBorderColor 27 162 155
 
 #------------------------------------
 #    Quest
