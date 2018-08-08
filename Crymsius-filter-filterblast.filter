@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.3.0c
+###Version 3.3.0d
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -870,7 +870,7 @@ Show # Leveling - Flasks - Hybrid Flasks | Comment
     SetBorderColor 0 255 255
     Branch
         DropLevel >= 60
-        ItemLevel <= 79
+        ItemLevel <= 69
     Branch
         DropLevel >= 50
         ItemLevel <= 69
@@ -988,7 +988,7 @@ Show # Leveling - Flasks - Hybrid Flasks | Comment
     SetBorderColor 0 255 255
     Branch
         DropLevel >= 60
-        ItemLevel <= 79
+        ItemLevel <= 69
     Branch
         DropLevel >= 50
         ItemLevel <= 69
