@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.3.0d
+###Version 3.4.0
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -4872,6 +4872,13 @@ Show
         SetBackgroundColor 255 255 255
         SetTextColor  255 165 0
         SetBorderColor  255 165 0
+    # Beauty Through Death (T0) here to prevent exception with Death (T4)
+    Branch Inherit # Divination Cards - T0 Div cards
+        BaseType "Beauty Through Death"
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        SetTextColor  255 165 0
+        SetBorderColor  255 165 0
         PlayAlertSound $SoundT0
     Branch Inherit # Divination Cards - T1 Div cards
         BaseType "Last Hope"
@@ -4920,6 +4927,36 @@ Show
 #------------------------------------
 #    Temporary Leagues
 #------------------------------------
+
+#------------------------------------
+#    Delve League
+#------------------------------------
+Show # Leagues - Delve - Timeworn Reliquary Key
+    Class "Misc Map Items"
+    BaseType "Timeworn Reliquary Key"
+    SetFontSize 45
+    SetBackgroundColor 255 230 180
+    SetTextColor 50 7 7
+    SetBorderColor 255 215 0
+    PlayAlertSound $SoundT0
+
+Show # Leagues - Delve - Fossils
+    Class "Currency"
+    BaseType "Fossil"
+    SetFontSize 42
+    SetTextColor 170 158 130
+    SetBorderColor 170 158 130
+    SetBackgroundColor 70 70 0
+    PlayAlertSound $SoundT2
+
+Show # Leagues - Delve - Resonators
+    Class "Currency"
+    BaseType "Resonator"
+    SetFontSize 42
+    SetTextColor 170 158 130
+    SetBorderColor 170 158 130
+    SetBackgroundColor 70 70 0
+    PlayAlertSound $SoundT2
 
 #------------------------------------
 #    Incursion League
@@ -5110,7 +5147,7 @@ Show
         Rarity Magic 
         SetFontSize 39
         PlayAlertSound $SoundT2
-Show # Leagues - Legacy - Reliquary Keys
+Show # Leagues - Legacy - Ancient Reliquary Keys
     Class "Misc Map Items"
     BaseType "Ancient Reliquary Key"
     SetFontSize 45
