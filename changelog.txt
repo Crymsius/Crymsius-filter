@@ -1,6 +1,18 @@
 ---------------------------------------------------
           Changelog for Crymsius's Filter         |
 ---------------------------------------------------
+-Notes (3.4.1)
+Added Minimap Icon for most of the important items (currencies, div cards, maps, 6S/6L, uniques,...)
+since it's a colourblind proof filter, only white, yellow, brown and blue are used. For some borderline cases,
+red and green are used but it's not a big deal (I don't distinguish them clearly from brown and yellow respectively
+but it won't affect lisibility.)
+Added Beams and temporary beams. Same color as the minimap icon. Tried to not display too many beams. I'll wait for some
+feedback and tune it down/up accordingly.
+Retiered the new divination cards.
+Retiered past league uniques.
+Added a proper color scheme for fossils, resonator and delve craft items.
+
+
 -Notes (3.4.0)
 Added Basic Delve League Support
 Added Beauty Through Death div card to not interfere with Death card.

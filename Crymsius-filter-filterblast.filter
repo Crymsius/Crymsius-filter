@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.4.0
+###Version 3.4.1
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -67,46 +67,46 @@ SetSound $SoundShapedElderItems 13 280 # Shaped and Elder Items
 SetTag @Uniques_T0_Maps
     BaseType "Chateau Map" "Museum Map"
 SetTag @Uniques_T1_Maps
-    BaseType "Overgrown Shrine Map" "Promenade Map" "Shore Map" "Torture Chamber Map" "Temple Map" "Moon Temple Map" "Courtyard Map"
+    BaseType "Courtyard Map" "Maze Map" "Moon Temple Map" "Overgrown Shrine Map" "Promenade Map" "Shore Map" "Temple Map" "Torture Chamber Map"
 SetTag @Uniques_T2_Maps
     BaseType "Underground River Map" "Necropolis Map" "Graveyard Map" "Atoll Map" "Bone Crypt Map" "Dunes Map" "Cursed Crypt Map" "Vaal Pyramid Map" "Strand Map"
 #Weapons
 SetTag @Uniques_T0_Weapons
     BaseType "Carnal Sceptre" "Charan's Sword" "Imperial Maul" "Prophecy Wand" "Royal Axe" "Void Axe"
 SetTag @Uniques_T1_Weapons
-    BaseType "Cutlass" "Jewelled Foil" "Siege Axe"
+    BaseType "Cutlass" "Jewelled Foil" "Siege Axe" "Variscite Blade"
 SetTag @Uniques_T2_Weapons
-    BaseType "Abyssal Axe" "Assassin Bow" "Auric Mace" "Blinder" "Citadel Bow" "Coiled Staff" "Corsair Sword" "Crude Bow" "Crystal Sceptre" "Demon Dagger" "Driftwood Wand" "Elder Sword" "Elegant Foil" "Engraved Wand" "Etched Greatsword" "Eternal Sword" "Fiend Dagger" "Gavel" "Gladius" "Harbinger Bow" "Hellion's Paw" "Highborn Staff" "Imperial Claw" "Imperial Skean" "Imperial Staff" "Infernal Axe" "Iron Sceptre" "Iron Staff" "Jade Hatchet" "Jasper Chopper" "Judgement Staff" "Karui Sceptre" "Labrys" "Long Bow" "Maelström Staff" "Meatgrinder" "Nightmare Mace" "Opal Sceptre" "Platinum Sceptre" "Ranger Bow" "Ritual Sceptre" "Sage Wand" "Spine Bow" "Spiraled Wand" "Steelhead" "Tornado Wand" "Vaal Sceptre" "Void Sceptre" "War Hammer" "War Sword"
+    BaseType "Abyssal Axe" "Assassin Bow" "Auric Mace" "Blinder" "Citadel Bow" "Coiled Staff" "Corsair Sword" "Crude Bow" "Crystal Sceptre" "Demon Dagger" "Driftwood Wand" "Elder Sword" "Elegant Foil" "Engraved Wand" "Etched Greatsword" "Eternal Sword" "Fiend Dagger" "Gavel" "Gemstone Sword" "Gladius" "Harbinger Bow" "Hellion's Paw" "Highborn Staff" "Imperial Claw" "Imperial Skean" "Infernal Axe" "Iron Sceptre" "Iron Staff" "Jade Hatchet" "Jasper Chopper" "Judgement Staff" "Karui Sceptre" "Labrys" "Long Bow" "Maelström Staff" "Meatgrinder" "Nightmare Mace" "Opal Sceptre" "Platinum Sceptre" "Ranger Bow" "Ritual Sceptre" "Sage Wand" "Spine Bow" "Spiraled Wand" "Steelhead" "Tornado Wand" "Vaal Sceptre" "Void Sceptre" "War Hammer" "War Sword"
 SetTag @Uniques_T3_Weapons
-    BaseType "Basket Rapier" "Bastard Sword" "Bone Bow" "Brass Maul" "Bronze Sceptre" "Despot Axe" "Dusk Blade" "Elegant Sword" "Ezomyte Blade" "Fright Claw" "Great Mallet" "Gut Ripper" "Karui Chopper" "Karui Maul" "Lathi" "Legion Sword" "Lion Sword" "Opal Wand" "Ornate Mace" "Primordial Staff" "Ranger Bow" "Reaver Sword" "Recurve Bow" "Rock Breaker" "Royal Bow" "Royal Staff" "Rusted Sword" "Sabre" "Serpentine Staff" "Shadow Axe" "Shadow Sceptre" "Short Bow" "Slaughter Knife" "Spiked Club" "Terror Maul" "Throat Stabber" "Tiger Sword" "Tomahawk" "Twilight Blade" "Vaal Claw" "Vaal Hatchet" "Vile Staff" "Whalebone Rapier" "Woodsplitter"
+    BaseType "Basket Rapier" "Bastard Sword" "Bone Bow" "Brass Maul" "Bronze Sceptre" "Despot Axe" "Dusk Blade" "Elegant Sword" "Ezomyte Blade" "Fright Claw" "Great Mallet" "Gut Ripper" "Karui Chopper" "Karui Maul" "Lathi" "Lion Sword" "Opal Wand" "Ornate Mace" "Primordial Staff" "Ranger Bow" "Reaver Sword" "Recurve Bow" "Rock Breaker" "Royal Bow" "Royal Staff" "Rusted Sword" "Sabre" "Serpentine Staff" "Shadow Axe" "Shadow Sceptre" "Short Bow" "Slaughter Knife" "Spiked Club" "Terror Maul" "Throat Stabber" "Tiger Sword" "Tomahawk" "Twilight Blade" "Vaal Claw" "Vaal Hatchet" "Vile Staff" "Whalebone Rapier" "Woodsplitter"
 SetTag @Uniques_T4_Weapons
     BaseType "Ambusher" "Antique Rapier" "Awl" "Boot Blade" "Boot Knife" "Cleaver" "Crystal Wand" "Death Bow" "Decimation Bow" "Decorative Axe" "Demon's Horn" "Dread Maul" "Dream Mace" "Estoc" "Ezomyte Staff" "Flaying Knife" "Gnarled Branch" "Goat's Horn" "Headsman Axe" "Highland Blade" "Imbued Wand" "Jagged Foil" "Jagged Maul" "Long Staff" "Military Staff" "Nailed Fist" "Ornate Sword" "Platinum Kris" "Poleaxe" "Quartz Wand" "Royal Skean" "Skinning Knife" "Sledgehammer" "Stiletto" "Sundering Axe" "Thresher Claw" "Timeworn Claw" "Vaal Blade"
 SetTag @Uniques_TMix_Weapons
-    BaseType "Carved Wand" "Imperial Bow" "Infernal Sword" "Midnight Blade" "Terror Claw" "Vaal Axe"
+    BaseType "Carved Wand" "Imperial Bow" "Imperial Staff" "Infernal Sword" "Legion Sword" "Midnight Blade" "Terror Claw" "Vaal Axe"
 #Armour
 SetTag @Uniques_T0_Armours
-    BaseType "Glorious Plate" "Golden Mantle" "Occultist's Vestment" "Crusader Boots" "Rawhide Boots" "Legion Gloves" "Nubuck Gloves" "Ezomyte Tower Shield" "Rawhide Tower Shield"
+    BaseType "Ambush Mitts" "Callous Mask" "Carnal Boots" "Crusader Boots" "Ezomyte Tower Shield" "Glorious Plate" "Golden Mantle" "Legion Gloves" "Nubuck Gloves" "Occultist's Vestment" "Rawhide Boots" "Rawhide Tower Shield" "Vaal Spirit Shield"
 SetTag @Uniques_T1_Armours
-    BaseType "Full Wyrmscale" "Gladiator Plate" "Savant's Robe" "Wyrmscale Doublet" "Arcanist Slippers" "Nubuck Boots" "Zealot Gloves" "Ezomyte Burgonet" "Thorium Spirit Shield" "Vaal Spirit Shield"
+    BaseType "Arcanist Slippers" "Ezomyte Burgonet" "Full Wyrmscale" "Gladiator Plate" "Magistrate Crown" "Nubuck Boots" "Savant's Robe" "Thorium Spirit Shield" "Vaal Spirit Shield" "Wyrmscale Doublet" "Zealot Gloves"
 SetTag @Uniques_T2_Armours
-    BaseType "Assassin's Garb" "Astral Plate" "Blood Raiment" "Coronal Leather" "Destiny Leather" "Golden Plate" "Lacquered Garb" "Necromancer Silks" "Sadist Garb" "Sage's Robe" "Sharkskin Tunic" "Varnished Coat" "Widowsilk Robe" "Ancient Greaves" "Assassin's Boots" "Conjurer Boots" "Dragonscale Boots" "Goliath Greaves" "Hydrascale Boots" "Reinforced Greaves" "Slink Boots" "Stealth Boots" "Titan Greaves" "Wool Shoes" "Ancient Gauntlets" "Arcanist Gloves" "Clasped Mitts" "Conjurer Gloves" "Crusader Gloves" "Deerskin Gloves" "Goliath Gauntlets" "Iron Gauntlets" "Murder Mitts" "Serpentscale Gauntlets" "Sorcerer Gloves" "Strapped Mitts" "Close Helmet" "Deicide Mask" "Festival Mask" "Harlequin Mask" "Leather Cap" "Lion Pelt" "Magistrate Crown" "Nightmare Bascinet" "Praetor Crown" "Prophet Crown" "Raven Mask" "Royal Burgonet" "Siege Helmet" "Silken Hood" "Sinner Tricorn" "Ursine Pelt" "Vaal Mask" "Blunt Arrow Quiver" "Archon Kite Shield" "Cardinal Round Shield" "Cedar Tower Shield" "Champion Kite Shield" "Corrugated Buckler" "Jingling Spirit Shield" "Pinnacle Tower Shield" "Tarnished Spirit Shield" "Titanium Spirit Shield"
+    BaseType "Ancient Gauntlets" "Ancient Greaves" "Ancient Spirit Shield" "Arcanist Gloves" "Archon Kite Shield" "Assassin's Boots" "Assassin's Garb" "Astral Plate" "Blood Raiment" "Blunt Arrow Quiver" "Cardinal Round Shield" "Cedar Tower Shield" "Champion Kite Shield" "Clasped Mitts" "Close Helmet" "Conjurer Boots" "Conjurer Gloves" "Coronal Leather" "Corrugated Buckler" "Crusader Gloves" "Crusader Helmet" "Deerskin Gloves" "Deicide Mask" "Destiny Leather" "Dragonscale Boots" "Festival Mask" "Golden Plate" "Goliath Gauntlets" "Goliath Greaves" "Harlequin Mask" "Hydrascale Boots" "Iron Gauntlets" "Jingling Spirit Shield" "Lacquered Garb" "Leather Cap" "Lion Pelt" "Murder Mitts" "Necromancer Silks" "Nightmare Bascinet" "Pinnacle Tower Shield" "Praetor Crown" "Prophet Crown" "Raven Mask" "Reinforced Greaves" "Royal Burgonet" "Sadist Garb" "Sage's Robe" "Serpentscale Gauntlets" "Shackled Boots" "Sharkskin Tunic" "Siege Helmet" "Silken Hood" "Sinner Tricorn" "Slink Boots" "Sorcerer Gloves" "Stealth Boots" "Strapped Mitts" "Tarnished Spirit Shield" "Titan Greaves" "Titanium Spirit Shield" "Ursine Pelt" "Vaal Mask" "Varnished Coat" "Widowsilk Robe" "Wool Shoes"
 SetTag @Uniques_T3_Armours
-    BaseType "Bone Armour" "Copper Plate" "Crusader Chainmail" "Crusader Plate" "Cutthroat's Garb" "Desert Brigandine" "Destroyer Regalia" "Elegant Ringmail" "Full Scale Armour" "Latticed Ringmail" "Saintly Chainmail" "Sentinel Jacket" "Spidersilk Robe" "Triumphant Lamellar" "Vaal Regalia" "Zodiac Leather" "Serpentscale Boots" "Sharkskin Boots" "Silk Slippers" "Soldier Boots" "Trapper Boots" "Assassin's Mitts" "Bronzescale Gauntlets" "Goathide Gloves" "Ironscale Gauntlets" "Soldier Gloves" "Steel Gauntlets" "Velvet Gloves" "Wool Gloves" "Aventail Helmet" "Iron Circlet" "Iron Mask" "Lacquered Helmet" "Regicide Mask" "Samite Helmet" "Secutor Helm" "Tribal Circlet" "Zealot Helmet" "Broadhead Arrow Quiver" "Fire Arrow Quiver" "Sharktooth Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver" "Branded Kite Shield" "Brass Spirit Shield" "Burnished Spiked Shield" "Colossal Tower Shield" "Enameled Buckler" "Golden Buckler" "Harmonic Spirit Shield" "Laminated Kite Shield" "Mirrored Spiked Shield" "Mosaic Kite Shield" "Painted Tower Shield" "Pine Buckler" "Plank Kite Shield" "Reinforced Tower Shield"
+    BaseType "Assassin's Mitts" "Aventail Helmet" "Bone Armour" "Branded Kite Shield" "Brass Spirit Shield" "Broadhead Arrow Quiver" "Bronzescale Gauntlets" "Burnished Spiked Shield" "Colossal Tower Shield" "Copper Plate" "Crusader Chainmail" "Crusader Plate" "Cutthroat's Garb" "Desert Brigandine" "Destroyer Regalia" "Elegant Ringmail" "Enameled Buckler" "Fire Arrow Quiver" "Full Scale Armour" "Goathide Gloves" "Golden Buckler" "Harmonic Spirit Shield" "Iron Circlet" "Iron Mask" "Ironscale Gauntlets" "Lacquered Helmet" "Laminated Kite Shield" "Latticed Ringmail" "Mirrored Spiked Shield" "Mosaic Kite Shield" "Painted Tower Shield" "Pine Buckler" "Plank Kite Shield" "Regicide Mask" "Reinforced Tower Shield" "Saintly Chainmail" "Samite Helmet" "Secutor Helm" "Sentinel Jacket" "Serpentscale Boots" "Sharkskin Boots" "Sharktooth Arrow Quiver" "Silk Slippers" "Soldier Boots" "Soldier Gloves" "Spidersilk Robe" "Spike-Point Arrow Quiver" "Steel Gauntlets" "Trapper Boots" "Tribal Circlet" "Triumphant Lamellar" "Two-Point Arrow Quiver" "Vaal Regalia" "Velvet Gloves" "Wool Gloves" "Zealot Helmet" "Zodiac Leather"
 SetTag @Uniques_T4_Armours
-    BaseType "Buckskin Tunic" "Conquest Chainmail" "Full Dragonscale" "Holy Chainmail" "Ornate Ringmail" "Plate Vest" "Scholar's Robe" "Simple Robe" "Strapped Leather" "Wild Leather" "Bronzescale Boots" "Clasped Boots" "Deerskin Boots" "Ironscale Boots" "Legion Boots" "Mesh Boots" "Plated Greaves" "Riveted Boots" "Scholar Boots" "Shagreen Boots" "Strapped Boots" "Velvet Slippers" "Bronze Gauntlets" "Carnal Mitts" "Chain Gloves" "Dragonscale Gauntlets" "Samite Gloves" "Silk Gloves" "Titan Gauntlets" "Wrapped Mitts" "Wyrmscale Gauntlets" "Bone Circlet" "Gilded Sallet" "Golden Mask" "Great Helmet" "Iron Hat" "Iron Mask" "Leather Hood" "Lunaris Circlet" "Mind Cage" "Necromancer Circlet" "Soldier Helmet" "Tricorne" "Vine Circlet" "Visored Sallet" "Serrated Arrow Quiver" "Baroque Round Shield" "Compound Spiked Shield" "Ivory Spirit Shield" "Painted Buckler" "Rotted Round Shield" "Studded Round Shield" "Supreme Spiked Shield" "Vaal Buckler" "War Buckler"
+    BaseType "Baroque Round Shield" "Bone Circlet" "Bronze Gauntlets" "Bronzescale Boots" "Buckskin Tunic" "Carnal Mitts" "Chain Gloves" "Clasped Boots" "Compound Spiked Shield" "Conquest Chainmail" "Deerskin Boots" "Dragonscale Gauntlets" "Full Dragonscale" "Gilded Sallet" "Golden Mask" "Great Helmet" "Holy Chainmail" "Iron Hat" "Iron Mask" "Ironscale Boots" "Ivory Spirit Shield" "Leather Hood" "Legion Boots" "Lunaris Circlet" "Mesh Boots" "Mind Cage" "Necromancer Circlet" "Ornate Ringmail" "Painted Buckler" "Plate Vest" "Plated Greaves" "Riveted Boots" "Rotted Round Shield" "Samite Gloves" "Scholar Boots" "Scholar's Robe" "Serrated Arrow Quiver" "Shagreen Boots" "Silk Gloves" "Simple Robe" "Soldier Helmet" "Strapped Boots" "Strapped Leather" "Studded Round Shield" "Supreme Spiked Shield" "Titan Gauntlets" "Tricorne" "Vaal Buckler" "Velvet Slippers" "Vine Circlet" "Visored Sallet" "War Buckler" "Wild Leather" "Wrapped Mitts" "Wyrmscale Gauntlets"
 SetTag @Uniques_TMix_Armours
-    BaseType "Carnal Armour" "Exquisite Leather" "Sacrificial Garb" "Goathide Boots" "Murder Boots" "Sorcerer Boots" "Steelscale Gauntlets" "Vaal Gauntlets" "Great Crown" "Hubris Circlet" "Penetrating Arrow Quiver" "Ebony Tower Shield"
+    BaseType "Carnal Armour" "Ebony Tower Shield" "Exquisite Leather" "Goathide Boots" "Great Crown" "Hubris Circlet" "Murder Boots" "Penetrating Arrow Quiver" "Sacrificial Garb" "Sorcerer Boots" "Steelscale Gauntlets" "Vaal Gauntlets"
 #Accessories
 SetTag @Uniques_T0_Accessories
     BaseType "Greatwolf Talisman" "Jet Amulet"
 SetTag @Uniques_T1_Accessories
-    BaseType "Ruby Amulet" "Wereclaw Talisman" "Steel Ring"
+    BaseType "Ruby Amulet" "Steel Ring" "Wereclaw Talisman"
 SetTag @Uniques_T2_Accessories
-    BaseType "Citrine Amulet" "Coral Amulet" "Paua Amulet" "Chain Belt" "Crystal Belt" "Heavy Belt" "Studded Belt" "Stygian Vise" "Vanguard Belt" "Amethyst Ring" "Diamond Ring" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Two-Stone Ring"
+    BaseType "Amethyst Ring" "Citrine Amulet" "Coral Amulet" "Crystal Belt" "Diamond Ring" "Heavy Belt" "Iron Ring" "Prismatic Ring" "Ruby Ring" "Sapphire Ring" "Studded Belt" "Stygian Vise" "Topaz Ring" "Vanguard Belt"
 SetTag @Uniques_T3_Accessories
-    BaseType "Blue Pearl Amulet" "Marble Amulet" "Turquoise Amulet" "Cloth Belt" "Leather Belt" "Rustic Sash" "Coral Ring"
+    BaseType "Blue Pearl Amulet" "Coral Ring" "Marble Amulet" "Rustic Sash" "Turquoise Amulet"
 SetTag @Uniques_TMix_Accessories
-    BaseType "Agate Amulet" "Amber Amulet" "Gold Amulet" "Jade Amulet" "Lapis Amulet" "Onyx Amulet" "Gold Ring" "Moonstone Ring" "Opal Ring" "Paua Ring" "Unset Ring"
+    BaseType "Agate Amulet" "Amber Amulet" "Chain Belt" "Cloth Belt" "Gold Amulet" "Gold Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Onyx Amulet" "Opal Ring" "Paua Amulet" "Paua Ring" "Two-Stone Ring" "Unset Ring"
 #Flasks
 SetTag @Uniques_T0_Flasks
     BaseType "Grand Mana Flask" "Sapphire Flask" "Topaz Flask"
@@ -115,11 +115,11 @@ SetTag @Uniques_T1_Flasks
 SetTag @Uniques_T2_Flasks
     BaseType "Amethyst Flask" "Hallowed Hybrid Flask" "Large Hybrid Flask" "Sanctified Life Flask" "Sanctified Mana Flask" "Silver Flask"
 SetTag @Uniques_T3_Flasks
-    BaseType "Diamond Flask" "Quartz Flask" "Quicksilver Flask" "Sulphur Flask"
+    BaseType "Diamond Flask" "Quicksilver Flask" "Sulphur Flask"
 SetTag @Uniques_T4_Flasks
     BaseType "Greater Mana Flask"
 SetTag @Uniques_TMix_Flasks
-    BaseType "Granite Flask" "Ruby Flask" "Stibnite Flask"
+    BaseType "Granite Flask" "Quartz Flask" "Ruby Flask" "Stibnite Flask"
 
 SetTag @Uniques_T0_Jewels
     BaseType "Prismatic Jewel"
@@ -182,11 +182,11 @@ SetTag @Gems_DropOnly
 
 #Tags Divination Cards
 SetTag @DivinationCards_T0
-    BaseType "Abandoned Wealth" "House of Mirrors" "Hunter's Reward" "Mawr Blaidd" "The Devastator" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The Last One Standing" "The Queen" "The Spark and the Flame" "The Wolven King's Bite" "The World Eater" "Immortal Resolve" "The Master"
+    BaseType "Abandoned Wealth" "Beauty Through Death" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "The Devastator" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The Last One Standing" "The Master" "The Queen" "The Spark and the Flame" "The Wolven King's Bite" "The World Eater"
 SetTag @DivinationCards_T1
-    BaseType "Last Hope" "Pride Before the Fall" "The Artist" "The Brittle Emperor" "The Celestial Justicar" "The Dreamer" "The Enlightened" "The Formless Sea" "The Hunger" "The King's Heart" "The Offering" "The Saint's Treasure" "The Valkyrie" "The Wind" "The Wolf" "Wealth and Power" "The Undaunted" "The Sword King's Salute" "The Celestial Stone" "Perfection" "The Samurai's Eye" "The Hale Heart" "The Mayor" "The Undisputed" "The Professor" "The Beast"
+    BaseType "Last Hope" "Perfection" "Pride Before the Fall" "The Artist" "The Beast" "The Brittle Emperor" "The Celestial Justicar" "The Celestial Stone" "The Dreamer" "The Endless Darkness" "The Enlightened" "The Formless Sea" "The Hale Heart" "The Hunger" "The Innocent" "The King's Heart" "The Mayor" "The Offering" "The Professor" "The Saint's Treasure" "The Samurai's Eye" "The Sword King's Salute" "The Undaunted" "The Undisputed" "The Valkyrie" "The Wilted Rose" "The Wind" "The Wolf" "Wealth and Power"
 SetTag @DivinationCards_T2
-    BaseType "Atziri's Arsenal" "Blessing of God" "Bowyer's Dream" "Chaotic Disposition" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "Emperor's Luck" "Gemcutter's Promise" "Glimmer of Hope" "Heterochromia" "Hope" "Hubris" "Humility" "Hunter's Resolve" "Jack in the Box" "Left to Fate" "Lingering Remnants" "Lost Worlds" "Loyalty" "Lucky Connections" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "No Traces" "Rats" "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Battle Born" "The Body" "The Breach" "The Cartographer" "The Cataclysm" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Deceiver" "The Demoness" "The Encroaching Darkness" "The Ethereal" "The Fletcher" "The Forsaken" "The Harvester" "The Hoarder" "The Insatiable" "The Inventor" "The Jester" "The Lion" "The Obscured" "The One With All" "The Opulent" "The Pact" "The Penitent" "The Poet" "The Polymath" "The Porcupine" "The Puzzle" "The Risk" "The Road to Power" "The Sephirot" "The Soul" "The Standoff" "The Stormcaller" "The Surveyor" "The Thaumaturgist" "The Throne" "The Traitor" "The Trial" "The Tyrant" "The Union" "The Valley of Steel Boxes" "The Vast" "The Void" "The Warlord" "The Wrath" "The Wretched" "Time-Lost Relic" "Treasure Hunter" "Vinia's Token" "The Witch" "The Jeweller's Boon" "The Darkest Dream" "The Fathomless Depths" "The Admirer" "The Dreamland" "Harmony of Souls" "The Rite of Elements"
+    BaseType "Atziri's Arsenal" "Blessing of God" "Boon of the First Ones" "Bowyer's Dream" "Chaotic Disposition" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "Emperor's Luck" "Gemcutter's Promise" "Glimmer of Hope" "Harmony of Souls" "Heterochromia" "Hope" "Hubris" "Humility" "Hunter's Resolve" "Jack in the Box" "Left to Fate" "Lingering Remnants" "Lost Worlds" "Loyalty" "Lucky Connections" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "No Traces" "Rats" "Scholar of the Seas" "The Admirer" "The Aesthete" "The Arena Champion" "The Battle Born" "The Body" "The Breach" "The Cacophony" "The Cartographer" "The Cataclysm" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Deceiver" "The Demoness" "The Dreamland" "The Encroaching Darkness" "The Ethereal" "The Fathomless Depths" "The Fletcher" "The Forsaken" "The Harvester" "The Hoarder" "The Insatiable" "The Inventor" "The Jester" "The Jeweller's Boon" "The Lion" "The Obscured" "The One With All" "The Opulent" "The Pact" "The Penitent" "The Poet" "The Polymath" "The Porcupine" "The Price of Protection" "The Puzzle" "The Risk" "The Rite of Elements" "The Road to Power" "The Sephirot" "The Soul" "The Standoff" "The Stormcaller" "The Surveyor" "The Thaumaturgist" "The Throne" "The Traitor" "The Trial" "The Twilight Moon" "The Tyrant" "The Union" "The Valley of Steel Boxes" "The Vast" "The Void" "The Warlord" "The Witch" "The Wrath" "The Wretched" "Time-Lost Relic" "Treasure Hunter" "Vinia's Token"
 SetTag @DivinationCards_T4
     BaseType "Anarchy's Price" "Death" "Destined to Crumble" "Struck by Lightning" "The Betrayal" "The Carrion Crow" "The Hermit" "The Incantation" "The King's Blade" "The Metalsmith's Gift" "The Web" "Thunderous Skies" "Turn the Other Cheek"
 
@@ -195,6 +195,14 @@ SetTag @Essences_T1
     BaseType "Essence of Delirium" "Essence of Insanity" "Essence of Horror" "Essence of Hysteria" "Deafening Essence of Spite"
 SetTag @Essences_T2
     BaseType "Deafening Essence of Woe" "Deafening Essence of Anger" "Deafening Essence of Envy" "Deafening Essence of Contempt" "Shrieking Essence of Spite" "Deafening Essence of Wrath" "Deafening Essence of Loathing" "Shrieking Essence of Wrath" "Deafening Essence of Scorn" "Shrieking Essence of Anger" "Shrieking Essence of Contempt" "Deafening Essence of Zeal"
+
+    #Tags Fossils
+SetTag @Fossils_T0
+    BaseType "Faceted Fossil" "Fractured Fossil" "Hollow Fossil"
+SetTag @Fossils_T1
+    BaseType "Bloodstained Fossil" "Corroded Fossil" "Encrusted Fossil" "Gilded Fossil" "Glyphic Fossil" "Prismatic Fossil" "Sanctified Fossil" "Shuddering Fossil" "Tangled Fossil"
+SetTag @Fossils_T2
+    BaseType "Aetheric Fossil" "Aberrant Fossil" "Bound Fossil" "Dense Fossil" "Enchanted Fossil" "Frigid Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Perfect Fossil" "Pristine Fossil" "Scorched Fossil" "Serrated Fossil"
 
 #------------------------------------
 #    Fishing and weird stuff
@@ -206,6 +214,8 @@ Show
     SetTextColor 255 0 0
     SetBorderColor 0 102 0
     PlayAlertSound $SoundT0
+    MinimapIcon 0 Blue Hexagon
+    PlayEffect Blue
 
 #------------------------------------ 
 #    6 Links
@@ -217,6 +227,8 @@ Show
     SetTextColor 255 0 0
     SetBorderColor 255 0 0
     PlayAlertSound $Sound6L
+    MinimapIcon 0 Blue Triangle
+    PlayEffect Blue
 
 #------------------------------------
 #    Uniques
@@ -237,12 +249,16 @@ Show # Leagues - Talisman - Unique Talismans
     SetTextColor 175 96 37
     SetBorderColor 175 96 37
     PlayAlertSound $SoundUniques
+    MinimapIcon 0 Red Star
+    PlayEffect Red
 Show
     Rarity Unique
     SetFontSize 45
     SetBackgroundColor 255 255 255
     SetBorderColor 175 96 37
     PlayAlertSound $SoundT0
+    MinimapIcon 0 Blue Star
+    PlayEffect Blue
     Branch #Uniques - T0
         Tags @Uniques_T0_Maps
     Branch # Uniques - T0
@@ -262,6 +278,8 @@ Show
     SetTextColor 255 255 255
     SetBorderColor 175 96 37
     PlayAlertSound $SoundT1
+    MinimapIcon 0 Brown Star
+    PlayEffect Brown
     Branch # Uniques - T1
         Tags @Uniques_T1_Maps
     Branch # Uniques - T1
@@ -278,6 +296,8 @@ Show
     SetBackgroundColor 70 20 0
     SetBorderColor 255 255 255
     PlayAlertSound $SoundT2
+    MinimapIcon 1 Yellow Star
+    PlayEffect Yellow Temp
     Branch # Uniques - T2
         Tags @Uniques_T2_Maps
     Branch # Uniques - T2
@@ -294,6 +314,8 @@ Show
     SetBackgroundColor 70 20 0
     SetBorderColor 175 96 37
     PlayAlertSound $SoundT3
+    MinimapIcon 2 White Star
+    PlayEffect White Temp
     Branch # Uniques - T3
         Tags @Uniques_T3_Weapons
     Branch # Uniques - T3
@@ -319,6 +341,8 @@ Show
     SetTextColor 70 20 0
     SetBorderColor 255 255 255
     PlayAlertSound $SoundTMix
+    MinimapIcon 0 Red Star
+    PlayEffect Red
     Branch # Uniques - TMix
         Tags @Uniques_TMix_Weapons
     Branch # Uniques - TMix
@@ -346,6 +370,8 @@ Comment
     SetTextColor 156 121 184
     SetBorderColor 156 121 184
     PlayAlertSound $SoundMapsHighlight
+    MinimapIcon 0 Green Circle
+    PlayEffect Green
     Branch # Maps - Highlighted - Unshaped | Comment
         ShapedMap False
         ElderMap False
@@ -365,6 +391,8 @@ Show
     SetBackgroundColor 255 255 255
     SetTextColor 250 20 0
     PlayAlertSound $SoundT0
+    MinimapIcon 0 Blue Circle
+    PlayEffect Blue
     Branch # Maps - Tiers 16 (Guardians and Elder Orb) - Highlight Rare | Comment
         Rarity Rare
         BaseType "Forge of the Phoenix" "Lair of the Hydra" "Maze of the Minotaur" "Pit of the Chimera" "Vaal Temple"
@@ -392,23 +420,31 @@ Show
         SetTextColor 250 20 0
         SetBorderColor 255 255 119
         PlayAlertSound $SoundMapsT1
+        MinimapIcon 0 Brown Circle
+        PlayEffect Brown
     Branch # Maps - Tiers 12-15 (Red)
         DropLevel >= 73
         SetFontSize 41
         SetTextColor 250 20 0
         SetBorderColor 220 220 220
         PlayAlertSound $SoundMapsT1
+        MinimapIcon 0 Brown Circle
+        PlayEffect Brown
     Branch # Maps - Tier 7-11 (Yellow) - Highlight Rare | Comment
         Rarity Rare
         DropLevel < 73
         SetFontSize 39
         SetTextColor 255 255 0
         SetBorderColor 255 255 119
+        MinimapIcon 1 Yellow Circle
+        PlayEffect Yellow Temp
     Branch # Maps - Tier 7-11 (Yellow)
         DropLevel < 73
         SetFontSize 39
         SetTextColor 255 255 0
         SetBorderColor 220 220 220
+        MinimapIcon 1 White Circle
+        PlayEffect White Temp
 #Maps
 Show
     Class "Maps"
@@ -421,12 +457,16 @@ Show
         SetTextColor 250 20 0
         SetBorderColor 255 255 119
         PlayAlertSound $SoundMapsT1
+        MinimapIcon 0 Brown Circle
+        PlayEffect Brown
     Branch # Maps - Tiers 12-15 (Red)
         DropLevel >= 78
         SetFontSize 41
         SetTextColor 250 20 0
         SetBorderColor 220 220 220
         PlayAlertSound $SoundMapsT1
+        MinimapIcon 0 Brown Circle
+        PlayEffect Brown
     Branch # Maps - Tier 7-11 (Yellow) - Highlight Rare | Comment
         Rarity Rare
         DropLevel >= 73
@@ -434,23 +474,31 @@ Show
         SetTextColor 255 255 0
         SetBorderColor 255 255 119
         PlayAlertSound $SoundMapsT2
+        MinimapIcon 1 Yellow Circle
+        PlayEffect Yellow Temp
     Branch # Maps - Tier 7-11 (Yellow)
         DropLevel >= 73
         SetFontSize 39
         SetTextColor 255 255 0
         SetBorderColor 220 220 220
         PlayAlertSound $SoundMapsT2
+        MinimapIcon 1 Yellow Circle
+        PlayEffect Yellow Temp
     Branch # Maps - Tier 1-6 (White) - Highlight Rare | Comment
         Rarity Rare
         DropLevel < 73
         SetFontSize 37
         SetTextColor 220 220 220
         SetBorderColor 255 255 119
+        MinimapIcon 1 White Circle
+        PlayEffect White Temp
     Branch # Maps - Tier 1-6 (White)
         DropLevel < 73
         SetFontSize 37
         SetTextColor 220 220 220
         SetBorderColor 220 220 220
+        MinimapIcon 1 White Circle
+        PlayEffect White Temp
 #Fragments
 Show
     Class "Map Fragments"
@@ -458,37 +506,46 @@ Show
     SetBackgroundColor 0 0 0
     SetTextColor 200 20 0
     SetBorderColor 255 255 255
+    MinimapIcon 2 Red Circle
+    PlayEffect Red
     Branch # Leagues - Prophecy - Keys
         BaseType "'s Key"
         SetTextColor 200 20 0
         SetBorderColor 128 0 200
         PlayAlertSound $SoundT2
+        MinimapIcon 1 Red Circle
     Branch # Fragments - Divine Vessel
         BaseType "Divine Vessel"
         SetBackgroundColor 74 230 58
         SetTextColor 0 0 0
         SetBorderColor 88 124 244
         PlayAlertSound $SoundQuest
+        MinimapIcon 2 Green Hexagon
+        PlayEffect Green
     Branch # Fragments - Guardians
         BaseType "Fragment of"
         SetBackgroundColor 200 20 0
         SetTextColor 0 0 0
         PlayAlertSound $SoundT1
+        MinimapIcon 0 Red Circle
     Branch # Fragments - Mortal - Hope and Ignorance
         BaseType "Mortal Hope" "Mortal Ignorance"
         SetBackgroundColor 200 20 0
         SetTextColor 0 0 0
         PlayAlertSound $SoundT1
+        MinimapIcon 0 Red Circle
     Branch # Fragments - Mortal - Rage and Grief
         BaseType "Mortal Rage" "Mortal Grief"
         SetBackgroundColor 200 20 0
         SetTextColor 0 0 0
         PlayAlertSound $SoundT2
+        MinimapIcon 1 Red Circle
     Branch # Fragments - Sacrifice - Midnight
         BaseType "Sacrifice at Midnight"
         SetBackgroundColor 200 20 0
         SetTextColor 0 0 0
         PlayAlertSound $SoundT2
+        MinimapIcon 1 Red Circle
     Branch # Fragments - Sacrifice - Others
         SetFontSize 39
         PlayAlertSound $SoundT2
@@ -499,19 +556,22 @@ Show
 Show # Sockets - 6S | Comment
     Sockets = 6
     SetFontSize 45
-    SetBackgroundColor  0 0 0
+    SetBackgroundColor 0 0 0
     SetBorderColor 135 135 135
     PlayAlertSound $Sound6S
+    MinimapIcon 1 Yellow Triangle
+    PlayEffect Yellow Temp
 Show # Sockets - 5L | Comment
     LinkedSockets = 5
     SetFontSize 45
     SetBackgroundColor 72 20 0 
     SetBorderColor 180 180 180
     PlayAlertSound $Sound5L
+    MinimapIcon 2 Yellow Triangle
 Show 
     SocketGroup RGB
     SetFontSize 36
-    SetBorderColor  255 255 255
+    SetBorderColor 255 255 255
     Branch # Sockets - RGB - Small Items | Comment
         Height <= 2
         Width <= 2
@@ -562,6 +622,8 @@ Show # Leagues - Breach - Breach Rings
 Show
     SetFontSize 42
     PlayAlertSound $SoundShapedElderItems
+    MinimapIcon 1 Brown Triangle
+    PlayEffect Brown
     Branch #Atlas and special bases - Shaped Items | Comment
         ShaperItem True
         SetBackgroundColor 83 86 184
@@ -573,7 +635,7 @@ Show
 
 Show
     BaseType "Stygian Vise"
-    SetFontSize 60  
+    SetFontSize 50
     SetTextColor 90 255 90
     SetBackgroundColor 30 30 30
     Branch # Leagues - Abyss - Stygian Vise - Normal
@@ -585,7 +647,22 @@ Show
     Branch # Leagues - Abyss - Stygian Vise - Rare
         Rarity Rare
         SetBorderColor 255 255 119
-Show
+
+#------------------------------------
+#    Crafting Mods
+#------------------------------------
+
+# This section handles additional crafting bases.
+Hide # Crafting - Base ilvl>=84
+    BaseType $Crafting_Bases
+    Rarity Normal
+    ItemLevel >= 84
+    SetFontSize 40
+    SetBackgroundColor 0 0 0
+    SetTextColor 0 180 0
+    SetBorderColor 255 255 255
+
+    Show
     Rarity Rare
     SetBackgroundColor 50 50 0
     SetFontSize 38
@@ -600,21 +677,55 @@ Show
 Show
     Rarity Magic
     SetBackgroundColor 0 0 60
-    SetFontSize 38
     SetTextColor 255 255 255
     SetBorderColor 255 255 255
+    SetFontSize 38
     Branch # Crafting - Mods - Magic Items - Merciless + of Celebration| Comment
         HasExplicitMod "Merciless"
         HasExplicitMod "of Celebration"
     Branch # Crafting - Mods - Magic Items - Dragon's + of Excavation| Comment
         HasExplicitMod "Dragon's"
         HasExplicitMod "of Excavation"
+
 Show
     Rarity Rare
-    SetBackgroundColor 255 75 60
+    SetBackgroundColor 50 50 0
+    SetTextColor 255 255 255
+    SetBorderColor 255 255 255
     SetFontSize 38
+    Branch # Leagues - Delve - Mods | Comment
+        HasExplicitMod "of Crafting"
+    Branch # Leagues - Delve - Mods | Comment
+        HasExplicitMod "of Spellcraft"
+    Branch # Leagues - Delve - Mods | Comment
+        HasExplicitMod "of Weaponcraft"
+    Branch # Leagues - Delve - Mods | Comment
+        HasExplicitMod "Subterranean"
+    Branch # Leagues - Delve - Mods | Comment
+        HasExplicitMod "of the Underground"
+Show
+    Rarity Magic
+    SetBackgroundColor 0 0 60
+    SetTextColor 255 255 255
+    SetBorderColor 255 255 255
+    SetFontSize 38
+    Branch # Leagues - Delve - Mods | Comment
+        HasExplicitMod "of Crafting"
+    Branch # Leagues - Delve - Mods | Comment
+        HasExplicitMod "of Spellcraft"
+    Branch # Leagues - Delve - Mods | Comment
+        HasExplicitMod "of Weaponcraft"
+    Branch # Leagues - Delve - Mods | Comment
+        HasExplicitMod "Subterranean"
+    Branch # Leagues - Delve - Mods | Comment
+        HasExplicitMod "of the Underground"
+
+    Show
+    Rarity Rare
+    SetBackgroundColor 255 75 60
     SetTextColor 255 255 119
     SetBorderColor 255 75 60
+    SetFontSize 38
     Branch # Leagues - Incursion - Mods - Tacati's | Comment
         HasExplicitMod "Tacati's"
     Branch # Leagues - Incursion - Mods - Citaqualotl's | Comment
@@ -637,13 +748,12 @@ Show
         HasExplicitMod "of Puhuarte"
     Branch # Leagues - Incursion - Mods - of Guatelitzi | Comment
         HasExplicitMod "of Guatelitzi"
-
 Show
     Rarity Magic
     SetBackgroundColor 0 0 60
-    SetFontSize 38
     SetTextColor 255 75 60
     SetBorderColor 255 75 60
+    SetFontSize 38
     Branch # Leagues - Incursion - Mods - Tacati's | Comment
         HasExplicitMod "Tacati's"
     Branch # Leagues - Incursion - Mods - Citaqualotl's | Comment
@@ -898,6 +1008,7 @@ Show # Leveling - Flasks - Utility Flasks | Comment
         ItemLevel <= 60
         SetFontSize 38
         PlayAlertSound $SoundLeveling
+        MinimapIcon 2 Green Triangle
     Branch
         ItemLevel <= 60
         SetFontSize 34
@@ -4521,19 +4632,6 @@ Show
         SetBorderColor 255 255 119
 
 #------------------------------------
-#   Crafting bases
-#------------------------------------
-# This section handles additional crafting bases.
-Hide # Crafting - Base ilvl>=84
-    BaseType $Crafting_Bases
-    Rarity < Rare
-    ItemLevel >= 84
-    SetFontSize 40
-    SetBackgroundColor 0 0 0
-    SetTextColor 0 180 0
-    SetBorderColor 255 255 255
-
-#------------------------------------
 #    Chance Recipe
 #------------------------------------
 #Normal item to chance
@@ -4555,14 +4653,14 @@ Show
     SetBackgroundColor 50 50 50
     SetTextColor 170 158 130
     PlayAlertSound $SoundT2
+    MinimapIcon 1 Yellow Diamond
+    PlayEffect Yellow Temp
     Branch # Currency - Map Currency - Master Cartographer's Sextant
         BaseType "Master Cartographer's Sextant"
         SetBorderColor 250 20 0
-        PlayAlertSound $SoundT2
     Branch # Currency - Map Currency - Journeyman Cartographer's Sextant
         BaseType "Journeyman Cartographer's Sextant"
         SetBorderColor 255 255 0
-        PlayAlertSound $SoundT2
     Branch # Currency - Map Currency - Apprentice Cartographer's Sextant
         BaseType "Apprentice Cartographer's Sextant"
         SetBorderColor 220 220 220
@@ -4578,16 +4676,22 @@ Show
         SetFontSize 45
         SetBackgroundColor 255 255 255
         PlayAlertSound ShMirror 300
+        MinimapIcon 0 Blue Diamond
+        PlayEffect Blue
     Branch
         Tags @Currency_Exalted
         SetFontSize 45
         SetBackgroundColor 255 255 255
         PlayAlertSound ShExalted 300
+        MinimapIcon 0 Blue Diamond
+        PlayEffect Blue
     Branch
         Tags @Currency_Divine
         SetFontSize 45
         SetBackgroundColor 255 255 255
         PlayAlertSound ShDivine 300
+        MinimapIcon 0 Brown Diamond
+        PlayEffect Brown
 
 Show
     Class "Currency"
@@ -4598,16 +4702,22 @@ Show
         SetFontSize 45
         SetBackgroundColor 255 255 255
         PlayAlertSound $SoundMirror
+        MinimapIcon 0 Blue Diamond
+        PlayEffect Blue
     Branch # Currency - Generic Currency - T0 (Exalted Tier) - Exalted Orb
         Tags @Currency_Exalted
         SetFontSize 45
         SetBackgroundColor 255 255 255
         PlayAlertSound $SoundExalted
+        MinimapIcon 0 Blue Diamond
+        PlayEffect Blue
     Branch # Currency - Generic Currency - T0 (Exalted Tier) - Eternal Orb
         BaseType "Eternal Orb"
         SetFontSize 45
         SetBackgroundColor 255 255 255
         PlayAlertSound $SoundT0
+        MinimapIcon 0 Blue Diamond
+        PlayEffect Blue
 
 
     Branch # Currency - Generic Currency - T1 (Divine Tier) - Divine Orb
@@ -4615,11 +4725,15 @@ Show
         SetFontSize 45
         SetBackgroundColor 255 255 255
         PlayAlertSound $SoundDivine
+        MinimapIcon 0 Brown Diamond
+        PlayEffect Brown
     Branch # Currency - Generic Currency - T1 (Divine Tier) - Orb of Annulment
         BaseType "Orb of Annulment"
         SetFontSize 45
         SetBackgroundColor 255 255 255
         PlayAlertSound $SoundT1
+        MinimapIcon 0 Brown Diamond
+        PlayEffect Brown
 
 
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Chaos Orb
@@ -4627,56 +4741,78 @@ Show
         SetFontSize 42
         SetBackgroundColor 70 70 0
         PlayAlertSound $SoundChaos
+        MinimapIcon 1 Yellow Diamond
+        PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Vaal Orb
         Tags @Currency_Vaal
         SetFontSize 42
         SetBackgroundColor 70 70 0
         PlayAlertSound $SoundVaal
+        MinimapIcon 1 Yellow Diamond
+        PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Regal Orb
         Tags @Currency_Regal
         SetFontSize 42
         SetBackgroundColor 70 70 0
         PlayAlertSound $SoundRegal
+        MinimapIcon 1 Yellow Diamond
+        PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Gemcutter's Prism
         BaseType "Gemcutter's Prism"
         SetFontSize 42
         SetBackgroundColor 70 70 0
         PlayAlertSound $SoundT2
+        MinimapIcon 1 Yellow Diamond
+        PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Orb of Regret
         BaseType "Orb of Regret"
         SetFontSize 42
         SetBackgroundColor 70 70 0
         PlayAlertSound $SoundT2
+        MinimapIcon 1 Yellow Diamond
+        PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Cartographer's Chisel
         BaseType "Cartographer's Chisel"
         SetFontSize 42
         SetBackgroundColor 70 70 0
         PlayAlertSound $SoundT2
+        MinimapIcon 1 Yellow Diamond
+        PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Orb of Alchemy
         BaseType "Orb of Alchemy"
         SetFontSize 42
         SetBackgroundColor 70 70 0
         PlayAlertSound $SoundT2
+        MinimapIcon 1 Yellow Diamond
+        PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Orb of Fusing
         BaseType "Orb of Fusing"
         SetFontSize 42
         SetBackgroundColor 70 70 0
         PlayAlertSound $SoundT2
+        MinimapIcon 1 Yellow Diamond
+        PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Orb of Scouring
         BaseType "Orb of Scouring"
         SetFontSize 42
         SetBackgroundColor 70 70 0
         PlayAlertSound $SoundT2
+        MinimapIcon 1 Yellow Diamond
+        PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Blessed Orb
         BaseType "Blessed Orb"
         SetFontSize 42
         SetBackgroundColor 70 70 0
         PlayAlertSound $SoundT2
+        MinimapIcon 1 Yellow Diamond
+        PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Stacked Deck
         BaseType "Stacked Deck"
         SetFontSize 42
         SetBackgroundColor 70 70 0
         PlayAlertSound $SoundT2
+        MinimapIcon 1 Yellow Diamond
+        PlayEffect Yellow Temp
 
 
     Branch # Currency - Generic Currency - T3 (Alteration Tier) - Orb of Alteration
@@ -4684,26 +4820,31 @@ Show
         SetFontSize 39
         SetBackgroundColor 0 0 60
         PlayAlertSound $SoundT3
+        MinimapIcon 2 White Diamond
     Branch # Currency - Generic Currency - T3 (Alteration Tier) - Glassblower's Bauble
         BaseType "Glassblower's Bauble"
         SetFontSize 39
         SetBackgroundColor 0 0 60
         PlayAlertSound $SoundT3
+        MinimapIcon 2 White Diamond
     Branch # Currency - Generic Currency - T3 (Alteration Tier) - Jeweller's Orb
         BaseType "Jeweller's Orb"
         SetFontSize 39
         SetBackgroundColor 0 0 60
         PlayAlertSound $SoundT3
+        MinimapIcon 2 White Diamond
     Branch # Currency - Generic Currency - T3 (Alteration Tier) - Orb of Chance
         BaseType "Orb of Chance"
         SetFontSize 39
         SetBackgroundColor 0 0 60
         PlayAlertSound $SoundT3
+        MinimapIcon 2 White Diamond
     Branch # Currency - Generic Currency - T3 (Alteration Tier) - Chromatic Orb
         BaseType "Chromatic Orb"
         SetFontSize 39
         SetBackgroundColor 0 0 60
         PlayAlertSound $SoundT3
+        MinimapIcon 2 White Diamond
 
 
     Branch # Currency - Generic Currency - T4 (Transmutation Tier) - Orb of Transmutation
@@ -4786,6 +4927,8 @@ Show
     SetBackgroundColor 50 50 0
     SetBorderColor 255 255 119
     PlayAlertSound $SoundQuest
+    MinimapIcon 0 Green Hexagon
+    PlayEffect Green
 
 #------------------------------------
 #    Chisel Recipe
@@ -4844,6 +4987,8 @@ Show
     SetTextColor 0 0 0
     SetBorderColor 0 0 0
     PlayAlertSound $SoundQuest
+    MinimapIcon 0 Green Hexagon
+    PlayEffect Green
 
 #------------------------------------
 #    Soul
@@ -4870,16 +5015,21 @@ Show
         BaseType "House of Mirrors"
         SetFontSize 45
         SetBackgroundColor 255 255 255
-        SetTextColor  255 165 0
-        SetBorderColor  255 165 0
+        SetTextColor 255 165 0
+        SetBorderColor 255 165 0
+        PlayAlertSound $SoundT0
+        MinimapIcon 0 Blue Square
+        PlayEffect Blue
     # Beauty Through Death (T0) here to prevent exception with Death (T4)
     Branch Inherit # Divination Cards - T0 Div cards
         BaseType "Beauty Through Death"
         SetFontSize 45
         SetBackgroundColor 255 255 255
-        SetTextColor  255 165 0
-        SetBorderColor  255 165 0
+        SetTextColor 255 165 0
+        SetBorderColor 255 165 0
         PlayAlertSound $SoundT0
+        MinimapIcon 0 Blue Square
+        PlayEffect Blue
     Branch Inherit # Divination Cards - T1 Div cards
         BaseType "Last Hope"
         SetFontSize 44
@@ -4887,12 +5037,16 @@ Show
         SetTextColor 255 255 255
         SetBorderColor 255 255 255
         PlayAlertSound $SoundT1
+        MinimapIcon 0 Brown Square
+        PlayEffect Brown
     Branch Inherit # Divination Cards - T2 Div cards
         BaseType "The Road to Power"
         SetFontSize 40
         SetBackgroundColor 255 165 0 235
         SetBorderColor 255 255 255
         PlayAlertSound $SoundT2
+        MinimapIcon 1 Yellow Square
+        PlayEffect Yellow Temp
     # wolf's shadow here to prevent exception with The Wolf - Also allows for T4 to be displayed before T5
     Branch Inherit # Divination Cards - T3 Div cards (everything else)
         BaseType "The Wolf's Shadow"
@@ -4901,9 +5055,11 @@ Show
         Tags @DivinationCards_T0
         SetFontSize 45
         SetBackgroundColor 255 255 255
-        SetTextColor  255 165 0
-        SetBorderColor  255 165 0
+        SetTextColor 255 165 0
+        SetBorderColor 255 165 0
         PlayAlertSound $SoundT0
+        MinimapIcon 0 Blue Square
+        PlayEffect Blue
     Branch Inherit # Divination Cards - T1 Div cards
         Tags @DivinationCards_T1
         SetFontSize 44
@@ -4917,12 +5073,16 @@ Show
         SetBackgroundColor 255 165 0 235
         SetBorderColor 255 255 255
         PlayAlertSound $SoundT2
+        MinimapIcon 1 Yellow Square
+        PlayEffect Yellow Temp
     Branch Hide # Divination Cards - T4 Div cards (trash)
         Tags @DivinationCards_T4
         SetFontSize 32
         SetBackgroundColor 255 165 0 180
         SetBorderColor 0 0 0
     Branch Show # Divination Cards - T3 Div cards (everything else)
+        MinimapIcon 2 White Square
+        PlayEffect White Temp
 
 #------------------------------------
 #    Temporary Leagues
@@ -4939,24 +5099,69 @@ Show # Leagues - Delve - Timeworn Reliquary Key
     SetTextColor 50 7 7
     SetBorderColor 255 215 0
     PlayAlertSound $SoundT0
+    MinimapIcon 0 Blue Hexagon
+    PlayEffect Blue
 
-Show # Leagues - Delve - Fossils
+Show
     Class "Currency"
-    BaseType "Fossil"
-    SetFontSize 42
-    SetTextColor 170 158 130
-    SetBorderColor 170 158 130
-    SetBackgroundColor 70 70 0
-    PlayAlertSound $SoundT2
+    Branch # Leagues - Delve - Fossils - T0
+        Tags @Fossils_T0
+        SetFontSize 45
+        SetBackgroundColor 255 178 57
+        SetTextColor 255 255 255
+        SetBorderColor 255 255 255
+        PlayAlertSound $SoundT0
+        MinimapIcon 0 Blue Hexagon
+        PlayEffect Blue
+    Branch # Leagues - Delve - Fossils - T1
+        Tags @Fossils_T1
+        SetFontSize 44
+        SetBackgroundColor 255 178 57
+        SetTextColor 175 57 18
+        SetBorderColor 255 255 255
+        PlayAlertSound $SoundT1
+        MinimapIcon 0 Brown Hexagon
+        PlayEffect Brown
+    Branch # Leagues - Delve - Fossils - T2
+        Tags @Fossils_T2
+        SetFontSize 36
+        SetBackgroundColor 255 178 57
+        SetTextColor 175 57 18
+        PlayAlertSound $SoundT2
+        MinimapIcon 1 Yellow Hexagon
+        PlayEffect Yellow Temp
 
-Show # Leagues - Delve - Resonators
+Show
     Class "Currency"
-    BaseType "Resonator"
-    SetFontSize 42
-    SetTextColor 170 158 130
-    SetBorderColor 170 158 130
-    SetBackgroundColor 70 70 0
-    PlayAlertSound $SoundT2
+    Branch # Leagues - Delve - Resonators
+        BaseType "Prime Alchemical Resonator" "Prime Chaotic Resonator"
+        SetBackgroundColor 0 34 66
+        SetTextColor 255 178 57
+        SetBorderColor 255 178 57
+        SetFontSize 45
+        PlayAlertSound $SoundT1
+        MinimapIcon 0 Brown Hexagon
+        PlayEffect Brown
+    Branch # Leagues - Delve - Resonators
+        BaseType "Powerful Alchemical Resonator" "Powerful Chaotic Resonator"
+        SetBackgroundColor 0 34 66
+        SetTextColor 255 178 57
+        SetBorderColor 255 178 57
+        SetFontSize 41
+        PlayAlertSound $SoundT2
+        MinimapIcon 2 White Hexagon
+        PlayEffect White Temp
+    Branch # Leagues - Delve - Resonators
+        BaseType "Potent Alchemical Resonator" "Potent Chaotic Resonator"
+        SetBackgroundColor 0 34 66 230
+        SetTextColor 255 178 57
+        SetFontSize 38
+        PlayAlertSound $SoundT3
+    Branch # Leagues - Delve - Resonators
+        BaseType "Primitive Alchemical Resonator" "Primitive Chaotic Resonator"
+        SetBackgroundColor 0 34 66 200
+        SetTextColor 255 178 57
+        SetFontSize 35
 
 #------------------------------------
 #    Incursion League
@@ -4977,34 +5182,6 @@ Show # Leagues - Incursion - Vials
     SetBackgroundColor 40 25 23
     SetTextColor 170 158 130
     SetBorderColor 255 75 60
-
-Show
-    SetFontSize 38
-    SetTextColor 255 75 60
-    SetBackgroundColor 0 0 60
-    SetBorderColor 255 75 60
-    Branch # Leagues - Incursion - Mods - Tacati's
-        HasExplicitMod "Tacati's"
-    Branch # Leagues - Incursion - Mods - Citaqualotl's
-        HasExplicitMod "Citaqualotl's"
-    Branch # Leagues - Incursion - Mods - Matatl's
-        HasExplicitMod "Matatl's"
-    Branch # Leagues - Incursion - Mods - Topotante's
-        HasExplicitMod "Topotante's"
-    Branch # Leagues - Incursion - Mods - Xopec's
-        HasExplicitMod "Xopec's"
-    Branch # Leagues - Incursion - Mods - Guatelitzi's
-        HasExplicitMod "Guatelitzi's"
-    Branch # Leagues - Incursion - Mods - of Tacati
-        HasExplicitMod "of Tacati"
-    Branch # Leagues - Incursion - Mods - of Citaqualotl
-        HasExplicitMod "of Citaqualotl"
-    Branch # Leagues - Incursion - Mods - of Matatl
-        HasExplicitMod "of Matatl"
-    Branch # Leagues - Incursion - Mods - of Puhuarte
-        HasExplicitMod "of Puhuarte"
-    Branch # Leagues - Incursion - Mods - of Guatelitzi
-        HasExplicitMod "of Guatelitzi"
 
 #------------------------------------
 #    Bestiary League
@@ -5072,7 +5249,6 @@ Show
         SetBackgroundColor 184 11 35
         PlayAlertSound $SoundT2
 
-
 #------------------------------------
 #    Harbinger League
 #------------------------------------
@@ -5080,21 +5256,26 @@ Show
     Class "Currency"
     SetTextColor 170 158 130
     SetBorderColor 170 158 130
-    Branch # Leagues - Harbinger - Currencies - T0 (Exalt Tier) - Harbinger's Orb
+    Branch # Leagues - Harbinger - Currencies - T1 (Divine Tier) - Harbinger's Orb
         BaseType "Harbinger's Orb"
         SetFontSize 45
         SetBackgroundColor 255 255 255
-        PlayAlertSound $SoundT0
+        PlayAlertSound $SoundT1
+        MinimapIcon 0 Brown Diamond
+        PlayEffect Brown
     Branch # Leagues - Harbinger - Currencies - T1 (Divine Tier) - Ancient Orb
         BaseType "Ancient Orb"
         SetFontSize 45
         SetBackgroundColor 255 255 255
         PlayAlertSound $SoundT1
+        MinimapIcon 0 Brown Diamond
+        PlayEffect Brown
     Branch # Leagues - Harbinger - Currencies - T2 (Chaos Tier) - Orb of Horizon
         BaseType "Orb of Horizons"
         SetFontSize 42
         SetBackgroundColor 70 70 0
         PlayAlertSound $SoundT2
+        MinimapIcon 1 Yellow Diamond
     Branch # Leagues - Harbinger - Currencies - T3 (Alteration Tier) - Engineer's Orb
         BaseType "Engineer's Orb"
         SetFontSize 37
@@ -5115,11 +5296,15 @@ Show
         SetFontSize 45
         SetBackgroundColor 255 255 255
         PlayAlertSound $SoundT0
+        MinimapIcon 0 Blue Diamond
+        PlayEffect Blue
     Branch # Leagues - Harbinger - Shards - T1 (Exalted Shard, Annulment Shard)
         Tags @Shard_T1
         SetFontSize 45
         SetBackgroundColor 255 255 255
         PlayAlertSound $SoundT1
+        MinimapIcon 1 Brown Diamond
+        PlayEffect Brown
     Branch # Leagues - Harbinger - Shards - T2 (Harbinger's Shard, Ancient Shard)
         Tags @Shard_T2
         SetFontSize 42
@@ -5215,6 +5400,7 @@ Show
         SetFontSize 50
         SetBackgroundColor 255 255 255
         PlayAlertSound $SoundT1
+        MinimapIcon 0 Red Diamond
     Branch # Leagues - Essence - Essences - T2
         Tags @Essences_T2
         SetFontSize 40
@@ -5222,15 +5408,18 @@ Show
         SetTextColor 180 195 245
         SetBorderColor 180 195 245
         PlayAlertSound $SoundT2
+        MinimapIcon 1 Red Diamond
     Branch # Leagues - Essence - Essences - Others
         BaseType "Essence"
         PlayAlertSound $SoundT3
+        MinimapIcon 2 Red Diamond
     Branch # Leagues - Essence - Remnant of Corruption
         BaseType "Remnant of Corruption"
         SetFontSize 42
         SetTextColor 250 20 0
         SetBorderColor 250 20 0
         PlayAlertSound $SoundT2
+        MinimapIcon 1 Red Diamond
 
 #------------------------------------
 #    Prophecy League
@@ -5243,6 +5432,7 @@ Show # Leagues - Prophecy - Silver Coins
     SetTextColor 128 0 200
     SetBorderColor 128 0 200
     PlayAlertSound $SoundT3
+    MinimapIcon 2 White Diamond
 Show # Leagues - Prophecy - Prophecies 
     Class "Currency"
     BaseType "Prophecy"
