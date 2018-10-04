@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.4.1a
+###Version 3.4.1b
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -152,9 +152,9 @@ SetTag @Currency_Regal
 SetTag @Currency_T0
     BaseType "Mirror of Kalandra" "Exalted Orb" "Eternal Orb"
 SetTag @Currency_T1
-    BaseType "Divine Orb" "Ancient Orb" "Orb of Annulment"
+    BaseType "Divine Orb" "Ancient Orb" "Orb of Annulment" "Harbinger's Orb"
 SetTag @Currency_T2
-    BaseType "Vaal Orb" "Blessed Orb" "Regal Orb" "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring" "Stacked Deck" "Unshaping Orb" "Seal" "Orb of Horizons" "Engineer's Orb" "Harbinger's Orb" "Orb of Alchemy"
+    BaseType "Vaal Orb" "Blessed Orb" "Regal Orb" "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring" "Stacked Deck" "Unshaping Orb" "Seal" "Orb of Horizons" "Engineer's Orb" "Orb of Alchemy"
 SetTag @Currency_T3
     BaseType "Orb of Alteration" "Glassblower's Bauble" "Jeweller's Orb" "Orb of Chance" "Chromatic Orb" "Orb of Binding"
 SetTag @Currency_T4
@@ -184,9 +184,9 @@ SetTag @Gems_DropOnly
 SetTag @DivinationCards_T0
     BaseType "Abandoned Wealth" "Beauty Through Death" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "The Devastator" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The Last One Standing" "The Master" "The Queen" "The Spark and the Flame" "The Wolven King's Bite" "The World Eater"
 SetTag @DivinationCards_T1
-    BaseType "Last Hope" "Perfection" "Pride Before the Fall" "The Artist" "The Beast" "The Brittle Emperor" "The Celestial Justicar" "The Celestial Stone" "The Dreamer" "The Endless Darkness" "The Enlightened" "The Formless Sea" "The Hale Heart" "The Hunger" "The Innocent" "The King's Heart" "The Mayor" "The Offering" "The Professor" "The Saint's Treasure" "The Samurai's Eye" "The Sword King's Salute" "The Undaunted" "The Undisputed" "The Valkyrie" "The Wilted Rose" "The Wind" "The Wolf" "Wealth and Power"
+    BaseType "Last Hope" "Perfection" "Pride Before the Fall" "The Artist" "The Beast" "The Brittle Emperor" "The Celestial Justicar" "The Celestial Stone" "The Dreamer" "The Endless Darkness" "The Enlightened" "The Formless Sea" "The Hale Heart" "The Hunger" "The King's Heart" "The Mayor" "The Offering" "The Professor" "The Saint's Treasure" "The Samurai's Eye" "The Sword King's Salute" "The Undaunted" "The Undisputed" "The Valkyrie" "The Wind" "The Wolf" "Wealth and Power" "Boon of the First Ones"
 SetTag @DivinationCards_T2
-    BaseType "Atziri's Arsenal" "Blessing of God" "Boon of the First Ones" "Bowyer's Dream" "Chaotic Disposition" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "Emperor's Luck" "Gemcutter's Promise" "Glimmer of Hope" "Harmony of Souls" "Heterochromia" "Hope" "Hubris" "Humility" "Hunter's Resolve" "Jack in the Box" "Left to Fate" "Lingering Remnants" "Lost Worlds" "Loyalty" "Lucky Connections" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "No Traces" "Rats" "Scholar of the Seas" "The Admirer" "The Aesthete" "The Arena Champion" "The Battle Born" "The Body" "The Breach" "The Cacophony" "The Cartographer" "The Cataclysm" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Deceiver" "The Demoness" "The Dreamland" "The Encroaching Darkness" "The Ethereal" "The Fathomless Depths" "The Fletcher" "The Forsaken" "The Harvester" "The Hoarder" "The Insatiable" "The Inventor" "The Jester" "The Jeweller's Boon" "The Lion" "The Obscured" "The One With All" "The Opulent" "The Pact" "The Penitent" "The Poet" "The Polymath" "The Porcupine" "The Price of Protection" "The Puzzle" "The Risk" "The Rite of Elements" "The Road to Power" "The Sephirot" "The Soul" "The Standoff" "The Stormcaller" "The Surveyor" "The Thaumaturgist" "The Throne" "The Traitor" "The Trial" "The Twilight Moon" "The Tyrant" "The Union" "The Valley of Steel Boxes" "The Vast" "The Void" "The Warlord" "The Witch" "The Wrath" "The Wretched" "Time-Lost Relic" "Treasure Hunter" "Vinia's Token"
+    BaseType "The Innocent" "The Wilted Rose" "Atziri's Arsenal" "Blessing of God" "Bowyer's Dream" "Chaotic Disposition" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "Emperor's Luck" "Gemcutter's Promise" "Glimmer of Hope" "Harmony of Souls" "Heterochromia" "Hope" "Hubris" "Humility" "Hunter's Resolve" "Jack in the Box" "Left to Fate" "Lingering Remnants" "Lost Worlds" "Loyalty" "Lucky Connections" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "No Traces" "Rats" "Scholar of the Seas" "The Admirer" "The Aesthete" "The Arena Champion" "The Battle Born" "The Body" "The Breach" "The Cacophony" "The Cartographer" "The Cataclysm" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Deceiver" "The Demoness" "The Dreamland" "The Encroaching Darkness" "The Ethereal" "The Fathomless Depths" "The Fletcher" "The Forsaken" "The Harvester" "The Hoarder" "The Insatiable" "The Inventor" "The Jester" "The Jeweller's Boon" "The Lion" "The Obscured" "The One With All" "The Opulent" "The Pact" "The Penitent" "The Poet" "The Polymath" "The Porcupine" "The Price of Protection" "The Puzzle" "The Risk" "The Rite of Elements" "The Road to Power" "The Sephirot" "The Soul" "The Standoff" "The Stormcaller" "The Surveyor" "The Thaumaturgist" "The Throne" "The Traitor" "The Trial" "The Twilight Moon" "The Tyrant" "The Union" "The Valley of Steel Boxes" "The Vast" "The Void" "The Warlord" "The Witch" "The Wrath" "The Wretched" "Time-Lost Relic" "Treasure Hunter" "Vinia's Token"
 SetTag @DivinationCards_T4
     BaseType "Anarchy's Price" "Death" "Destined to Crumble" "Struck by Lightning" "The Betrayal" "The Carrion Crow" "The Hermit" "The Incantation" "The King's Blade" "The Metalsmith's Gift" "The Web" "Thunderous Skies" "Turn the Other Cheek"
 
@@ -198,11 +198,11 @@ SetTag @Essences_T2
 
     #Tags Fossils
 SetTag @Fossils_T0
-    BaseType "Faceted Fossil" "Fractured Fossil" "Hollow Fossil"
+    BaseType "Bloodstained Fossil" "Faceted Fossil" "Fractured Fossil" "Glyphic Fossil" "Hollow Fossil" "Lucent Fossil" "Shuddering Fossil" "Tangled Fossil"
 SetTag @Fossils_T1
-    BaseType "Bloodstained Fossil" "Corroded Fossil" "Encrusted Fossil" "Gilded Fossil" "Glyphic Fossil" "Prismatic Fossil" "Sanctified Fossil" "Shuddering Fossil" "Tangled Fossil"
+    BaseType "Gilded Fossil" "Sanctified Fossil"
 SetTag @Fossils_T2
-    BaseType "Aetheric Fossil" "Aberrant Fossil" "Bound Fossil" "Dense Fossil" "Enchanted Fossil" "Frigid Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Perfect Fossil" "Pristine Fossil" "Scorched Fossil" "Serrated Fossil"
+    BaseType "Aetheric Fossil" "Aberrant Fossil" "Bound Fossil" "Corroded Fossil" "Dense Fossil" "Enchanted Fossil" "Encrusted Fossil" "Frigid Fossil" "Jagged Fossil" "Metallic Fossil" "Perfect Fossil" "Prismatic Fossil" "Pristine Fossil" "Scorched Fossil" "Serrated Fossil"
 
 #------------------------------------
 #    Fishing and weird stuff
@@ -4837,6 +4837,12 @@ Show
         SetFontSize 36
         SetTextColor 200 83 89
         SetBorderColor 170 158 130 0
+    Branch # Currency - Generic Currency - Stacks of Scroll of Wisdom
+        Tags @Currency_ScrollWisdom
+        StackSize = 20
+        SetFontSize 36
+        SetTextColor 200 83 89
+        SetBorderColor 200 83 89
 
     Branch # Currency - Outdated and not dropable Currency - T2 (Chaos Tier) - Unshaping Orb
         BaseType "Unshaping Orb"
@@ -5073,9 +5079,9 @@ Show
     Branch # Leagues - Delve - Fossils - T0
         Tags @Fossils_T0
         SetFontSize 45
-        SetBackgroundColor 255 178 57
-        SetTextColor 255 255 255
-        SetBorderColor 255 255 255
+        SetBackgroundColor 255 255 255
+        SetTextColor 255 178 57
+        SetBorderColor 255 178 57
         PlayAlertSound $SoundT0
         MinimapIcon 0 Blue Hexagon
         PlayEffect Blue
@@ -5083,7 +5089,7 @@ Show
         Tags @Fossils_T1
         SetFontSize 44
         SetBackgroundColor 255 178 57
-        SetTextColor 175 57 18
+        SetTextColor 255 255 255
         SetBorderColor 255 255 255
         PlayAlertSound $SoundT1
         MinimapIcon 0 Brown Hexagon
@@ -5101,20 +5107,20 @@ Show
     Class "Currency"
     Branch # Leagues - Delve - Resonators
         BaseType "Prime Alchemical Resonator" "Prime Chaotic Resonator"
-        SetBackgroundColor 0 34 66
-        SetTextColor 255 178 57
-        SetBorderColor 255 178 57
+        SetBackgroundColor 255 255 255
+        SetTextColor 0 34 66
+        SetBorderColor 0 34 66
         SetFontSize 45
-        PlayAlertSound $SoundT1
-        MinimapIcon 0 Brown Hexagon
-        PlayEffect Brown
+        PlayAlertSound $SoundT0
+        MinimapIcon 0 Blue Hexagon
+        PlayEffect Blue
     Branch # Leagues - Delve - Resonators
         BaseType "Powerful Alchemical Resonator" "Powerful Chaotic Resonator"
         SetBackgroundColor 0 34 66
         SetTextColor 255 178 57
         SetBorderColor 255 178 57
         SetFontSize 41
-        PlayAlertSound $SoundT2
+        PlayAlertSound $SoundT3
         MinimapIcon 2 White Hexagon
         PlayEffect White Temp
     Branch # Leagues - Delve - Resonators
@@ -5128,6 +5134,7 @@ Show
         SetBackgroundColor 0 34 66 200
         SetTextColor 255 178 57
         SetFontSize 35
+        PlayAlertSound $SoundT3
 
 #------------------------------------
 #    Incursion League
