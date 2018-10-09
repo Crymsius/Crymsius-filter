@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.4.1b
+###Version 3.4.1c
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -168,9 +168,9 @@ SetTag @Currency_ScrollWisdom
 SetTag @Shard_T0
     BaseType "Mirror Shard"
 SetTag @Shard_T1
-    BaseType "Exalted Shard" "Harbinger's Shard"
+    BaseType "Exalted Shard"
 SetTag @Shard_T2
-    BaseType "Ancient Shard" "Annulment Shard"
+    BaseType "Ancient Shard" "Annulment Shard" "Harbinger's Shard"
 SetTag @Shard_T3
     BaseType "Chaos Shard" "Regal Shard" "Binding Shard" "Horizon Shard" "Engineer's Shard" "Alchemy Shard"
 SetTag @Shard_T4
@@ -4832,17 +4832,17 @@ Show
         SetFontSize 36
         SetTextColor 130 130 180
         SetBorderColor 170 158 130 0
-        Branch # Currency - Generic Currency - Scroll of Wisdom
-        Tags @Currency_ScrollWisdom
-        SetFontSize 36
-        SetTextColor 200 83 89
-        SetBorderColor 170 158 130 0
     Branch # Currency - Generic Currency - Stacks of Scroll of Wisdom
         Tags @Currency_ScrollWisdom
         StackSize = 20
         SetFontSize 36
         SetTextColor 200 83 89
         SetBorderColor 200 83 89
+    Branch # Currency - Generic Currency - Scroll of Wisdom
+        Tags @Currency_ScrollWisdom
+        SetFontSize 36
+        SetTextColor 200 83 89
+        SetBorderColor 170 158 130 0
 
     Branch # Currency - Outdated and not dropable Currency - T2 (Chaos Tier) - Unshaping Orb
         BaseType "Unshaping Orb"
@@ -5264,26 +5264,26 @@ Show
     Class "Currency"
     SetTextColor 170 158 130
     SetBorderColor 88 124 244
-    Branch # Leagues - Harbinger - Shards - T0 (Mirror Shard)
+    Branch # Leagues - Harbinger - Shards - T0
         Tags @Shard_T0
         SetFontSize 45
         SetBackgroundColor 255 255 255
         PlayAlertSound $SoundT0
         MinimapIcon 0 Blue Diamond
         PlayEffect Blue
-    Branch # Leagues - Harbinger - Shards - T1 (Exalted Shard, Annulment Shard)
+    Branch # Leagues - Harbinger - Shards - T1
         Tags @Shard_T1
         SetFontSize 45
         SetBackgroundColor 255 255 255
         PlayAlertSound $SoundT1
         MinimapIcon 1 Brown Diamond
         PlayEffect Brown
-    Branch # Leagues - Harbinger - Shards - T2 (Harbinger's Shard, Ancient Shard)
+    Branch # Leagues - Harbinger - Shards - T2
         Tags @Shard_T2
         SetFontSize 42
         SetBackgroundColor 70 70 0
         PlayAlertSound $SoundT2
-    Branch # Leagues - Harbinger - Shards - T3 (Chaos Shard, Regal Shard, Binding Shard, Horizon Shard, Engineer's Shard)
+    Branch # Leagues - Harbinger - Shards - T3
         Tags @Shard_T3
         SetFontSize 37
         SetBackgroundColor 0 0 60
