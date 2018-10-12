@@ -64,6 +64,7 @@ def CleanFolders():
 def CommitPush():
     currentDatetime = datetime.datetime.now().strftime('%Y.%m.%d_%H:%M')
     subprocess.check_call(['git', 'commit', '-a', '-m', 'AutoUpdater '+currentDatetime])
+    subprocess.check_call(['git', 'push'])
 
 def ClearTiers():
     for tiers in tierlists:
