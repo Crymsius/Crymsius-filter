@@ -1,25 +1,21 @@
 ###Crymsius-filter
-###Version 3.4.1e_2018.10.12_14:27
+###Version 3.4.2_2018.10.12_14:27
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
-SetOption $Introduction info [Here you'll discover a sleek filter, designed by and for colour blind (and others !) with highlights for recipes, good bases, tiers and an emphasis on colour schemes that respect PoE's ones! You can customize the filter with the following options, and later, select the smartblocks you want to display or hide.] # Welcome to the filter! 
-SetOption $Links link [GitHub] [https://github.com/Crymsius/Crymsius-filter] [Forum Thread] [https://www.pathofexile.com/forum/view-thread/1895126] [Uniques and Divination Card Tiers] [https://docs.google.com/spreadsheets/d/1cUh1WLdLab-aYctvH4RMX2iYvLX0gKimbf-v0UR03Qs/edit?usp=sharing]
+SetOption $Introduction info [Here you'll discover a sleek filter, designed by and for colour blind (and others !) with highlights for recipes, good bases, tiers and an emphasis on colour schemes that respect PoE's ones! You can customize the filter with the following options, and later, select the smartblocks you want to display or hide.] # Welcome to the filter!
+SetOption $AutoUpdates info [The filter is automatically updated twice a day to change uniques and divination cards' tiers and reflect the economy, thanks to poe.ninja data. To best use this feature, you should use FilterNova, a tool that will keep your local filter updated] # Always match the economy!
+SetOption $Links link [GitHub] [https://github.com/Crymsius/Crymsius-filter] [Forum Thread] [https://www.pathofexile.com/forum/view-thread/1895126] [FilterNova] [http://filterblast.oversoul.xyz/filternova.html]
 
+
+
+SetTab [Block switches]
+SetTab [Custom Item BaseTypes]
 # //! SetOption $Highlighted_Maps textarea ["Burial Chambers"] # Add or delete the name of maps you want to highlight. You can enable the highlight in the block switches (off by default)
 # //! SetOption $Highlighted_Shaped_Maps textarea ["Burial Chambers"] # Add or delete the name of shaped maps you want to highlight (Just the name, without "Shaped"). You can enable the highlight in the block switches (off by default)
 # //! SetOption $Highlighted_Elder_Maps textarea ["Burial Chambers"] # Add or delete the name of elder maps you want to highlight (Just the name, without "Elder"). You can enable the highlight in the block switches (off by default)
 # //! SetOption $Chance_Bases textarea ["Gold Amulet"] # Add or delete the bases for items you want to chance. You can enable the highlight in the block switches (off by default)
 # //! SetOption $Crafting_Bases textarea ["Jade Amulet"] # Add or delete the bases for items you want to craft (ilvl≥84). You can enable the highlight in the block switches (off by default)
-
-# T0 : > 25c
-# T1 : 10c - 25c
-# T2 : 1c - 10c
-# T3 : 1alc - 10c
-# T4 : < 1alc
-
-#Sound alerts :
-SetTab [Block switches]
 SetTab [Sound theme]
 SetOption $SoundPositioning switch [off] [on] [off] # New feature from 3.0, Allow sound to be played from the location of the drop. It may lower the sound level, use with caution.
 SetOption $ShaperAnnouncements switch [Disable] [Show] # Select Show if you want Shaper to announce a Mirror/Exalted/Divine drop. (if Shown, overrides the sounds for Mirror/Exalted/Divine set up below)
@@ -28,6 +24,7 @@ SetGlobalSoundPositioning $SoundPositioning
 
 SetOption $EmptyLine
 
+#Sound alerts :
 SetSound $SoundMirror 5 300 # Mirror Orb
 SetSound $SoundExalted 5 300 # Exalted Orb
 SetSound $SoundDivine 4 300 # Divine Orb
