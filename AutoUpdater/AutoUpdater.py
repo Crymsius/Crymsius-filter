@@ -1,5 +1,6 @@
 # coding: utf-8
 
+import os
 import sys
 import requests
 import json
@@ -55,6 +56,14 @@ def UpdateVersion():
     subprocess.check_call(['./sedbashUpdateVersion.sh', currentDatetime, "Crymsius-filter-filterblast.filter"])
     subprocess.check_call(['./sedbashUpdateVersion.sh', currentDatetime, "filterblast.config"])
 
+def CleanFolders():
+    os.remove('Crymsius-filter-filterblast.filter-e')
+    os.remove('filterblast.config-e')
+    os.remove('insertBases.tmp')
+
+def CommitPush():
+    currentDatetime = datetime.datetime.now().strftime('%Y.%m.%d_%H:%M')
+    subprocess.check_call(['git', 'commit', '-a', '-m', 'AutoUpdater '+currentDatetime])
 
 def ClearTiers():
     for tiers in tierlists:
@@ -141,5 +150,8 @@ if __name__ == '__main__':
     Replace("divCards")
 
     UpdateVersion()
-    # Commit push
+
+    CleanFolders()
+    CommitPush()
+
     sys.exit()
