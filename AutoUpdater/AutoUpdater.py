@@ -8,6 +8,9 @@ import subprocess
 import datetime
 from itertools import groupby
 
+def PullFiles():
+    subprocess.check_call(['git', 'pull'])
+
 def Fetch(itemType):
     r= requests.get(classes[itemType]["url"])
     return r.json()
@@ -132,6 +135,8 @@ if __name__ == '__main__':
     }
 
     tierlists = [[], [], [], [], [], []] #T0,1,2,3,4,mix
+
+    PullFiles()
 
     flasks = Fetch("flasks")
     weapons = Fetch("weapons")
