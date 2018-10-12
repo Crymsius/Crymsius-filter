@@ -60,9 +60,12 @@ def UpdateVersion():
     subprocess.check_call(['./sedbashUpdateVersion.sh', currentDatetime, "filterblast.config"])
 
 def CleanFolders():
-    os.remove('Crymsius-filter-filterblast.filter-e')
-    os.remove('filterblast.config-e')
-    os.remove('insertBases.tmp')
+    if os.path.exists('Crymsius-filter-filterblast.filter-e'):
+        os.remove('Crymsius-filter-filterblast.filter-e')
+    if os.path.exists('filterblast.config-e'):
+        os.remove('filterblast.config-e')
+    if os.path.exists('insertBases.tmp'):
+        os.remove('insertBases.tmp')
 
 def CommitPush():
     currentDatetime = datetime.datetime.now().strftime('%Y.%m.%d_%H:%M')
