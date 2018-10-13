@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.4.2_2018.10.13_12:00
+###Version 3.4.3_2018.10.13_12:00
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -14,6 +14,9 @@ SetTab [Custom Item BaseTypes]
 # //! SetOption $Highlighted_Maps textarea ["Burial Chambers"] # Add or delete the name of maps you want to highlight. You can enable the highlight in the block switches (off by default)
 # //! SetOption $Highlighted_Shaped_Maps textarea ["Burial Chambers"] # Add or delete the name of shaped maps you want to highlight (Just the name, without "Shaped"). You can enable the highlight in the block switches (off by default)
 # //! SetOption $Highlighted_Elder_Maps textarea ["Burial Chambers"] # Add or delete the name of elder maps you want to highlight (Just the name, without "Elder"). You can enable the highlight in the block switches (off by default)
+# //! SetOption $Highlighted_Rares_Weapons textarea ["Void Sceptre" "Opal Sceptre" "Profane Wand" "Prophecy Wand" "Opal Wand" "Sambar Sceptre" "Imbued Wand" "Lion Sword" "Vaal Greatsword" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Platinum Kris" "Demon Dagger" "Imperial Skean" "Vaal Hatchet" "Runic Hatchet" "Behemoth Mace" "Eternal Sword" "Tiger Hook" "Eclipse Staff" "Maelström Staff" "Judgement Staff" "Jewelled Foil" "Dragoon Sword" "Sai"] # Add or delete the bases for rare weapons you want to highlight. You can disable the highlight in the block switches (on by default)
+# //! SetOption $Highlighted_Rares_Armours textarea ["Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Saintly Chainmail" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titan Gauntlets" "Slink Gloves" "Eternal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots" "Imperial Buckler" "Lacquered Buckler" "Crusader Buckler" "Astral Plate"] # Add or delete the bases for rare armours you want to highlight. You can disable the highlight in the block switches (on by default)
+# //! SetOption $Highlighted_Rares_Accessories textarea ["Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold Ring" "Gold Amulet" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather Belt" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash"] # Add or delete the bases for rare accessories you want to highlight. You can disable the highlight in the block switches (on by default)
 # //! SetOption $Chance_Bases textarea ["Gold Amulet"] # Add or delete the bases for items you want to chance. You can enable the highlight in the block switches (off by default)
 # //! SetOption $Crafting_Bases textarea ["Jade Amulet"] # Add or delete the bases for items you want to craft (ilvl≥84). You can enable the highlight in the block switches (off by default)
 SetTab [Sound theme]
@@ -85,10 +88,6 @@ SetTag @AtlasAndSpecialBases_T1
     BaseType "Crystal Belt" "Blue Pearl Amulet" "Marble Amulet"
 SetTag @AtlasAndSpecialBases_T2
     BaseType "Sacrificial Garb" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-
-#Tags Rare good bases
-SetTag @GoodBases
-BaseType "Void Sceptre" "Opal Sceptre" "Profane Wand" "Prophecy Wand" "Opal Wand" "Sambar Sceptre" "Imbued Wand" "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves" "Hubris Circlet" "Saintly Chainmail" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titan Gauntlets" "Slink Gloves" "Eternal Burgonet" "Lion Pelt" "Titan Greaves" "Slink Boots" "Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold Ring" "Gold Amulet" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather Belt" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash" "Lion Sword" "Vaal Greatsword" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Platinum Kris" "Demon Dagger" "Imperial Skean" "Vaal Hatchet" "Runic Hatchet" "Behemoth Mace" "Eternal Sword" "Tiger Hook" "Eclipse Staff" "Maelstr" "Judgement Staff" "Jewelled Foil" "Dragoon Sword" "Sai" "Imperial Buckler" "Lacquered Buckler" "Crusader Buckler" "Astral Plate"
 
 #Tags Currencies - Orbs
 SetTag @Currency_Mirror
@@ -272,11 +271,12 @@ Show
 
 Show # Uniques - Other Uniques
     Rarity Unique
-    SetFontSize 40
-    SetBackgroundColor 70 20 0
-    SetBorderColor 175 96 37
+    SetFontSize 50
+    SetBackgroundColor 175 96 37
+    SetTextColor 70 20 0
+    SetBorderColor 255 255 255
     PlayAlertSound $SoundUniques
-    MinimapIcon 1 Red Star
+    MinimapIcon 0 Red Star
     PlayEffect Red
 #------------------------------------
 #    Maps
@@ -4432,11 +4432,11 @@ Show
     SetFontSize 45
     SetBackgroundColor 255 255 119
     SetTextColor 100 100 0
-    Branch # Rares - Regal Recipe (ilvl 75+) - Highlight Corrupted | Comment
+    Branch # Rares - Highlight Corrupted | Comment
         Corrupted True
         SetFontSize 40
         SetBorderColor 250 20 0
-    Branch # Rares - Regal Recipe (ilvl 75+) - Highlight Identified | Comment
+    Branch # Rares - Highlight Identified | Comment
         Identified True
         SetFontSize 40
         SetBorderColor 100 100 0
@@ -4448,35 +4448,45 @@ Show
     SetFontSize 38
     SetBackgroundColor 50 50 0
     SetTextColor 255 255 119
-    Branch # Rares - Chaos Recipe (ilvl 60 to 75) - Highlight Corrupted | Comment
+    Branch # Rares - Highlight Corrupted | Comment
         Corrupted True
         SetFontSize 35
         SetBorderColor 250 20 0
-    Branch # Rares - Chaos Recipe (ilvl 60 to 75) - Highlight Identified | Comment
+    Branch # Rares - Highlight Identified | Comment
         Identified True
         SetFontSize 35
         SetBorderColor 255 255 119
 
-#------------------------------------
-#   Rares and Chaos / Regal Recipe
-#------------------------------------
-Show # Rares - Regal Recipe (ilvl 75+) - Highlight Good Bases | Comment
-    Tags @GoodBases
+Show
     Rarity Rare
     ItemLevel >= 75
     SetFontSize 45
     SetBackgroundColor 255 255 119
     SetTextColor 100 100 0
     SetBorderColor 255 255 255
-Show # Rares - Chaos Recipe (ilvl 60 to 75) - Highlight Good Base | Comment
-    Tags @GoodBases
+    Branch # Rares - Highlight Good Bases - Weapons | Comment
+        BaseType $Highlighted_Rares_Weapons
+    Branch # Rares - Highlight Good Bases - Armours | Comment
+        BaseType $Highlighted_Rares_Armours
+    Branch # Rares - Highlight Good Bases - Accessories | Comment
+        BaseType $Highlighted_Rares_Accessories
+Show
     Rarity Rare
     ItemLevel >= 60
     SetFontSize 41
     SetBackgroundColor 50 50 0
     SetTextColor 255 255 119
     SetBorderColor 255 255 255
+    Branch # Rares - Highlight Good Bases - Weapons | Comment
+        BaseType $Highlighted_Rares_Weapons
+    Branch # Rares - Highlight Good Bases - Armours | Comment
+        BaseType $Highlighted_Rares_Armours
+    Branch # Rares - Highlight Good Bases - Accessories | Comment
+        BaseType $Highlighted_Rares_Accessories
 
+#------------------------------------
+#   Rares and Chaos / Regal Recipe
+#------------------------------------
 #Regal Recipe
 Show
     Rarity Rare
@@ -4512,7 +4522,7 @@ Show
     Branch # Rares - Chaos Recipe (ilvl 60 to 75) - Helmet, Boots, Gloves | Comment
         Class "Helmets" "Boots" "Gloves"
         SetBorderColor 0 0 0
-    Branch Hide # Rares - Chaos Recipe (ilvl 60 to 75) - Other Bases (everything not shown for regal recipe and not the good tier bases)
+    Branch Hide # Rares - Chaos Recipe (ilvl 60 to 75) - Other Bases (everything not shown for chaos recipe and not the good tier bases)
         SetBorderColor 255 255 119
 
 #------------------------------------
@@ -5245,8 +5255,17 @@ Show
     Branch # Leagues - Breach - Splinters - Chayula
         BaseType "Splinter of Chayula"
         PlayAlertSound $SoundT2
-    Branch # Leagues - Breach - Splinters - Others
-        BaseType "Splinter"
+    Branch # Leagues - Breach - Splinters - Uul-Netol
+        BaseType "Splinter of Uul-Netol"
+        PlayAlertSound $SoundT3
+    Branch # Leagues - Breach - Splinters - Xoph
+        BaseType "Splinter of Xoph"
+        PlayAlertSound $SoundT3
+    Branch # Leagues - Breach - Splinters - Esh
+        BaseType "Splinter of Esh"
+        PlayAlertSound $SoundT3
+    Branch # Leagues - Breach - Splinters - Tul
+        BaseType "Splinter of Tul"
         PlayAlertSound $SoundT3
 #Blessings
 Show
@@ -5255,11 +5274,20 @@ Show
     SetBackgroundColor 200 0 0
     SetTextColor 170 158 130
     SetBorderColor 130 0 200
-    Branch # Leagues - Breach - Blessings - Chayula and Esh
-        BaseType "Blessing of Chayula" "Blessing of Esh"
-        PlayAlertSound $SoundT1
-    Branch # Leagues - Breach - Blessings - Others
-        BaseType "Blessing"
+    Branch # Leagues - Breach - Blessings - Chayula
+        BaseType "Blessing of Chayula"
+        PlayAlertSound $SoundT0
+    Branch # Leagues - Breach - Blessings - Uul-Netol
+        BaseType "Blessing of Uul-Netol"
+        PlayAlertSound $SoundT2
+    Branch # Leagues - Breach - Blessings - Xoph
+        BaseType "Blessing of Xoph"
+        PlayAlertSound $SoundT2
+    Branch # Leagues - Breach - Blessings - Esh
+        BaseType "Blessing of Esh"
+        PlayAlertSound $SoundT2
+    Branch # Leagues - Breach - Blessings - Tul
+        BaseType "Blessing of Tul"
         PlayAlertSound $SoundT2
 #BreachStones
 Show
@@ -5270,9 +5298,24 @@ Show
         BaseType "Chayula's Breachstone"
         SetBackgroundColor 200 0 0
         SetTextColor 0 0 0
-        PlayAlertSound $SoundT1
-    Branch # Leagues - Breach - Breachstones - Others
-        BaseType "Breachstone"
+        PlayAlertSound $SoundT0
+    Branch # Leagues - Breach - Breachstones - Uul-Netol
+        BaseType "Uul-Netol's Breachstone"
+        SetBackgroundColor 0 0 0
+        SetTextColor 200 0 0
+        PlayAlertSound $SoundT2
+    Branch # Leagues - Breach - Breachstones - Xoph
+        BaseType "Xoph's Breachstone"
+        SetBackgroundColor 0 0 0
+        SetTextColor 200 0 0
+        PlayAlertSound $SoundT0
+    Branch # Leagues - Breach - Breachstones - Esh
+        BaseType "Esh's Breachstone"
+        SetBackgroundColor 0 0 0
+        SetTextColor 200 0 0
+        PlayAlertSound $SoundT2
+    Branch # Leagues - Breach - Breachstones - Tul
+        BaseType "Tul's Breachstone"
         SetBackgroundColor 0 0 0
         SetTextColor 200 0 0
         PlayAlertSound $SoundT2
