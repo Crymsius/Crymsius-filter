@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.4.3_2018.10.20_00:00
+###Version 3.4.3a_2018.10.20_10:50
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -39,6 +39,8 @@ SetSound $SoundT0 5 300 # T0 Drop (Exalt)
 SetSound $SoundT1 4 300 # T1 Drop (Divine)
 SetSound $SoundT2 8 200 # T2 Drop (Chaos)
 SetSound $SoundT3 7 100 # T3 Drop (Chance)
+SetSound $SoundTUnknown 6 300 # TUnknown Drop (When no data is available on poe.ninja)
+SetSound $SoundTMix 6 300 # TMix Drop (Exalt/Divine + Lower Tier but cannot determine which)
 
 SetSound $Sound6S 3 100 # 6S Items
 SetSound $Sound6L 1 300 # 6L Items
@@ -49,8 +51,6 @@ SetSound $SoundMapsT1 10 300 # Red Maps
 SetSound $SoundMapsT2 11 270 # Yellow Maps
 SetSound $SoundMapsT3 2 250 # White Maps
 
-SetSound $SoundUniques 6 200 # Uniques
-SetSound $SoundTMix 6 250 # Uniques Mixed
 SetSound $SoundTalismans 12 250 # Talismans
 SetSound $SoundLeveling 14 200 # Leveling Highlight
 SetSound $SoundQuest 15 300 # Quest Item and Shaper's Orb
@@ -157,9 +157,9 @@ SetTag @Essences_T2
 SetTag @Fossils_T0
     BaseType "Bloodstained Fossil" "Faceted Fossil" "Fractured Fossil" "Glyphic Fossil" "Hollow Fossil" "Tangled Fossil"
 SetTag @Fossils_T1
-    BaseType "Encrusted Fossil" "Gilded Fossil" "Sanctified Fossil" "Shuddering Fossil"
+    BaseType "Encrusted Fossil" "Gilded Fossil" "Sanctified Fossil"
 SetTag @Fossils_T2
-    BaseType "Aetheric Fossil" "Aberrant Fossil" "Bound Fossil" "Corroded Fossil" "Dense Fossil" "Enchanted Fossil" "Frigid Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Perfect Fossil" "Prismatic Fossil" "Pristine Fossil" "Scorched Fossil" "Serrated Fossil"
+    BaseType "Aetheric Fossil" "Aberrant Fossil" "Bound Fossil" "Corroded Fossil" "Dense Fossil" "Enchanted Fossil" "Frigid Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Perfect Fossil" "Prismatic Fossil" "Pristine Fossil" "Scorched Fossil" "Serrated Fossil" "Shuddering Fossil"
 
 #------------------------------------
 #    Fishing and weird stuff
@@ -205,7 +205,7 @@ Show # Leagues - Talisman - Unique Talismans
     SetBackgroundColor 130 220 140
     SetTextColor 175 96 37
     SetBorderColor 175 96 37
-    PlayAlertSound $SoundUniques
+    PlayAlertSound $SoundTUnknown
     MinimapIcon 0 Red Star
     PlayEffect Red
 Show
@@ -263,21 +263,14 @@ Show
     SetBackgroundColor 175 96 37
     SetTextColor 70 20 0
     SetBorderColor 255 255 255
-    PlayAlertSound $SoundTMix
     MinimapIcon 0 Red Star
     PlayEffect Red
-    Branch #Uniques - TMix
+    Branch #Uniques - TMix (same BaseItem used for T0 or T1 and Tless)
         Tags @Uniques_AutoUpdater_TMix
+        PlayAlertSound $SoundTMix
+    Branch # Uniques - Tier Unknown (no data on Poe.ninja)
+        PlayAlertSound $SoundTUnknown
 
-Show # Uniques - Other Uniques
-    Rarity Unique
-    SetFontSize 50
-    SetBackgroundColor 175 96 37
-    SetTextColor 70 20 0
-    SetBorderColor 255 255 255
-    PlayAlertSound $SoundUniques
-    MinimapIcon 0 Red Star
-    PlayEffect Red
 #------------------------------------
 #    Maps
 #------------------------------------
@@ -4906,21 +4899,7 @@ Show
 #------------------------------------
 Show
     Class "Divination"
-    SetFontSize 38
-    SetBackgroundColor 255 165 0 210
-    SetTextColor 0 0 0
-    SetBorderColor 255 165 0
-    #One of each tier to display in correct order in filterblast
-    Branch Inherit # Divination Cards - T0 Div cards
-        BaseType "House of Mirrors"
-        SetFontSize 45
-        SetBackgroundColor 255 255 255
-        SetTextColor 255 165 0
-        SetBorderColor 255 165 0
-        PlayAlertSound $SoundT0
-        MinimapIcon 0 Blue Square
-        PlayEffect Blue
-    # Beauty Through Death (T0) here to prevent exception with Death (T4)
+    #One of each tier to display in correct order in filterblas. Beauty Through Death (T0) here to prevent exception with Death (T4)
     Branch Inherit # Divination Cards - T0 Div cards
         BaseType "Beauty Through Death"
         SetFontSize 45
@@ -4931,7 +4910,7 @@ Show
         MinimapIcon 0 Blue Square
         PlayEffect Blue
     Branch Inherit # Divination Cards - T1 Div cards
-        BaseType "Last Hope"
+        BaseType "The Hunger"
         SetFontSize 44
         SetBackgroundColor 255 165 0 245
         SetTextColor 255 255 255
@@ -4943,14 +4922,19 @@ Show
         BaseType "The Road to Power"
         SetFontSize 40
         SetBackgroundColor 255 165 0 235
+        SetTextColor 0 0 0
         SetBorderColor 255 255 255
         PlayAlertSound $SoundT2
         MinimapIcon 1 Yellow Square
         PlayEffect Yellow Temp
-    # wolf's shadow here to prevent exception with The Wolf - Also allows for T4 to be displayed before T5
+    # wolf's shadow here to prevent exception with The Wolf - Also allows for T3 to be displayed before T4
     Branch Inherit # Divination Cards - T3 Div cards (everything else)
         BaseType "The Wolf's Shadow"
         SetFontSize 38
+        SetBackgroundColor 255 165 0 210
+        SetTextColor 0 0 0
+        SetBorderColor 255 165 0
+        MinimapIcon 2 White Square
     Branch Inherit # Divination Cards - T0 Div cards
         Tags @DivinationCards_T0
         SetFontSize 45
@@ -4971,6 +4955,7 @@ Show
         Tags @DivinationCards_T2
         SetFontSize 40
         SetBackgroundColor 255 165 0 235
+        SetTextColor 0 0 0
         SetBorderColor 255 255 255
         PlayAlertSound $SoundT2
         MinimapIcon 1 Yellow Square
@@ -4979,10 +4964,24 @@ Show
         Tags @DivinationCards_T4
         SetFontSize 32
         SetBackgroundColor 255 165 0 180
+        SetTextColor 0 0 0
         SetBorderColor 0 0 0
-    Branch Show # Divination Cards - T3 Div cards (everything else)
+    Branch Show # Divination Cards - T3 Div cards
+        Tags @DivinationCards_T3
+        SetFontSize 38
+        SetBackgroundColor 255 165 0 210
+        SetTextColor 0 0 0
+        SetBorderColor 255 165 0
         MinimapIcon 2 White Square
         PlayEffect White Temp
+    Branch Show # Divination Cards - TUnknown Div cards (Divination cards not referenced on Poe.ninja)
+        SetFontSize 43
+        SetBackgroundColor 194 52 0 255
+        SetTextColor 255 165 0
+        SetBorderColor 255 165 0
+        MinimapIcon 0 Red Square
+        PlayEffect Red
+        PlayAlertSound $SoundTUnknown
 
 #------------------------------------
 #    Temporary Leagues
