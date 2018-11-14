@@ -62,23 +62,29 @@ def ParseDivCards(items):
     for item in relevantDivCards:
         PutInTier(item['name'], FindTier(item['chaosValue']), tierlists)
 
+def ParseFossils(items):
+    relevantFossils = [fossil for fossil in items['lines'] if fossil["count"] > 10]
+    for item in relevantFossils:
+        PutInTier(item['name'], FindTier(item['chaosValue']), tierlists)
+
 def Replace(itemType):
     i = 0
-    data = []
-    while i < len(tierlists):
-        if tierlists[i]:
-            data.append(classes[itemType]["tag"] + tier[i])
-            data.append('    BaseType ' + ' '.join('"{0}"'.format(tier.encode('utf-8')) for tier in tierlists[i]))
-        i += 1
+    with open('insertBases.tmp', "w") as tempFileTags:
+        with open('insertSections.tmp', "w") as tempFileSections:
+            while i < len(tierlists):
+                if tierlists[i]:
+                    #first : updating tags
+                    tempFileTags.write(classes[itemType]["tag"] + tier[i] + '\n')
 
-    data = '\n'.join(data)
-    data += '\n'
+                    tempFileTags.write('    BaseType ' + ' '.join('"{0}"'.format(tier.encode('utf-8')) for tier in tierlists[i]) + '\n')
 
-    with open('insertBases.tmp', "w") as tempFile:
-        tempFile.write(data)
+                    #second : updating filter section relative to the tier
+                    tempFileSections.write(classes[itemType]["section"][i] + '\n')
+                i += 1
 
     #sed script
     subprocess.check_call(['./sedbashReplaceBases.sh', classes[itemType]["startTag"], classes[itemType]["endTag"]])
+    subprocess.check_call(['./sedbashReplaceSections.sh', classes[itemType]["startSection"], classes[itemType]["endSection"]])
     ClearTiers()
 
 def UpdateVersion():
@@ -93,6 +99,8 @@ def CleanFolders():
         os.remove('filterblast.config-e')
     if os.path.exists('insertBases.tmp'):
         os.remove('insertBases.tmp')
+    if os.path.exists('insertSections.tmp'):
+        os.remove('insertSections.tmp')
 
 def CommitPush():
     currentDatetime = datetime.datetime.now().strftime('%Y.%m.%d_%H:%M')
@@ -149,16 +157,164 @@ if __name__ == '__main__':
         "maps": {
             "url": "https://poe.ninja/api/data/ItemOverview?league=Delve&type=UniqueMap"
         },
+        "jewels": {
+            "url": "https://poe.ninja/api/data/ItemOverview?league=Delve&type=UniqueJewel"
+        },
         "allUniques": {
             "tag": "SetTag @Uniques_AutoUpdater_",
             "startTag": "#AutoUpdater_AllUniques_start",
             "endTag": "#AutoUpdater_AllUniques_end",
+            "startSection": "#AutoUpdater_AllUniques_section_start",
+            "endSection": "#AutoUpdater_AllUniques_section_end",
+            "section": [
+'''    Branch #Uniques - T0
+        Tags @Uniques_AutoUpdater_T0
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        SetBorderColor 175 96 37
+        PlayAlertSound $SoundT0
+        MinimapIcon 0 Blue Star
+        PlayEffect Blue''',
+'''    Branch #Uniques - T1
+        Tags @Uniques_AutoUpdater_T1
+        SetFontSize 45
+        SetBackgroundColor 70 20 0
+        SetTextColor 255 255 255
+        SetBorderColor 175 96 37
+        PlayAlertSound $SoundT1
+        MinimapIcon 0 Brown Star
+        PlayEffect Brown''',
+'''    Branch #Uniques - T2
+        Tags @Uniques_AutoUpdater_T2
+        SetFontSize 45
+        SetBackgroundColor 70 20 0
+        SetBorderColor 255 255 255
+        PlayAlertSound $SoundT2
+        MinimapIcon 1 Yellow Star
+        PlayEffect Yellow Temp''',
+'''    Branch #Uniques - T3
+        Tags @Uniques_AutoUpdater_T3
+        SetFontSize 40
+        SetBackgroundColor 70 20 0
+        SetBorderColor 175 96 37
+        PlayAlertSound $SoundT3
+        MinimapIcon 2 White Star
+        PlayEffect White Temp''',
+'''    Branch #Uniques - T4
+        Tags @Uniques_AutoUpdater_T4
+        SetFontSize 30
+        SetBackgroundColor 70 20 0 200''',
+'''    Branch #Uniques - TMix (same BaseItem used for T0 or T1 and Tless)
+        Tags @Uniques_AutoUpdater_TMix
+        SetFontSize 50
+        SetBackgroundColor 175 96 37
+        SetTextColor 70 20 0
+        SetBorderColor 255 255 255
+        MinimapIcon 0 Red Star
+        PlayEffect Red
+        PlayAlertSound $SoundTMix'''
+            ]
         },
         "divCards": {
             "url": "https://poe.ninja/api/data/ItemOverview?league=Delve&type=DivinationCard",
             "tag": "SetTag @DivinationCards_",
             "startTag": "#AutoUpdater_DivCards_start",
             "endTag": "#AutoUpdater_DivCards_end",
+            "startSection" : "#AutoUpdater_DivCards_section_start",
+            "endSection" : "#AutoUpdater_DivCards_section_end",
+            "section": [
+'''    Branch Inherit # Divination Cards - T0 Div cards
+        Tags @DivinationCards_T0
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        SetTextColor 255 165 0
+        SetBorderColor 255 165 0
+        PlayAlertSound $SoundT0
+        MinimapIcon 0 Blue Square
+        PlayEffect Blue''',
+'''    Branch Inherit # Divination Cards - T1 Div cards
+        Tags @DivinationCards_T1
+        SetFontSize 44
+        SetBackgroundColor 255 165 0 245
+        SetTextColor 255 255 255
+        SetBorderColor 255 255 255
+        PlayAlertSound $SoundT1''',
+'''    Branch Inherit # Divination Cards - T2 Div cards
+        Tags @DivinationCards_T2
+        SetFontSize 40
+        SetBackgroundColor 255 165 0 235
+        SetTextColor 0 0 0
+        SetBorderColor 255 255 255
+        PlayAlertSound $SoundT2
+        MinimapIcon 1 Yellow Square
+        PlayEffect Yellow Temp''',
+'''    Branch Show # Divination Cards - T3 Div cards
+        Tags @DivinationCards_T3
+        SetFontSize 38
+        SetBackgroundColor 255 165 0 210
+        SetTextColor 0 0 0
+        SetBorderColor 255 165 0
+        MinimapIcon 2 White Square
+        PlayEffect White Temp''',
+'''    Branch Hide # Divination Cards - T4 Div cards (trash)
+        Tags @DivinationCards_T4
+        SetFontSize 32
+        SetBackgroundColor 255 165 0 180
+        SetTextColor 0 0 0
+        SetBorderColor 0 0 0'''
+            ]
+        },
+        "fossils": {
+            "url": "https://poe.ninja/api/data/itemoverview?league=Delve&type=Fossil",
+            "tag": "SetTag @Fossils_",
+            "startTag": "#AutoUpdater_Fossils_start",
+            "endTag": "#AutoUpdater_Fossils_end",
+            "startSection": "#AutoUpdater_Fossils_section_start",
+            "endSection": "#AutoUpdater_Fossils_section_end",
+            "section": [
+'''    Branch # Leagues - Delve - Fossils - T0
+        Tags @Fossils_T0
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        SetTextColor 255 178 57
+        SetBorderColor 255 178 57
+        PlayAlertSound $SoundT0
+        MinimapIcon 0 Blue Hexagon
+        PlayEffect Blue''',
+'''    Branch # Leagues - Delve - Fossils - T1
+        Tags @Fossils_T1
+        SetFontSize 44
+        SetBackgroundColor 255 178 57
+        SetTextColor 255 255 255
+        SetBorderColor 255 255 255
+        PlayAlertSound $SoundT1
+        MinimapIcon 0 Brown Hexagon
+        PlayEffect Brown''',
+'''    Branch # Leagues - Delve - Fossils - T2
+        Tags @Fossils_T2
+        SetFontSize 40
+        SetBackgroundColor 255 178 57
+        SetTextColor 175 57 18
+        SetBorderColor 255 255 255
+        PlayAlertSound $SoundT2
+        MinimapIcon 1 Yellow Hexagon
+        PlayEffect Yellow Temp''',
+'''    Branch # Leagues - Delve - Fossils - T3
+        Tags @Fossils_T3
+        SetFontSize 38
+        SetBackgroundColor 255 178 57 210
+        SetTextColor 175 57 18
+        SetBorderColor 175 57 18
+        PlayAlertSound $SoundT3
+        MinimapIcon 2 White Hexagon
+        PlayEffect White Temp''',
+'''     Branch # Leagues - Delve - Fossils - T4
+        Tags @Fossils_T4
+        SetFontSize 32
+        SetBackgroundColor 255 178 57 180
+        SetTextColor 175 57 18
+        SetBorderColor 0 0 0'''
+            ]
         }
     }
 
@@ -168,23 +324,28 @@ if __name__ == '__main__':
 
     tierlists = [[], [], [], [], [], []] #T0,1,2,3,4,mix
 
-    print tiers[0]
     flasks = Fetch("flasks")
     weapons = Fetch("weapons")
     armours = Fetch("armours")
     accessories = Fetch("accessories")
+    jewels = Fetch("jewels")
     maps = Fetch("maps")
     divCards = Fetch("divCards")
+    fossils = Fetch("fossils")
 
     ParseUniques(flasks)
     ParseUniques(weapons)
     ParseUniques(armours)
     ParseUniques(accessories)
+    ParseUniques(jewels)
     ParseUniques(maps)
     Replace("allUniques")
 
     ParseDivCards(divCards)
     Replace("divCards")
+
+    ParseFossils(fossils)
+    Replace("fossils")
 
     UpdateVersion()
 
