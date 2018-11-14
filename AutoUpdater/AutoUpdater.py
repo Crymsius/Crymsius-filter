@@ -9,10 +9,40 @@ import datetime
 from itertools import groupby
 
 def Fetch(itemType):
+    '''
+        Used to make requests and fetch json data
+    '''
     r= requests.get(classes[itemType]["url"])
     return r.json()
 
+def defineTiers(currencies):
+    '''
+        Use an array of currency and modify the limits between tiers 0 and 1 and between 1 and 2
+        limit0-1 = 0.5*value0 + value1 / 1.5
+        limit1-2 = value1 + value2 / 2
+    '''
+    exaltValue = 90
+    divineValue = 10
+
+    exaltValueArray = [currency['chaosEquivalent'] for  currency in currencies['lines'] if currency['currencyTypeName'] == "Exalted Orb"]
+    if exaltValueArray :
+        exaltValue = exaltValueArray[0]
+
+    divineValueArray = [currency['chaosEquivalent'] for  currency in currencies['lines'] if currency['currencyTypeName'] == "Divine Orb"]
+    if divineValueArray :
+        divineValue = divineValueArray[0]
+
+    tiers[0] = (0.5*exaltValue + divineValue) / 1.5
+    tiers[1] = (divineValue + 1) * 0.5
+
+
 def ParseUniques(items):
+    '''
+        Function that will parse unique items for the given category, keeping only relevent items.
+        Relevant items are items with high confidence
+
+        It will then find tier for each unique and put them in their matching tier.
+    '''
     relevantUniques = [unique for unique in items['lines'] if unique["count"] > 10 and unique['links'] < 5 and unique['itemClass'] == 3]
     relevantUniques.sort(key=lambda unique: unique['baseType'])
 
@@ -74,7 +104,6 @@ def ClearTiers():
         del tiers[:]
 
 def FindTier(chaosValue):
-    tiers = [T0, T1, T2, T3]
     tier = 0
     while tier < len(tiers) and chaosValue <= tiers[tier]:
         tier += 1
@@ -98,14 +127,13 @@ def PutInTier(baseType, tier, tierlists):
 
 
 if __name__ == '__main__':
-    T0 = 30
-    T1 = 10
-    T2 = 0.9
-    T3 = 0.4
-
+    tiers = [30, 10, 0.9, 0.4] #borders between T0 and T1, T1 and T2, and T2 and T3
     tier = ["T0", "T1", "T2", "T3", "T4", "TMix"]
 
     classes = {
+        "currency": {
+            "url": "https://poe.ninja/api/data/CurrencyOverview?league=Delve&type=Currency"
+        },
         "flasks": {
             "url": "https://poe.ninja/api/data/ItemOverview?league=Delve&type=UniqueFlask"
         },
@@ -134,8 +162,13 @@ if __name__ == '__main__':
         }
     }
 
+    currency = Fetch("currency")
+    defineTiers(currency)
+
+
     tierlists = [[], [], [], [], [], []] #T0,1,2,3,4,mix
 
+    print tiers[0]
     flasks = Fetch("flasks")
     weapons = Fetch("weapons")
     armours = Fetch("armours")
