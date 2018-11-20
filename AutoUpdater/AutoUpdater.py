@@ -102,19 +102,56 @@ def ReplaceBaseType(baseType):
     with open('insertSections.tmp', "w") as tempFileSections:
         while i < len(tierlists):
             if tierlists[i]:
-                #Creating section for the first time only
-                print len(tierlists[i])
-                tempFileSections.write(classes[baseType]["section"][i] + '\n')
+                #Variant separation
+                itemsShaper = [item for item in tierlists[i] if item["variant"] == "Shaper"]
+                itemsElder = [item for item in tierlists[i] if item["variant"] == "Elder"]
+                itemsOther = [item for item in tierlists[i] if not item["variant"]]
 
-                #Adding branch
-                for item in tierlists[i]:
+                itemsShaperIlvl = {}
+                itemsElderIlvl = {}
+                itemsOtherIlvl = {}
+
+                for item in itemsShaper:
+                    if item["ilvl"] in itemsShaperIlvl:
+                        itemsShaperIlvl[item["ilvl"]].append(item["baseType"])
+                    else:
+                        itemsShaperIlvl[item["ilvl"]] = [item["baseType"]]
+                for item in itemsElder:
+                    if item["ilvl"] in itemsElderIlvl:
+                        itemsElderIlvl[item["ilvl"]].append(item["baseType"])
+                    else:
+                        itemsElderIlvl[item["ilvl"]] = [item["baseType"]]
+                for item in itemsOther:
+                    if item["ilvl"] in itemsOtherIlvl:
+                        itemsOtherIlvl[item["ilvl"]].append(item["baseType"])
+                    else:
+                        itemsOtherIlvl[item["ilvl"]] = [item["baseType"]]
+
+                #Shaper
+                tempFileSections.write(classes[baseType]["section"][i] + '\n')
+                tempFileSections.write('    ShaperItem True\n')
+                for ilvl in itemsShaperIlvl:
                     tempFileSections.write('    Branch\n')
-                    tempFileSections.write('        BaseType ' + '"{0}"'.format(item["baseType"].encode('utf-8')) + '\n')
-                    if item["variant"] == "Elder":
-                        tempFileSections.write('        ElderItem True\n')
-                    if item["variant"] == "Shaper":
-                        tempFileSections.write('        ShaperItem True\n')
-                    tempFileSections.write('        ItemLevel >= ' + str(item["ilvl"]) +'\n')
+                    tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
+                    tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item.encode('utf-8')) for item in itemsShaperIlvl[ilvl]) + '\n')
+
+                #Elder
+                tempFileSections.write(classes[baseType]["section"][i] + '\n')
+                tempFileSections.write('    ElderItem True\n')
+                for ilvl in itemsElderIlvl:
+                    tempFileSections.write('    Branch\n')
+                    tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
+                    tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item.encode('utf-8')) for item in itemsElderIlvl[ilvl]) + '\n')
+
+                #Other
+                tempFileSections.write(classes[baseType]["section"][i] + '\n')
+                tempFileSections.write('    ShaperItem False\n')
+                tempFileSections.write('    ElderItem False\n')
+                for ilvl in itemsOtherIlvl:
+                    tempFileSections.write('    Branch\n')
+                    tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
+                    tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item.encode('utf-8')) for item in itemsOtherIlvl[ilvl]) + '\n')
+
             i += 1
 
     #sed script
@@ -392,29 +429,29 @@ if __name__ == '__main__':
 
     tierlists = [[], [], [], [], [], []] #T0,1,2,3,4,mix
 
-    # flasks = Fetch("flasks")
-    # weapons = Fetch("weapons")
-    # armours = Fetch("armours")
-    # accessories = Fetch("accessories")
-    # jewels = Fetch("jewels")
-    # maps = Fetch("maps")
-    # divCards = Fetch("divCards")
-    # fossils = Fetch("fossils")
+    flasks = Fetch("flasks")
+    weapons = Fetch("weapons")
+    armours = Fetch("armours")
+    accessories = Fetch("accessories")
+    jewels = Fetch("jewels")
+    maps = Fetch("maps")
+    divCards = Fetch("divCards")
+    fossils = Fetch("fossils")
     baseTypes = Fetch("baseTypes")
 
-    # ParseUniques(flasks)
-    # ParseUniques(weapons)
-    # ParseUniques(armours)
-    # ParseUniques(accessories)
-    # ParseUniques(jewels)
-    # ParseUniques(maps)
-    # Replace("allUniques")
+    ParseUniques(flasks)
+    ParseUniques(weapons)
+    ParseUniques(armours)
+    ParseUniques(accessories)
+    ParseUniques(jewels)
+    ParseUniques(maps)
+    Replace("allUniques")
 
-    # ParseDivCards(divCards)
-    # Replace("divCards")
+    ParseDivCards(divCards)
+    Replace("divCards")
 
-    # ParseFossils(fossils)
-    # Replace("fossils")
+    ParseFossils(fossils)
+    Replace("fossils")
 
     ParseBaseTypes(baseTypes)
     ReplaceBaseType("baseTypes")
