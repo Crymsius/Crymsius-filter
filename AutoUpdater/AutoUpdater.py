@@ -67,6 +67,16 @@ def ParseFossils(items):
     for item in relevantFossils:
         PutInTier(item['name'], FindTier(item['chaosValue']), tierlists)
 
+def ParseBaseTypes(items):
+    relevantItems = [baseItem for baseItem in items['lines'] if baseItem["count"] > 4 and baseItem["chaosValue"] > 9.5]
+    for item in relevantItems:
+        baseType = {
+            "baseType": item['name'],
+            "ilvl": item['levelRequired'],
+            "variant": item['variant']
+        }
+        PutInTier(baseType, FindTier(item['chaosValue']), tierlists)
+
 def Replace(itemType):
     i = 0
     with open('insertBases.tmp', "w") as tempFileTags:
@@ -85,6 +95,30 @@ def Replace(itemType):
     #sed script
     subprocess.check_call(['./sedbashReplaceBases.sh', classes[itemType]["startTag"], classes[itemType]["endTag"]])
     subprocess.check_call(['./sedbashReplaceSections.sh', classes[itemType]["startSection"], classes[itemType]["endSection"]])
+    ClearTiers()
+
+def ReplaceBaseType(baseType):
+    i = 0
+    with open('insertSections.tmp', "w") as tempFileSections:
+        while i < len(tierlists):
+            if tierlists[i]:
+                #Creating section for the first time only
+                print len(tierlists[i])
+                tempFileSections.write(classes[baseType]["section"][i] + '\n')
+
+                #Adding branch
+                for item in tierlists[i]:
+                    tempFileSections.write('    Branch\n')
+                    tempFileSections.write('        BaseType ' + '"{0}"'.format(item["baseType"].encode('utf-8')) + '\n')
+                    if item["variant"] == "Elder":
+                        tempFileSections.write('        ElderItem True\n')
+                    if item["variant"] == "Shaper":
+                        tempFileSections.write('        ShaperItem True\n')
+                    tempFileSections.write('        ItemLevel >= ' + str(item["ilvl"]) +'\n')
+            i += 1
+
+    #sed script
+    subprocess.check_call(['./sedbashReplaceSections.sh', classes[baseType]["startSection"], classes[baseType]["endSection"]])
     ClearTiers()
 
 def UpdateVersion():
@@ -315,6 +349,40 @@ if __name__ == '__main__':
         SetTextColor 175 57 18
         SetBorderColor 0 0 0'''
             ]
+        },
+        "baseTypes": {
+            "url": "https://poe.ninja/api/data/itemoverview?league=Delve&type=BaseType",
+            "startSection" : "#AutoUpdater_BaseTypes_section_start",
+            "endSection" : "#AutoUpdater_BaseTypes_section_end",
+            "section": [
+'''Show #Atlas and special bases - T0
+    Rarity <= Rare
+    SetFontSize 45
+    SetBackgroundColor 255 255 255
+    SetTextColor 0 180 0
+    SetBorderColor 0 180 0
+    PlayAlertSound $SoundT0
+    MinimapIcon 0 Blue Triangle
+    PlayEffect Blue''',
+'''Show #Atlas and special bases - T1
+    Rarity <= Rare
+    SetFontSize 42
+    SetBackgroundColor 0 180 0
+    SetTextColor 255 255 255
+    SetBorderColor 255 255 255
+    PlayAlertSound $SoundT1
+    MinimapIcon 0 Brown Triangle
+    PlayEffect Brown''',
+'''Show # Atlas and special bases - T2
+    Rarity <= Rare
+    SetFontSize 37
+    SetBackgroundColor 0 180 0
+    SetTextColor 0 0 0
+    SetBorderColor 0 0 0
+    PlayAlertSound $SoundT2
+    MinimapIcon 1 Yellow Triangle
+    PlayEffect Yellow Temp'''
+            ]
         }
     }
 
@@ -324,28 +392,32 @@ if __name__ == '__main__':
 
     tierlists = [[], [], [], [], [], []] #T0,1,2,3,4,mix
 
-    flasks = Fetch("flasks")
-    weapons = Fetch("weapons")
-    armours = Fetch("armours")
-    accessories = Fetch("accessories")
-    jewels = Fetch("jewels")
-    maps = Fetch("maps")
-    divCards = Fetch("divCards")
-    fossils = Fetch("fossils")
+    # flasks = Fetch("flasks")
+    # weapons = Fetch("weapons")
+    # armours = Fetch("armours")
+    # accessories = Fetch("accessories")
+    # jewels = Fetch("jewels")
+    # maps = Fetch("maps")
+    # divCards = Fetch("divCards")
+    # fossils = Fetch("fossils")
+    baseTypes = Fetch("baseTypes")
 
-    ParseUniques(flasks)
-    ParseUniques(weapons)
-    ParseUniques(armours)
-    ParseUniques(accessories)
-    ParseUniques(jewels)
-    ParseUniques(maps)
-    Replace("allUniques")
+    # ParseUniques(flasks)
+    # ParseUniques(weapons)
+    # ParseUniques(armours)
+    # ParseUniques(accessories)
+    # ParseUniques(jewels)
+    # ParseUniques(maps)
+    # Replace("allUniques")
 
-    ParseDivCards(divCards)
-    Replace("divCards")
+    # ParseDivCards(divCards)
+    # Replace("divCards")
 
-    ParseFossils(fossils)
-    Replace("fossils")
+    # ParseFossils(fossils)
+    # Replace("fossils")
+
+    ParseBaseTypes(baseTypes)
+    ReplaceBaseType("baseTypes")
 
     UpdateVersion()
 

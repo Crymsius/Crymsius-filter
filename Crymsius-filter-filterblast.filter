@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.4.3a_2018.11.14_12:00
+###Version 3.4.3a_2018.11.20_14:49
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -470,16 +470,2955 @@ Show
 #------------------------------------
 #    Atlas and special bases
 #------------------------------------
-#Atlas and special bases - T0
+
+#AutoUpdater_BaseTypes_section_start"
 Show #Atlas and special bases - T0
-    Tags @AtlasAndSpecialBases_T0
+    Rarity <= Rare
+    SetFontSize 45
+    SetBackgroundColor 255 255 255
+    SetTextColor 0 180 0
+    SetBorderColor 0 180 0
+    PlayAlertSound $SoundT0
+    MinimapIcon 0 Blue Triangle
+    PlayEffect Blue
+    Branch
+        BaseType "Marble Amulet"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Opal Ring"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Thorn Rapier"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Steel Ring"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Opal Ring"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Bone Helmet"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Bone Helmet"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Astral Plate"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Opal Ring"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Thorn Rapier"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Thorn Rapier"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Opal Ring"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Sambar Sceptre"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Crystal Belt"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Spiked Gloves"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Vaal Regalia"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Crystal Belt"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Crystal Belt"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Titanium Spirit Shield"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Sambar Sceptre"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Marble Amulet"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Agate Amulet"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Steel Ring"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Steel Ring"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Astral Plate"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Titan Greaves"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Onyx Amulet"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Onyx Amulet"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Lapis Amulet"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Spiked Gloves"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Gold Amulet"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Leather Belt"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Royal Burgonet"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Jade Amulet"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Agate Amulet"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Gold Amulet"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Leather Belt"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Leather Belt"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Jewelled Foil"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Sorcerer Boots"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Golden Kris"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Marble Amulet"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Royal Burgonet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Spike-Point Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Eternal Burgonet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Coral Amulet"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Turquoise Amulet"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Onyx Amulet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Royal Burgonet"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Opal Sceptre"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Amber Amulet"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Citrine Amulet"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Leather Belt"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Lapis Amulet"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Turquoise Amulet"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Jade Amulet"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Leather Belt"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Void Sceptre"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Citrine Amulet"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Hubris Circlet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Fingerless Silk Gloves"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Blue Pearl Amulet"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Amber Amulet"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Vaal Axe"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Slink Boots"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Paua Amulet"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Royal Burgonet"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Lapis Amulet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Fingerless Silk Gloves"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Agate Amulet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Platinum Kris"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Fingerless Silk Gloves"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Opal Wand"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Paua Amulet"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Ezomyte Burgonet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Gripped Gloves"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Hubris Circlet"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Glorious Plate"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Two-Toned Boots"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Pig-Faced Bascinet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Coral Amulet"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Lion Pelt"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Slink Boots"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Turquoise Amulet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Jewelled Foil"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Platinum Kris"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Penetrating Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Nightmare Bascinet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Opal Sceptre"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Zodiac Leather"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Fingerless Silk Gloves"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Golden Kris"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Two-Toned Boots"
+        ItemLevel >= 86
+    Branch
+        BaseType "Samite Helmet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Spiked Gloves"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Void Sceptre"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Unset Ring"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Jade Amulet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Coral Ring"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Coral Amulet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Sambar Sceptre"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Leather Belt"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Elegant Foil"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Diamond Ring"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Titan Greaves"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Eternal Burgonet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Jewelled Foil"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Spiked Gloves"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Colossal Tower Shield"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Ambusher"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Gold Amulet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Imperial Claw"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Ezomyte Tower Shield"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Amber Amulet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Sapphire Ring"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Opal Ring"
+        ItemLevel >= 86
+    Branch
+        BaseType "Citrine Amulet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Two-Stone Ring"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Royal Burgonet"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Titanium Spirit Shield"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Two-Stone Ring"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Jewelled Foil"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Hubris Circlet"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Hubris Circlet"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Copper Kris"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Eternal Burgonet"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Assassin's Garb"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Titanium Spirit Shield"
+        ElderItem True
+        ItemLevel >= 86
+Show #Atlas and special bases - T1
     Rarity <= Rare
     SetFontSize 42
     SetBackgroundColor 0 180 0
     SetTextColor 255 255 255
     SetBorderColor 255 255 255
+    PlayAlertSound $SoundT1
+    MinimapIcon 0 Brown Triangle
+    PlayEffect Brown
+    Branch
+        BaseType "Battle Buckler"
+        ItemLevel >= 83
+    Branch
+        BaseType "Vaal Regalia"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Imperial Claw"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Ambusher"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Imperial Bow"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Jewelled Foil"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Vaal Axe"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Moonstone Ring"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Platinum Kris"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Sambar Sceptre"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Golden Kris"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Unset Ring"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Astral Plate"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Gripped Gloves"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Carnal Armour"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Two-Toned Boots"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Eclipse Staff"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Prophet Crown"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Unset Ring"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Ezomyte Burgonet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Unset Ring"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Eternal Burgonet"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Harpy Rapier"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Paua Amulet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Onyx Amulet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Unset Ring"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Topaz Ring"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Eternal Burgonet"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Broadhead Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Reaver Helmet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Onyx Amulet"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Stag Sceptre"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Deicide Mask"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Citrine Amulet"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Coral Ring"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Ezomyte Dagger"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Profane Wand"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Leather Belt"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Steel Ring"
+        ItemLevel >= 86
+    Branch
+        BaseType "Opal Wand"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Mind Cage"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Searching Eye Jewel"
+        ItemLevel >= 84
+    Branch
+        BaseType "Two-Toned Boots"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Two-Stone Ring"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Leather Belt"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Agate Amulet"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Gladiator Plate"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Murderous Eye Jewel"
+        ItemLevel >= 84
+    Branch
+        BaseType "Void Sceptre"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Opal Sceptre"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Jade Amulet"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Opal Sceptre"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Stag Sceptre"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Diamond Ring"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Siege Helmet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Imperial Bow"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Coral Ring"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Sai"
+        ItemLevel >= 85
+    Branch
+        BaseType "Two-Point Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Coral Ring"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Sambar Sceptre"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Spiked Gloves"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Eclipse Staff"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Sekhem"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Citrine Amulet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Titanium Spirit Shield"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Saintly Chainmail"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Gemini Claw"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Turquoise Amulet"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Astral Plate"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Lion Pelt"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Golden Kris"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Estoc"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Platinum Kris"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Marble Amulet"
+        ItemLevel >= 86
+    Branch
+        BaseType "Great Crown"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Two-Stone Ring"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Sharktooth Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Agate Amulet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Vaal Greaves"
+        ItemLevel >= 86
+    Branch
+        BaseType "Ruby Ring"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Two-Toned Boots"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Eclipse Staff"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Bone Helmet"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Vaal Regalia"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Vaal Regalia"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Void Sceptre"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Apex Rapier"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Coral Ring"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Imperial Bow"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Ezomyte Tower Shield"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Two-Stone Ring"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Lapis Amulet"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Sapphire Ring"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Golden Kris"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Heavy Belt"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Sapphire Ring"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Titan Gauntlets"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Titan Gauntlets"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Harbinger Bow"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Diamond Ring"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Lacquered Helmet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Astral Plate"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Lunaris Circlet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Diamond Ring"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Fire Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Slink Gloves"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Sorcerer Boots"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Agate Amulet"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Onyx Amulet"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Agate Amulet"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Crusader Buckler"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Maraketh Bow"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Royal Burgonet"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Void Sceptre"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Coral Ring"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Two-Point Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Eternal Burgonet"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Sharktooth Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Noble Tricorne"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Ancient Greaves"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Apex Rapier"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Fiend Dagger"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Ezomyte Burgonet"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Paua Ring"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Hubris Circlet"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Demon Dagger"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Golden Mask"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Eclipse Staff"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Agate Amulet"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Regicide Mask"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Imperial Claw"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Topaz Ring"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Ruby Ring"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Turquoise Amulet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Opal Sceptre"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Citrine Amulet"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Unset Ring"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Topaz Ring"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Hubris Circlet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Onyx Amulet"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Harbinger Bow"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Titan Gauntlets"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Turquoise Amulet"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Onyx Amulet"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Spiraled Foil"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Ursine Pelt"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Agate Amulet"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Ezomyte Tower Shield"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Praetor Crown"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Citrine Amulet"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Silken Hood"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Topaz Ring"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Jewelled Foil"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Dragonscale Boots"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Two-Point Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Heavy Belt"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Highborn Bow"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Serrated Foil"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Harmonic Spirit Shield"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Ezomyte Burgonet"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "General's Brigandine"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Diamond Ring"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Prophet Crown"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Astral Plate"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Vaal Sceptre"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Bronze Tower Shield"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Jewelled Foil"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Widowsilk Robe"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Champion Kite Shield"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Gold Amulet"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Blunt Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Jade Amulet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Paua Ring"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Lion Pelt"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Carnal Sceptre"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Stygian Vise"
+        ItemLevel >= 86
+    Branch
+        BaseType "Leather Belt"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Steel Ring"
+        ItemLevel >= 84
+    Branch
+        BaseType "Ruby Ring"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Marble Amulet"
+        ItemLevel >= 85
+    Branch
+        BaseType "Penetrating Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Platinum Kris"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Imperial Claw"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Heavy Belt"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Spike-Point Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Ruby Ring"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Topaz Ring"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Leather Belt"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Turquoise Amulet"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Sapphire Ring"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Gemini Claw"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Penetrating Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Diamond Ring"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Magistrate Crown"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Jewelled Foil"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Amber Amulet"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Poignard"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Diamond Ring"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Onyx Amulet"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Two-Stone Ring"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Amber Amulet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Sapphire Ring"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Hubris Circlet"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Steel Circlet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Platinum Sceptre"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Sorcerer Gloves"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Necromancer Circlet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Amethyst Ring"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Prophecy Wand"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Thicket Bow"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Silken Hood"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Iron Ring"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Girded Tower Shield"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Callous Mask"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Titan Gauntlets"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Penetrating Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Profane Wand"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Harpy Rapier"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Heavy Belt"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Sorcerer Gloves"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Samite Helmet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Sun Plate"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Opal Ring"
+        ItemLevel >= 84
+    Branch
+        BaseType "Turquoise Amulet"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Colosseum Plate"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Thicket Bow"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Sharkskin Gloves"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Saint's Hauberk"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Visored Sallet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Imperial Bow"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Dragonscale Boots"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Hubris Circlet"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Ambush Boots"
+        ItemLevel >= 86
+    Branch
+        BaseType "Hydrascale Boots"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Vaal Gauntlets"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Vaal Buckler"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Deicide Mask"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Solaris Circlet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Apex Rapier"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Lion Pelt"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Two-Stone Ring"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Archon Kite Shield"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Two-Toned Boots"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Abyssal Sceptre"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Nubuck Gloves"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Serrated Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Coral Ring"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Eclipse Staff"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Agate Amulet"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Jade Amulet"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Fluted Bascinet"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Full Dragonscale"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Assassin's Garb"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Steel Ring"
+        ItemLevel >= 85
+    Branch
+        BaseType "Raven Mask"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Arcanist Slippers"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Apex Rapier"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Sorcerer Boots"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Highborn Bow"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Lapis Amulet"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Occultist's Vestment"
+        ItemLevel >= 86
+    Branch
+        BaseType "Bone Helmet"
+        ItemLevel >= 86
+    Branch
+        BaseType "Legion Sword"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Nightmare Bascinet"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Thicket Bow"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Serpentscale Gauntlets"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Ambusher"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Graceful Sword"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Imperial Bow"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Stag Sceptre"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Harlequin Mask"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Slink Gloves"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Hypnotic Eye Jewel"
+        ItemLevel >= 84
+    Branch
+        BaseType "Fleshripper"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Gemini Claw"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Opal Wand"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Wyrmbone Rapier"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Full Wyrmscale"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Penetrating Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Rustic Sash"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Elegant Ringmail"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Broadhead Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Zealot Gloves"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Spike-Point Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Searching Eye Jewel"
+        ItemLevel >= 83
+    Branch
+        BaseType "Gripped Gloves"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Spike-Point Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Citrine Amulet"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Runic Hatchet"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Lapis Amulet"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Diamond Ring"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Coral Amulet"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Iron Ring"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Imperial Claw"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Lapis Amulet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Ruby Ring"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Imperial Claw"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Siege Helmet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Imperial Claw"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Turquoise Amulet"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Tyrant's Sekhem"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Lion Pelt"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Crusader Gloves"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Topaz Ring"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Paua Amulet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Crystal Sceptre"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Spiraled Foil"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Vaal Sceptre"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Murder Mitts"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Amber Amulet"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Sovereign Spiked Shield"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Poignard"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Amber Amulet"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Gold Amulet"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Behemoth Mace"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Jade Amulet"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Harpy Rapier"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Wyrmscale Boots"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Paua Amulet"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Fire Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Gladius"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Serpent Wand"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Opal Ring"
+        ItemLevel >= 85
+    Branch
+        BaseType "Tornado Wand"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Glorious Leather"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Soldier Boots"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Two-Point Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Prophecy Wand"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Spike-Point Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Gold Ring"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Amber Amulet"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Harpy Rapier"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Ruby Ring"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Sorcerer Boots"
+        ItemLevel >= 85
+    Branch
+        BaseType "Eye Gouger"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Grinning Fetish"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Fancy Foil"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Saintly Chainmail"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Wolf Pelt"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Murder Boots"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Sharktooth Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Silken Hood"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Wolf Pelt"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Murder Mitts"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Angelic Kite Shield"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Golden Buckler"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Burnished Foil"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Murderous Eye Jewel"
+        ItemLevel >= 83
+    Branch
+        BaseType "Titanium Spirit Shield"
+        ItemLevel >= 86
+    Branch
+        BaseType "Shagreen Tower Shield"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Behemoth Mace"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Ambusher"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Primeval Rapier"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Goliath Gauntlets"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Imperial Buckler"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Embroidered Gloves"
+        ItemLevel >= 83
+    Branch
+        BaseType "Blood Sceptre"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Blunt Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Nightmare Bascinet"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Grove Bow"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Harmonic Spirit Shield"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Vaal Mask"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Diamond Ring"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Crusader Helmet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Jade Amulet"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Crusader Boots"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Moon Staff"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Lion Pelt"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Vanguard Belt"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Searching Eye Jewel"
+        ItemLevel >= 82
+    Branch
+        BaseType "Pinnacle Tower Shield"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Mesh Boots"
+        ItemLevel >= 83
+    Branch
+        BaseType "Steelscale Gauntlets"
+        ItemLevel >= 84
+    Branch
+        BaseType "Slink Gloves"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Brass Spirit Shield"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Sharktooth Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Heavy Belt"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Prophet Crown"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Stag Sceptre"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Broadhead Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Siege Helmet"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Scholar Boots"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Citrine Amulet"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Crystal Belt"
+        ItemLevel >= 86
+    Branch
+        BaseType "Spiraled Foil"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Samite Slippers"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Petrified Club"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Wyrmscale Gauntlets"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Noble Claw"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Slink Gloves"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Onyx Amulet"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Gold Amulet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Imbued Wand"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Bone Helmet"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Serrated Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Stealth Boots"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Goliath Greaves"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Titan Gauntlets"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Lordly Plate"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Lacewood Spirit Shield"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Titan Gauntlets"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Cutlass"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Eternal Sword"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Scholar Boots"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Steelwood Bow"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Arcanist Slippers"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Titan Greaves"
+        ItemLevel >= 86
+    Branch
+        BaseType "Carnal Boots"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Ivory Spirit Shield"
+        ItemLevel >= 83
+    Branch
+        BaseType "Serrated Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Ezomyte Tower Shield"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Marble Amulet"
+        ItemLevel >= 84
+    Branch
+        BaseType "Behemoth Mace"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Terror Claw"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Karui Sceptre"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Two-Point Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 85
+Show # Atlas and special bases - T2
+    Rarity <= Rare
+    SetFontSize 37
+    SetBackgroundColor 0 180 0
+    SetTextColor 0 0 0
+    SetBorderColor 0 0 0
+    PlayAlertSound $SoundT2
+    MinimapIcon 1 Yellow Triangle
+    PlayEffect Yellow Temp
+    Branch
+        BaseType "Raven Mask"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Decurve Bow"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Fancy Foil"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Siege Helmet"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Triumphant Lamellar"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Grinning Fetish"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Ancient Gauntlets"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Legion Hammer"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Broadhead Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Exquisite Blade"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Crystal Sceptre"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Noble Claw"
+        ItemLevel >= 82
+    Branch
+        BaseType "Nightmare Bascinet"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Golden Mask"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Sapphire Ring"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Assassin's Boots"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Maraketh Bow"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Titanium Spirit Shield"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Imperial Claw"
+        ItemLevel >= 86
+    Branch
+        BaseType "Fingerless Silk Gloves"
+        ItemLevel >= 85
+    Branch
+        BaseType "Coral Ring"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Gemini Claw"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Gold Amulet"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Samite Helmet"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Moonstone Ring"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Iron Ring"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Carnal Sceptre"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Amethyst Ring"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Imperial Claw"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Lead Sceptre"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Profane Wand"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Gilded Sallet"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Vaal Sceptre"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Demon Dagger"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Abyssal Sceptre"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Citrine Amulet"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Jade Amulet"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Runic Hatchet"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Imbued Wand"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Karui Sceptre"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Archon Kite Shield"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Conjurer Gloves"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Sorcerer Boots"
+        ItemLevel >= 86
+    Branch
+        BaseType "Moonstone Ring"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Jade Amulet"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Coral Amulet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Crusader Buckler"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Moonstone Ring"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Imperial Skean"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Samite Helmet"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Samite Gloves"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Archon Kite Shield"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Harbinger Bow"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Titanium Spirit Shield"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Goliath Gauntlets"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Vaal Gauntlets"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Carnal Sceptre"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Soldier Gloves"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Angelic Kite Shield"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Lapis Amulet"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Dragonscale Gauntlets"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Sharkskin Boots"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Exquisite Leather"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Fiend Dagger"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Turquoise Amulet"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Sharkskin Gloves"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Glorious Plate"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Unset Ring"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Amethyst Ring"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Coral Ring"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Satin Slippers"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Fire Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Aventail Helmet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Ghastly Eye Jewel"
+        ItemLevel >= 84
+    Branch
+        BaseType "Jewelled Foil"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Blunt Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Thorium Spirit Shield"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Sorcerer Gloves"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Two-Stone Ring"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Iron Ring"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Chain Belt"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Crystal Sceptre"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Coral Amulet"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Royal Sceptre"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Rustic Sash"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Fire Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Eternal Burgonet"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Vaal Axe"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Imperial Bow"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Slaughter Knife"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Phantom Mace"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Imperial Claw"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Amber Amulet"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Primeval Rapier"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Harpy Rapier"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Lead Sceptre"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Blunt Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Broadhead Arrow Quiver"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Sadist Garb"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Vanguard Belt"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Fire Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Paua Ring"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Sorcerer Boots"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Prophet Crown"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Battle Sword"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Platinum Sceptre"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Slink Gloves"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Gemini Claw"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Vaal Rapier"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Judgement Staff"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Vaal Mask"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Colossal Tower Shield"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Opal Wand"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Colosseum Plate"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Fancy Foil"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Titanium Spirit Shield"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Gemini Claw"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Chiming Spirit Shield"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Maelström Staff"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Blunt Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Zealot Helmet"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Serpentscale Gauntlets"
+        ItemLevel >= 82
+    Branch
+        BaseType "Coronal Leather"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Hydrascale Boots"
+        ItemLevel >= 86
+    Branch
+        BaseType "Tempered Foil"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Gladiator Helmet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Nightmare Bascinet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Battle Lamellar"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Arcanist Slippers"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Imperial Skean"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Eternal Burgonet"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Pig-Faced Bascinet"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Shagreen Gloves"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Maraketh Bow"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Bone Circlet"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Silken Hood"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Sadist Garb"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Sharktooth Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Bone Circlet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Silken Hood"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Crimson Round Shield"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Embroidered Gloves"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Tiger Hook"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Vaal Gauntlets"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Gemini Claw"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Glorious Plate"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Carnal Mitts"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Chain Belt"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Ezomyte Burgonet"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Golden Mask"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Deicide Mask"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Legion Boots"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Deicide Mask"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Spiraled Foil"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Conjurer Boots"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Serrated Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Grinning Fetish"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Pig-Faced Bascinet"
+        ItemLevel >= 85
+    Branch
+        BaseType "Lapis Amulet"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Gripped Gloves"
+        ItemLevel >= 86
+    Branch
+        BaseType "Vaal Gauntlets"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Amber Amulet"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Shagreen Gloves"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Twin Claw"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Zealot Gloves"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Fencer Helm"
+        ElderItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Steelscale Gauntlets"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Broadhead Arrow Quiver"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Crusader Boots"
+        ItemLevel >= 86
+    Branch
+        BaseType "Pecoraro"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Behemoth Mace"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Archon Kite Shield"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Sai"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Crystal Sceptre"
+        ShaperItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Eclipse Staff"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Corsair Sword"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Reaver Helmet"
+        ElderItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Crusader Plate"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Samite Helmet"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Serrated Foil"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Vaal Axe"
+        ElderItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Majestic Plate"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Titanium Spirit Shield"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Arcanist Slippers"
+        ItemLevel >= 86
+    Branch
+        BaseType "Vaal Sceptre"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Serpentscale Gauntlets"
+        ShaperItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Topaz Ring"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Astral Plate"
+        ShaperItem True
+        ItemLevel >= 83
+    Branch
+        BaseType "Tempered Foil"
+        ShaperItem True
+        ItemLevel >= 82
+    Branch
+        BaseType "Prehistoric Claw"
+        ElderItem True
+        ItemLevel >= 86
+    Branch
+        BaseType "Blood Sceptre"
+        ShaperItem True
+        ItemLevel >= 85
+    Branch
+        BaseType "Reaver Helmet"
+        ElderItem True
+        ItemLevel >= 84
+    Branch
+        BaseType "Archon Kite Shield"
+        ElderItem True
+        ItemLevel >= 84
+#AutoUpdater_BaseTypes_section_end"
+
+Show #Atlas and special bases - T0
+    SetFontSize 45
+    SetBackgroundColor 255 255 255
+    SetTextColor 0 180 0
+    SetBorderColor 0 180 0
     PlayAlertSound $SoundT0
-#Atlas and special bases - T1
+    MinimapIcon 0 Blue Triangle
+    PlayEffect Blue
 Show #Atlas and special bases - T1
     Tags @AtlasAndSpecialBases_T1
     Rarity <= Rare
@@ -487,14 +3426,18 @@ Show #Atlas and special bases - T1
     SetBackgroundColor 0 180 0
     SetTextColor 255 255 255
     SetBorderColor 255 255 255
-    PlayAlertSound $SoundT2
-# Atlas and special bases - T2
-Show
+    PlayAlertSound $SoundT1
+    MinimapIcon 0 Brown Triangle
+    PlayEffect Brown
+Show # Atlas and special bases - T2
     Tags @AtlasAndSpecialBases_T2
     SetFontSize 37
     SetBackgroundColor 0 180 0
     SetTextColor 0 0 0
     SetBorderColor 0 0 0
+    PlayAlertSound $SoundT2
+    MinimapIcon 1 Yellow Triangle
+    PlayEffect Yellow Temp
     Branch # Atlas and special bases - T2 Rare
         Rarity Rare
     Branch Hide # Atlas and special bases - T2 < Rare
