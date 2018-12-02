@@ -12,8 +12,23 @@ def Fetch(itemType):
     '''
         Used to make requests and fetch json data
     '''
-    r= requests.get(classes[itemType]["url"])
-    return r.json()
+    try:
+        r= requests.get(classes[itemType]["url"])
+        r.raise_for_status()
+    except requests.exceptions.HTTPError as errh:
+        print ("Http Error:",errh)
+        return False, {}
+    except requests.exceptions.ConnectionError as errc:
+        print ("Error Connecting:",errc)
+        return False, {}
+    except requests.exceptions.Timeout as errt:
+        print ("Timeout Error:",errt)
+        return False, {}
+    except requests.exceptions.RequestException as err:
+        print ("OOps: Something Else",err)
+        return False, {}
+    else:
+        return True, r.json()
 
 def defineTiers(currencies):
     '''
@@ -21,19 +36,20 @@ def defineTiers(currencies):
         limit0-1 = 0.5*value0 + value1 / 1.5
         limit1-2 = value1 + value2 / 2
     '''
-    exaltValue = 90
-    divineValue = 10
+    if requestStatus:
+        exaltValue = 90
+        divineValue = 10
 
-    exaltValueArray = [currency['chaosEquivalent'] for  currency in currencies['lines'] if currency['currencyTypeName'] == "Exalted Orb"]
-    if exaltValueArray :
-        exaltValue = exaltValueArray[0]
+        exaltValueArray = [currency['chaosEquivalent'] for  currency in currencies['lines'] if currency['currencyTypeName'] == "Exalted Orb"]
+        if exaltValueArray :
+            exaltValue = exaltValueArray[0]
 
-    divineValueArray = [currency['chaosEquivalent'] for  currency in currencies['lines'] if currency['currencyTypeName'] == "Divine Orb"]
-    if divineValueArray :
-        divineValue = divineValueArray[0]
+        divineValueArray = [currency['chaosEquivalent'] for  currency in currencies['lines'] if currency['currencyTypeName'] == "Divine Orb"]
+        if divineValueArray :
+            divineValue = divineValueArray[0]
 
-    tiers[0] = (0.5*exaltValue + divineValue) / 1.5
-    tiers[1] = (divineValue + 1) * 0.5
+        tiers[0] = (0.5*exaltValue + divineValue) / 1.5
+        tiers[1] = (divineValue + 1) * 0.5
 
 
 def ParseUniques(items):
@@ -43,59 +59,65 @@ def ParseUniques(items):
 
         It will then find tier for each unique and put them in their matching tier.
     '''
-    relevantUniques = [unique for unique in items['lines'] if unique["count"] > 10 and unique['links'] < 5 and unique['itemClass'] == 3]
-    relevantUniques.sort(key=lambda unique: unique['baseType'])
 
-    groupedUniques = []
-    baseTypes = []
+    if requestStatus:
+        relevantUniques = [unique for unique in items['lines'] if unique["count"] > 10 and unique['links'] < 5 and unique['itemClass'] == 3]
+        relevantUniques.sort(key=lambda unique: unique['baseType'])
 
-    for baseType, uniques in groupby(relevantUniques, lambda unique: unique['baseType']):
-        groupedUniques.append(list(uniques))
-        baseTypes.append(baseType)
+        groupedUniques = []
+        baseTypes = []
 
-    for group in groupedUniques:
-        tiers = [FindTier(item['chaosValue']) for item in group]
-        PutInTier(group[0]['baseType'], ChooseTier(tiers), tierlists)
+        for baseType, uniques in groupby(relevantUniques, lambda unique: unique['baseType']):
+            groupedUniques.append(list(uniques))
+            baseTypes.append(baseType)
+
+        for group in groupedUniques:
+            tiers = [FindTier(item['chaosValue']) for item in group]
+            PutInTier(group[0]['baseType'], ChooseTier(tiers), tierlists)
 
 def ParseDivCards(items):
-    relevantDivCards = [divCard for divCard in items['lines'] if divCard["count"] > 10]
-    for item in relevantDivCards:
-        PutInTier(item['name'], FindTier(item['chaosValue']), tierlists)
+    if requestStatus :
+        relevantDivCards = [divCard for divCard in items['lines'] if divCard["count"] > 10]
+        for item in relevantDivCards:
+            PutInTier(item['name'], FindTier(item['chaosValue']), tierlists)
 
 def ParseFossils(items):
-    relevantFossils = [fossil for fossil in items['lines'] if fossil["count"] > 10]
-    for item in relevantFossils:
-        PutInTier(item['name'], FindTier(item['chaosValue']), tierlists)
+    if requestStatus :
+        relevantFossils = [fossil for fossil in items['lines'] if fossil["count"] > 10]
+        for item in relevantFossils:
+            PutInTier(item['name'], FindTier(item['chaosValue']), tierlists)
 
 def ParseBaseTypes(items):
-    relevantItems = [baseItem for baseItem in items['lines'] if baseItem["count"] > 4 and baseItem["chaosValue"] > 9.5]
-    for item in relevantItems:
-        baseType = {
-            "baseType": item['name'],
-            "ilvl": item['levelRequired'],
-            "variant": item['variant']
-        }
-        PutInTier(baseType, FindTier(item['chaosValue']), tierlists)
+    if requestStatus :
+        relevantItems = [baseItem for baseItem in items['lines'] if baseItem["count"] > 10 and baseItem["chaosValue"] > 9.5]
+        for item in relevantItems:
+            baseType = {
+                "baseType": item['name'],
+                "ilvl": item['levelRequired'],
+                "variant": item['variant']
+            }
+            PutInTier(baseType, FindTier(item['chaosValue']), tierlists)
 
 def Replace(itemType):
-    i = 0
-    with open('insertBases.tmp', "w") as tempFileTags:
-        with open('insertSections.tmp', "w") as tempFileSections:
-            while i < len(tierlists):
-                if tierlists[i]:
-                    #first : updating tags
-                    tempFileTags.write(classes[itemType]["tag"] + tier[i] + '\n')
+    if requestStatus:
+        i = 0
+        with open('insertBases.tmp', "w") as tempFileTags:
+            with open('insertSections.tmp', "w") as tempFileSections:
+                while i < len(tierlists):
+                    if tierlists[i]:
+                        #first : updating tags
+                        tempFileTags.write(classes[itemType]["tag"] + tier[i] + '\n')
 
-                    tempFileTags.write('    BaseType ' + ' '.join('"{0}"'.format(tier.encode('utf-8')) for tier in tierlists[i]) + '\n')
+                        tempFileTags.write('    BaseType ' + ' '.join('"{0}"'.format(tier.encode('utf-8')) for tier in tierlists[i]) + '\n')
 
-                    #second : updating filter section relative to the tier
-                    tempFileSections.write(classes[itemType]["section"][i] + '\n')
-                i += 1
+                        #second : updating filter section relative to the tier
+                        tempFileSections.write(classes[itemType]["section"][i] + '\n')
+                    i += 1
 
-    #sed script
-    subprocess.check_call(['./sedbashReplaceBases.sh', classes[itemType]["startTag"], classes[itemType]["endTag"]])
-    subprocess.check_call(['./sedbashReplaceSections.sh', classes[itemType]["startSection"], classes[itemType]["endSection"]])
-    ClearTiers()
+        #sed script
+        subprocess.check_call(['./sedbashReplaceBases.sh', classes[itemType]["startTag"], classes[itemType]["endTag"]])
+        subprocess.check_call(['./sedbashReplaceSections.sh', classes[itemType]["startSection"], classes[itemType]["endSection"]])
+        ClearTiers()
 
 def ReplaceBaseType(baseType):
     i = 0
@@ -379,7 +401,7 @@ if __name__ == '__main__':
         PlayAlertSound $SoundT3
         MinimapIcon 2 White Hexagon
         PlayEffect White Temp''',
-'''     Branch # Leagues - Delve - Fossils - T4
+'''    Branch # Leagues - Delve - Fossils - T4
         Tags @Fossils_T4
         SetFontSize 32
         SetBackgroundColor 255 178 57 180
@@ -423,36 +445,35 @@ if __name__ == '__main__':
         }
     }
 
-    currency = Fetch("currency")
+    requestStatus, currency = Fetch("currency")
     defineTiers(currency)
 
 
     tierlists = [[], [], [], [], [], []] #T0,1,2,3,4,mix
 
-    flasks = Fetch("flasks")
-    weapons = Fetch("weapons")
-    armours = Fetch("armours")
-    accessories = Fetch("accessories")
-    jewels = Fetch("jewels")
-    maps = Fetch("maps")
-    divCards = Fetch("divCards")
-    fossils = Fetch("fossils")
-    baseTypes = Fetch("baseTypes")
-
+    requestStatus, flasks = Fetch("flasks")
     ParseUniques(flasks)
+    requestStatus, weapons = Fetch("weapons")
     ParseUniques(weapons)
+    requestStatus, armours = Fetch("armours")
     ParseUniques(armours)
+    requestStatus, accessories = Fetch("accessories")
     ParseUniques(accessories)
+    requestStatus, jewels = Fetch("jewels")
     ParseUniques(jewels)
+    requestStatus, maps = Fetch("maps")
     ParseUniques(maps)
     Replace("allUniques")
 
+    requestStatus, divCards = Fetch("divCards")
     ParseDivCards(divCards)
     Replace("divCards")
 
+    requestStatus, fossils = Fetch("fossils")
     ParseFossils(fossils)
     Replace("fossils")
 
+    requestStatus, baseTypes = Fetch("baseTypes")
     ParseBaseTypes(baseTypes)
     ReplaceBaseType("baseTypes")
 
