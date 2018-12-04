@@ -4631,11 +4631,41 @@ Show
     SetFontSize 45
     SetBackgroundColor 255 255 119
     SetTextColor 100 100 0
-    Branch # Rares - Highlight Corrupted | Comment
+    Branch # Rares - Highlight Corrupted - Good Bases - Weapons | Comment
+        BaseType $Highlighted_Rares_Weapons
         Corrupted True
         SetFontSize 40
         SetBorderColor 250 20 0
-    Branch # Rares - Highlight Identified | Comment
+    Branch # Rares - Highlight Corrupted - Good Bases - Armours | Comment
+        BaseType $Highlighted_Rares_Armours
+        Corrupted True
+        SetFontSize 40
+        SetBorderColor 250 20 0
+    Branch # Rares - Highlight Corrupted - Good Bases - Accessories | Comment
+        BaseType $Highlighted_Rares_Accessories
+        Corrupted True
+        SetFontSize 40
+        SetBorderColor 250 20 0
+    Branch # Rares - Highlight Corrupted - Other Bases | Comment
+        Corrupted True
+        SetFontSize 40
+        SetBorderColor 250 20 0
+    Branch # Rares - Highlight Identified - Good Bases - Weapons | Comment
+        BaseType $Highlighted_Rares_Weapons
+        Identified True
+        SetFontSize 40
+        SetBorderColor 100 100 0
+    Branch # Rares - Highlight Identified - Good Bases - Armours | Comment
+        BaseType $Highlighted_Rares_Armours
+        Identified True
+        SetFontSize 40
+        SetBorderColor 100 100 0
+    Branch # Rares - Highlight Identified - Good Bases - Accessories | Comment
+        BaseType $Highlighted_Rares_Accessories
+        Identified True
+        SetFontSize 40
+        SetBorderColor 100 100 0
+    Branch # Rares - Highlight Identified - Other Bases| Comment
         Identified True
         SetFontSize 40
         SetBorderColor 100 100 0
@@ -4647,11 +4677,41 @@ Show
     SetFontSize 38
     SetBackgroundColor 50 50 0
     SetTextColor 255 255 119
-    Branch # Rares - Highlight Corrupted | Comment
+    Branch # Rares - Highlight Corrupted - Good Bases - Weapons | Comment
+        BaseType $Highlighted_Rares_Weapons
         Corrupted True
         SetFontSize 35
         SetBorderColor 250 20 0
-    Branch # Rares - Highlight Identified | Comment
+    Branch # Rares - Highlight Corrupted - Good Bases - Armours | Comment
+        BaseType $Highlighted_Rares_Armours
+        Corrupted True
+        SetFontSize 35
+        SetBorderColor 250 20 0
+    Branch # Rares - Highlight Corrupted - Good Bases - Accessories | Comment
+        BaseType $Highlighted_Rares_Accessories
+        Corrupted True
+        SetFontSize 35
+        SetBorderColor 250 20 0
+    Branch # Rares - Highlight Corrupted - Other Bases | Comment
+        Corrupted True
+        SetFontSize 35
+        SetBorderColor 250 20 0
+    Branch # Rares - Highlight Identified - Good Bases - Weapons | Comment
+        BaseType $Highlighted_Rares_Weapons
+        Identified True
+        SetFontSize 35
+        SetBorderColor 255 255 119
+    Branch # Rares - Highlight Identified - Good Bases - Armours | Comment
+        BaseType $Highlighted_Rares_Armours
+        Identified True
+        SetFontSize 35
+        SetBorderColor 255 255 119
+    Branch # Rares - Highlight Identified - Good Bases - Accessories | Comment
+        BaseType $Highlighted_Rares_Accessories
+        Identified True
+        SetFontSize 35
+        SetBorderColor 255 255 119
+    Branch # Rares - Highlight Identified - Other Bases| Comment
         Identified True
         SetFontSize 35
         SetBorderColor 255 255 119
@@ -5196,6 +5256,34 @@ Show
 #------------------------------------
 
 #------------------------------------
+#    Betrayal League
+#------------------------------------
+# Show
+#     # Class "Map Fragments"
+#     # BaseType "Scarab"
+#     Class "Leaguestones"
+#     SetBackgroundColor 76 177 255 255
+#     Branch # Leagues - Betrayal - Scarabs - Gilded
+#         BaseType "Ambush Leaguestone"
+#         SetTextColor 210 103 37 255
+#         SetBorderColor 210 103 37 255
+#         SetFontSize 37
+#         PlayAlertSound $SoundT2
+#     Branch # Leagues - Betrayal - Scarabs - Polished
+#         BaseType "Tempest Leaguestone"
+#         SetTextColor 232 232 232 255
+#         SetBorderColor 232 232 232 255
+#         SetFontSize 37
+#         PlayAlertSound $SoundT2
+#     Branch # Leagues - Betrayal - Scarabs - Rusted
+#         BaseType "Prophecy Leaguestone"
+#         SetTextColor 255 250 119
+#         SetBorderColor 255 255 119
+#         SetFontSize 37
+#         PlayAlertSound $SoundT1
+
+
+#------------------------------------
 #    Delve League
 #------------------------------------
 Show
@@ -5457,7 +5545,7 @@ Show # Leagues - Legacy - Ancient Reliquary Keys
     SetBackgroundColor 255 230 180
     SetTextColor 50 7 7
     SetBorderColor 255 215 0
-    PlayAlertSound $SoundT1
+    PlayAlertSound $SoundT0
 
 #------------------------------------
 #    Breach League
