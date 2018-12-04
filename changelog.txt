@@ -1,6 +1,11 @@
 ---------------------------------------------------
           Changelog for Crymsius's Filter         |
 ---------------------------------------------------
+-Notes (3.4.5)
+Changed autotiering to use Standard prices between leagues
+Add fallback if an error happens when retrieving json data from poe.ninja api
+Pre-added betrayal scarabs
+
 -Notes (3.4.4)
 Autotiering improved with: 
     -better error handling
