@@ -233,25 +233,25 @@ if __name__ == '__main__':
 
     classes = {
         "currency": {
-            "url": "https://poe.ninja/api/data/CurrencyOverview?league=Standard&type=Currency"
+            "url": "https://poe.ninja/api/data/CurrencyOverview?league=Betrayal&type=Currency"
         },
         "flasks": {
-            "url": "https://poe.ninja/api/data/ItemOverview?league=Standard&type=UniqueFlask"
+            "url": "https://poe.ninja/api/data/ItemOverview?league=Betrayal&type=UniqueFlask"
         },
         "weapons": {
-            "url": "https://poe.ninja/api/data/ItemOverview?league=Standard&type=UniqueWeapon"
+            "url": "https://poe.ninja/api/data/ItemOverview?league=Betrayal&type=UniqueWeapon"
         },
         "armours": {
-            "url": "https://poe.ninja/api/data/ItemOverview?league=Standard&type=UniqueArmour"
+            "url": "https://poe.ninja/api/data/ItemOverview?league=Betrayal&type=UniqueArmour"
         },
         "accessories": {
-            "url": "https://poe.ninja/api/data/ItemOverview?league=Standard&type=UniqueAccessory"
+            "url": "https://poe.ninja/api/data/ItemOverview?league=Betrayal&type=UniqueAccessory"
         },
         "maps": {
-            "url": "https://poe.ninja/api/data/ItemOverview?league=Standard&type=UniqueMap"
+            "url": "https://poe.ninja/api/data/ItemOverview?league=Betrayal&type=UniqueMap"
         },
         "jewels": {
-            "url": "https://poe.ninja/api/data/ItemOverview?league=Standard&type=UniqueJewel"
+            "url": "https://poe.ninja/api/data/ItemOverview?league=Betrayal&type=UniqueJewel"
         },
         "allUniques": {
             "tag": "SetTag @Uniques_AutoUpdater_",
@@ -309,7 +309,7 @@ if __name__ == '__main__':
             ]
         },
         "divCards": {
-            "url": "https://poe.ninja/api/data/ItemOverview?league=Standard&type=DivinationCard",
+            "url": "https://poe.ninja/api/data/ItemOverview?league=Betrayal&type=DivinationCard",
             "tag": "SetTag @DivinationCards_",
             "startTag": "#AutoUpdater_DivCards_start",
             "endTag": "#AutoUpdater_DivCards_end",
@@ -358,7 +358,7 @@ if __name__ == '__main__':
             ]
         },
         "fossils": {
-            "url": "https://poe.ninja/api/data/itemoverview?league=Standard&type=Fossil",
+            "url": "https://poe.ninja/api/data/itemoverview?league=Betrayal&type=Fossil",
             "tag": "SetTag @Fossils_",
             "startTag": "#AutoUpdater_Fossils_start",
             "endTag": "#AutoUpdater_Fossils_end",
@@ -410,7 +410,7 @@ if __name__ == '__main__':
             ]
         },
         "baseTypes": {
-            "url": "https://poe.ninja/api/data/itemoverview?league=Standard&type=BaseType",
+            "url": "https://poe.ninja/api/data/itemoverview?league=Betrayal&type=BaseType",
             "startSection" : "#AutoUpdater_BaseTypes_section_start",
             "endSection" : "#AutoUpdater_BaseTypes_section_end",
             "section": [

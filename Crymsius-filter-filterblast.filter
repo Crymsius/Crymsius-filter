@@ -39,14 +39,15 @@ SetSound $SoundT0 5 300 # T0 Drop (Exalt)
 SetSound $SoundT1 4 300 # T1 Drop (Divine)
 SetSound $SoundT2 8 200 # T2 Drop (Chaos)
 SetSound $SoundT3 7 100 # T3 Drop (Chance)
-SetSound $SoundTUnknown 6 300 # TUnknown Drop (When no data is available on poe.ninja)
+SetSound $SoundTUnknown 1 300 # TUnknown Drop (When no data is available on poe.ninja)
 SetSound $SoundTMix 6 300 # TMix Drop (Exalt/Divine + Lower Tier but cannot determine which)
 
 SetSound $Sound6S 3 100 # 6S Items
-SetSound $Sound6L 1 300 # 6L Items
+SetSound $Sound6L 5 300 # 6L Items
 SetSound $Sound5L 12 100 # 5L Items
 
 SetSound $SoundMapsHighlight 16 300 # Highlighted Maps
+SetSound $SoundMapsT0 16 300 # Elder Maps
 SetSound $SoundMapsT1 10 300 # Red Maps
 SetSound $SoundMapsT2 11 270 # Yellow Maps
 SetSound $SoundMapsT3 2 250 # White Maps
@@ -56,6 +57,8 @@ SetSound $SoundLeveling 14 200 # Leveling Highlight
 SetSound $SoundQuest 15 300 # Quest Item and Shaper's Orb
 SetSound $SoundNets 9 300 # Bestiary League Nets
 SetSound $SoundVials 12 300 # Vials
+SetSound $SoundScarabs 12 300 # Scarabs
+SetSound $SoundSpecificMods 9 300 # SpecificMods
 
 SetSound $SoundShapedElderItems 13 280 # Shaped and Elder Items
 
@@ -261,9 +264,9 @@ Show
     #AutoUpdater_AllUniques_section_end
     Branch # Uniques - Tier Unknown (no data on Poe.ninja)
         SetFontSize 50
-        SetBackgroundColor 175 96 37
-        SetTextColor 70 20 0
-        SetBorderColor 255 255 255
+        SetBackgroundColor 147 45 5 255
+        SetTextColor 0 0 0
+        SetBorderColor 0 0 0
         MinimapIcon 0 Red Star
         PlayEffect Red
         PlayAlertSound $SoundTUnknown
@@ -299,7 +302,7 @@ Show
     SetFontSize 45
     SetBackgroundColor 255 255 255
     SetTextColor 250 20 0
-    PlayAlertSound $SoundT0
+    PlayAlertSound $SoundMapsT0
     MinimapIcon 0 Blue Circle
     PlayEffect Blue
     Branch # Maps - Tiers 16 (Guardians and Elder Orb) - Highlight Rare | Comment
@@ -373,7 +376,10 @@ Show
         PlayAlertSound $SoundMapsT3
         MinimapIcon 1 White Circle
         PlayEffect White Temp
-#Fragments
+
+#------------------------------------
+#    Map Fragments & Misc Map Items
+#------------------------------------
 Show # Fragments - Timeworn Reliquary Key
     Class "Misc Map Items"
     BaseType "Timeworn Reliquary Key"
@@ -384,55 +390,77 @@ Show # Fragments - Timeworn Reliquary Key
     PlayAlertSound $SoundT0
     MinimapIcon 0 Blue Hexagon
     PlayEffect Blue
-Show
+
+Show # Fragments - Offering to the Goddess
+    Class "Map Fragments"
+    BaseType "Offering to the Goddess"
+    SetFontSize 42
+    SetBackgroundColor 50 50 0
+    SetBorderColor 255 255 119
+    PlayAlertSound $SoundQuest
+    MinimapIcon 0 Green Hexagon
+    PlayEffect Green
+
+Show # Fragments - Divine Vessel
     Class "Map Fragments"
     SetFontSize 42
+    BaseType "Divine Vessel"
+    SetBackgroundColor 74 230 58
+    SetTextColor 0 0 0
+    SetBorderColor 88 124 244
+    PlayAlertSound $SoundQuest
+    MinimapIcon 2 Green Hexagon
+    PlayEffect Green
+
+Show # Fragments - Guardians
+    Class "Map Fragments"
+    SetFontSize 42
+    SetBackgroundColor 24 31 33
+    SetTextColor 200 210 198
+    SetBorderColor 200 210 198
+    PlayAlertSound $SoundT1
+    MinimapIcon 0 Red Circle
+    PlayEffect Red
+    Branch
+        BaseType "Fragment of the Hydra"
+        SetTextColor 196 202 171
+        SetBorderColor 139 148 125
+    Branch
+        BaseType "Fragment of the Phoenix"
+        SetTextColor 224 172 59
+        SetBorderColor 224 64 24
+    Branch
+        BaseType "Fragment of the Minotaur"
+        SetTextColor 223 185 135
+        SetBorderColor 89 63 38
+    Branch
+        BaseType "Fragment of the Chimera"
+        SetTextColor 222 191 184
+        SetBorderColor 184 67 43
+    
+
+    Show # Fragments - Mortal
+    Class "Map Fragments"
+    BaseType "Mortal"
+    SetFontSize 42
+    SetBackgroundColor 200 20 0
+    SetTextColor 0 0 0
+    SetBorderColor 255 255 255
+    PlayAlertSound $SoundT1
+    MinimapIcon 0 Red Circle
+    PlayEffect Red
+
+    Show # Fragments - Sacrifice
+    Class "Map Fragments"
+    BaseType "Sacrifice"
     SetBackgroundColor 0 0 0
     SetTextColor 200 20 0
     SetBorderColor 255 255 255
     MinimapIcon 2 Red Circle
     PlayEffect Red
-    Branch # Leagues - Prophecy - Keys
-        BaseType "'s Key"
-        SetTextColor 200 20 0
-        SetBorderColor 128 0 200
-        PlayAlertSound $SoundT2
-        MinimapIcon 1 Red Circle
-    Branch # Fragments - Divine Vessel
-        BaseType "Divine Vessel"
-        SetBackgroundColor 74 230 58
-        SetTextColor 0 0 0
-        SetBorderColor 88 124 244
-        PlayAlertSound $SoundQuest
-        MinimapIcon 2 Green Hexagon
-        PlayEffect Green
-    Branch # Fragments - Guardians
-        BaseType "Fragment of"
-        SetBackgroundColor 200 20 0
-        SetTextColor 0 0 0
-        PlayAlertSound $SoundT1
-        MinimapIcon 0 Red Circle
-    Branch # Fragments - Mortal - Hope and Ignorance
-        BaseType "Mortal Hope" "Mortal Ignorance"
-        SetBackgroundColor 200 20 0
-        SetTextColor 0 0 0
-        PlayAlertSound $SoundT1
-        MinimapIcon 0 Red Circle
-    Branch # Fragments - Mortal - Rage and Grief
-        BaseType "Mortal Rage" "Mortal Grief"
-        SetBackgroundColor 200 20 0
-        SetTextColor 0 0 0
-        PlayAlertSound $SoundT2
-        MinimapIcon 1 Red Circle
-    Branch # Fragments - Sacrifice - Midnight
-        BaseType "Sacrifice at Midnight"
-        SetBackgroundColor 200 20 0
-        SetTextColor 0 0 0
-        PlayAlertSound $SoundT2
-        MinimapIcon 1 Red Circle
-    Branch # Fragments - Sacrifice - Others
-        SetFontSize 39
-        PlayAlertSound $SoundT2
+    SetFontSize 39
+    PlayAlertSound $SoundT2
+
 
 #------------------------------------
 #    Sockets
@@ -452,16 +480,6 @@ Show # Sockets - 5L | Comment
     SetBorderColor 180 180 180
     PlayAlertSound $Sound5L
     MinimapIcon 2 Yellow Triangle
-Show 
-    SocketGroup RGB
-    SetFontSize 36
-    SetBorderColor 255 255 255
-    Branch # Sockets - RGB - Small Items | Comment
-        Height <= 2
-        Width <= 2
-    Branch # Sockets - RGB - Small Items | Comment
-        Height <= 3
-        Width <= 1
 
 #------------------------------------
 #    Atlas and special bases
@@ -740,7 +758,7 @@ Show
 #    Crafting Mods
 #------------------------------------
 
-# This section handles additional crafting bases.
+# ----- Crafting Bases -----
 Hide # Crafting - Base ilvl>=84
     BaseType $Crafting_Bases
     Rarity Normal
@@ -750,6 +768,7 @@ Hide # Crafting - Base ilvl>=84
     SetTextColor 0 180 0
     SetBorderColor 255 255 255
 
+# ----- Crafting Mods Combination -----
 Show
     Rarity Rare
     SetBackgroundColor 50 50 0
@@ -775,12 +794,66 @@ Show
         HasExplicitMod "Dragon's"
         HasExplicitMod "of Excavation"
 
+#------------------------------------
+#    Specific Mods
+#------------------------------------
+
+# ----- Veiled Mods -----
+Show
+    SetBackgroundColor 207 216 225
+    SetTextColor 30 30 30
+    SetBorderColor 30 30 30
+    SetFontSize 40
+    PlayAlertSound $SoundSpecificMods
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "Veiled"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "of the Veil"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "Leo's Veiled"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "Catarina's Veiled"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "Elreon's Veiled"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "Vorici's Veiled"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "Haku's Veiled"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "Tora's Veiled"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "Vagan's Veiled"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "Guff's Veiled"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "It That Fled's Veiled"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "Gravicius's Veiled"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "Korell's Veiled"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "Rin's Veiled"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "of Janus' Veil"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "of Hillock's Veil"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "of Jorgin's Veil"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "of Cameria's Veil"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "of Aisling's Veil"
+    Branch # Leagues - Betrayal - Veiled Mods | Comment
+        HasExplicitMod "of Riker's Veil"
+
+# ----- Delve Mods -----
 Show
     Rarity Rare
     SetBackgroundColor 50 50 0
-    SetTextColor 255 255 255
-    SetBorderColor 255 255 255
+    SetTextColor 205 227 253
+    SetBorderColor 205 227 253
     SetFontSize 38
+    PlayAlertSound $SoundSpecificMods
     Branch # Leagues - Delve - Mods | Comment
         HasExplicitMod "of Crafting"
     Branch # Leagues - Delve - Mods | Comment
@@ -794,9 +867,10 @@ Show
 Show
     Rarity Magic
     SetBackgroundColor 0 0 60
-    SetTextColor 255 255 255
-    SetBorderColor 255 255 255
+    SetTextColor 205 227 253
+    SetBorderColor 205 227 253
     SetFontSize 38
+    PlayAlertSound $SoundSpecificMods
     Branch # Leagues - Delve - Mods | Comment
         HasExplicitMod "of Crafting"
     Branch # Leagues - Delve - Mods | Comment
@@ -808,12 +882,14 @@ Show
     Branch # Leagues - Delve - Mods | Comment
         HasExplicitMod "of the Underground"
 
-    Show
+# ----- Incursion Mods -----
+Show
     Rarity Rare
     SetBackgroundColor 255 75 60
     SetTextColor 255 255 119
     SetBorderColor 255 75 60
     SetFontSize 38
+    PlayAlertSound $SoundSpecificMods
     Branch # Leagues - Incursion - Mods - Tacati's | Comment
         HasExplicitMod "Tacati's"
     Branch # Leagues - Incursion - Mods - Citaqualotl's | Comment
@@ -842,6 +918,7 @@ Show
     SetTextColor 255 75 60
     SetBorderColor 255 75 60
     SetFontSize 38
+    PlayAlertSound $SoundSpecificMods
     Branch # Leagues - Incursion - Mods - Tacati's | Comment
         HasExplicitMod "Tacati's"
     Branch # Leagues - Incursion - Mods - Citaqualotl's | Comment
@@ -865,12 +942,14 @@ Show
     Branch # Leagues - Incursion - Mods - of Guatelitzi | Comment
         HasExplicitMod "of Guatelitzi"
 
+# ----- Warband Mods -----
 Show
     Rarity Magic
     SetBackgroundColor 0 0 60
     SetFontSize 38
     SetTextColor 255 51 187
     SetBorderColor 255 51 187
+    PlayAlertSound $SoundSpecificMods
     Branch # Leagues - Warbands - Brinerot | Comment
         Class "Gloves"
         HasExplicitMod "Brinerot"
@@ -887,6 +966,19 @@ Show
     Branch # Leagues - Warbands - Turncoat's | Comment
         HasExplicitMod "Turncoat's"
 
+#------------------------------------
+#    Chromatic Items
+#------------------------------------
+Show
+    SocketGroup RGB
+    SetFontSize 36
+    SetBorderColor 255 255 255
+    Branch # Sockets - RGB - Small Items | Comment
+        Height <= 2
+        Width <= 2
+    Branch # Sockets - RGB - Small Items | Comment
+        Height <= 3
+        Width <= 1
 #------------------------------------
 #    Jewels
 #------------------------------------
@@ -5263,29 +5355,27 @@ Show
 #------------------------------------
 #    Betrayal League
 #------------------------------------
-# Show
-#     # Class "Map Fragments"
-#     # BaseType "Scarab"
-#     Class "Leaguestones"
-#     SetBackgroundColor 76 177 255 255
-#     Branch # Leagues - Betrayal - Scarabs - Gilded
-#         BaseType "Ambush Leaguestone"
-#         SetTextColor 210 103 37 255
-#         SetBorderColor 210 103 37 255
-#         SetFontSize 37
-#         PlayAlertSound $SoundT2
-#     Branch # Leagues - Betrayal - Scarabs - Polished
-#         BaseType "Tempest Leaguestone"
-#         SetTextColor 232 232 232 255
-#         SetBorderColor 232 232 232 255
-#         SetFontSize 37
-#         PlayAlertSound $SoundT2
-#     Branch # Leagues - Betrayal - Scarabs - Rusted
-#         BaseType "Prophecy Leaguestone"
-#         SetTextColor 255 250 119
-#         SetBorderColor 255 255 119
-#         SetFontSize 37
-#         PlayAlertSound $SoundT1
+Show
+    Class "Map Fragments"
+    SetBackgroundColor 76 177 255 255
+    Branch # Leagues - Betrayal - Scarabs - Gilded
+        BaseType "Gilded"
+        SetTextColor 255 250 119
+        SetBorderColor 255 255 119
+        SetFontSize 43
+        PlayAlertSound $SoundScarabs
+    Branch # Leagues - Betrayal - Scarabs - Polished
+        BaseType "Polished"
+        SetTextColor 232 232 232 255
+        SetBorderColor 232 232 232 255
+        SetFontSize 40
+        PlayAlertSound $SoundScarabs
+    Branch # Leagues - Betrayal - Scarabs - Rusted
+        BaseType "Rusted"
+        SetTextColor 210 103 37 255
+        SetBorderColor 210 103 37 255
+        SetFontSize 37
+        PlayAlertSound $SoundScarabs
 
 
 #------------------------------------
@@ -5353,7 +5443,7 @@ Show
         BaseType "Prime Alchemical Resonator" "Prime Chaotic Resonator"
         SetBackgroundColor 255 255 255
         SetTextColor 0 34 66
-        SetBorderColor 0 34 66
+        SetBorderColor 255 178 57
         SetFontSize 45
         PlayAlertSound $SoundT0
         MinimapIcon 0 Blue Hexagon
@@ -5607,34 +5697,29 @@ Show
         PlayAlertSound $SoundT2
 #BreachStones
 Show
-    Class "Misc Map Items"
+    Class "Map Fragments"
     SetFontSize 42
     SetBorderColor 130 0 200
     Branch # Leagues - Breach - Breachstones - Chayula
         BaseType "Chayula's Breachstone"
-        SetBackgroundColor 200 0 0
-        SetTextColor 0 0 0
-        PlayAlertSound $SoundT0
+        SetBackgroundColor 0 0 0
+        SetTextColor 200 0 0
     Branch # Leagues - Breach - Breachstones - Uul-Netol
         BaseType "Uul-Netol's Breachstone"
         SetBackgroundColor 0 0 0
         SetTextColor 200 0 0
-        PlayAlertSound $SoundT2
     Branch # Leagues - Breach - Breachstones - Xoph
         BaseType "Xoph's Breachstone"
         SetBackgroundColor 0 0 0
         SetTextColor 200 0 0
-        PlayAlertSound $SoundT0
     Branch # Leagues - Breach - Breachstones - Esh
         BaseType "Esh's Breachstone"
         SetBackgroundColor 0 0 0
         SetTextColor 200 0 0
-        PlayAlertSound $SoundT2
     Branch # Leagues - Breach - Breachstones - Tul
         BaseType "Tul's Breachstone"
         SetBackgroundColor 0 0 0
         SetTextColor 200 0 0
-        PlayAlertSound $SoundT2
 
 #------------------------------------
 #    Essence League
@@ -5683,7 +5768,18 @@ Show # Leagues - Prophecy - Silver Coins
     SetBorderColor 128 0 200
     PlayAlertSound $SoundT3
     MinimapIcon 2 White Diamond
-Show # Leagues - Prophecy - Prophecies 
+
+Show # Leagues - Prophecy - Keys
+    Class "Map Fragments"
+    BaseType "'s Key"
+    SetFontSize 42
+    SetBackgroundColor 143 146 215 255
+    SetTextColor 128 0 200
+    SetBorderColor 128 0 200
+    PlayAlertSound $SoundT2
+    MinimapIcon 1 Red Circle
+
+Show # Leagues - Prophecy - Prophecies
     Class "Currency"
     BaseType "Prophecy"
     SetFontSize 37
