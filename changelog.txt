@@ -1,6 +1,18 @@
 ---------------------------------------------------
           Changelog for Crymsius's Filter         |
 ---------------------------------------------------
+
+-Notes (3.5.0)
+Added and enabled Betrayal items
+Highlight for veiled items
+Highlight for scarabs
+Reworked the appearance of Map Fragments
+Changed sounds and appearance for unknown items to better differanciate them from mixed tier items
+Moved chromatic items lower in priority : now specific mods on items will show up instead of the chroma recipe
+Changed the auto updating tiers feature to use betrayal api
+Deactivated auto updating tiers feature for now, waiting for the league to start
+
+---------------------------------------------------
 -Notes (3.4.5)
 Changed autotiering to use Standard prices between leagues
 Add fallback if an error happens when retrieving json data from poe.ninja api
