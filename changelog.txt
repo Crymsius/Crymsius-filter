@@ -1,6 +1,13 @@
 ---------------------------------------------------
           Changelog for Crymsius's Filter         |
 ---------------------------------------------------
+-Notes (3.5.0b)
+Increased the size of chromatic items
+Added missing minimap icons for veiled items, scarabs and T1 div cards
+Switch priority between veiled items and map-only items (such as opal rings) : now an veiled opal ring will appear as a veiled item, not as a opal ring.
+Fixed a small bug in auto-tiering with BaseTypes.
+Enabled auto-tiering with a frequency of 1 update every 4 hours
+
 -Notes (3.5.0a)
 Replaced Old Unique Map Base "Torture Chamber Map" for "Underground Sea Map"
 Fixed typo for Gravicius' Veiled mod 

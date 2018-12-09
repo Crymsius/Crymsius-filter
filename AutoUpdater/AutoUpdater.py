@@ -83,13 +83,13 @@ def ParseDivCards(items):
 
 def ParseFossils(items):
     if requestStatus :
-        relevantFossils = [fossil for fossil in items['lines'] if fossil["count"] > 10]
+        relevantFossils = [fossil for fossil in items['lines'] if fossil["count"] > 3]
         for item in relevantFossils:
             PutInTier(item['name'], FindTier(item['chaosValue']), tierlists)
 
 def ParseBaseTypes(items):
     if requestStatus :
-        relevantItems = [baseItem for baseItem in items['lines'] if baseItem["count"] > 10 and baseItem["chaosValue"] > 9.5]
+        relevantItems = [baseItem for baseItem in items['lines'] if baseItem["count"] > 10 and baseItem["chaosValue"] > tiers[1]]
         for item in relevantItems:
             baseType = {
                 "baseType": item['name'],
@@ -150,29 +150,32 @@ def ReplaceBaseType(baseType):
                         itemsOtherIlvl[item["ilvl"]] = [item["baseType"]]
 
                 #Shaper
-                tempFileSections.write(classes[baseType]["section"][i] + '\n')
-                tempFileSections.write('    ShaperItem True\n')
-                for ilvl in itemsShaperIlvl:
-                    tempFileSections.write('    Branch\n')
-                    tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
-                    tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item.encode('utf-8')) for item in itemsShaperIlvl[ilvl]) + '\n')
+                if itemsShaper :
+                    tempFileSections.write(classes[baseType]["section"][i] + '\n')
+                    tempFileSections.write('    ShaperItem True\n')
+                    for ilvl in itemsShaperIlvl:
+                        tempFileSections.write('    Branch\n')
+                        tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
+                        tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item.encode('utf-8')) for item in itemsShaperIlvl[ilvl]) + '\n')
 
                 #Elder
-                tempFileSections.write(classes[baseType]["section"][i] + '\n')
-                tempFileSections.write('    ElderItem True\n')
-                for ilvl in itemsElderIlvl:
-                    tempFileSections.write('    Branch\n')
-                    tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
-                    tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item.encode('utf-8')) for item in itemsElderIlvl[ilvl]) + '\n')
+                if itemsElder :
+                    tempFileSections.write(classes[baseType]["section"][i] + '\n')
+                    tempFileSections.write('    ElderItem True\n')
+                    for ilvl in itemsElderIlvl:
+                        tempFileSections.write('    Branch\n')
+                        tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
+                        tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item.encode('utf-8')) for item in itemsElderIlvl[ilvl]) + '\n')
 
                 #Other
-                tempFileSections.write(classes[baseType]["section"][i] + '\n')
-                tempFileSections.write('    ShaperItem False\n')
-                tempFileSections.write('    ElderItem False\n')
-                for ilvl in itemsOtherIlvl:
-                    tempFileSections.write('    Branch\n')
-                    tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
-                    tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item.encode('utf-8')) for item in itemsOtherIlvl[ilvl]) + '\n')
+                if itemsOther :
+                    tempFileSections.write(classes[baseType]["section"][i] + '\n')
+                    tempFileSections.write('    ShaperItem False\n')
+                    tempFileSections.write('    ElderItem False\n')
+                    for ilvl in itemsOtherIlvl:
+                        tempFileSections.write('    Branch\n')
+                        tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
+                        tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item.encode('utf-8')) for item in itemsOtherIlvl[ilvl]) + '\n')
 
             i += 1
 
