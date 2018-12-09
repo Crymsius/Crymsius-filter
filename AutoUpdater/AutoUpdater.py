@@ -69,11 +69,20 @@ def ParseUniques(items):
 
         for baseType, uniques in groupby(relevantUniques, lambda unique: unique['baseType']):
             groupedUniques.append(list(uniques))
-            baseTypes.append(baseType)
+            baseTypes.append(preventWrongBaseType(baseType))
 
         for group in groupedUniques:
             tiers = [FindTier(item['chaosValue']) for item in group]
-            PutInTier(group[0]['baseType'], ChooseTier(tiers), tierlists)
+            PutInTier(preventWrongBaseType(group[0]['baseType']), ChooseTier(tiers), tierlists)
+
+def preventWrongBaseType(baseType):
+    '''
+        Function to prevent poe.ninja wrong basetypes.
+    '''
+    if baseType == "Torture Chamber Map":
+        baseType = "Underground Sea Map"
+    return baseType
+
 
 def ParseDivCards(items):
     if requestStatus :
