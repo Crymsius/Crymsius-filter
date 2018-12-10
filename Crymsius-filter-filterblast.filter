@@ -689,35 +689,6 @@ Show
 
 # ----- Incursion Mods -----
 Show
-    Rarity Rare
-    SetBackgroundColor 255 75 60
-    SetTextColor 255 255 119
-    SetBorderColor 255 75 60
-    SetFontSize 38
-    PlayAlertSound $SoundSpecificMods
-    Branch # Leagues - Incursion - Mods - Tacati's | Comment
-        HasExplicitMod "Tacati's"
-    Branch # Leagues - Incursion - Mods - Citaqualotl's | Comment
-        HasExplicitMod "Citaqualotl's"
-    Branch # Leagues - Incursion - Mods - Matatl's | Comment
-        HasExplicitMod "Matatl's"
-    Branch # Leagues - Incursion - Mods - Topotante's | Comment
-        HasExplicitMod "Topotante's"
-    Branch # Leagues - Incursion - Mods - Xopec's | Comment
-        HasExplicitMod "Xopec's"
-    Branch # Leagues - Incursion - Mods - Guatelitzi's | Comment
-        HasExplicitMod "Guatelitzi's"
-    Branch # Leagues - Incursion - Mods - of Tacati | Comment
-        HasExplicitMod "of Tacati"
-    Branch # Leagues - Incursion - Mods - of Citaqualotl | Comment
-        HasExplicitMod "of Citaqualotl"
-    Branch # Leagues - Incursion - Mods - of Matatl | Comment
-        HasExplicitMod "of Matatl"
-    Branch # Leagues - Incursion - Mods - of Puhuarte | Comment
-        HasExplicitMod "of Puhuarte"
-    Branch # Leagues - Incursion - Mods - of Guatelitzi | Comment
-        HasExplicitMod "of Guatelitzi"
-Show
     Rarity Magic
     SetBackgroundColor 0 0 60
     SetTextColor 255 75 60
@@ -746,6 +717,23 @@ Show
         HasExplicitMod "of Puhuarte"
     Branch # Leagues - Incursion - Mods - of Guatelitzi | Comment
         HasExplicitMod "of Guatelitzi"
+
+# ----- Bestiary Mods -----
+Show
+    Rarity Rare
+    SetBackgroundColor 50 50 0
+    SetTextColor 191 70 68
+    SetBorderColor 191 70 68
+    SetFontSize 38
+    PlayAlertSound $SoundSpecificMods
+    Branch # Leagues - Bestiary - Mods | Comment
+        HasExplicitMod "of Fenumus"
+    Branch # Leagues - Bestiary - Mods | Comment
+        HasExplicitMod "of Saqawal"
+    Branch # Leagues - Bestiary - Mods | Comment
+        HasExplicitMod "of Farrul"
+    Branch # Leagues - Bestiary - Mods | Comment
+        HasExplicitMod "of Craiceann"
 
 # ----- Warband Mods -----
 Show
@@ -5294,7 +5282,6 @@ Show
     SetBackgroundColor 65 3 15
     SetTextColor 170 158 130
     SetBorderColor 235 190 91
-    #SetBorderColor 170 158 130
     Branch # Leagues - Bestiary - Nets - Simple Rope Net
         BaseType "Simple Rope Net"
         SetFontSize 42
