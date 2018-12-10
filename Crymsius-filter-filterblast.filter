@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.5.1_2018.12.10_15:21
+###Version 3.5.2_2018.12.10_15:21
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -8,8 +8,9 @@ SetOption $AutoUpdates info [The filter is automatically updated twice a day to 
 SetOption $Links link [GitHub] [https://github.com/Crymsius/Crymsius-filter] [Forum Thread] [https://www.pathofexile.com/forum/view-thread/1895126] [FilterNova] [http://filterblast.oversoul.xyz/filternova.html]
 
 
-
 SetTab [Block switches]
+
+
 SetTab [Custom Item BaseTypes]
 # //! SetOption $Highlighted_Maps textarea ["Burial Chambers"] # Add or delete the name of maps you want to highlight. You can enable the highlight in the block switches (off by default)
 # //! SetOption $Highlighted_Shaped_Maps textarea ["Burial Chambers"] # Add or delete the name of shaped maps you want to highlight (Just the name, without "Shaped"). You can enable the highlight in the block switches (off by default)
@@ -19,48 +20,238 @@ SetTab [Custom Item BaseTypes]
 # //! SetOption $Highlighted_Rares_Accessories textarea ["Onyx" "Ruby" "Sapphire" "Topaz" "Two-Stone" "Diamond" "Prismatic" "Unset" "Gold Ring" "Gold Amulet" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather Belt" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash"] # Add or delete the bases for rare accessories you want to highlight. You can disable the highlight in the block switches (on by default)
 # //! SetOption $Chance_Bases textarea ["Gold Amulet"] # Add or delete the bases for items you want to chance. You can enable the highlight in the block switches (off by default)
 # //! SetOption $Crafting_Bases textarea ["Jade Amulet"] # Add or delete the bases for items you want to craft (ilvl≥84). You can enable the highlight in the block switches (off by default)
-SetTab [Sound theme]
-SetOption $SoundPositioning switch [off] [on] [off] # New feature from 3.0, Allow sound to be played from the location of the drop. It may lower the sound level, use with caution.
-SetOption $ShaperAnnouncements switch [Disable] [Show] # Select Show if you want Shaper to announce a Mirror/Exalted/Divine drop. (if Shown, overrides the sounds for Mirror/Exalted/Divine set up below)
 
-SetGlobalSoundPositioning $SoundPositioning
+
+SetTab [Sound theme]
+SetOption $Sound_Positioning switch [off] [off] [on] # May lower the sound level, use with caution.
+SetOption $Shaper_Announcements switch [Disable] [Show] # Select Show if you want Shaper to announce a Mirror/Exalted/Divine drop. (if Shown, overrides the sounds for Mirror/Exalted/Divine set up below)
+SetOption $Drop_Sound_Mode info [] # Remove default drop sounds. This does not affect filter sounds, only default sounds not customizable.
+SetOption $Drop_Sound_Mode_1 info [default - leaves everything as it is] # no title
+SetOption $Drop_Sound_Mode_1 info [all - removes drop sounds from all items] # no title
+SetOption $Drop_Sound_Mode_2 info [hidden - removes drop sounds only from hidden items] # no title
+SetOption $Drop_Sound_Mode_3 info [with-no-alert - removes drop sounds only from items which have no filter sound specified] # no title
+SetOption $Drop_Sound_Mode_Variable dropdown [default] [all] [hidden] [with-no-alert] # no title
+
+#all - removes drop sounds from all items affected by a filter
+#hidden - removes drop sounds only from hidden items
+#with-no-alert - removes drop sounds only from items which have no AlertSound specified
+
+SetGlobalSoundPositioning $Sound_Positioning
+SetGlobalDisableDropSoundMode $Drop_Sound_Mode_Variable
 
 SetOption $EmptyLine
 
-#Sound alerts :
-SetSound $SoundMirror 5 300 # Mirror Orb
-SetSound $SoundExalted 5 300 # Exalted Orb
-SetSound $SoundDivine 4 300 # Divine Orb
-SetSound $SoundChaos 8 200 # Chaos Orb
-SetSound $SoundVaal 8 200 # Vaal Orb
-SetSound $SoundRegal 8 200 # Regal Orb
 
-SetSound $SoundT0 5 300 # T0 Drop (Exalt)
-SetSound $SoundT1 4 300 # T1 Drop (Divine)
-SetSound $SoundT2 8 200 # T2 Drop (Chaos)
-SetSound $SoundT3 7 100 # T3 Drop (Chance)
-SetSound $SoundTUnknown 1 300 # TUnknown Drop (When no data is available on poe.ninja)
-SetSound $SoundTMix 6 300 # TMix Drop (Exalt/Divine + Lower Tier but cannot determine which)
+SetTab [Sound Types]
+SetOption $Sound_Type_Generic_Tiers info # Used for items and currency if they do not have specific sounds defined later
+SetOption $soundT0 switch [@theme_T0] [@theme_T0] [@custom_T0] # no title
+SetOption $soundT1 switch [@theme_T1] [@theme_T1] [@custom_T1] # no title
+SetOption $soundT2 switch [@theme_T2] [@theme_T2] [@custom_T2] # no title
+SetOption $soundT3 switch [@theme_T3] [@theme_T3] [@custom_T3] # no title
+SetOption $soundTMix switch [@theme_TMix] [@theme_TMix] [@custom_TMix] # no title
+SetOption $soundTUnknown switch [@theme_TUnknown] [@theme_TUnknown] [@custom_TUnknown] # no title
 
-SetSound $Sound6S 3 100 # 6S Items
-SetSound $Sound6L 5 300 # 6L Items
-SetSound $Sound5L 12 100 # 5L Items
+SetOption $Sound_Type_Currency info # Specific Currency sounds
+SetOption $soundMirror switch [@theme_Mirror] [@theme_Mirror] [@custom_Mirror] # no title
+SetOption $soundExalted switch [@theme_Exalted] [@theme_Exalted] [@custom_Exalted] # no title
+SetOption $soundDivine switch [@theme_Divine] [@theme_Divine] [@custom_Divine] # no title
+SetOption $soundChaos switch [@theme_Chaos] [@theme_Chaos] [@custom_Chaos] # no title
+SetOption $soundVaal switch [@theme_Vaal] [@theme_Vaal] [@custom_Vaal] # no title
+SetOption $soundRegal switch [@theme_Regal] [@theme_Regal] [@custom_Regal] # no title
 
-SetSound $SoundMapsHighlight 16 300 # Highlighted Maps
-SetSound $SoundMapsT0 16 300 # Elder Maps
-SetSound $SoundMapsT1 10 300 # Red Maps
-SetSound $SoundMapsT2 11 270 # Yellow Maps
-SetSound $SoundMapsT3 2 250 # White Maps
+SetOption $Sound_Type_Sockets info # Sound for special socket items
+SetOption $sound6S switch [@theme_6S] [@theme_6S] [@custom_6S] #no title
+SetOption $sound6L switch [@theme_6L] [@theme_6L] [@custom_6L] #no title
+SetOption $sound5L switch [@theme_5L] [@theme_5L] [@custom_5L] #no title
 
-SetSound $SoundTalismans 12 250 # Talismans
-SetSound $SoundLeveling 14 200 # Leveling Highlight
-SetSound $SoundQuest 15 300 # Quest Item and Shaper's Orb
-SetSound $SoundNets 9 300 # Bestiary League Nets
-SetSound $SoundVials 12 300 # Vials
-SetSound $SoundScarabs 12 300 # Scarabs
-SetSound $SoundSpecificMods 9 300 # SpecificMods
+SetOption $Sound_Type_Maps info # Tiers for Maps
+SetOption $soundMapsHighlight switch [@theme_MapsHighlight] [@theme_MapsHighlight] [@custom_MapsHighlight] #no title
+SetOption $soundMapsT0 switch [@theme_MapsT0] [@theme_MapsT0] [@custom_MapsT0] #no title
+SetOption $soundMapsT1 switch [@theme_MapsT1] [@theme_MapsT1] [@custom_MapsT1] #no title
+SetOption $soundMapsT2 switch [@theme_MapsT2] [@theme_MapsT2] [@custom_MapsT2] #no title
+SetOption $soundMapsT3 switch [@theme_MapsT3] [@theme_MapsT3] [@custom_MapsT3] #no title
 
-SetSound $SoundShapedElderItems 13 280 # Shaped and Elder Items
+SetOption $Sound_Type_League_Items info # Various items or currency used in current and past leagues
+SetOption $soundTalismans switch [@theme_Talismans] [@theme_Talismans] [@custom_Talismans] #no title
+SetOption $soundNets switch [@theme_Nets] [@theme_Nets] [@custom_Nets] #no title
+SetOption $soundVials switch [@theme_Vials] [@theme_Vials] [@custom_Vials] #no title
+SetOption $soundScarabs switch [@theme_Scarabs] [@theme_Scarabs] [@custom_Scarabs] #no title
+
+SetOption $Sound_Type_Other info # Other custom sounds
+SetOption $soundLeveling switch [@theme_Leveling] [@theme_Leveling] [@custom_Leveling] #no title
+SetOption $soundQuest switch [@theme_Quest] [@theme_Quest] [@custom_Quest] #no title
+SetOption $soundSpecificMods switch [@theme_SpecificMods] [@theme_SpecificMods] [@custom_SpecificMods] #no title
+SetOption $soundShapedElderItems switch [@theme_ShapedElderItems] [@theme_ShapedElderItems] [@custom_ShapedElderItems] #no title
+
+
+SetTab [Custom Sounds]
+SetOption $Custom_Generic_Tiers info # Used for items and currency if they do not have specific sounds defined later
+SetOption $file_T0 input ["Path\To\Custom\T0\Sound\File.extension"] # no title
+SetOption $file_T1 input ["Path\To\Custom\T1\Sound\File.extension"] # no title
+SetOption $file_T2 input ["Path\To\Custom\T2\Sound\File.extension"] # no title
+SetOption $file_T3 input ["Path\To\Custom\T3\Sound\File.extension"] # no title
+SetOption $file_TMix input ["Path\To\Custom\TMix\Sound\File.extension"] # no title
+SetOption $file_TUnknown input ["Path\To\Custom\TUnknown\Sound\File.extension"] # no title
+
+SetOption $Custom_Currency info # Specific Currency sounds
+SetOption $file_Mirror input ["Path\To\Custom\Mirror\Sound\File.extension"] # no title
+SetOption $file_Exalted input ["Path\To\Custom\Exalted\Sound\File.extension"] # no title
+SetOption $file_Divine input ["Path\To\Custom\Divine\Sound\File.extension"] # no title
+SetOption $file_Chaos input ["Path\To\Custom\Chaos\Sound\File.extension"] # no title
+SetOption $file_Vaal input ["Path\To\Custom\Vaal\Sound\File.extension"] # no title
+SetOption $file_Regal input ["Path\To\Custom\Regal\Sound\File.extension"] # no title
+
+SetOption $Custom_Sockets info # Sound for special socket items
+SetOption $file_6S input ["Path\To\Custom\6S\Sound\File.extension"] # no title
+SetOption $file_6L input ["Path\To\Custom\6L\Sound\File.extension"] # no title
+SetOption $file_5L input ["Path\To\Custom\5L\Sound\File.extension"] # no title
+
+SetOption $Custom_Maps info # Tiers for Maps
+SetOption $file_MapsHighlight input ["Path\To\Custom\MapsHighlight\Sound\File.extension"] # no title
+SetOption $file_MapsT0 input ["Path\To\Custom\MapsT0\Sound\File.extension"] # no title
+SetOption $file_MapsT1 input ["Path\To\Custom\MapsT1\Sound\File.extension"] # no title
+SetOption $file_MapsT2 input ["Path\To\Custom\MapsT2\Sound\File.extension"] # no title
+SetOption $file_MapsT3 input ["Path\To\Custom\MapsT3\Sound\File.extension"] # no title
+
+SetOption $Custom_League_Items info # Various items or currency used in current and past leagues
+SetOption $file_Talismans input ["Path\To\Custom\Talismans\Sound\File.extension"] # no title
+SetOption $file_Nets input ["Path\To\Custom\Nets\Sound\File.extension"] # no title
+SetOption $file_Vials input ["Path\To\Custom\Vials\Sound\File.extension"] # no title
+SetOption $file_Scarabs input ["Path\To\Custom\Scarabs\Sound\File.extension"] # no title
+
+SetOption $Custom_Other info # Other custom sounds
+SetOption $file_Leveling input ["Path\To\Custom\Leveling\Sound\File.extension"] # no title
+SetOption $file_Quest input ["Path\To\Custom\Quest\Sound\File.extension"] # no title
+SetOption $file_SpecificMods input ["Path\To\Custom\SpecificMods\Sound\File.extension"] # no title
+SetOption $file_ShapedElderItems input ["Path\To\Custom\ShapedElderItems\Sound\File.extension"] # no title
+
+
+SetTag @theme_T0
+    PlayAlertSound 5 300 # Generic - T0
+SetTag @theme_T1
+    PlayAlertSound 4 300 # Generic - T1
+SetTag @theme_T2
+    PlayAlertSound 8 200 # Generic - T2
+SetTag @theme_T3
+    PlayAlertSound 7 100 # Generic - T3
+SetTag @theme_TMix
+    PlayAlertSound 6 300 # Generic - TMix
+SetTag @theme_TUnknown
+    PlayAlertSound 1 300 # Generic - TUnknown
+
+SetTag @theme_Mirror
+    PlayAlertSound 5 300 # Currency - Mirror Orb
+SetTag @theme_Exalted
+    PlayAlertSound 5 300 # Currency - Exalted Orb
+SetTag @theme_Divine
+    PlayAlertSound 4 300 # Currency - Divine Orb
+SetTag @theme_Chaos
+    PlayAlertSound 8 200 # Currency - Chaos Orb
+SetTag @theme_Vaal
+    PlayAlertSound 8 200 # Currency - Vaal Orb
+SetTag @theme_Regal
+    PlayAlertSound 8 200 # Currency - Regal Orb
+
+SetTag @theme_6S
+    PlayAlertSound 3 100 # Sockets - 6S Items
+SetTag @theme_6L
+    PlayAlertSound 5 300 # Sockets - 6L Items
+SetTag @theme_5L
+    PlayAlertSound 12 100 # Sockets - 5L Items
+
+SetTag @theme_MapsHighlight
+    PlayAlertSound 16 300 # Maps - Highlighted Maps
+SetTag @theme_MapsT0
+    PlayAlertSound 16 300 # Maps - Elder Maps
+SetTag @theme_MapsT1
+    PlayAlertSound 10 300 # Maps - Red Maps
+SetTag @theme_MapsT2
+    PlayAlertSound 11 270 # Maps - Yellow Maps
+SetTag @theme_MapsT3
+    PlayAlertSound 2 250 # Maps - White Maps
+
+SetTag @theme_Talismans
+    PlayAlertSound 12 250 # Leagues - Talismans
+SetTag @theme_Nets
+    PlayAlertSound 9 300 # Leagues - Bestiary League Nets
+SetTag @theme_Vials
+    PlayAlertSound 12 300 # Leagues - Vials
+SetTag @theme_Scarabs
+    PlayAlertSound 12 300 # Leagues - Scarabs
+
+SetTag @theme_Leveling
+    PlayAlertSound 14 200 # Other - Leveling Highlight
+SetTag @theme_Quest
+    PlayAlertSound 15 300 # Other - Quest Item and Shaper's Orb
+SetTag @theme_SpecificMods
+    PlayAlertSound 9 300 # Other - SpecificMods
+SetTag @theme_ShapedElderItems
+    PlayAlertSound 13 280 # Other - Shaped and Elder Items
+
+
+SetTag @custom_T0
+    CustomAlertSound $file_T0
+SetTag @custom_T1
+    CustomAlertSound $file_T1
+SetTag @custom_T2
+    CustomAlertSound $file_T2
+SetTag @custom_T3
+    CustomAlertSound $file_T3
+SetTag @custom_TMix
+    CustomAlertSound $file_TMix
+SetTag @custom_TUnknown
+    CustomAlertSound $file_TUnknown
+
+SetTag @custom_Mirror
+    CustomAlertSound $file_Mirror
+SetTag @custom_Exalted
+    CustomAlertSound $file_Exalted
+SetTag @custom_Divine
+    CustomAlertSound $file_Divine
+SetTag @custom_Chaos
+    CustomAlertSound $file_Chaos
+SetTag @custom_Vaal
+    CustomAlertSound $file_Vaal
+SetTag @custom_Regal
+    CustomAlertSound $file_Regal
+
+SetTag @custom_6S
+    CustomAlertSound $file_6S
+SetTag @custom_6L
+    CustomAlertSound $file_6L
+SetTag @custom_5L
+    CustomAlertSound $file_5L
+
+SetTag @custom_MapsHighlight
+    CustomAlertSound $file_MapsHighlight
+SetTag @custom_MapsT0
+    CustomAlertSound $file_MapsT0
+SetTag @custom_MapsT1
+    CustomAlertSound $file_MapsT1
+SetTag @custom_MapsT2
+    CustomAlertSound $file_MapsT2
+SetTag @custom_MapsT3
+    CustomAlertSound $file_MapsT3
+
+SetTag @custom_Leveling
+    CustomAlertSound $file_Leveling
+SetTag @custom_Quest
+    CustomAlertSound $file_Quest
+SetTag @custom_SpecificMods
+    CustomAlertSound $file_SpecificMods
+SetTag @custom_ShapedElderItems
+    CustomAlertSound $file_ShapedElderItems
+
+SetTag @custom_Talismans
+    CustomAlertSound $file_Talismans
+SetTag @custom_Nets
+    CustomAlertSound $file_Nets
+SetTag @custom_Vials
+    CustomAlertSound $file_Vials
+SetTag @custom_Scarabs
+    CustomAlertSound $file_Scarabs
+
+
 
 #------------------------------------
 #    Tags
@@ -182,7 +373,7 @@ Show
     SetBackgroundColor 255 192 203
     SetTextColor 255 0 0
     SetBorderColor 0 102 0
-    PlayAlertSound $SoundT0
+    Tags $soundT0
     MinimapIcon 0 Blue Hexagon
     PlayEffect Blue
 
@@ -195,7 +386,7 @@ Show
     SetBackgroundColor 255 255 255
     SetTextColor 255 0 0
     SetBorderColor 255 0 0
-    PlayAlertSound $Sound6L
+    Tags $sound6L
     MinimapIcon 0 Blue Triangle
     PlayEffect Blue
 
@@ -208,7 +399,7 @@ Show # Leagues - Harbinger - Pieces
     SetBackgroundColor 70 20 0
     SetTextColor 255 255 255
     SetBorderColor 88 124 244
-    PlayAlertSound $SoundT1
+    Tags $soundT1
 Show # Leagues - Talisman - Unique Talismans
     Class "Amulets"
     BaseType "Talisman"
@@ -217,7 +408,7 @@ Show # Leagues - Talisman - Unique Talismans
     SetBackgroundColor 130 220 140
     SetTextColor 175 96 37
     SetBorderColor 175 96 37
-    PlayAlertSound $SoundTUnknown
+    Tags $soundTUnknown
     MinimapIcon 0 Red Star
     PlayEffect Red
 Show
@@ -228,7 +419,7 @@ Show
         SetFontSize 45
         SetBackgroundColor 255 255 255
         SetBorderColor 175 96 37
-        PlayAlertSound $SoundT0
+        Tags $soundT0
         MinimapIcon 0 Blue Star
         PlayEffect Blue
     Branch #Uniques - T1
@@ -237,7 +428,7 @@ Show
         SetBackgroundColor 70 20 0
         SetTextColor 255 255 255
         SetBorderColor 175 96 37
-        PlayAlertSound $SoundT1
+        Tags $soundT1
         MinimapIcon 0 Brown Star
         PlayEffect Brown
     Branch #Uniques - T2
@@ -245,7 +436,7 @@ Show
         SetFontSize 45
         SetBackgroundColor 70 20 0
         SetBorderColor 255 255 255
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Yellow Star
         PlayEffect Yellow Temp
     Branch #Uniques - T3
@@ -253,7 +444,7 @@ Show
         SetFontSize 40
         SetBackgroundColor 70 20 0
         SetBorderColor 175 96 37
-        PlayAlertSound $SoundT3
+        Tags $soundT3
         MinimapIcon 2 White Star
         PlayEffect White Temp
     Branch #Uniques - T4
@@ -268,7 +459,7 @@ Show
         SetBorderColor 255 255 255
         MinimapIcon 0 Red Star
         PlayEffect Red
-        PlayAlertSound $SoundTMix
+        Tags $soundTMix
     #AutoUpdater_AllUniques_section_end
     Branch # Uniques - Tier Unknown (no data on Poe.ninja)
         SetFontSize 50
@@ -277,7 +468,7 @@ Show
         SetBorderColor 0 0 0
         MinimapIcon 0 Red Star
         PlayEffect Red
-        PlayAlertSound $SoundTUnknown
+        Tags $soundTUnknown
 
 #------------------------------------
 #    Maps
@@ -289,7 +480,7 @@ Comment
     SetBackgroundColor 50 50 50 255
     SetTextColor 156 121 184
     SetBorderColor 156 121 184
-    PlayAlertSound $SoundMapsHighlight
+    Tags $soundMapsHighlight
     MinimapIcon 0 Green Circle
     PlayEffect Green
     Branch # Maps - Highlighted - Unshaped | Comment
@@ -310,7 +501,7 @@ Show
     SetFontSize 45
     SetBackgroundColor 255 255 255
     SetTextColor 250 20 0
-    PlayAlertSound $SoundMapsT0
+    Tags $soundMapsT0
     MinimapIcon 0 Blue Circle
     PlayEffect Blue
     Branch # Maps - Tiers 16 (Guardians and Elder Orb) - Highlight Rare | Comment
@@ -338,7 +529,7 @@ Show
         SetFontSize 41
         SetTextColor 250 20 0
         SetBorderColor 255 255 119
-        PlayAlertSound $SoundMapsT1
+        Tags $soundMapsT1
         MinimapIcon 0 Brown Circle
         PlayEffect Brown
     Branch # Maps - Tiers 12-15 (Red)
@@ -346,7 +537,7 @@ Show
         SetFontSize 41
         SetTextColor 250 20 0
         SetBorderColor 220 220 220
-        PlayAlertSound $SoundMapsT1
+        Tags $soundMapsT1
         MinimapIcon 0 Brown Circle
         PlayEffect Brown
     Branch # Maps - Tier 7-11 (Yellow) - Highlight Rare | Comment
@@ -356,7 +547,7 @@ Show
         SetFontSize 39
         SetTextColor 255 255 0
         SetBorderColor 255 255 119
-        PlayAlertSound $SoundMapsT2
+        Tags $soundMapsT2
         MinimapIcon 1 Yellow Circle
         PlayEffect Yellow Temp
     Branch # Maps - Tier 7-11 (Yellow)
@@ -364,7 +555,7 @@ Show
         SetFontSize 39
         SetTextColor 255 255 0
         SetBorderColor 220 220 220
-        PlayAlertSound $SoundMapsT2
+        Tags $soundMapsT2
         MinimapIcon 1 Yellow Circle
         PlayEffect Yellow Temp
     Branch # Maps - Tier 1-6 (White) - Highlight Rare | Comment
@@ -373,7 +564,7 @@ Show
         SetFontSize 37
         SetTextColor 220 220 220
         SetBorderColor 255 255 119
-        PlayAlertSound $SoundMapsT3
+        Tags $soundMapsT3
         MinimapIcon 1 White Circle
         PlayEffect White Temp
     Branch # Maps - Tier 1-6 (White)
@@ -381,7 +572,7 @@ Show
         SetFontSize 37
         SetTextColor 220 220 220
         SetBorderColor 220 220 220
-        PlayAlertSound $SoundMapsT3
+        Tags $soundMapsT3
         MinimapIcon 1 White Circle
         PlayEffect White Temp
 
@@ -395,7 +586,7 @@ Show # Fragments - Timeworn Reliquary Key
     SetBackgroundColor 255 230 180
     SetTextColor 50 7 7
     SetBorderColor 255 215 0
-    PlayAlertSound $SoundT0
+    Tags $soundT0
     MinimapIcon 0 Blue Hexagon
     PlayEffect Blue
 
@@ -405,7 +596,7 @@ Show # Fragments - Offering to the Goddess
     SetFontSize 42
     SetBackgroundColor 50 50 0
     SetBorderColor 255 255 119
-    PlayAlertSound $SoundQuest
+    Tags $soundQuest
     MinimapIcon 0 Green Hexagon
     PlayEffect Green
 
@@ -416,7 +607,7 @@ Show # Fragments - Divine Vessel
     SetBackgroundColor 74 230 58
     SetTextColor 0 0 0
     SetBorderColor 88 124 244
-    PlayAlertSound $SoundQuest
+    Tags $soundQuest
     MinimapIcon 2 Green Hexagon
     PlayEffect Green
 
@@ -426,7 +617,7 @@ Show # Fragments - Guardians
     SetBackgroundColor 24 31 33
     SetTextColor 200 210 198
     SetBorderColor 200 210 198
-    PlayAlertSound $SoundT1
+    Tags $soundT1
     MinimapIcon 0 Red Circle
     PlayEffect Red
     Branch
@@ -454,7 +645,7 @@ Show # Fragments - Guardians
     SetBackgroundColor 200 20 0
     SetTextColor 0 0 0
     SetBorderColor 255 255 255
-    PlayAlertSound $SoundT1
+    Tags $soundT1
     MinimapIcon 0 Red Circle
     PlayEffect Red
 
@@ -467,7 +658,7 @@ Show # Fragments - Guardians
     MinimapIcon 2 Red Circle
     PlayEffect Red
     SetFontSize 39
-    PlayAlertSound $SoundT2
+    Tags $soundT2
 
 
 #------------------------------------
@@ -478,7 +669,7 @@ Show # Sockets - 6S | Comment
     SetFontSize 45
     SetBackgroundColor 0 0 0
     SetBorderColor 135 135 135
-    PlayAlertSound $Sound6S
+    Tags $sound6S
     MinimapIcon 1 Yellow Triangle
     PlayEffect Yellow Temp
 Show # Sockets - 5L | Comment
@@ -486,7 +677,7 @@ Show # Sockets - 5L | Comment
     SetFontSize 45
     SetBackgroundColor 72 20 0 
     SetBorderColor 180 180 180
-    PlayAlertSound $Sound5L
+    Tags $sound5L
     MinimapIcon 2 Yellow Triangle
 
 #------------------------------------
@@ -500,7 +691,7 @@ Show #Atlas and special bases - T1
     SetBackgroundColor 0 180 0
     SetTextColor 255 255 255
     SetBorderColor 255 255 255
-    PlayAlertSound $SoundT1
+    Tags $soundT1
     MinimapIcon 0 Brown Triangle
     PlayEffect Brown
     ShaperItem False
@@ -524,7 +715,7 @@ Show #Atlas and special bases - T1
 
 Show
     SetFontSize 42
-    PlayAlertSound $SoundShapedElderItems
+    Tags $soundShapedElderItems
     MinimapIcon 1 Brown Triangle
     PlayEffect Brown
     Branch #Atlas and special bases - Shaped Items | Comment
@@ -601,7 +792,7 @@ Show
     SetTextColor 30 30 30
     SetBorderColor 30 30 30
     SetFontSize 40
-    PlayAlertSound $SoundSpecificMods
+    Tags $soundSpecificMods
     MinimapIcon 1 Red Hexagon
     Branch # Leagues - Betrayal - Veiled Mods | Comment
         HasExplicitMod "Leo's Veiled"
@@ -651,7 +842,7 @@ Show # Atlas and special bases - Map Specific
     SetBackgroundColor 0 180 0
     SetTextColor 0 0 0
     SetBorderColor 0 0 0
-    PlayAlertSound $SoundT2
+    Tags $soundT2
     MinimapIcon 1 Yellow Triangle
     PlayEffect Yellow Temp
 Show # Leagues - Breach - Breach Rings
@@ -670,7 +861,7 @@ Show
     SetTextColor 205 227 253
     SetBorderColor 205 227 253
     SetFontSize 38
-    PlayAlertSound $SoundSpecificMods
+    Tags $soundSpecificMods
     Branch # Leagues - Delve - Mods | Comment
         HasExplicitMod "of Crafting"
     Branch # Leagues - Delve - Mods | Comment
@@ -687,7 +878,7 @@ Show
     SetTextColor 205 227 253
     SetBorderColor 205 227 253
     SetFontSize 38
-    PlayAlertSound $SoundSpecificMods
+    Tags $soundSpecificMods
     Branch # Leagues - Delve - Mods | Comment
         HasExplicitMod "of Crafting"
     Branch # Leagues - Delve - Mods | Comment
@@ -706,7 +897,7 @@ Show
     SetTextColor 255 75 60
     SetBorderColor 255 75 60
     SetFontSize 38
-    PlayAlertSound $SoundSpecificMods
+    Tags $soundSpecificMods
     Branch # Leagues - Incursion - Mods - Tacati's | Comment
         HasExplicitMod "Tacati's"
     Branch # Leagues - Incursion - Mods - Citaqualotl's | Comment
@@ -737,7 +928,7 @@ Show
     SetTextColor 191 70 68
     SetBorderColor 191 70 68
     SetFontSize 38
-    PlayAlertSound $SoundSpecificMods
+    Tags $soundSpecificMods
     Branch # Leagues - Bestiary - Mods | Comment
         HasExplicitMod "of Fenumus"
     Branch # Leagues - Bestiary - Mods | Comment
@@ -754,7 +945,7 @@ Show
     SetFontSize 38
     SetTextColor 255 51 187
     SetBorderColor 255 51 187
-    PlayAlertSound $SoundSpecificMods
+    Tags $soundSpecificMods
     Branch # Leagues - Warbands - Brinerot | Comment
         Class "Gloves"
         HasExplicitMod "Brinerot"
@@ -818,7 +1009,7 @@ Show
     Class "Amulets"
     BaseType "Talisman"
     SetBackgroundColor 20 255 180
-    PlayAlertSound $SoundTalismans
+    Tags $soundTalismans
     Branch # Leagues - Talisman - Normal Talismans
         Rarity Normal
         SetFontSize 35
@@ -882,7 +1073,7 @@ Show # Leveling - Flasks - Life Flasks | Comment
     SetBackgroundColor 0 0 60
     SetTextColor 0 255 255
     SetBorderColor 0 255 255
-    PlayAlertSound $SoundLeveling
+    Tags $soundLeveling
     Branch
         DropLevel >= 60
         ItemLevel <= 65
@@ -992,7 +1183,7 @@ Show # Leveling - Flasks - Utility Flasks | Comment
         BaseType "Quicksilver Flask"
         ItemLevel <= 60
         SetFontSize 38
-        PlayAlertSound $SoundLeveling
+        Tags $soundLeveling
         MinimapIcon 2 Green Triangle
     Branch
         ItemLevel <= 60
@@ -1003,7 +1194,7 @@ Show # Leveling - Flasks - Life Flasks | Comment
     SetBackgroundColor 20 20 20
     SetTextColor 0 255 255
     SetBorderColor 0 255 255
-    PlayAlertSound $SoundLeveling
+    Tags $soundLeveling
     Branch
         DropLevel >= 60
         ItemLevel <= 65
@@ -1110,7 +1301,7 @@ Show # Leveling - Flasks - Utility Flasks | Comment
         BaseType "Quicksilver"
         ItemLevel <= 65
         SetFontSize 40
-        PlayAlertSound $SoundLeveling
+        Tags $soundLeveling
     Branch
         ItemLevel <= 60
         SetFontSize 34
@@ -4707,7 +4898,7 @@ Show
     SetFontSize 43
     SetBackgroundColor 50 50 50
     SetTextColor 170 158 130
-    PlayAlertSound $SoundT2
+    Tags $soundT2
     MinimapIcon 1 Yellow Diamond
     PlayEffect Yellow Temp
     Branch # Currency - Map Currency - Master Cartographer's Sextant
@@ -4725,7 +4916,7 @@ Show
     Class "Currency"
     SetTextColor 170 158 130
     SetBorderColor 170 158 130
-    SwitchTo $ShaperAnnouncements
+    SwitchTo $Shaper_Announcements
     Branch
         Tags @Currency_Mirror
         SetFontSize 45
@@ -4756,21 +4947,21 @@ Show
         Tags @Currency_Mirror
         SetFontSize 45
         SetBackgroundColor 255 255 255
-        PlayAlertSound $SoundMirror
+        Tags $soundMirror
         MinimapIcon 0 Blue Diamond
         PlayEffect Blue
     Branch # Currency - Generic Currency - T0 (Exalted Tier) - Exalted Orb
         Tags @Currency_Exalted
         SetFontSize 45
         SetBackgroundColor 255 255 255
-        PlayAlertSound $SoundExalted
+        Tags $soundExalted
         MinimapIcon 0 Blue Diamond
         PlayEffect Blue
     Branch # Currency - Generic Currency - T0 (Exalted Tier) - Eternal Orb
         BaseType "Eternal Orb"
         SetFontSize 45
         SetBackgroundColor 255 255 255
-        PlayAlertSound $SoundT0
+        Tags $soundT0
         MinimapIcon 0 Blue Diamond
         PlayEffect Blue
 
@@ -4779,14 +4970,14 @@ Show
         Tags @Currency_Divine
         SetFontSize 45
         SetBackgroundColor 255 255 255
-        PlayAlertSound $SoundDivine
+        Tags $soundDivine
         MinimapIcon 0 Brown Diamond
         PlayEffect Brown
     Branch # Currency - Generic Currency - T1 (Divine Tier) - Orb of Annulment
         BaseType "Orb of Annulment"
         SetFontSize 45
         SetBackgroundColor 255 255 255
-        PlayAlertSound $SoundT1
+        Tags $soundT1
         MinimapIcon 0 Brown Diamond
         PlayEffect Brown
 
@@ -4795,77 +4986,77 @@ Show
         Tags @Currency_Chaos
         SetFontSize 42
         SetBackgroundColor 70 70 0
-        PlayAlertSound $SoundChaos
+        Tags $soundChaos
         MinimapIcon 1 Yellow Diamond
         PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Vaal Orb
         Tags @Currency_Vaal
         SetFontSize 42
         SetBackgroundColor 70 70 0
-        PlayAlertSound $SoundVaal
+        Tags $soundVaal
         MinimapIcon 1 Yellow Diamond
         PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Regal Orb
         Tags @Currency_Regal
         SetFontSize 42
         SetBackgroundColor 70 70 0
-        PlayAlertSound $SoundRegal
+        Tags $soundRegal
         MinimapIcon 1 Yellow Diamond
         PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Gemcutter's Prism
         BaseType "Gemcutter's Prism"
         SetFontSize 42
         SetBackgroundColor 70 70 0
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Yellow Diamond
         PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Orb of Regret
         BaseType "Orb of Regret"
         SetFontSize 42
         SetBackgroundColor 70 70 0
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Yellow Diamond
         PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Cartographer's Chisel
         BaseType "Cartographer's Chisel"
         SetFontSize 42
         SetBackgroundColor 70 70 0
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Yellow Diamond
         PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Orb of Alchemy
         BaseType "Orb of Alchemy"
         SetFontSize 42
         SetBackgroundColor 70 70 0
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Yellow Diamond
         PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Orb of Fusing
         BaseType "Orb of Fusing"
         SetFontSize 42
         SetBackgroundColor 70 70 0
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Yellow Diamond
         PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Orb of Scouring
         BaseType "Orb of Scouring"
         SetFontSize 42
         SetBackgroundColor 70 70 0
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Yellow Diamond
         PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Blessed Orb
         BaseType "Blessed Orb"
         SetFontSize 42
         SetBackgroundColor 70 70 0
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Yellow Diamond
         PlayEffect Yellow Temp
     Branch # Currency - Generic Currency - T2 (Chaos Tier) - Stacked Deck
         BaseType "Stacked Deck"
         SetFontSize 42
         SetBackgroundColor 70 70 0
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Yellow Diamond
         PlayEffect Yellow Temp
 
@@ -4874,31 +5065,31 @@ Show
         BaseType "Orb of Alteration"
         SetFontSize 39
         SetBackgroundColor 0 0 60
-        PlayAlertSound $SoundT3
+        Tags $soundT3
         MinimapIcon 2 White Diamond
     Branch # Currency - Generic Currency - T3 (Alteration Tier) - Glassblower's Bauble
         BaseType "Glassblower's Bauble"
         SetFontSize 39
         SetBackgroundColor 0 0 60
-        PlayAlertSound $SoundT3
+        Tags $soundT3
         MinimapIcon 2 White Diamond
     Branch # Currency - Generic Currency - T3 (Alteration Tier) - Jeweller's Orb
         BaseType "Jeweller's Orb"
         SetFontSize 39
         SetBackgroundColor 0 0 60
-        PlayAlertSound $SoundT3
+        Tags $soundT3
         MinimapIcon 2 White Diamond
     Branch # Currency - Generic Currency - T3 (Alteration Tier) - Orb of Chance
         BaseType "Orb of Chance"
         SetFontSize 39
         SetBackgroundColor 0 0 60
-        PlayAlertSound $SoundT3
+        Tags $soundT3
         MinimapIcon 2 White Diamond
     Branch # Currency - Generic Currency - T3 (Alteration Tier) - Chromatic Orb
         BaseType "Chromatic Orb"
         SetFontSize 39
         SetBackgroundColor 0 0 60
-        PlayAlertSound $SoundT3
+        Tags $soundT3
         MinimapIcon 2 White Diamond
 
 
@@ -4937,12 +5128,12 @@ Show
         BaseType "Unshaping Orb"
         SetFontSize 42
         SetBackgroundColor 70 70 0
-        PlayAlertSound $SoundT2
+        Tags $soundT2
     Branch # Currency - Outdated and not dropable Currency - T2 (Chaos Tier) - Seals
         BaseType "Seal"
         SetFontSize 42
         SetBackgroundColor 70 70 0
-        PlayAlertSound $SoundT2
+        Tags $soundT2
 
 
 #Currency - Shards
@@ -4987,7 +5178,7 @@ Show
     SetFontSize 42
     SetBackgroundColor 50 50 0
     SetBorderColor 255 255 119
-    PlayAlertSound $SoundQuest
+    Tags $soundQuest
     MinimapIcon 0 Green Hexagon
     PlayEffect Green
 
@@ -5047,7 +5238,7 @@ Show
     SetBackgroundColor 74 230 58
     SetTextColor 0 0 0
     SetBorderColor 0 0 0
-    PlayAlertSound $SoundQuest
+    Tags $soundQuest
     MinimapIcon 0 Green Hexagon
     PlayEffect Green
 
@@ -5060,7 +5251,7 @@ Show
     SetBackgroundColor 74 230 58
     SetTextColor 88 124 244
     SetBorderColor 88 124 244
-    PlayAlertSound $SoundQuest
+    Tags $soundQuest
 
 #------------------------------------
 #    Divination cards
@@ -5074,7 +5265,7 @@ Show
         SetBackgroundColor 255 255 255
         SetTextColor 255 165 0
         SetBorderColor 255 165 0
-        PlayAlertSound $SoundT0
+        Tags $soundT0
         MinimapIcon 0 Blue Square
         PlayEffect Blue
     Branch Inherit # Divination Cards - T1 Div cards
@@ -5083,7 +5274,7 @@ Show
         SetBackgroundColor 255 165 0 245
         SetTextColor 255 255 255
         SetBorderColor 255 255 255
-        PlayAlertSound $SoundT1
+        Tags $soundT1
         MinimapIcon 0 Brown Square
         PlayEffect Brown
     Branch Inherit # Divination Cards - T2 Div cards
@@ -5092,7 +5283,7 @@ Show
         SetBackgroundColor 255 165 0 235
         SetTextColor 0 0 0
         SetBorderColor 255 255 255
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Yellow Square
         PlayEffect Yellow Temp
     # wolf's shadow here to prevent exception with The Wolf - Also allows for T3 to be displayed before T4
@@ -5110,7 +5301,7 @@ Show
         SetBackgroundColor 255 255 255
         SetTextColor 255 165 0
         SetBorderColor 255 165 0
-        PlayAlertSound $SoundT0
+        Tags $soundT0
         MinimapIcon 0 Blue Square
         PlayEffect Blue
     Branch Inherit # Divination Cards - T1 Div cards
@@ -5119,14 +5310,14 @@ Show
         SetBackgroundColor 255 165 0 245
         SetTextColor 255 255 255
         SetBorderColor 255 255 255
-        PlayAlertSound $SoundT1
+        Tags $soundT1
     Branch Inherit # Divination Cards - T2 Div cards
         Tags @DivinationCards_T2
         SetFontSize 40
         SetBackgroundColor 255 165 0 235
         SetTextColor 0 0 0
         SetBorderColor 255 255 255
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Yellow Square
         PlayEffect Yellow Temp
     Branch Show # Divination Cards - T3 Div cards
@@ -5151,7 +5342,7 @@ Show
         SetBorderColor 255 165 0
         MinimapIcon 0 Red Square
         PlayEffect Red
-        PlayAlertSound $SoundTUnknown
+        Tags $soundTUnknown
 
 #------------------------------------
 #    Temporary Leagues
@@ -5168,21 +5359,21 @@ Show
         SetTextColor 255 250 119
         SetBorderColor 255 255 119
         SetFontSize 43
-        PlayAlertSound $SoundScarabs
+        Tags $soundScarabs
         MinimapIcon 0 Red Circle
     Branch # Leagues - Betrayal - Scarabs - Polished
         BaseType "Polished"
         SetTextColor 232 232 232 255
         SetBorderColor 232 232 232 255
         SetFontSize 40
-        PlayAlertSound $SoundScarabs
+        Tags $soundScarabs
         MinimapIcon 1 Red Circle
     Branch # Leagues - Betrayal - Scarabs - Rusted
         BaseType "Rusted"
         SetTextColor 210 103 37 255
         SetBorderColor 210 103 37 255
         SetFontSize 37
-        PlayAlertSound $SoundScarabs
+        Tags $soundScarabs
         MinimapIcon 2 Red Circle
 
 
@@ -5198,7 +5389,7 @@ Show
         SetBackgroundColor 255 255 255
         SetTextColor 255 178 57
         SetBorderColor 255 178 57
-        PlayAlertSound $SoundT0
+        Tags $soundT0
         MinimapIcon 0 Blue Hexagon
         PlayEffect Blue
     Branch # Leagues - Delve - Fossils - T1
@@ -5207,7 +5398,7 @@ Show
         SetBackgroundColor 255 178 57
         SetTextColor 255 255 255
         SetBorderColor 255 255 255
-        PlayAlertSound $SoundT1
+        Tags $soundT1
         MinimapIcon 0 Brown Hexagon
         PlayEffect Brown
     Branch # Leagues - Delve - Fossils - T2
@@ -5216,7 +5407,7 @@ Show
         SetBackgroundColor 255 178 57
         SetTextColor 175 57 18
         SetBorderColor 255 255 255
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Yellow Hexagon
         PlayEffect Yellow Temp
     #AutoUpdater_Fossils_section_end
@@ -5226,7 +5417,7 @@ Show
         SetBackgroundColor 255 255 255
         SetTextColor 255 178 57
         SetBorderColor 255 178 57
-        PlayAlertSound $SoundT0
+        Tags $soundT0
         MinimapIcon 0 Blue Hexagon
         PlayEffect Blue
 
@@ -5238,7 +5429,7 @@ Show
         SetTextColor 0 34 66
         SetBorderColor 255 178 57
         SetFontSize 45
-        PlayAlertSound $SoundT0
+        Tags $soundT0
         MinimapIcon 0 Blue Hexagon
         PlayEffect Blue
     Branch # Leagues - Delve - Resonators
@@ -5247,7 +5438,7 @@ Show
         SetTextColor 255 178 57
         SetBorderColor 255 178 57
         SetFontSize 41
-        PlayAlertSound $SoundT3
+        Tags $soundT3
         MinimapIcon 2 White Hexagon
         PlayEffect White Temp
     Branch # Leagues - Delve - Resonators
@@ -5255,20 +5446,20 @@ Show
         SetBackgroundColor 0 34 66 230
         SetTextColor 255 178 57
         SetFontSize 38
-        PlayAlertSound $SoundT3
+        Tags $soundT3
     Branch # Leagues - Delve - Resonators
         BaseType "Primitive Alchemical Resonator" "Primitive Chaotic Resonator"
         SetBackgroundColor 0 34 66 200
         SetTextColor 255 178 57
         SetFontSize 35
-        PlayAlertSound $SoundT3
+        Tags $soundT3
 
 #------------------------------------
 #    Incursion League
 #------------------------------------
 Show # Leagues - Incursion - Incursion Item
     Class "Incursion Item"
-    PlayAlertSound $SoundQuest
+    Tags $soundQuest
     SetFontSize 45
     SetBackgroundColor 40 25 23
     SetTextColor 255 75 60
@@ -5277,7 +5468,7 @@ Show # Leagues - Incursion - Incursion Item
 Show # Leagues - Incursion - Vials
     Class "Currency"
     BaseType "Vial of"
-    PlayAlertSound $SoundVials
+    Tags $soundVials
     SetFontSize 40
     SetBackgroundColor 40 25 23
     SetTextColor 170 158 130
@@ -5294,59 +5485,59 @@ Show
     Branch # Leagues - Bestiary - Nets - Simple Rope Net
         BaseType "Simple Rope Net"
         SetFontSize 42
-        PlayAlertSound $SoundNets
+        Tags $soundNets
     Branch # Leagues - Bestiary - Nets - Reinforced Rope Net
         BaseType "Reinforced Rope Net"
         SetFontSize 42
-        PlayAlertSound $SoundNets
+        Tags $soundNets
     Branch # Leagues - Bestiary - Nets - Strong Rope Net
         BaseType "Strong Rope Net"
         SetFontSize 42
-        PlayAlertSound $SoundNets
+        Tags $soundNets
     Branch # Leagues - Bestiary - Nets - Simple Iron Net
         BaseType "Simple Iron Net"
         SetFontSize 42
-        PlayAlertSound $SoundNets
+        Tags $soundNets
     Branch # Leagues - Bestiary - Nets - Reinforced Iron Net
         BaseType "Reinforced Iron Net"
         SetFontSize 42
-        PlayAlertSound $SoundNets
+        Tags $soundNets
     Branch # Leagues - Bestiary - Nets - Strong Iron Net
         BaseType "Strong Iron Net"
         SetFontSize 42
-        PlayAlertSound $SoundNets
+        Tags $soundNets
     Branch # Leagues - Bestiary - Nets - Simple Steel Net
         BaseType "Simple Steel Net"
         SetFontSize 42
-        PlayAlertSound $SoundNets
+        Tags $soundNets
     Branch # Leagues - Bestiary - Nets - Reinforced Steel Net
         BaseType "Reinforced Steel Net"
         SetFontSize 42
-        PlayAlertSound $SoundNets
+        Tags $soundNets
     Branch # Leagues - Bestiary - Nets - Strong Steel Net
         BaseType "Strong Steel Net"
         SetFontSize 42
-        PlayAlertSound $SoundNets
+        Tags $soundNets
     Branch # Leagues - Bestiary - Nets - Thaumaturgical Net
         BaseType "Thaumaturgical Net"
         SetFontSize 42
         SetBackgroundColor 170 158 130
         SetTextColor 65 31 15
         SetBorderColor 235 190 91
-        PlayAlertSound $SoundNets
+        Tags $soundNets
     Branch # Leagues - Bestiary - Nets - Necromancy Net
         BaseType "Necromancy Net"
         SetFontSize 42
         SetBackgroundColor 170 158 130
         SetTextColor 65 31 15
         SetBorderColor 235 190 91
-        PlayAlertSound $SoundT2
+        Tags $soundT2
     Branch # Leagues - Bestiary - Bestiary Orb
         Class "Currency"
         BaseType "Bestiary Orb"
         SetFontSize 42
         SetBackgroundColor 184 11 35
-        PlayAlertSound $SoundT2
+        Tags $soundT2
 
 #------------------------------------
 #    Harbinger League
@@ -5359,32 +5550,32 @@ Show
         BaseType "Harbinger's Orb"
         SetFontSize 45
         SetBackgroundColor 255 255 255
-        PlayAlertSound $SoundT1
+        Tags $soundT1
         MinimapIcon 0 Brown Diamond
         PlayEffect Brown
     Branch # Leagues - Harbinger - Currencies - T1 (Divine Tier) - Ancient Orb
         BaseType "Ancient Orb"
         SetFontSize 45
         SetBackgroundColor 255 255 255
-        PlayAlertSound $SoundT1
+        Tags $soundT1
         MinimapIcon 0 Brown Diamond
         PlayEffect Brown
     Branch # Leagues - Harbinger - Currencies - T2 (Chaos Tier) - Orb of Horizon
         BaseType "Orb of Horizons"
         SetFontSize 42
         SetBackgroundColor 70 70 0
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Yellow Diamond
     Branch # Leagues - Harbinger - Currencies - T3 (Alteration Tier) - Engineer's Orb
         BaseType "Engineer's Orb"
         SetFontSize 37
         SetBackgroundColor 0 0 60
-        PlayAlertSound $SoundT3
+        Tags $soundT3
     Branch # Leagues - Harbinger - Currencies - T3 (Alteration Tier) - Orb of Binding
         BaseType "Orb of Binding"
         SetFontSize 37
         SetBackgroundColor 0 0 60
-        PlayAlertSound $SoundT3
+        Tags $soundT3
 
 Show
     Class "Currency"
@@ -5394,26 +5585,26 @@ Show
         Tags @Shard_T0
         SetFontSize 45
         SetBackgroundColor 255 255 255
-        PlayAlertSound $SoundT0
+        Tags $soundT0
         MinimapIcon 0 Blue Diamond
         PlayEffect Blue
     Branch # Leagues - Harbinger - Shards - T1
         Tags @Shard_T1
         SetFontSize 45
         SetBackgroundColor 255 255 255
-        PlayAlertSound $SoundT1
+        Tags $soundT1
         MinimapIcon 1 Brown Diamond
         PlayEffect Brown
     Branch # Leagues - Harbinger - Shards - T2
         Tags @Shard_T2
         SetFontSize 42
         SetBackgroundColor 70 70 0
-        PlayAlertSound $SoundT2
+        Tags $soundT2
     Branch # Leagues - Harbinger - Shards - T3
         Tags @Shard_T3
         SetFontSize 37
         SetBackgroundColor 0 0 60
-        PlayAlertSound $SoundT3
+        Tags $soundT3
 
 #------------------------------------
 #    Legacy League
@@ -5426,11 +5617,11 @@ Show
     Branch # Leagues - Legacy - Normal Leaguestones
         Rarity Normal 
         SetFontSize 37
-        PlayAlertSound $SoundT3
+        Tags $soundT3
     Branch # Leagues - Legacy - Magic Leaguestones
         Rarity Magic 
         SetFontSize 39
-        PlayAlertSound $SoundT2
+        Tags $soundT2
 Show # Leagues - Legacy - Ancient Reliquary Keys
     Class "Misc Map Items"
     BaseType "Ancient Reliquary Key"
@@ -5438,7 +5629,7 @@ Show # Leagues - Legacy - Ancient Reliquary Keys
     SetBackgroundColor 255 230 180
     SetTextColor 50 7 7
     SetBorderColor 255 215 0
-    PlayAlertSound $SoundT0
+    Tags $soundT0
 
 #------------------------------------
 #    Breach League
@@ -5452,19 +5643,19 @@ Show
     SetBorderColor 200 0 0
     Branch # Leagues - Breach - Splinters - Chayula
         BaseType "Splinter of Chayula"
-        PlayAlertSound $SoundT2
+        Tags $soundT2
     Branch # Leagues - Breach - Splinters - Uul-Netol
         BaseType "Splinter of Uul-Netol"
-        PlayAlertSound $SoundT3
+        Tags $soundT3
     Branch # Leagues - Breach - Splinters - Xoph
         BaseType "Splinter of Xoph"
-        PlayAlertSound $SoundT3
+        Tags $soundT3
     Branch # Leagues - Breach - Splinters - Esh
         BaseType "Splinter of Esh"
-        PlayAlertSound $SoundT3
+        Tags $soundT3
     Branch # Leagues - Breach - Splinters - Tul
         BaseType "Splinter of Tul"
-        PlayAlertSound $SoundT3
+        Tags $soundT3
 #Blessings
 Show
     Class "Currency"
@@ -5474,19 +5665,19 @@ Show
     SetBorderColor 130 0 200
     Branch # Leagues - Breach - Blessings - Chayula
         BaseType "Blessing of Chayula"
-        PlayAlertSound $SoundT0
+        Tags $soundT0
     Branch # Leagues - Breach - Blessings - Uul-Netol
         BaseType "Blessing of Uul-Netol"
-        PlayAlertSound $SoundT2
+        Tags $soundT2
     Branch # Leagues - Breach - Blessings - Xoph
         BaseType "Blessing of Xoph"
-        PlayAlertSound $SoundT2
+        Tags $soundT2
     Branch # Leagues - Breach - Blessings - Esh
         BaseType "Blessing of Esh"
-        PlayAlertSound $SoundT2
+        Tags $soundT2
     Branch # Leagues - Breach - Blessings - Tul
         BaseType "Blessing of Tul"
-        PlayAlertSound $SoundT2
+        Tags $soundT2
 #BreachStones
 Show
     Class "Map Fragments"
@@ -5526,7 +5717,7 @@ Show
         Tags @Essences_T1
         SetFontSize 50
         SetBackgroundColor 255 255 255
-        PlayAlertSound $SoundT1
+        Tags $soundT1
         MinimapIcon 0 Red Diamond
     Branch # Leagues - Essence - Essences - T2
         Tags @Essences_T2
@@ -5534,18 +5725,18 @@ Show
         SetBackgroundColor 10 25 90
         SetTextColor 180 195 245
         SetBorderColor 180 195 245
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Red Diamond
     Branch # Leagues - Essence - Essences - Others
         BaseType "Essence"
-        PlayAlertSound $SoundT3
+        Tags $soundT3
         MinimapIcon 2 Red Diamond
     Branch # Leagues - Essence - Remnant of Corruption
         BaseType "Remnant of Corruption"
         SetFontSize 42
         SetTextColor 250 20 0
         SetBorderColor 250 20 0
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Red Diamond
 
 #------------------------------------
@@ -5558,7 +5749,7 @@ Show # Leagues - Prophecy - Silver Coins
     SetBackgroundColor 192 192 192
     SetTextColor 128 0 200
     SetBorderColor 128 0 200
-    PlayAlertSound $SoundT3
+    Tags $soundT3
     MinimapIcon 2 White Diamond
 
 Show # Leagues - Prophecy - Keys
@@ -5568,7 +5759,7 @@ Show # Leagues - Prophecy - Keys
     SetBackgroundColor 143 146 215 255
     SetTextColor 128 0 200
     SetBorderColor 128 0 200
-    PlayAlertSound $SoundT2
+    Tags $soundT2
     MinimapIcon 1 Red Circle
 
 Show
@@ -5584,7 +5775,7 @@ Show
         SetBackgroundColor 255 255 255
         SetTextColor 128 0 200
         SetBorderColor 128 0 200
-        PlayAlertSound $SoundT0
+        Tags $soundT0
         MinimapIcon 0 Blue Diamond
         PlayEffect Blue
     Branch # Leagues - Prophecy - Prophecies - T1
@@ -5593,27 +5784,27 @@ Show
         SetTextColor 255 255 255
         SetBorderColor 255 255 255
         SetFontSize 43
-        PlayAlertSound $SoundT1
+        Tags $soundT1
         MinimapIcon 0 Brown Diamond
         PlayEffect Brown
     Branch # Leagues - Prophecy - Prophecies - T2
         Tags @Prophecies_T2
         SetBackgroundColor 128 0 200 230
         SetFontSize 40
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Yellow Diamond
         PlayEffect Yellow Temp
     Branch # Leagues - Prophecy - Prophecies - T3
         Tags @Prophecies_T3
         SetBackgroundColor 128 0 200 200
         SetFontSize 36
-        PlayAlertSound $SoundT3
+        Tags $soundT3
         MinimapIcon 2 White Diamond
         PlayEffect White Temp
     #AutoUpdater_Prophecies_section_end
     Branch # Leagues - Prophecy - Prophecies - TUnknown
         SetFontSize 40
-        PlayAlertSound $SoundTUnknown
+        Tags $soundTUnknown
         PlayEffect Red
         MinimapIcon 0 Red Diamond
 
@@ -5627,7 +5818,7 @@ Show
     SetBackgroundColor 100 70 0
     SetTextColor 255 215 0
     SetBorderColor 255 215 0
-    PlayAlertSound $SoundT3
+    Tags $soundT3
     Branch # Leagues - Perandus - Stack of Coins (min size : 5)
         StackSize >= 5
     Branch # Leagues - Perandus - Coins
