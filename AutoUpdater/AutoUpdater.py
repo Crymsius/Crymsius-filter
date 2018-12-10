@@ -96,6 +96,12 @@ def ParseFossils(items):
         for item in relevantFossils:
             PutInTier(item['name'], FindTier(item['chaosValue']), tierlists)
 
+def ParseProphecies(items):
+    if requestStatus :
+        relevantProphecies = [prophecy for prophecy in items['lines'] if prophecy["count"] > 3]
+        for item in relevantProphecies:
+            PutInTier(item['name'], FindTier(item['chaosValue']), tierlists)
+
 def ParseBaseTypes(items):
     if requestStatus :
         relevantItems = [baseItem for baseItem in items['lines'] if baseItem["count"] > 10 and baseItem["chaosValue"] > tiers[1]]
@@ -118,6 +124,27 @@ def Replace(itemType):
                         tempFileTags.write(classes[itemType]["tag"] + tier[i] + '\n')
 
                         tempFileTags.write('    BaseType ' + ' '.join('"{0}"'.format(tier.encode('utf-8')) for tier in tierlists[i]) + '\n')
+
+                        #second : updating filter section relative to the tier
+                        tempFileSections.write(classes[itemType]["section"][i] + '\n')
+                    i += 1
+
+        #sed script
+        subprocess.check_call(['./sedbashReplaceBases.sh', classes[itemType]["startTag"], classes[itemType]["endTag"]])
+        subprocess.check_call(['./sedbashReplaceSections.sh', classes[itemType]["startSection"], classes[itemType]["endSection"]])
+        ClearTiers()
+
+def ReplaceProphecy(itemType):
+    if requestStatus:
+        i = 0
+        with open('insertBases.tmp', "w") as tempFileTags:
+            with open('insertSections.tmp', "w") as tempFileSections:
+                while i < len(tierlists):
+                    if tierlists[i]:
+                        #first : updating tags
+                        tempFileTags.write(classes[itemType]["tag"] + tier[i] + '\n')
+
+                        tempFileTags.write('    Prophecy ' + ' '.join('"{0}"'.format(tier.encode('utf-8')) for tier in tierlists[i]) + '\n')
 
                         #second : updating filter section relative to the tier
                         tempFileSections.write(classes[itemType]["section"][i] + '\n')
@@ -454,6 +481,52 @@ if __name__ == '__main__':
     MinimapIcon 1 Yellow Triangle
     PlayEffect Yellow Temp'''
             ]
+        },
+         "prophecies": {
+            "url": "https://poe.ninja/api/data/itemoverview?league=Betrayal&type=Prophecy",
+            "tag": "SetTag @Prophecies_",
+            "startTag": "#AutoUpdater_Prophecies_names_start",
+            "endTag": "#AutoUpdater_Prophecies_names_end",
+            "startSection" : "#AutoUpdater_Prophecies_section_start",
+            "endSection" : "#AutoUpdater_Prophecies_section_end",
+            "section": [
+'''    Branch # Leagues - Prophecy - Prophecies - T0
+        Tags @Prophecies_T0
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        SetTextColor 128 0 200
+        SetBorderColor 128 0 200
+        PlayAlertSound $SoundT0
+        MinimapIcon 0 Blue Diamond
+        PlayEffect Blue''',
+'''    Branch # Leagues - Prophecy - Prophecies - T1
+        Tags @Prophecies_T1
+        SetBackgroundColor 128 0 200
+        SetTextColor 255 255 255
+        SetBorderColor 255 255 255
+        SetFontSize 43
+        PlayAlertSound $SoundT1
+        MinimapIcon 0 Brown Diamond
+        PlayEffect Brown''',
+'''    Branch # Leagues - Prophecy - Prophecies - T2
+        Tags @Prophecies_T2
+        SetBackgroundColor 128 0 200 230
+        SetFontSize 40
+        PlayAlertSound $SoundT2
+        MinimapIcon 1 Yellow Diamond
+        PlayEffect Yellow Temp''',
+'''    Branch # Leagues - Prophecy - Prophecies - T3
+        Tags @Prophecies_T3
+        SetBackgroundColor 128 0 200 200
+        SetFontSize 36
+        PlayAlertSound $SoundT3
+        MinimapIcon 2 White Diamond
+        PlayEffect White Temp''',
+'''    Branch # Leagues - Prophecy - Prophecies - T4
+        Tags @Prophecies_T4
+        SetFontSize 33
+        SetBackgroundColor 128 0 200 170'''
+            ]
         }
     }
 
@@ -484,6 +557,10 @@ if __name__ == '__main__':
     requestStatus, fossils = Fetch("fossils")
     ParseFossils(fossils)
     Replace("fossils")
+
+    requestStatus, prophecies = Fetch("prophecies")
+    ParseProphecies(prophecies)
+    ReplaceProphecy("prophecies")
 
     requestStatus, baseTypes = Fetch("baseTypes")
     ParseBaseTypes(baseTypes)
