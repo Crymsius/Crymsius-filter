@@ -304,7 +304,7 @@ if __name__ == '__main__':
         SetFontSize 45
         SetBackgroundColor 255 255 255
         SetBorderColor 175 96 37
-        PlayAlertSound $SoundT0
+        Tags $soundT0
         MinimapIcon 0 Blue Star
         PlayEffect Blue''',
 '''    Branch #Uniques - T1
@@ -313,7 +313,7 @@ if __name__ == '__main__':
         SetBackgroundColor 70 20 0
         SetTextColor 255 255 255
         SetBorderColor 175 96 37
-        PlayAlertSound $SoundT1
+        Tags $soundT1
         MinimapIcon 0 Brown Star
         PlayEffect Brown''',
 '''    Branch #Uniques - T2
@@ -321,7 +321,7 @@ if __name__ == '__main__':
         SetFontSize 45
         SetBackgroundColor 70 20 0
         SetBorderColor 255 255 255
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Yellow Star
         PlayEffect Yellow Temp''',
 '''    Branch #Uniques - T3
@@ -329,7 +329,7 @@ if __name__ == '__main__':
         SetFontSize 40
         SetBackgroundColor 70 20 0
         SetBorderColor 175 96 37
-        PlayAlertSound $SoundT3
+        Tags $soundT3
         MinimapIcon 2 White Star
         PlayEffect White Temp''',
 '''    Branch #Uniques - T4
@@ -344,7 +344,7 @@ if __name__ == '__main__':
         SetBorderColor 255 255 255
         MinimapIcon 0 Red Star
         PlayEffect Red
-        PlayAlertSound $SoundTMix'''
+        Tags $soundTMix'''
             ]
         },
         "divCards": {
@@ -361,7 +361,7 @@ if __name__ == '__main__':
         SetBackgroundColor 255 255 255
         SetTextColor 255 165 0
         SetBorderColor 255 165 0
-        PlayAlertSound $SoundT0
+        Tags $soundT0
         MinimapIcon 0 Blue Square
         PlayEffect Blue''',
 '''    Branch Inherit # Divination Cards - T1 Div cards
@@ -370,14 +370,14 @@ if __name__ == '__main__':
         SetBackgroundColor 255 165 0 245
         SetTextColor 255 255 255
         SetBorderColor 255 255 255
-        PlayAlertSound $SoundT1''',
+        Tags $soundT1''',
 '''    Branch Inherit # Divination Cards - T2 Div cards
         Tags @DivinationCards_T2
         SetFontSize 40
         SetBackgroundColor 255 165 0 235
         SetTextColor 0 0 0
         SetBorderColor 255 255 255
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Yellow Square
         PlayEffect Yellow Temp''',
 '''    Branch Show # Divination Cards - T3 Div cards
@@ -410,7 +410,7 @@ if __name__ == '__main__':
         SetBackgroundColor 255 255 255
         SetTextColor 255 178 57
         SetBorderColor 255 178 57
-        PlayAlertSound $SoundT0
+        Tags $soundT0
         MinimapIcon 0 Blue Hexagon
         PlayEffect Blue''',
 '''    Branch # Leagues - Delve - Fossils - T1
@@ -419,7 +419,7 @@ if __name__ == '__main__':
         SetBackgroundColor 255 178 57
         SetTextColor 255 255 255
         SetBorderColor 255 255 255
-        PlayAlertSound $SoundT1
+        Tags $soundT1
         MinimapIcon 0 Brown Hexagon
         PlayEffect Brown''',
 '''    Branch # Leagues - Delve - Fossils - T2
@@ -428,7 +428,7 @@ if __name__ == '__main__':
         SetBackgroundColor 255 178 57
         SetTextColor 175 57 18
         SetBorderColor 255 255 255
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Yellow Hexagon
         PlayEffect Yellow Temp''',
 '''    Branch # Leagues - Delve - Fossils - T3
@@ -437,7 +437,7 @@ if __name__ == '__main__':
         SetBackgroundColor 255 178 57 210
         SetTextColor 175 57 18
         SetBorderColor 175 57 18
-        PlayAlertSound $SoundT3
+        Tags $soundT3
         MinimapIcon 2 White Hexagon
         PlayEffect White Temp''',
 '''    Branch # Leagues - Delve - Fossils - T4
@@ -459,7 +459,7 @@ if __name__ == '__main__':
     SetBackgroundColor 255 255 255
     SetTextColor 0 180 0
     SetBorderColor 0 180 0
-    PlayAlertSound $SoundT0
+    Tags $soundT0
     MinimapIcon 0 Blue Triangle
     PlayEffect Blue''',
 '''Show #Atlas and special bases - T1
@@ -468,7 +468,7 @@ if __name__ == '__main__':
     SetBackgroundColor 0 180 0
     SetTextColor 255 255 255
     SetBorderColor 255 255 255
-    PlayAlertSound $SoundT1
+    Tags $soundT1
     MinimapIcon 0 Brown Triangle
     PlayEffect Brown''',
 '''Show # Atlas and special bases - T2
@@ -477,7 +477,7 @@ if __name__ == '__main__':
     SetBackgroundColor 0 180 0
     SetTextColor 0 0 0
     SetBorderColor 0 0 0
-    PlayAlertSound $SoundT2
+    Tags $soundT2
     MinimapIcon 1 Yellow Triangle
     PlayEffect Yellow Temp'''
             ]
@@ -496,7 +496,7 @@ if __name__ == '__main__':
         SetBackgroundColor 255 255 255
         SetTextColor 128 0 200
         SetBorderColor 128 0 200
-        PlayAlertSound $SoundT0
+        Tags $soundT0
         MinimapIcon 0 Blue Diamond
         PlayEffect Blue''',
 '''    Branch # Leagues - Prophecy - Prophecies - T1
@@ -505,21 +505,21 @@ if __name__ == '__main__':
         SetTextColor 255 255 255
         SetBorderColor 255 255 255
         SetFontSize 43
-        PlayAlertSound $SoundT1
+        Tags $soundT1
         MinimapIcon 0 Brown Diamond
         PlayEffect Brown''',
 '''    Branch # Leagues - Prophecy - Prophecies - T2
         Tags @Prophecies_T2
         SetBackgroundColor 128 0 200 230
         SetFontSize 40
-        PlayAlertSound $SoundT2
+        Tags $soundT2
         MinimapIcon 1 Yellow Diamond
         PlayEffect Yellow Temp''',
 '''    Branch # Leagues - Prophecy - Prophecies - T3
         Tags @Prophecies_T3
         SetBackgroundColor 128 0 200 200
         SetFontSize 36
-        PlayAlertSound $SoundT3
+        Tags $soundT3
         MinimapIcon 2 White Diamond
         PlayEffect White Temp''',
 '''    Branch # Leagues - Prophecy - Prophecies - T4

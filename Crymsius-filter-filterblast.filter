@@ -26,7 +26,7 @@ SetTab [Sound theme]
 SetOption $Sound_Positioning switch [off] [off] [on] # May lower the sound level, use with caution.
 SetOption $Shaper_Announcements switch [Disable] [Show] # Select Show if you want Shaper to announce a Mirror/Exalted/Divine drop. (if Shown, overrides the sounds for Mirror/Exalted/Divine set up below)
 SetOption $Drop_Sound_Mode info [] # Remove default drop sounds. This does not affect filter sounds, only default sounds not customizable.
-SetOption $Drop_Sound_Mode_1 info [default - leaves everything as it is] # no title
+SetOption $Drop_Sound_Mode_0 info [default - leaves everything as it is] # no title
 SetOption $Drop_Sound_Mode_1 info [all - removes drop sounds from all items] # no title
 SetOption $Drop_Sound_Mode_2 info [hidden - removes drop sounds only from hidden items] # no title
 SetOption $Drop_Sound_Mode_3 info [with-no-alert - removes drop sounds only from items which have no filter sound specified] # no title
