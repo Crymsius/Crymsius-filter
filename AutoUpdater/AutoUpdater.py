@@ -51,6 +51,8 @@ def defineTiers(currencies):
         tiers[0] = (0.5*exaltValue + divineValue) / 1.5
         tiers[1] = (divineValue + 1) * 0.5
 
+        print(tiers)
+
 
 def ParseUniques(items):
     '''
@@ -123,7 +125,7 @@ def Replace(itemType):
                         #first : updating tags
                         tempFileTags.write(classes[itemType]["tag"] + tier[i] + '\n')
 
-                        tempFileTags.write('    BaseType ' + ' '.join('"{0}"'.format(tier.encode('utf-8')) for tier in tierlists[i]) + '\n')
+                        tempFileTags.write('    BaseType ' + ' '.join('"{0}"'.format(tier) for tier in tierlists[i]) + '\n')
 
                         #second : updating filter section relative to the tier
                         tempFileSections.write(classes[itemType]["section"][i] + '\n')
@@ -144,7 +146,7 @@ def ReplaceProphecy(itemType):
                         #first : updating tags
                         tempFileTags.write(classes[itemType]["tag"] + tier[i] + '\n')
 
-                        tempFileTags.write('    Prophecy ' + ' '.join('"{0}"'.format(tier.encode('utf-8')) for tier in tierlists[i]) + '\n')
+                        tempFileTags.write('    Prophecy ' + ' '.join('"{0}"'.format(tier) for tier in tierlists[i]) + '\n')
 
                         #second : updating filter section relative to the tier
                         tempFileSections.write(classes[itemType]["section"][i] + '\n')
@@ -192,7 +194,7 @@ def ReplaceBaseType(baseType):
                     for ilvl in itemsShaperIlvl:
                         tempFileSections.write('    Branch\n')
                         tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
-                        tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item.encode('utf-8')) for item in itemsShaperIlvl[ilvl]) + '\n')
+                        tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item) for item in itemsShaperIlvl[ilvl]) + '\n')
 
                 #Elder
                 if itemsElder :
@@ -201,7 +203,7 @@ def ReplaceBaseType(baseType):
                     for ilvl in itemsElderIlvl:
                         tempFileSections.write('    Branch\n')
                         tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
-                        tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item.encode('utf-8')) for item in itemsElderIlvl[ilvl]) + '\n')
+                        tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item) for item in itemsElderIlvl[ilvl]) + '\n')
 
                 #Other
                 if itemsOther :
@@ -211,7 +213,7 @@ def ReplaceBaseType(baseType):
                     for ilvl in itemsOtherIlvl:
                         tempFileSections.write('    Branch\n')
                         tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
-                        tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item.encode('utf-8')) for item in itemsOtherIlvl[ilvl]) + '\n')
+                        tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item) for item in itemsOtherIlvl[ilvl]) + '\n')
 
             i += 1
 
