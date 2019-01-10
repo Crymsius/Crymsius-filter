@@ -5330,6 +5330,13 @@ Show
         GemLevel >= 19
         SetFontSize 38
         SetBorderColor 128 179 255
+    Branch # Gems - Quality (>= 20%) | Comment
+        Quality >= 20
+        SetFontSize 40
+        SetTextColor 255 255 255
+        SetBackgroundColor 27 162 155
+        SetBorderColor 128 179 255
+        Tags $soundT2
     Branch # Gems - Quality (>= 10%) | Comment
         Quality >= 10
         SetFontSize 38
@@ -5409,6 +5416,13 @@ Show
         SetTextColor 0 0 0
         SetBorderColor 255 165 0
         MinimapIcon 2 White Square
+    # carrion crow to force it in t4
+    Branch Hide # Divination Cards - T4 Div cards (trash)
+        BaseType "The Carrion Crow"
+        SetFontSize 32
+        SetBackgroundColor 255 165 0 180
+        SetTextColor 0 0 0
+        SetBorderColor 0 0 0
     #AutoUpdater_DivCards_section_start
     Branch Inherit # Divination Cards - T0 Div cards
         Tags @DivinationCards_T0
