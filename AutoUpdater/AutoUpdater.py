@@ -50,7 +50,6 @@ def defineTiers(currencies):
 
         tiers[0] = (0.5*exaltValue + divineValue) / 1.5
         tiers[1] = (divineValue + 1) * 0.5
-        print (tiers)
 
 
 def ParseUniques(items):
@@ -535,39 +534,39 @@ if __name__ == '__main__':
     defineTiers(currency)
 
 
-    # tierlists = [[], [], [], [], [], []] #T0,1,2,3,4,mix
+    tierlists = [[], [], [], [], [], []] #T0,1,2,3,4,mix
 
-    # requestStatus, flasks = Fetch("flasks")
-    # ParseUniques(flasks)
-    # requestStatus, weapons = Fetch("weapons")
-    # ParseUniques(weapons)
-    # requestStatus, armours = Fetch("armours")
-    # ParseUniques(armours)
-    # requestStatus, accessories = Fetch("accessories")
-    # ParseUniques(accessories)
-    # requestStatus, jewels = Fetch("jewels")
-    # ParseUniques(jewels)
-    # requestStatus, maps = Fetch("maps")
-    # ParseUniques(maps)
-    # Replace("allUniques")
+    requestStatus, flasks = Fetch("flasks")
+    ParseUniques(flasks)
+    requestStatus, weapons = Fetch("weapons")
+    ParseUniques(weapons)
+    requestStatus, armours = Fetch("armours")
+    ParseUniques(armours)
+    requestStatus, accessories = Fetch("accessories")
+    ParseUniques(accessories)
+    requestStatus, jewels = Fetch("jewels")
+    ParseUniques(jewels)
+    requestStatus, maps = Fetch("maps")
+    ParseUniques(maps)
+    Replace("allUniques")
 
-    # requestStatus, divCards = Fetch("divCards")
-    # ParseDivCards(divCards)
-    # Replace("divCards")
+    requestStatus, divCards = Fetch("divCards")
+    ParseDivCards(divCards)
+    Replace("divCards")
 
-    # requestStatus, fossils = Fetch("fossils")
-    # ParseFossils(fossils)
-    # Replace("fossils")
+    requestStatus, fossils = Fetch("fossils")
+    ParseFossils(fossils)
+    Replace("fossils")
 
-    # requestStatus, prophecies = Fetch("prophecies")
-    # ParseProphecies(prophecies)
-    # ReplaceProphecy("prophecies")
+    requestStatus, prophecies = Fetch("prophecies")
+    ParseProphecies(prophecies)
+    ReplaceProphecy("prophecies")
 
-    # requestStatus, baseTypes = Fetch("baseTypes")
-    # ParseBaseTypes(baseTypes)
-    # ReplaceBaseType("baseTypes")
+    requestStatus, baseTypes = Fetch("baseTypes")
+    ParseBaseTypes(baseTypes)
+    ReplaceBaseType("baseTypes")
 
-    # UpdateVersion()
+    UpdateVersion()
 
     CleanFolders()
     CommitPush()
