@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.5.2a_2019.01.11_12:00
+###Version 3.5.2b_2019.01.11_12:00
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -4934,6 +4934,7 @@ Show
         BaseType $Highlighted_Rares_Armours
     Branch # Rares - Highlight Good Bases - Accessories | Comment
         BaseType $Highlighted_Rares_Accessories
+        SetBorderColor 255 101 255
 Show
     Rarity Rare
     ItemLevel >= 60
@@ -5406,7 +5407,7 @@ Show
         MinimapIcon 1 Yellow Square
         PlayEffect Yellow Temp
     # wolf's shadow here to prevent exception with The Wolf - Also allows for T3 to be displayed before T4
-    Branch Inherit # Divination Cards - T3 Div cards (everything else)
+    Branch Inherit # Divination Cards - T3 Div cards
         BaseType "The Wolf's Shadow"
         SetFontSize 38
         SetBackgroundColor 255 165 0 210
@@ -5461,7 +5462,7 @@ Show
         SetTextColor 0 0 0
         SetBorderColor 0 0 0
     #AutoUpdater_DivCards_section_end
-    Branch Show # Divination Cards - TUnknown Div cards (Divination cards not referenced on Poe.ninja)
+    Branch Show # Divination Cards - TUnknown Div cards (Divination Cards not referenced on Poe.ninja)
         SetFontSize 43
         SetBackgroundColor 194 52 0 255
         SetTextColor 255 165 0

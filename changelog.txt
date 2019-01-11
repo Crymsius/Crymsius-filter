@@ -1,11 +1,15 @@
 ---------------------------------------------------
           Changelog for Crymsius's Filter         |
 ---------------------------------------------------
+-Notes (3.5.2b)
+Fixed a display issue for divination cards (tier 3 were separated in 2 categories).
+Added highlight for rare good bases ilvl75+ accessories to distinguish them from other rare items.
+
 -Notes (3.5.2a)
 Updated auto updater script for Python 3.7 (internal)
 Added highlight and sound for quality 20+ gems
 Put Carrion Crow in tier 4 manually to prevent wrong autotierring of it.
-Manual check for autotiering base types. Everything seems fine. 
+Manual check for autotiering base types. Everything seems fine.
 
 -Notes (3.5.2)
 Added Custom Sounds. You can now choose if you want to use a custom sound for each category and affect write the path to your custom sound file.
