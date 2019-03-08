@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.6.0_2019.03.08_21:18
+###Version 3.6.0_2019.03.09_00:00
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -258,6 +258,8 @@ SetTag @custom_Scarabs
 #------------------------------------
 #Tags Uniques
 #AutoUpdater_AllUniques_start
+SetTag @Uniques_AutoUpdater_T2
+    BaseType "Bismuth Flask" "Greater Mana Flask" "Awl" "Basket Rapier" "Bastard Sword" "Boot Knife" "Brass Maul" "Bronze Sceptre" "Carved Wand" "Cleaver" "Crude Bow" "Death Bow" "Decorative Axe" "Driftwood Wand" "Gnarled Branch" "Goat's Horn" "Iron Staff" "Jade Hatchet" "Jagged Foil" "Jagged Maul" "Karui Chopper" "Long Bow" "Long Staff" "Nailed Fist" "Poleaxe" "Quartz Wand" "Recurve Bow" "Royal Bow" "Rusted Sword" "Sabre" "Short Bow" "Skinning Knife" "Sledgehammer" "Spiked Club" "Spiraled Wand" "Stiletto" "War Hammer" "Whalebone Rapier" "Woodsplitter" "Bronze Gauntlets" "Buckskin Tunic" "Chain Gloves" "Copper Plate" "Deerskin Boots" "Fire Arrow Quiver" "Goathide Boots" "Goathide Gloves" "Iron Circlet" "Iron Gauntlets" "Iron Hat" "Iron Mask" "Leather Cap" "Leather Hood" "Painted Buckler" "Pine Buckler" "Plague Mask" "Plank Kite Shield" "Plate Vest" "Rawhide Tower Shield" "Rotted Round Shield" "Scholar's Robe" "Serrated Arrow Quiver" "Sharktooth Arrow Quiver" "Silk Slippers" "Simple Robe" "Soldier Helmet" "Strapped Boots" "Strapped Leather" "Strapped Mitts" "Studded Round Shield" "Tricorne" "Two-Point Arrow Quiver" "Velvet Gloves" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wool Gloves" "Wool Shoes" "Wrapped Mitts" "Chain Belt" "Coral Amulet" "Coral Ring" "Gold Amulet" "Heavy Belt" "Iron Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Paua Amulet" "Paua Ring" "Ruby Ring" "Sapphire Ring" "Studded Belt" "Unset Ring" "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
 #AutoUpdater_AllUniques_end
 
 #Tags Atlas and special bases
@@ -310,6 +312,12 @@ SetTag @Gems_DropOnly
 
 #Tags Divination Cards
 #AutoUpdater_DivCards_start
+SetTag @DivinationCards_T0
+    BaseType "The Saint's Treasure"
+SetTag @DivinationCards_T2
+    BaseType "Humility" "Jack in the Box" "Lucky Connections" "The Catalyst" "Vinia's Token" "The Wretched" "Rebirth"
+SetTag @DivinationCards_T3
+    BaseType "The Master Artisan" "The Lunaris Priestess"
 #AutoUpdater_DivCards_end
 
 #Tags Essences
@@ -378,6 +386,14 @@ Show # Leagues - Talisman - Unique Talismans
 Show
     Rarity Unique
     #AutoUpdater_AllUniques_section_start
+    Branch #Uniques - T2
+        Tags @Uniques_AutoUpdater_T2
+        SetFontSize 45
+        SetBackgroundColor 70 20 0
+        SetBorderColor 255 255 255
+        Tags $soundT2
+        MinimapIcon 1 Yellow Star
+        PlayEffect Yellow Temp
     #AutoUpdater_AllUniques_section_end
     Branch # Uniques - Tier Unknown (no data on Poe.ninja)
         SetFontSize 50
@@ -5256,6 +5272,32 @@ Show
         SetTextColor 0 0 0
         SetBorderColor 0 0 0
     #AutoUpdater_DivCards_section_start
+    Branch Inherit # Divination Cards - T0 Div cards
+        Tags @DivinationCards_T0
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        SetTextColor 255 165 0
+        SetBorderColor 255 165 0
+        Tags $soundT0
+        MinimapIcon 0 Blue Square
+        PlayEffect Blue
+    Branch Inherit # Divination Cards - T2 Div cards
+        Tags @DivinationCards_T2
+        SetFontSize 40
+        SetBackgroundColor 255 165 0 235
+        SetTextColor 0 0 0
+        SetBorderColor 255 255 255
+        Tags $soundT2
+        MinimapIcon 1 Yellow Square
+        PlayEffect Yellow Temp
+    Branch Show # Divination Cards - T3 Div cards
+        Tags @DivinationCards_T3
+        SetFontSize 38
+        SetBackgroundColor 255 165 0 210
+        SetTextColor 0 0 0
+        SetBorderColor 255 165 0
+        MinimapIcon 2 White Square
+        PlayEffect White Temp
     #AutoUpdater_DivCards_section_end
     Branch Show # Divination Cards - TUnknown Div cards (Divination Cards not referenced on Poe.ninja)
         SetFontSize 43
