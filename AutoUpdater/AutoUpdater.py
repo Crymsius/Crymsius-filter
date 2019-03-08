@@ -13,7 +13,7 @@ def Fetch(itemType):
         Used to make requests and fetch json data
     '''
     try:
-        r= requests.get(classes[itemType]["url"])
+        r= requests.get(classes["poeninja"]["url"] + classes[itemType]["overview"] + "?"+ "league=" + classes["poeninja"]["league"] + "&type=" + classes[itemType]["type"])
         r.raise_for_status()
     except requests.exceptions.HTTPError as errh:
         print ("Http Error:",errh)
@@ -273,26 +273,37 @@ if __name__ == '__main__':
     tier = ["T0", "T1", "T2", "T3", "T4", "TMix"]
 
     classes = {
+        "poeninja" : {
+            "league": "Synthesis",
+            "url": "https://poe.ninja/api/data/"
+        },
         "currency": {
-            "url": "https://poe.ninja/api/data/CurrencyOverview?league=Betrayal&type=Currency"
+            "overview": "CurrencyOverview",
+            "type": "Currency"
         },
         "flasks": {
-            "url": "https://poe.ninja/api/data/ItemOverview?league=Betrayal&type=UniqueFlask"
+            "overview": "itemoverview",
+            "type": "UniqueFlask"
         },
         "weapons": {
-            "url": "https://poe.ninja/api/data/ItemOverview?league=Betrayal&type=UniqueWeapon"
+            "overview": "itemoverview",
+            "type": "UniqueWeapon"
         },
         "armours": {
-            "url": "https://poe.ninja/api/data/ItemOverview?league=Betrayal&type=UniqueArmour"
+            "overview": "itemoverview",
+            "type": "UniqueArmour"
         },
         "accessories": {
-            "url": "https://poe.ninja/api/data/ItemOverview?league=Betrayal&type=UniqueAccessory"
+            "overview": "itemoverview",
+            "type": "UniqueAccessory"
         },
         "maps": {
-            "url": "https://poe.ninja/api/data/ItemOverview?league=Betrayal&type=UniqueMap"
+            "overview": "itemoverview",
+            "type": "UniqueMap"
         },
         "jewels": {
-            "url": "https://poe.ninja/api/data/ItemOverview?league=Betrayal&type=UniqueJewel"
+            "overview": "itemoverview",
+            "type": "UniqueJewel"
         },
         "allUniques": {
             "tag": "SetTag @Uniques_AutoUpdater_",
@@ -350,7 +361,8 @@ if __name__ == '__main__':
             ]
         },
         "divCards": {
-            "url": "https://poe.ninja/api/data/ItemOverview?league=Betrayal&type=DivinationCard",
+            "overview": "itemoverview",
+            "type": "DivinationCard",
             "tag": "SetTag @DivinationCards_",
             "startTag": "#AutoUpdater_DivCards_start",
             "endTag": "#AutoUpdater_DivCards_end",
@@ -399,7 +411,8 @@ if __name__ == '__main__':
             ]
         },
         "fossils": {
-            "url": "https://poe.ninja/api/data/itemoverview?league=Betrayal&type=Fossil",
+            "overview": "itemoverview",
+            "type": "Fossil",
             "tag": "SetTag @Fossils_",
             "startTag": "#AutoUpdater_Fossils_start",
             "endTag": "#AutoUpdater_Fossils_end",
@@ -451,7 +464,8 @@ if __name__ == '__main__':
             ]
         },
         "baseTypes": {
-            "url": "https://poe.ninja/api/data/itemoverview?league=Betrayal&type=BaseType",
+            "overview": "itemoverview",
+            "type": "BaseType",
             "startSection" : "#AutoUpdater_BaseTypes_section_start",
             "endSection" : "#AutoUpdater_BaseTypes_section_end",
             "section": [
@@ -485,7 +499,8 @@ if __name__ == '__main__':
             ]
         },
          "prophecies": {
-            "url": "https://poe.ninja/api/data/itemoverview?league=Betrayal&type=Prophecy",
+            "overview": "itemoverview",
+            "type": "Prophecy",
             "tag": "SetTag @Prophecies_",
             "startTag": "#AutoUpdater_Prophecies_names_start",
             "endTag": "#AutoUpdater_Prophecies_names_end",
