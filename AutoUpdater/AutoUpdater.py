@@ -268,7 +268,7 @@ def PutInTier(baseType, tier, tierlists):
 
 
 if __name__ == '__main__':
-    tiers = [30, 10, 0.9, 0.4] #borders between T0 and T1, T1 and T2, and T2 and T3
+    tiers = [30, 9.9, 0.9, 0.4] #borders between T0 and T1, T1 and T2, and T2 and T3
     tier = ["T0", "T1", "T2", "T3", "T4", "TMix"]
 
     classes = {
