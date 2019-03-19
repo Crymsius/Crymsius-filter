@@ -49,7 +49,7 @@ def defineTiers(currencies):
             divineValue = divineValueArray[0]
 
         tiers[0] = (0.5*exaltValue + divineValue) / 1.5
-        tiers[1] = (divineValue + 1) * 0.5
+        tiers[1] = max(tiers[1],(divineValue + 1) * 0.5)
 
         print(tiers)
 
@@ -84,7 +84,6 @@ def preventWrongBaseType(baseType):
     if baseType == "Torture Chamber Map":
         baseType = "Underground Sea Map"
     return baseType
-
 
 def ParseDivCards(items):
     if requestStatus :
