@@ -273,7 +273,7 @@ if __name__ == '__main__':
 
     classes = {
         "poeninja" : {
-            "league": "Synthesis",
+            "league": "Legion",
             "url": "https://poe.ninja/api/data/"
         },
         "currency": {
