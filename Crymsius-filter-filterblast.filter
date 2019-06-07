@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.7.0_2019.06.05_23:17
+###Version 3.7.0a_2019.07.05_19:00
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -5289,16 +5289,6 @@ Show
 #------------------------------------
 #    Legion League
 #------------------------------------
-Show # Leagues - Legion - Emblems
-    Class "Stackable Currency"
-    BaseType "Emblem"
-    SetBackgroundColor 5 5 5
-    SetTextColor 38 234 9
-    SetBorderColor 185 184 188
-    SetFontSize 45
-    Tags $soundT1
-    MinimapIcon 1 Yellow Diamond
-
 Show # Leagues - Legion - Splinters
     Class "Stackable Currency"
     BaseType "Timeless"
@@ -5309,9 +5299,18 @@ Show # Leagues - Legion - Splinters
     Tags $soundT2
     MinimapIcon 2 White Diamond
 
+Show # Leagues - Legion - Emblems
+    Class "Map Fragment"
+    BaseType "Emblem"
+    SetBackgroundColor 5 5 5
+    SetTextColor 38 234 9
+    SetBorderColor 185 184 188
+    SetFontSize 45
+    Tags $soundT1
+    MinimapIcon 1 Yellow Diamond
+
 Show # Leagues - Legion - Incubators
-    Class "Currency"
-    BaseType "Incubator"
+    Class "Incubator"
     SetBackgroundColor 63 42 5 255
     SetTextColor 163 137 24
     SetBorderColor 242 235 84
