@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.7.1_2019.06.15_10:11
+###Version 3.7.1_2019.06.15_10:17
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -348,11 +348,9 @@ SetTag @Fossils_T0
 SetTag @Fossils_T1
     BaseType "Serrated Fossil" "Glyphic Fossil" "Sanctified Fossil" "Perfect Fossil"
 SetTag @Fossils_T2
-    BaseType "Tangled Fossil" "Gilded Fossil" "Corroded Fossil" "Pristine Fossil" "Shuddering Fossil" "Jagged Fossil" "Prismatic Fossil" "Aetheric Fossil" "Bound Fossil" "Aberrant Fossil" "Metallic Fossil" "Enchanted Fossil" "Encrusted Fossil"
-SetTag @Fossils_T3
-    BaseType "Dense Fossil" "Lucent Fossil"
+    BaseType "Tangled Fossil" "Gilded Fossil" "Corroded Fossil" "Pristine Fossil" "Shuddering Fossil" "Jagged Fossil" "Prismatic Fossil" "Aetheric Fossil" "Bound Fossil" "Aberrant Fossil" "Dense Fossil" "Enchanted Fossil" "Encrusted Fossil" "Metallic Fossil"
 SetTag @Fossils_T4
-    BaseType "Scorched Fossil" "Frigid Fossil"
+    BaseType "Scorched Fossil" "Frigid Fossil" "Lucent Fossil"
 #AutoUpdater_Fossils_end
 SetTag @Fossils_All
     BaseType "Aetheric Fossil" "Aberrant Fossil" "Bloodstained Fossil" "Bound Fossil" "Corroded Fossil" "Dense Fossil" "Enchanted Fossil" "Encrusted Fossil" "Faceted Fossil" "Fractured Fossil" "Frigid Fossil" "Gilded Fossil" "Glyphic Fossil" "Hollow Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Perfect Fossil" "Prismatic Fossil" "Pristine Fossil" "Sanctified Fossil" "Scorched Fossil" "Serrated Fossil" "Shuddering Fossil" "Tangled Fossil"
@@ -5719,15 +5717,6 @@ Show
         Tags $soundT2
         MinimapIcon 1 Yellow Hexagon
         PlayEffect Yellow Temp
-    Branch # Leagues - Delve - Fossils - T3
-        Tags @Fossils_T3
-        SetFontSize 38
-        SetBackgroundColor 255 178 57 210
-        SetTextColor 175 57 18
-        SetBorderColor 175 57 18
-        Tags $soundT3
-        MinimapIcon 2 White Hexagon
-        PlayEffect White Temp
     Branch # Leagues - Delve - Fossils - T4
         Tags @Fossils_T4
         SetFontSize 32
