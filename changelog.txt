@@ -1,6 +1,14 @@
 ---------------------------------------------------
           Changelog for Crymsius's Filter         |
 ---------------------------------------------------
+-Notes (3.7.1)
+Changed the colors for timeless splinters and timeless emblems. They now have the color of their
+faction. Also adapted the sound and minimap icon depending on the rarity/prices
+Changed the colors for the incubators to make them more stand out.
+Added tiers for incubators (maybe will be added to the auto-tiering later)
+Added highlight for Rare incursion mods (they were only magic until now, they weren't hidden but not highlighted)
+Fixed a bug with a conflict between user highlighted bases and explicit mods such as incursion ones
+
 -Notes (3.7.0a)
 Hotfix for changes in legion items classes from GGG
 

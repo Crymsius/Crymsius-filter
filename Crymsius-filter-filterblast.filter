@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.7.0a_2019.06.15_00:00
+###Version 3.7.1_2019.06.15_10:00
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -852,7 +852,7 @@ Show
 #    Crafting
 #------------------------------------
 # ----- Highlighting Bases -----
-Hide # Crafting - User Highlighted Bases
+Comment # Crafting - User Highlighted Bases | Comment
     BaseType $Highlighted_Bases
     Rarity < Unique
     SetFontSize 40
@@ -861,7 +861,7 @@ Hide # Crafting - User Highlighted Bases
     SetBorderColor 255 255 255
 
 # ----- Crafting Bases -----
-Hide # Crafting - Base ilvl>=84
+Comment # Crafting - Base ilvl>=84 | Comment
     BaseType $Crafting_Bases
     Rarity Normal
     ItemLevel >= 84
@@ -1067,11 +1067,44 @@ Show
 
 # ----- Incursion Mods -----
 Show
+    Rarity Rare
+    Identified True
+    SetBackgroundColor 50 50 0
+    SetTextColor 255 75 60
+    SetBorderColor 255 75 60
+    SetFontSize 38
+    MinimapIcon 1 Yellow Triangle
+    Tags $soundSpecificMods
+    Branch # Leagues - Incursion - Mods - Tacati's | Comment
+        HasExplicitMod "Tacati's"
+    Branch # Leagues - Incursion - Mods - Citaqualotl's | Comment
+        HasExplicitMod "Citaqualotl's"
+    Branch # Leagues - Incursion - Mods - Matatl's | Comment
+        HasExplicitMod "Matatl's"
+    Branch # Leagues - Incursion - Mods - Topotante's | Comment
+        HasExplicitMod "Topotante's"
+    Branch # Leagues - Incursion - Mods - Xopec's | Comment
+        HasExplicitMod "Xopec's"
+    Branch # Leagues - Incursion - Mods - Guatelitzi's | Comment
+        HasExplicitMod "Guatelitzi's"
+    Branch # Leagues - Incursion - Mods - of Tacati | Comment
+        HasExplicitMod "of Tacati"
+    Branch # Leagues - Incursion - Mods - of Citaqualotl | Comment
+        HasExplicitMod "of Citaqualotl"
+    Branch # Leagues - Incursion - Mods - of Matatl | Comment
+        HasExplicitMod "of Matatl"
+    Branch # Leagues - Incursion - Mods - of Puhuarte | Comment
+        HasExplicitMod "of Puhuarte"
+    Branch # Leagues - Incursion - Mods - of Guatelitzi | Comment
+        HasExplicitMod "of Guatelitzi"
+Show
     Rarity Magic
+    Identified True
     SetBackgroundColor 0 0 60
     SetTextColor 255 75 60
     SetBorderColor 255 75 60
     SetFontSize 38
+    MinimapIcon 1 Yellow Triangle
     Tags $soundSpecificMods
     Branch # Leagues - Incursion - Mods - Tacati's | Comment
         HasExplicitMod "Tacati's"
@@ -4883,7 +4916,7 @@ Hide # Leveling - Early Leveling - Rare Items (Show rare items in Act 1-4 even i
 #------------------------------------
 #    BIG RGB item (behind leveling)
 #------------------------------------
-Hide # Sockets - RGB - Other Items
+Comment # Sockets - RGB - Other Items | Comment
     SocketGroup RGB
     LinkedSockets < 4
     SetFontSize 30
@@ -5057,7 +5090,7 @@ Show
 #    Chance Recipe
 #------------------------------------
 #Normal item to chance
-Hide # Chancing - Chance Bases
+Comment # Chancing - Chance Bases
     BaseType $Chance_Bases
     Rarity Normal
     SetFontSize 36
@@ -5095,14 +5128,14 @@ Show
     SwitchTo $Shaper_Announcements
     Branch
         Tags @Currency_Mirror
-        SetFontSize 45
+        SetFontSize 50
         SetBackgroundColor 255 255 255
         PlayAlertSound ShMirror 300
         MinimapIcon 0 Blue Diamond
         PlayEffect Blue
     Branch
         Tags @Currency_Exalted
-        SetFontSize 45
+        SetFontSize 50
         SetBackgroundColor 255 255 255
         PlayAlertSound ShExalted 300
         MinimapIcon 0 Blue Diamond
@@ -5121,14 +5154,14 @@ Show
     SetBorderColor 170 158 130
     Branch # Currency - Generic Currency - T0 (Exalted Tier) - Mirror of Kalandra
         Tags @Currency_Mirror
-        SetFontSize 45
+        SetFontSize 50
         SetBackgroundColor 255 255 255
         Tags $soundMirror
         MinimapIcon 0 Blue Diamond
         PlayEffect Blue
     Branch # Currency - Generic Currency - T0 (Exalted Tier) - Exalted Orb
         Tags @Currency_Exalted
-        SetFontSize 45
+        SetFontSize 50
         SetBackgroundColor 255 255 255
         Tags $soundExalted
         MinimapIcon 0 Blue Diamond
@@ -5541,36 +5574,85 @@ Show
 #------------------------------------
 #    Legion League
 #------------------------------------
-Show # Leagues - Legion - Splinters
+Show
     Class "Stackable Currency"
-    BaseType "Timeless"
-    SetBackgroundColor 5 5 5
-    SetTextColor 38 234 9
-    SetBorderColor 185 184 188
     SetFontSize 40
+    SetBackgroundColor 86 25 72 255
     Tags $soundT2
-    MinimapIcon 2 White Diamond
+    MinimapIcon 1 Yellow Diamond
+    Branch # Leagues - Legion - Splinters - Maraketh
+        BaseType "Timeless Maraketh"
+        SetTextColor 230 230 20
+        SetBorderColor 230 230 20
+    Branch # Leagues - Legion - Splinters - Templar
+        BaseType "Timeless Templar"
+        SetTextColor 33 213 5 255
+        SetBorderColor 33 213 5 255
+    Branch # Leagues - Legion - Splinters - Vaal
+        BaseType "Timeless Vaal"
+        SetTextColor 208 5 5 255
+        SetBorderColor 208 5 5 255
+    Branch # Leagues - Legion - Splinters - Eternal Empire
+        BaseType "Timeless Eternal"
+        SetTextColor 217 217 217
+        SetBorderColor 217 217 217
+    Branch # Leagues - Legion - Splinters - Karui
+        BaseType "Timeless Karui"
+        SetTextColor 255 109 0
+        SetBorderColor 255 109 0
 
 Show # Leagues - Legion - Emblems
     Class "Map Fragment"
-    BaseType "Emblem"
-    SetBackgroundColor 5 5 5
-    SetTextColor 38 234 9
-    SetBorderColor 185 184 188
+    SetTextColor 62 18 52 255
+    SetBorderColor 62 18 52 255
     SetFontSize 45
-    Tags $soundT1
-    MinimapIcon 1 Yellow Diamond
+    Branch # Leagues - Legion - Splinters - Maraketh
+        BaseType "Maraketh Emblem"
+        SetBackgroundColor 230 230 20
+        Tags $soundT0
+        MinimapIcon 0 Blue Diamond
+    Branch # Leagues - Legion - Splinters - Templar
+        BaseType "Templar Emblem"
+        SetBackgroundColor 33 213 5 255
+        Tags $soundT0
+        MinimapIcon 0 Blue Diamond
+    Branch # Leagues - Legion - Splinters - Vaal
+        BaseType "Vaal Emblem"
+        SetBackgroundColor 208 5 5 255
+        Tags $soundT1
+        MinimapIcon 0 Brown Diamond
+    Branch # Leagues - Legion - Splinters - Eternal Empire
+        BaseType "Eternal Emblem"
+        SetBackgroundColor 217 217 217
+        Tags $soundT1
+        MinimapIcon 0 Brown Diamond
+    Branch # Leagues - Legion - Splinters - Karui
+        BaseType "Karui Emblem"
+        SetBackgroundColor 255 109 0
+        Tags $soundT1
+        MinimapIcon 0 Brown Diamond
 
-Show # Leagues - Legion - Incubators
+Show
     Class "Incubator"
-    SetBackgroundColor 63 42 5 255
-    SetTextColor 163 137 24
-    SetBorderColor 242 235 84
-    SetFontSize 40
-    Tags $soundT2
-    MinimapIcon 1 Yellow Diamond
-
-#incubators
+    SetBorderColor 244 74 204 255
+    SetTextColor 244 74 204 255
+    Branch # Leagues - Legion - Incubators - T0
+        BaseType "Geomancer's Incubator" "Time-Lost Incubator"
+        SetFontSize 50
+        SetBackgroundColor 255 255 255
+        Tags $soundT0
+        MinimapIcon 0 Blue Diamond
+    Branch # Leagues - Legion - Incubators - T1
+        BaseType "Eldritch Incubator" "Thaumaturge's Incubator"
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        Tags $soundT1
+        MinimapIcon 0 Brown Diamond
+    Branch # Leagues - Legion - Incubators - Tothers
+        SetFontSize 42
+        SetBackgroundColor 62 18 52 255
+        Tags $soundT2
+        MinimapIcon 1 Yellow Diamond
 
 #------------------------------------
 #    Betrayal League
@@ -5875,7 +5957,7 @@ Show # Leagues - Legacy - Ancient Reliquary Keys
 #------------------------------------
 #Splinters
 Show
-    Class "Currency"
+    Class "Stackable Currency"
     SetFontSize 39
     SetBackgroundColor 130 0 200
     SetTextColor 170 158 130
