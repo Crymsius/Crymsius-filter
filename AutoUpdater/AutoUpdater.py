@@ -48,7 +48,7 @@ def defineTiers(currencies):
         if divineValueArray :
             divineValue = divineValueArray[0]
 
-        tiers[0] = (0.5*exaltValue + divineValue) / 1.5
+        tiers[0] = min((0.5*exaltValue + divineValue) / 1.5, 60) # Exalt tier is no more than 60c
         tiers[1] = max(tiers[1],(divineValue + 1) * 0.5)
 
         print(tiers)
@@ -95,6 +95,12 @@ def ParseFossils(items):
     if requestStatus :
         relevantFossils = [fossil for fossil in items['lines'] if fossil["count"] > 3]
         for item in relevantFossils:
+            PutInTier(item['name'], FindTier(item['chaosValue']), tierlists)
+
+def ParseEssences(items):
+    if requestStatus :
+        relevantEssences = [essence for essence in items['lines'] if essence["count"] > 3]
+        for item in relevantEssences:
             PutInTier(item['name'], FindTier(item['chaosValue']), tierlists)
 
 def ParseProphecies(items):
@@ -268,7 +274,7 @@ def PutInTier(baseType, tier, tierlists):
 
 
 if __name__ == '__main__':
-    tiers = [30, 9.9, 0.9, 0.4] #borders between T0 and T1, T1 and T2, and T2 and T3
+    tiers = [55, 9.9, 0.9, 0.4] #borders between T0 and T1, T1 and T2, and T2 and T3
     tier = ["T0", "T1", "T2", "T3", "T4", "TMix"]
 
     classes = {
@@ -468,7 +474,7 @@ if __name__ == '__main__':
             "startSection" : "#AutoUpdater_BaseTypes_section_start",
             "endSection" : "#AutoUpdater_BaseTypes_section_end",
             "section": [
-'''Show #Atlas and special bases - T0
+'''Show #Atlas and special bases - Autotiered T0
     Rarity <= Rare
     SetFontSize 45
     SetBackgroundColor 255 255 255
@@ -477,7 +483,7 @@ if __name__ == '__main__':
     Tags $soundT0
     MinimapIcon 0 Blue Triangle
     PlayEffect Blue''',
-'''Show #Atlas and special bases - T1
+'''Show #Atlas and special bases - Autotiered T1
     Rarity <= Rare
     SetFontSize 42
     SetBackgroundColor 0 180 0
@@ -543,6 +549,52 @@ if __name__ == '__main__':
         SetFontSize 33
         SetBackgroundColor 128 0 200 170'''
             ]
+        },
+        "essences": {
+            "overview": "itemoverview",
+            "type": "Essence",
+            "tag": "SetTag @Essences_",
+            "startTag": "#AutoUpdater_Essences_start",
+            "endTag": "#AutoUpdater_Essences_end",
+            "startSection" : "#AutoUpdater_Essences_section_start",
+            "endSection" : "#AutoUpdater_Essences_section_end",
+            "section" : [
+'''    Branch # Leagues - Essence - Essences - T0
+        Tags @Essences_T0
+        SetFontSize 50
+        SetBackgroundColor 255 255 255
+        Tags $soundT0
+        PlayEffect Blue
+        MinimapIcon 0 Red Diamond''',
+'''    Branch # Leagues - Essence - Essences - T1
+        Tags @Essences_T1
+        SetFontSize 50
+        SetBackgroundColor 10 25 90
+        SetTextColor 255 255 255
+        SetBorderColor 255 255 255
+        Tags $soundT1
+        PlayEffect Brown
+        MinimapIcon 0 Red Diamond''',
+'''    Branch # Leagues - Essence - Essences - T2
+        Tags @Essences_T2
+        SetFontSize 40
+        SetBackgroundColor 180 195 245
+        SetTextColor 10 25 90
+        SetBorderColor 10 25 90
+        Tags $soundT2
+        PlayEffect Yellow Temp
+        MinimapIcon 1 Red Diamond''',
+'''    Branch # Leagues - Essence - Essences - T3
+        Tags @Essences_T3
+        SetFontSize 36
+        Tags $soundT3
+        SetBackgroundColor 180 195 245 200
+        MinimapIcon 2 Red Diamond''',
+'''    Branch # Leagues - Essence - Essences - T4
+        Tags @Essences_T4
+        SetFontSize 33
+        SetBackgroundColor 180 195 245 170'''
+            ]
         }
     }
 
@@ -573,6 +625,11 @@ if __name__ == '__main__':
     requestStatus, fossils = Fetch("fossils")
     ParseFossils(fossils)
     Replace("fossils")
+
+    requestStatus, essences = Fetch("essences")
+    ParseEssences(essences)
+    Replace("essences")
+
 
     requestStatus, prophecies = Fetch("prophecies")
     ParseProphecies(prophecies)
