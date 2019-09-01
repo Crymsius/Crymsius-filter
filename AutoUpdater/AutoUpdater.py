@@ -103,6 +103,12 @@ def ParseEssences(items):
         for item in relevantEssences:
             PutInTier(item['name'], FindTier(item['chaosValue']), tierlists)
 
+def ParseIncubators(items):
+    if requestStatus :
+        relevantIncubators = [incubator for incubator in items['lines'] if incubator["count"] > 3]
+        for item in relevantIncubators:
+            PutInTier(item['name'], FindTier(item['chaosValue']), tierlists)
+
 def ParseProphecies(items):
     if requestStatus :
         relevantProphecies = [prophecy for prophecy in items['lines'] if prophecy["count"] > 3]
@@ -595,6 +601,55 @@ if __name__ == '__main__':
         SetFontSize 33
         SetBackgroundColor 180 195 245 170'''
             ]
+        },
+        "incubators": {
+            "overview": "itemoverview",
+            "type": "Incubator",
+            "tag": "SetTag @Incubators_",
+            "startTag": "#AutoUpdater_Incubators_start",
+            "endTag": "#AutoUpdater_Incubators_end",
+            "startSection" : "#AutoUpdater_Incubators_section_start",
+            "endSection" : "#AutoUpdater_Incubators_section_end",
+            "section" : [
+'''    Branch # Leagues - Legion - Incubators - T0
+        Tags @Incubators_T0
+        SetFontSize 50
+        SetBackgroundColor 255 255 255
+        SetTextColor 244 74 204 255
+        SetBorderColor 244 74 204 255
+        Tags $soundT0
+        MinimapIcon 0 Blue Diamond''',
+'''    Branch # Leagues - Legion - Incubators - T1
+        Tags @Incubators_T1
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        SetTextColor 244 74 204 255
+        SetBorderColor 244 74 204 255
+        Tags $soundT1
+        MinimapIcon 0 Brown Diamond''',
+'''    Branch # Leagues - Legion - Incubators - T2
+        Tags @Incubators_T2
+        SetFontSize 42
+        SetBackgroundColor 244 74 204 255
+        SetBorderColor 62 18 52 255
+        SetTextColor 62 18 52 255
+        Tags $soundT2
+        MinimapIcon 1 Yellow Diamond''',
+'''    Branch # Leagues - Legion - Incubators - T3
+        Tags @Incubators_T3
+        SetFontSize 40
+        SetBackgroundColor 62 18 52 255
+        SetTextColor 244 74 204 255
+        SetBorderColor 244 74 204 255
+        Tags $soundT3
+        MinimapIcon 2 White Diamond''',
+'''    Branch # Leagues - Legion - Incubators - T4
+        Tags @Incubators_T4
+        SetFontSize 35
+        SetBackgroundColor 62 18 52 180
+        SetTextColor 244 74 204 255
+        SetBorderColor 244 74 204 255'''
+            ]
         }
     }
 
@@ -630,6 +685,9 @@ if __name__ == '__main__':
     ParseEssences(essences)
     Replace("essences")
 
+    requestStatus, incubators = Fetch("incubators")
+    ParseIncubators(incubators)
+    Replace("incubators")
 
     requestStatus, prophecies = Fetch("prophecies")
     ParseProphecies(prophecies)

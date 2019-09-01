@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.7.2_2019.09.01_12:00
+###Version 3.7.3_2019.09.01_12:00
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -370,6 +370,17 @@ SetTag @Prophecies_T3
 SetTag @Prophecies_T4
     Prophecy "Thaumaturgical History I" "Storm on the Reef" "A Valuable Combination" "The God of Misfortune" "The Sharpened Blade" "The Unbreathing Queen I" "Golden Touch" "The Feral Lord II" "Day of Sacrifice I" "Resistant to Change" "The Ambitious Bandit II" "The Corrupt" "The Feral Lord III" "Unbearable Whispers I" "The Plaguemaw I" "Undead Uprising"
 #AutoUpdater_Prophecies_names_end"
+
+#AutoUpdater_Incubators_start
+SetTag @Incubators_T1
+    BaseType "Geomancer's Incubator" "Time-Lost Incubator"
+SetTag @Incubators_T2
+    BaseType "Thaumaturge's Incubator" "Eldritch Incubator" "Foreboding Incubator" "Celestial Jeweller's Incubator" "Skittering Incubator" "Ornate Incubator" "Celestial Armoursmith's Incubator" "Decadent Incubator" "Otherworldly Incubator" "Obscured Incubator" "Infused Incubator" "Celestial Blacksmith's Incubator" "Fine Incubator" "Gemcutter's Incubator" "Singular Incubator" "Primal Incubator" "Enchanted Incubator" "Diviner's Incubator" "Fossilised Incubator" "Mysterious Incubator" "Fragmented Incubator"
+SetTag @Incubators_T3
+    BaseType "Whispering Incubator" "Cartographer's Incubator"
+SetTag @Incubators_T4
+    BaseType "Abyssal Incubator"
+#AutoUpdater_Incubators_end
 
 #------------------------------------
 #    Fishing and weird stuff
@@ -5176,6 +5187,13 @@ Show
         Tags $soundT0
         MinimapIcon 0 Blue Diamond
         PlayEffect Blue
+    Branch # Currency - Generic Currency - T0 (Exalted Tier) - Imprint
+        BaseType "Imprint"
+        SetFontSize 45
+        SetBackgroundColor 255 255 255
+        Tags $soundT0
+        MinimapIcon 0 Blue Diamond
+        PlayEffect Blue
 
 
     Branch # Currency - Generic Currency - T1 (Divine Tier) - Divine Orb
@@ -5637,21 +5655,39 @@ Show # Leagues - Legion - Emblems
 
 Show
     Class "Incubator"
-    SetBorderColor 244 74 204 255
-    SetTextColor 244 74 204 255
-    Branch # Leagues - Legion - Incubators - T0
-        BaseType "Geomancer's Incubator" "Time-Lost Incubator"
-        SetFontSize 50
-        SetBackgroundColor 255 255 255
-        Tags $soundT0
-        MinimapIcon 0 Blue Diamond
+    #AutoUpdater_Incubators_section_start
     Branch # Leagues - Legion - Incubators - T1
-        BaseType "Eldritch Incubator" "Thaumaturge's Incubator"
+        Tags @Incubators_T1
         SetFontSize 45
         SetBackgroundColor 255 255 255
+        SetTextColor 244 74 204 255
+        SetBorderColor 244 74 204 255
         Tags $soundT1
         MinimapIcon 0 Brown Diamond
-    Branch # Leagues - Legion - Incubators - Tothers
+    Branch # Leagues - Legion - Incubators - T2
+        Tags @Incubators_T2
+        SetFontSize 42
+        SetBackgroundColor 244 74 204 255
+        SetBorderColor 62 18 52 255
+        SetTextColor 62 18 52 255
+        Tags $soundT2
+        MinimapIcon 1 Yellow Diamond
+    Branch # Leagues - Legion - Incubators - T3
+        Tags @Incubators_T3
+        SetFontSize 40
+        SetBackgroundColor 62 18 52 255
+        SetTextColor 244 74 204 255
+        SetBorderColor 244 74 204 255
+        Tags $soundT3
+        MinimapIcon 2 White Diamond
+    Branch # Leagues - Legion - Incubators - T4
+        Tags @Incubators_T4
+        SetFontSize 35
+        SetBackgroundColor 62 18 52 180
+        SetTextColor 244 74 204 255
+        SetBorderColor 244 74 204 255
+    #AutoUpdater_Incubators_section_end
+    Branch # Leagues - Legion - Incubators - Missing From auto tiering
         SetFontSize 42
         SetBackgroundColor 62 18 52 255
         Tags $soundT2
