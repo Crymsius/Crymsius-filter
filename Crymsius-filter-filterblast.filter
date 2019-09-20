@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.8.0_2019.09.20_12:00
+###Version 3.8.0a_2019.09.20_12:00
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -5559,7 +5559,7 @@ Show
         PlayEffect Yellow Temp
     # wolf's shadow here to prevent exception with The Wolf and The Master- Also allows for T3 to be displayed before T4
     Branch Inherit # Divination Cards - T3 Div cards
-        BaseType "The Wolf's Shadow" "The Master Artisan"
+        BaseType "The Wolf's Shadow" "The Master Artisan" "The Demoness"
         SetFontSize 38
         SetBackgroundColor 255 165 0 210
         SetTextColor 0 0 0
