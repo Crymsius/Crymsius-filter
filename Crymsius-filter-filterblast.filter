@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.8.0a_2019.09.29_12:00
+###Version 3.8.0b_2019.09.29_12:00
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -77,7 +77,6 @@ SetOption $soundTalismans switch [@theme_Talismans] [@theme_Talismans] [@custom_
 SetOption $soundNets switch [@theme_Nets] [@theme_Nets] [@custom_Nets] #no title
 SetOption $soundVials switch [@theme_Vials] [@theme_Vials] [@custom_Vials] #no title
 SetOption $soundScarabs switch [@theme_Scarabs] [@theme_Scarabs] [@custom_Scarabs] #no title
-SetOption $soundOils switch [@theme_Oils] [@theme_Oils] [@custom_Oils] #no title
 
 SetOption $Sound_Type_Other info # Other custom sounds
 SetOption $soundLeveling switch [@theme_Leveling] [@theme_Leveling] [@custom_Leveling] #no title
@@ -120,7 +119,6 @@ SetOption $file_Talismans input ["Path\To\Custom\Talismans\Sound\File.extension"
 SetOption $file_Nets input ["Path\To\Custom\Nets\Sound\File.extension"] # no title
 SetOption $file_Vials input ["Path\To\Custom\Vials\Sound\File.extension"] # no title
 SetOption $file_Scarabs input ["Path\To\Custom\Scarabs\Sound\File.extension"] # no title
-SetOption $file_Oils input ["Path\To\Custom\Oils\Sound\File.extension"] # no title
 
 SetOption $Custom_Other info # Other custom sounds
 SetOption $file_Leveling input ["Path\To\Custom\Leveling\Sound\File.extension"] # no title
@@ -181,8 +179,6 @@ SetTag @theme_Vials
     PlayAlertSound 12 300 # Leagues - Vials
 SetTag @theme_Scarabs
     PlayAlertSound 12 300 # Leagues - Scarabs
-SetTag @theme_Oils
-    PlayAlertSound 12 300 # Leagues - Oils
 
 SetTag @theme_Leveling
     PlayAlertSound 14 200 # Other - Leveling Highlight
@@ -255,8 +251,6 @@ SetTag @custom_Vials
     CustomAlertSound $file_Vials
 SetTag @custom_Scarabs
     CustomAlertSound $file_Scarabs
-SetTag @custom_Oils
-    CustomAlertSound $file_Oils
 
 
 
@@ -5638,15 +5632,34 @@ Show
 #------------------------------------
 #    Blight League
 #------------------------------------
-Show # Leagues - Blight - Oils
-    Class "Stackable Currency"
-    BaseType "Oil"
-    SetBackgroundColor 8 82 70 255
-    SetTextColor 241 232 200 255
-    SetBorderColor 241 232 200 255
-    Tags $soundOils
-    MinimapIcon 1 Green Diamond
-
+Show
+    Branch # Leagues - Blight - Oils - T0
+        BaseType "Golden Oil" "Silver Oil"
+        SetBackgroundColor 241 232 200 255
+        SetTextColor 8 82 70 255
+        SetBorderColor 8 82 70 255
+        SetFontSize 50
+        Tags $soundT0
+        MinimapIcon 0 Blue Diamond
+        PlayEffect Blue
+    Branch # Leagues - Blight - Oils - T1
+        BaseType "Opalescent Oil" "Black Oil"
+        SetBackgroundColor 241 232 200 255
+        SetTextColor 8 82 70 255
+        SetBorderColor 8 82 70 255
+        SetFontSize 46
+        Tags $soundT1
+        MinimapIcon 1 Brown Diamond
+        PlayEffect Brown
+    Branch # Leagues - Blight - Oils - TOthers
+        BaseType "Oil"
+        SetBackgroundColor 8 82 70 255
+        SetTextColor 241 232 200 255
+        SetBorderColor 241 232 200 255
+        SetFontSize 42
+        Tags $soundT2
+        MinimapIcon 1 Green Diamond
+        PlayEffect Green
 #------------------------------------
 #    Legion League
 #------------------------------------
