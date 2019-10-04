@@ -1,6 +1,11 @@
 ---------------------------------------------------
           Changelog for Crymsius's Filter         |
 ---------------------------------------------------
+-Notes (3.8.0c)
+Hotfix for auto-tiering script to prevent wrong bases from poe.ninja.
+BaseType for synthesised unique items are displayed as "Synthesised [BaseType]" while this
+should only be a property and not added to the original BaseType.
+
 -Notes (3.8.0b)
 Added tiers for oils with better highlight for golden/silver and opalescent/black oils.
 

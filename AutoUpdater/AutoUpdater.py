@@ -64,6 +64,11 @@ def ParseUniques(items):
 
     if requestStatus:
         relevantUniques = [unique for unique in items['lines'] if unique["count"] > 10 and unique['links'] < 5 and unique['itemClass'] == 3]
+        # hot fix for synthesised unique items not having the correct base type
+        for unique in relevantUniques:
+            if 'Synthesised' in unique['baseType']:
+                unique['baseType'] = unique['baseType'][12:]
+        # end hotfix
         relevantUniques.sort(key=lambda unique: unique['baseType'])
 
         groupedUniques = []
