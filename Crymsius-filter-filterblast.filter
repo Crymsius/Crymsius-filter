@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.8.0c_2019.10.05_01:44
+###Version 3.8.0d_2019.10.05_01:44
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -5625,6 +5625,11 @@ Show
 #    Blight League
 #------------------------------------
 Show
+    Class "Stackable Currency"
+    SetBackgroundColor 8 82 70 255
+    SetTextColor 241 232 200 255
+    SetBorderColor 241 232 200 255
+    SetFontSize 42
     Branch # Leagues - Blight - Oils - T0
         BaseType "Golden Oil" "Silver Oil"
         SetBackgroundColor 241 232 200 255
