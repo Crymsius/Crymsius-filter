@@ -290,7 +290,7 @@ if __name__ == '__main__':
 
     classes = {
         "poeninja" : {
-            "league": "Blight",
+            "league": "Standard",
             "url": "https://poe.ninja/api/data/"
         },
         "currency": {
