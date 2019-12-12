@@ -733,20 +733,20 @@ Show #Atlas and special bases - Autotiered T0
     PlayEffect Blue
     ShaperItem True
     Branch
-        ItemLevel >= 82
-        BaseType "Crystal Belt" "Opal Ring" "Steel Ring" "Vermillion Ring" "Fingerless Silk Gloves" "Imperial Bow" "Turquoise Amulet" "Leather Belt" "Diamond Ring" "Citrine Amulet" "Titanium Spirit Shield" "Jewelled Foil" "Onyx Amulet" "Thicket Bow" "Eclipse Staff"
-    Branch
         ItemLevel >= 86
-        BaseType "Crystal Belt" "Steel Ring" "Opal Ring" "Marble Amulet" "Exquisite Blade" "Opal Wand" "Prismatic Ring" "Opal Sceptre" "Void Sceptre" "Titanium Spirit Shield" "Imperial Bow" "Profane Wand" "Agate Amulet" "Hubris Circlet" "Onyx Amulet" "Eclipse Staff" "Thicket Bow" "Ezomyte Tower Shield" "Diamond Ring" "Jade Amulet" "Citrine Amulet" "Colossal Tower Shield" "Turquoise Amulet" "Lapis Amulet" "Poignard" "Golden Kris" "Leather Belt" "Vaal Regalia" "Jewelled Foil" "Prophecy Wand" "Sorcerer Gloves" "Stag Sceptre" "Harbinger Bow" "Amber Amulet" "Ambusher" "Two-Stone Ring" "Sambar Sceptre" "Paua Amulet" "Spike-Point Arrow Quiver" "Imperial Claw" "Platinum Kris" "Imbued Wand" "Coral Amulet" "Gold Amulet" "Sorcerer Boots" "Lacquered Buckler" "Tornado Wand" "Crystal Sceptre" "Astral Plate" "Battle Buckler" "Coral Ring" "Slink Gloves" "Sharktooth Arrow Quiver" "Archon Kite Shield" "Maraketh Bow" "Royal Burgonet" "Fire Arrow Quiver"
-    Branch
-        ItemLevel >= 83
-        BaseType "Steel Ring" "Fingerless Silk Gloves" "Crystal Belt" "Opal Ring" "Vermillion Ring" "Marble Amulet" "Two-Toned Boots" "Opal Sceptre" "Jewelled Foil" "Thorn Rapier" "Imperial Bow" "Diamond Ring" "Thicket Bow" "Onyx Amulet" "Leather Belt" "Eclipse Staff" "Two-Stone Ring" "Imperial Claw" "Citrine Amulet" "Coral Ring"
+        BaseType "Crystal Belt" "Steel Ring" "Opal Ring" "Marble Amulet" "Exquisite Blade" "Opal Wand" "Prismatic Ring" "Opal Sceptre" "Titanium Spirit Shield" "Profane Wand" "Leather Belt" "Imperial Bow" "Agate Amulet" "Void Sceptre" "Thicket Bow" "Eclipse Staff" "Onyx Amulet" "Hubris Circlet" "Turquoise Amulet" "Stag Sceptre" "Crusader Boots" "Jade Amulet" "Citrine Amulet" "Lapis Amulet" "Plated Maul" "Golden Kris" "Two-Stone Ring" "Vaal Regalia" "Jewelled Foil" "Diamond Ring" "Prophecy Wand" "Platinum Kris" "Ezomyte Tower Shield" "Amber Amulet" "Sorcerer Gloves" "Sambar Sceptre" "Colossal Tower Shield" "Sorcerer Boots" "Ambusher" "Harbinger Bow" "Paua Amulet" "Slink Gloves" "Titan Greaves" "Imperial Claw" "Spike-Point Arrow Quiver" "Imbued Wand" "Coral Amulet" "Gold Amulet" "Lion Pelt" "Sharktooth Arrow Quiver" "Crusader Buckler" "Pinnacle Tower Shield" "Tornado Wand" "Crystal Sceptre" "Astral Plate" "Battle Buckler" "Coral Ring" "Bronze Tower Shield" "Maraketh Bow"
     Branch
         ItemLevel >= 85
-        BaseType "Opal Wand" "Two-Toned Boots" "Opal Sceptre" "Titanium Spirit Shield" "Onyx Amulet" "Hubris Circlet" "Spiked Gloves" "Void Sceptre" "Agate Amulet" "Profane Wand" "Golden Kris" "Turquoise Amulet" "Imperial Skean" "Diamond Ring" "Eclipse Staff" "Citrine Amulet" "Leather Belt" "Gold Amulet" "Thicket Bow" "Imperial Bow" "Ezomyte Tower Shield" "Jade Amulet" "Amber Amulet" "Colossal Tower Shield" "Prophecy Wand" "Lapis Amulet" "Platinum Kris" "Sorcerer Gloves" "Paua Amulet" "Murder Mitts" "Imperial Claw" "Two-Stone Ring" "Imbued Wand" "Jewelled Foil" "Carnal Mitts" "Harbinger Bow" "Sambar Sceptre" "Carnal Sceptre" "Ambusher" "Tornado Wand" "Praetor Crown" "Stag Sceptre" "Poignard"
+        BaseType "Crystal Belt" "Opal Wand" "Exquisite Blade" "Two-Toned Boots" "Titanium Spirit Shield" "Opal Sceptre" "Spiked Gloves" "Void Sceptre" "Profane Wand" "Hubris Circlet" "Agate Amulet" "Golden Kris" "Turquoise Amulet" "Onyx Amulet" "Diamond Ring" "Eclipse Staff" "Citrine Amulet" "Leather Belt" "Gold Amulet" "Thicket Bow" "Platinum Kris" "Amber Amulet" "Imperial Bow" "Prophecy Wand" "Jade Amulet" "Sambar Sceptre" "Lapis Amulet" "Murder Mitts" "Thorn Rapier" "Jewelled Foil" "Poignard" "Sorcerer Gloves" "Tornado Wand" "Stag Sceptre" "Ezomyte Tower Shield" "Paua Amulet" "Imbued Wand" "Two-Stone Ring" "Colossal Tower Shield" "Spiraled Foil" "Harbinger Bow" "Carnal Sceptre" "Coral Amulet"
+    Branch
+        ItemLevel >= 82
+        BaseType "Steel Ring" "Opal Ring" "Crystal Belt" "Vermillion Ring" "Diamond Ring" "Imperial Bow" "Leather Belt" "Thicket Bow" "Turquoise Amulet" "Onyx Amulet" "Titanium Spirit Shield" "Agate Amulet" "Citrine Amulet" "Jewelled Foil"
+    Branch
+        ItemLevel >= 83
+        BaseType "Steel Ring" "Fingerless Silk Gloves" "Crystal Belt" "Vermillion Ring" "Opal Ring" "Marble Amulet" "Onyx Amulet" "Two-Toned Boots" "Thorn Rapier" "Imperial Bow" "Opal Sceptre" "Jewelled Foil" "Cerulean Ring" "Thicket Bow" "Leather Belt" "Sambar Sceptre" "Eclipse Staff" "Diamond Ring" "Citrine Amulet" "Harbinger Bow"
     Branch
         ItemLevel >= 84
-        BaseType "Hubris Circlet" "Diamond Ring" "Leather Belt" "Void Sceptre" "Citrine Amulet" "Titanium Spirit Shield" "Eclipse Staff" "Imperial Bow" "Onyx Amulet" "Thicket Bow" "Opal Sceptre" "Agate Amulet" "Jewelled Foil" "Murder Mitts" "Thorn Rapier" "Platinum Kris" "Turquoise Amulet" "Paua Amulet" "Lapis Amulet" "Jade Amulet" "Sambar Sceptre" "Imperial Claw"
+        BaseType "Hubris Circlet" "Diamond Ring" "Leather Belt" "Void Sceptre" "Onyx Amulet" "Citrine Amulet" "Eclipse Staff" "Jewelled Foil" "Imperial Bow" "Agate Amulet" "Titanium Spirit Shield" "Sambar Sceptre" "Thicket Bow" "Jade Amulet" "Turquoise Amulet" "Opal Sceptre" "Murder Mitts" "Platinum Kris" "Serpentscale Gauntlets" "Lapis Amulet" "Royal Burgonet" "Lion Pelt" "Opal Wand"
 Show #Atlas and special bases - Autotiered T0
     Rarity <= Rare
     SetFontSize 45
@@ -759,19 +759,19 @@ Show #Atlas and special bases - Autotiered T0
     ElderItem True
     Branch
         ItemLevel >= 86
-        BaseType "Steel Ring" "Bone Helmet" "Crystal Belt" "Astral Plate" "Opal Ring" "Exquisite Blade" "Vaal Axe" "Heavy Belt" "Onyx Amulet" "Citrine Amulet" "Diamond Ring" "Agate Amulet" "Royal Burgonet" "Turquoise Amulet" "Gold Amulet" "Pig-Faced Bascinet" "Bronze Tower Shield" "Two-Stone Ring" "Jade Amulet" "Lapis Amulet" "Coral Ring"
+        BaseType "Steel Ring" "Bone Helmet" "Astral Plate" "Crystal Belt" "Opal Ring" "Exquisite Blade" "Vaal Axe" "Onyx Amulet" "Agate Amulet" "Heavy Belt" "Diamond Ring" "Citrine Amulet" "Turquoise Amulet" "Royal Burgonet" "Two-Stone Ring" "Lapis Amulet" "Jade Amulet" "Unset Ring" "Amber Amulet"
     Branch
         ItemLevel >= 85
-        BaseType "Opal Ring" "Astral Plate" "Ezomyte Tower Shield" "Onyx Amulet" "Diamond Ring" "Royal Burgonet" "Two-Toned Boots" "Vaal Axe" "Two-Stone Ring" "Citrine Amulet" "Coral Ring" "Agate Amulet" "Sapphire Ring" "Heavy Belt" "Lapis Amulet" "Eternal Burgonet" "Leather Belt"
+        BaseType "Opal Ring" "Astral Plate" "Exquisite Blade" "Onyx Amulet" "Diamond Ring" "Two-Toned Boots" "Vaal Axe" "Agate Amulet" "Royal Burgonet" "Two-Stone Ring" "Fleshripper" "Citrine Amulet" "Lapis Amulet" "Coral Ring" "Sapphire Ring" "Stealth Gloves" "Eternal Burgonet" "Turquoise Amulet" "Amber Amulet" "Heavy Belt" "Leather Belt"
     Branch
         ItemLevel >= 83
-        BaseType "Marble Amulet" "Opal Ring" "Vermillion Ring" "Steel Ring" "Spiked Gloves" "Gripped Gloves" "Crystal Belt" "Astral Plate" "Exquisite Blade" "Vaal Axe" "Diamond Ring"
+        BaseType "Vermillion Ring" "Steel Ring" "Opal Ring" "Marble Amulet" "Gripped Gloves" "Crystal Belt" "Spiked Gloves" "Onyx Amulet" "Exquisite Blade" "Astral Plate" "Convoking Wand" "Agate Amulet" "Pig-Faced Bascinet"
     Branch
         ItemLevel >= 84
-        BaseType "Vaal Axe" "Unset Ring" "Diamond Ring" "Agate Amulet" "Turquoise Amulet" "Two-Stone Ring" "Onyx Amulet" "Amber Amulet" "Citrine Amulet"
+        BaseType "Astral Plate" "Vaal Axe" "Diamond Ring" "Agate Amulet" "Unset Ring" "Colossal Tower Shield" "Turquoise Amulet" "Titanium Spirit Shield" "Amber Amulet" "Sapphire Ring"
     Branch
         ItemLevel >= 82
-        BaseType "Diamond Ring"
+        BaseType "Citrine Amulet" "Agate Amulet" "Diamond Ring" "Royal Burgonet"
 Show #Atlas and special bases - Autotiered T0
     Rarity <= Rare
     SetFontSize 45
@@ -785,7 +785,7 @@ Show #Atlas and special bases - Autotiered T0
     ElderItem False
     Branch
         ItemLevel >= 86
-        BaseType "Two-Toned Boots" "Bone Helmet" "Spiked Gloves" "Vermillion Ring" "Steel Ring" "Convoking Wand"
+        BaseType "Two-Toned Boots" "Bone Helmet" "Vermillion Ring" "Spiked Gloves" "Crystal Belt"
 Show #Atlas and special bases - Autotiered T1
     Rarity <= Rare
     SetFontSize 42
@@ -798,19 +798,19 @@ Show #Atlas and special bases - Autotiered T1
     ShaperItem True
     Branch
         ItemLevel >= 85
-        BaseType "Zealot Gloves" "Lion Pelt" "Bone Helmet" "Heathen Wand" "Coral Amulet" "Moon Staff" "Unset Ring" "Coral Ring" "Pinnacle Tower Shield" "Vaal Regalia" "Sapphire Ring" "Fleshripper" "Shagreen Tower Shield" "Spike-Point Arrow Quiver" "Gemini Claw" "Royal Sceptre" "Astral Plate" "Ruby Ring" "Topaz Ring" "Maraketh Bow" "Vaal Sceptre" "Phantom Mace" "Satin Gloves" "Fiend Dagger" "Stealth Gloves" "Tiger Hook" "Royal Burgonet" "Heavy Belt" "Harmonic Spirit Shield" "Serrated Foil" "Deicide Mask" "Abyssal Sceptre" "Blood Sceptre" "Sorcerer Boots" "Crystal Sceptre" "Crystal Wand" "Nightmare Bascinet" "Fossilised Spirit Shield" "Crusader Buckler" "Decimation Bow" "Demon Dagger" "Samite Gloves" "Supreme Spiked Shield" "Demon's Horn" "Spiraled Foil" "Goliath Gauntlets" "Saint's Hauberk" "Penetrating Arrow Quiver" "Highborn Bow" "Runic Hatchet" "Blunt Arrow Quiver" "Midnight Blade" "Archon Kite Shield" "Golden Buckler" "Serrated Arrow Quiver" "Platinum Sceptre" "Mirrored Spiked Shield" "Primeval Rapier" "Behemoth Mace" "Royal Skean" "Harpy Rapier" "Goliath Greaves" "Broadhead Arrow Quiver" "Ivory Spirit Shield" "Eternal Burgonet" "Boot Blade" "Conjurer Gloves" "Fancy Foil" "Sai" "Titan Greaves" "Fire Arrow Quiver" "Omen Wand" "Serpent Wand" "Lead Sceptre" "Ironwood Buckler" "Iron Ring" "Apex Rapier" "Harlequin Mask"
-    Branch
-        ItemLevel >= 86
-        BaseType "Titan Greaves" "Crusader Boots" "Sapphire Ring" "Unset Ring" "Blood Sceptre" "Highborn Bow" "Lion Pelt" "Crusader Buckler" "Titan Gauntlets" "Royal Skean" "Slink Boots" "Ruby Ring" "Serpent Wand" "Penetrating Arrow Quiver" "Stealth Gloves" "Callous Mask" "Platinum Sceptre" "Imperial Skean" "Demon's Horn" "Dragonscale Boots" "Sadist Garb" "Karui Maul" "Moonstone Ring" "Thorium Spirit Shield" "Golden Buckler" "Pinnacle Tower Shield" "Behemoth Mace" "Broadhead Arrow Quiver" "Angelic Kite Shield" "Colossus Mallet" "Ranger Bow" "Fleshripper" "Embroidered Gloves" "Abyssal Sceptre" "Eye Gouger" "Heavy Belt" "Praetor Crown" "Sovereign Spiked Shield" "Lunaris Circlet" "Demon Dagger" "Fluted Bascinet" "Gemini Claw" "Iron Ring" "Carnal Sceptre" "Omen Wand" "Topaz Ring" "Moon Staff" "Lead Sceptre" "Conjurer Gloves" "Raven Mask" "Decimation Bow" "Serrated Foil" "Vaal Sceptre" "Crusader Gloves" "Zodiac Leather" "Fossilised Spirit Shield" "Spiraled Foil" "Shagreen Gloves" "Teak Round Shield" "Eternal Burgonet" "Goliath Gauntlets" "Murder Boots" "Apex Rapier" "Gold Ring" "Judgement Staff" "Dragonscale Gauntlets" "Bronze Tower Shield" "Amethyst Ring" "Eelskin Boots" "Lacquered Helmet" "Noble Claw" "Soldier Boots" "Deicide Mask" "Dread Maul" "Vaal Hatchet" "Runic Hatchet" "Karui Sceptre" "Shagreen Tower Shield" "Samite Helmet" "Rustic Sash" "Vaal Axe" "Tyrant's Sekhem" "Vaal Blade" "Silken Hood" "Serpentscale Gauntlets" "Assassin's Mitts" "Ezomyte Burgonet" "Vaal Rapier" "Prophet Crown" "Crystal Wand" "Secutor Helm" "Paua Ring" "Chiming Spirit Shield" "Carnal Armour"
+        BaseType "Ambusher" "Sapphire Ring" "Imperial Skean" "Imperial Claw" "Crusader Buckler" "Bone Helmet" "Two-Point Arrow Quiver" "Coral Ring" "Pinnacle Tower Shield" "Vaal Regalia" "Sharktooth Arrow Quiver" "Sinner Tricorne" "Maraketh Bow" "Topaz Ring" "Spike-Point Arrow Quiver" "Astral Plate" "Carnal Mitts" "Ruby Ring" "Fleshripper" "Royal Sceptre" "Demon Dagger" "Samite Gloves" "Fiend Dagger" "Lion Pelt" "Unset Ring" "Vaal Sceptre" "Demon's Horn" "Serrated Arrow Quiver" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Vaal Spirit Shield" "Gemini Claw" "Slink Gloves" "Serrated Foil" "Deicide Mask" "Abyssal Sceptre" "Royal Burgonet" "Heavy Belt" "Sorcerer Boots" "Crystal Wand" "Blood Sceptre" "Dragonscale Gauntlets" "Spidersilk Robe" "Titan Greaves" "Crystal Sceptre" "Pig-Faced Bascinet" "Penetrating Arrow Quiver" "Sharkskin Gloves" "Runic Hatchet" "Midnight Blade" "Lacquered Helmet" "Blunt Arrow Quiver" "Ceremonial Axe" "Goliath Gauntlets" "Boot Blade" "Savant's Robe" "Harpy Rapier" "Goliath Greaves" "Apex Rapier" "Broadhead Arrow Quiver" "Shagreen Tower Shield" "Eternal Burgonet" "Omen Wand" "Noble Claw" "Behemoth Mace" "Conjurer Gloves" "Assassin's Mitts" "Decimation Bow" "Sai" "Praetor Crown" "Ezomyte Dagger" "Archon Kite Shield" "Lead Sceptre" "Serpent Wand" "Triumphant Lamellar" "Harlequin Mask" "Thorium Spirit Shield"
     Branch
         ItemLevel >= 82
-        BaseType "Stag Sceptre" "Convoking Wand" "Jade Amulet" "Agate Amulet" "Two-Stone Ring" "Lapis Amulet" "Abyssal Sceptre" "Highborn Bow" "Hubris Circlet" "Opal Sceptre" "Opal Wand" "Void Sceptre" "Amber Amulet" "Platinum Sceptre" "Paua Amulet" "Sapphire Ring" "Titan Gauntlets" "Profane Wand" "Sambar Sceptre" "Platinum Kris" "Bone Helmet" "Coral Ring" "Gold Amulet" "Sinner Tricorne" "Lead Sceptre" "Unset Ring" "Spike-Point Arrow Quiver" "Ambush Mitts" "Gold Ring" "Topaz Ring" "Ruby Ring" "Karui Maul" "Regicide Mask" "Blunt Arrow Quiver"
-    Branch
-        ItemLevel >= 83
-        BaseType "Void Sceptre" "Amber Amulet" "Lapis Amulet" "Titanium Spirit Shield" "Agate Amulet" "Sambar Sceptre" "Moon Staff" "Jade Amulet" "Harbinger Bow" "Bone Helmet" "Profane Wand" "Topaz Ring" "Hubris Circlet" "Turquoise Amulet" "Unset Ring" "Ruby Ring" "Opal Wand" "Sapphire Ring" "Ambusher" "Royal Burgonet" "Pinnacle Tower Shield" "Platinum Kris" "Paua Amulet" "Fancy Foil" "Spike-Point Arrow Quiver" "Gemini Claw" "Coral Amulet" "Branded Kite Shield" "Convoking Wand" "Imbued Wand" "Sorcerer Boots" "Highborn Bow" "Crystal Sceptre" "Crested Tower Shield" "Deicide Mask" "Golden Kris" "Platinum Sceptre" "Blood Sceptre" "Twilight Blade" "Sorcerer Gloves" "Gold Amulet" "Infernal Axe" "Vaal Sceptre" "Shagreen Gloves" "Fencer Helm" "Carnal Mitts" "Wyrmscale Gauntlets" "Fluted Bascinet" "Heathen Wand" "Karui Axe" "Apex Rapier" "Auric Mace" "Goliath Gauntlets"
+        BaseType "Eclipse Staff" "Jade Amulet" "Opal Wand" "Two-Stone Ring" "Lapis Amulet" "Stag Sceptre" "Convoking Wand" "Amber Amulet" "Bone Helmet" "Coral Amulet" "Paua Amulet" "Void Sceptre" "Sapphire Ring" "Broadhead Arrow Quiver" "Sambar Sceptre" "Highborn Bow" "Gold Amulet" "Opal Sceptre" "Blood Sceptre" "Slink Gloves" "Coral Ring" "Platinum Kris" "Platinum Sceptre" "Hubris Circlet" "Sinner Tricorne" "Thorium Spirit Shield" "Abyssal Sceptre" "Ambush Mitts" "Topaz Ring" "Ruby Ring" "Vaal Sceptre" "Crystal Wand" "Unset Ring"
     Branch
         ItemLevel >= 84
-        BaseType "Sapphire Ring" "Two-Stone Ring" "Amber Amulet" "Gold Amulet" "Highborn Bow" "Vaal Regalia" "Coral Amulet" "Serrated Foil" "Lion Pelt" "Harbinger Bow" "Opal Wand" "Royal Burgonet" "Profane Wand" "Coral Ring" "Golden Kris" "Topaz Ring" "Spike-Point Arrow Quiver" "Heavy Belt" "Ruby Ring" "Sorcerer Gloves" "Gemini Claw" "Eternal Burgonet" "Conjurer Gloves" "Unset Ring" "Crystal Sceptre" "Golden Buckler" "Karui Sceptre" "Vaal Sceptre" "Broadhead Arrow Quiver" "Tyrant's Sekhem" "Penetrating Arrow Quiver" "Titan Gauntlets" "Spiraled Foil" "Iron Ring" "Lacquered Helmet" "Royal Skean" "Astral Plate" "Harpy Rapier" "Sai" "Platinum Sceptre" "Moonstone Ring" "Goliath Gauntlets" "Prophecy Wand" "Royal Sceptre" "Samite Gloves" "Paua Ring" "Imbued Wand" "Slink Gloves" "Fiend Dagger" "Carnal Sceptre" "Thorium Spirit Shield"
+        BaseType "Amber Amulet" "Highborn Bow" "Imperial Claw" "Gold Amulet" "Spiraled Foil" "Vaal Regalia" "Sapphire Ring" "Coral Amulet" "Paua Amulet" "Profane Wand" "Topaz Ring" "Heavy Belt" "Royal Skean" "Royal Sceptre" "Coral Ring" "Golden Kris" "Two-Stone Ring" "Spike-Point Arrow Quiver" "Harbinger Bow" "Ambusher" "Carnal Sceptre" "Sai" "Vaal Sceptre" "Sorcerer Gloves" "Ruby Ring" "Broadhead Arrow Quiver" "Golden Buckler" "Tornado Wand" "Conjurer Gloves" "Platinum Sceptre" "Penetrating Arrow Quiver" "Serrated Foil" "Titan Gauntlets" "Iron Ring" "Unset Ring" "Goliath Gauntlets" "Eternal Burgonet" "Angelic Kite Shield" "Imbued Wand" "Fiend Dagger" "Karui Sceptre" "Demon Dagger" "Ancient Gauntlets" "Gemini Claw" "Slink Gloves" "Chain Belt" "Moonstone Ring" "Samite Gloves" "Prophecy Wand" "Decimation Bow" "Crystal Sceptre" "Astral Plate"
+    Branch
+        ItemLevel >= 83
+        BaseType "Void Sceptre" "Jade Amulet" "Convoking Wand" "Two-Stone Ring" "Amber Amulet" "Lapis Amulet" "Turquoise Amulet" "Titanium Spirit Shield" "Coral Ring" "Agate Amulet" "Bone Helmet" "Imperial Claw" "Moon Staff" "Unset Ring" "Hubris Circlet" "Royal Burgonet" "Profane Wand" "Ambusher" "Sorcerer Gloves" "Behemoth Mace" "Platinum Kris" "Gold Amulet" "Sapphire Ring" "Topaz Ring" "Paua Amulet" "Serrated Arrow Quiver" "Gemini Claw" "Opal Wand" "Fancy Foil" "Highborn Bow" "Coral Amulet" "Spike-Point Arrow Quiver" "Ruby Ring" "Crystal Sceptre" "Penetrating Arrow Quiver" "Twilight Blade" "Blood Sceptre" "Necromancer Silks" "Imbued Wand" "Omen Wand" "Golden Kris" "Ancestral Club" "Saintly Chainmail" "Carnal Mitts" "Fluted Bascinet" "Infernal Axe" "Decimation Bow" "Apex Rapier" "Wyrmscale Gauntlets" "Platinum Sceptre" "Moonstone Ring"
+    Branch
+        ItemLevel >= 86
+        BaseType "Highborn Bow" "Topaz Ring" "Sapphire Ring" "Sadist Garb" "Royal Burgonet" "Murder Mitts" "Fossilised Spirit Shield" "Poignard" "Penetrating Arrow Quiver" "Embroidered Gloves" "Golden Buckler" "Unset Ring" "Demon's Horn" "Abyssal Sceptre" "Moon Staff" "Callous Mask" "Platinum Sceptre" "Two-Point Arrow Quiver" "Moonstone Ring" "Stealth Gloves" "Slink Boots" "Lunaris Circlet" "Karui Maul" "Behemoth Mace" "Heavy Belt" "Praetor Crown" "Steelwood Bow" "Imperial Skean" "Archon Kite Shield" "Thorium Spirit Shield" "Titan Gauntlets" "Colossus Mallet" "Serpent Wand" "Lead Sceptre" "Iron Ring" "Carnal Sceptre" "Fluted Bascinet" "Decimation Bow" "Gemini Claw" "Crusader Gloves" "Dragonscale Boots" "Judgement Staff" "Fleshripper" "Runic Hatchet" "Conjurer Gloves" "Mind Cage" "Eternal Burgonet" "Serrated Foil" "Shagreen Gloves" "Angelic Kite Shield" "Omen Wand" "Lacquered Helmet" "Demon Dagger" "Teak Round Shield" "Pecoraro" "Ruby Ring" "Fancy Foil" "Vaal Sceptre" "Paua Ring" "Vaal Blade" "Chiming Spirit Shield" "Karui Sceptre" "Prehistoric Claw" "Royal Skean" "Shagreen Tower Shield" "Samite Helmet" "Crested Tower Shield" "Vaal Axe" "Goliath Greaves" "Amethyst Ring" "Apex Rapier" "Pig-Faced Bascinet" "Saintly Chainmail" "Dragonscale Gauntlets" "Silken Hood" "Murder Boots" "Slaughter Knife" "Vaal Hatchet" "Soldier Gloves" "Blunt Arrow Quiver" "Prophet Crown" "Regicide Mask" "Gold Ring" "Noble Claw" "Ursine Pelt"
 Show #Atlas and special bases - Autotiered T1
     Rarity <= Rare
     SetFontSize 42
@@ -823,19 +823,19 @@ Show #Atlas and special bases - Autotiered T1
     ElderItem True
     Branch
         ItemLevel >= 86
-        BaseType "Amber Amulet" "Assassin's Garb" "Paua Amulet" "Unset Ring" "Coral Amulet" "Glorious Plate" "Leather Belt" "Eternal Burgonet" "Hubris Circlet" "Ezomyte Tower Shield" "Sorcerer Gloves" "Fleshripper" "Ezomyte Burgonet" "Bone Circlet" "Topaz Ring" "Ruby Ring" "Titan Greaves" "Titan Gauntlets" "Vaal Regalia" "Sapphire Ring" "Zodiac Leather" "Thicket Bow" "Moonstone Ring" "Opal Wand" "Pinnacle Tower Shield" "Vaal Mask" "Imperial Claw" "Colossal Tower Shield" "Praetor Crown" "Sorcerer Boots" "Slink Gloves" "Eclipse Staff" "Crusader Buckler" "Festival Mask" "Judgement Staff" "Lathi" "Reaver Helmet" "Archon Kite Shield" "Opal Sceptre" "Sun Plate" "Supreme Spiked Shield" "Sharktooth Arrow Quiver" "Antique Gauntlets" "Zealot Gloves" "Hellion's Paw" "Compound Bow" "Maraketh Bow" "Amethyst Ring" "Steel Gauntlets" "Dragonscale Boots" "Occultist's Vestment" "Maelström Staff" "Serpentscale Gauntlets" "Gemini Claw" "Ezomyte Axe" "Crusader Helmet" "Tiger Hook" "Samite Helmet" "Saintly Chainmail" "Foul Staff" "Paua Ring" "Vaal Gauntlets" "Vaal Blade" "Royal Axe" "Behemoth Mace" "Harbinger Bow" "Prophet Crown" "Trapper Mitts" "Imperial Bow" "Mind Cage" "Slink Boots" "Serpentscale Boots" "Graceful Sword" "Twin Claw" "Runic Hatchet" "Blood Raiment" "Jewelled Foil" "Golden Mask" "Deicide Mask" "Exquisite Leather" "Tornado Wand" "Sai" "Grove Bow" "Full Wyrmscale" "Stealth Boots" "Spiraled Foil" "Coronal Maul" "Colosseum Plate" "Infernal Sword"
-    Branch
-        ItemLevel >= 85
-        BaseType "Unset Ring" "Jade Amulet" "Amber Amulet" "Turquoise Amulet" "Fleshripper" "Ruby Ring" "Topaz Ring" "Lion Pelt" "Opal Wand" "Ezomyte Burgonet" "Samite Helmet" "Harbinger Bow" "Gold Amulet" "Stealth Gloves" "Coral Amulet" "Slink Gloves" "Moonstone Ring" "Hubris Circlet" "Vaal Mask" "Glorious Plate" "Iron Ring" "Zodiac Leather" "Titan Gauntlets" "Sorcerer Gloves" "Paua Ring" "Jewelled Foil" "Titanium Spirit Shield" "Paua Amulet" "Vaal Rapier" "Maraketh Bow" "Prophet Crown" "Goliath Gauntlets" "Imperial Bow" "Gemini Claw" "Assassin's Garb" "Imperial Claw" "Battle Lamellar" "Eye Gouger" "Highborn Bow" "Primeval Rapier" "Great White Claw" "Coronal Leather" "Vaal Regalia" "Shagreen Gloves" "Sorcerer Boots" "Angelic Kite Shield"
-    Branch
-        ItemLevel >= 84
-        BaseType "Titanium Spirit Shield" "Sapphire Ring" "Coral Ring" "Lapis Amulet" "Heavy Belt" "Topaz Ring" "Fleshripper" "Titan Gauntlets" "Paua Amulet" "Eternal Burgonet" "Leather Belt" "Hubris Circlet" "Ruby Ring" "Stealth Gloves" "Two-Toned Boots" "Nightmare Bascinet" "Jade Amulet" "Royal Burgonet" "Coral Amulet" "Imperial Bow" "Amethyst Ring" "Sinner Tricorne" "Slink Gloves" "Pig-Faced Bascinet" "Fencer Helm" "Zealot Helmet" "Gold Amulet" "Paua Ring" "Samite Helmet" "Mind Cage" "Ancient Gauntlets" "Prophecy Wand" "Vaal Rapier" "Vaal Gauntlets" "Jewelled Foil" "Imperial Claw" "Iron Ring" "Thicket Bow" "Gold Ring" "Moonstone Ring" "Gemini Claw" "Carnal Armour"
+        BaseType "Leather Belt" "Topaz Ring" "Assassin's Garb" "Bronze Tower Shield" "Paua Amulet" "Coral Ring" "Titan Greaves" "Eternal Burgonet" "Hubris Circlet" "Vaal Regalia" "Gold Amulet" "Glorious Plate" "Fleshripper" "Coral Amulet" "Sorcerer Gloves" "Titan Gauntlets" "Pinnacle Tower Shield" "Colossal Tower Shield" "Ruby Ring" "Ezomyte Tower Shield" "Imperial Claw" "Zodiac Leather" "Judgement Staff" "Moonstone Ring" "Sorcerer Boots" "Sapphire Ring" "Thicket Bow" "Frontier Leather" "Dragonscale Boots" "Sun Plate" "Praetor Crown" "Eclipse Staff" "Crusader Buckler" "Opal Wand" "Opal Sceptre" "Maraketh Bow" "Maelström Staff" "Compound Bow" "Amethyst Ring" "Nightmare Bascinet" "Assassin's Boots" "Hellion's Paw" "Saintly Chainmail" "Pig-Faced Bascinet" "Antique Gauntlets" "Vaal Mask" "Sharktooth Arrow Quiver" "Slink Boots" "Serpentscale Gauntlets" "Gemini Claw" "Ezomyte Dagger" "Iron Ring" "Runic Hatchet" "Crusader Helmet" "Grove Bow" "Ezomyte Axe" "Samite Helmet" "Jewelled Foil" "Ezomyte Burgonet" "Vaal Gauntlets" "Vaal Blade" "Archon Kite Shield" "Royal Axe" "Slink Gloves" "Sleek Coat" "Harbinger Bow" "Prophet Crown" "Imperial Bow" "Crusader Boots" "Serpentscale Boots" "Dragonscale Gauntlets" "Reaver Helmet" "Twin Claw" "Paua Ring" "Hunter Hood" "Full Wyrmscale" "Nubuck Boots" "Ambusher" "Coronal Maul" "Vaal Hatchet" "Behemoth Mace"
     Branch
         ItemLevel >= 82
-        BaseType "Agate Amulet" "Coral Ring" "Topaz Ring" "Gold Amulet" "Unset Ring" "Sapphire Ring" "Two-Stone Ring" "Amber Amulet" "Royal Burgonet" "Onyx Amulet" "Eternal Burgonet" "Citrine Amulet" "Heavy Belt" "Turquoise Amulet" "Titan Gauntlets" "Leather Belt" "Ruby Ring" "Nightmare Bascinet" "Jade Amulet" "Slink Gloves" "Paua Amulet" "Amethyst Ring" "Lapis Amulet" "Moonstone Ring" "Thicket Bow" "Gemini Claw" "Magistrate Crown" "Soldier Gloves"
+        BaseType "Topaz Ring" "Onyx Amulet" "Coral Ring" "Moonstone Ring" "Unset Ring" "Two-Stone Ring" "Gold Amulet" "Sapphire Ring" "Amber Amulet" "Turquoise Amulet" "Heavy Belt" "Leather Belt" "Thicket Bow" "Titan Gauntlets" "Ruby Ring" "Paua Amulet" "Nightmare Bascinet" "Lapis Amulet" "Jade Amulet" "Eternal Burgonet" "Platinum Sceptre" "Amethyst Ring" "Paua Ring" "Rustic Sash" "Solaris Circlet" "Gemini Claw" "Magistrate Crown" "Hubris Circlet" "Slink Gloves"
+    Branch
+        ItemLevel >= 85
+        BaseType "Callous Mask" "Titan Gauntlets" "Assassin's Garb" "Topaz Ring" "Unset Ring" "Lion Pelt" "Hubris Circlet" "Opal Wand" "Jade Amulet" "Ezomyte Tower Shield" "Moonstone Ring" "Titanium Spirit Shield" "Archon Kite Shield" "Gold Amulet" "Paua Amulet" "Imperial Bow" "Ezomyte Burgonet" "Ruby Ring" "Iron Ring" "Eclipse Staff" "Silken Hood" "Coral Amulet" "Glorious Plate" "Zodiac Leather" "Amethyst Ring" "Slink Gloves" "Samite Helmet" "Sorcerer Gloves" "Samite Gloves" "Jewelled Foil" "Paua Ring" "Colosseum Plate" "Goliath Gauntlets" "Prophet Crown" "Praetor Crown" "Maraketh Bow" "Imperial Claw" "Battle Lamellar" "Sai" "Void Sceptre" "Coronal Leather" "Murder Boots" "Sorcerer Boots" "Hydrascale Gauntlets" "Vaal Regalia" "Highborn Bow" "Demon Dagger" "Tiger Hook" "Shagreen Gloves" "Serrated Foil" "Gemini Claw" "Primeval Rapier"
+    Branch
+        ItemLevel >= 84
+        BaseType "Coral Ring" "Nightmare Bascinet" "Lapis Amulet" "Heavy Belt" "Citrine Amulet" "Royal Burgonet" "Onyx Amulet" "Topaz Ring" "Two-Toned Boots" "Eternal Burgonet" "Two-Stone Ring" "Leather Belt" "Ruby Ring" "Stealth Gloves" "Hubris Circlet" "Jade Amulet" "Paua Amulet" "Pig-Faced Bascinet" "Coral Amulet" "Imperial Bow" "Amethyst Ring" "Samite Helmet" "Ancient Gauntlets" "Mind Cage" "Imperial Claw" "Zealot Helmet" "Gold Amulet" "Gold Ring" "Sinner Tricorne" "Slink Gloves" "Titan Gauntlets" "Vaal Rapier" "Carnal Armour" "Iron Ring" "Harbinger Bow" "Paua Ring" "Moonstone Ring" "Titan Greaves" "Gemini Claw" "Necromancer Circlet"
     Branch
         ItemLevel >= 83
-        BaseType "Agate Amulet" "Onyx Amulet" "Leather Belt" "Citrine Amulet" "Convoking Wand" "Two-Toned Boots" "Unset Ring" "Imperial Claw" "Heavy Belt" "Coral Ring" "Eclipse Staff" "Zealot Helmet" "Sapphire Ring" "Amber Amulet" "Two-Stone Ring" "Gold Amulet" "Ezomyte Burgonet" "Lapis Amulet" "Turquoise Amulet" "Ruby Ring" "Topaz Ring" "Coral Amulet" "Behemoth Mace" "Hunter Hood" "Jade Amulet" "Royal Burgonet" "Prophet Crown" "Void Sceptre" "Sentinel Jacket" "Saintly Chainmail" "Zodiac Leather" "Moonstone Ring" "Murder Mitts" "Royal Axe" "Paua Amulet" "Thicket Bow" "Lion Pelt" "Jewelled Foil" "Eternal Burgonet" "Wyrmscale Gauntlets" "Titan Gauntlets" "Iron Ring" "Fleshripper"
+        BaseType "Leather Belt" "Diamond Ring" "Citrine Amulet" "Heavy Belt" "Turquoise Amulet" "Reaver Helmet" "Amber Amulet" "Unset Ring" "Two-Stone Ring" "Ruby Ring" "Lapis Amulet" "Two-Toned Boots" "Eternal Burgonet" "Gold Amulet" "Ezomyte Burgonet" "Royal Burgonet" "Paua Amulet" "Coral Ring" "Sapphire Ring" "Imperial Claw" "Jade Amulet" "Topaz Ring" "Hunter Hood" "Prophet Crown" "Coral Amulet" "Wyrmscale Gauntlets" "Titan Gauntlets" "Lion Pelt" "Hubris Circlet" "Zodiac Leather" "Iron Ring" "Void Sceptre" "Siege Axe" "Thicket Bow" "Behemoth Mace" "Chiming Spirit Shield" "Sorcerer Gloves"
 Show #Atlas and special bases - Autotiered T1
     Rarity <= Rare
     SetFontSize 42
@@ -849,19 +849,19 @@ Show #Atlas and special bases - Autotiered T1
     ElderItem False
     Branch
         ItemLevel >= 86
-        BaseType "Fingerless Silk Gloves" "Crystal Belt" "Marble Amulet" "Opal Ring" "Cerulean Ring" "Searching Eye Jewel" "Ambush Boots" "Gripped Gloves" "Murderous Eye Jewel" "Blue Pearl Amulet" "Imperial Claw" "Stygian Vise" "Eclipse Staff" "Prismatic Ring" "Soldier Boots" "Colossal Tower Shield" "Sorcerer Boots" "Titanium Spirit Shield" "Opal Wand" "Jewelled Foil"
-    Branch
-        ItemLevel >= 85
-        BaseType "Lathi" "Engraved Wand" "Steel Ring" "Searching Eye Jewel" "Opal Ring" "Spiked Gloves" "Opal Wand"
+        BaseType "Steel Ring" "Convoking Wand" "Vaal Gauntlets" "Fingerless Silk Gloves" "Opal Ring" "Imperial Claw" "Marble Amulet" "Stygian Vise" "Gripped Gloves" "Searching Eye Jewel" "Eclipse Staff" "Opal Sceptre" "Assassin's Boots" "Murderous Eye Jewel" "Ambush Boots" "Vaal Greaves" "Prismatic Ring" "Jewelled Foil"
     Branch
         ItemLevel >= 84
-        BaseType "Embroidered Gloves" "Imperial Claw" "Lacquered Buckler" "Opal Sceptre" "Convoking Wand" "Serpentscale Gauntlets" "Searching Eye Jewel" "Eelskin Gloves" "Stygian Vise"
-    Branch
-        ItemLevel >= 83
-        BaseType "Moon Staff" "Pecoraro" "Engraved Wand"
+        BaseType "Imperial Claw" "Opal Ring" "Opal Sceptre" "Lacquered Buckler" "Serpentscale Gauntlets" "Riveted Gloves" "Murderous Eye Jewel" "Sorcerer Gloves"
     Branch
         ItemLevel >= 82
-        BaseType "Steel Ring" "Searching Eye Jewel"
+        BaseType "Steel Gauntlets" "Steel Ring"
+    Branch
+        ItemLevel >= 85
+        BaseType "Imperial Claw" "Spiked Gloves" "Lacquered Buckler" "Searching Eye Jewel" "Steel Ring" "Antique Gauntlets" "Opal Wand" "Steel Gauntlets" "Heathen Wand"
+    Branch
+        ItemLevel >= 83
+        BaseType "Imperial Claw" "Throat Stabber"
 #AutoUpdater_BaseTypes_section_end
 
 Show
@@ -6187,45 +6187,6 @@ Show
     SetTextColor 192 192 192
     SetBorderColor 192 192 192
     #AutoUpdater_Prophecies_section_start
-    Branch Inherit # Divination Cards - T0 Div cards
-        Tags @DivinationCards_T0
-        SetFontSize 45
-        SetBackgroundColor 255 255 255
-        SetTextColor 255 165 0
-        SetBorderColor 255 165 0
-        Tags $soundT0
-        MinimapIcon 0 Blue Square
-        PlayEffect Blue
-    Branch Inherit # Divination Cards - T1 Div cards
-        Tags @DivinationCards_T1
-        SetFontSize 44
-        SetBackgroundColor 255 165 0 245
-        SetTextColor 255 255 255
-        SetBorderColor 255 255 255
-        Tags $soundT1
-    Branch Inherit # Divination Cards - T2 Div cards
-        Tags @DivinationCards_T2
-        SetFontSize 40
-        SetBackgroundColor 255 165 0 235
-        SetTextColor 0 0 0
-        SetBorderColor 255 255 255
-        Tags $soundT2
-        MinimapIcon 1 Yellow Square
-        PlayEffect Yellow Temp
-    Branch Show # Divination Cards - T3 Div cards
-        Tags @DivinationCards_T3
-        SetFontSize 38
-        SetBackgroundColor 255 165 0 210
-        SetTextColor 0 0 0
-        SetBorderColor 255 165 0
-        MinimapIcon 2 White Square
-        PlayEffect White Temp
-    Branch Hide # Divination Cards - T4 Div cards (trash)
-        Tags @DivinationCards_T4
-        SetFontSize 32
-        SetBackgroundColor 255 165 0 180
-        SetTextColor 0 0 0
-        SetBorderColor 0 0 0
     #AutoUpdater_Prophecies_section_end
     Branch # Leagues - Prophecy - Prophecies - TUnknown
         SetFontSize 40
