@@ -6186,42 +6186,6 @@ Show
     SetTextColor 192 192 192
     SetBorderColor 192 192 192
     #AutoUpdater_Prophecies_section_start
-    Branch # Leagues - Prophecy - Prophecies - T0
-        Tags @Prophecies_T0
-        SetFontSize 45
-        SetBackgroundColor 255 255 255
-        SetTextColor 128 0 200
-        SetBorderColor 128 0 200
-        Tags $soundT0
-        MinimapIcon 0 Blue Diamond
-        PlayEffect Blue
-    Branch # Leagues - Prophecy - Prophecies - T1
-        Tags @Prophecies_T1
-        SetBackgroundColor 128 0 200
-        SetTextColor 255 255 255
-        SetBorderColor 255 255 255
-        SetFontSize 43
-        Tags $soundT1
-        MinimapIcon 0 Brown Diamond
-        PlayEffect Brown
-    Branch # Leagues - Prophecy - Prophecies - T2
-        Tags @Prophecies_T2
-        SetBackgroundColor 128 0 200 230
-        SetFontSize 40
-        Tags $soundT2
-        MinimapIcon 1 Yellow Diamond
-        PlayEffect Yellow Temp
-    Branch # Leagues - Prophecy - Prophecies - T3
-        Tags @Prophecies_T3
-        SetBackgroundColor 128 0 200 200
-        SetFontSize 36
-        Tags $soundT3
-        MinimapIcon 2 White Diamond
-        PlayEffect White Temp
-    Branch # Leagues - Prophecy - Prophecies - T4
-        Tags @Prophecies_T4
-        SetFontSize 33
-        SetBackgroundColor 128 0 200 170
     #AutoUpdater_Prophecies_section_end
     Branch # Leagues - Prophecy - Prophecies - TUnknown
         SetFontSize 40
