@@ -778,6 +778,9 @@ Show #Atlas and special bases - Autotiered T0
     PlayEffect Blue
     ShaperItem True
     Branch
+        ItemLevel >= 82
+        BaseType "Stygian Vise" "Opal Ring" "Crystal Belt" "Vermillion Ring" "Onyx Amulet" "Diamond Ring" "Leather Belt" "Imperial Bow" "Agate Amulet" "Thicket Bow" "Titanium Spirit Shield" "Eclipse Staff" "Citrine Amulet"
+    Branch
         ItemLevel >= 86
         BaseType "Fingerless Silk Gloves" "Crystal Belt" "Steel Ring" "Opal Ring" "Marble Amulet" "Prismatic Ring" "Exquisite Blade" "Opal Wand" "Void Sceptre" "Onyx Amulet" "Titanium Spirit Shield" "Opal Sceptre" "Thicket Bow" "Hubris Circlet" "Coronal Maul" "Agate Amulet" "Profane Wand" "Eclipse Staff" "Imperial Bow" "Diamond Ring" "Leather Belt" "Amber Amulet" "Jade Amulet" "Citrine Amulet" "Colossal Tower Shield" "Turquoise Amulet" "Lapis Amulet" "Sorcerer Boots" "Stag Sceptre" "Jewelled Foil" "Paua Amulet" "Prophecy Wand" "Sorcerer Gloves" "Ezomyte Tower Shield" "Vaal Regalia" "Poignard" "Sambar Sceptre" "Spike-Point Arrow Quiver" "Harbinger Bow" "Titan Greaves" "Golden Kris" "Imperial Claw" "Platinum Kris" "Imbued Wand" "Two-Stone Ring" "Coral Amulet" "Two-Point Arrow Quiver" "Heathen Wand" "Ambusher" "Gold Amulet" "Lacquered Buckler" "Ruby Ring" "Vaal Sceptre" "Crystal Sceptre" "Astral Plate" "Maraketh Bow" "Lion Pelt" "Tornado Wand" "Pinnacle Tower Shield" "Sharktooth Arrow Quiver"
     Branch
