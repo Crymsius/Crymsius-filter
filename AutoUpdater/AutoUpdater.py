@@ -118,7 +118,8 @@ def ParseProphecies(items):
     if requestStatus :
         relevantProphecies = [prophecy for prophecy in items['lines'] if prophecy["count"] > 3]
         for item in relevantProphecies:
-            PutInTier(item['name'], FindTier(item['chaosValue']), tierlists)
+            if item['name'] != "A Gracious Master":
+                PutInTier(item['name'], FindTier(item['chaosValue']), tierlists)
 
 def ParseBaseTypes(items):
     if requestStatus :
@@ -141,7 +142,7 @@ def Replace(itemType):
                         #first : updating tags
                         tempFileTags.write(classes[itemType]["tag"] + tier[i] + '\n')
 
-                        tempFileTags.write('    BaseType ' + ' '.join('"{0}"'.format(tier) for tier in tierlists[i]) + '\n')
+                        tempFileTags.write('    BaseType == ' + ' '.join('"{0}"'.format(tier) for tier in tierlists[i]) + '\n')
 
                         #second : updating filter section relative to the tier
                         tempFileSections.write(classes[itemType]["section"][i] + '\n')
@@ -206,7 +207,7 @@ def ReplaceBaseType(baseType):
                 #Shaper
                 if itemsShaper :
                     tempFileSections.write(classes[baseType]["section"][i] + '\n')
-                    tempFileSections.write('    ShaperItem True\n')
+                    tempFileSections.write('    HasInfluence Shaper\n')
                     for ilvl in itemsShaperIlvl:
                         tempFileSections.write('    Branch\n')
                         tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
@@ -215,7 +216,7 @@ def ReplaceBaseType(baseType):
                 #Elder
                 if itemsElder :
                     tempFileSections.write(classes[baseType]["section"][i] + '\n')
-                    tempFileSections.write('    ElderItem True\n')
+                    tempFileSections.write('    HasInfluence Elder\n')
                     for ilvl in itemsElderIlvl:
                         tempFileSections.write('    Branch\n')
                         tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
@@ -290,7 +291,7 @@ if __name__ == '__main__':
 
     classes = {
         "poeninja" : {
-            "league": "Standard",
+            "league": "Metamorph",
             "url": "https://poe.ninja/api/data/"
         },
         "currency": {
