@@ -114,6 +114,12 @@ def ParseIncubators(items):
         for item in relevantIncubators:
             PutInTier(item['name'], FindTier(item['chaosValue']), tierlists)
 
+def ParseOils(items):
+    if requestStatus :
+        relevantOils = [oil for oil in items['lines'] if oil["count"] > 3]
+        for item in relevantOils:
+            PutInTier(item['name'], FindTier(item['chaosValue']), tierlists)
+
 def ParseProphecies(items):
     if requestStatus :
         relevantProphecies = [prophecy for prophecy in items['lines'] if prophecy["count"] > 3]
@@ -182,10 +188,18 @@ def ReplaceBaseType(baseType):
                 #Variant separation
                 itemsShaper = [item for item in tierlists[i] if item["variant"] == "Shaper"]
                 itemsElder = [item for item in tierlists[i] if item["variant"] == "Elder"]
+                itemsCrusader = [item for item in tierlists[i] if item["variant"] == "Crusader"]
+                itemsRedeemer = [item for item in tierlists[i] if item["variant"] == "Redeemer"]
+                itemsHunter = [item for item in tierlists[i] if item["variant"] == "Hunter"]
+                itemsWarlord = [item for item in tierlists[i] if item["variant"] == "Warlord"]
                 itemsOther = [item for item in tierlists[i] if not item["variant"]]
 
                 itemsShaperIlvl = {}
                 itemsElderIlvl = {}
+                itemsCrusaderIlvl = {}
+                itemsRedeemerIlvl = {}
+                itemsHunterIlvl = {}
+                itemsWarlordIlvl = {}
                 itemsOtherIlvl = {}
 
                 for item in itemsShaper:
@@ -198,6 +212,26 @@ def ReplaceBaseType(baseType):
                         itemsElderIlvl[item["ilvl"]].append(item["baseType"])
                     else:
                         itemsElderIlvl[item["ilvl"]] = [item["baseType"]]
+                for item in itemsCrusader:
+                    if item["ilvl"] in itemsCrusaderIlvl:
+                        itemsCrusaderIlvl[item["ilvl"]].append(item["baseType"])
+                    else:
+                        itemsCrusaderIlvl[item["ilvl"]] = [item["baseType"]]
+                for item in itemsRedeemer:
+                    if item["ilvl"] in itemsRedeemerIlvl:
+                        itemsRedeemerIlvl[item["ilvl"]].append(item["baseType"])
+                    else:
+                        itemsRedeemerIlvl[item["ilvl"]] = [item["baseType"]]
+                for item in itemsHunter:
+                    if item["ilvl"] in itemsHunterIlvl:
+                        itemsHunterIlvl[item["ilvl"]].append(item["baseType"])
+                    else:
+                        itemsHunterIlvl[item["ilvl"]] = [item["baseType"]]
+                for item in itemsWarlord:
+                    if item["ilvl"] in itemsWarlordIlvl:
+                        itemsWarlordIlvl[item["ilvl"]].append(item["baseType"])
+                    else:
+                        itemsWarlordIlvl[item["ilvl"]] = [item["baseType"]]
                 for item in itemsOther:
                     if item["ilvl"] in itemsOtherIlvl:
                         itemsOtherIlvl[item["ilvl"]].append(item["baseType"])
@@ -222,11 +256,47 @@ def ReplaceBaseType(baseType):
                         tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
                         tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item) for item in itemsElderIlvl[ilvl]) + '\n')
 
+                #Crusader
+                if itemsCrusader :
+                    tempFileSections.write(classes[baseType]["section"][i] + '\n')
+                    tempFileSections.write('    HasInfluence Crusader\n')
+                    for ilvl in itemsCrusaderIlvl:
+                        tempFileSections.write('    Branch\n')
+                        tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
+                        tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item) for item in itemsCrusaderIlvl[ilvl]) + '\n')
+
+                #Redeemer
+                if itemsRedeemer :
+                    tempFileSections.write(classes[baseType]["section"][i] + '\n')
+                    tempFileSections.write('    HasInfluence Redeemer\n')
+                    for ilvl in itemsRedeemerIlvl:
+                        tempFileSections.write('    Branch\n')
+                        tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
+                        tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item) for item in itemsRedeemerIlvl[ilvl]) + '\n')
+
+                #Hunter
+                if itemsHunter :
+                    tempFileSections.write(classes[baseType]["section"][i] + '\n')
+                    tempFileSections.write('    HasInfluence Hunter\n')
+                    for ilvl in itemsHunterIlvl:
+                        tempFileSections.write('    Branch\n')
+                        tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
+                        tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item) for item in itemsHunterIlvl[ilvl]) + '\n')
+
+                #Warlord
+                if itemsWarlord :
+                    tempFileSections.write(classes[baseType]["section"][i] + '\n')
+                    tempFileSections.write('    HasInfluence Warlord\n')
+                    for ilvl in itemsWarlordIlvl:
+                        tempFileSections.write('    Branch\n')
+                        tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
+                        tempFileSections.write('        BaseType ' + ' '.join('"{0}"'.format(item) for item in itemsWarlordIlvl[ilvl]) + '\n')
+
                 #Other
                 if itemsOther :
                     tempFileSections.write(classes[baseType]["section"][i] + '\n')
-                    tempFileSections.write('    ShaperItem False\n')
-                    tempFileSections.write('    ElderItem False\n')
+                    # tempFileSections.write('    ShaperItem False\n')
+                    # tempFileSections.write('    ElderItem False\n')
                     for ilvl in itemsOtherIlvl:
                         tempFileSections.write('    Branch\n')
                         tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
@@ -366,7 +436,7 @@ if __name__ == '__main__':
         Tags @Uniques_AutoUpdater_T4
         SetFontSize 30
         SetBackgroundColor 70 20 0 200''',
-'''    Branch #Uniques - TMix (same BaseItem used for T0 or T1 and Tless)
+'''    Branch #Uniques - TMix (same BaseType used for T0 or T1 and Tless)
         Tags @Uniques_AutoUpdater_TMix
         SetFontSize 50
         SetBackgroundColor 175 96 37
@@ -386,7 +456,7 @@ if __name__ == '__main__':
             "startSection" : "#AutoUpdater_DivCards_section_start",
             "endSection" : "#AutoUpdater_DivCards_section_end",
             "section": [
-'''    Branch Inherit # Divination Cards - T0 Div cards
+'''    Branch Inherit # Divination Cards - T0
         Tags @DivinationCards_T0
         SetFontSize 45
         SetBackgroundColor 255 255 255
@@ -395,14 +465,16 @@ if __name__ == '__main__':
         Tags $soundT0
         MinimapIcon 0 Blue Square
         PlayEffect Blue''',
-'''    Branch Inherit # Divination Cards - T1 Div cards
+'''    Branch Inherit # Divination Cards - T1
         Tags @DivinationCards_T1
         SetFontSize 44
         SetBackgroundColor 255 165 0 245
         SetTextColor 255 255 255
         SetBorderColor 255 255 255
-        Tags $soundT1''',
-'''    Branch Inherit # Divination Cards - T2 Div cards
+        Tags $soundT1
+        MinimapIcon 0 Brown Square
+        PlayEffect Brown''',
+'''    Branch Inherit # Divination Cards - T2
         Tags @DivinationCards_T2
         SetFontSize 40
         SetBackgroundColor 255 165 0 235
@@ -411,7 +483,7 @@ if __name__ == '__main__':
         Tags $soundT2
         MinimapIcon 1 Yellow Square
         PlayEffect Yellow Temp''',
-'''    Branch Show # Divination Cards - T3 Div cards
+'''    Branch Show # Divination Cards - T3
         Tags @DivinationCards_T3
         SetFontSize 38
         SetBackgroundColor 255 165 0 210
@@ -419,7 +491,7 @@ if __name__ == '__main__':
         SetBorderColor 255 165 0
         MinimapIcon 2 White Square
         PlayEffect White Temp''',
-'''    Branch Hide # Divination Cards - T4 Div cards (trash)
+'''    Branch Hide # Divination Cards - T4
         Tags @DivinationCards_T4
         SetFontSize 32
         SetBackgroundColor 255 165 0 180
@@ -577,7 +649,7 @@ if __name__ == '__main__':
         SetBackgroundColor 255 255 255
         Tags $soundT0
         PlayEffect Blue
-        MinimapIcon 0 Red Diamond''',
+        MinimapIcon 0 Blue Diamond''',
 '''    Branch # Leagues - Essence - Essences - T1
         Tags @Essences_T1
         SetFontSize 50
@@ -586,7 +658,7 @@ if __name__ == '__main__':
         SetBorderColor 255 255 255
         Tags $soundT1
         PlayEffect Brown
-        MinimapIcon 0 Red Diamond''',
+        MinimapIcon 0 Brown Diamond''',
 '''    Branch # Leagues - Essence - Essences - T2
         Tags @Essences_T2
         SetFontSize 40
@@ -595,13 +667,13 @@ if __name__ == '__main__':
         SetBorderColor 10 25 90
         Tags $soundT2
         PlayEffect Yellow Temp
-        MinimapIcon 1 Red Diamond''',
+        MinimapIcon 1 Yellow Diamond''',
 '''    Branch # Leagues - Essence - Essences - T3
         Tags @Essences_T3
         SetFontSize 36
         Tags $soundT3
         SetBackgroundColor 180 195 245 200
-        MinimapIcon 2 Red Diamond''',
+        MinimapIcon 2 White Diamond''',
 '''    Branch # Leagues - Essence - Essences - T4
         Tags @Essences_T4
         SetFontSize 33
@@ -628,23 +700,23 @@ if __name__ == '__main__':
 '''    Branch # Leagues - Legion - Incubators - T1
         Tags @Incubators_T1
         SetFontSize 45
-        SetBackgroundColor 255 255 255
-        SetTextColor 244 74 204 255
-        SetBorderColor 244 74 204 255
+        SetBackgroundColor 244 74 204 255
+        SetBorderColor 62 18 52 255
+        SetTextColor 62 18 52 255
         Tags $soundT1
         MinimapIcon 0 Brown Diamond''',
 '''    Branch # Leagues - Legion - Incubators - T2
         Tags @Incubators_T2
         SetFontSize 42
-        SetBackgroundColor 244 74 204 255
-        SetBorderColor 62 18 52 255
-        SetTextColor 62 18 52 255
+        SetBackgroundColor 62 18 52 255
+        SetTextColor 244 74 204 255
+        SetBorderColor 244 74 204 255
         Tags $soundT2
         MinimapIcon 1 Yellow Diamond''',
 '''    Branch # Leagues - Legion - Incubators - T3
         Tags @Incubators_T3
-        SetFontSize 40
-        SetBackgroundColor 62 18 52 255
+        SetFontSize 38
+        SetBackgroundColor 62 18 52 200
         SetTextColor 244 74 204 255
         SetBorderColor 244 74 204 255
         Tags $soundT3
@@ -655,6 +727,59 @@ if __name__ == '__main__':
         SetBackgroundColor 62 18 52 180
         SetTextColor 244 74 204 255
         SetBorderColor 244 74 204 255'''
+            ]
+        },
+        "oils": {
+            "overview": "itemoverview",
+            "type": "Oil",
+            "tag": "SetTag @Oils_",
+            "startTag": "#AutoUpdater_Oils_start",
+            "endTag": "#AutoUpdater_Oils_end",
+            "startSection" : "#AutoUpdater_Oils_section_start",
+            "endSection" : "#AutoUpdater_Oils_section_end",
+            "section" : [
+'''    Branch # Leagues - Blight - Oils - T0
+        Tags @Oils_T0
+        SetBackgroundColor 255 255 255
+        SetTextColor 8 82 70 255
+        SetBorderColor 8 82 70 255
+        SetFontSize 50
+        Tags $soundT0
+        MinimapIcon 0 Blue Diamond
+        PlayEffect Blue''',
+'''    Branch # Leagues - Blight - Oils - T1
+        Tags @Oils_T1
+        SetBackgroundColor 241 232 200 255
+        SetTextColor 8 82 70 255
+        SetBorderColor 8 82 70 255
+        SetFontSize 48
+        Tags $soundT1
+        MinimapIcon 0 Brown Diamond
+        PlayEffect Brown''',
+'''    Branch # Leagues - Blight - Oils - T2
+        Tags @Oils_T2
+        SetBackgroundColor 8 82 70 255
+        SetTextColor 241 232 200 255
+        SetBorderColor 241 232 200 255
+        SetFontSize 42
+        Tags $soundT2
+        MinimapIcon 1 Yellow Diamond
+        PlayEffect Yellow''',
+'''    Branch # Leagues - Blight - Oils - T3
+        Tags @Oils_T3
+        SetBackgroundColor 8 82 70 230
+        SetTextColor 241 232 200 255
+        SetBorderColor 241 232 200 255
+        SetFontSize 38
+        Tags $soundT3
+        MinimapIcon 2 White Diamond
+        PlayEffect White''',
+'''    Branch # Leagues - Blight - Oils - T4
+        Tags @Oils_T4
+        SetBackgroundColor 8 82 70 200
+        SetTextColor 241 232 200 255
+        SetBorderColor 241 232 200 255
+        SetFontSize 38'''
             ]
         }
     }
@@ -694,6 +819,10 @@ if __name__ == '__main__':
     requestStatus, incubators = Fetch("incubators")
     ParseIncubators(incubators)
     Replace("incubators")
+
+    requestStatus, oils = Fetch("oils")
+    ParseOils(oils)
+    Replace("oils")
 
     requestStatus, prophecies = Fetch("prophecies")
     ParseProphecies(prophecies)

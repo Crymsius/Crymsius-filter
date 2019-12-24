@@ -1,6 +1,32 @@
 ---------------------------------------------------
           Changelog for Crymsius's Filter         |
 ---------------------------------------------------
+-Notes (3.9.1)
+
+Added placeholders for auto-tiered items :
+now in filterblast block switches, all checkboxes of all tiers are always visible and customizable,
+independently of wether an item is present in the tier or not at the moment.
+This will prevent situations where a custom rule would not be applied correctly if tiers were empty when first customizing the filter.
+
+Added Auto-tiering for oils.
+Added Auto-tiering for new influenced Items.
+Re-enabled Auto-tiering of Essences (this was wrongly disabled, sorry for that).
+
+Oils have new highlight for new tiers to match the auto-tiering.
+Catalysts have a new highlight, less flashy.
+Shaper, Elder and Uber Elder Fragments have new, better highlights.
+Awakened gems have better highlight and sound alerts.
+Now vaal gems and drop only gems are displayed differently.
+Influenced items now are all displayed the same.
+Slightly changed the highlight of Talismans.
+
+Added good map specific base types (such as Opal Rings) in the Good BaseTypes list so they can be correctly highlighted as « rare good base types »
+Added a Good BaseType Highlight for influenced items. You can now choose to display all indluenced items, or only the Good BaseTypes ones.
+Removed sound for Map Specific BaseTypes.
+
+Moved Ivory Watchstones to prevent them to be displayed as Unknown Unique Item
+Removed User Highlight for Elder/Shaper Maps.
+
 -Notes (3.9.0c) hotfix
 Added a new rule for Watchstone : they are not Quest Items as announced but Atlas Region Upgrade Items
 Thanks GGG
