@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.9.1_2019.12.26_04:00
+###Version 3.9.1_2019.12.26_08:00
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -258,17 +258,17 @@ SetTag @custom_Scarabs
 #Tags Uniques
 #AutoUpdater_AllUniques_start
 SetTag @Uniques_AutoUpdater_T0
-    BaseType == "Jewelled Foil" "Prophecy Wand" "Siege Axe" "Vaal Rapier" "Ambush Mitts" "Blood Raiment" "Carnal Boots" "Crusader Boots" "Ezomyte Tower Shield" "Glorious Plate" "Jingling Spirit Shield" "Occultist's Vestment" "Ornate Quiver" "Rawhide Boots" "Riveted Gloves" "Silk Gloves" "Wyrmscale Doublet" "Steel Ring" "Prismatic Jewel" "Chateau Map" "Maze Map" "Relic Chambers Map"
+    BaseType == "Jewelled Foil" "Prophecy Wand" "Siege Axe" "Vaal Rapier" "Ambush Mitts" "Blood Raiment" "Carnal Boots" "Crusader Boots" "Ezomyte Tower Shield" "Glorious Plate" "Jingling Spirit Shield" "Occultist's Vestment" "Ornate Quiver" "Rawhide Boots" "Riveted Gloves" "Silk Gloves" "Wyrmscale Doublet" "Steel Ring" "Chateau Map" "Maze Map" "Relic Chambers Map"
 SetTag @Uniques_AutoUpdater_T1
-    BaseType == "Sanctified Life Flask" "Sapphire Flask" "Gemstone Sword" "Highborn Staff" "Nightmare Mace" "Royal Axe" "Timeworn Claw" "Arcanist Gloves" "Arcanist Slippers" "Archon Kite Shield Piece" "Deerskin Gloves" "Gladiator Plate" "Nubuck Boots" "Blue Pearl Amulet" "Basilica Map" "Courthouse Map" "Courtyard Map" "Harbinger Map" "Moon Temple Map" "Park Map" "Siege Map"
+    BaseType == "Sanctified Life Flask" "Sapphire Flask" "Gemstone Sword" "Highborn Staff" "Nightmare Mace" "Royal Axe" "Timeworn Claw" "Arcanist Gloves" "Arcanist Slippers" "Archon Kite Shield Piece" "Close Helmet" "Deerskin Gloves" "Gladiator Plate" "Nubuck Boots" "Blue Pearl Amulet" "Basilica Map" "Courthouse Map" "Courtyard Map" "Harbinger Map" "Moon Temple Map" "Park Map" "Promenade Map" "Siege Map"
 SetTag @Uniques_AutoUpdater_T2
-    BaseType == "Amethyst Flask" "Bismuth Flask" "Diamond Flask" "Grand Mana Flask" "Hallowed Hybrid Flask" "Large Hybrid Flask" "Sanctified Mana Flask" "Topaz Flask" "Abyssal Axe" "Blinder" "Blood Sceptre" "Bone Bow" "Brass Maul" "Bronze Sceptre" "Carnal Sceptre" "Citadel Bow" "Coiled Staff" "Corsair Sword" "Crude Bow" "Crystal Wand" "Cutlass" "Demon Dagger" "Driftwood Wand" "Elder Sword" "Elegant Foil" "Engraved Wand" "Etched Greatsword" "Ezomyte Dagger" "Ezomyte Staff" "Fright Claw" "Gnarled Branch" "Great Mallet" "Gut Ripper" "Harbinger Bow" "Hellion's Paw" "Imperial Bow" "Imperial Claw" "Imperial Maul" "Imperial Staff" "Iron Sceptre" "Iron Staff" "Jade Hatchet" "Jagged Maul" "Jasper Chopper" "Karui Chopper" "Karui Maul" "Labrys" "Lathi" "Lion Sword" "Meatgrinder" "Military Staff" "Opal Wand" "Platinum Sceptre" "Ranger Bow" "Reaver Sword" "Ritual Sceptre" "Rock Breaker" "Royal Bow" "Royal Sceptre" "Royal Skean" "Royal Staff" "Rusted Sword" "Shadow Sceptre" "Short Bow" "Skinning Knife" "Slaughter Knife" "Sledgehammer" "Spine Bow" "Spiraled Wand" "Steelwood Bow" "Terror Claw" "Throat Stabber" "Tornado Wand" "Tyrant's Sekhem" "Vaal Claw" "Vaal Sceptre" "Variscite Blade" "Void Axe" "Void Sceptre" "War Hammer" "War Sword" "Woodsplitter" "Ancient Gauntlets" "Ancient Greaves" "Ancient Spirit Shield" "Assassin's Mitts" "Astral Plate" "Blunt Arrow Quiver" "Blunt Arrow Quiver Piece" "Bone Armour" "Branded Kite Shield" "Brass Spirit Shield" "Bronzescale Boots" "Callous Mask Piece" "Cardinal Round Shield" "Cedar Tower Shield" "Champion Kite Shield" "Clasped Boots" "Close Helmet" "Conjurer Boots" "Coronal Leather" "Crusader Chainmail" "Crusader Helmet" "Crusader Plate" "Deicide Mask" "Destiny Leather" "Destroyer Regalia" "Dragonscale Gauntlets" "Ebony Tower Shield" "Embroidered Gloves" "Exquisite Leather" "Ezomyte Burgonet" "Ezomyte Spiked Shield" "Festival Mask" "Fossilised Spirit Shield" "Full Dragonscale" "Full Wyrmscale" "Gilded Sallet" "Goathide Gloves" "Goliath Greaves" "Harlequin Mask" "Holy Chainmail" "Hydrascale Boots" "Hydrascale Gauntlets" "Iron Gauntlets" "Iron Hat" "Ironscale Boots" "Ironscale Gauntlets" "Lacquered Buckler" "Lacquered Garb" "Laminated Kite Shield" "Latticed Ringmail" "Leather Cap" "Legion Boots" "Lion Pelt" "Loricated Ringmail" "Mesh Gloves" "Mind Cage" "Mirrored Spiked Shield" "Necromancer Silks" "Nightmare Bascinet" "Nubuck Gloves" "Painted Buckler" "Painted Tower Shield" "Plank Kite Shield" "Plate Vest" "Prophet Crown" "Raven Mask" "Rawhide Tower Shield" "Royal Burgonet" "Saintly Chainmail" "Satin Gloves" "Scholar Boots" "Serpentscale Boots" "Serpentscale Gauntlets" "Serrated Arrow Quiver" "Shackled Boots" "Shagreen Gloves" "Silken Hood" "Sinner Tricorne" "Solaris Circlet" "Soldier Boots" "Soldier Gloves" "Soldier Helmet" "Sorcerer Gloves" "Spidersilk Robe" "Spike-Point Arrow Quiver" "Stealth Boots" "Steel Circlet" "Steel Gauntlets" "Strapped Leather" "Strapped Mitts" "Thorium Spirit Shield" "Titan Gauntlets" "Titanium Spirit Shield" "Trapper Boots" "Ursine Pelt" "Varnished Coat" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Wool Gloves" "Wool Shoes" "Zealot Gloves" "Citrine Amulet" "Cloth Belt" "Cloth Belt Piece" "Crystal Belt" "Diamond Ring" "Heavy Belt" "Moonstone Ring" "Paua Ring" "Stygian Vise" "Vanguard Belt" "Atoll Map" "Bone Crypt Map" "Cemetery Map" "Dunes Map" "Necropolis Map" "Overgrown Shrine Map" "Primordial Blocks Map" "Promenade Map" "Strand Map" "Underground Sea Map" "Vaal Pyramid Map"
+    BaseType == "Amethyst Flask" "Bismuth Flask" "Diamond Flask" "Grand Mana Flask" "Hallowed Hybrid Flask" "Large Hybrid Flask" "Sanctified Mana Flask" "Topaz Flask" "Abyssal Axe" "Blinder" "Blood Sceptre" "Bone Bow" "Brass Maul" "Bronze Sceptre" "Carnal Sceptre" "Citadel Bow" "Cleaver" "Coiled Staff" "Corsair Sword" "Crude Bow" "Crystal Wand" "Cutlass" "Demon Dagger" "Driftwood Wand" "Elegant Foil" "Engraved Wand" "Etched Greatsword" "Ezomyte Dagger" "Ezomyte Staff" "Fright Claw" "Gladius" "Gnarled Branch" "Great Mallet" "Gut Ripper" "Harbinger Bow" "Hellion's Paw" "Imperial Bow" "Imperial Claw" "Imperial Maul" "Imperial Staff" "Iron Sceptre" "Iron Staff" "Jade Hatchet" "Jagged Maul" "Jasper Chopper" "Karui Chopper" "Karui Maul" "Labrys" "Lathi" "Lion Sword" "Meatgrinder" "Military Staff" "Opal Wand" "Platinum Sceptre" "Ranger Bow" "Reaver Sword" "Ritual Sceptre" "Royal Bow" "Royal Sceptre" "Royal Skean" "Royal Staff" "Rusted Sword" "Shadow Sceptre" "Short Bow" "Skinning Knife" "Slaughter Knife" "Sledgehammer" "Spine Bow" "Spiraled Wand" "Steelwood Bow" "Terror Claw" "Throat Stabber" "Tornado Wand" "Tyrant's Sekhem" "Vaal Claw" "Vaal Sceptre" "Variscite Blade" "Void Axe" "Void Sceptre" "War Hammer" "War Sword" "Woodsplitter" "Ancient Gauntlets" "Ancient Greaves" "Ancient Spirit Shield" "Assassin's Mitts" "Astral Plate" "Blunt Arrow Quiver" "Blunt Arrow Quiver Piece" "Bone Armour" "Branded Kite Shield" "Brass Spirit Shield" "Bronzescale Boots" "Callous Mask Piece" "Cardinal Round Shield" "Cedar Tower Shield" "Champion Kite Shield" "Clasped Boots" "Conjurer Boots" "Conjurer Gloves" "Coronal Leather" "Crusader Chainmail" "Crusader Helmet" "Crusader Plate" "Deicide Mask" "Destiny Leather" "Destroyer Regalia" "Dragonscale Boots" "Dragonscale Gauntlets" "Ebony Tower Shield" "Embroidered Gloves" "Exquisite Leather" "Ezomyte Burgonet" "Ezomyte Spiked Shield" "Festival Mask" "Fossilised Spirit Shield" "Full Dragonscale" "Full Wyrmscale" "Gilded Sallet" "Goathide Gloves" "Goliath Greaves" "Harlequin Mask" "Holy Chainmail" "Hydrascale Boots" "Hydrascale Gauntlets" "Iron Gauntlets" "Iron Hat" "Ironscale Boots" "Ironscale Gauntlets" "Lacquered Buckler" "Lacquered Garb" "Laminated Kite Shield" "Latticed Ringmail" "Leather Cap" "Legion Boots" "Lion Pelt" "Loricated Ringmail" "Mesh Gloves" "Mind Cage" "Mirrored Spiked Shield" "Necromancer Silks" "Nubuck Gloves" "Painted Buckler" "Painted Tower Shield" "Plank Kite Shield" "Plate Vest" "Polished Spiked Shield" "Raven Mask" "Rawhide Tower Shield" "Royal Burgonet" "Saintly Chainmail" "Satin Gloves" "Scholar Boots" "Serpentscale Boots" "Serpentscale Gauntlets" "Serrated Arrow Quiver" "Shackled Boots" "Shagreen Gloves" "Siege Helmet" "Silken Hood" "Sinner Tricorne" "Solaris Circlet" "Soldier Boots" "Soldier Gloves" "Soldier Helmet" "Sorcerer Gloves" "Spidersilk Robe" "Spike-Point Arrow Quiver" "Stealth Boots" "Steel Circlet" "Steel Gauntlets" "Strapped Leather" "Strapped Mitts" "Thorium Spirit Shield" "Titan Gauntlets" "Titanium Spirit Shield" "Trapper Boots" "Ursine Pelt" "Varnished Coat" "Velvet Slippers" "Vine Circlet" "War Buckler" "Wild Leather" "Wool Shoes" "Zealot Gloves" "Citrine Amulet" "Cloth Belt" "Cloth Belt Piece" "Crystal Belt" "Diamond Ring" "Heavy Belt" "Moonstone Ring" "Paua Ring" "Stygian Vise" "Vanguard Belt" "Atoll Map" "Bone Crypt Map" "Cemetery Map" "Dunes Map" "Necropolis Map" "Overgrown Shrine Map" "Primordial Blocks Map" "Strand Map" "Underground Sea Map" "Vaal Pyramid Map"
 SetTag @Uniques_AutoUpdater_T3
-    BaseType == "Opal Sceptre" "Steelhead" "Colossal Tower Shield" "Dragonscale Boots" "Shagreen Boots" "Siege Helmet" "Marble Amulet"
+    BaseType == "Elder Sword" "Rock Breaker" "Steelhead" "Antique Greaves" "Goliath Gauntlets" "Sharkskin Tunic" "Wool Gloves"
 SetTag @Uniques_AutoUpdater_T4
-    BaseType == "Greater Mana Flask" "Quicksilver Flask" "Ambusher" "Antique Rapier" "Auric Mace" "Awl" "Basket Rapier" "Bastard Sword" "Boot Blade" "Boot Knife" "Crystal Sceptre" "Decimation Bow" "Decorative Axe" "Demon's Horn" "Dread Maul" "Dream Mace" "Dusk Blade" "Estoc" "Ezomyte Axe" "Ezomyte Blade" "Flaying Knife" "Gladius" "Goat's Horn" "Grinning Fetish" "Headsman Axe" "Highland Blade" "Imbued Wand" "Infernal Axe" "Jagged Foil" "Karui Sceptre" "Nailed Fist" "Ornate Mace" "Platinum Kris" "Poleaxe" "Primordial Staff" "Quartz Wand" "Recurve Bow" "Sabre" "Serpentine Staff" "Shadow Axe" "Spiked Club" "Stiletto" "Sundering Axe" "Terror Maul" "Thresher Claw" "Tiger Sword" "Tomahawk" "Twilight Blade" "Vaal Hatchet" "Vile Staff" "Whalebone Rapier" "Antique Greaves" "Assassin's Garb" "Aventail Helmet" "Baroque Round Shield" "Bone Circlet" "Broadhead Arrow Quiver" "Bronze Gauntlets" "Bronzescale Gauntlets" "Buckskin Tunic" "Burnished Spiked Shield" "Chain Gloves" "Chiming Spirit Shield" "Compound Spiked Shield" "Conjurer Gloves" "Conquest Chainmail" "Copper Plate" "Corrugated Buckler" "Cutthroat's Garb" "Deerskin Boots" "Desert Brigandine" "Enameled Buckler" "Full Scale Armour" "Golden Mask" "Goliath Gauntlets" "Great Helmet" "Harmonic Spirit Shield" "Ivory Spirit Shield" "Lacquered Helmet" "Lunaris Circlet" "Mesh Boots" "Mosaic Kite Shield" "Ornate Ringmail" "Pine Buckler" "Plague Mask" "Plated Greaves" "Polished Spiked Shield" "Regicide Mask" "Reinforced Tower Shield" "Riveted Boots" "Rotted Round Shield" "Sage's Robe" "Samite Gloves" "Samite Helmet" "Scholar's Robe" "Secutor Helm" "Sentinel Jacket" "Sharkskin Boots" "Sharkskin Tunic" "Silk Slippers" "Simple Robe" "Strapped Boots" "Studded Round Shield" "Supreme Spiked Shield" "Tribal Circlet" "Tricorne" "Vaal Buckler" "Visored Sallet" "Wrapped Mitts" "Wyrmscale Gauntlets" "Zealot Helmet"
+    BaseType == "Greater Mana Flask" "Quicksilver Flask" "Ambusher" "Antique Rapier" "Auric Mace" "Awl" "Basket Rapier" "Bastard Sword" "Boot Blade" "Boot Knife" "Crystal Sceptre" "Decimation Bow" "Decorative Axe" "Demon's Horn" "Dread Maul" "Dream Mace" "Dusk Blade" "Estoc" "Ezomyte Axe" "Ezomyte Blade" "Flaying Knife" "Goat's Horn" "Grinning Fetish" "Headsman Axe" "Highland Blade" "Imbued Wand" "Infernal Axe" "Jagged Foil" "Karui Sceptre" "Nailed Fist" "Opal Sceptre" "Ornate Mace" "Platinum Kris" "Poleaxe" "Primordial Staff" "Quartz Wand" "Recurve Bow" "Sabre" "Serpentine Staff" "Shadow Axe" "Spiked Club" "Stiletto" "Sundering Axe" "Terror Maul" "Thresher Claw" "Tiger Sword" "Tomahawk" "Twilight Blade" "Vaal Hatchet" "Vile Staff" "Whalebone Rapier" "Assassin's Garb" "Aventail Helmet" "Baroque Round Shield" "Bone Circlet" "Broadhead Arrow Quiver" "Bronze Gauntlets" "Bronzescale Gauntlets" "Buckskin Tunic" "Burnished Spiked Shield" "Chain Gloves" "Chiming Spirit Shield" "Colossal Tower Shield" "Compound Spiked Shield" "Conquest Chainmail" "Copper Plate" "Corrugated Buckler" "Cutthroat's Garb" "Deerskin Boots" "Desert Brigandine" "Enameled Buckler" "Full Scale Armour" "Golden Mask" "Great Helmet" "Harmonic Spirit Shield" "Ivory Spirit Shield" "Lacquered Helmet" "Lunaris Circlet" "Mesh Boots" "Mosaic Kite Shield" "Ornate Ringmail" "Pine Buckler" "Plague Mask" "Plated Greaves" "Regicide Mask" "Reinforced Tower Shield" "Riveted Boots" "Rotted Round Shield" "Sage's Robe" "Samite Gloves" "Samite Helmet" "Scholar's Robe" "Secutor Helm" "Sentinel Jacket" "Shagreen Boots" "Sharkskin Boots" "Silk Slippers" "Simple Robe" "Strapped Boots" "Studded Round Shield" "Supreme Spiked Shield" "Tribal Circlet" "Tricorne" "Vaal Buckler" "Visored Sallet" "Wrapped Mitts" "Wyrmscale Gauntlets" "Zealot Helmet" "Marble Amulet"
 SetTag @Uniques_AutoUpdater_TMix
-    BaseType == "Granite Flask" "Quartz Flask" "Ruby Flask" "Silver Flask" "Stibnite Flask" "Sulphur Flask" "Assassin Bow" "Carved Wand" "Cleaver" "Death Bow" "Despot Axe" "Elegant Sword" "Eternal Sword" "Fiend Dagger" "Gavel" "Imperial Skean" "Infernal Sword" "Judgement Staff" "Legion Sword" "Long Bow" "Maelström Staff" "Midnight Blade" "Ornate Sword" "Sage Wand" "Vaal Axe" "Vaal Blade" "Archon Kite Shield" "Assassin's Boots" "Callous Mask" "Carnal Armour" "Carnal Mitts" "Clasped Mitts" "Crusader Gloves" "Elegant Ringmail" "Fire Arrow Quiver" "Goathide Boots" "Golden Buckler" "Golden Plate" "Great Crown" "Hubris Circlet" "Iron Circlet" "Iron Mask" "Leather Hood" "Legion Gloves" "Magistrate Crown" "Murder Boots" "Murder Mitts" "Necromancer Circlet" "Penetrating Arrow Quiver" "Pinnacle Tower Shield" "Praetor Crown" "Reinforced Greaves" "Sacrificial Garb" "Sadist Garb" "Saint's Hauberk" "Savant's Robe" "Sharktooth Arrow Quiver" "Slink Boots" "Sorcerer Boots" "Steelscale Gauntlets" "Tarnished Spirit Shield" "Titan Greaves" "Triumphant Lamellar" "Two-Point Arrow Quiver" "Vaal Gauntlets" "Vaal Mask" "Vaal Regalia" "Vaal Spirit Shield" "Velvet Gloves" "Widowsilk Robe" "Zodiac Leather" "Agate Amulet" "Amber Amulet" "Amethyst Ring" "Chain Belt" "Coral Amulet" "Coral Ring" "Gold Amulet" "Gold Ring" "Iron Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Onyx Amulet" "Opal Ring" "Paua Amulet" "Prismatic Ring" "Ruby Ring" "Rustic Sash" "Sapphire Ring" "Studded Belt" "Topaz Ring" "Turquoise Amulet" "Two-Stone Ring" "Unset Ring" "Cobalt Jewel" "Crimson Jewel" "Timeless Jewel" "Viridian Jewel" "Cursed Crypt Map" "Museum Map" "Shore Map" "Temple Map" "Underground River Map"
+    BaseType == "Granite Flask" "Quartz Flask" "Ruby Flask" "Silver Flask" "Stibnite Flask" "Sulphur Flask" "Assassin Bow" "Carved Wand" "Death Bow" "Despot Axe" "Elegant Sword" "Eternal Sword" "Fiend Dagger" "Gavel" "Imperial Skean" "Infernal Sword" "Judgement Staff" "Legion Sword" "Long Bow" "Maelström Staff" "Midnight Blade" "Ornate Sword" "Sage Wand" "Vaal Axe" "Vaal Blade" "Archon Kite Shield" "Assassin's Boots" "Callous Mask" "Carnal Armour" "Carnal Mitts" "Clasped Mitts" "Crusader Gloves" "Elegant Ringmail" "Fire Arrow Quiver" "Goathide Boots" "Golden Buckler" "Golden Plate" "Great Crown" "Hubris Circlet" "Iron Circlet" "Iron Mask" "Leather Hood" "Legion Gloves" "Magistrate Crown" "Murder Boots" "Murder Mitts" "Necromancer Circlet" "Nightmare Bascinet" "Penetrating Arrow Quiver" "Pinnacle Tower Shield" "Praetor Crown" "Prophet Crown" "Reinforced Greaves" "Sacrificial Garb" "Sadist Garb" "Saint's Hauberk" "Savant's Robe" "Sharktooth Arrow Quiver" "Slink Boots" "Sorcerer Boots" "Steelscale Gauntlets" "Tarnished Spirit Shield" "Titan Greaves" "Triumphant Lamellar" "Two-Point Arrow Quiver" "Vaal Gauntlets" "Vaal Mask" "Vaal Regalia" "Vaal Spirit Shield" "Velvet Gloves" "Widowsilk Robe" "Zodiac Leather" "Agate Amulet" "Amber Amulet" "Amethyst Ring" "Chain Belt" "Coral Amulet" "Coral Ring" "Gold Amulet" "Gold Ring" "Iron Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Onyx Amulet" "Opal Ring" "Paua Amulet" "Prismatic Ring" "Ruby Ring" "Rustic Sash" "Sapphire Ring" "Studded Belt" "Topaz Ring" "Turquoise Amulet" "Two-Stone Ring" "Unset Ring" "Cobalt Jewel" "Crimson Jewel" "Prismatic Jewel" "Timeless Jewel" "Viridian Jewel" "Cursed Crypt Map" "Museum Map" "Shore Map" "Temple Map" "Underground River Map"
 #AutoUpdater_AllUniques_end
 
 #Tags Atlas and special bases
@@ -315,27 +315,27 @@ SetTag @Gems_DropOnly
 #Tags Divination Cards
 #AutoUpdater_DivCards_start
 SetTag @DivinationCards_T0
-    BaseType == "House of Mirrors" "The Doctor" "The Demon" "The Fiend" "Beauty Through Death" "Nook's Crown" "Alluring Bounty" "The Immortal" "The Samurai's Eye" "The Nurse" "Immortal Resolve" "Succor of the Sinless" "Pride of the First Ones" "The Spark and the Flame" "The Dragon's Heart" "The World Eater" "The Iron Bard" "Hunter's Reward" "The Price of Loyalty" "Abandoned Wealth" "Wealth and Power" "The Craving"
+    BaseType == "House of Mirrors" "The Doctor" "The Demon" "The Fiend" "Beauty Through Death" "Nook's Crown" "Alluring Bounty" "The Samurai's Eye" "The Immortal" "The Nurse" "Succor of the Sinless" "Immortal Resolve" "Pride of the First Ones" "The Spark and the Flame" "The Dragon's Heart" "The World Eater" "The Iron Bard" "Hunter's Reward" "The Price of Loyalty" "Abandoned Wealth" "Wealth and Power" "The Craving"
 SetTag @DivinationCards_T1
-    BaseType == "The Queen" "The Polymath" "Seven Years Bad Luck" "The Damned" "The Eye of Terror" "Etched in Blood" "Pride Before the Fall" "The Enlightened" "The Offering" "The Celestial Justicar" "The Saint's Treasure" "Burning Blood" "Void of the Elements" "The Escape" "The Celestial Stone" "The Bargain" "The Mayor" "The King's Heart" "Dark Dreams" "Azyran's Reward" "Squandered Prosperity" "The Ethereal" "The Soul" "The Wolven King's Bite" "Blessing of God"
+    BaseType == "The Polymath" "Seven Years Bad Luck" "The Queen" "The Damned" "The Eye of Terror" "The Enlightened" "Pride Before the Fall" "The Offering" "Etched in Blood" "The Saint's Treasure" "The Celestial Justicar" "Void of the Elements" "Burning Blood" "The Escape" "The Celestial Stone" "The Mayor" "The Bargain" "The King's Heart" "Dark Dreams" "Squandered Prosperity" "The Soul" "The Ethereal" "The Wolven King's Bite" "Azyran's Reward" "Blessing of God"
 SetTag @DivinationCards_T2
-    BaseType == "The Hoarder" "The Sephirot" "The Professor" "Bowyer's Dream" "The Undaunted" "The Sacrifice" "Remembrance" "Chaotic Disposition" "The Artist" "The Valkyrie" "The Landing" "Mawr Blaidd" "The Dapper Prodigy" "The Risk" "The Porcupine" "Boon of the First Ones" "The Endless Darkness" "The Life Thief" "Akil's Prophecy" "Divine Justice" "The Bones" "Heterochromia" "Lucky Deck" "The Cartographer" "The Last One Standing" "The Vast" "The Breach" "The Jeweller's Boon" "The Hale Heart" "Perfection" "The Rite of Elements" "The Undisputed" "A Dab of Ink" "Buried Treasure" "The Heroic Shot" "Underground Forest" "Rebirth" "The Innocent" "The Dreamer" "Boundless Realms" "Dialla's Subjugation" "Emperor of Purity" "Lucky Connections" "The Aesthete" "The Brittle Emperor" "The Dark Mage" "The Encroaching Darkness" "The Hunger" "The Lion" "The Pact" "The Surveyor" "The Throne" "The Void" "The Wolf" "Time-Lost Relic" "Volatile Power" "The Wretched" "Lingering Remnants" "The Realm" "Left to Fate" "The Wilted Rose" "Arrogance of the Vaal" "Alone in the Darkness" "The Seeker" "Vanity" "Imperial Legacy" "The Primordial" "The Skeleton" "The Old Man" "Friendship" "The Chosen" "Baited Expectations" "Deathly Designs" "The Fishmonger" "Cartographer's Delight" "The Wrath" "The Union" "Humility" "The Warlord" "The Mad King" "The Fool" "The Puzzle" "The Chains that Bind" "Assassin's Favour" "Audacity" "Blind Venture" "Coveted Possession" "Destined to Crumble" "Earth Drinker" "Emperor's Luck" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Her Mask" "Hope" "Hunter's Resolve" "Jack in the Box" "Last Hope" "Lost Worlds" "Loyalty" "Lysah's Respite" "Merciless Armament" "Rain Tempter" "Rats" "Scholar of the Seas" "Shard of Fate" "The Arena Champion" "The Avenger" "The Betrayal" "The Body" "The Calling" "The Cataclysm" "The Catalyst" "The Conduit" "The Cursed King" "The Demoness" "The Doppelganger" "The Dragon" "The Drunken Aristocrat" "The Endurance" "The Explorer" "The Feast" "The Fletcher" "The Formless Sea" "The Fox" "The Gambler" "The Gemcutter" "The Gentleman" "The Gladiator" "The Harvester" "The Inoculated" "The Inventor" "The Jester" "The Lord in Black" "The Mercenary" "The Oath" "The One With All" "The Penitent" "The Poet" "The Road to Power" "The Scavenger" "The Scholar" "The Sigil" "The Siren" "The Spoiled Prince" "The Stormcaller" "The Summoner" "The Sun" "The Survivalist" "The Thaumaturgist" "The Tower" "The Traitor" "The Trial" "The Tyrant" "The Visionary" "The Wind" "The Wolf's Shadow" "Three Faces in the Dark" "Tranquillity" "Treasure Hunter" "Vinia's Token" "Mitts" "The Valley of Steel Boxes" "Call to the First Ones" "The Wolverine" "The Garish Power" "The Standoff" "The Forsaken" "Atziri's Arsenal" "The Opulent" "The Ruthless Ceinture" "No Traces" "The Eye of the Dragon" "The Obscured" "The Deceiver" "The Insatiable" "Forbidden Power" "Three Voices" "The Beast" "The Master" "The Fathomless Depths" "The Dreamland" "The Admirer" "The Darkest Dream" "Harmony of Souls" "The Twilight Moon" "The Cacophony" "Sambodhi's Vow" "The Lord of Celebration" "The Journey" "The Messenger" "Monochrome" "The Golden Era" "Boon of Justice" "Echoes of Love" "The Deep Ones" "Demigod's Wager" "The Archmage's Right Hand" "Vile Power" "The Mountain" "The Wolf's Legacy" "The Deal" "The Side Quest" "More is Never Enough" "Cameria's Cut" "Anarchy's Price" "The Sword King's Salute" "The Lich"
+    BaseType == "The Hoarder" "The Sephirot" "The Professor" "Bowyer's Dream" "The Undaunted" "The Sacrifice" "The Landing" "Remembrance" "Chaotic Disposition" "The Artist" "The Dapper Prodigy" "The Valkyrie" "Divine Justice" "Heterochromia" "Mawr Blaidd" "The Risk" "The Porcupine" "The Rite of Elements" "The Endless Darkness" "The Life Thief" "Akil's Prophecy" "The Bones" "Lucky Deck" "The Cartographer" "The Last One Standing" "The Vast" "The Void" "Volatile Power" "The Breach" "The Jeweller's Boon" "The Hale Heart" "Perfection" "The Undisputed" "Boon of the First Ones" "Buried Treasure" "The Heroic Shot" "Underground Forest" "The Innocent" "A Dab of Ink" "Boundless Realms" "Cartographer's Delight" "Dialla's Subjugation" "Emperor of Purity" "Last Hope" "The Aesthete" "The Brittle Emperor" "The Dark Mage" "The Encroaching Darkness" "The Hunger" "The Lion" "The Surveyor" "The Throne" "The Union" "The Warlord" "The Wolf" "Time-Lost Relic" "The Wretched" "Lingering Remnants" "The Realm" "Left to Fate" "Rebirth" "The Dreamer" "The Wilted Rose" "Arrogance of the Vaal" "The Mad King" "Alone in the Darkness" "The Seeker" "Vanity" "Imperial Legacy" "The Primordial" "The Skeleton" "The Side Quest" "The Old Man" "Friendship" "The Chosen" "Baited Expectations" "Deathly Designs" "The Fishmonger" "Lucky Connections" "Humility" "The Obscured" "Three Voices" "Merciless Armament" "The Chains that Bind" "Anarchy's Price" "Audacity" "Blind Venture" "Coveted Possession" "Earth Drinker" "Emperor's Luck" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Her Mask" "Hope" "Hunter's Resolve" "Jack in the Box" "Lost Worlds" "Loyalty" "Lysah's Respite" "Rain of Chaos" "Rain Tempter" "Rats" "Scholar of the Seas" "Shard of Fate" "The Arena Champion" "The Avenger" "The Betrayal" "The Body" "The Calling" "The Cataclysm" "The Catalyst" "The Conduit" "The Cursed King" "The Demoness" "The Doppelganger" "The Dragon" "The Drunken Aristocrat" "The Endurance" "The Explorer" "The Feast" "The Fletcher" "The Formless Sea" "The Fox" "The Gambler" "The Gemcutter" "The Gentleman" "The Gladiator" "The Harvester" "The Inoculated" "The Jester" "The Lich" "The Lord in Black" "The Mercenary" "The Oath" "The One With All" "The Pack Leader" "The Pact" "The Penitent" "The Poet" "The Rabid Rhoa" "The Road to Power" "The Scavenger" "The Scholar" "The Sigil" "The Siren" "The Spoiled Prince" "The Stormcaller" "The Summoner" "The Sun" "The Survivalist" "The Thaumaturgist" "The Tower" "The Traitor" "The Trial" "The Tyrant" "The Visionary" "The Wind" "The Wrath" "Three Faces in the Dark" "Tranquillity" "Treasure Hunter" "Vinia's Token" "Mitts" "The Valley of Steel Boxes" "Call to the First Ones" "The Wolverine" "The Garish Power" "The Standoff" "The Forsaken" "Atziri's Arsenal" "The Opulent" "The Ruthless Ceinture" "No Traces" "The Eye of the Dragon" "The Deceiver" "The Puzzle" "The Insatiable" "Forbidden Power" "The Beast" "The Master" "The Fathomless Depths" "The Dreamland" "The Admirer" "The Darkest Dream" "Harmony of Souls" "The Twilight Moon" "The Cacophony" "Sambodhi's Vow" "The Lord of Celebration" "The Journey" "The Messenger" "Monochrome" "The Golden Era" "Boon of Justice" "Echoes of Love" "The Deep Ones" "The Fool" "Demigod's Wager" "The Archmage's Right Hand" "Vile Power" "The Mountain" "The Wolf's Legacy" "The Deal" "More is Never Enough" "Cameria's Cut" "Light and Truth" "The Wolf's Shadow" "The Sword King's Salute" "Hubris" "The Inventor" "Assassin's Favour" "The Web"
 SetTag @DivinationCards_T3
-    BaseType == "The Rabid Rhoa" "Light and Truth" "Struck by Lightning" "The Witch" "The Pack Leader" "Rain of Chaos" "Doedre's Madness" "The Master Artisan" "Grave Knowledge" "The Twins" "The Flora's Gift"
+    BaseType == "The Witch" "Grave Knowledge" "The Twins" "Doedre's Madness" "The Lunaris Priestess" "Turn the Other Cheek" "Struck by Lightning" "The Master Artisan"
 SetTag @DivinationCards_T4
-    BaseType == "A Mother's Parting Gift" "Death" "Hubris" "Lantador's Lost Love" "Prosperity" "The Battle Born" "The Carrion Crow" "The Hermit" "The Incantation" "The King's Blade" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Scarred Meadow" "The Surgeon" "The Warden" "The Watcher" "The Web" "Thunderous Skies" "Turn the Other Cheek" "The Coming Storm" "Might is Right" "The Blazing Fire" "The Army of Blood" "Dark Temptation" "Thirst for Knowledge"
+    BaseType == "The Surgeon" "A Mother's Parting Gift" "Death" "Destined to Crumble" "Lantador's Lost Love" "Prosperity" "The Battle Born" "The Carrion Crow" "The Flora's Gift" "The Hermit" "The Incantation" "The King's Blade" "The Lover" "The Metalsmith's Gift" "The Scarred Meadow" "The Warden" "The Watcher" "Thunderous Skies" "The Coming Storm" "Might is Right" "The Blazing Fire" "The Army of Blood" "Dark Temptation" "Thirst for Knowledge"
 #AutoUpdater_DivCards_end
 
 #Tags Essences
 #AutoUpdater_Essences_start
 SetTag @Essences_T1
-    BaseType == "Deafening Essence of Envy" "Deafening Essence of Dread" "Deafening Essence of Greed" "Deafening Essence of Rage" "Deafening Essence of Zeal" "Deafening Essence of Fear" "Deafening Essence of Scorn" "Deafening Essence of Wrath"
+    BaseType == "Deafening Essence of Dread" "Deafening Essence of Envy" "Deafening Essence of Greed" "Deafening Essence of Rage" "Deafening Essence of Zeal" "Deafening Essence of Contempt" "Deafening Essence of Fear" "Deafening Essence of Scorn" "Deafening Essence of Wrath"
 SetTag @Essences_T2
-    BaseType == "Deafening Essence of Contempt" "Deafening Essence of Woe" "Shrieking Essence of Dread" "Shrieking Essence of Greed" "Essence of Horror" "Essence of Insanity" "Deafening Essence of Hatred" "Deafening Essence of Loathing" "Deafening Essence of Spite" "Shrieking Essence of Envy" "Shrieking Essence of Zeal" "Shrieking Essence of Fear" "Deafening Essence of Anger" "Essence of Delirium" "Shrieking Essence of Rage" "Deafening Essence of Sorrow" "Deafening Essence of Anguish" "Deafening Essence of Doubt" "Deafening Essence of Misery" "Deafening Essence of Suffering" "Deafening Essence of Torment" "Essence of Hysteria" "Shrieking Essence of Contempt" "Shrieking Essence of Scorn" "Shrieking Essence of Woe" "Screaming Essence of Dread" "Screaming Essence of Greed" "Shrieking Essence of Anger" "Shrieking Essence of Hatred" "Shrieking Essence of Sorrow" "Shrieking Essence of Spite" "Shrieking Essence of Torment" "Shrieking Essence of Wrath" "Muttering Essence of Hatred" "Screaming Essence of Anger" "Screaming Essence of Anguish" "Screaming Essence of Contempt" "Screaming Essence of Doubt" "Screaming Essence of Envy" "Screaming Essence of Fear" "Screaming Essence of Hatred" "Screaming Essence of Loathing" "Screaming Essence of Rage" "Screaming Essence of Scorn" "Screaming Essence of Torment" "Screaming Essence of Woe" "Screaming Essence of Wrath" "Screaming Essence of Zeal" "Shrieking Essence of Anguish" "Shrieking Essence of Doubt" "Shrieking Essence of Loathing" "Shrieking Essence of Misery" "Shrieking Essence of Suffering" "Wailing Essence of Anger" "Wailing Essence of Anguish" "Wailing Essence of Doubt" "Wailing Essence of Fear" "Wailing Essence of Greed" "Wailing Essence of Hatred" "Wailing Essence of Loathing" "Wailing Essence of Rage" "Wailing Essence of Suffering" "Wailing Essence of Woe" "Wailing Essence of Wrath" "Weeping Essence of Contempt" "Weeping Essence of Greed" "Weeping Essence of Hatred" "Weeping Essence of Rage" "Weeping Essence of Sorrow" "Weeping Essence of Woe" "Wailing Essence of Contempt" "Screaming Essence of Spite"
+    BaseType == "Deafening Essence of Woe" "Shrieking Essence of Dread" "Essence of Horror" "Shrieking Essence of Greed" "Deafening Essence of Spite" "Essence of Insanity" "Deafening Essence of Hatred" "Deafening Essence of Loathing" "Shrieking Essence of Envy" "Shrieking Essence of Zeal" "Shrieking Essence of Fear" "Deafening Essence of Anger" "Deafening Essence of Sorrow" "Essence of Delirium" "Shrieking Essence of Rage" "Deafening Essence of Anguish" "Deafening Essence of Doubt" "Deafening Essence of Misery" "Deafening Essence of Suffering" "Deafening Essence of Torment" "Essence of Hysteria" "Shrieking Essence of Contempt" "Shrieking Essence of Scorn" "Shrieking Essence of Woe" "Screaming Essence of Dread" "Screaming Essence of Greed" "Shrieking Essence of Anger" "Shrieking Essence of Hatred" "Shrieking Essence of Sorrow" "Shrieking Essence of Spite" "Shrieking Essence of Torment" "Shrieking Essence of Wrath" "Screaming Essence of Fear" "Screaming Essence of Anger" "Screaming Essence of Contempt" "Screaming Essence of Doubt" "Screaming Essence of Envy" "Screaming Essence of Hatred" "Screaming Essence of Misery" "Screaming Essence of Rage" "Screaming Essence of Sorrow" "Screaming Essence of Spite" "Screaming Essence of Suffering" "Screaming Essence of Woe" "Screaming Essence of Wrath" "Screaming Essence of Zeal" "Shrieking Essence of Anguish" "Shrieking Essence of Doubt" "Shrieking Essence of Loathing" "Shrieking Essence of Misery" "Shrieking Essence of Suffering" "Wailing Essence of Anger" "Wailing Essence of Anguish" "Wailing Essence of Contempt" "Wailing Essence of Fear" "Wailing Essence of Rage" "Weeping Essence of Contempt" "Weeping Essence of Fear" "Weeping Essence of Greed" "Weeping Essence of Hatred" "Weeping Essence of Rage" "Weeping Essence of Sorrow" "Weeping Essence of Woe" "Screaming Essence of Anguish" "Screaming Essence of Scorn" "Wailing Essence of Woe" "Wailing Essence of Greed" "Remnant of Corruption" "Wailing Essence of Loathing"
 SetTag @Essences_T3
-    BaseType == "Weeping Essence of Fear" "Screaming Essence of Suffering" "Screaming Essence of Misery" "Weeping Essence of Anger" "Weeping Essence of Wrath" "Whispering Essence of Woe" "Weeping Essence of Doubt" "Weeping Essence of Suffering" "Weeping Essence of Torment" "Whispering Essence of Hatred" "Muttering Essence of Woe" "Muttering Essence of Greed"
+    BaseType == "Wailing Essence of Torment" "Wailing Essence of Hatred" "Muttering Essence of Hatred" "Weeping Essence of Torment" "Weeping Essence of Suffering" "Muttering Essence of Woe" "Wailing Essence of Suffering" "Whispering Essence of Woe" "Muttering Essence of Sorrow" "Wailing Essence of Wrath" "Weeping Essence of Anger" "Wailing Essence of Sorrow" "Muttering Essence of Greed" "Weeping Essence of Doubt" "Screaming Essence of Loathing" "Screaming Essence of Torment"
 SetTag @Essences_T4
-    BaseType == "Screaming Essence of Sorrow" "Muttering Essence of Anger" "Muttering Essence of Contempt" "Muttering Essence of Fear" "Muttering Essence of Sorrow" "Muttering Essence of Torment" "Remnant of Corruption" "Wailing Essence of Sorrow" "Wailing Essence of Spite" "Wailing Essence of Torment" "Wailing Essence of Zeal" "Whispering Essence of Contempt" "Whispering Essence of Greed"
+    BaseType == "Muttering Essence of Contempt" "Wailing Essence of Spite" "Wailing Essence of Doubt" "Weeping Essence of Wrath" "Muttering Essence of Anger" "Muttering Essence of Fear" "Muttering Essence of Torment" "Wailing Essence of Zeal" "Whispering Essence of Contempt" "Whispering Essence of Greed" "Whispering Essence of Hatred"
 #AutoUpdater_Essences_end
 
 #Tags Fossils
@@ -343,9 +343,11 @@ SetTag @Essences_T4
 SetTag @Fossils_T0
     BaseType == "Faceted Fossil" "Fractured Fossil" "Hollow Fossil"
 SetTag @Fossils_T1
-    BaseType == "Bloodstained Fossil" "Tangled Fossil" "Sanctified Fossil" "Glyphic Fossil" "Corroded Fossil" "Serrated Fossil"
+    BaseType == "Bloodstained Fossil" "Tangled Fossil" "Sanctified Fossil" "Glyphic Fossil" "Corroded Fossil"
 SetTag @Fossils_T2
-    BaseType == "Shuddering Fossil" "Aetheric Fossil" "Bound Fossil" "Prismatic Fossil" "Perfect Fossil" "Gilded Fossil" "Pristine Fossil" "Dense Fossil" "Enchanted Fossil" "Encrusted Fossil" "Jagged Fossil" "Aberrant Fossil" "Scorched Fossil" "Frigid Fossil" "Metallic Fossil" "Lucent Fossil"
+    BaseType == "Serrated Fossil" "Shuddering Fossil" "Aetheric Fossil" "Bound Fossil" "Prismatic Fossil" "Perfect Fossil" "Gilded Fossil" "Pristine Fossil" "Dense Fossil" "Enchanted Fossil" "Encrusted Fossil" "Jagged Fossil" "Aberrant Fossil" "Frigid Fossil" "Metallic Fossil" "Lucent Fossil"
+SetTag @Fossils_T4
+    BaseType == "Scorched Fossil"
 #AutoUpdater_Fossils_end
 SetTag @Fossils_All
     BaseType "Aetheric Fossil" "Aberrant Fossil" "Bloodstained Fossil" "Bound Fossil" "Corroded Fossil" "Dense Fossil" "Enchanted Fossil" "Encrusted Fossil" "Faceted Fossil" "Fractured Fossil" "Frigid Fossil" "Gilded Fossil" "Glyphic Fossil" "Hollow Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Perfect Fossil" "Prismatic Fossil" "Pristine Fossil" "Sanctified Fossil" "Scorched Fossil" "Serrated Fossil" "Shuddering Fossil" "Tangled Fossil"
@@ -357,18 +359,18 @@ SetTag @Prophecies_T0
 SetTag @Prophecies_T1
     Prophecy "The Jeweller's Touch" "A Prodigious Hand" "Blind Faith" "The Hollow Pledge" "The King's Path" "A Master Seeks Help"
 SetTag @Prophecies_T2
-    Prophecy "A Master Seeks Help" "Cleanser of Sins" "Monstrous Treasure" "A Vision of Ice and Fire" "Fire and Brimstone" "The Servant's Heart" "Wind and Thunder" "The Great Leader of the North" "The Bishop's Legacy" "Flesh of the Beast" "The Silverwood" "Twice Enchanted" "Vaal Winds" "Fire, Wood and Stone" "The Feral Lord V" "The Unbreathing Queen V" "Unbearable Whispers V" "The Malevolent Witch" "Erasmus' Gift" "Fire and Ice" "Kalandra's Craft" "The Apex Predator" "The Karui Rebellion" "The Plaguemaw V" "A Master Seeks Help" "Storm on the Horizon" "The Dream Trial" "The Great Mind of the North" "Last of the Wildmen" "Ancient Doom" "Visions of the Drowned" "The Beautiful Guide" "A Call into the Void" "A Forest of False Idols" "A Whispered Prayer" "Abnormal Effulgence" "Anarchy's End II" "Anarchy's End III" "Anarchy's End IV" "Beyond Sight II" "Beyond Sight III" "Beyond Sight IV" "Blood of the Betrayed" "Custodians of Silence" "Day of Sacrifice III" "Day of Sacrifice IV" "Deadly Rivalry V" "Defiled in the Sceptre" "Dying Cry" "Echoes of Witchcraft" "Fear's Wide Reach" "Heart of the Fire" "Holding the Bridge" "In the Grasp of Corruption" "Path of Betrayal" "Plague of Frogs" "Possessed Foe" "Reforged Bonds" "Severed Limbs" "Thaumaturgical History IV" "The Ambitious Bandit II" "The Ambitious Bandit III" "The Child of Lunaris" "The Dreamer's Dream" "The Flayed Man" "The King and the Brambles" "The Last Watch" "The Lost Undying" "The Nest" "The Soulless Beast" "The Sword King's Passion" "The Ward's Ward" "The Warmongers IV" "The Watcher's Watcher" "Unbearable Whispers III" "Vaal Invasion" "Weeping Death" "Storm on the Reef" "Dark Instincts" "Cold Blooded Fury" "The Dreaded Rhoa" "End of the Light" "A Rift in Time" "Cold Greed" "Battle Hardened" "A Master Seeks Help" "The Mysterious Gift" "Dance of Steel" "Faith Exhumed" "The Lady in Black" "The Warmongers III" "Deadly Rivalry II" "Blood in the Eyes" "The Queen's Vaults" "Vital Transformation" "Power Magnified"
+    Prophecy "A Master Seeks Help" "Cleanser of Sins" "Monstrous Treasure" "A Vision of Ice and Fire" "The Servant's Heart" "Twice Enchanted" "Wind and Thunder" "The Great Leader of the North" "The Bishop's Legacy" "Fire and Brimstone" "Flesh of the Beast" "The Silverwood" "Vaal Winds" "Fire, Wood and Stone" "The Feral Lord V" "The Unbreathing Queen V" "Unbearable Whispers V" "The Malevolent Witch" "Fire and Ice" "The Apex Predator" "The Dream Trial" "The Karui Rebellion" "The Plaguemaw V" "The Great Mind of the North" "The Beautiful Guide" "Ancient Doom" "Kalandra's Craft" "Storm on the Horizon" "A Master Seeks Help" "Erasmus' Gift" "Last of the Wildmen" "Visions of the Drowned" "A Call into the Void" "A Forest of False Idols" "Anarchy's End II" "Anarchy's End IV" "Beyond Sight III" "Beyond Sight IV" "Blood of the Betrayed" "Bountiful Traps" "Day of Sacrifice III" "Day of Sacrifice IV" "Deadly Rivalry V" "Defiled in the Sceptre" "Dying Cry" "Echoes of Witchcraft" "Fear's Wide Reach" "Heart of the Fire" "Holding the Bridge" "Hunter's Lesson" "In the Grasp of Corruption" "Lasting Impressions" "Overflowing Riches" "Path of Betrayal" "Possessed Foe" "Reforged Bonds" "Severed Limbs" "Thaumaturgical History IV" "The Ambitious Bandit III" "The Child of Lunaris" "The Flayed Man" "The King and the Brambles" "The Lady in Black" "The Last Watch" "The Lost Maps" "The Lost Undying" "The Nest" "The Queen's Vaults" "The Soulless Beast" "The Sword King's Passion" "The Ward's Ward" "The Warmongers III" "The Watcher's Watcher" "Unbearable Whispers III" "Vaal Invasion" "Vital Transformation" "Weeping Death" "Storm on the Reef" "Dark Instincts" "Cold Blooded Fury" "Dance of Steel" "The Dreaded Rhoa" "End of the Light" "A Rift in Time" "Battle Hardened" "A Master Seeks Help" "A Whispered Prayer" "Anarchy's End III" "Beyond Sight II" "Blood in the Eyes" "Custodians of Silence" "Black Devotion" "Day of Sacrifice II" "The Eagle's Cry" "A Master Seeks Help" "The Vanguard"
 SetTag @Prophecies_T3
-    Prophecy "The Prison Key" "Deadly Twins" "From Death Springs Life" "The Forgotten Soldiers" "Ice from Above" "The Eagle's Cry" "Against the Tide" "The Vanguard" "The Nightmare Awakens" "Lasting Impressions" "Roth's Legacy" "Living Fires" "Unnatural Energy" "From The Void" "Strong as a Bull" "The Beginning and the End" "Blinding Light" "A Master Seeks Help" "The Fortune Teller's Collection" "Black Devotion" "Bountiful Traps" "Unbearable Whispers II" "Waiting in Ambush" "Baptism by Death" "Graceful Flames" "Nature's Resilience" "Notched Flesh" "Thaumaturgical History III" "The Storm Spire" "Resistant to Change" "The Plaguemaw III" "The Unbreathing Queen III" "Pleasure and Pain" "The Sinner's Stone" "Agony at Dusk" "The Fall of an Empire" "The Unbreathing Queen IV" "Fire from the Sky" "The Hungering Swarm" "The Walking Mountain"
+    Prophecy "Roth's Legacy" "The Prison Key" "From Death Springs Life" "The Forgotten Soldiers" "Against the Tide" "Lightning Falls" "Strong as a Bull" "Nature's Resilience" "The Unbreathing Queen IV" "An Unseen Peril" "Living Fires" "Unnatural Energy" "Ice from Above" "From The Void" "The Beginning and the End" "The Nightmare Awakens" "Faith Exhumed" "Waiting in Ambush" "Abnormal Effulgence" "The Hungering Swarm" "The Unbreathing Queen II" "Plague of Frogs" "Graceful Flames" "Thaumaturgical History III" "Power Magnified" "The Ambitious Bandit II" "The Feral Lord IV" "Blinding Light" "The Fall of an Empire" "Baptism by Death" "The Storm Spire" "Resistant to Change" "The Warmongers IV" "Plague of Rats" "Notched Flesh" "The Fortune Teller's Collection" "The Mysterious Gift" "The Sinner's Stone" "Cold Greed" "Deadly Twins" "The Feral Lord II" "Deadly Rivalry III" "The Walking Mountain" "Agony at Dusk" "The Plaguemaw I" "Erased from Memory" "The Dreamer's Dream" "The Hardened Armour" "Unbearable Whispers II" "Trapped in the Tower"
 SetTag @Prophecies_T4
-    Prophecy "Erased from Memory" "The Feral Lord II" "Anarchy's End I" "Day of Sacrifice II" "Deadly Rivalry I" "Ending the Torment" "Overflowing Riches" "Rebirth" "Thaumaturgical History I" "The Brutal Enforcer" "The Corrupt" "The Feral Lord IV" "The Hardened Armour" "The Warmongers I" "Greed's Folly" "Burning Dread" "Trapped in the Tower" "Hunter's Lesson" "Lightning Falls" "The Scout" "The Feral Lord I" "The Plaguemaw II" "Beyond Sight I" "Fallow At Last" "Hidden Vaal Pathways" "The Prison Guard" "The Alchemist" "Winter's Mournful Melodies" "An Unseen Peril" "Heavy Blows" "A Firm Foothold" "A Regal Death" "A Valuable Combination" "Crushing Squall" "Day of Sacrifice I" "Deadly Rivalry III" "Deadly Rivalry IV" "Forceful Exorcism" "Gilded Within" "Golden Touch" "Hidden Reinforcements" "Mouth of Horrors" "Mysterious Invaders" "Nemesis of Greed" "Plague of Rats" "Pools of Wealth" "Risen Blood" "Smothering Tendrils" "Soil, Worms and Blood" "The Ambitious Bandit I" "The Bloody Flowers Redux" "The Brothers of Necromancy" "The Cursed Choir" "The Feral Lord III" "The Flow of Energy" "The Forgotten Garrison" "The Four Feral Exiles" "The God of Misfortune" "The Invader" "The Lost Maps" "The Petrified" "The Plaguemaw I" "The Plaguemaw IV" "The Sharpened Blade" "The Singular Spirit" "The Snuffed Flame" "The Trembling Earth" "The Twins" "The Unbreathing Queen I" "The Unbreathing Queen II" "The Undead Brutes" "The Undead Storm" "The Warmongers II" "The Wealthy Exile" "Touched by the Wind" "Unbearable Whispers I" "Unbearable Whispers IV" "Undead Uprising" "Sun's Punishment" "Crimson Hues" "Thaumaturgical History II" "The Stockkeeper"
+    Prophecy "Fire from the Sky" "The Plaguemaw IV" "The Unbreathing Queen I" "A Regal Death" "Anarchy's End I" "Crushing Squall" "Deadly Rivalry I" "Ending the Torment" "Hidden Vaal Pathways" "Pleasure and Pain" "Rebirth" "Thaumaturgical History I" "The Alchemist" "The Brutal Enforcer" "The Corrupt" "The Feral Lord I" "The Feral Lord III" "The Plaguemaw III" "The Scout" "The Snuffed Flame" "Unbearable Whispers I" "Winter's Mournful Melodies" "Greed's Folly" "Burning Dread" "Deadly Rivalry II" "The Unbreathing Queen III" "The Warmongers I" "The Invader" "Mysterious Invaders" "The Cursed Choir" "Crimson Hues" "A Valuable Combination" "Beyond Sight I" "Fallow At Last" "Heavy Blows" "Hidden Reinforcements" "Nemesis of Greed" "The Prison Guard" "Smothering Tendrils" "The Undead Brutes" "A Firm Foothold" "The Bloody Flowers Redux" "The Sharpened Blade" "Day of Sacrifice I" "Deadly Rivalry IV" "Forceful Exorcism" "Gilded Within" "Golden Touch" "Mouth of Horrors" "Pools of Wealth" "Risen Blood" "Soil, Worms and Blood" "Thaumaturgical History II" "The Ambitious Bandit I" "The Brothers of Necromancy" "The Flow of Energy" "The Forgotten Garrison" "The Four Feral Exiles" "The God of Misfortune" "The Petrified" "The Plaguemaw II" "The Singular Spirit" "The Trembling Earth" "The Twins" "The Undead Storm" "The Warmongers II" "The Wealthy Exile" "Touched by the Wind" "Unbearable Whispers IV" "Undead Uprising" "Sun's Punishment" "The Stockkeeper"
 #AutoUpdater_Prophecies_names_end"
 
 #AutoUpdater_Incubators_start
 SetTag @Incubators_T1
     BaseType == "Gemcutter's Incubator" "Geomancer's Incubator" "Time-Lost Incubator"
 SetTag @Incubators_T2
-    BaseType == "Thaumaturge's Incubator" "Foreboding Incubator" "Diviner's Incubator" "Otherworldly Incubator" "Fossilised Incubator" "Ornate Incubator" "Whispering Incubator" "Singular Incubator" "Celestial Jeweller's Incubator" "Enchanted Incubator" "Cartographer's Incubator" "Skittering Incubator" "Mysterious Incubator" "Celestial Armoursmith's Incubator" "Obscured Incubator" "Infused Incubator" "Fragmented Incubator" "Decadent Incubator" "Celestial Blacksmith's Incubator"
+    BaseType == "Thaumaturge's Incubator" "Diviner's Incubator" "Foreboding Incubator" "Otherworldly Incubator" "Ornate Incubator" "Fossilised Incubator" "Whispering Incubator" "Singular Incubator" "Celestial Jeweller's Incubator" "Enchanted Incubator" "Cartographer's Incubator" "Skittering Incubator" "Mysterious Incubator" "Celestial Armoursmith's Incubator" "Obscured Incubator" "Infused Incubator" "Fragmented Incubator" "Decadent Incubator" "Celestial Blacksmith's Incubator"
 SetTag @Incubators_T3
     BaseType == "Abyssal Incubator"
 SetTag @Incubators_T4
@@ -381,9 +383,9 @@ SetTag @Oils_T0
 SetTag @Oils_T1
     BaseType == "Silver Oil" "Opalescent Oil"
 SetTag @Oils_T2
-    BaseType == "Black Oil" "Crimson Oil" "Violet Oil" "Azure Oil" "Verdant Oil" "Teal Oil" "Sepia Oil"
+    BaseType == "Black Oil" "Crimson Oil" "Violet Oil" "Verdant Oil" "Teal Oil" "Azure Oil"
 SetTag @Oils_T3
-    BaseType == "Clear Oil" "Amber Oil"
+    BaseType == "Amber Oil" "Sepia Oil" "Clear Oil"
 #AutoUpdater_Oils_end
 
 #------------------------------------
@@ -784,17 +786,17 @@ Show #Atlas and special bases - Autotiered T0
     PlayEffect Blue
     HasInfluence Shaper
     Branch
+        ItemLevel >= 86
+        BaseType "Stygian Vise" "Opal Ring" "Spike-Point Arrow Quiver" "Jade Amulet" "Broadhead Arrow Quiver" "Onyx Amulet" "Prophecy Wand"
+    Branch
         ItemLevel >= 84
-        BaseType "Crystal Belt" "Titanium Spirit Shield" "Hubris Circlet" "Exquisite Blade" "Sorcerer Gloves"
+        BaseType "Crystal Belt" "Steel Ring" "Hubris Circlet" "Exquisite Blade"
     Branch
         ItemLevel >= 85
-        BaseType "Titanium Spirit Shield" "Steel Ring" "Opal Wand" "Hubris Circlet" "Exquisite Blade" "Vaal Mask" "Two-Toned Boots" "Sorcerer Gloves"
-    Branch
-        ItemLevel >= 86
-        BaseType "Opal Ring" "Imperial Bow" "Turquoise Amulet" "Jade Amulet" "Agate Amulet" "Broadhead Arrow Quiver" "Onyx Amulet" "Sorcerer Gloves" "Spike-Point Arrow Quiver" "Diamond Ring"
+        BaseType "Titanium Spirit Shield" "Steel Ring" "Opal Ring" "Vermillion Ring" "Opal Wand" "Hubris Circlet" "Exquisite Blade"
     Branch
         ItemLevel >= 83
-        BaseType "Crystal Belt" "Opal Ring" "Exquisite Blade" "Fingerless Silk Gloves"
+        BaseType "Opal Ring" "Steel Ring" "Exquisite Blade" "Fingerless Silk Gloves"
     Branch
         ItemLevel >= 82
         BaseType "Fingerless Silk Gloves"
@@ -810,16 +812,16 @@ Show #Atlas and special bases - Autotiered T0
     HasInfluence Elder
     Branch
         ItemLevel >= 86
-        BaseType "Stygian Vise" "Bone Helmet" "Great Crown" "Samite Helmet" "Opal Ring" "Lacquered Helmet" "Fluted Bascinet" "Solaris Circlet" "Harlequin Mask" "Heavy Belt" "Magistrate Crown" "Ursine Pelt" "Citrine Amulet"
+        BaseType "Stygian Vise" "Bone Helmet" "Samite Helmet" "Magistrate Crown" "Lacquered Helmet" "Opal Ring" "Great Crown" "Fluted Bascinet" "Solaris Circlet" "Harlequin Mask" "Heavy Belt" "Ursine Pelt"
     Branch
         ItemLevel >= 85
-        BaseType "Spiked Gloves" "Astral Plate" "Fingerless Silk Gloves" "Coronal Maul" "Gripped Gloves"
+        BaseType "Astral Plate" "Fingerless Silk Gloves" "Coronal Maul"
     Branch
         ItemLevel >= 83
-        BaseType "Opal Ring" "Astral Plate" "Vermillion Ring" "Steel Ring" "Fingerless Silk Gloves"
+        BaseType "Opal Ring" "Vermillion Ring" "Astral Plate" "Steel Ring" "Fingerless Silk Gloves"
     Branch
         ItemLevel >= 84
-        BaseType "Vermillion Ring" "Steel Ring" "Spiked Gloves"
+        BaseType "Spiked Gloves" "Vermillion Ring" "Steel Ring"
 Show #Atlas and special bases - Autotiered T0
     Rarity <= Rare
     SetFontSize 45
@@ -831,14 +833,14 @@ Show #Atlas and special bases - Autotiered T0
     PlayEffect Blue
     HasInfluence Crusader
     Branch
-        ItemLevel >= 83
-        BaseType "Opal Ring" "Imperial Claw"
-    Branch
         ItemLevel >= 85
-        BaseType "Two-Toned Boots" "Jewelled Foil" "Citrine Amulet"
+        BaseType "Crystal Belt" "Two-Toned Boots" "Jewelled Foil"
     Branch
         ItemLevel >= 84
-        BaseType "Imbued Wand"
+        BaseType "Prophecy Wand" "Imbued Wand"
+    Branch
+        ItemLevel >= 83
+        BaseType "Imperial Claw"
 Show #Atlas and special bases - Autotiered T0
     Rarity <= Rare
     SetFontSize 45
@@ -851,7 +853,7 @@ Show #Atlas and special bases - Autotiered T0
     HasInfluence Redeemer
     Branch
         ItemLevel >= 86
-        BaseType "Two-Toned Boots" "Stygian Vise"
+        BaseType "Stygian Vise" "Two-Toned Boots"
     Branch
         ItemLevel >= 83
         BaseType "Opal Ring"
@@ -860,7 +862,7 @@ Show #Atlas and special bases - Autotiered T0
         BaseType "Onyx Amulet"
     Branch
         ItemLevel >= 85
-        BaseType "Vaal Regalia"
+        BaseType "Jewelled Foil" "Onyx Amulet"
 Show #Atlas and special bases - Autotiered T0
     Rarity <= Rare
     SetFontSize 45
@@ -873,19 +875,19 @@ Show #Atlas and special bases - Autotiered T0
     HasInfluence Hunter
     Branch
         ItemLevel >= 86
-        BaseType "Two-Toned Boots" "Stygian Vise"
-    Branch
-        ItemLevel >= 84
-        BaseType "Two-Toned Boots" "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Sorcerer Gloves" "Onyx Amulet" "Broadhead Arrow Quiver" "Paua Amulet" "Citadel Bow" "Vaal Regalia" "Lapis Amulet" "Jade Amulet" "Turquoise Amulet" "Gold Amulet" "Coral Amulet" "Sharktooth Arrow Quiver"
+        BaseType "Two-Toned Boots"
     Branch
         ItemLevel >= 83
-        BaseType "Two-Toned Boots" "Imperial Claw" "Amber Amulet" "Agate Amulet" "Slink Boots" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Lapis Amulet" "Jade Amulet" "Broadhead Arrow Quiver" "Gold Amulet" "Coral Amulet" "Paua Amulet" "Citadel Bow" "Sorcerer Gloves" "Maraketh Bow" "Crystal Belt" "Two-Point Arrow Quiver" "Steel Ring"
+        BaseType "Two-Toned Boots" "Opal Ring" "Agate Amulet" "Amber Amulet" "Sorcerer Boots" "Slink Boots" "Citrine Amulet" "Onyx Amulet" "Gemini Claw" "Jade Amulet" "Gold Amulet" "Broadhead Arrow Quiver" "Lapis Amulet" "Turquoise Amulet" "Coral Amulet" "Paua Amulet" "Sorcerer Gloves" "Crystal Belt" "Citadel Bow" "Opal Wand" "Two-Point Arrow Quiver" "Steel Ring" "Slink Gloves"
+    Branch
+        ItemLevel >= 84
+        BaseType "Onyx Amulet" "Agate Amulet" "Citrine Amulet" "Sorcerer Gloves" "Amber Amulet" "Broadhead Arrow Quiver" "Turquoise Amulet" "Jade Amulet" "Citadel Bow" "Lapis Amulet" "Paua Amulet" "Coral Amulet" "Sharktooth Arrow Quiver" "Gold Amulet" "Titan Gauntlets"
     Branch
         ItemLevel >= 82
         BaseType "Onyx Amulet"
     Branch
         ItemLevel >= 85
-        BaseType "Onyx Amulet" "Agate Amulet" "Broadhead Arrow Quiver" "Lapis Amulet" "Citrine Amulet" "Turquoise Amulet" "Vaal Regalia" "Jade Amulet" "Coral Amulet" "Paua Amulet" "Gold Amulet" "Heavy Belt" "Goliath Gauntlets" "Goliath Greaves" "Hydrascale Gauntlets"
+        BaseType "Onyx Amulet" "Agate Amulet" "Broadhead Arrow Quiver" "Lapis Amulet" "Vaal Regalia" "Citrine Amulet" "Turquoise Amulet" "Citadel Bow" "Coral Amulet" "Jade Amulet" "Paua Amulet" "Gold Amulet" "Heavy Belt" "Goliath Gauntlets" "Goliath Greaves" "Hydrascale Gauntlets"
 Show #Atlas and special bases - Autotiered T0
     Rarity <= Rare
     SetFontSize 45
@@ -900,8 +902,11 @@ Show #Atlas and special bases - Autotiered T0
         ItemLevel >= 85
         BaseType "Jewelled Foil"
     Branch
+        ItemLevel >= 84
+        BaseType "Jewelled Foil"
+    Branch
         ItemLevel >= 83
-        BaseType "Jewelled Foil" "Astral Plate"
+        BaseType "Jewelled Foil"
 Show #Atlas and special bases - Autotiered T1
     Rarity <= Rare
     SetFontSize 42
@@ -914,19 +919,19 @@ Show #Atlas and special bases - Autotiered T1
     HasInfluence Shaper
     Branch
         ItemLevel >= 86
-        BaseType "Eclipse Staff" "Prophecy Wand" "Lion Pelt" "Thicket Bow" "Two-Stone Ring" "Fossilised Spirit Shield" "Void Sceptre" "Lapis Amulet" "Amber Amulet" "Leather Belt" "Profane Wand" "Maraketh Bow" "Harbinger Bow" "Topaz Ring" "Unset Ring" "Coral Ring" "Imperial Claw" "Jewelled Foil" "Samite Gloves" "Sapphire Ring" "Imbued Wand" "Serpent Wand" "Penetrating Arrow Quiver" "Citadel Bow" "Demon's Horn" "Fiend Dagger" "Legion Gloves" "Moonstone Ring" "Royal Skean" "Magistrate Crown" "Solaris Circlet" "Shagreen Gloves" "Decimation Bow" "Shagreen Tower Shield" "Soldier Gloves" "Rustic Sash" "Gemstone Sword" "Crypt Armour" "Apex Rapier" "Destroyer Regalia" "Dragonscale Doublet" "Carnal Boots" "Foul Staff" "Conjurer Gloves"
+        BaseType "Diamond Ring" "Lion Pelt" "Eclipse Staff" "Sorcerer Gloves" "Two-Stone Ring" "Void Sceptre" "Thicket Bow" "Turquoise Amulet" "Fossilised Spirit Shield" "Gold Amulet" "Lapis Amulet" "Leather Belt" "Topaz Ring" "Penetrating Arrow Quiver" "Profane Wand" "Harbinger Bow" "Ruby Ring" "Maraketh Bow" "Unset Ring" "Assassin's Garb" "Coral Ring" "Jewelled Foil" "Samite Gloves" "Demon's Horn" "Sapphire Ring" "Imbued Wand" "Primordial Staff" "Serpent Wand" "Gemini Claw" "Assassin's Mitts" "Demon Dagger" "Legion Gloves" "Fiend Dagger" "Heavy Belt" "Murder Mitts" "Conjurer Gloves" "Harlequin Mask" "Callous Mask" "Shagreen Gloves" "Decimation Bow" "Shagreen Tower Shield" "Soldier Gloves" "Rustic Sash" "Vaal Sceptre" "Gemstone Sword" "Crypt Armour" "Apex Rapier" "Shagreen Boots" "Destroyer Regalia" "Steel Circlet" "Ursine Pelt" "Carnal Boots" "Foul Staff"
     Branch
         ItemLevel >= 85
-        BaseType "Golden Kris" "Vaal Regalia" "Platinum Kris" "Eclipse Staff" "Diamond Ring" "Prophecy Wand" "Archon Kite Shield" "Spike-Point Arrow Quiver" "Fossilised Spirit Shield" "Lion Pelt" "Bone Helmet" "Profane Wand" "Opal Sceptre" "Spiked Gloves" "Void Sceptre" "Thorium Spirit Shield" "Tornado Wand" "Broadhead Arrow Quiver" "Onyx Amulet" "Cerulean Ring" "Deicide Mask" "Jade Amulet" "Leather Belt" "Two-Stone Ring" "Chiming Spirit Shield" "Mind Cage" "Citrine Amulet" "Fire Arrow Quiver" "Penetrating Arrow Quiver" "Antique Gauntlets" "Heathen Wand" "Agate Amulet" "Lapis Amulet" "Turquoise Amulet" "Imbued Wand" "Supreme Spiked Shield" "Coral Ring" "Thicket Bow" "Amber Amulet" "Ruby Ring" "Imperial Bow" "Topaz Ring" "Moon Staff" "Champion Kite Shield" "Sapphire Ring"
-    Branch
-        ItemLevel >= 83
-        BaseType "Hubris Circlet" "Marble Amulet" "Gripped Gloves" "Fossilised Spirit Shield" "Spike-Point Arrow Quiver" "Opal Wand" "Lithe Blade" "Vaal Mask" "Sorcerer Gloves" "Diamond Ring" "Two-Stone Ring" "Two-Toned Boots" "Broadhead Arrow Quiver" "Thorium Spirit Shield" "Leather Belt" "Eclipse Staff" "Penetrating Arrow Quiver" "Spiked Gloves" "Arcanist Gloves" "Vaal Regalia" "Chiming Spirit Shield"
+        BaseType "Vaal Mask" "Sorcerer Gloves" "Golden Kris" "Lion Pelt" "Two-Toned Boots" "Vaal Regalia" "Platinum Kris" "Eclipse Staff" "Prophecy Wand" "Spike-Point Arrow Quiver" "Diamond Ring" "Bone Helmet" "Fossilised Spirit Shield" "Spiked Gloves" "Opal Sceptre" "Profane Wand" "Onyx Amulet" "Void Sceptre" "Thorium Spirit Shield" "Broadhead Arrow Quiver" "Chiming Spirit Shield" "Blue Pearl Amulet" "Tornado Wand" "Deicide Mask" "Leather Belt" "Two-Stone Ring" "Cerulean Ring" "Jade Amulet" "Fire Arrow Quiver" "Penetrating Arrow Quiver" "Citrine Amulet" "Imperial Bow" "Heathen Wand" "Raven Mask" "Antique Gauntlets" "Agate Amulet" "Lapis Amulet" "Turquoise Amulet" "Imbued Wand" "Coral Ring" "Sapphire Ring" "Thicket Bow" "Amber Amulet" "Ruby Ring" "Sadist Garb" "Angelic Kite Shield" "Topaz Ring" "Champion Kite Shield"
     Branch
         ItemLevel >= 84
-        BaseType "Vaal Regalia" "Vaal Mask" "Two-Toned Boots" "Opal Wand" "Diamond Ring" "Fossilised Spirit Shield" "Spike-Point Arrow Quiver" "Eclipse Staff" "Broadhead Arrow Quiver" "Thorium Spirit Shield" "Platinum Kris" "Two-Stone Ring" "Chiming Spirit Shield" "Lion Pelt" "Cerulean Ring" "Arcanist Gloves" "Leather Belt" "Void Sceptre" "Penetrating Arrow Quiver" "Profane Wand" "Mind Cage" "Citrine Amulet" "Golden Kris" "Topaz Ring" "Crusader Gloves" "Bone Helmet"
+        BaseType "Sorcerer Gloves" "Vaal Regalia" "Opal Wand" "Vaal Mask" "Two-Toned Boots" "Fossilised Spirit Shield" "Spike-Point Arrow Quiver" "Diamond Ring" "Eclipse Staff" "Thorium Spirit Shield" "Platinum Kris" "Two-Stone Ring" "Leather Belt" "Broadhead Arrow Quiver" "Chiming Spirit Shield" "Lion Pelt" "Arcanist Gloves" "Cerulean Ring" "Agate Amulet" "Void Sceptre" "Opal Sceptre" "Penetrating Arrow Quiver" "Prophecy Wand" "Mind Cage" "Citrine Amulet" "Golden Kris" "Topaz Ring" "Crusader Gloves" "Profane Wand"
+    Branch
+        ItemLevel >= 83
+        BaseType "Hubris Circlet" "Marble Amulet" "Gripped Gloves" "Fossilised Spirit Shield" "Spike-Point Arrow Quiver" "Diamond Ring" "Sorcerer Gloves" "Vaal Mask" "Opal Wand" "Two-Toned Boots" "Eclipse Staff" "Thorium Spirit Shield" "Broadhead Arrow Quiver" "Leather Belt" "Fire Arrow Quiver" "Two-Stone Ring" "Platinum Kris" "Penetrating Arrow Quiver" "Archon Kite Shield" "Spiked Gloves" "Arcanist Gloves" "Vaal Regalia" "Antique Gauntlets" "Lacewood Spirit Shield"
     Branch
         ItemLevel >= 82
-        BaseType "Hubris Circlet" "Diamond Ring" "Opal Wand" "Spike-Point Arrow Quiver" "Sorcerer Gloves" "Leather Belt" "Gripped Gloves" "Penetrating Arrow Quiver" "Two-Stone Ring" "Two-Toned Boots"
+        BaseType "Hubris Circlet" "Spike-Point Arrow Quiver" "Diamond Ring" "Sorcerer Gloves" "Eclipse Staff" "Two-Toned Boots" "Leather Belt" "Gripped Gloves" "Penetrating Arrow Quiver" "Two-Stone Ring"
 Show #Atlas and special bases - Autotiered T1
     Rarity <= Rare
     SetFontSize 42
@@ -938,20 +943,20 @@ Show #Atlas and special bases - Autotiered T1
     PlayEffect Brown
     HasInfluence Elder
     Branch
-        ItemLevel >= 85
-        BaseType "Heavy Belt" "Royal Burgonet" "Two-Toned Boots" "Vanguard Belt" "Assassin's Garb" "Hubris Circlet" "Eternal Burgonet" "Turquoise Amulet" "Agate Amulet" "Bone Circlet"
-    Branch
         ItemLevel >= 86
-        BaseType "Amber Amulet" "Leather Belt" "Onyx Amulet" "Ruby Ring" "Harbinger Bow" "Thicket Bow" "Amethyst Ring" "Unset Ring" "Crusader Plate" "Siege Axe" "Two-Stone Ring" "Carnal Boots" "Citadel Bow" "Chain Belt" "Hydrascale Boots" "Fossilised Spirit Shield" "Goliath Gauntlets" "Golden Plate" "Shagreen Boots" "Rustic Sash" "Spike-Point Arrow Quiver" "Destiny Leather" "Paua Ring" "Goliath Greaves" "Great White Claw" "Sapphire Ring"
-    Branch
-        ItemLevel >= 83
-        BaseType "Marble Amulet" "Spiked Gloves" "Crystal Belt" "Gripped Gloves" "Two-Toned Boots" "Heavy Belt" "Eternal Burgonet" "Royal Burgonet" "Agate Amulet"
+        BaseType "Citrine Amulet" "Leather Belt" "Onyx Amulet" "Thicket Bow" "Harbinger Bow" "Citadel Bow" "Carnal Boots" "Unset Ring" "Siege Axe" "Crusader Plate" "Amethyst Ring" "Two-Stone Ring" "Chain Belt" "Golden Plate" "Coral Ring" "Hydrascale Boots" "Slink Gloves" "Shagreen Boots" "Destiny Leather" "Imbued Wand" "Goliath Gauntlets" "Sapphire Ring"
     Branch
         ItemLevel >= 84
-        BaseType "Two-Toned Boots" "Heavy Belt" "Eternal Burgonet" "Hubris Circlet" "Royal Burgonet" "Vaal Axe" "Agate Amulet" "Assassin's Garb"
+        BaseType "Crystal Belt" "Two-Toned Boots" "Royal Burgonet" "Heavy Belt" "Hubris Circlet" "Eternal Burgonet" "Agate Amulet" "Assassin's Garb" "Zodiac Leather"
+    Branch
+        ItemLevel >= 85
+        BaseType "Heavy Belt" "Gripped Gloves" "Two-Toned Boots" "Royal Burgonet" "Assassin's Garb" "Vanguard Belt" "Hubris Circlet" "Eternal Burgonet" "Turquoise Amulet" "Agate Amulet" "Citrine Amulet" "Sorcerer Gloves" "Bone Circlet" "Onyx Amulet"
+    Branch
+        ItemLevel >= 83
+        BaseType "Marble Amulet" "Spiked Gloves" "Crystal Belt" "Gripped Gloves" "Two-Toned Boots" "Eternal Burgonet" "Royal Burgonet" "Agate Amulet"
     Branch
         ItemLevel >= 82
-        BaseType "Astral Plate" "Royal Burgonet" "Two-Toned Boots" "Heavy Belt"
+        BaseType "Spiked Gloves" "Astral Plate" "Royal Burgonet" "Heavy Belt" "Agate Amulet"
 Show #Atlas and special bases - Autotiered T1
     Rarity <= Rare
     SetFontSize 42
@@ -963,17 +968,17 @@ Show #Atlas and special bases - Autotiered T1
     PlayEffect Brown
     HasInfluence Crusader
     Branch
-        ItemLevel >= 85
-        BaseType "Triumphant Lamellar" "Moonstone Ring" "Imbued Wand" "Destroyer Regalia" "Agate Amulet" "Saintly Chainmail" "Void Sceptre" "Sharkskin Tunic" "Jade Amulet" "Savant's Robe" "Destiny Leather" "Devout Chainmail" "Onyx Amulet" "Amber Amulet" "Crypt Armour" "Fancy Foil" "Turquoise Amulet" "Lapis Amulet" "Crusader Plate" "Two-Stone Ring" "Topaz Ring" "Sapphire Ring" "Leather Belt" "Diamond Ring" "Royal Skean" "Gold Amulet" "Necromancer Silks" "Paua Amulet"
-    Branch
-        ItemLevel >= 83
-        BaseType "Prophecy Wand" "Eclipse Staff" "Imbued Wand" "Citrine Amulet" "Astral Plate" "Sambar Sceptre" "Agate Amulet" "Moonstone Ring" "Tornado Wand" "Two-Toned Boots" "Steel Ring" "Lapis Amulet" "Onyx Amulet" "Turquoise Amulet" "Profane Wand" "Bone Helmet" "Amber Amulet" "Slink Boots" "Hubris Circlet"
-    Branch
         ItemLevel >= 84
-        BaseType "Citrine Amulet" "Jade Amulet" "Moonstone Ring" "Omen Wand" "Void Sceptre" "Agate Amulet" "Onyx Amulet" "Turquoise Amulet" "Coral Amulet" "Amber Amulet" "Leather Belt" "Demon's Horn" "Two-Stone Ring" "Lapis Amulet" "Sadist Garb" "Noble Claw"
+        BaseType "Spiked Gloves" "Void Sceptre" "Citrine Amulet" "Jade Amulet" "Moonstone Ring" "Onyx Amulet" "Agate Amulet" "Turquoise Amulet" "Amber Amulet" "Convoking Wand" "Leather Belt" "Demon's Horn" "Coral Amulet" "Two-Stone Ring" "Lapis Amulet" "Assassin's Garb" "Abyssal Sceptre" "Sadist Garb" "Omen Wand"
+    Branch
+        ItemLevel >= 85
+        BaseType "Citrine Amulet" "Moonstone Ring" "Imbued Wand" "Saintly Chainmail" "Savant's Robe" "Jade Amulet" "Void Sceptre" "Destiny Leather" "Agate Amulet" "Onyx Amulet" "Amber Amulet" "Fancy Foil" "Crypt Armour" "Sharkskin Tunic" "Fossilised Spirit Shield" "Turquoise Amulet" "Lapis Amulet" "Crusader Plate" "Necromancer Silks" "Paua Amulet" "Two-Stone Ring" "Topaz Ring" "Sapphire Ring" "Leather Belt" "Diamond Ring" "Gold Amulet"
     Branch
         ItemLevel >= 82
-        BaseType "Onyx Amulet" "Jade Amulet"
+        BaseType "Jade Amulet" "Moonstone Ring"
+    Branch
+        ItemLevel >= 83
+        BaseType "Jewelled Foil" "Eclipse Staff" "Prophecy Wand" "Citrine Amulet" "Imbued Wand" "Sambar Sceptre" "Moonstone Ring" "Astral Plate" "Two-Toned Boots" "Profane Wand" "Tornado Wand" "Lapis Amulet" "Jade Amulet" "Agate Amulet" "Onyx Amulet" "Coral Amulet" "Convoking Wand" "Gold Amulet" "Turquoise Amulet" "Amber Amulet" "Opal Sceptre"
 Show #Atlas and special bases - Autotiered T1
     Rarity <= Rare
     SetFontSize 42
@@ -986,13 +991,13 @@ Show #Atlas and special bases - Autotiered T1
     HasInfluence Redeemer
     Branch
         ItemLevel >= 85
-        BaseType "Unset Ring" "Onyx Amulet" "Void Sceptre" "Citrine Amulet" "Assassin's Garb" "Turquoise Amulet" "Imbued Wand" "Agate Amulet" "Jade Amulet" "Lapis Amulet" "Diamond Ring" "Carnal Armour" "Amber Amulet" "Two-Stone Ring" "Decimation Bow" "Paua Amulet" "Saintly Chainmail" "Gold Amulet" "Coral Amulet" "Topaz Ring"
+        BaseType "Unset Ring" "Agate Amulet" "Imbued Wand" "Assassin's Garb" "Citrine Amulet" "Vaal Regalia" "Lapis Amulet" "Turquoise Amulet" "Jade Amulet" "Conjurer Boots" "Amber Amulet" "Sadist Garb" "Imperial Skean" "Ruby Ring" "Two-Stone Ring" "Decimation Bow" "Saintly Chainmail" "Diamond Ring" "Gold Amulet"
     Branch
         ItemLevel >= 83
-        BaseType "Two-Toned Boots" "Sorcerer Boots" "Citrine Amulet" "Astral Plate" "Jade Amulet" "Void Sceptre" "Bone Helmet" "Onyx Amulet" "Sorcerer Gloves" "Unset Ring" "Imperial Bow" "Lapis Amulet" "Slink Boots" "Exquisite Blade" "Turquoise Amulet" "Agate Amulet" "Jewelled Foil" "Hubris Circlet" "Eclipse Staff" "Prophecy Wand" "Imperial Claw" "Maraketh Bow"
+        BaseType "Two-Toned Boots" "Sorcerer Boots" "Astral Plate" "Citrine Amulet" "Jade Amulet" "Sorcerer Gloves" "Jewelled Foil" "Void Sceptre" "Sambar Sceptre" "Bone Helmet" "Unset Ring" "Spine Bow" "Eclipse Staff" "Onyx Amulet" "Thorium Spirit Shield" "Lapis Amulet" "Slink Boots" "Turquoise Amulet" "Agate Amulet" "Prophecy Wand" "Imperial Claw"
     Branch
         ItemLevel >= 84
-        BaseType "Unset Ring" "Citrine Amulet" "Onyx Amulet" "Jade Amulet" "Agate Amulet" "Turquoise Amulet" "Imbued Wand" "Amber Amulet" "Lapis Amulet" "Paua Amulet" "Coral Amulet" "Gemini Claw"
+        BaseType "Citrine Amulet" "Jewelled Foil" "Unset Ring" "Agate Amulet" "Onyx Amulet" "Imbued Wand" "Jade Amulet" "Vaal Regalia" "Turquoise Amulet" "Lapis Amulet" "Amber Amulet" "Paua Amulet" "Gemini Claw"
     Branch
         ItemLevel >= 82
         BaseType "Jade Amulet"
@@ -1007,17 +1012,17 @@ Show #Atlas and special bases - Autotiered T1
     PlayEffect Brown
     HasInfluence Hunter
     Branch
-        ItemLevel >= 83
-        BaseType "Slink Gloves" "Sharktooth Arrow Quiver" "Hubris Circlet" "Gemini Claw" "Titan Greaves" "Thicket Bow" "Titan Gauntlets" "Stealth Boots" "Serrated Arrow Quiver" "Penetrating Arrow Quiver" "Spike-Point Arrow Quiver" "Fire Arrow Quiver" "Murder Mitts" "Blunt Arrow Quiver" "Shagreen Gloves" "Murder Boots" "Eelskin Gloves" "Goliath Gauntlets" "Vaal Regalia" "Heavy Belt" "Assassin's Garb" "Prophecy Wand" "Zodiac Leather" "Noble Claw" "Harbinger Bow" "Ancient Gauntlets" "Bone Helmet" "Imperial Skean" "Legion Gloves" "Goliath Greaves" "Hydrascale Gauntlets" "Carnal Mitts" "Vaal Mask" "Wyrmscale Gauntlets" "Eelskin Boots"
-    Branch
         ItemLevel >= 85
-        BaseType "Legion Gloves" "Thicket Bow" "Penetrating Arrow Quiver" "Conjurer Gloves" "Fire Arrow Quiver" "Spike-Point Arrow Quiver" "Harbinger Bow" "Saintly Chainmail" "Conjurer Boots" "Jewelled Foil" "Hydrascale Boots" "Leather Belt" "Destiny Leather" "Devout Chainmail" "Imbued Wand" "Ruby Ring" "Diamond Ring" "Crypt Armour" "Sapphire Ring" "Iron Ring" "Amethyst Ring"
+        BaseType "Legion Gloves" "Thicket Bow" "Assassin's Mitts" "Conjurer Gloves" "Penetrating Arrow Quiver" "Fire Arrow Quiver" "Spike-Point Arrow Quiver" "Blunt Arrow Quiver" "Harbinger Bow" "Hydrascale Boots" "Conjurer Boots" "Saintly Chainmail" "Leather Belt" "Legion Boots" "Destiny Leather" "Jewelled Foil" "Imbued Wand" "Decimation Bow" "Two-Stone Ring" "Ruby Ring" "Diamond Ring" "Crusader Plate" "Sapphire Ring" "Unset Ring" "Amethyst Ring" "Coral Ring" "Destroyer Regalia"
+    Branch
+        ItemLevel >= 83
+        BaseType "Sharktooth Arrow Quiver" "Hubris Circlet" "Thicket Bow" "Titan Gauntlets" "Titan Greaves" "Serrated Arrow Quiver" "Penetrating Arrow Quiver" "Spike-Point Arrow Quiver" "Fire Arrow Quiver" "Murder Mitts" "Shagreen Gloves" "Blunt Arrow Quiver" "Vaal Regalia" "Assassin's Garb" "Prophecy Wand" "Zodiac Leather" "Noble Claw" "Bone Helmet" "Imperial Skean" "Lion Pelt" "Harbinger Bow" "Ancient Gauntlets" "Heavy Belt" "Ambush Boots" "Hydrascale Gauntlets" "Antique Gauntlets" "Goliath Gauntlets" "Imbued Wand" "Carnal Mitts" "Vaal Mask" "Wyrmscale Gauntlets"
     Branch
         ItemLevel >= 84
-        BaseType "Goliath Gauntlets" "Titan Gauntlets" "Thicket Bow" "Penetrating Arrow Quiver" "Shagreen Gloves" "Lion Pelt" "Heavy Belt" "Blunt Arrow Quiver" "Hydrascale Boots" "Goliath Greaves" "Spike-Point Arrow Quiver" "Fire Arrow Quiver" "Shagreen Boots" "Conjurer Gloves" "Carnal Boots" "Hydrascale Gauntlets" "Assassin's Mitts" "Wyrmscale Boots" "Conjurer Boots" "Imbued Wand" "Legion Boots" "Leather Belt" "Void Sceptre" "Legion Gloves" "Destroyer Regalia"
+        BaseType "Shagreen Gloves" "Thicket Bow" "Penetrating Arrow Quiver" "Heavy Belt" "Blunt Arrow Quiver" "Goliath Greaves" "Goliath Gauntlets" "Spike-Point Arrow Quiver" "Conjurer Gloves" "Shagreen Boots" "Lion Pelt" "Conjurer Boots" "Hydrascale Boots" "Hydrascale Gauntlets" "Carnal Boots" "Fire Arrow Quiver" "Assassin's Mitts" "Wyrmscale Boots" "Legion Boots" "Leather Belt" "Imbued Wand" "Harbinger Bow" "Destroyer Regalia"
     Branch
         ItemLevel >= 82
-        BaseType "Spike-Point Arrow Quiver" "Heavy Belt" "Hydrascale Gauntlets" "Iron Ring"
+        BaseType "Spike-Point Arrow Quiver" "Heavy Belt" "Iron Ring" "Hydrascale Gauntlets"
 Show #Atlas and special bases - Autotiered T1
     Rarity <= Rare
     SetFontSize 42
@@ -1029,17 +1034,17 @@ Show #Atlas and special bases - Autotiered T1
     PlayEffect Brown
     HasInfluence Warlord
     Branch
-        ItemLevel >= 85
-        BaseType "Amber Amulet" "Siege Axe" "Citrine Amulet" "Two-Toned Boots" "Onyx Amulet" "Lapis Amulet" "Jade Amulet" "Turquoise Amulet" "Void Sceptre" "Agate Amulet" "Royal Skean" "Diamond Ring" "Conjurer Gloves" "Thicket Bow" "Coral Ring" "Imbued Wand" "Glorious Plate" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Unset Ring" "Penetrating Arrow Quiver" "Two-Stone Ring" "Goliath Gauntlets" "Assassin's Mitts" "Paua Amulet" "Amethyst Ring"
-    Branch
         ItemLevel >= 83
-        BaseType "Hubris Circlet" "Lion Pelt" "Two-Toned Boots" "Exquisite Blade" "Crystal Belt" "Siege Axe" "Sorcerer Gloves" "Amber Amulet" "Dragonscale Gauntlets" "Citrine Amulet" "Bone Helmet" "Nightmare Bascinet" "Onyx Amulet" "Platinum Kris" "Void Sceptre" "Agate Amulet" "Jade Amulet" "Turquoise Amulet" "Eternal Burgonet" "Coral Ring" "Imperial Claw" "Vaal Axe" "Slink Gloves"
+        BaseType "Hubris Circlet" "Two-Toned Boots" "Lion Pelt" "Sorcerer Gloves" "Exquisite Blade" "Crystal Belt" "Amber Amulet" "Dragonscale Gauntlets" "Imperial Claw" "Citrine Amulet" "Nightmare Bascinet" "Fleshripper" "Vaal Axe" "Agate Amulet" "Jade Amulet" "Turquoise Amulet" "Onyx Amulet" "Harpy Rapier" "Coral Ring" "Slink Gloves"
+    Branch
+        ItemLevel >= 85
+        BaseType "Two-Toned Boots" "Siege Axe" "Citrine Amulet" "Vaal Regalia" "Jade Amulet" "Onyx Amulet" "Turquoise Amulet" "Amber Amulet" "Lapis Amulet" "Conjurer Gloves" "Diamond Ring" "Agate Amulet" "Thicket Bow" "Coral Ring" "Unset Ring" "Imbued Wand" "Saintly Chainmail" "Sadist Garb" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Stone Ring" "Coral Amulet" "Amethyst Ring" "Decimation Bow"
     Branch
         ItemLevel >= 84
-        BaseType "Siege Axe" "Vaal Regalia" "Citrine Amulet" "Amber Amulet" "Onyx Amulet" "Jade Amulet" "Unset Ring" "Turquoise Amulet" "Coral Ring" "Thicket Bow" "Two-Stone Ring" "Gold Amulet" "Spike-Point Arrow Quiver" "Agate Amulet" "Ruby Ring" "Lapis Amulet" "Shagreen Gloves" "Glorious Plate" "Saintly Chainmail"
+        BaseType "Siege Axe" "Vaal Regalia" "Citrine Amulet" "Onyx Amulet" "Amber Amulet" "Turquoise Amulet" "Unset Ring" "Jade Amulet" "Coral Ring" "Two-Stone Ring" "Gold Amulet" "Spike-Point Arrow Quiver" "Agate Amulet" "Fossilised Spirit Shield" "Ruby Ring" "Shagreen Gloves" "Lapis Amulet"
     Branch
         ItemLevel >= 82
-        BaseType "Onyx Amulet" "Diamond Ring" "Coral Ring"
+        BaseType "Onyx Amulet" "Fleshripper" "Spike-Point Arrow Quiver" "Amber Amulet" "Agate Amulet"
 Show #Atlas and special bases - Autotiered T1
     Rarity <= Rare
     SetFontSize 42
@@ -1051,10 +1056,10 @@ Show #Atlas and special bases - Autotiered T1
     PlayEffect Brown
     Branch
         ItemLevel >= 86
-        BaseType "Two-Toned Boots" "Opal Ring" "Bone Helmet" "Fingerless Silk Gloves" "Spiked Gloves" "Steel Ring" "Convoking Wand" "Vermillion Ring" "Titanium Spirit Shield" "Opal Wand" "Stygian Vise" "Broadhead Arrow Quiver" "Ghastly Eye Jewel" "Hypnotic Eye Jewel" "Searching Eye Jewel" "Murderous Eye Jewel"
+        BaseType "Opal Ring" "Two-Toned Boots" "Fingerless Silk Gloves" "Bone Helmet" "Spiked Gloves" "Steel Ring" "Convoking Wand" "Opal Wand" "Stygian Vise" "Broadhead Arrow Quiver" "Searching Eye Jewel" "Titanium Spirit Shield" "Hypnotic Eye Jewel" "Vermillion Ring" "Ghastly Eye Jewel"
     Branch
-        ItemLevel >= 83
-        BaseType "Ranger Bow"
+        ItemLevel >= 84
+        BaseType "Eye Gouger" "Crystal Belt" "Assassin Bow"
 #AutoUpdater_BaseTypes_section_end
 
 Show
@@ -6135,6 +6140,12 @@ Show
         Tags $soundT2
         MinimapIcon 1 Yellow Hexagon
         PlayEffect Yellow Temp
+    Branch # Leagues - Delve - Fossils - T4
+        Tags @Fossils_T4
+        SetFontSize 32
+        SetBackgroundColor 255 178 57 180
+        SetTextColor 175 57 18
+        SetBorderColor 0 0 0
     #AutoUpdater_Fossils_section_end
 
     Branch # Leagues - Delve - Fossils - TUnknown (Missing from auto-tiering)
