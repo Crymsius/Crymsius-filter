@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.9.1_2020.03.11_20:00
+###Version 3.10.0_2020.03.13_21:00
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -421,6 +421,18 @@ Show # Fragments - Ivory Watchstone
     Tags $soundT0
     MinimapIcon 0 Blue Hexagon
     PlayEffect Blue
+
+
+Show # Leagues - Delirium - Cluster Jewels
+    Class "Jewel"
+    BaseType = "Cluster"
+    Rarity Unique
+    SetBackgroundColor 40 40 40
+    SetBorderColor 200 200 200
+    SetFontSize 42
+    Tags $soundTUnknown
+    MinimapIcon 0 Green Diamond
+    PlayEffect Green
 
 Show # Leagues - Metamorph - Samples
     Class "Metamorph Sample"
@@ -1474,6 +1486,15 @@ Show
 #------------------------------------
 #    Jewels
 #------------------------------------
+Show # Leagues - Delirium - Cluster Jewels
+    Class "Jewel"
+    BaseType = "Cluster"
+    Tags $soundScarabs
+    SetBackgroundColor 40 40 40
+    SetBorderColor 200 200 200
+    SetFontSize 42
+    MinimapIcon 1 Green Diamond
+    PlayEffect Green
 Show
     Class "Abyss Jewel"
     SetFontSize 60
@@ -5876,6 +5897,42 @@ Show
 #------------------------------------
 #    Temporary Leagues
 #------------------------------------
+#------------------------------------
+#    Delirium League
+#------------------------------------
+Show
+    Class "Stackable Currency"
+    SetBackgroundColor 154 149 149 255
+    SetTextColor 255 255 0
+    SetBorderColor 255 255 0
+    SetFontSize 42
+    Tags $soundT2
+    MinimapIcon 0 Green Diamond
+    PlayEffect Green
+    Branch # Leagues - Delirium - Delirium Orb
+        BaseType = "Delirium Orb"
+
+Show # Leagues - Delirium - Simulacrum Splinter
+    Class "Stackable Currency"
+    BaseType == "Simulacrum Splinter"
+    SetBackgroundColor 50 50 50 255
+    SetTextColor 200 200 200
+    SetBorderColor 200 200 200
+    SetFontSize 42
+    Tags $soundT2
+    MinimapIcon 1 Yellow Diamond
+    PlayEffect Yellow
+
+Show # Leagues - Delirium - Simulacrum Map Fragment
+    Class "Map Fragment"
+    BaseType == "Simulacrum"
+    SetBackgroundColor 200 200 200 255
+    SetTextColor 50 50 50
+    SetBorderColor 50 50 50
+    SetFontSize 42
+    Tags $soundT2
+    MinimapIcon 0 Green Circle
+    PlayEffect Yellow
 
 #------------------------------------
 #    Metamorph League
