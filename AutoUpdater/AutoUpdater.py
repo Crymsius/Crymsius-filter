@@ -603,7 +603,7 @@ if __name__ == '__main__':
         SetTextColor 128 0 200
         SetBorderColor 128 0 200
         Tags $soundT0
-        MinimapIcon 0 Blue Diamond
+        MinimapIcon 0 Blue Moon
         PlayEffect Blue''',
 '''    Branch # Leagues - Prophecy - Prophecies - T1
         Tags @Prophecies_T1
@@ -612,21 +612,21 @@ if __name__ == '__main__':
         SetBorderColor 255 255 255
         SetFontSize 43
         Tags $soundT1
-        MinimapIcon 0 Brown Diamond
+        MinimapIcon 0 Brown Moon
         PlayEffect Brown''',
 '''    Branch # Leagues - Prophecy - Prophecies - T2
         Tags @Prophecies_T2
         SetBackgroundColor 128 0 200 230
         SetFontSize 40
         Tags $soundT2
-        MinimapIcon 1 Yellow Diamond
+        MinimapIcon 1 Yellow Moon
         PlayEffect Yellow Temp''',
 '''    Branch # Leagues - Prophecy - Prophecies - T3
         Tags @Prophecies_T3
         SetBackgroundColor 128 0 200 200
         SetFontSize 36
         Tags $soundT3
-        MinimapIcon 2 White Diamond
+        MinimapIcon 2 White Moon
         PlayEffect White Temp''',
 '''    Branch # Leagues - Prophecy - Prophecies - T4
         Tags @Prophecies_T4
@@ -649,7 +649,7 @@ if __name__ == '__main__':
         SetBackgroundColor 255 255 255
         Tags $soundT0
         PlayEffect Blue
-        MinimapIcon 0 Blue Diamond''',
+        MinimapIcon 0 Blue Kite''',
 '''    Branch # Leagues - Essence - Essences - T1
         Tags @Essences_T1
         SetFontSize 50
@@ -658,7 +658,7 @@ if __name__ == '__main__':
         SetBorderColor 255 255 255
         Tags $soundT1
         PlayEffect Brown
-        MinimapIcon 0 Brown Diamond''',
+        MinimapIcon 0 Brown Kite''',
 '''    Branch # Leagues - Essence - Essences - T2
         Tags @Essences_T2
         SetFontSize 40
@@ -667,13 +667,13 @@ if __name__ == '__main__':
         SetBorderColor 10 25 90
         Tags $soundT2
         PlayEffect Yellow Temp
-        MinimapIcon 1 Yellow Diamond''',
+        MinimapIcon 1 Yellow Kite''',
 '''    Branch # Leagues - Essence - Essences - T3
         Tags @Essences_T3
         SetFontSize 36
         Tags $soundT3
         SetBackgroundColor 180 195 245 200
-        MinimapIcon 2 White Diamond''',
+        MinimapIcon 2 White Kite''',
 '''    Branch # Leagues - Essence - Essences - T4
         Tags @Essences_T4
         SetFontSize 33
@@ -696,7 +696,7 @@ if __name__ == '__main__':
         SetTextColor 244 74 204 255
         SetBorderColor 244 74 204 255
         Tags $soundT0
-        MinimapIcon 0 Blue Diamond''',
+        MinimapIcon 0 Blue Cross''',
 '''    Branch # Leagues - Legion - Incubators - T1
         Tags @Incubators_T1
         SetFontSize 45
@@ -704,7 +704,7 @@ if __name__ == '__main__':
         SetBorderColor 62 18 52 255
         SetTextColor 62 18 52 255
         Tags $soundT1
-        MinimapIcon 0 Brown Diamond''',
+        MinimapIcon 0 Brown Cross''',
 '''    Branch # Leagues - Legion - Incubators - T2
         Tags @Incubators_T2
         SetFontSize 42
@@ -712,7 +712,7 @@ if __name__ == '__main__':
         SetTextColor 244 74 204 255
         SetBorderColor 244 74 204 255
         Tags $soundT2
-        MinimapIcon 1 Yellow Diamond''',
+        MinimapIcon 1 Yellow Cross''',
 '''    Branch # Leagues - Legion - Incubators - T3
         Tags @Incubators_T3
         SetFontSize 38
@@ -720,7 +720,7 @@ if __name__ == '__main__':
         SetTextColor 244 74 204 255
         SetBorderColor 244 74 204 255
         Tags $soundT3
-        MinimapIcon 2 White Diamond''',
+        MinimapIcon 2 White Cross''',
 '''    Branch # Leagues - Legion - Incubators - T4
         Tags @Incubators_T4
         SetFontSize 35
@@ -745,7 +745,7 @@ if __name__ == '__main__':
         SetBorderColor 8 82 70 255
         SetFontSize 50
         Tags $soundT0
-        MinimapIcon 0 Blue Diamond
+        MinimapIcon 0 Blue Cross
         PlayEffect Blue''',
 '''    Branch # Leagues - Blight - Oils - T1
         Tags @Oils_T1
@@ -754,7 +754,7 @@ if __name__ == '__main__':
         SetBorderColor 8 82 70 255
         SetFontSize 48
         Tags $soundT1
-        MinimapIcon 0 Brown Diamond
+        MinimapIcon 0 Brown Cross
         PlayEffect Brown''',
 '''    Branch # Leagues - Blight - Oils - T2
         Tags @Oils_T2
@@ -763,7 +763,7 @@ if __name__ == '__main__':
         SetBorderColor 241 232 200 255
         SetFontSize 42
         Tags $soundT2
-        MinimapIcon 1 Yellow Diamond
+        MinimapIcon 1 Yellow Cross
         PlayEffect Yellow''',
 '''    Branch # Leagues - Blight - Oils - T3
         Tags @Oils_T3
@@ -772,7 +772,7 @@ if __name__ == '__main__':
         SetBorderColor 241 232 200 255
         SetFontSize 38
         Tags $soundT3
-        MinimapIcon 2 White Diamond
+        MinimapIcon 2 White Cross
         PlayEffect White''',
 '''    Branch # Leagues - Blight - Oils - T4
         Tags @Oils_T4
