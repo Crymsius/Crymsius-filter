@@ -361,7 +361,7 @@ if __name__ == '__main__':
 
     classes = {
         "poeninja" : {
-            "league": "Metamorph",
+            "league": "Delirium",
             "url": "https://poe.ninja/api/data/"
         },
         "currency": {
