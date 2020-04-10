@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.10.0_2020.04.13_12:00
+###Version 3.10.1_2020.04.10_14:00
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -20,6 +20,17 @@ SetTab [Custom Item BaseTypes]
 # //! SetOption $Crafting_Bases textarea ["Jade Amulet"] # Add or delete the bases for items you want to craft (ilvl≥84). You can enable the highlight in the block switches (off by default)
 # //! SetOption $Highlighted_Bases textarea ["Vaal Regalia"] # Add or delete the bases for items you want to highlight (no unique, no specific ilvl). You can enable the highlight in the block switches (off by default)
 
+SetTab [Custom ExplicitMod Highlight]
+# //! SetOption $Custom_ExplicitMods_1 textarea ["Merciless" "Of Celebration"] # Add or delete a combination of prefixes and suffixes you want to highlight on an item. You can enable the highlight in the block switches (off by default)
+# //! SetOption $Custom_ExplicitMods_2 textarea ["Dragon's" "Of Excavation"] # Add or delete a combination of prefixes and suffixes you want to highlight on an item. You can enable the highlight in the block switches (off by default)
+# //! SetOption $Custom_ExplicitMods_3 textarea ["Dragon's" "Of Excavation"] # Add or delete a combination of prefixes and suffixes you want to highlight on an item. You can enable the highlight in the block switches (off by default)
+# //! SetOption $Custom_ExplicitMods_4 textarea ["Dragon's" "Of Excavation"] # Add or delete a combination of prefixes and suffixes you want to highlight on an item. You can enable the highlight in the block switches (off by default)
+# //! SetOption $Custom_ExplicitMods_5 textarea ["Dragon's" "Of Excavation"] # Add or delete a combination of prefixes and suffixes you want to highlight on an item. You can enable the highlight in the block switches (off by default)
+# //! SetOption $Custom_ExplicitMods_6 textarea ["Dragon's" "Of Excavation"] # Add or delete a combination of prefixes and suffixes you want to highlight on an item. You can enable the highlight in the block switches (off by default)
+# //! SetOption $Custom_ExplicitMods_7 textarea ["Dragon's" "Of Excavation"] # Add or delete a combination of prefixes and suffixes you want to highlight on an item. You can enable the highlight in the block switches (off by default)
+# //! SetOption $Custom_ExplicitMods_8 textarea ["Dragon's" "Of Excavation"] # Add or delete a combination of prefixes and suffixes you want to highlight on an item. You can enable the highlight in the block switches (off by default)
+# //! SetOption $Custom_ExplicitMods_9 textarea ["Dragon's" "Of Excavation"] # Add or delete a combination of prefixes and suffixes you want to highlight on an item. You can enable the highlight in the block switches (off by default)
+# //! SetOption $Custom_ExplicitMods_10 textarea ["Dragon's" "Of Excavation"] # Add or delete a combination of prefixes and suffixes you want to highlight on an item. You can enable the highlight in the block switches (off by default)
 
 SetTab [Sound theme]
 SetOption $Sound_Positioning switch [off] [off] [on] # May lower the sound level, use with caution.
@@ -1181,30 +1192,32 @@ Comment # Crafting - Base ilvl>=84 | Comment
     SetBorderColor 255 255 255
 
 # ----- Crafting Mods Combination -----
-Show
-    Rarity Rare
-    SetBackgroundColor 50 50 0
-    SetFontSize 38
-    SetTextColor 255 255 255
-    SetBorderColor 255 255 255
-    Branch # Crafting - Mods - Rare Items - Merciless + of Celebration| Comment
-        HasExplicitMod "Merciless"
-        HasExplicitMod "of Celebration"
-    Branch # Crafting - Mods - Rare Items - Dragon's + of Excavation| Comment
-        HasExplicitMod "Dragon's"
-        HasExplicitMod "of Excavation"
-Show
-    Rarity Magic
+Comment
     SetBackgroundColor 0 0 60
     SetTextColor 255 255 255
     SetBorderColor 255 255 255
     SetFontSize 38
-    Branch # Crafting - Mods - Magic Items - Merciless + of Celebration| Comment
-        HasExplicitMod "Merciless"
-        HasExplicitMod "of Celebration"
-    Branch # Crafting - Mods - Magic Items - Dragon's + of Excavation| Comment
-        HasExplicitMod "Dragon's"
-        HasExplicitMod "of Excavation"
+    BaseType $Highlighted_Rares_Weapons $Highlighted_Rares_Armours $Highlighted_Rares_Accessories
+    Branch # Crafting - Custom Explicit mods - Slot 1| Comment
+        HasExplicitMod $Custom_ExplicitMods_1
+    Branch # Crafting - Custom Explicit mods - Slot 2| Comment
+        HasExplicitMod $Custom_ExplicitMods_2
+    Branch # Crafting - Custom Explicit mods - Slot 3| Comment
+        HasExplicitMod $Custom_ExplicitMods_3
+    Branch # Crafting - Custom Explicit mods - Slot 4| Comment
+        HasExplicitMod $Custom_ExplicitMods_4
+    Branch # Crafting - Custom Explicit mods - Slot 2| Comment
+        HasExplicitMod $Custom_ExplicitMods_5
+    Branch # Crafting - Custom Explicit mods - Slot 6| Comment
+        HasExplicitMod $Custom_ExplicitMods_6
+    Branch # Crafting - Custom Explicit mods - Slot 7| Comment
+        HasExplicitMod $Custom_ExplicitMods_7
+    Branch # Crafting - Custom Explicit mods - Slot 8| Comment
+        HasExplicitMod $Custom_ExplicitMods_8
+    Branch # Crafting - Custom Explicit mods - Slot 9| Comment
+        HasExplicitMod $Custom_ExplicitMods_9
+    Branch # Crafting - Custom Explicit mods - Slot 10| Comment
+        HasExplicitMod $Custom_ExplicitMods_10
 
 # ----- Crafting Quality -----
 Show # Crafting - Quality - 25%+| Comment
