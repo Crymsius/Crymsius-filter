@@ -295,8 +295,7 @@ def ReplaceBaseType(baseType):
                 #Other
                 if itemsOther :
                     tempFileSections.write(classes[baseType]["section"][i] + '\n')
-                    # tempFileSections.write('    ShaperItem False\n')
-                    # tempFileSections.write('    ElderItem False\n')
+                    tempFileSections.write('    HasInfluence None\n')
                     for ilvl in itemsOtherIlvl:
                         tempFileSections.write('    Branch\n')
                         tempFileSections.write('        ItemLevel >= ' + str(ilvl) + '\n')
@@ -361,7 +360,7 @@ if __name__ == '__main__':
 
     classes = {
         "poeninja" : {
-            "league": "Delirium",
+            "league": "Harvest",
             "url": "https://poe.ninja/api/data/"
         },
         "currency": {

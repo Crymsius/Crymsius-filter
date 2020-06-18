@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.10.1a_2020.06.16_12:00
+###Version 3.11.0_2020.06.18_20:00
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -700,7 +700,7 @@ Show # Fragments - Timeworn Reliquary Key
 
 Show # Fragments - Offering to the Goddess
     Class "Map Fragments"
-    BaseType "Offering to the Goddess"
+    BaseType "Offering to the Goddess" "Gift to the Goddess" "Dedication to the Goddess"
     SetFontSize 42
     SetBackgroundColor 50 50 0
     SetBorderColor 255 255 119
@@ -5945,6 +5945,58 @@ Show
 #    Temporary Leagues
 #------------------------------------
 #------------------------------------
+#    Harvest League
+#------------------------------------
+Show # Leagues - Harvest - Currenies
+    Class "Stackable Currency"
+    BaseType "Infused Engineer's Orb" "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
+    SetFontSize 45
+    SetBackgroundColor 255 255 255
+    Tags $soundT1
+    MinimapIcon 0 Brown Cross
+    PlayEffect Brown
+    
+Show # Leagues - Harvest - Infrastructures
+    Class "Harvest Infrastructure"
+    SetBackgroundColor 78 230 246
+    SetTextColor 29 38 67 255
+    SetBorderColor 29 38 67 255
+    SetFontSize 42
+    Tags $soundScarabs
+    MinimapIcon 0 Purple UpsideDownHouse
+    PlayEffect Purple
+Show
+    Class "Harvest Seed"
+    SetBackgroundColor 29 38 67 255
+    SetBorderColor 29 38 67 255
+    SetFontSize 42
+    Tags $soundScarabs
+    Branch # Leagues - Harvest - Seeds - Tier 4
+        BaseType "fruit"
+        MinimapIcon 0 Blue Raindrop
+        PlayEffect Blue
+        SetTextColor 255 255 255
+        SetBorderColor 255 255 255
+    Branch # Leagues - Harvest - Seeds - Tier 3
+        BaseType "Bulb"
+        MinimapIcon 1 Yellow Raindrop
+        PlayEffect Yellow
+        SetTextColor 216 82 213
+        SetBorderColor 216 82 213
+    Branch # Leagues - Harvest - Seeds - Tier 2
+        BaseType "Seed"
+        MinimapIcon 1 Yellow Raindrop
+        PlayEffect Yellow
+        SetTextColor 249 240 138
+        SetBorderColor 249 240 138
+    Branch # Leagues - Harvest - Seeds - Tier 1
+        BaseType "Grain"
+        MinimapIcon 2 White Raindrop
+        PlayEffect White
+        SetTextColor 103 199 240
+        SetBorderColor 103 199 240
+
+#------------------------------------
 #    Delirium League
 #------------------------------------
 Show
@@ -6164,6 +6216,13 @@ Show
 Show
     Class "Map Fragments"
     SetBackgroundColor 76 177 255 255
+    Branch # Leagues - Betrayal - Scarabs - Winged
+        BaseType "Winged"
+        SetTextColor 255 250 119
+        SetBorderColor 255 255 119
+        SetFontSize 43
+        Tags $soundScarabs
+        MinimapIcon 0 Red Circle
     Branch # Leagues - Betrayal - Scarabs - Gilded
         BaseType "Gilded"
         SetTextColor 255 250 119
