@@ -1,5 +1,5 @@
 ###Crymsius-filter
-###Version 3.11.0_2020.06.18_20:00
+###Version 3.11.0a_2020.06.18_20:00
 # Author : Crymsius
 # Source : https://github.com/Crymsius/Crymsius-filter
 
@@ -5956,15 +5956,15 @@ Show # Leagues - Harvest - Currenies
     MinimapIcon 0 Brown Cross
     PlayEffect Brown
     
-Show # Leagues - Harvest - Infrastructures
-    Class "Harvest Infrastructure"
-    SetBackgroundColor 78 230 246
-    SetTextColor 29 38 67 255
-    SetBorderColor 29 38 67 255
-    SetFontSize 42
-    Tags $soundScarabs
-    MinimapIcon 0 Purple UpsideDownHouse
-    PlayEffect Purple
+# Show # Leagues - Harvest - Infrastructures
+#     Class "Harvest Infrastructure"
+#     SetBackgroundColor 78 230 246
+#     SetTextColor 29 38 67 255
+#     SetBorderColor 29 38 67 255
+#     SetFontSize 42
+#     Tags $soundScarabs
+#     MinimapIcon 0 Purple UpsideDownHouse
+#     PlayEffect Purple
 Show
     Class "Harvest Seed"
     SetBackgroundColor 29 38 67 255
